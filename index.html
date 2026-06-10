@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>手書きひらがな文字認識アプリ</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --panel2: #1f2630;
+      --border: #2a3442;
+      --text: #e6edf3;
+      --muted: #9aa4b2;
+      --accent: #58a6ff;
+      --good: #3fb950;
+      --bad: #ff7b72;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: radial-gradient(1200px 800px at 20% 0%, #111827 0%, var(--bg) 60%);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .page {
+      min-height: 100vh;
+      padding: 16px;
+      display: grid;
+      place-items: center;
+    }
+    .layout {
+      width: min(1200px, 100%);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .card {
+      background: rgba(22, 27, 34, 0.96);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.38);
+      overflow: hidden;
+    }
+    .head {
+      padding: 16px 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      background: rgba(31, 38, 48, 0.7);
+      border-bottom: 1px solid var(--border);
+    }
+    .title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    .sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .body {
+      padding: 16px;
+    }
+    .status {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .status.ok { color: var(--good); }
+    .status.err { color: var(--bad); }
+    .canvas-wrap {
+      display: grid;
+      gap: 12px;
+      justify-items: start;
+    }
+    canvas#draw {
+      width: min(100%, 480px);
+      aspect-ratio: 1 / 1;
+      background: #fff;
+      border-radius: 18px;
+      border: 1px solid #d7dde6;
+      touch-action: none;
+      display: block;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.03);
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    button, .file-btn {
+      border: 1px solid var(--border);
+      background: var(--panel2);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      user-select: none;
+    }
+    button:hover, .file-btn:hover { border-color: #40506f; }
+    button.primary {
+      background: linear-gradient(180deg, #2f81f7 0%, #2563eb 100%);
+      border-color: #2f81f7;
+    }
+    button.ghost {
+      background: rgba(255,255,255,0.03);
+    }
+    input[type="file"] { display: none; }
+    .hint {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+      min-height: 1.2em;
+    }
+    .right {
+      display: grid;
+      gap: 16px;
+    }
+    .pred-list {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+    }
+    .pred {
+      display: grid;
+      grid-template-columns: 52px 1fr 74px;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .pred-char {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(88,166,255,0.12);
+      font-size: 26px;
+      font-weight: 800;
+    }
+    .pred-main {
+      min-width: 0;
+    }
+    .pred-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .bar {
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+    }
+    .bar > div {
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), #8bd5ff);
+    }
+    .score {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .info {
+      padding: 16px 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    code {
+      background: rgba(255,255,255,0.06);
+      padding: 0.12em 0.35em;
+      border-radius: 6px;
+      color: #d7e7ff;
+    }
+    @media (max-width: 920px) {
+      .layout { grid-template-columns: 1fr; }
+      canvas#draw { width: min(100%, 560px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="layout">
+      <section class="card">
+        <div class="head">
+          <div>
+            <h1 class="title">手書きひらがな文字認識アプリ</h1>
+            <div class="sub">手描きキャンバス → 前処理 → TensorFlow.js 推論。元の <code>model.h5</code> は 64×64×1 入力、71クラス分類です。</div>
+          </div>
+          <div class="status" id="status">モデル未読込</div>
+        </div>
+
+        <div class="body">
+          <div class="canvas-wrap">
+            <canvas id="draw" width="256" height="256"></canvas>
+
+            <div class="controls">
+              <button class="primary" id="btnPredict">認識</button>
+              <button class="ghost" id="btnClear">クリア</button>
+              <label class="file-btn" for="modelFiles">モデルファイルを選択</label>
+              <input id="modelFiles" type="file" multiple accept=".json,.bin,application/json,application/octet-stream" />
+            </div>
+
+            <div class="hint" id="hint">マウスまたは指で書いてください。描画を止めたら自動で認識します。</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="right">
+        <section class="card">
+          <div class="head">
+            <h2 class="title" style="font-size:16px;">予測結果</h2>
+            <div class="status">上位5件</div>
+          </div>
+          <div class="pred-list" id="predictions"></div>
+        </section>
+
+        <section class="card">
+          <div class="head">
+            <h2 class="title" style="font-size:16px;">使い方</h2>
+          </div>
+          <div class="info">
+            <div>1. Colabで <code>tensorflowjs</code> を入れる。</div>
+            <div>2. <code>tensorflowjs_converter --input_format=keras model.h5 tfjs_model</code> を実行する。</div>
+            <div>3. 出力された <code>model.json</code> と <code>group1-shard*.bin</code> を <code>tfjs_model/</code> に置く。</div>
+            <div>4. このHTMLを配信し、ページを開くと <code>tfjs_model/model.json</code> を自動読み込みする。</div>
+            <div style="margin-top:8px;">手動読み込みも可能。<code>model.json</code> と <code>.bin</code> をまとめて選択する。</div>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+<script>
+const LABELS = ["あ","い","う","え","お","か","が","き","ぎ","く","ぐ","け","げ","こ","ご","さ","ざ","し","じ","す","ず","せ","ぜ","そ","ぞ","た","だ","ち","ぢ","つ","づ","て","で","と","ど","な","に","ぬ","ね","の","は","ば","ぱ","ひ","び","ぴ","ふ","ぶ","ぷ","へ","べ","ぺ","ほ","ぼ","ぽ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"];
+
+const IMAGE_SIZE = 256;
+const TARGET_SIZE = 64;
+const LINE_WIDTH = 16;
+const DEFAULT_MODEL_URL = './tfjs_model/model.json';
+const BG_THRESHOLD = 245;
+
+const canvas = document.getElementById('draw');
+const ctx = canvas.getContext('2d', { willReadFrequently: true });
+const statusEl = document.getElementById('status');
+const hintEl = document.getElementById('hint');
+const predEl = document.getElementById('predictions');
+const modelFilesInput = document.getElementById('modelFiles');
+const btnPredict = document.getElementById('btnPredict');
+const btnClear = document.getElementById('btnClear');
+
+let model = null;
+let drawing = false;
+let lastX = null;
+let lastY = null;
+let autoPredictTimer = null;
+
+function setStatus(text, kind = '') {
+  statusEl.textContent = text;
+  statusEl.className = 'status' + (kind ? ' ' + kind : '');
+}
+
+function setHint(text, kind = '') {
+  hintEl.textContent = text;
+  hintEl.className = 'hint' + (kind ? ' ' + kind : '');
+}
+
+function clearPredictions() {
+  predEl.innerHTML = '';
+  for (let i = 0; i < 5; i++) {
+    const row = document.createElement('div');
+    row.className = 'pred';
+    row.innerHTML = `
+      <div class="pred-char">-</div>
+      <div class="pred-main">
+        <div class="pred-name">待機中</div>
+        <div class="bar"><div style="width:0%"></div></div>
+      </div>
+      <div class="score">0.00%</div>
+    `;
+    predEl.appendChild(row);
+  }
+}
+
+function renderPredictions(pred) {
+  const top = Array.from(pred)
+    .map((v, i) => ({ index: i, score: v }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
+
+  predEl.innerHTML = '';
+  top.forEach((item, rank) => {
+    const char = LABELS[item.index] ?? '?';
+    const percent = (item.score * 100).toFixed(2);
+    const row = document.createElement('div');
+    row.className = 'pred';
+    row.innerHTML = `
+      <div class="pred-char">${char}</div>
+      <div class="pred-main">
+        <div class="pred-name">第${rank + 1}候補</div>
+        <div class="bar"><div style="width:${Math.max(0, Math.min(100, item.score * 100))}%"></div></div>
+      </div>
+      <div class="score">${percent}%</div>
+    `;
+    predEl.appendChild(row);
+  });
+}
+
+function resizeCanvasForHiDPI() {
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = Math.round(rect.width * dpr);
+  canvas.height = Math.round(rect.height * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.strokeStyle = '#000';
+  ctx.lineWidth = LINE_WIDTH;
+  clearCanvas();
+}
+
+function clearCanvas() {
+  const rect = canvas.getBoundingClientRect();
+  ctx.save();
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.restore();
+  clearPredictions();
+  setHint('マウスまたは指で書いてください。描画を止めたら自動で認識します。');
+}
+
+function getCanvasPoint(evt) {
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+  return {
+    x: (evt.clientX - rect.left) * scaleX,
+    y: (evt.clientY - rect.top) * scaleY
+  };
+}
+
+function startStroke(evt) {
+  evt.preventDefault();
+  drawing = true;
+  const p = getCanvasPoint(evt);
+  lastX = p.x;
+  lastY = p.y;
+}
+
+function drawStroke(evt) {
+  if (!drawing) return;
+  evt.preventDefault();
+  const p = getCanvasPoint(evt);
+  ctx.beginPath();
+  ctx.moveTo(lastX, lastY);
+  ctx.lineTo(p.x, p.y);
+  ctx.stroke();
+  lastX = p.x;
+  lastY = p.y;
+  scheduleAutoPredict();
+}
+
+function endStroke(evt) {
+  if (!drawing) return;
+  evt.preventDefault();
+  drawing = false;
+  lastX = null;
+  lastY = null;
+  scheduleAutoPredict(120);
+}
+
+function scheduleAutoPredict(delay = 250) {
+  if (!model) return;
+  window.clearTimeout(autoPredictTimer);
+  autoPredictTimer = window.setTimeout(() => {
+    predictCurrentCanvas();
+  }, delay);
+}
+
+function cropToBoundingBox(imageData) {
+  const { data, width, height } = imageData;
+  let left = width, right = -1, top = height, bottom = -1;
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const i = (y * width + x) * 4;
+      const r = data[i], g = data[i + 1], b = data[i + 2], a = data[i + 3];
+      if (a > 0 && ((r + g + b) / 3) < BG_THRESHOLD) {
+        if (x < left) left = x;
+        if (x > right) right = x;
+        if (y < top) top = y;
+        if (y > bottom) bottom = y;
+      }
+    }
+  }
+  if (right < left || bottom < top) return null;
+  return { left, right, top, bottom, width: right - left + 1, height: bottom - top + 1 };
+}
+
+function invertImageData(imageData) {
+  const { data } = imageData;
+  for (let i = 0; i < data.length; i += 4) {
+    data[i] = 255 - data[i];
+    data[i + 1] = 255 - data[i + 1];
+    data[i + 2] = 255 - data[i + 2];
+    data[i + 3] = 255;
+  }
+  return imageData;
+}
+
+function preprocessCanvas() {
+  const srcData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const box = cropToBoundingBox(srcData);
+  if (!box) return null;
+
+  const cropCanvas = document.createElement('canvas');
+  cropCanvas.width = box.width;
+  cropCanvas.height = box.height;
+  const cropCtx = cropCanvas.getContext('2d', { willReadFrequently: true });
+  cropCtx.putImageData(ctx.getImageData(box.left, box.top, box.width, box.height), 0, 0);
+
+  const cropData = cropCtx.getImageData(0, 0, box.width, box.height);
+  invertImageData(cropData);
+  cropCtx.putImageData(cropData, 0, 0);
+
+  const finalCanvas = document.createElement('canvas');
+  finalCanvas.width = TARGET_SIZE;
+  finalCanvas.height = TARGET_SIZE;
+  const finalCtx = finalCanvas.getContext('2d', { willReadFrequently: true });
+  finalCtx.fillStyle = '#000';
+  finalCtx.fillRect(0, 0, TARGET_SIZE, TARGET_SIZE);
+
+  const scale = Math.min(TARGET_SIZE / box.width, TARGET_SIZE / box.height);
+  const drawW = Math.max(1, Math.round(box.width * scale));
+  const drawH = Math.max(1, Math.round(box.height * scale));
+  const padX = Math.floor((TARGET_SIZE - drawW) / 2);
+  const padY = Math.floor((TARGET_SIZE - drawH) / 2);
+  finalCtx.imageSmoothingEnabled = false;
+  finalCtx.drawImage(cropCanvas, padX, padY, drawW, drawH);
+
+  const out = finalCtx.getImageData(0, 0, TARGET_SIZE, TARGET_SIZE).data;
+  const arr = new Float32Array(TARGET_SIZE * TARGET_SIZE);
+  for (let i = 0, j = 0; i < out.length; i += 4, j++) {
+    arr[j] = out[i] / 255;
+  }
+  return arr;
+}
+
+async function predictCurrentCanvas() {
+  if (!model) {
+    setHint('先にモデルを読み込んでください。', 'err');
+    return;
+  }
+  const arr = preprocessCanvas();
+  if (!arr) {
+    setHint('文字が見つかりません。線が描かれているか確認してください。', 'err');
+    clearPredictions();
+    return;
+  }
+
+  const input = tf.tensor4d(arr, [1, TARGET_SIZE, TARGET_SIZE, 1]);
+  try {
+    const output = model.predict(input);
+    const pred = await output.data();
+    if (output.dispose) output.dispose();
+    renderPredictions(pred);
+    const best = Array.from(pred).reduce((bestIdx, v, i, a) => v > a[bestIdx] ? i : bestIdx, 0);
+    setHint(`認識結果: ${LABELS[best]}`, 'ok');
+  } catch (err) {
+    console.error(err);
+    setHint('推論に失敗しました。モデルの形式と入力サイズを確認してください。', 'err');
+  } finally {
+    input.dispose();
+  }
+}
+
+async function loadModelFromUrl(url) {
+  setStatus('モデル読込中...');
+  try {
+    model = await tf.loadLayersModel(url);
+    setStatus('モデル読込完了', 'ok');
+    setHint('文字を書いて認識できます。', 'ok');
+    await predictCurrentCanvas().catch(() => {});
+  } catch (err) {
+    console.warn(err);
+    setStatus('自動読込失敗', 'err');
+    setHint('モデルは手動で読み込めます。下のボタンから model.json と .bin をまとめて選択してください。', 'err');
+  }
+}
+
+async function loadModelFromFiles(fileList) {
+  const files = Array.from(fileList);
+  if (!files.length) return;
+  setStatus('モデル読込中...');
+  try {
+    model = await tf.loadLayersModel(tf.io.browserFiles(files));
+    setStatus('モデル読込完了', 'ok');
+    setHint('文字を書いて認識できます。', 'ok');
+    await predictCurrentCanvas().catch(() => {});
+  } catch (err) {
+    console.error(err);
+    setStatus('読込失敗', 'err');
+    setHint('選択したファイルに model.json と weight shard が含まれているか確認してください。', 'err');
+  }
+}
+
+btnPredict.addEventListener('click', predictCurrentCanvas);
+btnClear.addEventListener('click', clearCanvas);
+modelFilesInput.addEventListener('change', (e) => loadModelFromFiles(e.target.files));
+
+canvas.addEventListener('pointerdown', startStroke);
+canvas.addEventListener('pointermove', drawStroke);
+canvas.addEventListener('pointerup', endStroke);
+canvas.addEventListener('pointerleave', endStroke);
+canvas.addEventListener('pointercancel', endStroke);
+
+window.addEventListener('resize', () => {
+  resizeCanvasForHiDPI();
+});
+
+clearPredictions();
+resizeCanvasForHiDPI();
+loadModelFromUrl(DEFAULT_MODEL_URL);
+</script>
+</body>
+</html>
