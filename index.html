@@ -351,16 +351,17 @@ function clearCanvas() {
 
 function getCanvasPoint(evt) {
   const rect = canvas.getBoundingClientRect();
-  const scaleX = canvas.width / rect.width;
-  const scaleY = canvas.height / rect.height;
   return {
-    x: (evt.clientX - rect.left) * scaleX,
-    y: (evt.clientY - rect.top) * scaleY
+    x: evt.clientX - rect.left,
+    y: evt.clientY - rect.top
   };
 }
 
 function startStroke(evt) {
   evt.preventDefault();
+  if (canvas.setPointerCapture) {
+    try { canvas.setPointerCapture(evt.pointerId); } catch (_) {}
+  }
   drawing = true;
   const p = getCanvasPoint(evt);
   lastX = p.x;
@@ -383,6 +384,9 @@ function drawStroke(evt) {
 function endStroke(evt) {
   if (!drawing) return;
   evt.preventDefault();
+  if (canvas.releasePointerCapture) {
+    try { canvas.releasePointerCapture(evt.pointerId); } catch (_) {}
+  }
   drawing = false;
   lastX = null;
   lastY = null;
