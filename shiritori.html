@@ -964,7 +964,7 @@ body.panic #pageGame{
       <div class="set-bd">
         <div class="set-row">
           <div class="set-label">GAS ウェブアプリ URL</div>
-          <input class="set-input" id="gasUrlInput" type="url" placeholder="https://script.google.com/macros/s/AKfycbweQZW8liFBd2tZ2tKLI7jKJfwfAXB3kueqLn1hjSeskaZLUK2qMwRFBO1cONfokGV4/exec"/>
+          <div class="set-status ok" id="gasUrlInfo">組み込みURLを使用します</div>
         </div>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
           <button class="set-act" id="btnLoadWl">📥 ホワイトリストをよみこむ</button>
@@ -1009,6 +1009,8 @@ body.panic #pageGame{
 <div id="panicOverlay"></div>
 
 <script>
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbweQZW8liFBd2tZ2tKLI7jKJfwfAXB3kueqLn1hjSeskaZLUK2qMwRFBO1cONfokGV4/exec';
+
 /* ═══════════════════════════════════════════════════════════
    BUILT-IN WHITELIST
    CSV5列: reading,word,meaning,imagequery,level
@@ -1690,7 +1692,7 @@ const ST = {
   level: 1,
   whitelist: [],         // parsed rows
   wlLoaded: false,
-  gasUrl: '',
+  gasUrl: GAS_WEB_APP_URL,
   statsYouWords: 0,
   statsNewWords: 0,
   homoTimer: null,
@@ -1712,7 +1714,6 @@ function loadSettings(){
     if(s.level)      ST.level      = s.level;
     if(s.inputMode)  ST.inputMode  = s.inputMode;
     if(s.voice!=null)ST.voice      = s.voice;
-    if(s.gasUrl)     ST.gasUrl     = s.gasUrl;
     if(s.statsYouWords) ST.statsYouWords = s.statsYouWords;
     if(s.statsNewWords) ST.statsNewWords = s.statsNewWords;
   }catch{}
@@ -1720,7 +1721,6 @@ function loadSettings(){
 function saveSettings(){
   localStorage.setItem('shiri-settings', JSON.stringify({
     level: ST.level, inputMode: ST.inputMode, voice: ST.voice,
-    gasUrl: ST.gasUrl,
     statsYouWords: ST.statsYouWords,
     statsNewWords: ST.statsNewWords,
   }));
@@ -2428,7 +2428,6 @@ function showPage(name){
   if(name==='settings') syncSettingsUI();
 }
 function syncSettingsUI(){
-  document.getElementById('gasUrlInput').value=ST.gasUrl;
   document.getElementById('statYouWords').textContent=ST.statsYouWords;
   document.getElementById('statNewWords').textContent=ST.statsNewWords;
   // level btns
@@ -2438,6 +2437,9 @@ function syncSettingsUI(){
   document.querySelectorAll('.im-btn').forEach((b,i)=>b.classList.toggle('active',i===modeMap[ST.inputMode]));
   // voice toggle
   document.getElementById('togVoice').classList.toggle('on',ST.voice);
+  // fixed GAS URL
+  const gasInfo = document.getElementById('gasUrlInfo');
+  if(gasInfo) gasInfo.textContent = '組み込みURLを使用します';
   // wl status
   if(ST.wlLoaded) setWlStatus('ok',`✅ ${ST.whitelist.length}語よみこみ済`);
 }
@@ -2893,11 +2895,8 @@ document.getElementById('btnHint').addEventListener('click',()=>{
 document.getElementById('btnVoice').addEventListener('click',toggleVoice);
 document.getElementById('modelFiles').addEventListener('change',e=>loadModelFiles(e.target.files));
 document.getElementById('btnLoadWl').addEventListener('click',()=>{
-  ST.gasUrl=document.getElementById('gasUrlInput').value.trim();
-  saveSettings();loadWhitelistFromGAS();
-});
-document.getElementById('gasUrlInput').addEventListener('change',e=>{
-  ST.gasUrl=e.target.value.trim();saveSettings();
+  ST.gasUrl = GAS_WEB_APP_URL;
+  loadWhitelistFromGAS();
 });
 document.getElementById('btnClearStats').addEventListener('click',()=>{
   if(!confirm('きろくをリセットしますか？'))return;
@@ -2980,7 +2979,9 @@ window.addEventListener('resize', ()=>{
    INIT
 ═══════════════════════════════════════════════════════════ */
 loadSettings();
+ST.gasUrl = GAS_WEB_APP_URL;
 initBuiltinList();
+loadWhitelistFromGAS();
 buildKbBtn();
 resizeCV();
 drawGuides();
