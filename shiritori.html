@@ -2209,12 +2209,15 @@ function renderPreds(pred){
     el.innerHTML=`<span class="pred-ch">${ch}</span><span class="pred-pc">${(item.v*100).toFixed(0)}%</span>`;
     el.addEventListener('click',()=>{
       const f=document.getElementById('inputField');
-      f.value+=ch;syncInput(f.value);
+      f.value+=ch;
+      syncInput(f.value);
+      clearTimeout(predTimer);
+      clearCV(true);
     });
     row.appendChild(el);
   });
 }
-function schedPred(d=900){clearTimeout(predTimer);if(tfModel)predTimer=setTimeout(runPredict,d);}
+function schedPred(d=200){clearTimeout(predTimer);if(tfModel)predTimer=setTimeout(runPredict,d);}
 
 /* ═══════════════════════════════════════════════════════════
    CANVAS DRAWING
@@ -2252,7 +2255,7 @@ function moveStroke(ev){
   if(!drawing||!curStroke)return;ev.preventDefault();
   const p=ptEv(ev);curStroke.points.push(p);drawCtx.lineTo(p.x,p.y);drawCtx.stroke();
 }
-function endStroke(ev){if(!drawing)return;ev.preventDefault();drawing=false;curStroke=null;schedPred(900);}
+function endStroke(ev){if(!drawing)return;ev.preventDefault();drawing=false;curStroke=null;schedPred(200);}
 function clearCV(resetStrokes=true){
   drawCtx.save();drawCtx.setTransform(1,0,0,1,0,0);
   drawCtx.fillStyle='#fff';drawCtx.fillRect(0,0,cv.width,cv.height);
@@ -2280,7 +2283,7 @@ function undoStroke(){
     for(const p of st.points.slice(1))drawCtx.lineTo(p.x,p.y);
     drawCtx.stroke();
   }
-  schedPred(300);
+  schedPred(200);
 }
 function resizeCV(){
   const rect=cv.getBoundingClientRect();
