@@ -1471,11 +1471,19 @@ function unlockModeration(){
    CSV DATA LOADING
 ═══════════════════════════════════════════════════════════ */
 async function fetchTextResource(url, cacheKey){
-  const res = await fetch(url, { cache: 'no-store' });
-  if(!res.ok) throw new Error('HTTP ' + res.status);
-  const text = await res.text();
-  if(cacheKey) localStorage.setItem(cacheKey, text);
-  return text;
+  const controller = new AbortController();
+  const timer = setTimeout(()=>controller.abort(), 8000); // 8秒タイムアウト
+  try{
+    const res = await fetch(url, { cache: 'no-store', signal: controller.signal });
+    clearTimeout(timer);
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const text = await res.text();
+    if(cacheKey) localStorage.setItem(cacheKey, text);
+    return text;
+  }catch(e){
+    clearTimeout(timer);
+    throw e;
+  }
 }
 
 async function loadTextWithCache(url, cacheKey){
@@ -2736,7 +2744,8 @@ async function boot(){
   loadSettings();
   ST.gasUrl = GAS_WEB_APP_URL;
   initBuiltinList();
-  await loadWhitelists();
+  // ホワイトリスト読み込みを await しない（読み込み完了を待たずに UI を初期化する）
+  loadWhitelists().catch(()=>{});
   if(ST.pendingUnknownLogs.length) flushPendingUnknownLogs().catch(()=>{});
   if(ST.moderationLocked || (ST.moderationBlocks||0) >= 3) showModerationOverlay();
   buildKbBtn();
