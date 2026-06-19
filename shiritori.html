@@ -1499,6 +1499,13 @@ async function loadTextWithCache(url, cacheKey){
   }
 }
 
+function setWlStatus(kind, text){
+  const el = document.getElementById('wlStatus');
+  if(!el) return;
+  el.className = 'set-status' + (kind ? ` ${kind}` : '');
+  el.textContent = text;
+}
+
 async function loadWhitelists(){
   const [wlRes, blRes] = await Promise.allSettled([
     loadTextWithCache(WHITELIST_CSV_URL, WHITELIST_CACHE_KEY),
