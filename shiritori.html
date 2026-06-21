@@ -469,7 +469,17 @@ button,input,select{font:inherit;color:inherit}
   display:flex;align-items:center;justify-content:center;text-align:center;
   position:relative;
 }
-#detImgBox img{width:100%;height:100%;object-fit:cover;display:block}
+.img-frame{position:absolute;inset:0}
+.img-bg{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;filter:blur(18px) brightness(.55) saturate(1.2);
+  transform:scale(1.15);display:block;
+}
+.img-main{
+  position:relative;width:100%;height:100%;
+  object-fit:contain;display:block;
+  filter:drop-shadow(0 4px 14px rgba(0,0,0,.45));
+}
 .img-ph{font-size:46px;opacity:.4}
 .img-ld{font-size:12px;color:var(--muted);animation:blink .7s infinite}
 
@@ -533,7 +543,17 @@ button,input,select{font:inherit;color:inherit}
   display:flex;align-items:center;justify-content:center;text-align:center;
   position:relative;
 }
-#detImgBox img{width:100%;height:100%;object-fit:cover;display:block}
+.img-frame{position:absolute;inset:0}
+.img-bg{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;filter:blur(18px) brightness(.55) saturate(1.2);
+  transform:scale(1.15);display:block;
+}
+.img-main{
+  position:relative;width:100%;height:100%;
+  object-fit:contain;display:block;
+  filter:drop-shadow(0 4px 14px rgba(0,0,0,.45));
+}
 .img-ph{font-size:46px;opacity:.4}
 .img-ld{font-size:12px;color:var(--muted);animation:blink .7s infinite}
 
@@ -2390,6 +2410,21 @@ async function fetchImg(query, enQueryArg=null){
   return url;
 }
 
+/**
+ * detImgBox 用の表示HTMLを組み立てる。
+ * 縦長/正方形の画像でも全体が見えるよう、
+ * 同じ画像をぼかした背景の上に object-fit:contain で重ねる
+ * （いわゆる letterbox blur 表示）。
+ */
+function renderImgHtml(url){
+  if(!url) return '<div class="img-ph">🖼️</div>';
+  const u = escH(url);
+  return `<div class="img-frame">`
+       + `<img class="img-bg" src="${u}" alt="" aria-hidden="true"/>`
+       + `<img class="img-main" src="${u}" alt=""/>`
+       + `</div>`;
+}
+
 /* ═══════════════════════════════════════════════════════════
    DETAIL PANEL
 ═══════════════════════════════════════════════════════════ */
@@ -2410,9 +2445,7 @@ async function showDetail(word, row, isNew=false){
     `;
     const imgUrl = await fetchImg(word);
     if(token !== ST.detailToken) return;
-    imgBox.innerHTML = imgUrl
-      ? `<img src="${escH(imgUrl)}" alt=""/>`
-      : '<div class="img-ph">🖼️</div>';
+    imgBox.innerHTML = renderImgHtml(imgUrl);
     return;
   }
 
@@ -2426,8 +2459,7 @@ async function showDetail(word, row, isNew=false){
 
   ST.homoIdx=0;
   renderDetailSlide(words,meanings,imgs,0,isNew,row.reading);
-  if(imgs[0]) imgBox.innerHTML=`<img src="${escH(imgs[0])}" alt=""/>`;
-  else imgBox.innerHTML=`<div class="img-ph">🖼️</div>`;
+  imgBox.innerHTML = renderImgHtml(imgs[0]);
 
   if(words.length>1){
     ST.homoTimer=setInterval(()=>{
@@ -2440,8 +2472,7 @@ async function showDetail(word, row, isNew=false){
       ST.homoTimeout=setTimeout(()=>{
         if(token !== ST.detailToken) return;
         renderDetailSlide(words,meanings,imgs,idx,isNew,row.reading);
-        if(imgs[idx]) imgBox.innerHTML=`<img src="${escH(imgs[idx])}" alt=""/>`;
-        else imgBox.innerHTML=`<div class="img-ph">🖼️</div>`;
+        imgBox.innerHTML = renderImgHtml(imgs[idx]);
         dc.classList.remove('out');
       },450);
     },4200);
