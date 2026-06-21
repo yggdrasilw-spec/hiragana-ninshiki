@@ -1250,7 +1250,7 @@ body.panic #pageGame{
 <div id="panicOverlay"></div>
 
 <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxmkoCAv9syc_Qoxi-zjWn3YCZJj6AEoYCXcHTcV3xNfZ9VJJK-1dVlUbcaXlePcZE/exec';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxPHdTu9Vvvz9ht-6uEAcsewvDP-7uUKVhWVKAzGJ8ZCkrZ4EbR-D0wSDMZO_kC2HWH/exec';
 
 /* ═══════════════════════════════════════════════════════════
    DATA FILES
@@ -1264,6 +1264,10 @@ const BLACKLIST_CACHE_KEY = 'shiri-blacklist-txt';
 /* ═══════════════════════════════════════════════════════════
    CSV PARSER
    同じreadingが複数行 → 自動グループ化して meanings[] / words[] / imagequeries[] の配列に
+   imagequeries の各要素は { ja, en } オブジェクト。
+   CSV列: reading,word,meaning,imagequery,level,imagequery_en(任意)
+   imagequery_en を入れておくと、日本語側で画像が当たらないときに
+   英語版 Wikipedia / Commons 英語検索へフォールバックできる。
 ═══════════════════════════════════════════════════════════ */
 function parseCSV(csvText){
   // Step1: 生行をパース
@@ -1274,13 +1278,14 @@ function parseCSV(csvText){
     if(!trimmed || trimmed.startsWith('reading,')) continue;
     const parts = trimmed.split(',');
     if(parts.length < 3) continue;
-    const reading    = parts[0].trim();
-    const word       = parts[1].trim();
-    const meaning    = parts[2].trim();
-    const imagequery = (parts[3]||'').trim() || word;
-    const level      = parseInt(parts[4]||'1') || 1;
+    const reading      = parts[0].trim();
+    const word         = parts[1].trim();
+    const meaning       = parts[2].trim();
+    const imagequery    = (parts[3]||'').trim() || word;
+    const level         = parseInt(parts[4]||'1') || 1;
+    const imagequeryEn  = (parts[5]||'').trim() || null;
     if(!reading || !word) continue;
-    rawRows.push({ reading, word, meaning, imagequery, level });
+    rawRows.push({ reading, word, meaning, imagequery, level, imagequeryEn });
   }
 
   // Step2: 同じreadingをグループ化（同音異義語をまとめる）
@@ -1293,7 +1298,7 @@ function parseCSV(csvText){
     const grp = map.get(key);
     grp.words.push(r.word);
     grp.meanings.push(r.meaning);
-    grp.imagequeries.push(r.imagequery);
+    grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn });
     // levelは最小値（一番やさしい方）を採用
     grp.level = Math.min(grp.level, r.level);
   }
@@ -1585,10 +1590,11 @@ function safeParseAIResult(raw, originalWord){
       meaning: parsed.desc  || 'じつざいすることばです。',
       level:   Number(parsed.level||1),
       word:    parsed.word  || originalWord,
+      imagequery_en: String(parsed.imagequery_en || '').trim(),
     };
   }catch{
     // JSONパース失敗 → 安全のため合格扱い（GASのフォールバックと同思想）
-    return { ok:true, safe:true, meaning:'AIのせんせいもしっているすてきなことばです！', level:1, word:originalWord };
+    return { ok:true, safe:true, meaning:'AIのせんせいもしっているすてきなことばです！', level:1, word:originalWord, imagequery_en:'' };
   }
 }
 
@@ -1650,11 +1656,12 @@ function fetchWithTimeout(url, options, ms){
     .finally(()=>clearTimeout(timer));
 }
 
-function queueUnknownWord(word, meaning){
+function queueUnknownWord(word, meaning, imagequeryEn){
   const entry = {
     word,
     reading: norm(word),
     meaning: meaning || '',
+    imagequeryEn: imagequeryEn || '',
     ts: Date.now(),
   };
   ST.pendingUnknownLogs.push(entry);
@@ -1673,7 +1680,8 @@ async function flushPendingUnknownLogs(){
           action:'learn',
           word: item.word,
           reading: item.reading,
-          meaning: item.meaning
+          meaning: item.meaning,
+          imagequery_en: item.imagequeryEn || ''
         })
       }, 8000);
     }catch(e){
@@ -1685,8 +1693,8 @@ async function flushPendingUnknownLogs(){
   saveSettings();
 }
 
-async function learnWord(word, meaning){
-  queueUnknownWord(word, meaning);
+async function learnWord(word, meaning, imagequeryEn){
+  queueUnknownWord(word, meaning, imagequeryEn);
   await flushPendingUnknownLogs();
 }
 
@@ -2271,16 +2279,115 @@ function toggleVoice(){
 
 /* ═══════════════════════════════════════════════════════════
    WIKIMEDIA IMAGE
+   多段フォールバックで「それっぽい画像」の精度を上げる。
+   優先順位:
+     1. ja.wikipedia の記事代表画像 (prop=pageimages)
+        → 編集者がその概念のために選んだ画像なので、
+          全文検索よりノイズが圧倒的に少ない。曖昧さ回避ページは除外。
+     2. Commons の intitle: 検索（ファイル名一致）
+        → 「カードに描かれた検索語そのもの」に近いタイトルを優先。
+     3. Commons の通常全文検索（日本語語のまま）
+        → 元の挙動と同等の最終フォールバック。
+     4. （英語語が渡された場合）en.wikipedia → Commons の順で再試行
+   結果はメモリキャッシュして同一プレイ中の重複フェッチを防ぐ。
 ═══════════════════════════════════════════════════════════ */
-async function fetchImg(query){
-  const url=`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url&format=json&origin=*`;
+const IMG_CACHE = new Map(); // query(+lang) → url|null
+
+function isDisambigTitle(title){
+  if(!title) return false;
+  return /\(曖昧さ回避\)|\(disambiguation\)/.test(title);
+}
+
+async function fetchJson(url){
   try{
-    const res=await fetch(url);if(!res.ok)return null;
-    const data=await res.json();
-    const pages=data?.query?.pages;if(!pages)return null;
-    const p=Object.values(pages)[0];
-    return p?.imageinfo?.[0]?.thumburl||p?.imageinfo?.[0]?.url||null;
-  }catch{return null;}
+    const res = await fetch(url);
+    if(!res.ok) return null;
+    return await res.json();
+  }catch{ return null; }
+}
+
+// 1) Wikipedia記事の代表画像（リダイレクト解決込み）
+async function fetchPageImage(query, lang='ja'){
+  const url=`https://${lang}.wikipedia.org/w/api.php?action=query&prop=pageimages|pageprops&piprop=original&pithumbsize=600&redirects=1&titles=${encodeURIComponent(query)}&format=json&origin=*`;
+  const data = await fetchJson(url);
+  const pages = data?.query?.pages; if(!pages) return null;
+  const p = Object.values(pages)[0];
+  if(!p || p.missing!==undefined) return null;
+  if(isDisambigTitle(p.title)) return null;
+  if(p.pageprops && 'disambiguation' in p.pageprops) return null;
+  return p?.original?.source || null;
+}
+
+// 1b) ピンポイントのタイトルが当たらない場合、Wikipedia内検索で記事を見つけてから代表画像を取る
+async function fetchPageImageBySearch(query, lang='ja'){
+  const url=`https://${lang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=1&gsrnamespace=0&prop=pageimages|pageprops&piprop=original&pithumbsize=600&format=json&origin=*`;
+  const data = await fetchJson(url);
+  const pages = data?.query?.pages; if(!pages) return null;
+  const p = Object.values(pages)[0];
+  if(!p) return null;
+  if(isDisambigTitle(p.title)) return null;
+  if(p.pageprops && 'disambiguation' in p.pageprops) return null;
+  return p?.original?.source || null;
+}
+
+// 2) Commons intitle 検索（ファイル名一致優先・曖昧さ回避ファイル名を除外）
+async function fetchCommonsByTitle(query){
+  const q = `intitle:"${query}"`;
+  const url=`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(q)}&gsrnamespace=6&gsrlimit=3&prop=imageinfo&iiprop=url&format=json&origin=*`;
+  const data = await fetchJson(url);
+  const pages = data?.query?.pages; if(!pages) return null;
+  for(const p of Object.values(pages)){
+    const u = p?.imageinfo?.[0]?.thumburl || p?.imageinfo?.[0]?.url;
+    if(u) return u;
+  }
+  return null;
+}
+
+// 3) Commons 通常全文検索（元の挙動と同等。最終フォールバック）
+async function fetchCommonsByFulltext(query){
+  const url=`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url&format=json&origin=*`;
+  const data = await fetchJson(url);
+  const pages = data?.query?.pages; if(!pages) return null;
+  const p = Object.values(pages)[0];
+  return p?.imageinfo?.[0]?.thumburl || p?.imageinfo?.[0]?.url || null;
+}
+
+/**
+ * メインの画像取得関数。
+ * query: 検索語の文字列、または { ja, en } オブジェクト。
+ * enQueryArg: query が文字列のときに任意で渡す英語語（後方互換用）。
+ */
+async function fetchImg(query, enQueryArg=null){
+  let jaQuery, enQuery;
+  if(query && typeof query === 'object'){
+    jaQuery = query.ja || null;
+    enQuery = query.en || null;
+  }else{
+    jaQuery = query;
+    enQuery = enQueryArg;
+  }
+  if(!jaQuery) return null;
+
+  const cacheKey = jaQuery + '|' + (enQuery||'');
+  if(IMG_CACHE.has(cacheKey)) return IMG_CACHE.get(cacheKey);
+
+  let url = null;
+  try{
+    url = await fetchPageImage(jaQuery, 'ja')
+       || await fetchPageImageBySearch(jaQuery, 'ja')
+       || await fetchCommonsByTitle(jaQuery)
+       || await fetchCommonsByFulltext(jaQuery);
+
+    if(!url && enQuery){
+      url = await fetchPageImage(enQuery, 'en')
+         || await fetchPageImageBySearch(enQuery, 'en')
+         || await fetchCommonsByTitle(enQuery)
+         || await fetchCommonsByFulltext(enQuery);
+    }
+  }catch{ url = null; }
+
+  IMG_CACHE.set(cacheKey, url);
+  return url;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2573,7 +2680,7 @@ async function submitWord(){
 
     const isEmergency = !!result._fallback;
     if(!isEmergency){
-      learnWord(n, result.meaning||'').catch(()=>{});
+      learnWord(n, result.meaning||'', result.imagequery_en||'').catch(()=>{});
       ST.statsNewWords++;
     }
     isNew = true;
@@ -2583,7 +2690,7 @@ async function submitWord(){
       reading:n,
       words:[ result.word || n ],
       meanings:[ result.meaning || 'じつざいすることばです。' ],
-      imagequeries:[ iqWord ],
+      imagequeries:[ { ja:iqWord, en:result.imagequery_en || null } ],
       level: result.level || ST.level
     });
     saveSettings();
