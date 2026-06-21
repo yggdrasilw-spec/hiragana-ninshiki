@@ -1270,7 +1270,7 @@ body.panic #pageGame{
 <div id="panicOverlay"></div>
 
 <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxPk-BlNUKREaPySKF4Yi8BbuCpfz_-YbNy0qSFC7Lgtux9Hal5KGJmUuMq5BZr8FJR/exec';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyPyDu0YzAAD2vA9HG7I0C3MbIDP71lBIQ4xVxBk-ngiK02LXaXorSxa-UkWFy2Ne1g/exec';
 
 /* ═══════════════════════════════════════════════════════════
    DATA FILES
@@ -1676,12 +1676,13 @@ function fetchWithTimeout(url, options, ms){
     .finally(()=>clearTimeout(timer));
 }
 
-function queueUnknownWord(reading, word, meaning, imagequeryEn){
+function queueUnknownWord(reading, word, meaning, imagequeryEn, level){
   const entry = {
     reading,
     word: word || reading,
     meaning: meaning || '',
     imagequeryEn: imagequeryEn || '',
+    level: level || 1,
     ts: Date.now(),
   };
   ST.pendingUnknownLogs.push(entry);
@@ -1701,7 +1702,8 @@ async function flushPendingUnknownLogs(){
           word: item.word,
           reading: item.reading,
           meaning: item.meaning,
-          imagequery_en: item.imagequeryEn || ''
+          imagequery_en: item.imagequeryEn || '',
+          level: item.level || 1
         })
       }, 8000);
     }catch(e){
@@ -1713,8 +1715,8 @@ async function flushPendingUnknownLogs(){
   saveSettings();
 }
 
-async function learnWord(reading, word, meaning, imagequeryEn){
-  queueUnknownWord(reading, word, meaning, imagequeryEn);
+async function learnWord(reading, word, meaning, imagequeryEn, level){
+  queueUnknownWord(reading, word, meaning, imagequeryEn, level);
   await flushPendingUnknownLogs();
 }
 
@@ -2712,7 +2714,7 @@ async function submitWord(){
     const isEmergency = !!result._fallback;
     const iqWord = (result.word && result.word !== n) ? result.word : n;
     if(!isEmergency){
-      learnWord(n, result.word || n, result.meaning||'', result.imagequery_en||'').catch(()=>{});
+      learnWord(n, result.word || n, result.meaning||'', result.imagequery_en||'', result.level||ST.level).catch(()=>{});
       ST.statsNewWords++;
     }
     isNew = true;
