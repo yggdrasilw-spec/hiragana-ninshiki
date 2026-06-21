@@ -1250,7 +1250,7 @@ body.panic #pageGame{
 <div id="panicOverlay"></div>
 
 <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwoIx_zIGtRoOSQdrY7tQ_7AkVe4reZ54hOFWqk-OGHnpPAEydtYgyCAt98CUd2y8jM/exec'; // ここを自分のGAS Web App URLに差し替え
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxALpGRNGI3Zp3mFNwAsy1A5f08KN5QKvTnkywVbNuixLP8IFXh3_Rj536LlfQEvN9O/exec';
 
 /* ═══════════════════════════════════════════════════════════
    DATA FILES
@@ -1500,64 +1500,27 @@ async function loadTextWithCache(url, cacheKey){
 }
 
 async function loadWhitelists(){
-  // まずGASから whitelist CSV を取得してみる
-  if(ST.gasUrl){
-    try{
-      const url = new URL(ST.gasUrl);
-      url.searchParams.set('action', 'whitelist');
-      const res = await fetchWithTimeout(url.toString(), { method:'GET', cache:'no-store' }, 10000);
-      if(res.ok){
-        const csvText = await res.text();
-        ST.whitelist = parseCSV(csvText);
-        ST.wlLoaded = true;
-      }else{
-        throw new Error('HTTP ' + res.status);
-      }
-    }catch(err){
-      console.warn('whitelist GAS load failed, fallback to local files:', err?.message || err);
-      const [wlRes, blRes] = await Promise.allSettled([
-        loadTextWithCache(WHITELIST_CSV_URL, WHITELIST_CACHE_KEY),
-        loadTextWithCache(BLACKLIST_TXT_URL, BLACKLIST_CACHE_KEY),
-      ]);
+  const [wlRes, blRes] = await Promise.allSettled([
+    loadTextWithCache(WHITELIST_CSV_URL, WHITELIST_CACHE_KEY),
+    loadTextWithCache(BLACKLIST_TXT_URL, BLACKLIST_CACHE_KEY),
+  ]);
 
-      if(wlRes.status === 'fulfilled'){
-        ST.whitelist = parseCSV(wlRes.value.text);
-        ST.wlLoaded = true;
-      }else{
-        ST.whitelist = [];
-        ST.wlLoaded = false;
-        console.error('whitelist load failed', wlRes.reason);
-      }
-
-      if(blRes.status === 'fulfilled'){
-        ST.blacklist = parseBlacklistTxt(blRes.value.text);
-        ST.blLoaded = true;
-      }else{
-        ST.blacklist = [];
-        ST.blLoaded = false;
-        console.error('blacklist load failed', blRes.reason);
-      }
-
-      const wlMsg = ST.wlLoaded ? `✅ ホワイトリスト ${ST.whitelist.length}語` : 'ホワイトリストの読み込みに失敗';
-      const blMsg = ST.blLoaded ? `✅ ブラックリスト ${ST.blacklist.length}件` : 'ブラックリストの読み込みに失敗';
-      setWlStatus(ST.wlLoaded ? 'ok' : 'err', `${wlMsg} / ${blMsg}`);
-      renderCandidates();
-      return;
-    }
-  } else {
+  if(wlRes.status === 'fulfilled'){
+    ST.whitelist = parseCSV(wlRes.value.text);
+    ST.wlLoaded = true;
+  }else{
     ST.whitelist = [];
     ST.wlLoaded = false;
+    console.error('whitelist load failed', wlRes.reason);
   }
 
-  // blacklist はローカルファイルを利用（従来通り）
-  try{
-    const blText = await loadTextWithCache(BLACKLIST_TXT_URL, BLACKLIST_CACHE_KEY);
-    ST.blacklist = parseBlacklistTxt(blText.text);
+  if(blRes.status === 'fulfilled'){
+    ST.blacklist = parseBlacklistTxt(blRes.value.text);
     ST.blLoaded = true;
-  }catch(err){
+  }else{
     ST.blacklist = [];
     ST.blLoaded = false;
-    console.error('blacklist load failed', err);
+    console.error('blacklist load failed', blRes.reason);
   }
 
   const wlMsg = ST.wlLoaded ? `✅ ホワイトリスト ${ST.whitelist.length}語` : 'ホワイトリストの読み込みに失敗';
@@ -1641,12 +1604,13 @@ async function validateWithAI(word){
   try{
     const res = await fetchWithTimeout(ST.gasUrl, {
       method:'POST',
-      headers:{'Content-Type':'text/plain;charset=UTF-8'},
+      headers:{'Content-Type':'text/plain;charset=UTF-8'}, // ★CORSプリフライト回避のため敢えてtext/plain
       body: JSON.stringify({...payload, api:'gemini'})
     }, 12000);
     if(res.ok){
-      const raw = await res.text();
-      return safeParseAIResult(raw, word);
+      const data = await res.json();
+      // GAS側がgroq_fallbackフラグを返した場合はそのまま採用
+      return safeParseAIResult(JSON.stringify(data), word);
     }
     throw new Error('HTTP '+res.status);
   }catch(e1){
@@ -1656,12 +1620,12 @@ async function validateWithAI(word){
     try{
       const res2 = await fetchWithTimeout(ST.gasUrl, {
         method:'POST',
-        headers:{'Content-Type':'text/plain;charset=UTF-8'},
+        headers:{'Content-Type':'text/plain;charset=UTF-8'}, // ★CORSプリフライト回避のため敢えてtext/plain
         body: JSON.stringify({...payload, api:'groq'})
       }, 12000);
       if(res2.ok){
-        const raw2 = await res2.text();
-        return safeParseAIResult(raw2, word);
+        const data2 = await res2.json();
+        return safeParseAIResult(JSON.stringify(data2), word);
       }
       throw new Error('HTTP '+res2.status);
     }catch(e2){
@@ -1702,17 +1666,16 @@ async function flushPendingUnknownLogs(){
   const remaining = [];
   for(const item of ST.pendingUnknownLogs){
     try{
-      const res = await fetchWithTimeout(ST.gasUrl,{
+      await fetchWithTimeout(ST.gasUrl,{
         method:'POST',
-        headers:{'Content-Type':'text/plain;charset=UTF-8'},
-        body: JSON.stringify({
+        headers:{'Content-Type':'text/plain;charset=UTF-8'}, // ★CORSプリフライト回避のため敢えてtext/plain
+        body:JSON.stringify({
           action:'learn',
           word: item.word,
           reading: item.reading,
           meaning: item.meaning
         })
       }, 8000);
-      if(!res.ok) throw new Error('HTTP ' + res.status);
     }catch(e){
       console.warn('[unknown log失敗]', e.message);
       remaining.push(item);
