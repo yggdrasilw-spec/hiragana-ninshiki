@@ -1250,7 +1250,7 @@ body.panic #pageGame{
 <div id="panicOverlay"></div>
 
 <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxPHdTu9Vvvz9ht-6uEAcsewvDP-7uUKVhWVKAzGJ8ZCkrZ4EbR-D0wSDMZO_kC2HWH/exec';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxmkoCAv9syc_Qoxi-zjWn3YCZJj6AEoYCXcHTcV3xNfZ9VJJK-1dVlUbcaXlePcZE/exec';
 
 /* ═══════════════════════════════════════════════════════════
    DATA FILES
@@ -1656,10 +1656,10 @@ function fetchWithTimeout(url, options, ms){
     .finally(()=>clearTimeout(timer));
 }
 
-function queueUnknownWord(word, meaning, imagequeryEn){
+function queueUnknownWord(reading, word, meaning, imagequeryEn){
   const entry = {
-    word,
-    reading: norm(word),
+    reading,
+    word: word || reading,
     meaning: meaning || '',
     imagequeryEn: imagequeryEn || '',
     ts: Date.now(),
@@ -1693,8 +1693,8 @@ async function flushPendingUnknownLogs(){
   saveSettings();
 }
 
-async function learnWord(word, meaning, imagequeryEn){
-  queueUnknownWord(word, meaning, imagequeryEn);
+async function learnWord(reading, word, meaning, imagequeryEn){
+  queueUnknownWord(reading, word, meaning, imagequeryEn);
   await flushPendingUnknownLogs();
 }
 
@@ -2679,13 +2679,13 @@ async function submitWord(){
     }
 
     const isEmergency = !!result._fallback;
+    const iqWord = (result.word && result.word !== n) ? result.word : n;
     if(!isEmergency){
-      learnWord(n, result.meaning||'', result.imagequery_en||'').catch(()=>{});
+      learnWord(n, result.word || n, result.meaning||'', result.imagequery_en||'').catch(()=>{});
       ST.statsNewWords++;
     }
     isNew = true;
 
-    const iqWord = (result.word && result.word !== n) ? result.word : n;
     ST.whitelist.push({
       reading:n,
       words:[ result.word || n ],
