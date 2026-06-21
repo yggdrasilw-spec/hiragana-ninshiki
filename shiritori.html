@@ -1250,7 +1250,7 @@ body.panic #pageGame{
 <div id="panicOverlay"></div>
 
 <script>
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxALpGRNGI3Zp3mFNwAsy1A5f08KN5QKvTnkywVbNuixLP8IFXh3_Rj536LlfQEvN9O/exec';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxmkoCAv9syc_Qoxi-zjWn3YCZJj6AEoYCXcHTcV3xNfZ9VJJK-1dVlUbcaXlePcZE/exec';
 
 /* ═══════════════════════════════════════════════════════════
    DATA FILES
@@ -2508,6 +2508,13 @@ async function commitWord(speaker, readingInput, row, isNew=false){
 ═══════════════════════════════════════════════════════════ */
 async function submitWord(){
   if(ST.cpuBusy||ST.demoRunning||ST.gameOver||ST.moderationLocked)return;
+
+  // ★ ここで即ロック（awaitを挟む前の同期処理）。
+  //   AI判定中・確定アニメ中・CPUの番の間、Enter連打やOK連打による
+  //   二重送信を防ぐ。各早期returnの直前で必ず解除すること。
+  ST.cpuBusy = true;
+  document.getElementById('btnOk').disabled = true;
+
   const n=norm(ST.currentInput);
 
   const hit = getBlacklistHit(n);
@@ -2518,22 +2525,26 @@ async function submitWord(){
     if(ST.moderationBlocks >= 3){
       setStatus('error','ゲームがつかえなくなりました。先生に解除してもらいましょう。','');
       lockGameNow();
+      ST.cpuBusy = false;
+      updateWordBox(ST.currentInput);
       return;
     }
     const msg = moderationText(ST.level, remaining);
     setStatus('error', msg, '');
     shakeInput();
+    ST.cpuBusy = false;
+    updateWordBox(ST.currentInput);
     return;
   }
 
-  if(!n){setStatus('error','ことばをにゅうりょくしてください。','');shakeInput();return;}
-  if(/[^ぁ-ゖー]/.test(n)){setStatus('error','ひらがなだけつかえます。','');shakeInput();return;}
-  if(ST.used.has(n)){setStatus('error','おなじことばはもうつかえません。','');shakeInput();return;}
-  if(ST.tail&&firstChar(n)!==ST.tail){setStatus('error',`「${ST.tail}」ではじまることばにしてください。`,'');shakeInput();return;}
+  if(!n){setStatus('error','ことばをにゅうりょくしてください。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
+  if(/[^ぁ-ゖー]/.test(n)){setStatus('error','ひらがなだけつかえます。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
+  if(ST.used.has(n)){setStatus('error','おなじことばはもうつかえません。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
+  if(ST.tail&&firstChar(n)!==ST.tail){setStatus('error',`「${ST.tail}」ではじまることばにしてください。`,'');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
 
   const row=lookupRow(n);
   if(isEndWord(n)){
-    await showEndGameByN(n, row);
+    await showEndGameByN(n, row); // 内部で ST.gameOver=true / ST.cpuBusy=false にする
     setCurrentInput('');
     const kbdInp=document.getElementById('kbdInput'); if(kbdInp) kbdInp.value='';
     clearCV(true);renderPreds(null);
@@ -2554,7 +2565,10 @@ async function submitWord(){
 
     if(!result.ok || !result.safe){
       setStatus('error','このことばはつかえません。','ちがうことばをためしてね。');
-      shakeInput();return;
+      shakeInput();
+      ST.cpuBusy = false;
+      updateWordBox(ST.currentInput);
+      return;
     }
 
     const isEmergency = !!result._fallback;
@@ -2581,15 +2595,24 @@ async function submitWord(){
   wb.classList.remove('typing','valid','nok');
   wb.classList.add('valid');
 
-  suckIn(finalRow?finalRow.words[0]:n, async ()=>{
-    await commitWord('あなた', n, finalRow, isNew);
-    setCurrentInput('');
-    const kbdInp=document.getElementById('kbdInput'); if(kbdInp) kbdInp.value='';
-    clearCV(true);renderPreds(null);
-    wb.classList.remove('valid');
-    ST.cpuBusy=true;
-    setTimeout(cpuTurn, getCpuDelay(finalRow, isNew));
+  // ★ suckInのアニメ完了を確実に待つ（以前はここがロック漏れの一因だった：
+  //   suckIn自体はコールバック方式で即座に関数を抜けてしまうため、
+  //   Promiseでラップして実際にcommitWordが終わるまでawaitする）
+  await new Promise(resolve=>{
+    suckIn(finalRow?finalRow.words[0]:n, async ()=>{
+      await commitWord('あなた', n, finalRow, isNew);
+      setCurrentInput('');
+      const kbdInp=document.getElementById('kbdInput'); if(kbdInp) kbdInp.value='';
+      clearCV(true);renderPreds(null);
+      wb.classList.remove('valid');
+      resolve();
+    });
   });
+
+  // ★ ロックを維持したままCPUの番を待つ（setTimeoutで投げっぱなしにしない）。
+  //   cpuTurn() 側が処理の最後で ST.cpuBusy=false にする。
+  await new Promise(r=>setTimeout(r, getCpuDelay(finalRow, isNew)));
+  await cpuTurn();
 }
 
 function shakeInput(){
@@ -2616,14 +2639,15 @@ async function cpuTurn(){
   setStatus('thinking','CPUがかんがえています…','もうすこしまってください。');
   await new Promise(r=>setTimeout(r,600));
   const pick=cpuChoose();
-  ST.cpuBusy=false;
   if(!pick){
+    ST.cpuBusy=false;
     setStatus('win','あなたのかち！ CPUはことばがなくなりました！','もう一回あそぼう！');
     ST.score.you++;
     document.getElementById('scoreYou').textContent=ST.score.you;
     speak('あなたのかちです！');return;
   }
   await commitWord('CPU',pick.reading,pick,false);
+  ST.cpuBusy=false; // ★ CPUの一手の表示・読み上げが完全に終わってから解除
 }
 
 /* ═══════════════════════════════════════════════════════════
