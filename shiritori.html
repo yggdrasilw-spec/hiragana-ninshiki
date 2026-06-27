@@ -271,6 +271,7 @@ button,input,select{font:inherit;color:inherit}
   font-size:11px;font-weight:800;cursor:pointer;transition:.13s;
 }
 .sm-btn:hover{border-color:var(--you);color:var(--text)}
+.sm-btn.mod-on{background:rgba(255,212,96,.16);border-color:rgba(255,212,96,.7);color:#ffe08a}
 .lbl-file{
   display:flex;align-items:center;gap:3px;
   font-size:11px;font-weight:800;
@@ -710,6 +711,60 @@ button,input,select{font:inherit;color:inherit}
 .stat-lbl{font-size:11px;color:var(--muted);font-weight:800;margin-top:2px}
 
 /* ═══════════════════════════════════════
+   TITLE SCREEN
+═══════════════════════════════════════ */
+#titleScreen{
+  position:fixed;inset:0;z-index:99999;
+  background:#000;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+}
+#titleScreen.fade-out{
+  animation:titleFadeOut .7s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes titleFadeOut{
+  0%  {opacity:1;transform:scale(1)}
+  60% {opacity:.4;transform:scale(1.03)}
+  100%{opacity:0;transform:scale(1.06);pointer-events:none}
+}
+#titleImg{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  opacity:0;
+  transition:opacity .55s ease;
+}
+#titleImg.loaded{opacity:1}
+#titleTap{
+  position:absolute;bottom:9%;
+  font-size:clamp(14px,3.5vw,22px);
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  letter-spacing:.12em;
+  text-shadow:0 2px 12px rgba(0,0,0,.7);
+  animation:tapPulse 1.6s ease-in-out infinite;
+  opacity:0;
+  transition:opacity .5s ease .4s;
+}
+#titleTap.show{opacity:1}
+@keyframes tapPulse{
+  0%,100%{opacity:.7;transform:scale(1)}
+  50%{opacity:1;transform:scale(1.06)}
+}
+#titleLoading{
+  position:absolute;bottom:5%;
+  font-size:11px;font-weight:800;
+  color:rgba(255,255,255,.45);
+  letter-spacing:.06em;
+  transition:opacity .4s ease;
+}
+#titleLoading.hide{opacity:0}
+
+/* ═══════════════════════════════════════
    FLY EL (suck-in)
 ═══════════════════════════════════════ */
 #flyEl{
@@ -1023,6 +1078,13 @@ body.panic #pageGame{
 </head>
 <body>
 
+<!-- TITLE SCREEN -->
+<div id="titleScreen">
+  <img id="titleImg" src="./shiritori_titile.png" alt="しりとり" draggable="false"/>
+  <div id="titleTap">タップしてスタート ▶</div>
+  <div id="titleLoading">よみこみちゅう…</div>
+</div>
+
 <!-- TOPBAR -->
 <div id="topbar">
   <div class="tb-logo">🐾 しりとり</div>
@@ -1097,6 +1159,13 @@ body.panic #pageGame{
           </div>
           <canvas id="drawCanvas" width="900" height="240"></canvas>
           <div id="predRow"><div class="pred-none">ことばをかいたらにんしきします</div></div>
+          <!-- ★ 手書きモード補助ボタン: ー・小文字・濁点・半濁点 -->
+          <div id="canvasAux" style="display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0;margin-top:2px">
+            <button class="sm-btn" id="auxLong"   onclick="appendCanvasAux('ー')">ー のばし棒</button>
+            <button class="sm-btn" id="auxSmall"  onclick="toggleCanvasSmall()">こもじ</button>
+            <button class="sm-btn" id="auxDak"    onclick="appendCanvasDak()">゛ だくてん</button>
+            <button class="sm-btn" id="auxHdak"   onclick="appendCanvasHdak()">゜ はんだくてん</button>
+          </div>
         </div>
 
         <!-- BUTTON (五十音) MODE -->
@@ -2031,7 +2100,10 @@ function renderPreds(pred){
     el.className='pred-chip pop'+(rank===0?' top':'');
     el.innerHTML=`<span class="pred-ch">${ch}</span><span class="pred-pc">${(item.v*100).toFixed(0)}%</span>`;
     el.addEventListener('click',()=>{
-      setCurrentInput(ST.currentInput + ch);
+      const ins = canvasSmallNext ? (SMALL_INPUT_MAP[ch] || ch) : ch;
+      setCurrentInput(ST.currentInput + ins);
+      canvasSmallNext = false;
+      updateCanvasSmallUI();
       clearTimeout(predTimer);
       clearCV(true);
     });
@@ -2039,6 +2111,45 @@ function renderPreds(pred){
   });
 }
 function schedPred(d=200){clearTimeout(predTimer);if(tfModel)predTimer=setTimeout(runPredict,d);}
+
+/* ═══════════════════════════════════════════════════════════
+   手書きモード補助ボタン
+═══════════════════════════════════════════════════════════ */
+let canvasSmallNext = false;
+function updateCanvasSmallUI(){
+  const btn = document.getElementById('auxSmall');
+  if(btn) btn.classList.toggle('mod-on', canvasSmallNext);
+}
+function appendCanvasAux(ch){
+  setCurrentInput(ST.currentInput + ch);
+  canvasSmallNext = false;
+  updateCanvasSmallUI();
+  clearCV(true);
+}
+function toggleCanvasSmall(){
+  // まず最後の文字を小文字化できるか試みる
+  if(!canvasSmallNext){
+    const converted = convertLastToSmall(ST.currentInput);
+    if(converted !== ST.currentInput){
+      setCurrentInput(converted);
+      return;
+    }
+  }
+  canvasSmallNext = !canvasSmallNext;
+  updateCanvasSmallUI();
+}
+function appendCanvasDak(){
+  const l = ST.currentInput.slice(-1);
+  const m = DK_MAP[l];
+  if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
+  canvasSmallNext = false; updateCanvasSmallUI();
+}
+function appendCanvasHdak(){
+  const l = ST.currentInput.slice(-1);
+  const m = HK_MAP[l];
+  if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
+  canvasSmallNext = false; updateCanvasSmallUI();
+}
 
 /* ═══════════════════════════════════════════════════════════
    CANVAS DRAWING
@@ -2119,11 +2230,12 @@ function resizeCV(){
    五十音 KEYBOARD
 ═══════════════════════════════════════════════════════════ */
 const KB_ROWS=[
-  ['あ','い','う','え','お','か','き','く','け','こ'],
-  ['さ','し','す','せ','そ','た','ち','つ','て','と'],
-  ['な','に','ぬ','ね','の','は','ひ','ふ','へ','ほ'],
-  ['ま','み','む','め','も','や','ゆ','よ','ら','り'],
-  ['る','れ','ろ','わ','を','ん','゛','゜','こもじ','⌫'],
+  ['あ','い','う','え','お',  'か','き','く','け','こ'],
+  ['さ','し','す','せ','そ',  'た','ち','つ','て','と'],
+  ['な','に','ぬ','ね','の',  'は','ひ','ふ','へ','ほ'],
+  ['ま','み','む','め','も',  'や','ゆ','よ'],
+  ['ら','り','る','れ','ろ',  'わ','を'],
+  ['ん','ー','゛','゜','こもじ','⌫'],
 ];
 const DK_MAP={か:'が',き:'ぎ',く:'ぐ',け:'げ',こ:'ご',さ:'ざ',し:'じ',す:'ず',せ:'ぜ',そ:'ぞ',た:'だ',ち:'ぢ',つ:'づ',て:'で',と:'ど',は:'ば',ひ:'び',ふ:'ぶ',へ:'べ',ほ:'ぼ'};
 const HK_MAP={は:'ぱ',ひ:'ぴ',ふ:'ぷ',へ:'ぺ',ほ:'ぽ'};
@@ -2141,26 +2253,26 @@ function convertLastToSmall(val){
 function buildKbBtn(){
   const wrap=document.getElementById('modeBtn');
   wrap.innerHTML='';
-  KB_ROWS.forEach(row=>{
+  KB_ROWS.forEach((row, rowIdx)=>{
     const div=document.createElement('div');div.className='kb-row';
-    const left=row.slice(0,5);
-    const right=row.slice(5);
-    const groups=[left,right].filter(g=>g.length);
+
+    // 最終行（ん・ー・゛・゜・こもじ・⌫）は分割しない
+    const isLastRow = rowIdx === KB_ROWS.length - 1;
+    const groups = isLastRow ? [row] : [row.slice(0,5), row.slice(5)].filter(g=>g.length);
+
     groups.forEach((grp,gi)=>{
       const group=document.createElement('div');
       group.className='kb-group';
       group.style.gridTemplateColumns=`repeat(${grp.length}, minmax(0, 1fr))`;
       grp.forEach(ch=>{
         const btn=document.createElement('button');
-        btn.className='kb-key'+(ch==='゛'||ch==='゜'?' sp':ch==='こもじ'||ch==='⌫'?' sp':'');
+        btn.className='kb-key'+(ch==='゛'||ch==='゜'||ch==='ー'?' sp':ch==='こもじ'||ch==='⌫'?' sp':'');
         if(ch==='こもじ'){
           btn.dataset.smallmod='1';
           btn.textContent='こもじ';
         }else{
           btn.textContent=ch;
         }
-        if(ch==='こもじ') btn.style.maxWidth='74px';
-        if(ch==='⌫') btn.style.maxWidth='58px';
         btn.addEventListener('click',()=>{
           if(ch==='゛'){
             const l=ST.currentInput.slice(-1);const m=DK_MAP[l];if(m)setCurrentInput(ST.currentInput.slice(0,-1)+m);
@@ -2168,6 +2280,10 @@ function buildKbBtn(){
             return;
           }else if(ch==='゜'){
             const l=ST.currentInput.slice(-1);const m=HK_MAP[l];if(m)setCurrentInput(ST.currentInput.slice(0,-1)+m);
+            kbSmallNext=false;updateKbSmallModeUI();
+            return;
+          }else if(ch==='ー'){
+            setCurrentInput(ST.currentInput + 'ー');
             kbSmallNext=false;updateKbSmallModeUI();
             return;
           }else if(ch==='こもじ'){
@@ -2439,15 +2555,19 @@ async function showDetail(word, row, isNew=false){
   imgBox.innerHTML='<div class="img-ld">🔎 さがしています…</div>';
 
   if(!row){
-    // rowがなくても word（漢字 or 読み）でWikimedia画像を検索する
+    // ★ テキストを画像取得より先に即座に描画する（通信遅延でテキストが消える問題を防ぐ）
     document.getElementById('detContent').innerHTML=`
       <div class="det-word">${escH(word)}</div>
       <div class="det-text">あたらしいことばです！</div>
       ${isNew?'<div class="det-new">✨ アプリがこのことばをおぼえたよ！</div>':''}
     `;
-    const imgUrl = await fetchImg(word);
-    if(token !== ST.detailToken) return;
-    imgBox.innerHTML = renderImgHtml(imgUrl);
+    fetchImg(word).then(imgUrl=>{
+      if(token !== ST.detailToken) return;
+      imgBox.innerHTML = renderImgHtml(imgUrl);
+    }).catch(()=>{
+      if(token !== ST.detailToken) return;
+      imgBox.innerHTML = renderImgHtml(null);
+    });
     return;
   }
 
@@ -2455,30 +2575,35 @@ async function showDetail(word, row, isNew=false){
   const meanings=row.meanings;
   const iqs=row.imagequeries;
 
-  // Prefetch all images
-  const imgs=await Promise.all(iqs.map(q=>fetchImg(q)));
-  if(token !== ST.detailToken) return;
-
+  // ★ テキスト部分を先に描画してから画像を非同期で取得する
   ST.homoIdx=0;
-  renderDetailSlide(words,meanings,imgs,0,isNew,row.reading);
-  imgBox.innerHTML = renderImgHtml(imgs[0]);
+  const placeholderImgs = iqs.map(()=>null);
+  renderDetailSlide(words, meanings, placeholderImgs, 0, isNew, row.reading);
 
-  if(words.length>1){
-    ST.homoTimer=setInterval(()=>{
-      if(token !== ST.detailToken) return;
-      ST.homoIdx=(ST.homoIdx+1)%words.length;
-      const idx=ST.homoIdx;
-      const dc=document.getElementById('detContent');
-      dc.classList.add('out');
-      if(ST.homoTimeout) clearTimeout(ST.homoTimeout);
-      ST.homoTimeout=setTimeout(()=>{
+  // 画像を非同期で取得して後から埋める
+  Promise.all(iqs.map(q=>fetchImg(q).catch(()=>null))).then(imgs=>{
+    if(token !== ST.detailToken) return;
+    imgBox.innerHTML = renderImgHtml(imgs[0]);
+
+    // ★ 同期スライドショー内でも画像を使えるようにここで再設定
+    if(words.length>1){
+      clearInterval(ST.homoTimer); ST.homoTimer = null;
+      ST.homoTimer=setInterval(()=>{
         if(token !== ST.detailToken) return;
-        renderDetailSlide(words,meanings,imgs,idx,isNew,row.reading);
-        imgBox.innerHTML = renderImgHtml(imgs[idx]);
-        dc.classList.remove('out');
-      },450);
-    },4200);
-  }
+        ST.homoIdx=(ST.homoIdx+1)%words.length;
+        const idx=ST.homoIdx;
+        const dc=document.getElementById('detContent');
+        dc.classList.add('out');
+        if(ST.homoTimeout) clearTimeout(ST.homoTimeout);
+        ST.homoTimeout=setTimeout(()=>{
+          if(token !== ST.detailToken) return;
+          renderDetailSlide(words,meanings,imgs,idx,isNew,row.reading);
+          imgBox.innerHTML = renderImgHtml(imgs[idx]);
+          dc.classList.remove('out');
+        },450);
+      },4200);
+    }
+  });
 }
 
 function splitMora(text){
@@ -2807,6 +2932,7 @@ function resetGame(announce=true){
   document.body.classList.remove('panic');
   ST.currentInput='';
   kbSmallNext=false;updateKbSmallModeUI();
+  canvasSmallNext=false;updateCanvasSmallUI();
   hideModerationOverlay();
   clearTimeout(emergencyFxTimer);
   hideReplayPopup();
@@ -2925,14 +3051,90 @@ window.addEventListener('resize', ()=>{
 });
 
 /* ═══════════════════════════════════════════════════════════
+   TITLE SCREEN
+═══════════════════════════════════════════════════════════ */
+let _titleReady = false;   // バックグラウンド初期化が完了したか
+let _titleTapped = false;  // タップが先に来たか
+
+function warmupSpeech(){
+  // Web Speech API は最初の speak() が遅れる端末があるため無音ウォームアップ
+  if(!('speechSynthesis' in window)) return;
+  try{
+    const u = new SpeechSynthesisUtterance('');
+    u.volume = 0; u.lang = 'ja-JP';
+    window.speechSynthesis.speak(u);
+  }catch{}
+}
+
+async function initBackground(){
+  // 並行して全初期化を実行
+  await Promise.allSettled([
+    loadWhitelists(),
+    loadModelUrl('./tfjs_model/model.json'),
+    // 音声リストの読み込み（一部ブラウザは非同期）
+    new Promise(r=>{
+      if(!('speechSynthesis' in window)){r();return;}
+      const voices = window.speechSynthesis.getVoices();
+      if(voices.length){ warmupSpeech(); r(); return; }
+      window.speechSynthesis.onvoiceschanged = ()=>{ warmupSpeech(); r(); };
+      setTimeout(r, 3000); // 最大3秒待つ
+    }),
+  ]);
+}
+
+function showTitleScreen(){
+  const titleEl  = document.getElementById('titleScreen');
+  const imgEl    = document.getElementById('titleImg');
+  const tapEl    = document.getElementById('titleTap');
+  const loadEl   = document.getElementById('titleLoading');
+
+  // 画像ロード完了でフェードイン
+  function onImgReady(){
+    imgEl.classList.add('loaded');
+  }
+  if(imgEl.complete && imgEl.naturalWidth){ onImgReady(); }
+  else{ imgEl.addEventListener('load', onImgReady); }
+
+  // バックグラウンド初期化を並行して開始
+  initBackground().then(()=>{
+    _titleReady = true;
+    loadEl.classList.add('hide');
+    tapEl.classList.add('show');     // 「タップしてスタート」を表示
+    if(_titleTapped) launchGame();   // タップが先に来ていたら今すぐ起動
+  }).catch(()=>{
+    _titleReady = true;
+    loadEl.classList.add('hide');
+    tapEl.classList.add('show');
+    if(_titleTapped) launchGame();
+  });
+
+  // タップ / クリック
+  titleEl.addEventListener('pointerdown', ()=>{
+    if(!_titleReady){
+      // まだ準備中 → フラグだけ立てて待機
+      _titleTapped = true;
+      tapEl.textContent = 'よみこみちゅう… もうすこしまってね';
+      return;
+    }
+    launchGame();
+  }, {once:true});
+}
+
+function launchGame(){
+  const titleEl = document.getElementById('titleScreen');
+  titleEl.classList.add('fade-out');
+  titleEl.addEventListener('animationend', ()=>{
+    titleEl.remove();
+  }, {once:true});
+}
+
+/* ═══════════════════════════════════════════════════════════
    INIT
 ═══════════════════════════════════════════════════════════ */
 async function boot(){
   loadSettings();
   ST.gasUrl = GAS_WEB_APP_URL;
   initBuiltinList();
-  // ホワイトリスト読み込みを await しない（読み込み完了を待たずに UI を初期化する）
-  loadWhitelists().catch(()=>{});
   if(ST.pendingUnknownLogs.length) flushPendingUnknownLogs().catch(()=>{});
   if(ST.moderationLocked || (ST.moderationBlocks||0) >= 3) showModerationOverlay();
   buildKbBtn();
@@ -2944,11 +3146,13 @@ async function boot(){
   switchIn(ST.inputMode);
   applyMobileLayout();
   hideReplayPopup();
-  loadModelUrl('./tfjs_model/model.json');
 
   // apply saved voice state
   document.getElementById('btnVoice').textContent=ST.voice?'🔊 おと':'🔇 おと';
   document.getElementById('btnVoice').classList.toggle('on',ST.voice);
+
+  // タイトル画面表示（モデル読込・音声ウォームアップはここで実行）
+  showTitleScreen();
 }
 boot();
 </script>
