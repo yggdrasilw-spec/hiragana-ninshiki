@@ -2013,8 +2013,23 @@ let tfModel=null,predTimer=null;
 const drawCtx=document.getElementById('drawCanvas').getContext('2d',{willReadFrequently:true});
 
 function setTf(kind,text){const b=document.getElementById('tfBar');b.className=kind;document.getElementById('tfText').textContent=text;}
-async function loadModelUrl(url){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(url);setTf('ok','AIにんしき OK ✓');}catch{setTf('err','モデルが見つかりません');}}
-async function loadModelFiles(files){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(tf.io.browserFiles(Array.from(files)));setTf('ok','AIにんしき OK ✓');}catch{setTf('err','よみこみしっぱい');}}
+
+// モデル読込直後にダミー推論を1回流し、WebGLシェーダーのコンパイル等の
+// 初回コストをここで消化しておく（実際の手書き時にメインスレッドが
+// 長時間ブロックされて1〜2画目の描画が止まる問題を防ぐ）。
+async function warmupModel(){
+  if(!tfModel) return;
+  try{
+    const dummy = tf.zeros([1,TF_SIZE,TF_SIZE,1]);
+    const out = tfModel.predict(dummy);
+    await out.data();
+    out.dispose();
+    dummy.dispose();
+  }catch(e){console.warn('warmupModel failed',e);}
+}
+
+async function loadModelUrl(url){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(url);await warmupModel();setTf('ok','AIにんしき OK ✓');}catch{setTf('err','モデルが見つかりません');}}
+async function loadModelFiles(files){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(tf.io.browserFiles(Array.from(files)));await warmupModel();setTf('ok','AIにんしき OK ✓');}catch{setTf('err','よみこみしっぱい');}}
 
 function cropBBox(d){
   const{data:px,width:W,height:H}=d;
