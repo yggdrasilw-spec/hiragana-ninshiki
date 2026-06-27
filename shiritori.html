@@ -3051,6 +3051,30 @@ window.addEventListener('resize', ()=>{
 });
 
 /* ═══════════════════════════════════════════════════════════
+   SOUND EFFECTS (onseiNNN.wav)
+═══════════════════════════════════════════════════════════ */
+// 同一フォルダ内の音声ファイルを再生し、再生終了 (or 読み込み失敗) で resolve する。
+// ファイルが見つからない／再生できない場合もゲーム進行を止めないよう、必ず resolve する。
+function playSound(filename){
+  return new Promise(resolve=>{
+    try{
+      const audio = new Audio('./' + filename);
+      let done = false;
+      const finish = ()=>{
+        if(done) return;
+        done = true;
+        resolve();
+      };
+      audio.addEventListener('ended', finish, {once:true});
+      audio.addEventListener('error', finish, {once:true});
+      audio.play().catch(finish); // 再生開始自体に失敗した場合も先へ進む
+    }catch{
+      resolve();
+    }
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
    TITLE SCREEN
 ═══════════════════════════════════════════════════════════ */
 let _titleReady = false;   // バックグラウンド初期化が完了したか
@@ -3120,12 +3144,24 @@ function showTitleScreen(){
   }, {once:true});
 }
 
-function launchGame(){
+async function launchGame(){
   const titleEl = document.getElementById('titleScreen');
+
+  // ① onsei001.wav 再生 → 再生終了を待ってからフェードアウト開始
+  await playSound('onsei001.wav');
+
+  // ② タイトル画面フェードアウト
   titleEl.classList.add('fade-out');
-  titleEl.addEventListener('animationend', ()=>{
-    titleEl.remove();
-  }, {once:true});
+  await new Promise(resolve=>{
+    titleEl.addEventListener('animationend', ()=>{
+      titleEl.remove();
+      resolve();
+    }, {once:true});
+  });
+
+  // ③ ゲーム開始 → onsei002.wav 再生 → 再生終了 → onsei003.wav 再生
+  await playSound('onsei002.wav');
+  playSound('onsei003.wav');
 }
 
 /* ═══════════════════════════════════════════════════════════
