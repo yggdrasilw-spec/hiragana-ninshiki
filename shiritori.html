@@ -2468,15 +2468,7 @@ function switchIn(mode){
   }
 }
 function kbdHandler(e){
-  if(ST.charMode === 'katakana'){
-    // ひらがな入力をカタカナに変換してセット
-    const val = hiraToKata(norm(e.target.value));
-    ST.currentInput = val;
-    e.target.value = val;
-    updateWordBox(val);
-  } else {
-    setCurrentInput(norm(e.target.value));
-  }
+  setCurrentInput(norm(e.target.value));
 }
 
 /* ═══════════════════════════════════════════════════════════
