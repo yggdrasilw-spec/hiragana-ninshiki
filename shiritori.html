@@ -2176,7 +2176,7 @@ function renderPreds(pred){
     el.className='pred-chip pop'+(rank===0?' top':'');
     el.innerHTML=`<span class="pred-ch">${ch}</span><span class="pred-pc">${(item.v*100).toFixed(0)}%</span>`;
     el.addEventListener('click',()=>{
-      const map = ST.charMode==='katakana' ? SMALL_INPUT_MAP_KATA : SMALL_INPUT_MAP;
+      const map = SMALL_INPUT_MAP;
       const ins = canvasSmallNext ? (map[ch] || ch) : ch;
       setCurrentInput(ST.currentInput + ins);
       canvasSmallNext = false;
@@ -2217,15 +2217,13 @@ function toggleCanvasSmall(){
 }
 function appendCanvasDak(){
   const l = ST.currentInput.slice(-1);
-  // ひらがな・カタカナ両対応
-  const m = ST.charMode==='katakana' ? DK_MAP_KATA[l] : DK_MAP[l];
+  const m = DK_MAP[l];
   if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
   canvasSmallNext = false; updateCanvasSmallUI();
 }
 function appendCanvasHdak(){
   const l = ST.currentInput.slice(-1);
-  // ひらがな・カタカナ両対応
-  const m = ST.charMode==='katakana' ? HK_MAP_KATA[l] : HK_MAP[l];
+  const m = HK_MAP[l];
   if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
   canvasSmallNext = false; updateCanvasSmallUI();
 }
@@ -2344,8 +2342,7 @@ function updateKbSmallModeUI(){
 function convertLastToSmall(val){
   if(!val) return val;
   const last=val.slice(-1);
-  const map = ST.charMode==='katakana' ? SMALL_INPUT_MAP_KATA : SMALL_INPUT_MAP;
-  const small=map[last];
+  const small=SMALL_INPUT_MAP[last];
   return small ? val.slice(0,-1)+small : val;
 }
 function buildKbBtn(){
@@ -2374,16 +2371,14 @@ function buildKbBtn(){
         }
         btn.addEventListener('click',()=>{
           if(ch==='゛'){
-            // ひらがな・カタカナ両対応
             const l=ST.currentInput.slice(-1);
-            const m = ST.charMode==='katakana' ? DK_MAP_KATA[l] : DK_MAP[l];
+            const m = DK_MAP[l];
             if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
             kbSmallNext=false;updateKbSmallModeUI();
             return;
           }else if(ch==='゜'){
-            // ひらがな・カタカナ両対応
             const l=ST.currentInput.slice(-1);
-            const m = ST.charMode==='katakana' ? HK_MAP_KATA[l] : HK_MAP[l];
+            const m = HK_MAP[l];
             if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
             kbSmallNext=false;updateKbSmallModeUI();
             return;
@@ -2408,7 +2403,7 @@ function buildKbBtn(){
             return;
           }else{
             // こもじモードのとき、対応する小文字に変換して入力
-            const map = ST.charMode==='katakana' ? SMALL_INPUT_MAP_KATA : SMALL_INPUT_MAP;
+            const map = SMALL_INPUT_MAP;
             const ins = kbSmallNext ? (map[ch] || ch) : ch;
             setCurrentInput(ST.currentInput + ins);
             kbSmallNext = false;
@@ -2436,7 +2431,7 @@ function setCurrentInput(val){
   ST.currentInput = norm(val);
   const kbdInp = document.getElementById('kbdInput');
   if(kbdInp && document.activeElement !== kbdInp){
-    kbdInp.value = displayStr(ST.currentInput);
+    kbdInp.value = ST.currentInput;
   }
   updateWordBox(ST.currentInput);
 }
@@ -2462,7 +2457,7 @@ function switchIn(mode){
   const kbdInp=document.getElementById('kbdInput');
   if(mode==='kbd'){
     if(kbdInp){
-      kbdInp.value = displayStr(ST.currentInput);
+      kbdInp.value = ST.currentInput;
       kbdInp.addEventListener('input',kbdHandler);
       kbdInp.focus();
     }
