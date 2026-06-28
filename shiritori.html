@@ -766,22 +766,6 @@ button,input,select{font:inherit;color:inherit}
   transition:opacity .4s ease;
 }
 #titleLoading.hide{opacity:0}
-#titleModeBtn{
-  position:absolute;
-  top:14px;right:14px;
-  background:rgba(0,0,0,.55);
-  border:1.5px solid rgba(255,255,255,.25);
-  border-radius:10px;
-  color:rgba(255,255,255,.85);
-  font-size:14px;font-weight:900;
-  padding:7px 14px;
-  cursor:pointer;
-  letter-spacing:.04em;
-  backdrop-filter:blur(4px);
-  transition:background .15s,border-color .15s;
-  z-index:2;
-}
-#titleModeBtn:hover{background:rgba(0,0,0,.75);border-color:rgba(255,255,255,.5)}
 
 /* ═══════════════════════════════════════
    FLY EL (suck-in)
@@ -1102,7 +1086,6 @@ body.panic #pageGame{
   <img id="titleImg" src="./shiritori_title.png" alt="しりとり" draggable="false"/>
   <div id="titleTap">タップしてスタート ▶</div>
   <div id="titleLoading">よみこみちゅう…</div>
-  <button id="titleModeBtn" onclick="toggleCharModeFromTitle(event)"></button>
 </div>
 
 <!-- TOPBAR -->
@@ -1118,7 +1101,6 @@ body.panic #pageGame{
     つぎは「<span class="tc" id="tailChar">?</span>」
   </div>
   <button class="tb-btn" id="btnVoice">🔇 おと</button>
-  <button class="tb-btn" id="btnCharMode" onclick="toggleCharModeFromTopbar()"></button>
   <button class="tb-btn" id="btnReset">🔄 リセット</button>
 </div>
 
@@ -2108,31 +2090,6 @@ async function setCharMode(mode, btn){
   if(changed) buildKbBtn();
   // 入力中の文字をクリア
   if(changed) setCurrentInput('');
-  // topbar・タイトルのモードボタンラベルを更新
-  updateCharModeBtnLabels();
-}
-
-/** topbar・タイトル画面のモードボタンラベルを現在のST.charModeに合わせて更新 */
-function updateCharModeBtnLabels(){
-  const isHira = ST.charMode === 'hiragana';
-  const label   = isHira ? 'げんざい　ひらがなモード' : 'げんざい　カタカナモード';
-  const topBtn  = document.getElementById('btnCharMode');
-  const titleBtn= document.getElementById('titleModeBtn');
-  if(topBtn)   topBtn.textContent  = label;
-  if(titleBtn) titleBtn.textContent = label;
-}
-
-/** タイトル画面のモードボタンから呼ばれる（タイトルクリックと混在させない） */
-function toggleCharModeFromTitle(ev){
-  ev.stopPropagation(); // タイトル画面のpointerdownイベントを止める
-  const next = ST.charMode === 'hiragana' ? 'katakana' : 'hiragana';
-  setCharMode(next, null);
-}
-
-/** topbarのモードボタンから呼ばれる */
-function toggleCharModeFromTopbar(){
-  const next = ST.charMode === 'hiragana' ? 'katakana' : 'hiragana';
-  setCharMode(next, null);
 }
 
 function cropBBox(d){
@@ -2297,8 +2254,6 @@ function calcLineW(){
 }
 
 function beginStroke(ev){
-  // キャンバスが未初期化（width=0）のときは先に正しいサイズに直す
-  if(cv.width < 2 || cv.height < 2) resizeCV();
   drawing=true;ev.preventDefault();cv.setPointerCapture&&cv.setPointerCapture(ev.pointerId);
   const p=ptEv(ev);curStroke={points:[p]};ST.strokes.push(curStroke);
   const lw=calcLineW();
@@ -2342,12 +2297,8 @@ function undoStroke(){
 function resizeCV(){
   const rect=cv.getBoundingClientRect();
   const dpr=window.devicePixelRatio||1;
-  const newW=Math.round(rect.width*dpr);
-  const newH=Math.round(rect.height*dpr);
-  // キャンバスがまだ画面に表示されていない場合(width=0)はスキップして既存サイズを維持
-  if(newW < 2 || newH < 2) return;
-  cv.width=newW;
-  cv.height=newH;
+  cv.width=Math.round(rect.width*dpr);
+  cv.height=Math.round(rect.height*dpr);
   // setTransformは使わない — ptEvで明示的にスケール変換するため
   clearCV(false);
 }
@@ -3329,6 +3280,9 @@ async function launchGame(){
 ═══════════════════════════════════════════════════════════ */
 async function boot(){
   loadSettings();
+  // loadSettings後にST.charModeが確定するので、LABELSをここで合わせる
+  // （initBackground→loadModelUrl は LABELS を更新しないため、ここで必須）
+  LABELS = ST.charMode === 'katakana' ? LABELS_KATAKANA : LABELS_HIRAGANA;
   ST.gasUrl = GAS_WEB_APP_URL;
   initBuiltinList();
   if(ST.pendingUnknownLogs.length) flushPendingUnknownLogs().catch(()=>{});
@@ -3346,9 +3300,6 @@ async function boot(){
   // apply saved voice state
   document.getElementById('btnVoice').textContent=ST.voice?'🔊 おと':'🔇 おと';
   document.getElementById('btnVoice').classList.toggle('on',ST.voice);
-
-  // モードボタンラベルを初期化
-  updateCharModeBtnLabels();
 
   // タイトル画面表示（モデル読込・音声ウォームアップはここで実行）
   showTitleScreen();
