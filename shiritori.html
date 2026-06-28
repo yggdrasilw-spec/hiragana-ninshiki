@@ -3170,6 +3170,7 @@ async function launchGame(){
   await new Promise(resolve=>{
     titleEl.addEventListener('animationend', ()=>{
       titleEl.remove();
+      resizeCV();   // タイトルが消えた後に正しいサイズでキャンバスを再初期化
       resolve();
     }, {once:true});
   });
