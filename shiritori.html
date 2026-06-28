@@ -3344,6 +3344,7 @@ window.addEventListener('resize', ()=>{
 // ファイルが見つからない／再生できない場合もゲーム進行を止めないよう、必ず resolve する。
 function playSound(filename){
   return new Promise(resolve=>{
+    if(!ST.voice){ resolve(); return; } // 音声OFFのときはスキップして即 resolve
     try{
       const audio = new Audio('./' + filename);
       let done = false;
