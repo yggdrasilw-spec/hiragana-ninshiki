@@ -1517,6 +1517,7 @@ function saveSettings(){
 const VOWEL_MAP={あ:"あ",い:"い",う:"う",え:"え",お:"お",か:"あ",き:"い",く:"う",け:"え",こ:"お",さ:"あ",し:"い",す:"う",せ:"え",そ:"お",た:"あ",ち:"い",つ:"う",て:"え",と:"お",な:"あ",に:"い",ぬ:"う",ね:"え",の:"お",は:"あ",ひ:"い",ふ:"う",へ:"え",ほ:"お",ま:"あ",み:"い",む:"う",め:"え",も:"お",や:"あ",ゆ:"う",よ:"お",ら:"あ",り:"い",る:"う",れ:"え",ろ:"お",わ:"あ",を:"お",ん:"ん",が:"あ",ぎ:"い",ぐ:"う",げ:"え",ご:"お",ざ:"あ",じ:"い",ず:"う",ぜ:"え",ぞ:"お",だ:"あ",ぢ:"い",づ:"う",で:"え",ど:"お",ば:"あ",び:"い",ぶ:"う",べ:"え",ぼ:"お",ぱ:"あ",ぴ:"い",ぷ:"う",ぺ:"え",ぽ:"お"};
 const SMALL={ゃ:"や",ゅ:"ゆ",ょ:"よ",ぁ:"あ",ぃ:"い",ぅ:"う",ぇ:"え",ぉ:"お",ゎ:"わ",っ:"つ"};
 function kataToHira(t){let o='';for(const c of String(t||'').trim()){const code=c.charCodeAt(0);o+=(code>=0x30A1&&code<=0x30F6)?String.fromCharCode(code-0x60):c;}return o.replace(/\s+/g,'');}
+function hiraToKata(t){let o='';for(const c of String(t||'')){const code=c.charCodeAt(0);o+=(code>=0x3041&&code<=0x3096)?String.fromCharCode(code+0x60):c;}return o;}
 function norm(t){return kataToHira(t).replace(/[ 　]/g,'').toLowerCase();}
 function firstChar(r){for(const c of norm(r)){if(/^[、。！？「」（）]$/.test(c))continue;return SMALL[c]||c;}return '';}
 function lastChar(r){const s=norm(r);if(!s)return '';if(s.endsWith('ー')){const l=s.slice(0,-1).slice(-1);return VOWEL_MAP[l]||l||'';}const l=s.slice(-1);return SMALL[l]||l||'';}
@@ -2055,7 +2056,11 @@ async function warmupModel(){
 async function loadModelUrl(url){
   setTf('loading','よみこみ中…');
   try{
-    tfModel=await tf.loadLayersModel(url);
+    if(ST.charMode === 'katakana'){
+      tfModel = await tf.loadGraphModel(url);
+    } else {
+      tfModel = await tf.loadLayersModel(url);
+    }
     await warmupModel();
     setTf('ok','AIにんしき OK ✓');
   }catch(e){
@@ -2465,7 +2470,15 @@ function switchIn(mode){
   }
 }
 function kbdHandler(e){
-  setCurrentInput(norm(e.target.value));
+  if(ST.charMode === 'katakana'){
+    // ひらがな入力をカタカナに変換してセット
+    const val = hiraToKata(norm(e.target.value));
+    ST.currentInput = val;
+    e.target.value = val;
+    updateWordBox(val);
+  } else {
+    setCurrentInput(norm(e.target.value));
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════
