@@ -1124,8 +1124,8 @@ body.panic #pageGame{
   <img id="titleImg" src="./shiritori_title.png" alt="しりとり" draggable="false"/>
   <div id="titleTap">タップしてスタート ▶</div>
   <div id="titleLoading">よみこみちゅう…</div>
-  <button id="titleModeBtn" onclick="toggleCharModeFromTitle(event)"></button>
-  <button id="titleVolumeBtn" onclick="toggleVolumeFromTitle(event)"></button>
+  <button id="titleModeBtn" onclick="toggleCharModeFromTitle(event)" onpointerdown="event.stopPropagation()"></button>
+  <button id="titleVolumeBtn" onclick="toggleVolumeFromTitle(event)" onpointerdown="event.stopPropagation()"></button>
 </div>
 
 <!-- TOPBAR -->
