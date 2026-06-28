@@ -1224,6 +1224,21 @@ body.panic #pageGame{
 <div id="pageSettings" class="page">
   <div class="set-wrap">
 
+    <!-- Char mode -->
+    <div class="set-sec">
+      <div class="set-hd">🔤 もじのしゅるい</div>
+      <div class="set-bd">
+        <div class="im-grid">
+          <button class="im-btn cm-btn" data-mode="hiragana" onclick="setCharMode('hiragana',this)">
+            あ<div class="im-name">ひらがな</div>
+          </button>
+          <button class="im-btn cm-btn" data-mode="katakana" onclick="setCharMode('katakana',this)">
+            ア<div class="im-name">カタカナ</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Level -->
     <div class="set-sec">
       <div class="set-hd">🎯 むずかしさ</div>
@@ -1406,6 +1421,7 @@ const ST = {
   demoRunning: false,
   voice: false,
   inputMode: 'canvas',   // canvas | btn | kbd
+  charMode: 'hiragana',  // hiragana | katakana
   level: 1,
   whitelist: [],         // parsed rows
   blacklist: [],         // parsed rules
@@ -1466,6 +1482,7 @@ function loadSettings(){
   try{
     const s = JSON.parse(localStorage.getItem('shiri-settings')||'{}');
     if(s.level)      ST.level      = s.level;
+    if(s.charMode)   ST.charMode   = s.charMode;
     if(s.inputMode)  ST.inputMode  = s.inputMode;
     if(s.voice!=null)ST.voice      = s.voice;
     if(s.statsYouWords!=null) ST.statsYouWords = s.statsYouWords;
@@ -1479,6 +1496,7 @@ function loadSettings(){
 function saveSettings(){
   localStorage.setItem('shiri-settings', JSON.stringify({
     level: ST.level,
+    charMode: ST.charMode,
     inputMode: ST.inputMode,
     voice: ST.voice,
     statsYouWords: ST.statsYouWords,
@@ -2007,7 +2025,10 @@ function updateWordBox(input){
 /* ═══════════════════════════════════════════════════════════
    TF.JS
 ═══════════════════════════════════════════════════════════ */
-const LABELS=["あ","い","う","え","お","か","が","き","ぎ","く","ぐ","け","げ","こ","ご","さ","ざ","し","じ","す","ず","せ","ぜ","そ","ぞ","た","だ","ち","ぢ","つ","づ","て","で","と","ど","な","に","ぬ","ね","の","は","ば","ぱ","ひ","び","ぴ","ふ","ぶ","ぷ","へ","べ","ぺ","ほ","ぼ","ぽ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"];
+const LABELS_HIRAGANA=["あ","い","う","え","お","か","が","き","ぎ","く","ぐ","け","げ","こ","ご","さ","ざ","し","じ","す","ず","せ","ぜ","そ","ぞ","た","だ","ち","ぢ","つ","づ","て","で","と","ど","な","に","ぬ","ね","の","は","ば","ぱ","ひ","び","ぴ","ふ","ぶ","ぷ","へ","べ","ぺ","ほ","ぼ","ぽ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"];
+const LABELS_KATAKANA=["ヲ","ア","イ","ウ","エ","オ","カ","キ","ク","ケ","コ","サ","シ","ス","セ","ソ","タ","チ","ツ","テ","ト","ナ","ニ","ヌ","ネ","ノ","ハ","ヒ","フ","ヘ","ホ","マ","ミ","ム","メ","モ","ヤ","ユ","ヨ","ラ","リ","ル","レ","ロ","ワ","ン"];
+const MODEL_PATH={hiragana:'./tfjs_model/hiragana/model.json',katakana:'./tfjs_model/katakana/model.json'};
+let LABELS=LABELS_HIRAGANA;
 const TF_SIZE=64,BG_TH=245,LINE_W=16;
 let tfModel=null,predTimer=null;
 const drawCtx=document.getElementById('drawCanvas').getContext('2d',{willReadFrequently:true});
@@ -2030,6 +2051,23 @@ async function warmupModel(){
 
 async function loadModelUrl(url){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(url);await warmupModel();setTf('ok','AIにんしき OK ✓');}catch{setTf('err','モデルが見つかりません');}}
 async function loadModelFiles(files){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(tf.io.browserFiles(Array.from(files)));await warmupModel();setTf('ok','AIにんしき OK ✓');}catch{setTf('err','よみこみしっぱい');}}
+
+// ひらがな／カタカナ モード切り替え
+async function setCharMode(mode, btn){
+  if(ST.charMode === mode) return;
+  ST.charMode = mode;
+  LABELS = mode === 'hiragana' ? LABELS_HIRAGANA : LABELS_KATAKANA;
+  saveSettings();
+  // ボタンのactive更新
+  document.querySelectorAll('.cm-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  // モデルを切り替えてロード
+  await loadModelUrl(MODEL_PATH[mode]);
+  // ボタン配列を再描画（ひらがな↔カタカナ）
+  buildKbBtn();
+  // 入力中の文字をクリア
+  setCurrentInput('');
+}
 
 function cropBBox(d){
   const{data:px,width:W,height:H}=d;
@@ -2115,7 +2153,8 @@ function renderPreds(pred){
     el.className='pred-chip pop'+(rank===0?' top':'');
     el.innerHTML=`<span class="pred-ch">${ch}</span><span class="pred-pc">${(item.v*100).toFixed(0)}%</span>`;
     el.addEventListener('click',()=>{
-      const ins = canvasSmallNext ? (SMALL_INPUT_MAP[ch] || ch) : ch;
+      const map = ST.charMode==='katakana' ? SMALL_INPUT_MAP_KATA : SMALL_INPUT_MAP;
+      const ins = canvasSmallNext ? (map[ch] || ch) : ch;
       setCurrentInput(ST.currentInput + ins);
       canvasSmallNext = false;
       updateCanvasSmallUI();
@@ -2155,13 +2194,15 @@ function toggleCanvasSmall(){
 }
 function appendCanvasDak(){
   const l = ST.currentInput.slice(-1);
-  const m = DK_MAP[l];
+  // ひらがな・カタカナ両対応
+  const m = ST.charMode==='katakana' ? DK_MAP_KATA[l] : DK_MAP[l];
   if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
   canvasSmallNext = false; updateCanvasSmallUI();
 }
 function appendCanvasHdak(){
   const l = ST.currentInput.slice(-1);
-  const m = HK_MAP[l];
+  // ひらがな・カタカナ両対応
+  const m = ST.charMode==='katakana' ? HK_MAP_KATA[l] : HK_MAP[l];
   if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
   canvasSmallNext = false; updateCanvasSmallUI();
 }
@@ -2244,7 +2285,8 @@ function resizeCV(){
 /* ═══════════════════════════════════════════════════════════
    五十音 KEYBOARD
 ═══════════════════════════════════════════════════════════ */
-const KB_ROWS=[
+// ひらがなボタン配列
+const KB_ROWS_HIRAGANA=[
   ['あ','い','う','え','お',  'か','き','く','け','こ'],
   ['さ','し','す','せ','そ',  'た','ち','つ','て','と'],
   ['な','に','ぬ','ね','の',  'は','ひ','ふ','へ','ほ'],
@@ -2252,9 +2294,26 @@ const KB_ROWS=[
   ['ら','り','る','れ','ろ',  'わ','を'],
   ['ん','ー','゛','゜','こもじ','⌫'],
 ];
+// カタカナボタン配列（「こもじ」ラベルはそのまま）
+const KB_ROWS_KATAKANA=[
+  ['ア','イ','ウ','エ','オ',  'カ','キ','ク','ケ','コ'],
+  ['サ','シ','ス','セ','ソ',  'タ','チ','ツ','テ','ト'],
+  ['ナ','ニ','ヌ','ネ','ノ',  'ハ','ヒ','フ','ヘ','ホ'],
+  ['マ','ミ','ム','メ','モ',  'ヤ','ユ','ヨ'],
+  ['ラ','リ','ル','レ','ロ',  'ワ','ヲ'],
+  ['ン','ー','゛','゜','こもじ','⌫'],
+];
+// ひらがな用 濁音・半濁音マップ
 const DK_MAP={か:'が',き:'ぎ',く:'ぐ',け:'げ',こ:'ご',さ:'ざ',し:'じ',す:'ず',せ:'ぜ',そ:'ぞ',た:'だ',ち:'ぢ',つ:'づ',て:'で',と:'ど',は:'ば',ひ:'び',ふ:'ぶ',へ:'べ',ほ:'ぼ'};
 const HK_MAP={は:'ぱ',ひ:'ぴ',ふ:'ぷ',へ:'ぺ',ほ:'ぽ'};
+// カタカナ用 濁音・半濁音マップ
+const DK_MAP_KATA={カ:'ガ',キ:'ギ',ク:'グ',ケ:'ゲ',コ:'ゴ',サ:'ザ',シ:'ジ',ス:'ズ',セ:'ゼ',ソ:'ゾ',タ:'ダ',チ:'ヂ',ツ:'ヅ',テ:'デ',ト:'ド',ハ:'バ',ヒ:'ビ',フ:'ブ',ヘ:'ベ',ホ:'ボ',ウ:'ヴ'};
+const HK_MAP_KATA={ハ:'パ',ヒ:'ピ',フ:'プ',ヘ:'ペ',ホ:'ポ'};
+// ひらがな用 小文字マップ
 const SMALL_INPUT_MAP={あ:'ぁ',い:'ぃ',う:'ぅ',え:'ぇ',お:'ぉ',や:'ゃ',ゆ:'ゅ',よ:'ょ',つ:'っ',わ:'ゎ'};
+// カタカナ用 小文字マップ（こもじボタン用）
+const SMALL_INPUT_MAP_KATA={ア:'ァ',イ:'ィ',ウ:'ゥ',エ:'ェ',オ:'ォ',ヤ:'ャ',ユ:'ュ',ヨ:'ョ',ツ:'ッ',ワ:'ヮ'};
+
 let kbSmallNext=false;
 function updateKbSmallModeUI(){
   document.querySelectorAll('[data-smallmod="1"]').forEach(b=>b.classList.toggle('mod-on', kbSmallNext));
@@ -2262,16 +2321,18 @@ function updateKbSmallModeUI(){
 function convertLastToSmall(val){
   if(!val) return val;
   const last=val.slice(-1);
-  const small=SMALL_INPUT_MAP[last];
+  const map = ST.charMode==='katakana' ? SMALL_INPUT_MAP_KATA : SMALL_INPUT_MAP;
+  const small=map[last];
   return small ? val.slice(0,-1)+small : val;
 }
 function buildKbBtn(){
   const wrap=document.getElementById('modeBtn');
   wrap.innerHTML='';
+  const KB_ROWS = ST.charMode==='katakana' ? KB_ROWS_KATAKANA : KB_ROWS_HIRAGANA;
   KB_ROWS.forEach((row, rowIdx)=>{
     const div=document.createElement('div');div.className='kb-row';
 
-    // 最終行（ん・ー・゛・゜・こもじ・⌫）は分割しない
+    // 最終行（ん/ン・ー・[゛・゜]・こもじ・⌫）は分割しない
     const isLastRow = rowIdx === KB_ROWS.length - 1;
     const groups = isLastRow ? [row] : [row.slice(0,5), row.slice(5)].filter(g=>g.length);
 
@@ -2284,17 +2345,23 @@ function buildKbBtn(){
         btn.className='kb-key'+(ch==='゛'||ch==='゜'||ch==='ー'?' sp':ch==='こもじ'||ch==='⌫'?' sp':'');
         if(ch==='こもじ'){
           btn.dataset.smallmod='1';
-          btn.textContent='こもじ';
+          btn.textContent='こもじ';  // カタカナモードでも「こもじ」のまま
         }else{
           btn.textContent=ch;
         }
         btn.addEventListener('click',()=>{
           if(ch==='゛'){
-            const l=ST.currentInput.slice(-1);const m=DK_MAP[l];if(m)setCurrentInput(ST.currentInput.slice(0,-1)+m);
+            // ひらがな・カタカナ両対応
+            const l=ST.currentInput.slice(-1);
+            const m = ST.charMode==='katakana' ? DK_MAP_KATA[l] : DK_MAP[l];
+            if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
             kbSmallNext=false;updateKbSmallModeUI();
             return;
           }else if(ch==='゜'){
-            const l=ST.currentInput.slice(-1);const m=HK_MAP[l];if(m)setCurrentInput(ST.currentInput.slice(0,-1)+m);
+            // ひらがな・カタカナ両対応
+            const l=ST.currentInput.slice(-1);
+            const m = ST.charMode==='katakana' ? HK_MAP_KATA[l] : HK_MAP[l];
+            if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
             kbSmallNext=false;updateKbSmallModeUI();
             return;
           }else if(ch==='ー'){
@@ -2317,7 +2384,9 @@ function buildKbBtn(){
             backspaceInput();
             return;
           }else{
-            const ins = kbSmallNext ? (SMALL_INPUT_MAP[ch] || ch) : ch;
+            // こもじモードのとき、対応する小文字に変換して入力
+            const map = ST.charMode==='katakana' ? SMALL_INPUT_MAP_KATA : SMALL_INPUT_MAP;
+            const ins = kbSmallNext ? (map[ch] || ch) : ch;
             setCurrentInput(ST.currentInput + ins);
             kbSmallNext = false;
             updateKbSmallModeUI();
@@ -2395,6 +2464,8 @@ function showPage(name){
 function syncSettingsUI(){
   document.getElementById('statYouWords').textContent=ST.statsYouWords;
   document.getElementById('statNewWords').textContent=ST.statsNewWords;
+  // char mode btns
+  document.querySelectorAll('.cm-btn').forEach(b=>b.classList.toggle('active',b.dataset.mode===ST.charMode));
   // level btns
   document.querySelectorAll('.lv-btn').forEach((b,i)=>b.classList.toggle('active',i+1===ST.level));
   // input mode btns
@@ -3109,7 +3180,7 @@ async function initBackground(){
   // 並行して全初期化を実行
   await Promise.allSettled([
     loadWhitelists(),
-    loadModelUrl('./tfjs_model/model.json'),
+    loadModelUrl(MODEL_PATH[ST.charMode]),
     // 音声リストの読み込み（一部ブラウザは非同期）
     new Promise(r=>{
       if(!('speechSynthesis' in window)){r();return;}
