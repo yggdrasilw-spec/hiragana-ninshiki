@@ -1519,6 +1519,8 @@ const SMALL={ゃ:"や",ゅ:"ゆ",ょ:"よ",ぁ:"あ",ぃ:"い",ぅ:"う",ぇ:"�
 function kataToHira(t){let o='';for(const c of String(t||'').trim()){const code=c.charCodeAt(0);o+=(code>=0x30A1&&code<=0x30F6)?String.fromCharCode(code-0x60):c;}return o.replace(/\s+/g,'');}
 function hiraToKata(t){let o='';for(const c of String(t||'')){const code=c.charCodeAt(0);o+=(code>=0x3041&&code<=0x3096)?String.fromCharCode(code+0x60):c;}return o;}
 function norm(t){return kataToHira(t).replace(/[ 　]/g,'').toLowerCase();}
+/** カタカナモード時にひらがな→カタカナに変換して返す（表示専用） */
+function displayStr(t){ return ST.charMode==='katakana' ? hiraToKata(String(t||'')) : String(t||''); }
 function firstChar(r){for(const c of norm(r)){if(/^[、。！？「」（）]$/.test(c))continue;return SMALL[c]||c;}return '';}
 function lastChar(r){const s=norm(r);if(!s)return '';if(s.endsWith('ー')){const l=s.slice(0,-1).slice(-1);return VOWEL_MAP[l]||l||'';}const l=s.slice(-1);return SMALL[l]||l||'';}
 function isEndWord(r){return norm(r).endsWith('ん');}
@@ -2007,10 +2009,11 @@ function updateWordBox(input){
     return;
   }
 
-  for(let i=0;i<n.length;i++){
+  const disp = displayStr(n);
+  for(let i=0;i<disp.length;i++){
     const t=document.createElement('div');
-    t.className='k-tile pop'+(i===0?' head':i===n.length-1?' tail':'');
-    t.textContent=n[i];
+    t.className='k-tile pop'+(i===0?' head':i===disp.length-1?' tail':'');
+    t.textContent=disp[i];
     wb.appendChild(t);
   }
 
@@ -2433,7 +2436,7 @@ function setCurrentInput(val){
   ST.currentInput = norm(val);
   const kbdInp = document.getElementById('kbdInput');
   if(kbdInp && document.activeElement !== kbdInp){
-    kbdInp.value = ST.currentInput;
+    kbdInp.value = displayStr(ST.currentInput);
   }
   updateWordBox(ST.currentInput);
 }
@@ -2459,7 +2462,7 @@ function switchIn(mode){
   const kbdInp=document.getElementById('kbdInput');
   if(mode==='kbd'){
     if(kbdInp){
-      kbdInp.value = ST.currentInput;
+      kbdInp.value = displayStr(ST.currentInput);
       kbdInp.addEventListener('input',kbdHandler);
       kbdInp.focus();
     }
@@ -2673,7 +2676,7 @@ async function showDetail(word, row, isNew=false){
   if(!row){
     // ★ テキストを画像取得より先に即座に描画する（通信遅延でテキストが消える問題を防ぐ）
     document.getElementById('detContent').innerHTML=`
-      <div class="det-word">${escH(word)}</div>
+      <div class="det-word">${escH(displayStr(word))}</div>
       <div class="det-text">あたらしいことばです！</div>
       ${isNew?'<div class="det-new">✨ アプリがこのことばをおぼえたよ！</div>':''}
     `;
@@ -2753,10 +2756,10 @@ function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
   const reading=norm(readingText || w || words[0]);
   const mora=splitMora(reading);
   document.getElementById('detContent').innerHTML=`
-    <div class="det-word">${escH(w)}</div>
+    <div class="det-word">${escH(displayStr(w))}</div>
     <div class="det-kana">${mora.map(c=>{
       const cls = 'km' + (c === 'ー' ? ' long' : c.startsWith('（') ? ' note' : '');
-      return `<div class="${cls}">${escH(c)}</div>`;
+      return `<div class="${cls}">${escH(displayStr(c))}</div>`;
     }).join('')}</div>
     <div class="det-text">${escH(m)}</div>
     ${isMulti?`<div class="det-homo">🔄 ほかにも いみが あります（${idx+1}/${words.length}）</div>`:''}
@@ -2775,13 +2778,13 @@ function renderCandidates(){
   const el=document.getElementById('candPills');
   el.innerHTML='';
   if(!pool.length){
-    el.innerHTML=`<div style="font-size:11px;color:var(--muted)">「${ST.tail||'？'}」ではじまることばがみつかりません。</div>`;
+    el.innerHTML=`<div style="font-size:11px;color:var(--muted)">「${displayStr(ST.tail||'？')}」ではじまることばがみつかりません。</div>`;
     return;
   }
   pool.forEach(r=>{
     const pill=document.createElement('div');
     pill.className='c-pill';
-    pill.textContent=`${r.words[0]}`;
+    pill.textContent=`${displayStr(r.words[0])}`;
     pill.addEventListener('click',()=>{syncInput(r.reading);document.getElementById('kbdInput')?.focus();});
     el.appendChild(pill);
   });
@@ -2800,13 +2803,17 @@ function renderHistory(){
   [...ST.history].reverse().forEach((item,i)=>{
     const btn=document.createElement('button');
     btn.className='hi'+(i===0?' new':'');
+    const dispWord = displayStr(item.words[0]);
+    const dispTailB = displayStr(item.tailBefore);
+    const dispTailA = displayStr(item.tailAfter);
+    const dispSpeaker = displayStr(item.speaker);
     btn.innerHTML=`
       <div class="hi-em">${escH(item.emoji)}</div>
       <div class="hi-body">
-        <div class="hi-word">${escH(item.words[0])}</div>
-        <div class="hi-meta">${escH(item.tailBefore)}→${escH(item.tailAfter)}</div>
+        <div class="hi-word">${escH(dispWord)}</div>
+        <div class="hi-meta">${escH(dispTailB)}→${escH(dispTailA)}</div>
       </div>
-      <span class="hi-bdg ${item.speaker==='あなた'?'you':'cpu'}">${escH(item.speaker)}</span>
+      <span class="hi-bdg ${item.speaker==='あなた'?'you':'cpu'}">${escH(dispSpeaker)}</span>
     `;
     btn.addEventListener('click',()=>showDetail(item.words[0],item.row));
     list.appendChild(btn);
@@ -2823,7 +2830,7 @@ function suckIn(word, onDone){
   const destR=histFirst?histFirst.getBoundingClientRect():{left:20,top:100,width:80,height:36};
 
   const fly=document.getElementById('flyEl');
-  fly.textContent=word;
+  fly.textContent=displayStr(word);
   fly.style.cssText=`display:block;opacity:1;transition:none;
     left:${wbR.left}px;top:${wbR.top}px;
     width:${wbR.width}px;height:${wbR.height}px;
@@ -2860,16 +2867,16 @@ async function commitWord(speaker, readingInput, row, isNew=false){
     ST.score.you++;
     ST.statsYouWords++;
     document.getElementById('scoreYou').textContent=ST.score.you;
-    setStatus('ok',`「${row?row.words[0]:n}」OK！ つぎは「${tailA}」`,'CPUがかんがえています…');
+    setStatus('ok',`「${displayStr(row?row.words[0]:n)}」OK！ つぎは「${displayStr(tailA)}」`,'CPUがかんがえています…');
   } else {
     ST.score.cpu++;
     document.getElementById('scoreCpu').textContent=ST.score.cpu;
-    setStatus('cpu',`CPU:「${row?row.words[0]:n}」 つぎは「${tailA}」`,'あなたのばんです！');
+    setStatus('cpu',`CPU:「${displayStr(row?row.words[0]:n)}」 つぎは「${displayStr(tailA)}」`,'あなたのばんです！');
   }
 
   if(ST.tail){
     document.getElementById('tailBadge').style.display='flex';
-    document.getElementById('tailChar').textContent=ST.tail;
+    document.getElementById('tailChar').textContent=displayStr(ST.tail);
   }
 
   renderHistory();
@@ -2921,7 +2928,7 @@ async function submitWord(){
   if(!n){setStatus('error','ことばをにゅうりょくしてください。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
   if(/[^ぁ-ゖー]/.test(n)){setStatus('error','ひらがなだけつかえます。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
   if(ST.used.has(n)){setStatus('error','おなじことばはもうつかえません。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
-  if(ST.tail&&firstChar(n)!==ST.tail){setStatus('error',`「${ST.tail}」ではじまることばにしてください。`,'');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
+  if(ST.tail&&firstChar(n)!==ST.tail){setStatus('error',`「${displayStr(ST.tail)}」ではじまることばにしてください。`,'');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
 
   const row=lookupRow(n);
   if(isEndWord(n)){
