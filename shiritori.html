@@ -744,6 +744,8 @@ button,input,select{font:inherit;color:inherit}
 #titleImg.loaded{opacity:1}
 #titleTap{
   position:absolute;bottom:9%;
+  left:50%;transform:translateX(-50%);
+  white-space:nowrap;
   font-size:clamp(14px,3.5vw,22px);
   font-weight:900;
   color:rgba(255,255,255,.85);
@@ -755,11 +757,13 @@ button,input,select{font:inherit;color:inherit}
 }
 #titleTap.show{opacity:1}
 @keyframes tapPulse{
-  0%,100%{opacity:.7;transform:scale(1)}
-  50%{opacity:1;transform:scale(1.06)}
+  0%,100%{opacity:.7;transform:translateX(-50%) scale(1)}
+  50%{opacity:1;transform:translateX(-50%) scale(1.06)}
 }
 #titleLoading{
   position:absolute;bottom:5%;
+  left:50%;transform:translateX(-50%);
+  white-space:nowrap;
   font-size:11px;font-weight:800;
   color:rgba(255,255,255,.45);
   letter-spacing:.06em;
@@ -782,6 +786,24 @@ button,input,select{font:inherit;color:inherit}
   z-index:2;
 }
 #titleModeBtn:hover{background:rgba(0,0,0,.75);border-color:rgba(255,255,255,.5)}
+#titleVolumeBtn{
+  position:absolute;
+  top:14px;left:14px;
+  background:rgba(0,0,0,.55);
+  border:1.5px solid rgba(255,255,255,.25);
+  border-radius:10px;
+  color:rgba(255,255,255,.85);
+  font-size:14px;font-weight:900;
+  padding:7px 14px;
+  cursor:pointer;
+  letter-spacing:.04em;
+  backdrop-filter:blur(4px);
+  transition:background .15s,border-color .15s;
+  z-index:2;
+  white-space:nowrap;
+}
+#titleVolumeBtn:hover{background:rgba(0,0,0,.75);border-color:rgba(255,255,255,.5)}
+#titleVolumeBtn.on{border-color:rgba(26,255,160,.6);color:rgba(26,255,160,.9)}
 
 /* ═══════════════════════════════════════
    FLY EL (suck-in)
@@ -1103,6 +1125,7 @@ body.panic #pageGame{
   <div id="titleTap">タップしてスタート ▶</div>
   <div id="titleLoading">よみこみちゅう…</div>
   <button id="titleModeBtn" onclick="toggleCharModeFromTitle(event)"></button>
+  <button id="titleVolumeBtn" onclick="toggleVolumeFromTitle(event)"></button>
 </div>
 
 <!-- TOPBAR -->
@@ -1313,6 +1336,27 @@ body.panic #pageGame{
       </div>
     </div>
 
+    <!-- CPU behaviour -->
+    <div class="set-sec">
+      <div class="set-hd">🤖 CPU のこうどう</div>
+      <div class="set-bd">
+        <div class="toggle-row">
+          <div>
+            <span class="toggle-lbl">CPUが「ん」でおわることばをつかう</span>
+            <div class="set-label" style="font-size:11px;margin-top:3px;line-height:1.5">ONにすると、CPUはたくさんことばをつかうほど うっかり「ん」でおわることばを えらびやすくなります。</div>
+          </div>
+          <button class="toggle" id="togCpuN" onclick="toggleCpuN()"></button>
+        </div>
+        <div class="toggle-row" style="margin-top:4px">
+          <div>
+            <span class="toggle-lbl">「ぢ」で終わったら「じ」でつなげる</span>
+            <div class="set-label" style="font-size:11px;margin-top:3px;line-height:1.5">「はなぢ」など「ぢ」で終わることばのあと、「ぢ」ではじまることばは日本語にないので「じ」ではじまることばへつなぎます。</div>
+          </div>
+          <button class="toggle" id="togDziRule" onclick="toggleDziRule()"></button>
+        </div>
+      </div>
+    </div>
+
     <!-- GAS -->
     <div class="set-sec">
       <div class="set-hd">🌐 データのよみこみ</div>
@@ -1463,6 +1507,8 @@ const ST = {
   moderationBlocks: 0,
   moderationLocked: false,
   pendingUnknownLogs: [],
+  cpuAllowN: false,      // CPUが「ん」で終わる語を使いうるか
+  dziRule: false,        // 「ぢ」→「じ」つなぎルール
 };
 
 
@@ -1512,6 +1558,8 @@ function loadSettings(){
     if(s.moderationBlocks!=null) ST.moderationBlocks = s.moderationBlocks;
     if(s.moderationLocked!=null) ST.moderationLocked = s.moderationLocked;
     if(Array.isArray(s.pendingUnknownLogs)) ST.pendingUnknownLogs = s.pendingUnknownLogs;
+    if(s.cpuAllowN!=null) ST.cpuAllowN = s.cpuAllowN;
+    if(s.dziRule!=null)   ST.dziRule   = s.dziRule;
   }catch{}
 }
 function saveSettings(){
@@ -1526,6 +1574,8 @@ function saveSettings(){
     moderationBlocks: ST.moderationBlocks,
     moderationLocked: ST.moderationLocked,
     pendingUnknownLogs: ST.pendingUnknownLogs,
+    cpuAllowN: ST.cpuAllowN,
+    dziRule:   ST.dziRule,
   }));
 }
 
@@ -2540,6 +2590,12 @@ function syncSettingsUI(){
   inputModeBtns.forEach((b,i)=>b.classList.toggle('active', i===modeMap[ST.inputMode]));
   // voice toggle
   document.getElementById('togVoice').classList.toggle('on',ST.voice);
+  // cpu-n toggle
+  const togCpuN = document.getElementById('togCpuN');
+  if(togCpuN) togCpuN.classList.toggle('on', ST.cpuAllowN);
+  // dzi rule toggle
+  const togDzi = document.getElementById('togDziRule');
+  if(togDzi) togDzi.classList.toggle('on', ST.dziRule);
   // fixed GAS URL
   const gasInfo = document.getElementById('gasUrlInfo');
   if(gasInfo) gasInfo.textContent = 'GASは未知語の記録に使います';
@@ -2566,6 +2622,27 @@ function toggleVoice(){
   document.getElementById('togVoice').classList.toggle('on',ST.voice);
   document.getElementById('btnVoice').textContent=ST.voice?'🔊 おと':'🔇 おと';
   document.getElementById('btnVoice').classList.toggle('on',ST.voice);
+  updateTitleVolumeBtn();
+}
+function updateTitleVolumeBtn(){
+  const btn = document.getElementById('titleVolumeBtn');
+  if(!btn) return;
+  btn.textContent = ST.voice ? '🔊 おと ON' : '🔇 おと OFF';
+  btn.classList.toggle('on', ST.voice);
+}
+function toggleVolumeFromTitle(ev){
+  ev.stopPropagation();
+  toggleVoice();
+}
+function toggleCpuN(){
+  ST.cpuAllowN = !ST.cpuAllowN;
+  saveSettings();
+  document.getElementById('togCpuN').classList.toggle('on', ST.cpuAllowN);
+}
+function toggleDziRule(){
+  ST.dziRule = !ST.dziRule;
+  saveSettings();
+  document.getElementById('togDziRule').classList.toggle('on', ST.dziRule);
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2885,7 +2962,12 @@ function suckIn(word, onDone){
 async function commitWord(speaker, readingInput, row, isNew=false){
   const n=norm(readingInput);
   const tailB=ST.tail||'—';
-  const tailA=lastChar(n);
+  let tailA=lastChar(n);
+
+  // 「ぢ」終わり → dziRuleがONなら実効tailを「じ」にしてアナウンス
+  const dziAnnouncePending = (tailA === 'ぢ' && ST.dziRule);
+  if(dziAnnouncePending) tailA = 'じ';
+
   const entry={
     speaker, reading:n,
     words: row?row.words:[n],
@@ -2917,6 +2999,17 @@ async function commitWord(speaker, readingInput, row, isNew=false){
   renderCandidates();
   await showDetail(row?row.words[0]:n, row, isNew);
   await speakDetail(row?row.words[0]:n, row, speaker, isNew);
+
+  // 「ぢ」→「じ」ルールのアナウンス
+  if(dziAnnouncePending){
+    const wordDisplay = displayStr(row?row.words[0]:n);
+    setStatus('ok',
+      `「${wordDisplay}」は「ぢ」でおわります。「ぢ」ではじまることばはないので、「じ」ではじまることばへつなぎます！`,
+      `つぎは「${displayStr(tailA)}（じ）」からはじめよう。`
+    );
+    await speakAsync(`「${wordDisplay}」は「ぢ」でおわります。「ぢ」ではじまることばは日本語にありません。「じ」ではじまることばへつなぎます。`);
+  }
+
   saveSettings();
   // モバイル：確定後は一瞬「れきし」タブへ自動切替
   if(isMobile() && speaker === 'あなた'){
@@ -2962,7 +3055,12 @@ async function submitWord(){
   if(!n){setStatus('error','ことばをにゅうりょくしてください。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
   if(/[^ぁ-ゖー]/.test(n)){setStatus('error','ひらがなだけつかえます。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
   if(ST.used.has(n)){setStatus('error','おなじことばはもうつかえません。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
-  if(ST.tail&&firstChar(n)!==ST.tail){setStatus('error',`「${displayStr(ST.tail)}」ではじまることばにしてください。`,'');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
+  if(ST.tail&&firstChar(n)!==ST.tail){
+    // dziRuleがONで、直前tail=「じ」（ぢ由来）の場合は「じ」ではじまるものも通す
+    // ※ ST.tailはすでに「じ」に書き換えられているので普通に通る。
+    // tailチェック自体はそのまま
+    setStatus('error',`「${displayStr(ST.tail)}」ではじまることばにしてください。`,'');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;
+  }
 
   const row=lookupRow(n);
   if(isEndWord(n)){
@@ -3047,13 +3145,32 @@ function shakeInput(){
    CPU TURN
 ═══════════════════════════════════════════════════════════ */
 function cpuChoose(){
-  const pool=getPool().filter(r=>
+  // 「ん」で終わらない候補と、終わる候補を分ける
+  const poolSafe=getPool().filter(r=>
     !ST.used.has(norm(r.reading))&&
     !isEndWord(r.reading)&&
     (!ST.tail||firstChar(r.reading)===ST.tail)
   );
-  if(!pool.length)return null;
-  const top=pool.slice(0,Math.min(pool.length,6));
+  const poolN=getPool().filter(r=>
+    !ST.used.has(norm(r.reading))&&
+    isEndWord(r.reading)&&
+    (!ST.tail||firstChar(r.reading)===ST.tail)
+  );
+
+  // 「ん」終わりONかつ候補がある場合、集中力低下確率で「ん」語を選ぶ
+  if(ST.cpuAllowN && poolN.length > 0){
+    // 語数が増えるほど確率上昇：最初は2%、20語で30%、40語で60%程度
+    const wordCount = ST.history.filter(h=>h.speaker==='CPU').length;
+    const prob = Math.min(0.65, 0.02 + wordCount * 0.03);
+    if(Math.random() < prob){
+      // 「ん」終わりを選ぶ（safepoolが空でも可）
+      const top=poolN.slice(0,Math.min(poolN.length,4));
+      return top[Math.floor(Math.random()*top.length)];
+    }
+  }
+
+  if(!poolSafe.length) return null;
+  const top=poolSafe.slice(0,Math.min(poolSafe.length,6));
   return top[Math.floor(Math.random()*top.length)];
 }
 async function cpuTurn(){
@@ -3069,6 +3186,19 @@ async function cpuTurn(){
     speak('あなたのかちです！');return;
   }
   await commitWord('CPU',pick.reading,pick,false);
+  // CPUが「ん」で終わる語を選んでしまった場合はゲームエンド
+  if(isEndWord(pick.reading)){
+    ST.gameOver = true;
+    ST.cpuBusy = false;
+    setStatus('win','CPUが「ん」でおわった！ あなたのかち！','CPUがうっかりしてしまいました😅');
+    ST.score.you++;
+    document.getElementById('scoreYou').textContent=ST.score.you;
+    await speakAsync('CPUが「ん」でおわりました。あなたのかちです！');
+    triggerEmergencyFX();
+    ST.replayPending = true;
+    setTimeout(()=>{ if(ST.gameOver && ST.replayPending) showReplayPopup(); }, 250);
+    return;
+  }
   ST.cpuBusy=false; // ★ CPUの一手の表示・読み上げが完全に終わってから解除
 }
 
@@ -3345,6 +3475,7 @@ async function boot(){
   // apply saved voice state
   document.getElementById('btnVoice').textContent=ST.voice?'🔊 おと':'🔇 おと';
   document.getElementById('btnVoice').classList.toggle('on',ST.voice);
+  updateTitleVolumeBtn();
 
   updateCharModeBtnLabels();
 
