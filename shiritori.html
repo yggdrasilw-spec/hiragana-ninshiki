@@ -2127,11 +2127,7 @@ async function warmupModel(){
 async function loadModelUrl(url){
   setTf('loading','よみこみ中…');
   try{
-    if(ST.charMode === 'katakana'){
-      tfModel = await tf.loadGraphModel(url);
-    } else {
-      tfModel = await tf.loadLayersModel(url);
-    }
+    tfModel = await tf.loadLayersModel(url);
     await warmupModel();
     setTf('ok','AIにんしき OK ✓');
   }catch(e){
