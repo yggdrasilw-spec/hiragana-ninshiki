@@ -1227,7 +1227,7 @@ body.panic #pageGame{
       </div>
 
       <div id="inputHint" class="kbd-hint" style="padding:0 9px 7px;color:var(--muted)">
-        ひらがなは上のボタンや手書き候補から入れます
+        VOICEVOX:ずんだもん
       </div>
     </section>
   </div>
@@ -2160,6 +2160,8 @@ async function setCharMode(mode, btn){
   if(changed) setCurrentInput('');
   // topbar・タイトルのモードボタンラベルを更新
   updateCharModeBtnLabels();
+  // モード切り替え時の音声再生（ひらがな→hiragana.wav／カタカナ→katakana.wav）
+  if(changed) playSound(mode === 'hiragana' ? 'hiragana.wav' : 'katakana.wav');
 }
 
 /** topbar・タイトル画面のモードボタンラベルを現在のST.charModeに合わせて更新 */
