@@ -557,6 +557,13 @@ button,input,select{font:inherit;color:inherit}
 }
 .img-ph{font-size:46px;opacity:.4}
 .img-ld{font-size:12px;color:var(--muted);animation:blink .7s infinite}
+.img-credit{
+  position:absolute;right:4px;bottom:3px;max-width:calc(100% - 8px);
+  font-size:9px;line-height:1.3;color:rgba(255,255,255,.85);
+  background:rgba(0,0,0,.45);border-radius:5px;padding:1px 6px;
+  text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  pointer-events:none;
+}
 
 #detFade{flex:1;overflow-y:auto;min-height:0}
 #detFade::-webkit-scrollbar{width:3px}
@@ -2676,6 +2683,60 @@ async function fetchJson(url){
   }catch{ return null; }
 }
 
+/* ─── クレジット（著作者・ライセンス）表示用 ───
+   画像URLからファイル名を特定し、Commons（→ダメなら取得元wiki）の
+   imageinfo/extmetadata から作者・ライセンス名を取得して短い表記を組み立てる。 */
+
+// upload.wikimedia.org の URL からファイル名を取り出す
+// 例: .../commons/thumb/e/e0/Foo_bar.jpg/200px-Foo_bar.jpg → "Foo_bar.jpg"
+function filenameFromImgUrl(url){
+  try{
+    const path = new URL(url).pathname;
+    const parts = path.split('/').filter(Boolean);
+    if(parts.includes('thumb')){
+      // .../thumb/<h1>/<h2>/<元ファイル名>/<幅>px-<...> の形式
+      const ti = parts.indexOf('thumb');
+      return decodeURIComponent(parts[ti+3] || parts[parts.length-2] || '');
+    }
+    return decodeURIComponent(parts[parts.length-1] || '');
+  }catch{ return null; }
+}
+
+function stripTags(html){
+  return (html||'').replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
+}
+
+// extmetadata（imageinfo の iiprop=extmetadata 結果）からクレジット文字列を組み立てる
+function buildCredit(extmeta){
+  if(!extmeta) return null;
+  const artist = stripTags(extmeta.Artist?.value);
+  const credit = stripTags(extmeta.Credit?.value);
+  const license = extmeta.LicenseShortName?.value || '';
+  const who = artist || credit || '';
+  if(!who && !license) return null;
+  const text = who ? (license ? `${who} / ${license}` : who) : license;
+  return { text, artist: who, license };
+}
+
+// Commons、ダメなら取得元 wiki のローカルファイルとして extmetadata を取得
+async function fetchImgCredit(url, hostHint){
+  const filename = filenameFromImgUrl(url);
+  if(!filename) return null;
+  const hosts = ['commons.wikimedia.org'];
+  if(hostHint && !hosts.includes(hostHint)) hosts.push(hostHint);
+  for(const host of hosts){
+    const apiUrl = `https://${host}/w/api.php?action=query&titles=${encodeURIComponent('File:'+filename)}&prop=imageinfo&iiprop=extmetadata&format=json&origin=*`;
+    const data = await fetchJson(apiUrl);
+    const pages = data?.query?.pages;
+    const p = pages && Object.values(pages)[0];
+    if(p && p.missing===undefined && p.imageinfo?.[0]?.extmetadata){
+      const c = buildCredit(p.imageinfo[0].extmetadata);
+      if(c) return c;
+    }
+  }
+  return null;
+}
+
 // 1) Wikipedia記事の代表画像（リダイレクト解決込み）
 async function fetchPageImage(query, lang='ja'){
   const url=`https://${lang}.wikipedia.org/w/api.php?action=query&prop=pageimages|pageprops&piprop=original&pithumbsize=600&redirects=1&titles=${encodeURIComponent(query)}&format=json&origin=*`;
@@ -2741,7 +2802,7 @@ async function fetchImg(query, enQueryArg=null){
   const cacheKey = jaQuery + '|' + (enQuery||'');
   if(IMG_CACHE.has(cacheKey)) return IMG_CACHE.get(cacheKey);
 
-  let url = null;
+  let url = null, lang = 'ja';
   try{
     url = await fetchPageImage(jaQuery, 'ja')
        || await fetchPageImageBySearch(jaQuery, 'ja')
@@ -2749,6 +2810,7 @@ async function fetchImg(query, enQueryArg=null){
        || await fetchCommonsByFulltext(jaQuery);
 
     if(!url && enQuery){
+      lang = 'en';
       url = await fetchPageImage(enQuery, 'en')
          || await fetchPageImageBySearch(enQuery, 'en')
          || await fetchCommonsByTitle(enQuery)
@@ -2756,8 +2818,15 @@ async function fetchImg(query, enQueryArg=null){
     }
   }catch{ url = null; }
 
-  IMG_CACHE.set(cacheKey, url);
-  return url;
+  // 画像が見つかった場合はクレジット（著作者・ライセンス）も合わせて取得する
+  let credit = null;
+  if(url){
+    try{ credit = await fetchImgCredit(url, `${lang}.wikipedia.org`); }catch{ credit = null; }
+  }
+
+  const result = { url, credit };
+  IMG_CACHE.set(cacheKey, result);
+  return result;
 }
 
 /**
@@ -2766,12 +2835,16 @@ async function fetchImg(query, enQueryArg=null){
  * 同じ画像をぼかした背景の上に object-fit:contain で重ねる
  * （いわゆる letterbox blur 表示）。
  */
-function renderImgHtml(url){
+function renderImgHtml(url, credit){
   if(!url) return '<div class="img-ph">🖼️</div>';
   const u = escH(url);
+  const creditHtml = credit?.text
+    ? `<div class="img-credit" title="${escH(credit.text)}">${escH(credit.text)}</div>`
+    : '';
   return `<div class="img-frame">`
        + `<img class="img-bg" src="${u}" alt="" aria-hidden="true"/>`
        + `<img class="img-main" src="${u}" alt=""/>`
+       + creditHtml
        + `</div>`;
 }
 
@@ -2793,9 +2866,9 @@ async function showDetail(word, row, isNew=false){
       <div class="det-text">あたらしいことばです！</div>
       ${isNew?'<div class="det-new">✨ アプリがこのことばをおぼえたよ！</div>':''}
     `;
-    fetchImg(word).then(imgUrl=>{
+    fetchImg(word).then(res=>{
       if(token !== ST.detailToken) return;
-      imgBox.innerHTML = renderImgHtml(imgUrl);
+      imgBox.innerHTML = renderImgHtml(res?.url, res?.credit);
     }).catch(()=>{
       if(token !== ST.detailToken) return;
       imgBox.innerHTML = renderImgHtml(null);
@@ -2812,10 +2885,10 @@ async function showDetail(word, row, isNew=false){
   const placeholderImgs = iqs.map(()=>null);
   renderDetailSlide(words, meanings, placeholderImgs, 0, isNew, row.reading);
 
-  // 画像を非同期で取得して後から埋める
-  Promise.all(iqs.map(q=>fetchImg(q).catch(()=>null))).then(imgs=>{
+  // 画像を非同期で取得して後から埋める（url/credit のペアの配列）
+  Promise.all(iqs.map(q=>fetchImg(q).catch(()=>({url:null,credit:null})))).then(imgs=>{
     if(token !== ST.detailToken) return;
-    imgBox.innerHTML = renderImgHtml(imgs[0]);
+    imgBox.innerHTML = renderImgHtml(imgs[0]?.url, imgs[0]?.credit);
 
     // ★ 同期スライドショー内でも画像を使えるようにここで再設定
     if(words.length>1){
@@ -2830,7 +2903,7 @@ async function showDetail(word, row, isNew=false){
         ST.homoTimeout=setTimeout(()=>{
           if(token !== ST.detailToken) return;
           renderDetailSlide(words,meanings,imgs,idx,isNew,row.reading);
-          imgBox.innerHTML = renderImgHtml(imgs[idx]);
+          imgBox.innerHTML = renderImgHtml(imgs[idx]?.url, imgs[idx]?.credit);
           dc.classList.remove('out');
         },450);
       },4200);
