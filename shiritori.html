@@ -1343,6 +1343,20 @@ body.panic #pageGame{
       </div>
     </div>
 
+    <!-- Hint -->
+    <div class="set-sec">
+      <div class="set-hd">💡 ヒント</div>
+      <div class="set-bd">
+        <div class="toggle-row">
+          <div>
+            <span class="toggle-lbl">「つかえることば」ヒントをひょうじする</span>
+            <div class="set-label" style="font-size:11px;margin-top:3px;line-height:1.5">ONにすると、がめんの右下に つぎにつかえることばの れいが でます。</div>
+          </div>
+          <button class="toggle" id="togShowHints" onclick="toggleShowHints()"></button>
+        </div>
+      </div>
+    </div>
+
     <!-- CPU behaviour -->
     <div class="set-sec">
       <div class="set-hd">🤖 CPU のこうどう</div>
@@ -1516,6 +1530,7 @@ const ST = {
   pendingUnknownLogs: [],
   cpuAllowN: false,      // CPUが「ん」で終わる語を使いうるか
   dziRule: false,        // 「ぢ」→「じ」つなぎルール
+  showHints: false,      // 右下の「つかえることば」ヒント表示（初回起動時OFF）
 };
 
 
@@ -1567,6 +1582,7 @@ function loadSettings(){
     if(Array.isArray(s.pendingUnknownLogs)) ST.pendingUnknownLogs = s.pendingUnknownLogs;
     if(s.cpuAllowN!=null) ST.cpuAllowN = s.cpuAllowN;
     if(s.dziRule!=null)   ST.dziRule   = s.dziRule;
+    if(s.showHints!=null) ST.showHints = s.showHints;
   }catch{}
 }
 function saveSettings(){
@@ -1583,6 +1599,7 @@ function saveSettings(){
     pendingUnknownLogs: ST.pendingUnknownLogs,
     cpuAllowN: ST.cpuAllowN,
     dziRule:   ST.dziRule,
+    showHints: ST.showHints,
   }));
 }
 
@@ -2605,6 +2622,9 @@ function syncSettingsUI(){
   // dzi rule toggle
   const togDzi = document.getElementById('togDziRule');
   if(togDzi) togDzi.classList.toggle('on', ST.dziRule);
+  // show-hints toggle
+  const togHints = document.getElementById('togShowHints');
+  if(togHints) togHints.classList.toggle('on', ST.showHints);
   // fixed GAS URL
   const gasInfo = document.getElementById('gasUrlInfo');
   if(gasInfo) gasInfo.textContent = 'GASは未知語の記録に使います';
@@ -2652,6 +2672,12 @@ function toggleDziRule(){
   ST.dziRule = !ST.dziRule;
   saveSettings();
   document.getElementById('togDziRule').classList.toggle('on', ST.dziRule);
+}
+function toggleShowHints(){
+  ST.showHints = !ST.showHints;
+  saveSettings();
+  document.getElementById('togShowHints').classList.toggle('on', ST.showHints);
+  renderCandidates();
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2980,6 +3006,9 @@ function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
    CANDIDATES
 ═══════════════════════════════════════════════════════════ */
 function renderCandidates(){
+  const sec=document.getElementById('candSec');
+  if(sec) sec.style.display = ST.showHints ? '' : 'none';
+  if(!ST.showHints) return;
   const pool=getPool().filter(r=>
     !ST.used.has(norm(r.reading))&&
     (!ST.tail||firstChar(r.reading)===ST.tail)
