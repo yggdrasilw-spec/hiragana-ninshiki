@@ -2706,22 +2706,23 @@ function stripTags(html){
   return (html||'').replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
 }
 
-// extmetadata（imageinfo の iiprop=extmetadata 結果）からクレジット文字列を組み立てる
-function buildCredit(extmeta){
-  if(!extmeta) return null;
-  const artist = stripTags(extmeta.Artist?.value);
-  const credit = stripTags(extmeta.Credit?.value);
-  const license = extmeta.LicenseShortName?.value || '';
-  const who = artist || credit || '';
-  if(!who && !license) return null;
-  const text = who ? (license ? `${who} / ${license}` : who) : license;
-  return { text, artist: who, license };
+// ライセンス表記がパブリックドメイン相当か（表示義務なしとみなせるか）を判定
+function isPublicDomainLicense(licenseShort){
+  if(!licenseShort) return false;
+  return /^(cc0|pdm|public domain)/i.test(licenseShort.trim());
 }
 
-// Commons、ダメなら取得元 wiki のローカルファイルとして extmetadata を取得
-async function fetchImgCredit(url, hostHint){
+/**
+ * Commons、ダメなら取得元 wiki のローカルファイルとして extmetadata を取得し、
+ * 画像を採用してよいかを判定する。
+ * 戻り値:
+ *   { ok:true,  credit:null }        … パブリックドメイン等、表記不要と確認できた
+ *   { ok:true,  credit:{text} }      … 作者名またはライセンス名を確認できた（要表記）
+ *   { ok:false, credit:null }        … 著作者・ライセンスとも確認できなかった（採用しない）
+ */
+async function checkImgCredit(url, hostHint){
   const filename = filenameFromImgUrl(url);
-  if(!filename) return null;
+  if(!filename) return { ok:false, credit:null };
   const hosts = ['commons.wikimedia.org'];
   if(hostHint && !hosts.includes(hostHint)) hosts.push(hostHint);
   for(const host of hosts){
@@ -2729,12 +2730,26 @@ async function fetchImgCredit(url, hostHint){
     const data = await fetchJson(apiUrl);
     const pages = data?.query?.pages;
     const p = pages && Object.values(pages)[0];
-    if(p && p.missing===undefined && p.imageinfo?.[0]?.extmetadata){
-      const c = buildCredit(p.imageinfo[0].extmetadata);
-      if(c) return c;
+    if(!p || p.missing!==undefined || !p.imageinfo?.[0]?.extmetadata) continue;
+
+    const extmeta = p.imageinfo[0].extmetadata;
+    const artist = stripTags(extmeta.Artist?.value);
+    const creditField = stripTags(extmeta.Credit?.value);
+    const licenseShort = extmeta.LicenseShortName?.value || '';
+
+    if(isPublicDomainLicense(licenseShort)){
+      return { ok:true, credit:null };
     }
+    const who = artist || creditField;
+    if(who || licenseShort){
+      const text = who ? (licenseShort ? `${who} / ${licenseShort}` : who) : licenseShort;
+      return { ok:true, credit:{ text } };
+    }
+    // extmetadata はあるが Artist/Credit/License すべて空 → 確認できなかった扱い
+    return { ok:false, credit:null };
   }
-  return null;
+  // どのホストでもファイル情報を取得できなかった
+  return { ok:false, credit:null };
 }
 
 // 1) Wikipedia記事の代表画像（リダイレクト解決込み）
@@ -2787,6 +2802,8 @@ async function fetchCommonsByFulltext(query){
  * メインの画像取得関数。
  * query: 検索語の文字列、または { ja, en } オブジェクト。
  * enQueryArg: query が文字列のときに任意で渡す英語語（後方互換用）。
+ * 各候補について著作者・ライセンス情報を確認し、確認できたものだけを採用する。
+ * 確認できなければその候補は使わず次の候補にフォールバックする。
  */
 async function fetchImg(query, enQueryArg=null){
   let jaQuery, enQuery;
@@ -2802,29 +2819,35 @@ async function fetchImg(query, enQueryArg=null){
   const cacheKey = jaQuery + '|' + (enQuery||'');
   if(IMG_CACHE.has(cacheKey)) return IMG_CACHE.get(cacheKey);
 
-  let url = null, lang = 'ja';
-  try{
-    url = await fetchPageImage(jaQuery, 'ja')
-       || await fetchPageImageBySearch(jaQuery, 'ja')
-       || await fetchCommonsByTitle(jaQuery)
-       || await fetchCommonsByFulltext(jaQuery);
-
-    if(!url && enQuery){
-      lang = 'en';
-      url = await fetchPageImage(enQuery, 'en')
-         || await fetchPageImageBySearch(enQuery, 'en')
-         || await fetchCommonsByTitle(enQuery)
-         || await fetchCommonsByFulltext(enQuery);
-    }
-  }catch{ url = null; }
-
-  // 画像が見つかった場合はクレジット（著作者・ライセンス）も合わせて取得する
-  let credit = null;
-  if(url){
-    try{ credit = await fetchImgCredit(url, `${lang}.wikipedia.org`); }catch{ credit = null; }
+  const candidates = [
+    { fn: ()=>fetchPageImage(jaQuery, 'ja'),        hostHint:'ja.wikipedia.org' },
+    { fn: ()=>fetchPageImageBySearch(jaQuery, 'ja'), hostHint:'ja.wikipedia.org' },
+    { fn: ()=>fetchCommonsByTitle(jaQuery),          hostHint:null },
+    { fn: ()=>fetchCommonsByFulltext(jaQuery),       hostHint:null },
+  ];
+  if(enQuery){
+    candidates.push(
+      { fn: ()=>fetchPageImage(enQuery, 'en'),         hostHint:'en.wikipedia.org' },
+      { fn: ()=>fetchPageImageBySearch(enQuery, 'en'), hostHint:'en.wikipedia.org' },
+      { fn: ()=>fetchCommonsByTitle(enQuery),          hostHint:null },
+      { fn: ()=>fetchCommonsByFulltext(enQuery),       hostHint:null },
+    );
   }
 
-  const result = { url, credit };
+  let result = { url:null, credit:null };
+  try{
+    for(const { fn, hostHint } of candidates){
+      const url = await fn().catch(()=>null);
+      if(!url) continue;
+      const status = await checkImgCredit(url, hostHint).catch(()=>({ok:false, credit:null}));
+      if(status.ok){
+        result = { url, credit: status.credit };
+        break;
+      }
+      // 著作者・ライセンスが確認できない画像は採用せず次の候補へ
+    }
+  }catch{ result = { url:null, credit:null }; }
+
   IMG_CACHE.set(cacheKey, result);
   return result;
 }
