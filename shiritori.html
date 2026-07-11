@@ -3130,24 +3130,32 @@ async function submitWord(){
 
   const n=norm(ST.currentInput);
 
-  const hit = getBlacklistHit(n);
-  if(hit){
-    ST.moderationBlocks = Math.min(3, (ST.moderationBlocks || 0) + 1);
-    saveSettings();
-    const remaining = 3 - ST.moderationBlocks;
-    if(ST.moderationBlocks >= 3){
-      setStatus('error','ゲームがつかえなくなりました。先生に解除してもらいましょう。','');
-      lockGameNow();
+  // ★ ホワイトリスト先読み：登録済みの言葉かどうかを先に確認する。
+  //   登録済みの言葉であれば、ブラックリストの部分一致による誤検知
+  //  （例:「きゅあほわいと」に「あほ」が含まれてNG判定される等）を避けるため、
+  //   ブラックリストチェック自体をスキップする。
+  const wlRow = lookupRow(n);
+
+  if(!wlRow){
+    const hit = getBlacklistHit(n);
+    if(hit){
+      ST.moderationBlocks = Math.min(3, (ST.moderationBlocks || 0) + 1);
+      saveSettings();
+      const remaining = 3 - ST.moderationBlocks;
+      if(ST.moderationBlocks >= 3){
+        setStatus('error','ゲームがつかえなくなりました。先生に解除してもらいましょう。','');
+        lockGameNow();
+        ST.cpuBusy = false;
+        updateWordBox(ST.currentInput);
+        return;
+      }
+      const msg = moderationText(ST.level, remaining);
+      setStatus('error', msg, '');
+      shakeInput();
       ST.cpuBusy = false;
       updateWordBox(ST.currentInput);
       return;
     }
-    const msg = moderationText(ST.level, remaining);
-    setStatus('error', msg, '');
-    shakeInput();
-    ST.cpuBusy = false;
-    updateWordBox(ST.currentInput);
-    return;
   }
 
   if(!n){setStatus('error','ことばをにゅうりょくしてください。','');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;}
@@ -3160,7 +3168,7 @@ async function submitWord(){
     setStatus('error',`「${displayStr(ST.tail)}」ではじまることばにしてください。`,'');shakeInput();ST.cpuBusy=false;updateWordBox(ST.currentInput);return;
   }
 
-  const row=lookupRow(n);
+  const row=wlRow; // 上でホワイトリスト照合済みなのでそのまま再利用
   if(isEndWord(n)){
     await showEndGameByN(n, row); // 内部で ST.gameOver=true / ST.cpuBusy=false にする
     setCurrentInput('');
