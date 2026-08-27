@@ -242,7 +242,7 @@
             <div>1. Colabで <code>tensorflowjs</code> を入れる。</div>
             <div>2. <code>tensorflowjs_converter --input_format=keras model.h5 tfjs_model</code> を実行する。</div>
             <div>3. 出力された <code>model.json</code> と <code>group1-shard*.bin</code> を <code>tfjs_model/</code> に置く。</div>
-            <div>4. このHTMLを配信し、ページを開くと <code>tfjs_model/model.json</code> を自動読み込みする。</div>
+            <div>4. このHTMLを配信し、ページを開くと <code>tfjs_model/hiragana/model.json</code> を自動読み込みする。</div>
             <div style="margin-top:8px;">手動読み込みも可能。<code>model.json</code> と <code>.bin</code> をまとめて選択する。</div>
           </div>
         </section>
@@ -256,7 +256,9 @@ const LABELS = ["あ","い","う","え","お","か","が","き","ぎ","く","ぐ
 const IMAGE_SIZE = 256;
 const TARGET_SIZE = 64;
 const LINE_WIDTH = 16;
-const DEFAULT_MODEL_URL = './tfjs_model/model.json';
+// The repository keeps the models in separate subdirectories.  Loading the
+// old root-level path makes GitHub Pages return a 404 and prevents inference.
+const DEFAULT_MODEL_URL = './tfjs_model/hiragana/model.json';
 const BG_THRESHOLD = 245;
 
 const canvas = document.getElementById('draw');
