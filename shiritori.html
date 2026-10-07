@@ -1454,8 +1454,8 @@ const BLACKLIST_CACHE_KEY = 'shiri-blacklist-txt';
 /* ═══════════════════════════════════════════════════════════
    CSV PARSER
    同じreadingが複数行 → 自動グループ化して meanings[] / words[] / imagequeries[] の配列に
-   imagequeries の各要素は { ja, en } オブジェクト。
-   CSV列: reading,word,meaning,imagequery,level,imagequery_en(任意)
+   imagequeries の各要素は { ja, en, asset, mode, credit } オブジェクト。
+   CSV列: reading,word,meaning,imagequery,level,imagequery_en(任意),image_asset(任意),image_mode(任意),image_credit(任意)
    imagequery_en を入れておくと、日本語側で画像が当たらないときに
    英語版 Wikipedia / Commons 英語検索へフォールバックできる。
 ═══════════════════════════════════════════════════════════ */
@@ -1474,8 +1474,11 @@ function parseCSV(csvText){
     const imagequery    = (parts[3]||'').trim() || word;
     const level         = parseInt(parts[4]||'1') || 1;
     const imagequeryEn  = (parts[5]||'').trim() || null;
+    const imageAsset    = (parts[6]||'').trim() || null;
+    const imageMode     = (parts[7]||'').trim() === 'asset' ? 'asset' : 'fallback';
+    const imageCredit   = (parts[8]||'').trim() || null;
     if(!reading || !word) continue;
-    rawRows.push({ reading, word, meaning, imagequery, level, imagequeryEn });
+    rawRows.push({ reading, word, meaning, imagequery, level, imagequeryEn, imageAsset, imageMode, imageCredit });
   }
 
   // Step2: 同じreadingをグループ化（同音異義語をまとめる）
@@ -1488,7 +1491,7 @@ function parseCSV(csvText){
     const grp = map.get(key);
     grp.words.push(r.word);
     grp.meanings.push(r.meaning);
-    grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn });
+    grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn, asset:r.imageAsset, mode:r.imageMode, credit:r.imageCredit });
     // levelは最小値（一番やさしい方）を採用
     grp.level = Math.min(grp.level, r.level);
   }
@@ -2702,11 +2705,38 @@ function isDisambigTitle(title){
 }
 
 async function fetchJson(url){
+  const controller = new AbortController();
+  const timer = setTimeout(()=>controller.abort(), 4000);
   try{
-    const res = await fetch(url);
+    const res = await fetch(url, { signal:controller.signal });
     if(!res.ok) return null;
     return await res.json();
   }catch{ return null; }
+  finally{ clearTimeout(timer); }
+}
+
+// アセットはこのアプリに保存した画像のみ。CSVから外部URLや親フォルダは指定しない。
+function localImageAsset(path){
+  if(!path) return null;
+  const cleaned = String(path).replace(/^\.\//, '');
+  return /^assets\/shiritori\/[a-zA-Z0-9_-]+\.(png|jpe?g|webp)$/i.test(cleaned)
+    ? './' + cleaned : null;
+}
+
+function canLoadImage(url){
+  return new Promise(resolve=>{
+    const img = new Image();
+    let timer;
+    const finish = ok=>{
+      clearTimeout(timer);
+      img.onload = img.onerror = null;
+      resolve(ok);
+    };
+    img.onload = ()=>finish(img.naturalWidth > 0);
+    img.onerror = ()=>finish(false);
+    timer = setTimeout(()=>finish(false), 5000);
+    img.src = url;
+  });
 }
 
 /* ─── クレジット（著作者・ライセンス）表示用 ───
@@ -2826,24 +2856,34 @@ async function fetchCommonsByFulltext(query){
 
 /**
  * メインの画像取得関数。
- * query: 検索語の文字列、または { ja, en } オブジェクト。
+ * query: 検索語の文字列、または { ja, en, asset, mode, credit } オブジェクト。
  * enQueryArg: query が文字列のときに任意で渡す英語語（後方互換用）。
  * 各候補について著作者・ライセンス情報を確認し、確認できたものだけを採用する。
  * 確認できなければその候補は使わず次の候補にフォールバックする。
  */
 async function fetchImg(query, enQueryArg=null){
-  let jaQuery, enQuery;
+  let jaQuery, enQuery, asset=null, mode='fallback', assetCredit=null;
   if(query && typeof query === 'object'){
     jaQuery = query.ja || null;
     enQuery = query.en || null;
+    asset = localImageAsset(query.asset);
+    mode = query.mode === 'asset' ? 'asset' : 'fallback';
+    assetCredit = query.credit || 'AI生成イラスト';
   }else{
     jaQuery = query;
     enQuery = enQueryArg;
   }
-  if(!jaQuery) return null;
+  if(!jaQuery && !asset) return { url:null, credit:null };
 
-  const cacheKey = jaQuery + '|' + (enQuery||'');
+  const cacheKey = JSON.stringify([jaQuery, enQuery, asset, mode, assetCredit]);
   if(IMG_CACHE.has(cacheKey)) return IMG_CACHE.get(cacheKey);
+
+  const assetResult = async()=> asset && await canLoadImage(asset)
+    ? { url:asset, credit:{ text:assetCredit } } : null;
+  if(mode === 'asset'){
+    const preferred = await assetResult();
+    if(preferred){ IMG_CACHE.set(cacheKey, preferred); return preferred; }
+  }
 
   const candidates = [
     { fn: ()=>fetchPageImage(jaQuery, 'ja'),        hostHint:'ja.wikipedia.org' },
@@ -2861,18 +2901,23 @@ async function fetchImg(query, enQueryArg=null){
   }
 
   let result = { url:null, credit:null };
+  // 保存済みの代替画像があれば、検索待ちを長引かせない。
+  const searchDeadline = asset ? Date.now() + 12000 : Infinity;
   try{
     for(const { fn, hostHint } of candidates){
+      if(!jaQuery || Date.now() >= searchDeadline) break;
       const url = await fn().catch(()=>null);
       if(!url) continue;
       const status = await checkImgCredit(url, hostHint).catch(()=>({ok:false, credit:null}));
-      if(status.ok){
+      if(status.ok && await canLoadImage(url)){
         result = { url, credit: status.credit };
         break;
       }
       // 著作者・ライセンスが確認できない画像は採用せず次の候補へ
     }
   }catch{ result = { url:null, credit:null }; }
+
+  if(!result.url && mode !== 'asset') result = await assetResult() || result;
 
   IMG_CACHE.set(cacheKey, result);
   return result;
