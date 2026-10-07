@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
         assert.ok((await page.locator('#detContent').innerText()).includes(word));
         await page.screenshot({ path: path.join(output, `${name}-${path.parse(filename).name}.png`), fullPage: true });
       }
-      // Meanings sharing one reading retain their own image and credit in the slideshow.
+      // Manual meaning selection retains the matching image and credit.
       await page.evaluate(() => showDetail('はし', {
         reading: 'はし', words: ['意味その一', '意味その二'], meanings: ['説明その一', '説明その二'],
         imagequeries: [
@@ -50,9 +50,16 @@ const server = http.createServer((req, res) => {
         ]
       }));
       await page.waitForFunction(() => document.querySelector('#detImgBox .img-main')?.src.endsWith('hakushu.png'));
+      await page.waitForTimeout(4600);
+      assert.match(await page.locator('#detContent').innerText(), /意味その一/,'Meaning stays still while reading');
+      await page.locator('#detNext').click();
       await page.waitForFunction(() => document.querySelector('#detImgBox .img-main')?.src.endsWith('hayane.png'));
       assert.match(await page.locator('#detContent').innerText(), /意味その二/);
       assert.equal(await page.locator('#detImgBox .img-credit').innerText(), '画像その二');
+      await page.locator('#detPrev').click();
+      assert.match(await page.locator('#detContent').innerText(), /意味その一/);
+      await page.locator('#detRead').click();
+      assert.match(await page.locator('#detRead').innerText(), /オン/);
       assert.deepEqual(errors, []);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'No horizontal overflow');
       await page.close();
