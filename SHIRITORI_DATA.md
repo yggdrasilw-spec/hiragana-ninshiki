@@ -176,3 +176,24 @@ reading,word,meaning,imagequery,level,imagequery_en,image_asset,image_mode,image
 データ検証、両バッチの再取り込み（追加0件）、PC・スマホ幅で5枚すべての画像表示、同音異義語の画像・説明切り替えを確認して合格。新規語すべてについてWikimediaの実検索結果を一件ずつ確認したわけではない。
 
 次の改善候補は「る」などの使用可能語が少ない文字の追加、既存の説明の点検、検索不発・意味に合わない画像がある語への生成画像の追加。
+
+## 2026-10-08: グリッド画像と追加語
+
+### 単語を増やす
+
+1. `whitelist.csv` を調べ、追加する読み・表記・意味の組がすでにないか確認する。同じ表記でも意味が違えば、意味ごとの行を追加できる。
+2. 普通の名詞・動詞を中心に候補を作る。読み、短い説明、難易度（1〜3）、日本語と英語の検索語を付ける。半角カンマ・改行は使わない。
+3. 9列ヘッダーのバッチCSVを `data/batches/` に保存し、`node scripts/import-shiritori-words.cjs data/batches/ファイル名.csv` で取り込む。重複は除外され、追加行は読み順に挿入される。
+4. 画像を用意した語は `image_asset` に `assets/shiritori/` からの相対パス、`image_mode` に `asset`、`image_credit` に `AI生成イラスト` を指定する。Wikimediaより自作画像を優先したい語に適する。
+
+### グリッド画像を増やす
+
+複数コマのシートを作る場合は、各コマを正方形にし、一定間隔のグリッドと余白を指定する。コマの順番を決めて、一覧と画像の対応を確認してから切り出す。Pillowが使える環境では次のスクリプトが256px PNGを作る。
+
+```sh
+python scripts/crop-shiritori-grid.py contact-sheet.png --columns 4 --rows 4 --names kansha,souzou,kufuu,kyouchou,ouen,ayamaru,kangei,kuchiyakusoku,nintai,toriwakeru,yuukan,shinyuu,hansei,hakken,heiwa,sekinin
+```
+
+切り出したファイル名をバッチCSVの `image_asset` に登録し、`assets/shiritori/manifest.json` に生成日・読み・語・意味・プロンプト・対応コマ・確認内容を記録する。意味が絵だけで伝わるか、コマ境界が残っていないかを目視で確認する。元シートは `assets/shiritori/sheets/` に残す。
+
+今回、2枚のグリッドシートから合計32枚を作成した。1枚目 `assets/shiritori/sheets/2026-10-08-social-concepts.png` では感謝、想像、工夫、協調、応援、歓迎、口約束、忍耐、取り分ける、勇敢、親友、発見、平和、責任の14語に画像を設定し、「謝る」「反省」の2語もレベル1で追加した。2枚目 `assets/shiritori/sheets/2026-10-08-learning-social.png` では好奇、尊重、慰める、手伝う、賛成、交流、記憶、仲間、驚く、創造、秩序、練習、勉強の13語に画像を設定し、「集中」「選ぶ」「安全」の3語もレベル1で追加した。全32枚を生成イラストとして優先表示する。追加CSVは `data/batches/2026-10-08-grid.csv` と `data/batches/2026-10-08-learning.csv`。
