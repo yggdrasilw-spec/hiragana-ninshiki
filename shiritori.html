@@ -489,6 +489,8 @@ button,input,select{font:inherit;color:inherit}
 #detFade::-webkit-scrollbar-thumb{background:var(--border);border-radius:99px}
 #detContent{transition:opacity .45s ease}
 #detContent.out{opacity:0}
+.det-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.det-controls button{min-height:44px;padding:8px 10px;border:1px solid var(--cyan);border-radius:10px;background:var(--bg);color:var(--text);font:inherit;font-size:12px;cursor:pointer}
 
 .det-word{font-size:28px;font-weight:900;line-height:1;letter-spacing:.03em;margin-bottom:5px}
 .det-kana{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:8px}
@@ -1122,6 +1124,47 @@ body.panic #pageGame{
   #btnOk{font-size:13px;min-width:66px}
   .kb-key{font-size:13px}
 }
+
+/* Word-link arena: the connection stays visible beside the next input. */
+:root{--muted:#9aa9cf}
+body{height:100dvh;background:radial-gradient(ellipse at 50% 0%,#19264a 0%,#080b18 65%)}
+#pageGame{min-height:0;height:auto;grid-template-columns:220px minmax(0,1fr) 250px}
+#colCenter{min-width:0;min-height:0}
+button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+#linkArena{flex-shrink:0;position:relative;overflow:hidden;border:1px solid #344770;border-radius:20px;background:radial-gradient(ellipse at 80% 0%,#164b59 0%,transparent 65%),linear-gradient(135deg,#17233f,#10162b);padding:14px 16px;box-shadow:0 12px 36px #0004,inset 0 1px 0 #ffffff12}
+.link-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.link-title{font-size:11px;color:#afbddc;font-weight:900;letter-spacing:.12em}
+#linkCount{font-size:12px;color:var(--green);font-weight:900}
+#linkCount strong{font-size:24px;font-variant-numeric:tabular-nums;margin-right:4px}
+#linkTrack{display:flex;align-items:center;overflow-x:auto;gap:0;padding:12px 0 10px;scrollbar-width:thin;scrollbar-color:#395d76 transparent;min-height:94px}
+.link-empty{color:#cad7ef;font-size:14px;line-height:1.7}
+.link-node{flex-shrink:0;border:1px solid #5379a9;border-radius:14px;background:linear-gradient(150deg,#24426a,#13233e);padding:8px 10px;max-width:230px;cursor:pointer;text-align:left;position:relative}
+.link-node.cpu{border-color:#ba688d;background:linear-gradient(150deg,#512f4c,#271d36)}
+.link-who{font-size:9px;color:#c3d5ed;margin-bottom:5px;font-weight:800}
+.link-reading{display:flex;gap:3px;align-items:center;font-size:20px;font-weight:900;white-space:nowrap;overflow-x:auto}
+.link-char{padding:2px 1px}
+.link-char.edge{background:#123e48;color:#93ffdc;border:1px solid #62e5c4;border-radius:7px;padding:2px 5px;text-shadow:0 0 12px #1affa080}
+.link-bridge{flex-shrink:0;width:42px;display:grid;place-items:center;color:#8cffe5;font-size:18px;position:relative}
+.link-bridge:before{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,#5b8fff,#8cffe5);box-shadow:0 0 10px #00e5ff80}
+.link-bridge span{z-index:1;background:#172c3f;border:1px solid #5de1cc;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;font-size:13px}
+#linkCue{display:flex;align-items:center;gap:10px;border-top:1px solid #ffffff16;padding-top:9px;font-size:12px;font-weight:800;color:#cfdef5}
+#linkNext{font-size:24px;color:#8cffe5;min-width:32px;text-align:center}
+#linkStatus{min-height:18px;flex:1}
+#linkBurst{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.link-spark{position:absolute;left:75%;top:50%;width:5px;height:5px;border-radius:2px;background:#9fffe0;box-shadow:0 0 8px #00e5ff;animation:linkSpark .65s ease-out forwards}
+#linkArena.impact{animation:linkImpact .65s ease-out}
+.link-node.arrive{animation:linkLand .5s cubic-bezier(.2,.8,.2,1) both}
+#linkCount.hit{animation:countHit .45s ease-out}
+@keyframes linkLand{from{opacity:0;transform:translateX(22px) scale(.85)}60%{transform:translateX(0) scale(1.04)}to{opacity:1;transform:none}}
+@keyframes linkImpact{0%{box-shadow:0 0 0 2px #94ffe0,0 0 40px #00e5ff55}100%{box-shadow:0 12px 36px #0004,inset 0 1px 0 #ffffff12}}
+@keyframes linkSpark{to{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(140deg)}}
+@keyframes countHit{40%{transform:scale(1.15)}to{transform:none}}
+#wordContent{min-width:0;overflow-x:auto;flex-wrap:nowrap}
+#wordBox{min-width:0} .k-tile{flex-shrink:0}
+@media(max-width:1000px) and (min-width:769px){#pageGame{grid-template-columns:180px minmax(0,1fr) 210px;gap:7px;padding:7px}.k-tile{width:38px;height:42px;font-size:21px}}
+@media(max-width:768px){#pageGame{flex:1;min-height:0}#colCenter{flex:1;min-height:0;overflow-y:auto}#colCenter .panel{min-height:160px}#linkArena{padding:9px 12px;border-radius:15px}#linkTrack{min-height:73px;padding:8px 0}.link-reading{font-size:18px}.link-node{padding:6px 8px}.link-top{height:24px}#linkCount strong{font-size:22px}#linkCue{padding-top:6px}#linkNext{font-size:22px}#mobileSubTabs{flex-shrink:0;padding-bottom:env(safe-area-inset-bottom)}.wa-btn{min-width:44px;min-height:44px}.main-tab,.tb-btn{min-height:34px}}
+@media(max-width:768px){#topbar{gap:5px}#btnCharMode{max-width:104px;overflow:hidden;font-size:10px}#colCenter .panel:has(#modeCanvas:not(.hidden)){min-height:300px!important}#drawCanvas{min-height:110px}#colCenter .panel:has(#modeKbd:not(.hidden)){min-height:205px!important}#modeKbd{overflow-y:auto;flex-shrink:0;min-height:180px}#kbdWrap{min-height:155px;padding:12px 6px}#modeKbd .kbd-hint{flex-shrink:0}#inArea:has(#modeKbd:not(.hidden)){overflow-y:auto}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.link-spark{display:none}body.panic #panicOverlay{display:none}}
 </style>
 </head>
 <body>
@@ -1174,12 +1217,18 @@ body.panic #pageGame{
 
   <!-- CENTER -->
   <div id="colCenter">
+    <section id="linkArena" aria-label="ことばのつながり">
+      <div class="link-top"><span class="link-title">ことばを、つなごう。</span><span id="linkCount"><strong>0</strong>つながり</span></div>
+      <div id="linkTrack" aria-label="最近のことば"></div>
+      <div id="linkCue"><span id="linkNext">✦</span><span id="linkStatus" role="status" aria-live="polite">さいしょのことばをいれてね</span></div>
+      <div id="linkBurst" aria-hidden="true"></div>
+    </section>
     <!-- Word box -->
     <div id="wordBox">
       <div id="wordContent"><div class="wph" id="wph">ここに ことばが でるよ</div></div>
       <div id="wordActions">
-        <button id="btnBackspace" class="wa-btn" type="button" aria-label="backspace">⌫</button>
-        <button id="btnOk" class="wa-btn ok" type="button" disabled>✅</button>
+        <button id="btnBackspace" class="wa-btn" type="button" aria-label="さいごのもじをけす">⌫</button>
+        <button id="btnOk" class="wa-btn ok" type="button" aria-label="ことばをかくてい" disabled>➜</button>
       </div>
     </div>
 
@@ -1502,6 +1551,7 @@ function parseCSV(csvText){
    STATE
 ═══════════════════════════════════════════════════════════ */
 const ST = {
+  round: 0,
   score: {you:0, cpu:0},
   history: [],
   used: new Set(),
@@ -1589,7 +1639,7 @@ function loadSettings(){
   }catch{}
 }
 function saveSettings(){
-  localStorage.setItem('shiri-settings', JSON.stringify({
+  try{localStorage.setItem('shiri-settings', JSON.stringify({
     level: ST.level,
     charMode: ST.charMode,
     inputMode: ST.inputMode,
@@ -1603,7 +1653,7 @@ function saveSettings(){
     cpuAllowN: ST.cpuAllowN,
     dziRule:   ST.dziRule,
     showHints: ST.showHints,
-  }));
+  }));}catch(e){console.warn('設定を保存できませんでした。',e.name);}
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1792,6 +1842,7 @@ function safeParseAIResult(raw, originalWord){
     const ei = cleaned.lastIndexOf('}');
     if(si !== -1 && ei !== -1) cleaned = cleaned.substring(si, ei+1);
     const parsed = JSON.parse(cleaned);
+    if(typeof parsed.valid!=='boolean')throw new Error('Invalid validation response');
     return {
       ok:      parsed.valid !== undefined ? Boolean(parsed.valid) : true,
       safe:    parsed.valid !== undefined ? Boolean(parsed.valid) : true,
@@ -1801,8 +1852,7 @@ function safeParseAIResult(raw, originalWord){
       imagequery_en: String(parsed.imagequery_en || '').trim(),
     };
   }catch{
-    // JSONパース失敗 → 安全のため合格扱い（GASのフォールバックと同思想）
-    return { ok:true, safe:true, meaning:'AIのせんせいもしっているすてきなことばです！', level:1, word:originalWord, imagequery_en:'' };
+    return { ok:true, safe:true, meaning:'', level:ST.level, word:originalWord, _fallback:'invalid-response' };
   }
 }
 
@@ -1913,6 +1963,7 @@ async function learnWord(reading, word, meaning, imagequeryEn, level){
    SPEECH
 ═══════════════════════════════════════════════════════════ */
 function speak(text){
+  if(finishSpeech)finishSpeech();
   if(!ST.voice||!('speechSynthesis' in window))return;
   const u=new SpeechSynthesisUtterance(text);
   u.lang='ja-JP';
@@ -1920,16 +1971,22 @@ function speak(text){
   window.speechSynthesis.speak(u);
 }
 
-function speakAsync(text){
+let finishSpeech = null;
+function speakAsync(text, maxMs=15000){
   return new Promise(resolve=>{
+    if(finishSpeech) finishSpeech();
     if(!ST.voice||!('speechSynthesis' in window)||!text){
       resolve();
       return;
     }
     const u=new SpeechSynthesisUtterance(text);
     u.lang='ja-JP';
-    u.onend=()=>resolve();
-    u.onerror=()=>resolve();
+    let done=false;
+    const finish=()=>{if(done)return;done=true;clearTimeout(timer);if(finishSpeech===finish)finishSpeech=null;resolve();};
+    const timer=setTimeout(()=>{window.speechSynthesis.cancel();finish();},maxMs);
+    finishSpeech=finish;
+    u.onend=finish;
+    u.onerror=finish;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(u);
   });
@@ -1960,14 +2017,15 @@ function getDetailSpeechParts(word, row, speaker, isNew=false){
 }
 
 async function speakDetail(word, row, speaker, isNew=false){
-  for(const part of getDetailSpeechParts(word, row, speaker, isNew)){
-    await speakAsync(part);
-    await sleep(120);
-  }
+  const reading=norm(row?.reading || word || '');
+  const meaning=row?.meanings?.[0] || '';
+  const brief=meaning.length<=35 ? meaning : '';
+  await speakAsync([speaker,reading,brief].filter(Boolean).join('。'),4500);
 }
 
 let emergencyAudioCtx = null;
 function playEmergencyBuzzer(duration=1200){
+  if(!ST.voice)return;
   try{
     const AC = window.AudioContext || window.webkitAudioContext;
     if(!AC) return;
@@ -2003,7 +2061,7 @@ function triggerEmergencyFX(){
   const body = document.body;
   body.classList.add('panic');
   clearTimeout(emergencyFxTimer);
-  if(navigator.vibrate) navigator.vibrate([180,90,180,90,260]);
+  if(navigator.vibrate&&!matchMedia('(prefers-reduced-motion: reduce)').matches) navigator.vibrate([180,90,180,90,260]);
   playEmergencyBuzzer();
   emergencyFxTimer = setTimeout(()=>{
     body.classList.remove('panic');
@@ -2011,6 +2069,8 @@ function triggerEmergencyFX(){
 }
 
 function showReplayPopup(){
+  document.getElementById('replayTitle').textContent=ST.history.length ? `${ST.history.length}語 つながった！` : 'もういっかい あそぼう！';
+  document.getElementById('replayText').textContent='つぎは CPUから はじめるよ。ちがうことばも さがしてみよう。';
   const overlay=document.getElementById('replayOverlay');
   overlay.classList.add('show');
   overlay.setAttribute('aria-hidden','false');
@@ -2029,9 +2089,11 @@ function hideReplayPopup(){
 
 async function startCpuOpeningRound(){
   if(ST.cpuBusy || ST.demoRunning || ST.gameOver) return;
+  const round=ST.round;
   ST.cpuBusy = true;
   setStatus('thinking','CPUが先手で ことばをえらんでいます…','すこしまってください。');
   await new Promise(r=>setTimeout(r,650));
+  if(round!==ST.round)return;
   const pick = cpuChoose();
   if(!pick){
     ST.cpuBusy = false;
@@ -2039,13 +2101,15 @@ async function startCpuOpeningRound(){
     return;
   }
   await commitWord('CPU', pick.reading, pick, false);
-  ST.cpuBusy = false;
+  if(round!==ST.round)return;
+  ST.cpuBusy = false;updateWordBox(ST.currentInput);
 }
 
 async function showEndGameByN(word, row){
   if(ST.gameOver) return;
   ST.gameOver = true;
   ST.cpuBusy = false;
+  const round=ST.round;
 
   const fallbackRow = {
     reading: norm(word),
@@ -2056,23 +2120,20 @@ async function showEndGameByN(word, row){
   };
   const detailRow = row || fallbackRow;
 
-  setStatus('error','「ん」でおわった！ ゲームしゅうりょう！','まずはことばのせつめいをきこう。');
+  setStatus('ready','「ん」でおわったね。ここまでつながったよ！','「ん」のつぎはつなげられないね。もういっかい あそぼう。');
 
   await showDetail(word, detailRow, false);
-  await speakDetail(word, detailRow, 'あなた', false);
-  await speakAsync('ゲームしゅうりょうです。');
-  triggerEmergencyFX();
+  if(round!==ST.round)return;
+  await speakAsync(`${norm(word)}。「ん」でおわったね。もういっかい あそぼう。`,4500);
+  if(round!==ST.round)return;
   ST.replayPending = true;
   setTimeout(()=>{
-    if(ST.gameOver && ST.replayPending) showReplayPopup();
+    if(round===ST.round && ST.gameOver && ST.replayPending) showReplayPopup();
   }, 250);
 }
 
 function getCpuDelay(row, isNew=false){
-  const count = row?.words?.length || 1;
-  if(ST.voice) return count > 1 ? 250 : 180;
-  const meaningLen = row?.meanings?.[0]?.length || 0;
-  return Math.max(1800, count > 1 ? 3600 + (row?.meanings?.join('')?.length || 0) * 20 : 1600 + Math.min(meaningLen * 20, 900));
+  return ST.voice ? 180 : 650;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2085,6 +2146,7 @@ function setStatus(kind,main,sub=''){
   document.getElementById('scIcon').textContent=SC_ICONS[kind]||'🟦';
   document.getElementById('scMain').textContent=main;
   document.getElementById('scSub').textContent=sub;
+  document.getElementById('linkStatus').textContent=main;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2097,7 +2159,7 @@ function updateWordBox(input){
 
   if(!n){
     const ph=document.createElement('div');
-    ph.className='wph';ph.textContent='ここに ことばが でるよ';
+    ph.className='wph';ph.textContent=ST.tail ? `「${displayStr(ST.tail)}」から はじめよう` : 'さいしょの ことばを いれてね';
     wb.appendChild(ph);
     document.getElementById('wordBox').className='';
     document.getElementById('btnOk').disabled=true;
@@ -2116,7 +2178,7 @@ function updateWordBox(input){
   const tailOk=!ST.tail||firstChar(n)===ST.tail;
   const box=document.getElementById('wordBox');
   const okBtn=document.getElementById('btnOk');
-  okBtn.disabled=false;
+  okBtn.disabled=ST.cpuBusy||ST.gameOver||ST.moderationLocked;
   if(wl&&tailOk&&!isEndWord(n)&&!ST.used.has(n)){
     box.className='valid';
   } else {
@@ -2181,6 +2243,7 @@ async function setCharMode(mode, btn){
   if(changed || !tfModel){
     await loadModelUrl(MODEL_PATH[mode]);
   }
+  renderHistory();
   // ボタン配列を再描画（ひらがな↔カタカナ）
   if(changed) buildKbBtn();
   // 入力中の文字をクリア
@@ -2194,7 +2257,7 @@ async function setCharMode(mode, btn){
 /** topbar・タイトル画面のモードボタンラベルを現在のST.charModeに合わせて更新 */
 function updateCharModeBtnLabels(){
   const isHira = ST.charMode === 'hiragana';
-  const label   = isHira ? 'げんざい　ひらがなモード' : 'げんざい　カタカナモード';
+  const label   = isHira ? 'ひらがな ⇄' : 'カタカナ ⇄';
   const topBtn  = document.getElementById('btnCharMode');
   const titleBtn= document.getElementById('titleModeBtn');
   if(topBtn)   topBtn.textContent  = label;
@@ -2651,6 +2714,7 @@ function setInputMode(mode,btn){
 }
 function toggleVoice(){
   ST.voice=!ST.voice;saveSettings();
+  if(!ST.voice){window.speechSynthesis?.cancel();if(finishSpeech)finishSpeech();}
   document.getElementById('togVoice').classList.toggle('on',ST.voice);
   document.getElementById('btnVoice').textContent=ST.voice?'🔊 おと':'🔇 おと';
   document.getElementById('btnVoice').classList.toggle('on',ST.voice);
@@ -2945,8 +3009,22 @@ function renderImgHtml(url, credit){
 /* ═══════════════════════════════════════════════════════════
    DETAIL PANEL
 ═══════════════════════════════════════════════════════════ */
+let detailView = null;
+function changeDetailMeaning(delta){
+  const view=detailView;
+  if(!view || view.token!==ST.detailToken)return;
+  ST.homoIdx=(ST.homoIdx+delta+view.words.length)%view.words.length;
+  renderDetailSlide(view.words,view.meanings,view.imgs,ST.homoIdx,view.isNew,view.reading);
+  document.getElementById('detImgBox').innerHTML=renderImgHtml(view.imgs[ST.homoIdx]?.url,view.imgs[ST.homoIdx]?.credit);
+}
+function readCurrentMeaning(){
+  const view=detailView;
+  if(!view || view.token!==ST.detailToken)return;
+  speakAsync(`${view.reading}。${view.meanings[ST.homoIdx] || ''}`);
+}
 async function showDetail(word, row, isNew=false){
   const token = ++ST.detailToken;
+  detailView=null;
   clearInterval(ST.homoTimer); ST.homoTimer = null;
   if(ST.homoTimeout){ clearTimeout(ST.homoTimeout); ST.homoTimeout = null; }
 
@@ -2977,31 +3055,15 @@ async function showDetail(word, row, isNew=false){
   // ★ テキスト部分を先に描画してから画像を非同期で取得する
   ST.homoIdx=0;
   const placeholderImgs = iqs.map(()=>null);
+  detailView={token,words,meanings,imgs:placeholderImgs,isNew,reading:row.reading};
   renderDetailSlide(words, meanings, placeholderImgs, 0, isNew, row.reading);
 
   // 画像を非同期で取得して後から埋める（url/credit のペアの配列）
   Promise.all(iqs.map(q=>fetchImg(q).catch(()=>({url:null,credit:null})))).then(imgs=>{
     if(token !== ST.detailToken) return;
-    imgBox.innerHTML = renderImgHtml(imgs[0]?.url, imgs[0]?.credit);
-
-    // ★ 同期スライドショー内でも画像を使えるようにここで再設定
-    if(words.length>1){
-      clearInterval(ST.homoTimer); ST.homoTimer = null;
-      ST.homoTimer=setInterval(()=>{
-        if(token !== ST.detailToken) return;
-        ST.homoIdx=(ST.homoIdx+1)%words.length;
-        const idx=ST.homoIdx;
-        const dc=document.getElementById('detContent');
-        dc.classList.add('out');
-        if(ST.homoTimeout) clearTimeout(ST.homoTimeout);
-        ST.homoTimeout=setTimeout(()=>{
-          if(token !== ST.detailToken) return;
-          renderDetailSlide(words,meanings,imgs,idx,isNew,row.reading);
-          imgBox.innerHTML = renderImgHtml(imgs[idx]?.url, imgs[idx]?.credit);
-          dc.classList.remove('out');
-        },450);
-      },4200);
-    }
+    detailView.imgs=imgs;
+    const idx=ST.homoIdx;
+    imgBox.innerHTML = renderImgHtml(imgs[idx]?.url, imgs[idx]?.credit);
   });
 }
 
@@ -3042,9 +3104,15 @@ function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
       return `<div class="${cls}">${escH(displayStr(c))}</div>`;
     }).join('')}</div>
     <div class="det-text">${escH(m)}</div>
-    ${isMulti?`<div class="det-homo">🔄 ほかにも いみが あります（${idx+1}/${words.length}）</div>`:''}
+    ${isMulti?`<div class="det-homo" aria-live="polite">いみ ${idx+1} / ${words.length}</div>
+      <div class="det-controls"><button type="button" id="detPrev">◀ まえのいみ</button><button type="button" id="detNext">つぎのいみ ▶</button></div>`:''}
+    <div class="det-controls"><button type="button" id="detRead">🔊 このいみを きく</button><button type="button" id="detStop">■ とめる</button></div>
     ${isNew?'<div class="det-new">✨ アプリがこのことばをおぼえたよ！</div>':''}
   `;
+  document.getElementById('detPrev')?.addEventListener('click',()=>changeDetailMeaning(-1));
+  document.getElementById('detNext')?.addEventListener('click',()=>changeDetailMeaning(1));
+  document.getElementById('detRead').addEventListener('click',()=>{if(!ST.voice){document.getElementById('detRead').textContent='上の「おと」をオンにしてね';return;}readCurrentMeaning();});
+  document.getElementById('detStop').addEventListener('click',()=>{window.speechSynthesis?.cancel();if(finishSpeech)finishSpeech();});
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3076,9 +3144,38 @@ function renderCandidates(){
 /* ═══════════════════════════════════════════════════════════
    HISTORY
 ═══════════════════════════════════════════════════════════ */
+let linkAudio;
+function renderLinks(animate=false){
+  const track=document.getElementById('linkTrack');
+  track.replaceChildren();
+  const recent=ST.history.slice(-4);
+  if(!recent.length) track.innerHTML='<div class="link-empty">しりとり → りす → すいか<br><small>さいごのもじが、つぎのスタート。</small></div>';
+  recent.forEach((item,i)=>{
+    if(i){const bridge=document.createElement('div');bridge.className='link-bridge';bridge.setAttribute('aria-hidden','true');bridge.innerHTML='<span>↗</span>';track.appendChild(bridge);}
+    const node=document.createElement('button');node.type='button';
+    node.className='link-node'+(item.speaker==='CPU'?' cpu':'')+(animate&&i===recent.length-1?' arrive':'');
+    node.setAttribute('aria-label',displayStr(item.reading)+'、'+item.speaker+'、せつめいをみる');
+    node.innerHTML='<div class="link-who">'+escH(item.speaker)+'</div><div class="link-reading">'+[...displayStr(item.reading)].map((c,j,a)=>'<span class="link-char'+(j===0||j===a.length-1?' edge':'')+'">'+escH(c)+'</span>').join('')+'</div>';
+    node.onclick=()=>{showDetail(item.reading,item.row);if(isMobile())switchMobTab('right');};
+    track.appendChild(node);
+  });
+  const count=Math.max(0,ST.history.length-1);
+  document.getElementById('linkCount').innerHTML='<strong>'+count+'</strong>つながり';
+  document.getElementById('linkNext').textContent=ST.tail?displayStr(ST.tail):'✦';
+  track.scrollLeft=track.scrollWidth;
+  if(!animate||!count)return;
+  const arena=document.getElementById('linkArena'),badge=document.getElementById('linkCount'),burst=document.getElementById('linkBurst');
+  arena.classList.remove('impact');badge.classList.remove('hit');void arena.offsetWidth;arena.classList.add('impact');badge.classList.add('hit');
+  burst.replaceChildren();
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    for(let i=0;i<12;i++){const p=document.createElement('i');p.className='link-spark';const angle=i*Math.PI/6;p.style.setProperty('--dx',Math.cos(angle)*90+'px');p.style.setProperty('--dy',Math.sin(angle)*65+'px');burst.appendChild(p);}
+  }
+  if(ST.voice){try{linkAudio ||= new (window.AudioContext||window.webkitAudioContext)();linkAudio.resume().catch(()=>{});[523.25,659.25,783.99].forEach((hz,i)=>{const o=linkAudio.createOscillator(),g=linkAudio.createGain(),t=linkAudio.currentTime+i*.065;o.type='sine';o.frequency.value=hz;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.055,t+.01);g.gain.exponentialRampToValueAtTime(.001,t+.18);o.connect(g);g.connect(linkAudio.destination);o.start(t);o.stop(t+.2);});}catch{}}
+}
 function renderHistory(){
   const list=document.getElementById('histList');
   list.innerHTML='';
+  renderLinks();
   if(!ST.history.length){
     list.innerHTML='<div class="hist-empty">まだことばがありません。<br>さいしょの１ごをいれてね！</div>';
     return;
@@ -3107,25 +3204,8 @@ function renderHistory(){
    SUCK-IN ANIMATION
 ═══════════════════════════════════════════════════════════ */
 function suckIn(word, onDone){
-  const wb=document.getElementById('wordBox');
-  const wbR=wb.getBoundingClientRect();
-  const histFirst=document.getElementById('histList').firstElementChild;
-  const destR=histFirst?histFirst.getBoundingClientRect():{left:20,top:100,width:80,height:36};
-
-  const fly=document.getElementById('flyEl');
-  fly.textContent=displayStr(word);
-  fly.style.cssText=`display:block;opacity:1;transition:none;
-    left:${wbR.left}px;top:${wbR.top}px;
-    width:${wbR.width}px;height:${wbR.height}px;
-    font-size:20px;transform:scale(1);`;
-  fly.getBoundingClientRect();
-  fly.style.transition='all .6s cubic-bezier(.55,.06,.68,.19)';
-  fly.style.left=destR.left+'px';
-  fly.style.top=destR.top+'px';
-  fly.style.width='70px';fly.style.height='32px';
-  fly.style.fontSize='12px';fly.style.opacity='0';fly.style.transform='scale(.35)';
-
-  setTimeout(()=>{fly.style.display='none';fly.style.transition='none';onDone();},620);
+  // Connection feedback now happens in the visible arena, without delaying input.
+  onDone();
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3168,9 +3248,13 @@ async function commitWord(speaker, readingInput, row, isNew=false){
   }
 
   renderHistory();
+  renderLinks(true);
   renderCandidates();
+  const round=ST.round;
   await showDetail(row?row.words[0]:n, row, isNew);
+  if(round!==ST.round)return;
   await speakDetail(row?row.words[0]:n, row, speaker, isNew);
+  if(round!==ST.round)return;
 
   // 「ぢ」→「じ」ルールのアナウンス
   if(dziAnnouncePending){
@@ -3183,11 +3267,7 @@ async function commitWord(speaker, readingInput, row, isNew=false){
   }
 
   saveSettings();
-  // モバイル：確定後は一瞬「れきし」タブへ自動切替
-  if(isMobile() && speaker === 'あなた'){
-    switchMobTab('left');
-    setTimeout(()=>switchMobTab('center'), 1200);
-  }
+
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3200,6 +3280,7 @@ async function submitWord(){
   //   AI判定中・確定アニメ中・CPUの番の間、Enter連打やOK連打による
   //   二重送信を防ぐ。各早期returnの直前で必ず解除すること。
   ST.cpuBusy = true;
+  const round=ST.round;
   document.getElementById('btnOk').disabled = true;
 
   const n=norm(ST.currentInput);
@@ -3244,7 +3325,8 @@ async function submitWord(){
 
   const row=wlRow; // 上でホワイトリスト照合済みなのでそのまま再利用
   if(isEndWord(n)){
-    await showEndGameByN(n, row); // 内部で ST.gameOver=true / ST.cpuBusy=false にする
+    await showEndGameByN(n, row);
+    if(round!==ST.round)return; // 内部で ST.gameOver=true / ST.cpuBusy=false にする
     setCurrentInput('');
     const kbdInp=document.getElementById('kbdInput'); if(kbdInp) kbdInp.value='';
     clearCV(true);renderPreds(null);
@@ -3262,6 +3344,7 @@ async function submitWord(){
     }catch(e){
       result = { ok:true, safe:true, meaning:'AIのせんせいにつながれませんでしたが、すすみます！', level:ST.level, word:n, _fallback:'exception' };
     }
+    if(round!==ST.round)return;
 
     if(!result.ok || !result.safe){
       setStatus('error','このことばはつかえません。','ちがうことばをためしてね。');
@@ -3271,7 +3354,12 @@ async function submitWord(){
       return;
     }
 
+    if(round!==ST.round)return;
     const isEmergency = !!result._fallback;
+    if(isEmergency){
+      setStatus('error','このことばを かくにんできませんでした。','登録されていることばをためすか、あとでもういちど。');
+      ST.cpuBusy=false;updateWordBox(ST.currentInput);return;
+    }
     const iqWord = (result.word && result.word !== n) ? result.word : n;
     if(!isEmergency){
       learnWord(n, result.word || n, result.meaning||'', result.imagequery_en||'', result.level||ST.level).catch(()=>{});
@@ -3301,6 +3389,7 @@ async function submitWord(){
   await new Promise(resolve=>{
     suckIn(finalRow?finalRow.words[0]:n, async ()=>{
       await commitWord('あなた', n, finalRow, isNew);
+      if(round!==ST.round){resolve();return;}
       setCurrentInput('');
       const kbdInp=document.getElementById('kbdInput'); if(kbdInp) kbdInp.value='';
       clearCV(true);renderPreds(null);
@@ -3312,6 +3401,7 @@ async function submitWord(){
   // ★ ロックを維持したままCPUの番を待つ（setTimeoutで投げっぱなしにしない）。
   //   cpuTurn() 側が処理の最後で ST.cpuBusy=false にする。
   await new Promise(r=>setTimeout(r, getCpuDelay(finalRow, isNew)));
+  if(round!==ST.round)return;
   await cpuTurn();
 }
 
@@ -3324,6 +3414,12 @@ function shakeInput(){
 /* ═══════════════════════════════════════════════════════════
    CPU TURN
 ═══════════════════════════════════════════════════════════ */
+function chooseWeightedWord(pool){
+  const weights=pool.map(r=>1 + 3/(r.level || 1) + 3/Math.max(2,norm(r.reading).length));
+  let ticket=Math.random()*weights.reduce((a,b)=>a+b,0);
+  for(let i=0;i<pool.length;i++){ticket-=weights[i];if(ticket<0)return pool[i];}
+  return pool[pool.length-1] || null;
+}
 function cpuChoose(){
   // 「ん」で終わらない候補と、終わる候補を分ける
   const poolSafe=getPool().filter(r=>
@@ -3344,28 +3440,31 @@ function cpuChoose(){
     const prob = Math.min(0.65, 0.02 + wordCount * 0.03);
     if(Math.random() < prob){
       // 「ん」終わりを選ぶ（safepoolが空でも可）
-      const top=poolN.slice(0,Math.min(poolN.length,4));
-      return top[Math.floor(Math.random()*top.length)];
+      return chooseWeightedWord(poolN);
     }
   }
 
   if(!poolSafe.length) return null;
-  const top=poolSafe.slice(0,Math.min(poolSafe.length,6));
-  return top[Math.floor(Math.random()*top.length)];
+  return chooseWeightedWord(poolSafe);
 }
 async function cpuTurn(){
+  const round=ST.round;
   if(!ST.tail){ST.cpuBusy=false;return;}
   setStatus('thinking','CPUがかんがえています…','もうすこしまってください。');
   await new Promise(r=>setTimeout(r,600));
+  if(round!==ST.round)return;
   const pick=cpuChoose();
   if(!pick){
     ST.cpuBusy=false;
+    ST.gameOver=true;ST.replayPending=true;
+    updateWordBox(ST.currentInput);showReplayPopup();
     setStatus('win','あなたのかち！ CPUはことばがなくなりました！','もう一回あそぼう！');
     ST.score.you++;
     document.getElementById('scoreYou').textContent=ST.score.you;
     speak('あなたのかちです！');return;
   }
   await commitWord('CPU',pick.reading,pick,false);
+  if(round!==ST.round)return;
   // CPUが「ん」で終わる語を選んでしまった場合はゲームエンド
   if(isEndWord(pick.reading)){
     ST.gameOver = true;
@@ -3374,12 +3473,13 @@ async function cpuTurn(){
     ST.score.you++;
     document.getElementById('scoreYou').textContent=ST.score.you;
     await speakAsync('CPUが「ん」でおわりました。あなたのかちです！');
-    triggerEmergencyFX();
+    if(round!==ST.round)return;
+    renderLinks(true);
     ST.replayPending = true;
     setTimeout(()=>{ if(ST.gameOver && ST.replayPending) showReplayPopup(); }, 250);
     return;
   }
-  ST.cpuBusy=false; // ★ CPUの一手の表示・読み上げが完全に終わってから解除
+  ST.cpuBusy=false;updateWordBox(ST.currentInput); // ★ CPUの一手の表示・読み上げが完全に終わってから解除
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3390,6 +3490,9 @@ async function cpuTurn(){
    RESET
 ═══════════════════════════════════════════════════════════ */
 function resetGame(announce=true){
+  ST.round++;
+  window.speechSynthesis?.cancel();
+  if(finishSpeech)finishSpeech();
   clearInterval(ST.homoTimer);ST.homoTimer=null;
   if(ST.homoTimeout){ clearTimeout(ST.homoTimeout); ST.homoTimeout=null; }
   ST.detailToken++;
@@ -3444,7 +3547,7 @@ document.getElementById('btnClearStats').addEventListener('click',()=>{
   if(!confirm('きろくをリセットしますか？'))return;
   ST.statsYouWords=0;ST.statsNewWords=0;saveSettings();syncSettingsUI();
 });
-document.getElementById('kbdInput').addEventListener('keydown',e=>{if(e.key==='Enter')submitWord();});
+document.getElementById('kbdInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing&&e.keyCode!==229){e.preventDefault();submitWord();}});
 
 cv.addEventListener('pointerdown',beginStroke);
 cv.addEventListener('pointermove',moveStroke);
@@ -3621,11 +3724,15 @@ async function launchGame(){
   // ② タイトル画面フェードアウト
   titleEl.classList.add('fade-out');
   await new Promise(resolve=>{
-    titleEl.addEventListener('animationend', ()=>{
+    let timer;
+    const finish=()=>{
+      clearTimeout(timer);
       titleEl.remove();
       resizeCV();   // タイトルが消えた後に正しいサイズでキャンバスを再初期化
       resolve();
-    }, {once:true});
+    };
+    titleEl.addEventListener('animationend', finish, {once:true});
+    timer=setTimeout(finish,matchMedia('(prefers-reduced-motion: reduce)').matches?0:800);
   });
 
   // ③ ゲーム開始 → onsei002.wav 再生 → 再生終了 → onsei003.wav 再生
