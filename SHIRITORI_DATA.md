@@ -208,3 +208,21 @@ python scripts/crop-shiritori-grid.py contact-sheet.png --columns 4 --rows 4 --n
 
 
 今回さらに3枚のシート `2026-10-08-social-words.png`、`2026-10-08-household-objects.png`、`2026-10-08-daily-concepts.png` から45枚を追加した。人間関係・感情・日常動作・家庭用品・自然の語を優先し、CSVに存在して未画像の語だけを登録した。2026-10-08生成分は合計237枚、マニフェストの総アセット数は242枚。
+
+
+### サブエージェントによる分担と候補表
+
+画像候補は `data/shiritori-image-candidates.csv` に240語分保存した。抽象的な意味、動作、人との関わりを優先する。優先度は語の意味から推定したもので、Wikimediaに画像が存在しないことを確認した一覧ではない。`status` は候補・担当済み・登録済みを区別する。
+
+今回の分担では、前回保存済みの17枚と、新しく生成した56枚を合わせて73語を追加した。家事と身近な道具、自然現象、身体の動作、感情と態度、社会生活の場面を扱う。各担当の対応表は `data/batches/agent-*.csv` に残し、共有の単語CSVとマニフェストへの取り込みは1担当で行う。全シートを目視確認し、「支える」は倒れそうな軽い箱を両手で支える場面に作り直した。
+
+画像総数は315枚。生成日別では2026-10-08が254枚、2026-10-09が56枚、先行作成分が5枚。今回追加した73枚は256pxの正方形PNGとして登録した。過去の家庭用品シートで、未採用コマを除外した際にずれたコマ番号13件も元シートの位置に合わせて修正した。
+
+候補表の更新と、目視確認済みの担当CSVの取り込みは次のスクリプトで行う。取り込み前に語の実在、画像の重複、256px寸法、元シートの参照を確認する。同じ登録済みバッチを再指定しても重複追加しない。
+
+```sh
+python scripts/plan-shiritori-assets.py
+python scripts/import-shiritori-assets.py data/batches/agent-physical-verbs.csv data/batches/agent-abstract-words.csv data/batches/agent-social-scenes.csv
+```
+
+担当CSVの列は `reading,word,filename,scene,sourceSheet,tileIndex,generatedAt`。`sourceSheet` は `assets/shiritori/` からの相対パス、`tileIndex` は元シートの左上から数えた1始まりの番号。生成プロンプトの場面指定はCSVとマニフェストに保存している。
