@@ -512,6 +512,8 @@ button,input,select{font:inherit;color:inherit}
   border-radius:999px;padding:2px 9px;font-size:11px;font-weight:900;color:var(--muted);margin-bottom:7px;
 }
 .det-text{font-size:13px;line-height:1.8;color:var(--text)}
+.det-summary{font-weight:700}
+.det-details{margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}
 .det-homo{font-size:11px;color:var(--yellow);font-weight:800;display:flex;align-items:center;gap:3px;margin-top:5px}
 .det-new{
   font-size:12px;font-weight:900;color:var(--green);
@@ -1535,11 +1537,12 @@ function parseCSV(csvText){
   for(const r of rawRows){
     const key = r.reading;
     if(!map.has(key)){
-      map.set(key, { reading:key, words:[], meanings:[], imagequeries:[], level:r.level });
+      map.set(key, { reading:key, words:[], meanings:[], meaningLevels:[], imagequeries:[], level:r.level });
     }
     const grp = map.get(key);
     grp.words.push(r.word);
     grp.meanings.push(r.meaning);
+    grp.meaningLevels.push(r.level);
     grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn, asset:r.imageAsset, mode:r.imageMode, credit:r.imageCredit });
     // levelは最小値（一番やさしい方）を採用
     grp.level = Math.min(grp.level, r.level);
@@ -1801,9 +1804,18 @@ function initBuiltinList(){
 function getPool(){
   return ST.whitelist.filter(r => r.level <= ST.level);
 }
+// Keep each homophone's word, explanation and image together at its own level.
+// Explicit player entries above the selected level still receive an explanation.
+function rowForLevel(row){
+  if(!row?.meaningLevels)return row;
+  const indices=row.meaningLevels.map((level,i)=>level<=ST.level?i:-1).filter(i=>i>=0);
+  if(!indices.length)return row;
+  return {...row, words:indices.map(i=>row.words[i]), meanings:indices.map(i=>row.meanings[i]),
+    meaningLevels:indices.map(i=>row.meaningLevels[i]), imagequeries:indices.map(i=>row.imagequeries[i])};
+}
 function lookupRow(word){
   const n = norm(word);
-  return ST.whitelist.find(r => norm(r.reading) === n) || null;
+  return rowForLevel(ST.whitelist.find(r => norm(r.reading) === n)) || null;
 }
 function inWhitelist(word){
   return !!lookupRow(word);
@@ -1997,30 +2009,18 @@ function sleep(ms){
 }
 
 function getDetailSpeechParts(word, row, speaker, isNew=false){
-  const parts = [];
-  const reading = norm(row?.reading || word || '');
-  if(speaker) parts.push(speaker);
-  if(reading) parts.push(reading);
-
-  if(row && Array.isArray(row.words) && row.words.length > 1){
-    parts.push(`いみが ${row.words.length} つあります`);
-    row.meanings.forEach((m, i)=>{
-      const label = `${i+1}ばんめ`;
-      parts.push(m ? `${label}。${m}` : label);
-    });
-  } else {
-    const m = row?.meanings?.[0] || '';
-    if(m) parts.push(m);
-    else if(isNew) parts.push('あたらしいことばです');
-  }
-  return parts.filter(Boolean);
+  row=rowForLevel(row);
+  const reading=norm(row?.reading || word || '');
+  const brief=splitMeaning(row?.meanings?.[0]).summary;
+  return [speaker,reading,brief || (isNew?'あたらしいことばです':'')].filter(Boolean);
+}
+function meaningSpeechBudget(text){
+  return Math.min(60000,Math.max(15000,String(text || '').length*350+3000));
 }
 
 async function speakDetail(word, row, speaker, isNew=false){
-  const reading=norm(row?.reading || word || '');
-  const meaning=row?.meanings?.[0] || '';
-  const brief=meaning.length<=35 ? meaning : '';
-  await speakAsync([speaker,reading,brief].filter(Boolean).join('。'),4500);
+  const text=getDetailSpeechParts(word,row,speaker,isNew).join('。');
+  await speakAsync(text,meaningSpeechBudget(text));
 }
 
 let emergencyAudioCtx = null;
@@ -3010,6 +3010,20 @@ function renderImgHtml(url, credit){
    DETAIL PANEL
 ═══════════════════════════════════════════════════════════ */
 let detailView = null;
+function splitMeaning(text){
+  const value=String(text || '').trim();
+  const pairs={'「':'」','『':'』','（':'）','(' : ')','【':'】'};
+  const stack=[];
+  for(let i=0;i<value.length;i++){
+    const c=value[i];
+    if(pairs[c]){stack.push(pairs[c]);continue;}
+    if(stack.length && c===stack[stack.length-1]){stack.pop();continue;}
+    if(!stack.length && /[。！？!?]/.test(c)){
+      return {summary:value.slice(0,i+1), details:value.slice(i+1).trim()};
+    }
+  }
+  return {summary:value,details:''};
+}
 function changeDetailMeaning(delta){
   const view=detailView;
   if(!view || view.token!==ST.detailToken)return;
@@ -3017,12 +3031,15 @@ function changeDetailMeaning(delta){
   renderDetailSlide(view.words,view.meanings,view.imgs,ST.homoIdx,view.isNew,view.reading);
   document.getElementById('detImgBox').innerHTML=renderImgHtml(view.imgs[ST.homoIdx]?.url,view.imgs[ST.homoIdx]?.credit);
 }
-function readCurrentMeaning(){
+function readCurrentMeaning(details=false){
   const view=detailView;
   if(!view || view.token!==ST.detailToken)return;
-  speakAsync(`${view.reading}。${view.meanings[ST.homoIdx] || ''}`);
+  const parts=splitMeaning(view.meanings[ST.homoIdx]);
+  const text=details ? parts.details : `${view.reading}。${parts.summary}`;
+  speakAsync(text,meaningSpeechBudget(text));
 }
 async function showDetail(word, row, isNew=false){
+  row=rowForLevel(row);
   const token = ++ST.detailToken;
   detailView=null;
   clearInterval(ST.homoTimer); ST.homoTimer = null;
@@ -3094,6 +3111,7 @@ function splitMora(text){
 function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
   const w=words[idx]||'';
   const m=meanings[idx]||'';
+  const explanation=splitMeaning(m);
   const isMulti=words.length>1;
   const reading=norm(readingText || w || words[0]);
   const mora=splitMora(reading);
@@ -3103,15 +3121,17 @@ function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
       const cls = 'km' + (c === 'ー' ? ' long' : c.startsWith('（') ? ' note' : '');
       return `<div class="${cls}">${escH(displayStr(c))}</div>`;
     }).join('')}</div>
-    <div class="det-text">${escH(m)}</div>
+    <div class="det-text det-summary">${escH(explanation.summary)}</div>
+    ${explanation.details?`<div class="det-text det-details">${escH(explanation.details)}</div>`:''}
     ${isMulti?`<div class="det-homo" aria-live="polite">いみ ${idx+1} / ${words.length}</div>
       <div class="det-controls"><button type="button" id="detPrev">◀ まえのいみ</button><button type="button" id="detNext">つぎのいみ ▶</button></div>`:''}
-    <div class="det-controls"><button type="button" id="detRead">🔊 このいみを きく</button><button type="button" id="detStop">■ とめる</button></div>
+    <div class="det-controls"><button type="button" id="detRead">🔊 いみを きく</button>${explanation.details?'<button type="button" id="detReadDetails">🔊 くわしく きく</button>':''}<button type="button" id="detStop">■ とめる</button></div>
     ${isNew?'<div class="det-new">✨ アプリがこのことばをおぼえたよ！</div>':''}
   `;
   document.getElementById('detPrev')?.addEventListener('click',()=>changeDetailMeaning(-1));
   document.getElementById('detNext')?.addEventListener('click',()=>changeDetailMeaning(1));
   document.getElementById('detRead').addEventListener('click',()=>{if(!ST.voice){document.getElementById('detRead').textContent='上の「おと」をオンにしてね';return;}readCurrentMeaning();});
+  document.getElementById('detReadDetails')?.addEventListener('click',()=>{if(!ST.voice){document.getElementById('detReadDetails').textContent='上の「おと」をオンにしてね';return;}readCurrentMeaning(true);});
   document.getElementById('detStop').addEventListener('click',()=>{window.speechSynthesis?.cancel();if(finishSpeech)finishSpeech();});
 }
 
@@ -3135,7 +3155,7 @@ function renderCandidates(){
   pool.forEach(r=>{
     const pill=document.createElement('div');
     pill.className='c-pill';
-    pill.textContent=`${displayStr(r.words[0])}`;
+    pill.textContent=`${displayStr(rowForLevel(r).words[0])}`;
     pill.addEventListener('click',()=>{syncInput(r.reading);document.getElementById('kbdInput')?.focus();});
     el.appendChild(pill);
   });
@@ -3212,6 +3232,7 @@ function suckIn(word, onDone){
    COMMIT WORD
 ═══════════════════════════════════════════════════════════ */
 async function commitWord(speaker, readingInput, row, isNew=false){
+  row=rowForLevel(row);
   const n=norm(readingInput);
   const tailB=ST.tail||'—';
   let tailA=lastChar(n);
