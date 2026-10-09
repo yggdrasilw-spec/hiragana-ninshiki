@@ -20,17 +20,29 @@ context.csv = csv;
 const rows = evalIn('parseCSV(csv)');
 // Baseline before the first 「は」 batch; keep this fixed after committing.
 const old = cp.execFileSync('git', ['show', 'b0c8dbf:whitelist.csv'], { cwd: root, encoding: 'utf8' }).trim().split(/\r?\n/).slice(1);
-const now = csv.trim().split(/\r?\n/).slice(1);
+// Explanations may be intentionally edited; preserve the vocabulary and asset lineage.
+const reviewSource=path.join(root,'data/meaning-review/source.csv');
+const now = (fs.existsSync(reviewSource)?fs.readFileSync(reviewSource,'utf8'):csv).trim().split(/\r?\n/).slice(1);
+const edited=csv.trim().split(/\r?\n/).slice(1);
+assert.equal(edited.length,now.length);
+const metadata=line=>line.split(',').filter((_,index)=>index!==2);
+now.forEach((line,index)=>{
+  const expected=line.split(',');
+  if(index===2374&&fs.existsSync(reviewSource))expected[1]='コモロ';
+  assert.deepEqual(metadata(edited[index]),metadata(expected.join(',')),'Only explanation or approved Comoros typo changed at row '+(index+1));
+});
 let previousIndex = -1;
-for (const line of old) { const index = now.indexOf(line, previousIndex + 1); assert.ok(index > previousIndex, 'Preserve existing rows and order: ' + line); previousIndex = index; }
 const key = line => line.split(',').slice(0, 3).join(',');
+const vocabularyKey=line=>[...line.split(',').slice(0,3),line.split(',')[4]].join(',');
+const vocabularyKeys=now.map(vocabularyKey);
+for (const line of old) { const index = vocabularyKeys.indexOf(vocabularyKey(line), previousIndex + 1); assert.ok(index > previousIndex, 'Preserve existing vocabulary and order: ' + line); previousIndex = index; }
 const oldKeys = new Set(old.map(key));
 const additions = now.filter(line => !oldKeys.has(key(line)));
 const batchDir = path.join(root, 'data/batches');
 const expected = fs.readdirSync(batchDir).filter(name => name.endsWith('.csv')).flatMap(name => fs.readFileSync(path.join(batchDir, name), 'utf8').trim().split(/\r?\n/).slice(1));
 assert.equal(additions.length, expected.length);
 assert.equal(new Set(additions.map(key)).size, additions.length);
-for (const line of expected) assert.ok(now.includes(line), 'Reviewed batch row imported: ' + line);
+for (const line of expected) assert.ok(vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported: ' + line);
 for (const line of additions) { const cols = line.split(','); assert.match(cols[0], /^[ぁ-ゖー]+$/); assert.ok(cols.length >= 6 && cols.length <= 9); assert.match(cols[4], /^[123]$/); }
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/shiritori/manifest.json'), 'utf8'));
 for (const asset of manifest.assets) {
