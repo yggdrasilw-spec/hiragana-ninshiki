@@ -17,6 +17,13 @@ try{
   fs.writeFileSync(batch,header+'\n'+header.split(',').map(k=>removed[k]).join(',')+'\n');fs.unlinkSync(review);
   const result=cp.spawnSync(process.execPath,[path.join(root,'scripts/import-shiritori-words.cjs'),batch],{encoding:'utf8'});
   assert.equal(result.status,0);assert.equal(JSON.parse(result.stdout).added,0,'Deleted vocabulary cannot return from old batches');
+  const round2=path.join(root,'data/corrections/round2/ledger.json');
+  if(fs.existsSync(round2)){
+    const removed2=JSON.parse(fs.readFileSync(round2,'utf8')).changes.find(c=>c.action==='delete').before;
+    fs.writeFileSync(batch,header+'\n'+header.split(',').map(k=>removed2[k]).join(',')+'\n');
+    const stale=cp.spawnSync(process.execPath,[path.join(root,'scripts/import-shiritori-words.cjs'),batch],{encoding:'utf8'});
+    assert.equal(stale.status,0,stale.stderr);assert.equal(JSON.parse(stale.stdout).added,0,'Round 2 deleted vocabulary cannot return from old batches');
+  }
   assert.equal(fs.readFileSync(target,'utf8'),before,'Validation and stale imports leave production unchanged');
   console.log(JSON.stringify({passed:true,reviewGate:true,homonyms:true,deletedWords:true}));
 }finally{fs.rmSync(dir,{recursive:true,force:true});}
