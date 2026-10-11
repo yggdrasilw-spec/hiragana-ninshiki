@@ -5,6 +5,22 @@ function undoImports(text,imports){
   for(const record of [...imports].reverse()){
     assert.equal(crypto.createHash('sha256').update(text).digest('hex'),record.afterSha256,'Imported dictionary matches recorded after-state');
     const lines=text.trimEnd().split(/\r?\n/);
+    if(record.type==='reviewed-corrections'){
+      assert.equal(lines.length-1,record.currentRows,'Reviewed current row count');
+      const heads=lines[0].split(','),restored=new Array(record.sourceRows);
+      assert.equal(record.currentBeforeIds.length,record.currentRows);
+      record.currentBeforeIds.forEach((id,i)=>{assert.ok(!restored[id-1]);restored[id-1]=lines[i+1];});
+      for(const change of record.changes){
+        const serial=row=>heads.map(h=>row[h]).join(',');
+        if(change.action==='edit')assert.equal(restored[change.beforeId-1],serial(change.after),'Reviewed correction after-state');
+        else {assert.equal(change.action,'delete');assert.equal(restored[change.beforeId-1],undefined);}
+        restored[change.beforeId-1]=serial(change.before);
+      }
+      assert.equal(restored.filter(Boolean).length,record.sourceRows);
+      text=heads.join(',')+'\n'+restored.join('\n')+'\n';
+      assert.equal(crypto.createHash('sha256').update(text).digest('hex'),record.beforeSha256,'Corrections restore prior dictionary exactly');
+      continue;
+    }
     if(record.type==='image-assets'){
       const seen=new Set();
       for(const edit of record.modifiedLines){

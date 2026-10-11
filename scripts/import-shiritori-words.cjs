@@ -17,6 +17,8 @@ const batch = batchLines.slice(1);
 // Old batches must never resurrect deleted words or obsolete definitions.
 const ledgerFile=path.join(__dirname,'../data/corrections/2026-10-11-ledger.json');
 const obsolete=new Set(fs.existsSync(ledgerFile)?JSON.parse(fs.readFileSync(ledgerFile,'utf8')).changes.map(c=>[c.before.reading,c.before.word,c.before.meaning].join(',')):[]);
+const review93File=path.join(__dirname,'../data/corrections/review93-2026-10-11/ledger.json');
+if(fs.existsSync(review93File))for(const c of JSON.parse(fs.readFileSync(review93File,'utf8')).changes)obsolete.add([c.before.reading,c.before.word,c.before.meaning].join(','));
 const oldReviewSource=path.join(__dirname,'../data/meaning-review/source.csv');
 if(fs.existsSync(oldReviewSource))for(const line of fs.readFileSync(oldReviewSource,'utf8').trim().split(/\r?\n/).slice(1))obsolete.add(line.split(',').slice(0,3).join(','));
 const reviewFile=batchPath.replace(/\.csv$/i,'.review.json');
