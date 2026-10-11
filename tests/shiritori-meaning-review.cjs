@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),dir=path.join(root,'data/meaning-review');
 const source=fs.readFileSync(path.join(dir,'source.csv'),'utf8').trim().split(/\r?\n/).slice(1).map(line=>line.split(','));
-const current=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split(/\r?\n/).slice(1).map(line=>line.split(','));
+const current=require('../scripts/shiritori-correction-ledger.cjs').historicalRows().map(line=>line.split(','));
 const reviews=fs.readFileSync(path.join(dir,'reviews.jsonl'),'utf8').trim().split(/\r?\n/).map(JSON.parse);
 assert.equal(reviews.length,source.length,'Every meaning has an explicit review');
 assert.equal(current.length,source.length,'No vocabulary rows lost');

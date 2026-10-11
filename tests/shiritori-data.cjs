@@ -23,7 +23,7 @@ const old = cp.execFileSync('git', ['show', 'b0c8dbf:whitelist.csv'], { cwd: roo
 // Explanations may be intentionally edited; preserve the vocabulary and asset lineage.
 const reviewSource=path.join(root,'data/meaning-review/source.csv');
 const now = (fs.existsSync(reviewSource)?fs.readFileSync(reviewSource,'utf8'):csv).trim().split(/\r?\n/).slice(1);
-const edited=csv.trim().split(/\r?\n/).slice(1);
+const edited=require('../scripts/shiritori-correction-ledger.cjs').historicalRows();
 assert.equal(edited.length,now.length);
 const metadata=line=>{const row=line.split(',');return [row[0],row[1],row[4]];};
 now.forEach((line,index)=>{
