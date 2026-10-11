@@ -5,6 +5,19 @@ function undoImports(text,imports){
   for(const record of [...imports].reverse()){
     assert.equal(crypto.createHash('sha256').update(text).digest('hex'),record.afterSha256,'Imported dictionary matches recorded after-state');
     const lines=text.trimEnd().split(/\r?\n/);
+    if(record.type==='vocabulary-corrections'){
+      const restored=new Array(record.sourceRows);
+      assert.equal(lines.length-1,record.currentOriginalIds.length);
+      record.currentOriginalIds.forEach((oid,i)=>{assert.ok(!restored[oid-1]);restored[oid-1]=lines[i+1];});
+      for(const edit of record.changes){
+        assert.equal(restored[edit.originalId-1],edit.after,'Reviewed correction after-state');
+        restored[edit.originalId-1]=edit.before;
+      }
+      assert.ok(restored.every(Boolean));
+      text=lines[0]+'\n'+restored.join('\n')+'\n';
+      assert.equal(crypto.createHash('sha256').update(text).digest('hex'),record.beforeSha256,'Corrections restore the prior dictionary exactly');
+      continue;
+    }
     if(record.type==='image-assets'){
       const seen=new Set();
       for(const edit of record.modifiedLines){
