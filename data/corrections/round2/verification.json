@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-11",
+  "requestedOrders": 83,
+  "sourceImages": 76,
+  "updatedImages": 70,
+  "generatedSheets": 7,
+  "rejectedTiles": [
+    {
+      "sheet": "2026-10-11-round2-2.png",
+      "tileIndex": 1,
+      "reason": "虚ろではなく驚いた表情に見えたため、単独画像で再生成。"
+    }
+  ],
+  "manualImageReview": {
+    "count": 70,
+    "complete": true,
+    "method": "原シートと切り出し後の70PNGを目視。実際の白い区切り線からcropBoxを記録し、縦横比を維持して256pxへ縮小。隣のコマ混入なし。"
+  },
+  "browser": {
+    "passed": true,
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "wordsPerViewport": 99,
+    "checks": [
+      "単語・説明",
+      "画像読み込み・256px",
+      "共有語義の切り替え",
+      "横のはみ出しなし"
+    ]
+  },
+  "reviewApp": {
+    "passed": true,
+    "checks": [
+      "○×",
+      "下書き・保存・再開",
+      "注文出力",
+      "JSON往復",
+      "不正JSON",
+      "全32追加語の両表示",
+      "390/320px",
+      "ストレージ失敗"
+    ]
+  },
+  "structuralAudit": {
+    "passed": true,
+    "vocabularyRows": 6143,
+    "imagesChecked": 1515,
+    "missingAssets": 0,
+    "staleAliases": 0,
+    "staleCoverage": 0,
+    "newImageHeuristicAlerts": 0
+  },
+  "limits": "既存の未修正画像の意味・表情を全件目視した記録ではない。今回の品質点検は構造検証で、外部辞書の追加照合は実施していない。"
+}
