@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'qa-output/ux');
 const server=http.createServer((req,res)=>{const file=path.join(root,decodeURIComponent(req.url.split('?')[0]));if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return;}res.setHeader('Content-Type',path.extname(file)==='.html'?'text/html; charset=utf-8':'application/octet-stream');fs.createReadStream(file).pipe(res);});
 (async()=>{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));fs.mkdirSync(out,{recursive:true});
- const origin=`http://127.0.0.1:${server.address().port}`,browser=await chromium.launch({headless:true,channel:'chrome'});
+ const origin=`http://127.0.0.1:${server.address().port}`,browser=await chromium.launch({headless:true,...(process.env.QA_EXECUTABLE?{executablePath:process.env.QA_EXECUTABLE}:{channel:'chrome'})});
  try{
  for(const [name,width,height] of [['desktop',1280,900],['mobile',390,844],['small',320,640],['tablet',820,700]]){
  const page=await browser.newPage({viewport:{width,height}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
