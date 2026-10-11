@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const cp = require('node:child_process');
+const { historicalRows, externalKeys } = require('../scripts/shiritori-vocabulary-lineage.cjs');
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'shiritori.html'), 'utf8');
 for (const script of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(script[1]);
@@ -23,7 +24,7 @@ const old = cp.execFileSync('git', ['show', 'b0c8dbf:whitelist.csv'], { cwd: roo
 // Explanations may be intentionally edited; preserve the vocabulary and asset lineage.
 const reviewSource=path.join(root,'data/meaning-review/source.csv');
 const now = (fs.existsSync(reviewSource)?fs.readFileSync(reviewSource,'utf8'):csv).trim().split(/\r?\n/).slice(1);
-const edited=csv.trim().split(/\r?\n/).slice(1);
+const edited=historicalRows(csv.trim().split(/\r?\n/).slice(1));
 assert.equal(edited.length,now.length);
 const metadata=line=>{const row=line.split(',');return [row[0],row[1],row[4]];};
 now.forEach((line,index)=>{
@@ -44,9 +45,11 @@ const expected = fs.readdirSync(batchDir).filter(name => name.endsWith('.csv')).
   const lines=fs.readFileSync(path.join(batchDir,name),'utf8').trim().split(/\r?\n/);
   return lines[0].startsWith('reading,word,meaning,')?lines.slice(1):[];
 });
-assert.equal(additions.length, expected.length);
+const external = externalKeys();
+const currentVocabularyKeys = new Set(csv.trim().split(/\r?\n/).slice(1).map(vocabularyKey));
+assert.equal(additions.length, expected.filter(line => !external.has(key(line))).length);
 assert.equal(new Set(additions.map(key)).size, additions.length);
-for (const line of expected) assert.ok(vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported: ' + line);
+for (const line of expected) assert.ok(external.has(key(line)) ? currentVocabularyKeys.has(vocabularyKey(line)) : vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported: ' + line);
 for (const line of additions) { const cols = line.split(','); assert.match(cols[0], /^[ぁ-ゖー]+$/); assert.ok(cols.length >= 6 && cols.length <= 9); assert.match(cols[4], /^[123]$/); }
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/shiritori/manifest.json'), 'utf8'));
 for (const asset of manifest.assets) {
