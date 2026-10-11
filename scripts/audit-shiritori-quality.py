@@ -26,7 +26,7 @@ if args.dictionary:
     dictionary_meta={'name':'JMdict','url':'https://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz',
         'sha256':hashlib.sha256(args.dictionary.read_bytes()).hexdigest(),'checkedAt':'2026-10-11'}
 for i,row in enumerate(rows,1):
-    ident={'id':i,'originalId':origins[i-1],'reading':row['reading'],'word':row['word']}
+    ident={'id':i,'originalId':origins[i-1] if i<=len(origins) else None,'reading':row['reading'],'word':row['word']}
     if not re.fullmatch('[ぁ-ゖー]+',row['reading']):errors.append({**ident,'type':'invalid-reading'})
     if not row['meaning'] or re.search('[,\r\n]',row['meaning']):errors.append({**ident,'type':'invalid-meaning'})
     if norm(row['meaning']) in {norm(row['word']),norm(row['reading']),norm(row['word']+'のこと'),norm(row['reading']+'のこと')}:
