@@ -324,8 +324,15 @@ def main():
     args=ap.parse_args();OUT=args.output;OUT.mkdir(parents=True,exist_ok=True)
     args.preview_dir.mkdir(parents=True,exist_ok=True)
     req=json.loads(args.plan.read_text(encoding='utf-8'))
+    # Historical plans must not overwrite reviewed scene replacements or revive removed assets.
+    root=STAGE.parent
+    manifest=json.loads((root/'assets/shiritori/manifest.json').read_text(encoding='utf-8'))
+    registered={a['file'] for a in manifest['assets']}
+    ledger=root/'data/corrections/2026-10-11-ledger.json'
+    protected=set(json.loads(ledger.read_text(encoding='utf-8'))['replacedImages']) if ledger.exists() else set()
     native=[]
     for r in req:
+        if r['filename'] in protected or r['filename'] not in registered:continue
         kind=LOOKUP.get(r['word'])
         if not kind:continue
         # 空 has another concrete sky row excluded in scope review.
