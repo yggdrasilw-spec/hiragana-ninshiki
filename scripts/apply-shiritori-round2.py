@@ -24,6 +24,9 @@ if (DIR/'ledger.json').exists():
         print('Recorded cell boundaries applied; CSV unchanged.');raise SystemExit(0)
     print('Already applied; hash verified.');raise SystemExit(0)
 plan=read(DIR/'plan.json');groups=read(DIR/'images.json')
+before_hash=sha(path)
+historypath=ROOT/'data/dictionary-imports/history.json';history=read(historypath)
+assert history and history[-1]['afterSha256']==before_hash,'Unrecorded dictionary edits exist.'
 with path.open(encoding='utf-8',newline='') as f:
     reader=csv.DictReader(f);heads=reader.fieldnames;before=list(reader)
 rows=[dict(r) for r in before];coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json')
@@ -73,7 +76,6 @@ for oid,r in zip(origins,current):
     if oid in plan['orderedIds'] or r!=before[oid-1] or Path(r['image_asset']).name in replaced:
         e['secondCorrectionReview']={'date':plan['date'],'orderId':oid,'image':replaced.get(Path(r['image_asset']).name,'既存画像を語義と照合して維持。'),'meaning':'見出し・読み・説明と画像の対応を確認。'}
     newcoverage.append(e)
-before_hash=sha(path)
 with path.open('w',encoding='utf-8',newline='') as f:
     writer=csv.DictWriter(f,fieldnames=heads,lineterminator='\n');writer.writeheader();writer.writerows(current)
 after_hash=sha(path)
@@ -88,8 +90,6 @@ ledger={'date':plan['date'],'sourceRows':len(before),'currentRows':len(current),
  'removedManifestAssets':sorted(set(assets)-set(uses)),'deletedReasons':plan['delete']}
 # Preserve exact before/after lines for historical audits and prevent old batches resurrecting removed words.
 def line(r):return ','.join(r[k] for k in heads)
-historypath=ROOT/'data/dictionary-imports/history.json';history=read(historypath)
-assert history[-1]['afterSha256']==before_hash,'Unrecorded dictionary edits exist.'
 history.append({'type':'vocabulary-corrections','batch':'data/corrections/round2/plan.json','beforeSha256':before_hash,'afterSha256':after_hash,
  'sourceRows':len(before),'currentOriginalIds':origins,'changes':[{'originalId':c['originalId'],'before':line(c['before']),**({'after':line(c['after'])} if c['after'] else {})} for c in changes]})
 write(historypath,history);write(DIR/'ledger.json',ledger);write(ROOT/'assets/shiritori/manifest.json',manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
