@@ -5,11 +5,10 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const ledger=read('data/corrections/2026-10-11-ledger.json');
 const lines=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split(/\r?\n/);const heads=lines.shift().split(',');
 const rows=lines.map(l=>Object.fromEntries(l.split(',').map((x,i)=>[heads[i],x])));
-const history=read('data/dictionary-imports/history.json');
-const correction=history.findLastIndex(r=>r.type==='vocabulary-corrections');
-const previousText=correction<0?fs.readFileSync(path.join(root,'whitelist.csv'),'utf8'):require('../scripts/shiritori-correction-ledger.cjs').undoImports(fs.readFileSync(path.join(root,'whitelist.csv'),'utf8'),history.slice(correction));
-const previousRows=previousText.trim().split(/\r?\n/).slice(1).map(l=>Object.fromEntries(l.split(',').map((x,i)=>[heads[i],x])));
-const byOrigin=new Map(ledger.currentOriginalIds.map((id,i)=>[id,previousRows[i]]));
+// Assert the historical orders against their recorded stage; current aliases below remain live.
+const imports=read('data/dictionary-imports/history.json');
+const baseline=require('../scripts/shiritori-correction-ledger.cjs').undoImports(fs.readFileSync(path.join(root,'whitelist.csv'),'utf8'),imports).trim().split(/\r?\n/).slice(1).map(l=>Object.fromEntries(l.split(',').map((x,i)=>[heads[i],x])));
+const byOrigin=new Map(ledger.currentOriginalIds.map((id,i)=>[id,baseline[i]]));
 const changes=new Map(ledger.changes.map(c=>[c.originalId,c]));
 const ordered=[59,287,291,70,72,75,76,93,96,99,100,423,150,152,169,172,174,214,215,224,240,290,298,305,307,308,318,321,325,361,372,374,391,420,421,424,425,435,478,489,524,531,539,548,572,580,588,612,654,655,658,659,711,720,722,737,752,754,756,761,765,801,810,811];
 assert.equal(ordered.length,64);for(const id of ordered)assert.ok(changes.has(id),'Every requested ID resolved: '+id);

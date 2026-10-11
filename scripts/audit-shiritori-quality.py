@@ -14,10 +14,13 @@ rows=list(csv.DictReader((root/'whitelist.csv').open(encoding='utf-8-sig',newlin
 manifest=json.loads((root/'assets/shiritori/manifest.json').read_text())
 ledger=json.loads((root/'data/corrections/2026-10-11-ledger.json').read_text())
 coverage=json.loads((root/'data/image-coverage/review-2026-10-10.json').read_text())
+assert len(coverage)==len(rows) and all(e['id']==i and all(e[k]==r[k] for k in ['word','reading','meaning','image_asset']) for i,(e,r) in enumerate(zip(coverage,rows),1)),'Refresh coverage identities before auditing.'
 origins=[e.get('originalId') for e in coverage];assets={a['file']:a for a in manifest['assets']}
-replaced=set(ledger['replacedImages'])
-latest=root/'data/corrections/round2/ledger.json'
-if latest.exists():replaced.update(json.loads(latest.read_text())['replacedImages'])
+reviewed_images=set(ledger['replacedImages'])
+latest=root/'data/corrections/review93-2026-10-11/ledger.json'
+if latest.exists():reviewed_images.update(json.loads(latest.read_text())['replacedImages'])
+prior=root/'data/corrections/round2/ledger.json'
+if prior.exists():reviewed_images.update(json.loads(prior.read_text())['replacedImages'])
 errors=[];candidates=[];resolved=[];groups=collections.defaultdict(list);shared=collections.defaultdict(list)
 def hira(s):return ''.join(chr(ord(c)-96) if 'ァ'<=c<='ヶ' else c for c in s)
 def norm(s):return re.sub(r'[\s。、「」（）()・]','',hira(s))
@@ -64,13 +67,13 @@ for file,ids in shared.items():
                 if white>.97:bands.append(y)
             if any(y+1 in bands and y+2 in bands and sum(min(pixels.getpixel((x,255)))<220 for x in range(256))>40 for y in bands):
                 alert={'file':file,'ids':ids,'type':'possible-bottom-fragment','reason':'白い境界の後に絵がある。内容を失わないか確認してから画像を修正。'}
-                if file in replaced:
+                if file in reviewed_images:
                     alert['resolution']='切り出し後の目視でコマ混入ではなく場面内の余白と確認。';resolved.append(alert)
                 else:candidates.append(alert)
     expected={(i,rows[i-1]['reading'],rows[i-1]['word'],rows[i-1]['meaning']) for i in ids}
     actual={(x['id'],x['reading'],x['word'],x['meaning']) for x in a.get('aliases',[])}
     if expected!=actual:errors.append({'file':file,'type':'stale-aliases'})
-    if len(ids)>1 and file not in replaced and not a.get('secondReview'):
+    if len(ids)>1 and file not in reviewed_images and not a.get('sharedSenseReview',{}).get('reviewed'):
         candidates.append({'file':file,'ids':ids,'type':'shared-senses-review','words':[rows[i-1]['word'] for i in ids],
             'reason':'画像が読めることと全語義が合うことは別。既存の一律reviewed表示を、全語義の目視合格とみなさない。'})
 report={'checkedAt':'2026-10-11','vocabularyRows':len(rows),'imagesChecked':len(shared),'structuralErrors':errors,
