@@ -6,6 +6,7 @@ const target = path.resolve(__dirname, '../whitelist.csv');
 const header = 'reading,word,meaning,imagequery,level,imagequery_en,image_asset,image_mode,image_credit';
 const batchPath = process.argv[2];
 const validateOnly=process.argv.includes('--validate-only');
+const append=process.argv.includes('--append');
 if (!batchPath) throw new Error('Specify a reviewed batch CSV file.');
 const original = fs.readFileSync(target, 'utf8').trim().split(/\r?\n/);
 const rows = original.slice(1);
@@ -45,10 +46,28 @@ for (const line of batch) {
   const key = line.split(',').slice(0, 3).join(',');
   if (keys.has(key)||obsolete.has(key)) continue;
   // Preserve existing rows and their relative order, which affects CPU choices.
-  const index = rows.findIndex(row => row.split(',')[0] > reading);
+  const index = append ? -1 : rows.findIndex(row => row.split(',')[0] > reading);
   rows.splice(index < 0 ? rows.length : index, 0, line);
   keys.add(key);
   added++;
 }
-if (added) fs.writeFileSync(target, header + '\n' + rows.join('\n') + '\n', 'utf8');
+if (added) {
+  if(fs.existsSync(ledgerFile)&&!append)throw new Error('Use --append to preserve reviewed image IDs and record the import history.');
+  const text=header + '\n' + rows.join('\n') + '\n';
+  if(append){
+    const crypto=require('node:crypto');
+    const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+    const historyPath=path.join(__dirname,'../data/dictionary-imports/history.json');
+    const history=fs.existsSync(historyPath)?JSON.parse(fs.readFileSync(historyPath,'utf8')):[];
+    const before=fs.readFileSync(target,'utf8');
+    if(history.length&&history.at(-1).afterSha256!==hash(before))throw new Error('Dictionary changed outside recorded imports.');
+    const baseline=JSON.parse(fs.readFileSync(ledgerFile,'utf8'));
+    if(!history.length&&baseline.afterSha256!==hash(before))throw new Error('Dictionary does not match the reviewed correction baseline.');
+    history.push({batch:path.relative(path.resolve(__dirname,'..'),path.resolve(batchPath)),
+      beforeSha256:hash(before),afterSha256:hash(text),addedLines:rows.slice(original.length-1)});
+    fs.mkdirSync(path.dirname(historyPath),{recursive:true});
+    fs.writeFileSync(historyPath,JSON.stringify(history,null,2)+'\n');
+  }
+  fs.writeFileSync(target,text,'utf8');
+}
 console.log(JSON.stringify({ added, rows: rows.length }));
