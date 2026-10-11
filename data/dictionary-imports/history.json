@@ -29,5 +29,175 @@
       "むきめい,無記名,紙などに、名前を書いていないこと。,無記名 用紙,2,,,,",
       "れいぞう,冷蔵,食べ物などを、こおらないくらいに冷やして保存すること。,冷蔵庫 食品,2,,,,"
     ]
+  },
+  {
+    "type": "image-assets",
+    "batches": [
+      "data/batches/2026-10-11-additional.csv"
+    ],
+    "beforeSha256": "5f6e94a3ff9a0cd0da66ddd6a4720b90e08ff3754af9a9a66b7d21ecbd9b2f45",
+    "afterSha256": "27b4f1d5edc304b37af35f987a47c43a920f87e0dcaf96b955a43f7ac1461b63",
+    "modifiedLines": [
+      {
+        "id": 4490,
+        "before": "はなむけ,餞,旅立つ人などに贈る言葉や品物。,餞別,2,Farewell gift,,,",
+        "after": "はなむけ,餞,旅立つ人などに贈る言葉や品物。,餞別,2,Farewell gift,assets/shiritori/additional-hanamuke.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4531,
+        "before": "はるさめ,春雨,豆やいもなどのでんぷんから作る、細い透明な食品。,春雨 食品,1,Cellophane noodles,,,",
+        "after": "はるさめ,春雨,豆やいもなどのでんぷんから作る、細い透明な食品。,春雨 食品,1,Cellophane noodles,assets/shiritori/additional-harusame-food.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4532,
+        "before": "はるさめ,春雨,春雨は、春に降る雨。,春 雨,2,Spring rain,,,",
+        "after": "はるさめ,春雨,春雨は、春に降る雨。,春 雨,2,Spring rain,assets/shiritori/additional-harusame-rain.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4805,
+        "before": "ぴっちゃー,ピッチャー,野球で打者に向かってボールを投げる選手。,投手,1,Pitcher baseball,,,",
+        "after": "ぴっちゃー,ピッチャー,野球で打者に向かってボールを投げる選手。,投手,1,Pitcher baseball,assets/shiritori/additional-pitcher-player.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4806,
+        "before": "ぴっちゃー,ピッチャー,水などを入れて注ぐ、取っ手と口のある容器。,水差し,2,Pitcher jug,,,",
+        "after": "ぴっちゃー,ピッチャー,水などを入れて注ぐ、取っ手と口のある容器。,水差し,2,Pitcher jug,assets/shiritori/additional-pitcher-jug.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4854,
+        "before": "ふくわじゅつ,腹話術,人形などが話しているように見せる芸。,腹話術,2,Ventriloquism,,,",
+        "after": "ふくわじゅつ,腹話術,人形などが話しているように見せる芸。,腹話術,2,Ventriloquism,assets/shiritori/additional-fukuwajutsu.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4855,
+        "before": "ふくわらい,福笑い,目隠しをして、顔の絵に目や鼻などの部品を置く正月遊び。,福笑い,1,Fukuwarai,,,",
+        "after": "ふくわらい,福笑い,目隠しをして、顔の絵に目や鼻などの部品を置く正月遊び。,福笑い,1,Fukuwarai,assets/shiritori/additional-fukuwarai.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4857,
+        "before": "ふし,節,竹や茎などにある区切り。また、その部分。,節,2,Bamboo node,,,",
+        "after": "ふし,節,竹や茎などにある区切り。また、その部分。,節,2,Bamboo node,assets/shiritori/additional-fushi-bamboo.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4908,
+        "before": "ふるい,ふるい,粉などを網に通して、粒の大きさごとに分ける道具。,ふるい,2,Sieve,,,",
+        "after": "ふるい,ふるい,粉などを網に通して、粒の大きさごとに分ける道具。,ふるい,2,Sieve,assets/shiritori/additional-furui-sieve.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4921,
+        "before": "ぶい,ブイ,水に浮かべて位置などを示す目印。,ブイ,2,Buoy,,,",
+        "after": "ぶい,ブイ,水に浮かべて位置などを示す目印。,ブイ,2,Buoy,assets/shiritori/additional-bui-marker.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4929,
+        "before": "ぶっくえんど,ブックエンド,本が倒れないように両側から支える道具。,ブックエンド,1,Bookend,,,",
+        "after": "ぶっくえんど,ブックエンド,本が倒れないように両側から支える道具。,ブックエンド,1,Bookend,assets/shiritori/additional-bookend.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5006,
+        "before": "へた,へた,果物や野菜に付いている、茎や葉の付け根の部分。,へた,1,Calyx fruit,,,",
+        "after": "へた,へた,果物や野菜に付いている、茎や葉の付け根の部分。,へた,1,Calyx fruit,assets/shiritori/additional-heta.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5356,
+        "before": "みずどけい,水時計,水が流れる量や速さを利用して時間を測る道具。,水時計,2,Water clock,,,",
+        "after": "みずどけい,水時計,水が流れる量や速さを利用して時間を測る道具。,水時計,2,Water clock,assets/shiritori/additional-mizudokei.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5365,
+        "before": "みちしるべ,道しるべ,進む方向や道順を示す印や案内。,道しるべ,1,Signpost,,,",
+        "after": "みちしるべ,道しるべ,進む方向や道順を示す印や案内。,道しるべ,1,Signpost,assets/shiritori/additional-michishirube.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5386,
+        "before": "みの,蓑,わらなどで作った昔の雨具。,蓑,2,Mino raincoat,,,",
+        "after": "みの,蓑,わらなどで作った昔の雨具。,蓑,2,Mino raincoat,assets/shiritori/additional-mino-raincoat.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5568,
+        "before": "もけい,模型,物の形や仕組みを小さく作って表したもの。,模型,1,Model,,,",
+        "after": "もけい,模型,物の形や仕組みを小さく作って表したもの。,模型,1,Model,assets/shiritori/additional-mokei.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5580,
+        "before": "もちもの,持ち物,自分が持っている物や、持って出かける物。,持ち物,1,Belongings,,,",
+        "after": "もちもの,持ち物,自分が持っている物や、持って出かける物。,持ち物,1,Belongings,assets/shiritori/additional-mochimono.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5747,
+        "before": "ゆびにんぎょう,指人形,指にはめて動かして遊ぶ小さな人形。,指人形,1,Finger puppet,,,",
+        "after": "ゆびにんぎょう,指人形,指にはめて動かして遊ぶ小さな人形。,指人形,1,Finger puppet,assets/shiritori/additional-yubiningyou.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5851,
+        "before": "らむね,ラムネ,炭酸の入った甘い飲み物。,ラムネ 飲料,1,Ramune,,,",
+        "after": "らむね,ラムネ,炭酸の入った甘い飲み物。,ラムネ 飲料,1,Ramune,assets/shiritori/additional-ramune-drink.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5852,
+        "before": "らむね,ラムネ,口の中で溶ける小さな粒の菓子。,ラムネ 菓子,1,Ramune candy,,,",
+        "after": "らむね,ラムネ,口の中で溶ける小さな粒の菓子。,ラムネ 菓子,1,Ramune candy,assets/shiritori/additional-ramune-candy.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5964,
+        "before": "るー,ルー,小麦粉と油脂などを加熱して作るカレーなどのとろみのもと。,カレールー,1,Roux,,,",
+        "after": "るー,ルー,小麦粉と油脂などを加熱して作るカレーなどのとろみのもと。,カレールー,1,Roux,assets/shiritori/additional-roux.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5972,
+        "before": "るーむみらー,ルームミラー,車の中についていて後ろを見るための鏡。,バックミラー,2,Rear view mirror,,,",
+        "after": "るーむみらー,ルームミラー,車の中についていて後ろを見るための鏡。,バックミラー,2,Rear view mirror,assets/shiritori/additional-room-mirror.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5974,
+        "before": "るーむらんなー,ルームランナー,その場で歩いたり走ったりする運動用の機械。,トレッドミル,2,Treadmill,,,",
+        "after": "るーむらんなー,ルームランナー,その場で歩いたり走ったりする運動用の機械。,トレッドミル,2,Treadmill,assets/shiritori/additional-room-runner.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5977,
+        "before": "るーれっと,ルーレット,回る円盤などを使って当たりを決めるもの。,ルーレット,2,Roulette wheel,,,",
+        "after": "るーれっと,ルーレット,回る円盤などを使って当たりを決めるもの。,ルーレット,2,Roulette wheel,assets/shiritori/additional-roulette-spinner.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6009,
+        "before": "れんげ,れんげ,汁などをすくう小さなさじ。,れんげ,1,Chinese spoon,,,",
+        "after": "れんげ,れんげ,汁などをすくう小さなさじ。,れんげ,1,Chinese spoon,assets/shiritori/additional-renge-spoon.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6010,
+        "before": "れんげ,レンゲ,田んぼなどに咲く紫色の花を持つ植物。,レンゲ,2,Chinese milk vetch,,,",
+        "after": "れんげ,レンゲ,田んぼなどに咲く紫色の花を持つ植物。,レンゲ,2,Chinese milk vetch,assets/shiritori/additional-renge-flower.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6015,
+        "before": "れーす,レース,速さなどを競う競争。,競走,1,Race,,,",
+        "after": "れーす,レース,速さなどを競う競争。,競走,1,Race,assets/shiritori/additional-race-contest.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6016,
+        "before": "れーす,レース,細い糸で透かし模様を作った編み物。,レース 手芸,2,Lace,,,",
+        "after": "れーす,レース,細い糸で透かし模様を作った編み物。,レース 手芸,2,Lace,assets/shiritori/additional-race-lace.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6045,
+        "before": "ろばた,炉端,いろりのそば。,炉端,2,Hearthside,,,",
+        "after": "ろばた,炉端,いろりのそば。,炉端,2,Hearthside,assets/shiritori/additional-robata.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6056,
+        "before": "ろーらー,ローラー,回転する筒の形をした道具。,ローラー,2,Roller,,,",
+        "after": "ろーらー,ローラー,回転する筒の形をした道具。,ローラー,2,Roller,assets/shiritori/additional-roller-tool.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6102,
+        "before": "わらじ,わらじ,わらを編んで作る昔の履物。,わらじ,2,Waraji,,,",
+        "after": "わらじ,わらじ,わらを編んで作る昔の履物。,わらじ,2,Waraji,assets/shiritori/additional-waraji.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6113,
+        "before": "わんこそば,わんこそば,小さな椀に少しずつ入れる岩手のそば料理。,わんこそば,2,Wanko soba,,,",
+        "after": "わんこそば,わんこそば,小さな椀に少しずつ入れる岩手のそば料理。,わんこそば,2,Wanko soba,assets/shiritori/additional-wanko-soba.png,asset,AI生成イラスト"
+      }
+    ]
   }
 ]
