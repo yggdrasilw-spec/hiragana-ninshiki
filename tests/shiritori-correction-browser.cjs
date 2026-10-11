@@ -1,10 +1,11 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve(__dirname,'..'),output=path.join(root,'qa-output/corrections');
-const ledger=JSON.parse(fs.readFileSync(path.join(root,'data/corrections/2026-10-11-ledger.json'),'utf8'));
+const ledger=JSON.parse(fs.readFileSync(path.join(root,process.env.CORRECTION_LEDGER||'data/corrections/2026-10-11-ledger.json'),'utf8'));
 const lines=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split(/\r?\n/);const headers=lines.shift().split(',');
 const rows=lines.map(l=>Object.fromEntries(l.split(',').map((v,i)=>[headers[i],v])));
-const selected=rows.filter(r=>ledger.replacedImages.includes(path.basename(r.image_asset)));
+const requested=new Set((ledger.requestedOrders||[]).map(o=>o.id).filter(Boolean));
+const selected=rows.filter((r,i)=>requested.has(i+1)||ledger.replacedImages.includes(path.basename(r.image_asset)));
 const server=http.createServer((req,res)=>{
   const file=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);
   if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404).end();return;}
@@ -32,7 +33,7 @@ const server=http.createServer((req,res)=>{
         assert.ok(await page.locator('#detImgBox .img-main').isVisible());
         assert.equal(await page.locator('.det-word').innerText(),row.word);
         const text=await page.locator('#detContent').innerText();assert.ok(text.includes(row.meaning.split('。')[0]));
-        if(['暑い','嫌','液体','いじらしい','息','延期','うたたね'].includes(row.word))await page.screenshot({path:path.join(output,name+'-'+path.basename(row.image_asset)),fullPage:true});
+        if(['暑い','嫌','液体','いじらしい','息','延期','うたたね','虚ろ','おてんば','噛む','気体','感覚','居合わせる','いやいや'].includes(row.word))await page.screenshot({path:path.join(output,name+'-'+path.basename(row.image_asset)),fullPage:true});
         assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No horizontal overflow');
       }
       await page.goto(origin+'/shiritori-image-review.html');

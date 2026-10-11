@@ -2817,14 +2817,6 @@
       "reason": "画像が読めることと全語義が合うことは別。既存の一律reviewed表示を、全語義の目視合格とみなさない。"
     },
     {
-      "file": "chikoku.png",
-      "ids": [
-        3457
-      ],
-      "type": "possible-bottom-fragment",
-      "reason": "白い境界の後に絵がある。内容を失わないか確認してから画像を修正。"
-    },
-    {
       "file": "nou.png",
       "ids": [
         3460,
@@ -3507,20 +3499,10 @@
       "reason": "白い境界の後に絵がある。内容を失わないか確認してから画像を修正。"
     }
   ],
-  "resolvedHeuristicAlerts": [
-    {
-      "file": "complete-1199.png",
-      "ids": [
-        1174
-      ],
-      "type": "possible-bottom-fragment",
-      "reason": "白い境界の後に絵がある。内容を失わないか確認してから画像を修正。",
-      "resolution": "切り出し後の目視でコマ混入ではなく場面内の余白と確認。"
-    }
-  ],
+  "resolvedHeuristicAlerts": [],
   "candidateCounts": {
     "shared-senses-review": 182,
-    "possible-bottom-fragment": 104
+    "possible-bottom-fragment": 103
   },
   "limitations": "全件の構造・辞書照合・重複・共有関係・切り出し境界を自動点検した記録。意味や表情の全件目視合格ではない。未収録や画像の疑いを根拠なく自動削除・切断しない。"
 }

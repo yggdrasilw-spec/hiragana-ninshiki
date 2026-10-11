@@ -19,6 +19,8 @@ origins=[e.get('originalId') for e in coverage];assets={a['file']:a for a in man
 reviewed_images=set(ledger['replacedImages'])
 latest=root/'data/corrections/review93-2026-10-11/ledger.json'
 if latest.exists():reviewed_images.update(json.loads(latest.read_text())['replacedImages'])
+prior=root/'data/corrections/round2/ledger.json'
+if prior.exists():reviewed_images.update(json.loads(prior.read_text())['replacedImages'])
 errors=[];candidates=[];resolved=[];groups=collections.defaultdict(list);shared=collections.defaultdict(list)
 def hira(s):return ''.join(chr(ord(c)-96) if 'ァ'<=c<='ヶ' else c for c in s)
 def norm(s):return re.sub(r'[\s。、「」（）()・]','',hira(s))

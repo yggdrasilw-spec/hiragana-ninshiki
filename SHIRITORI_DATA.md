@@ -230,3 +230,7 @@ python scripts/import-shiritori-assets.py data/batches/agent-physical-verbs.csv 
 ```
 
 担当CSVの列は `reading,word,filename,scene,sourceSheet,tileIndex,generatedAt`。`sourceSheet` は `assets/shiritori/` からの相対パス、`tileIndex` は元シートの左上から数えた1始まりの番号。生成プロンプトの場面指定はCSVとマニフェストに保存している。
+
+## 確認アプリの更新情報
+
+`whitelist.csv` の単語・意味、または `assets/shiritori/` の画像を変更したら、`python scripts/build-shiritori-review-updates.py` を実行し、生成される `data/image-coverage/review-updates.json` もコミットしてください。確認アプリはこの更新日時で優先順を作り、画像のSHA-256指紋で同じファイル名の差し替えを検出します。
