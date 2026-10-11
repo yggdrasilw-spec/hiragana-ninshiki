@@ -1,9 +1,9 @@
 {
   "date": "2026-10-11",
-  "baselineCommit": "b7986ad",
-  "beforeSha256": "27b4f1d5edc304b37af35f987a47c43a920f87e0dcaf96b955a43f7ac1461b63",
-  "afterSha256": "442d7eb82846fb296c438a2eb137c166d592f762ec31a28fce5f8d73b5bf3cfe",
-  "sourceRows": 6144,
+  "baselineCommit": "312878c",
+  "beforeSha256": "68e775c6cd69ccac31dfbfef5d9f55f11a2fb3abaa307cf1a8bd298b7edc845b",
+  "afterSha256": "ca3e377833732ef35bca0e371449db5dc7d6f62cc2c8779e489e3bab48764b50",
+  "sourceRows": 6143,
   "currentRows": 6143,
   "currentBeforeIds": [
     1,
@@ -1178,6 +1178,7 @@
     1170,
     1171,
     1172,
+    1173,
     1174,
     1175,
     1176,
@@ -6147,8 +6148,7 @@
     6140,
     6141,
     6142,
-    6143,
-    6144
+    6143
   ],
   "changes": [
     {
@@ -6156,9 +6156,9 @@
       "id": 311,
       "action": "edit",
       "before": {
-        "reading": "いた",
-        "word": "痛",
-        "meaning": "からだのどこかがくるしいこと。",
+        "reading": "いたい",
+        "word": "痛い",
+        "meaning": "体の一部が傷ついたり病気になったりして、つらく感じること。",
         "imagequery": "痛み",
         "level": "1",
         "imagequery_en": "Pain",
@@ -6179,98 +6179,17 @@
       }
     },
     {
-      "beforeId": 344,
-      "id": 344,
-      "action": "edit",
-      "before": {
-        "reading": "いちばん",
-        "word": "一番",
-        "meaning": "いちばん上の順位。",
-        "imagequery": "1位",
-        "level": "1",
-        "imagequery_en": "Number one",
-        "image_asset": "assets/shiritori/complete-0347.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "いちばん",
-        "word": "一番",
-        "meaning": "順位や順番が最初であること。また、程度がもっとも高いこと。",
-        "imagequery": "1位",
-        "level": "1",
-        "imagequery_en": "Number one",
-        "image_asset": "assets/shiritori/complete-0347.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      }
-    },
-    {
-      "beforeId": 345,
-      "id": 345,
-      "action": "edit",
-      "before": {
-        "reading": "いちぶ",
-        "word": "一部",
-        "meaning": "ぜんぶではなくすこしのこと。",
-        "imagequery": "部分",
-        "level": "2",
-        "imagequery_en": "Part",
-        "image_asset": "assets/shiritori/complete-0348.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "いちぶ",
-        "word": "一部",
-        "meaning": "ぜんぶではなくすこしのこと。",
-        "imagequery": "部分",
-        "level": "2",
-        "imagequery_en": "Part",
-        "image_asset": "assets/shiritori/complete-0348.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 346,
-      "id": 346,
-      "action": "edit",
-      "before": {
-        "reading": "いちめん",
-        "word": "一面",
-        "meaning": "ある面の全体。または全体に広がるようす。",
-        "imagequery": "全体",
-        "level": "2",
-        "imagequery_en": "Entire surface",
-        "image_asset": "assets/shiritori/complete-0349.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "いちめん",
-        "word": "一面",
-        "meaning": "ある面の全体。または全体に広がるようす。",
-        "imagequery": "全体",
-        "level": "2",
-        "imagequery_en": "Entire surface",
-        "image_asset": "assets/shiritori/complete-0349.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
       "beforeId": 364,
       "id": 364,
       "action": "edit",
       "before": {
         "reading": "いっし",
         "word": "一指",
-        "meaning": "ゆびをひとつさすこと",
+        "meaning": "一本の指のこと。",
         "imagequery": "動作",
         "level": "3",
         "imagequery_en": "One finger",
-        "image_asset": "assets/shiritori/pv-point.png",
+        "image_asset": "assets/shiritori/round2-0364.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6287,67 +6206,13 @@
       }
     },
     {
-      "beforeId": 365,
-      "id": 365,
-      "action": "edit",
-      "before": {
-        "reading": "いっしゅう",
-        "word": "一周",
-        "meaning": "まわりを一回ぐるりと回ること。",
-        "imagequery": "回る",
-        "level": "1",
-        "imagequery_en": "One lap",
-        "image_asset": "assets/shiritori/complete-0368.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "いっしゅう",
-        "word": "一周",
-        "meaning": "まわりを一回ぐるりと回ること。",
-        "imagequery": "回る",
-        "level": "1",
-        "imagequery_en": "One lap",
-        "image_asset": "assets/shiritori/complete-0368.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 382,
-      "id": 382,
-      "action": "edit",
-      "before": {
-        "reading": "いっち",
-        "word": "一致",
-        "meaning": "二つのものが同じになること。",
-        "imagequery": "合致",
-        "level": "2",
-        "imagequery_en": "Matching",
-        "image_asset": "assets/shiritori/complete-0385.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "いっち",
-        "word": "一致",
-        "meaning": "二つのものが同じになること。",
-        "imagequery": "合致",
-        "level": "2",
-        "imagequery_en": "Matching",
-        "image_asset": "assets/shiritori/complete-0385.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
       "beforeId": 413,
       "id": 413,
       "action": "edit",
       "before": {
         "reading": "いもづる",
         "word": "芋づる",
-        "meaning": "一つが分かると、関連することが次々に分かること。",
+        "meaning": "いもの茎やつる。いもを掘るとつるにつながったいもが次々に出ることから、手がかりに関連することが次々に分かる様子にもたとえる。",
         "imagequery": "芋",
         "level": "2",
         "imagequery_en": "Vine",
@@ -6374,11 +6239,11 @@
       "before": {
         "reading": "いやいや",
         "word": "いやいや",
-        "meaning": "したくないと感じながら、しぶしぶするようす。いやだとくり返して拒む意味もある。絵は拒んでいるようす。",
+        "meaning": "したくないと思いながら、しぶしぶ何かをする様子。",
         "imagequery": "拒否",
         "level": "1",
         "imagequery_en": "Reluctantly",
-        "image_asset": "assets/shiritori/kirai.png",
+        "image_asset": "assets/shiritori/round2-0417.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6401,7 +6266,7 @@
       "before": {
         "reading": "いわゆる",
         "word": "所謂",
-        "meaning": "多くの人がそう呼んでいる、という意味の言葉。",
+        "meaning": "世間でよくそう呼ばれている、という意味の言葉。正式な名前だけでなく、通称や典型的な例を示すときにも使う。",
         "imagequery": "説明",
         "level": "3",
         "imagequery_en": "So-called",
@@ -6428,13 +6293,13 @@
       "before": {
         "reading": "いん",
         "word": "印",
-        "meaning": "しるしのこと。",
+        "meaning": "物事を見分けるためにつけるしるし。また、名前などを彫って紙に押すはんこや、そのあと。",
         "imagequery": "記号",
         "level": "1",
         "imagequery_en": "Mark",
         "image_asset": "assets/shiritori/complete-0471.png",
         "image_mode": "asset",
-        "image_credit": "アプリ作成図"
+        "image_credit": "AI生成イラスト"
       },
       "after": {
         "reading": "いん",
@@ -6449,46 +6314,19 @@
       }
     },
     {
-      "beforeId": 486,
-      "id": 486,
-      "action": "edit",
-      "before": {
-        "reading": "いんりょく",
-        "word": "引力",
-        "meaning": "ひっぱりあうちからのこと。",
-        "imagequery": "科学",
-        "level": "2",
-        "imagequery_en": "Gravity",
-        "image_asset": "assets/shiritori/complete-0491.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "いんりょく",
-        "word": "引力",
-        "meaning": "ひっぱりあうちからのこと。",
-        "imagequery": "科学",
-        "level": "2",
-        "imagequery_en": "Gravity",
-        "image_asset": "assets/shiritori/complete-0491.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
       "beforeId": 549,
       "id": 549,
       "action": "edit",
       "before": {
         "reading": "うつろ",
         "word": "虚ろ",
-        "meaning": "なかになにもないこと。",
+        "meaning": "中が空であること。また、ぼんやりして心がここにないような様子。うつろな目や表情、など。",
         "imagequery": "空洞 概念",
         "level": "3",
         "imagequery_en": "",
         "image_asset": "assets/shiritori/complete-0557.png",
         "image_mode": "asset",
-        "image_credit": "アプリ作成図"
+        "image_credit": "AI生成イラスト"
       },
       "after": {
         "reading": "うつろ",
@@ -6509,7 +6347,7 @@
       "before": {
         "reading": "うんてん",
         "word": "運転",
-        "meaning": "くるまをうごかすこと。",
+        "meaning": "車や機械を操作して動かすこと。また、機械が動くこと。",
         "imagequery": "運転 自動車",
         "level": "2",
         "imagequery_en": "",
@@ -6536,7 +6374,7 @@
       "before": {
         "reading": "えんぎ",
         "word": "演技",
-        "meaning": "役者さんがやること。",
+        "meaning": "役になりきって、表情や言葉、動作で人物や出来事を表すこと。",
         "imagequery": "演技 演劇",
         "level": "2",
         "imagequery_en": "Acting",
@@ -6557,67 +6395,13 @@
       }
     },
     {
-      "beforeId": 775,
-      "id": 775,
-      "action": "edit",
-      "before": {
-        "reading": "おおきい",
-        "word": "大きい",
-        "meaning": "ほかのものより、幅や高さなどが大きいようす。",
-        "imagequery": "大きい",
-        "level": "1",
-        "imagequery_en": "",
-        "image_asset": "assets/shiritori/complete-0792.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "おおきい",
-        "word": "大きい",
-        "meaning": "ほかのものより、幅や高さなどが大きいようす。",
-        "imagequery": "大きい",
-        "level": "1",
-        "imagequery_en": "",
-        "image_asset": "assets/shiritori/complete-0792.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 776,
-      "id": 776,
-      "action": "edit",
-      "before": {
-        "reading": "おおきさ",
-        "word": "大きさ",
-        "meaning": "物や人の幅や高さなどが、どれくらいか。",
-        "imagequery": "定規 長さ",
-        "level": "1",
-        "imagequery_en": "Size",
-        "image_asset": "assets/shiritori/complete-0793.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "おおきさ",
-        "word": "大きさ",
-        "meaning": "物や人の幅や高さなどが、どれくらいか。",
-        "imagequery": "定規 長さ",
-        "level": "1",
-        "imagequery_en": "Size",
-        "image_asset": "assets/shiritori/complete-0793.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
       "beforeId": 863,
       "id": 863,
       "action": "edit",
       "before": {
         "reading": "おちる",
         "word": "落ちる",
-        "meaning": "うえからしたへさがること。",
+        "meaning": "物や人が、重力などで高い所から低い所へ移ること。",
         "imagequery": "リンゴ 落ちる",
         "level": "1",
         "imagequery_en": "Fall",
@@ -6638,33 +6422,6 @@
       }
     },
     {
-      "beforeId": 864,
-      "id": 864,
-      "action": "edit",
-      "before": {
-        "reading": "おつかい",
-        "word": "お使い",
-        "meaning": "おみせでかいものをしてくること。",
-        "imagequery": "お使い 買い物",
-        "level": "1",
-        "imagequery_en": "Errand",
-        "image_asset": "assets/shiritori/complete-0883.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      },
-      "after": {
-        "reading": "おつかい",
-        "word": "お使い",
-        "meaning": "人に頼まれて、買い物や用事をしに出かけること。",
-        "imagequery": "お使い 買い物",
-        "level": "1",
-        "imagequery_en": "Errand",
-        "image_asset": "assets/shiritori/complete-0883.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
       "beforeId": 872,
       "id": 872,
       "action": "edit",
@@ -6675,7 +6432,7 @@
         "imagequery": "元気な子供",
         "level": "1",
         "imagequery_en": "Tomboy",
-        "image_asset": "assets/shiritori/nobinobi.png",
+        "image_asset": "assets/shiritori/round2-0872.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6702,7 +6459,7 @@
         "imagequery": "比較 順位",
         "level": "2",
         "imagequery_en": "Inferior",
-        "image_asset": "assets/shiritori/make.png",
+        "image_asset": "assets/shiritori/round2-0888.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6729,7 +6486,7 @@
         "imagequery": "寝坊 目覚まし時計",
         "level": "1",
         "imagequery_en": "Oversleeping",
-        "image_asset": "assets/shiritori/chikoku.png",
+        "image_asset": "assets/shiritori/round2-0911.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6741,33 +6498,6 @@
         "level": "1",
         "imagequery_en": "Oversleeping",
         "image_asset": "assets/shiritori/review93-overslept.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 913,
-      "id": 913,
-      "action": "edit",
-      "before": {
-        "reading": "おのおの",
-        "word": "各々",
-        "meaning": "一人一人。それぞれ。",
-        "imagequery": "人 複数",
-        "level": "2",
-        "imagequery_en": "Each",
-        "image_asset": "assets/shiritori/complete-0934.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "おのおの",
-        "word": "各々",
-        "meaning": "一人一人。それぞれ。",
-        "imagequery": "人 複数",
-        "level": "2",
-        "imagequery_en": "Each",
-        "image_asset": "assets/shiritori/complete-0934.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       }
@@ -6806,7 +6536,7 @@
       "before": {
         "reading": "おる",
         "word": "折る",
-        "meaning": "かみやえだをまげること。",
+        "meaning": "物を曲げて重ねたり、力を加えて途中で切り離したりすること。紙を二つに折る、枝を折る、など。",
         "imagequery": "折る 棒",
         "level": "1",
         "imagequery_en": "Fold",
@@ -6833,7 +6563,7 @@
       "before": {
         "reading": "おんけい",
         "word": "恩恵",
-        "meaning": "人から受ける、ありがたい助けや恩。",
+        "meaning": "自然や人の働きなどから受ける、ありがたい助けや利益。日光のおかげで作物が育つ、など。",
         "imagequery": "自然 恵み",
         "level": "2",
         "imagequery_en": "Benefit",
@@ -6885,12 +6615,12 @@
       "id": 1034,
       "action": "edit",
       "before": {
-        "reading": "かきざん",
-        "word": "書き算",
-        "meaning": "数字を縦に並べて書いて計算する方法。",
-        "imagequery": "計算 算数",
+        "reading": "ひっさん",
+        "word": "筆算",
+        "meaning": "数字や式を書いて行う計算。たし算などでは位をそろえて縦に並べる。",
+        "imagequery": "筆算 算数",
         "level": "2",
-        "imagequery_en": "Calculation",
+        "imagequery_en": "Written arithmetic",
         "image_asset": "assets/shiritori/complete-1058.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
@@ -6918,7 +6648,7 @@
         "imagequery": "賢い 人物",
         "level": "2",
         "imagequery_en": "Wise",
-        "image_asset": "assets/shiritori/aw-kenmei.png",
+        "image_asset": "assets/shiritori/round2-1056.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6945,7 +6675,7 @@
         "imagequery": "食べる 動作",
         "level": "1",
         "imagequery_en": "",
-        "image_asset": "assets/shiritori/complete-0477.png",
+        "image_asset": "assets/shiritori/round2-1065.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -6962,41 +6692,14 @@
       }
     },
     {
-      "beforeId": 1075,
-      "id": 1075,
-      "action": "edit",
-      "before": {
-        "reading": "かぞえる",
-        "word": "数える",
-        "meaning": "物の数を一つずつ調べること。",
-        "imagequery": "数える 動作",
-        "level": "1",
-        "imagequery_en": "Count",
-        "image_asset": "assets/shiritori/complete-1099.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "かぞえる",
-        "word": "数える",
-        "meaning": "物の数を一つずつ調べること。",
-        "imagequery": "数える 動作",
-        "level": "1",
-        "imagequery_en": "Count",
-        "image_asset": "assets/shiritori/complete-1099.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
       "beforeId": 1105,
       "id": 1105,
       "action": "edit",
       "before": {
-        "reading": "かつにゅう",
-        "word": "割入",
-        "meaning": "物事の間に入ること。",
-        "imagequery": "割り込み",
+        "reading": "わりこむ",
+        "word": "割り込む",
+        "meaning": "人の列や会話などの途中に、あとから入り込むこと。",
+        "imagequery": "列 割り込む",
         "level": "2",
         "imagequery_en": "",
         "image_asset": "assets/shiritori/complete-1131.png",
@@ -7016,56 +6719,13 @@
       }
     },
     {
-      "beforeId": 1173,
-      "action": "delete",
-      "before": {
-        "reading": "かみやん",
-        "word": "噛みやん",
-        "meaning": "食べ物などを、歯でよくかむこと。",
-        "imagequery": "動作",
-        "level": "2",
-        "imagequery_en": "",
-        "image_asset": "assets/shiritori/complete-1199.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      },
-      "reason": "「噛みやん」は一般的な日本語の単語でないため、指定に従って削除。画像は「噛む」へ移す。"
-    },
-    {
-      "beforeId": 1175,
-      "id": 1174,
-      "action": "edit",
-      "before": {
-        "reading": "かむ",
-        "word": "噛む",
-        "meaning": "歯で食べ物をかみくだくこと。",
-        "imagequery": "噛む 動作",
-        "level": "1",
-        "imagequery_en": "Chew",
-        "image_asset": "assets/shiritori/complete-0477.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      },
-      "after": {
-        "reading": "かむ",
-        "word": "噛む",
-        "meaning": "歯で食べ物をかみくだくこと。",
-        "imagequery": "噛む 動作",
-        "level": "1",
-        "imagequery_en": "Chew",
-        "image_asset": "assets/shiritori/complete-1199.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 1195,
+      "beforeId": 1194,
       "id": 1194,
       "action": "edit",
       "before": {
         "reading": "かよう",
         "word": "通う",
-        "meaning": "学校や塾などに通うこと。",
+        "meaning": "学校や職場など、決まった場所へ何度も行き来すること。",
         "imagequery": "通う 動作",
         "level": "1",
         "imagequery_en": "Commute",
@@ -7086,71 +6746,17 @@
       }
     },
     {
-      "beforeId": 1198,
-      "id": 1197,
-      "action": "edit",
-      "before": {
-        "reading": "から",
-        "word": "空",
-        "meaning": "中に何も入っていないこと。",
-        "imagequery": "空 状態",
-        "level": "1",
-        "imagequery_en": "Empty",
-        "image_asset": "assets/shiritori/complete-1225.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "から",
-        "word": "空",
-        "meaning": "中に何も入っていないこと。",
-        "imagequery": "空 状態",
-        "level": "1",
-        "imagequery_en": "Empty",
-        "image_asset": "assets/shiritori/complete-1225.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 1209,
-      "id": 1208,
-      "action": "edit",
-      "before": {
-        "reading": "からっぽ",
-        "word": "空っぽ",
-        "meaning": "中に何も入っていないこと。",
-        "imagequery": "空っぽ 状態",
-        "level": "1",
-        "imagequery_en": "Empty",
-        "image_asset": "assets/shiritori/complete-1236.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "からっぽ",
-        "word": "空っぽ",
-        "meaning": "中に何も入っていないこと。",
-        "imagequery": "空っぽ 状態",
-        "level": "1",
-        "imagequery_en": "Empty",
-        "image_asset": "assets/shiritori/complete-1236.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 1220,
+      "beforeId": 1219,
       "id": 1219,
       "action": "edit",
       "before": {
         "reading": "かりぐらし",
         "word": "借り暮らし",
-        "meaning": "借りた物を使って生活すること。",
+        "meaning": "借りた家で暮らすこと。また、お金を借りて生活すること。",
         "imagequery": "生活",
         "level": "2",
         "imagequery_en": "",
-        "image_asset": "assets/shiritori/ss-borrow.png",
+        "image_asset": "assets/shiritori/round2-1220.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7167,7 +6773,7 @@
       }
     },
     {
-      "beforeId": 1248,
+      "beforeId": 1247,
       "id": 1247,
       "action": "edit",
       "before": {
@@ -7177,7 +6783,7 @@
         "imagequery": "可愛い 感情",
         "level": "1",
         "imagequery_en": "Cute",
-        "image_asset": "assets/shiritori/nikkori.png",
+        "image_asset": "assets/shiritori/round2-1248.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7194,7 +6800,7 @@
       }
     },
     {
-      "beforeId": 1271,
+      "beforeId": 1270,
       "id": 1270,
       "action": "edit",
       "before": {
@@ -7204,7 +6810,7 @@
         "imagequery": "感覚 心理",
         "level": "2",
         "imagequery_en": "Sense",
-        "image_asset": "assets/shiritori/complete-0048.png",
+        "image_asset": "assets/shiritori/round2-1271.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7222,33 +6828,6 @@
     },
     {
       "beforeId": 1272,
-      "id": 1271,
-      "action": "edit",
-      "before": {
-        "reading": "かんかく",
-        "word": "間隔",
-        "meaning": "物と物の間の距離。",
-        "imagequery": "間隔 距離",
-        "level": "2",
-        "imagequery_en": "Interval",
-        "image_asset": "assets/shiritori/complete-1301.png",
-        "image_mode": "asset",
-        "image_credit": "アプリ作成図"
-      },
-      "after": {
-        "reading": "かんかく",
-        "word": "間隔",
-        "meaning": "物と物の間の距離。",
-        "imagequery": "間隔 距離",
-        "level": "2",
-        "imagequery_en": "Interval",
-        "image_asset": "assets/shiritori/complete-1301.png",
-        "image_mode": "asset",
-        "image_credit": "AI生成イラスト"
-      }
-    },
-    {
-      "beforeId": 1273,
       "id": 1272,
       "action": "edit",
       "before": {
@@ -7258,7 +6837,7 @@
         "imagequery": "擬音語",
         "level": "1",
         "imagequery_en": "",
-        "image_asset": "assets/shiritori/complete-0217.png",
+        "image_asset": "assets/shiritori/round2-1273.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7275,7 +6854,7 @@
       }
     },
     {
-      "beforeId": 1307,
+      "beforeId": 1306,
       "id": 1306,
       "action": "edit",
       "before": {
@@ -7285,7 +6864,7 @@
         "imagequery": "監督",
         "level": "2",
         "imagequery_en": "Director",
-        "image_asset": "assets/shiritori/ss-leader.png",
+        "image_asset": "assets/shiritori/round2-1307.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7302,7 +6881,7 @@
       }
     },
     {
-      "beforeId": 1309,
+      "beforeId": 1308,
       "id": 1308,
       "action": "edit",
       "before": {
@@ -7329,16 +6908,16 @@
       }
     },
     {
-      "beforeId": 1372,
+      "beforeId": 1371,
       "id": 1371,
       "action": "edit",
       "before": {
-        "reading": "きあう",
-        "word": "着合う",
-        "meaning": "服の色や形の組み合わせを考えて、身につけること。",
-        "imagequery": "衣服",
+        "reading": "こーでぃねーと",
+        "word": "コーディネート",
+        "meaning": "色や形などが合うように、服や小物などを組み合わせること。",
+        "imagequery": "服 コーディネート",
         "level": "2",
-        "imagequery_en": "Clothing",
+        "imagequery_en": "Clothing coordination",
         "image_asset": "assets/shiritori/complete-1401.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
@@ -7356,14 +6935,14 @@
       }
     },
     {
-      "beforeId": 1374,
+      "beforeId": 1373,
       "id": 1373,
       "action": "edit",
       "before": {
-        "reading": "きあわせ",
-        "word": "居合わせ",
-        "meaning": "ある場所に、偶然そのとき居合わせること。",
-        "imagequery": "居合わせ",
+        "reading": "いあわせる",
+        "word": "居合わせる",
+        "meaning": "ある出来事が起きたとき、偶然その場所にいること。",
+        "imagequery": "偶然 居合わせる",
         "level": "2",
         "imagequery_en": "",
         "image_asset": "assets/shiritori/complete-1403.png",
@@ -7383,7 +6962,7 @@
       }
     },
     {
-      "beforeId": 1375,
+      "beforeId": 1374,
       "id": 1374,
       "action": "edit",
       "before": {
@@ -7393,7 +6972,7 @@
         "imagequery": "起案",
         "level": "3",
         "imagequery_en": "",
-        "image_asset": "assets/shiritori/aw-kentou.png",
+        "image_asset": "assets/shiritori/round2-1375.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7410,19 +6989,19 @@
       }
     },
     {
-      "beforeId": 1419,
+      "beforeId": 1418,
       "id": 1418,
       "action": "edit",
       "before": {
         "reading": "きたい",
         "word": "気体",
-        "meaning": "形や体積が決まっておらず、空間に広がる物質の状態。",
+        "meaning": "一定の形や体積をもたず、入れ物や空間いっぱいに広がる物質の状態。空気や酸素など。",
         "imagequery": "気体 状態",
         "level": "2",
         "imagequery_en": "Gas",
         "image_asset": "assets/shiritori/complete-1448.png",
         "image_mode": "asset",
-        "image_credit": "アプリ作成図"
+        "image_credit": "AI生成イラスト"
       },
       "after": {
         "reading": "きたい",
@@ -7437,24 +7016,24 @@
       }
     },
     {
-      "beforeId": 1432,
+      "beforeId": 1431,
       "id": 1431,
       "action": "edit",
       "before": {
         "reading": "きどう",
         "word": "機動",
-        "meaning": "状況に応じて、すばやく行動すること。",
+        "meaning": "状況に合わせて、すばやく動いたり移動したりすること。",
         "imagequery": "機動",
         "level": "3",
         "imagequery_en": "",
-        "image_asset": "assets/shiritori/complete-0617.png",
+        "image_asset": "assets/shiritori/round2-1432.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
       "after": {
         "reading": "きどう",
         "word": "機動",
-        "meaning": "状況に応じて、すばやく行動すること。",
+        "meaning": "状況に合わせて、すばやく動いたり移動したりすること。",
         "imagequery": "機動",
         "level": "3",
         "imagequery_en": "",
@@ -7464,7 +7043,7 @@
       }
     },
     {
-      "beforeId": 1575,
+      "beforeId": 1574,
       "id": 1574,
       "action": "edit",
       "before": {
@@ -7491,7 +7070,7 @@
       }
     },
     {
-      "beforeId": 1592,
+      "beforeId": 1591,
       "id": 1591,
       "action": "edit",
       "before": {
@@ -7518,7 +7097,7 @@
       }
     },
     {
-      "beforeId": 1658,
+      "beforeId": 1657,
       "id": 1657,
       "action": "edit",
       "before": {
@@ -7545,7 +7124,7 @@
       }
     },
     {
-      "beforeId": 1690,
+      "beforeId": 1689,
       "id": 1689,
       "action": "edit",
       "before": {
@@ -7572,7 +7151,7 @@
       }
     },
     {
-      "beforeId": 1691,
+      "beforeId": 1690,
       "id": 1690,
       "action": "edit",
       "before": {
@@ -7599,7 +7178,7 @@
       }
     },
     {
-      "beforeId": 1693,
+      "beforeId": 1692,
       "id": 1692,
       "action": "edit",
       "before": {
@@ -7626,7 +7205,7 @@
       }
     },
     {
-      "beforeId": 1733,
+      "beforeId": 1732,
       "id": 1732,
       "action": "edit",
       "before": {
@@ -7653,7 +7232,7 @@
       }
     },
     {
-      "beforeId": 1750,
+      "beforeId": 1749,
       "id": 1749,
       "action": "edit",
       "before": {
@@ -7680,7 +7259,7 @@
       }
     },
     {
-      "beforeId": 1770,
+      "beforeId": 1769,
       "id": 1769,
       "action": "edit",
       "before": {
@@ -7707,7 +7286,7 @@
       }
     },
     {
-      "beforeId": 1790,
+      "beforeId": 1789,
       "id": 1789,
       "action": "edit",
       "before": {
@@ -7734,7 +7313,7 @@
       }
     },
     {
-      "beforeId": 1871,
+      "beforeId": 1870,
       "id": 1870,
       "action": "edit",
       "before": {
@@ -7761,7 +7340,7 @@
       }
     },
     {
-      "beforeId": 1942,
+      "beforeId": 1941,
       "id": 1941,
       "action": "edit",
       "before": {
@@ -7771,7 +7350,7 @@
         "imagequery": "決別",
         "level": "3",
         "imagequery_en": "",
-        "image_asset": "assets/shiritori/ss-farewell.png",
+        "image_asset": "assets/shiritori/round2-1942.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7788,7 +7367,7 @@
       }
     },
     {
-      "beforeId": 4312,
+      "beforeId": 4311,
       "id": 4311,
       "action": "edit",
       "before": {
@@ -7798,7 +7377,7 @@
         "imagequery": "大慌て",
         "level": "1",
         "imagequery_en": "Oversleeping",
-        "image_asset": "assets/shiritori/chikoku.png",
+        "image_asset": "assets/shiritori/round2-0911.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
       },
@@ -7842,7 +7421,8 @@
         "image_asset": "assets/shiritori/itami.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 311
     },
     {
       "requestedId": 344,
@@ -7870,7 +7450,8 @@
         "image_asset": "assets/shiritori/complete-0347.png",
         "image_mode": "asset",
         "image_credit": "アプリ作成図"
-      }
+      },
+      "integrationBeforeId": 344
     },
     {
       "requestedId": 345,
@@ -7898,7 +7479,8 @@
         "image_asset": "assets/shiritori/complete-0348.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 345
     },
     {
       "requestedId": 346,
@@ -7926,7 +7508,8 @@
         "image_asset": "assets/shiritori/complete-0349.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 346
     },
     {
       "requestedId": 364,
@@ -7954,7 +7537,8 @@
         "image_asset": "assets/shiritori/review93-one-finger.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 364
     },
     {
       "requestedId": 365,
@@ -7982,7 +7566,8 @@
         "image_asset": "assets/shiritori/complete-0368.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 365
     },
     {
       "requestedId": 382,
@@ -8010,7 +7595,8 @@
         "image_asset": "assets/shiritori/complete-0385.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 382
     },
     {
       "requestedId": 385,
@@ -8038,7 +7624,8 @@
         "image_asset": "assets/shiritori/complete-0388.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 385
     },
     {
       "requestedId": 397,
@@ -8066,7 +7653,8 @@
         "image_asset": "assets/shiritori/complete-0401.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 397
     },
     {
       "requestedId": 413,
@@ -8094,7 +7682,8 @@
         "image_asset": "assets/shiritori/complete-0417.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 413
     },
     {
       "requestedId": 417,
@@ -8122,7 +7711,8 @@
         "image_asset": "assets/shiritori/review93-reluctantly.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 417
     },
     {
       "requestedId": 462,
@@ -8150,7 +7740,8 @@
         "image_asset": "assets/shiritori/complete-0467.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 462
     },
     {
       "requestedId": 466,
@@ -8178,7 +7769,8 @@
         "image_asset": "assets/shiritori/complete-0471.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 466
     },
     {
       "requestedId": 486,
@@ -8206,7 +7798,8 @@
         "image_asset": "assets/shiritori/complete-0491.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 486
     },
     {
       "requestedId": 500,
@@ -8234,7 +7827,8 @@
         "image_asset": "assets/shiritori/complete-0505.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 500
     },
     {
       "requestedId": 502,
@@ -8262,7 +7856,8 @@
         "image_asset": "assets/shiritori/complete-0507.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 502
     },
     {
       "requestedId": 524,
@@ -8290,7 +7885,8 @@
         "image_asset": "assets/shiritori/complete-0531.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 524
     },
     {
       "requestedId": 526,
@@ -8318,7 +7914,8 @@
         "image_asset": "assets/shiritori/complete-0533.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 526
     },
     {
       "requestedId": 549,
@@ -8346,7 +7943,8 @@
         "image_asset": "assets/shiritori/complete-0557.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 549
     },
     {
       "requestedId": 580,
@@ -8374,7 +7972,8 @@
         "image_asset": "assets/shiritori/complete-0588.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 580
     },
     {
       "requestedId": 608,
@@ -8402,7 +8001,8 @@
         "image_asset": "assets/shiritori/complete-0617.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 608
     },
     {
       "requestedId": 1432,
@@ -8423,14 +8023,15 @@
       "after": {
         "reading": "きどう",
         "word": "機動",
-        "meaning": "状況に応じて、すばやく行動すること。",
+        "meaning": "状況に合わせて、すばやく動いたり移動したりすること。",
         "imagequery": "機動",
         "level": "3",
         "imagequery_en": "",
         "image_asset": "assets/shiritori/review93-mobility.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1431
     },
     {
       "requestedId": 645,
@@ -8458,7 +8059,8 @@
         "image_asset": "assets/shiritori/complete-0654.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 645
     },
     {
       "requestedId": 648,
@@ -8486,7 +8088,8 @@
         "image_asset": "assets/shiritori/complete-0654.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 648
     },
     {
       "requestedId": 710,
@@ -8514,7 +8117,8 @@
         "image_asset": "assets/shiritori/complete-0722.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 710
     },
     {
       "requestedId": 711,
@@ -8542,7 +8146,8 @@
         "image_asset": "assets/shiritori/complete-0723.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 711
     },
     {
       "requestedId": 724,
@@ -8570,7 +8175,8 @@
         "image_asset": "assets/shiritori/complete-0737.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 724
     },
     {
       "requestedId": 775,
@@ -8598,7 +8204,8 @@
         "image_asset": "assets/shiritori/complete-0792.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 775
     },
     {
       "requestedId": 776,
@@ -8626,7 +8233,8 @@
         "image_asset": "assets/shiritori/complete-0793.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 776
     },
     {
       "requestedId": 792,
@@ -8654,7 +8262,8 @@
         "image_asset": "assets/shiritori/complete-0810.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 792
     },
     {
       "requestedId": 799,
@@ -8682,7 +8291,8 @@
         "image_asset": "assets/shiritori/complete-0818.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 799
     },
     {
       "requestedId": 803,
@@ -8710,7 +8320,8 @@
         "image_asset": "assets/shiritori/complete-0822.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 803
     },
     {
       "requestedId": 812,
@@ -8738,7 +8349,8 @@
         "image_asset": "assets/shiritori/complete-0831.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 812
     },
     {
       "requestedId": 819,
@@ -8766,7 +8378,8 @@
         "image_asset": "assets/shiritori/complete-0838.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 819
     },
     {
       "requestedId": 829,
@@ -8794,7 +8407,8 @@
         "image_asset": "assets/shiritori/ss-lecture.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 829
     },
     {
       "requestedId": 1567,
@@ -8822,7 +8436,8 @@
         "image_asset": "assets/shiritori/ss-lecture.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1566
     },
     {
       "requestedId": 1574,
@@ -8850,7 +8465,8 @@
         "image_asset": "assets/shiritori/ss-lecture.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1573
     },
     {
       "requestedId": 831,
@@ -8878,7 +8494,8 @@
         "image_asset": "assets/shiritori/complete-0850.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 831
     },
     {
       "requestedId": 833,
@@ -8906,7 +8523,8 @@
         "image_asset": "assets/shiritori/complete-0852.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 833
     },
     {
       "requestedId": 863,
@@ -8934,7 +8552,8 @@
         "image_asset": "assets/shiritori/complete-0882.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 863
     },
     {
       "requestedId": 864,
@@ -8962,7 +8581,8 @@
         "image_asset": "assets/shiritori/complete-0883.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 864
     },
     {
       "requestedId": 872,
@@ -8990,7 +8610,8 @@
         "image_asset": "assets/shiritori/review93-tomboy.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 872
     },
     {
       "requestedId": 888,
@@ -9018,7 +8639,8 @@
         "image_asset": "assets/shiritori/review93-inferior.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 888
     },
     {
       "requestedId": 894,
@@ -9046,7 +8668,8 @@
         "image_asset": "assets/shiritori/odoroku.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 894
     },
     {
       "requestedId": 896,
@@ -9074,7 +8697,8 @@
         "image_asset": "assets/shiritori/onakanosuku.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 896
     },
     {
       "requestedId": 1692,
@@ -9102,7 +8726,8 @@
         "image_asset": "assets/shiritori/onakanosuku.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1691
     },
     {
       "requestedId": 911,
@@ -9130,7 +8755,8 @@
         "image_asset": "assets/shiritori/review93-overslept.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 911
     },
     {
       "requestedId": 913,
@@ -9158,7 +8784,8 @@
         "image_asset": "assets/shiritori/complete-0934.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 913
     },
     {
       "requestedId": 920,
@@ -9186,7 +8813,8 @@
         "image_asset": "assets/shiritori/review93-spoken-story.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 920
     },
     {
       "requestedId": 937,
@@ -9214,7 +8842,8 @@
         "image_asset": "assets/shiritori/sukuu.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 937
     },
     {
       "requestedId": 938,
@@ -9242,7 +8871,8 @@
         "image_asset": "assets/shiritori/omake.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 938
     },
     {
       "requestedId": 969,
@@ -9270,7 +8900,8 @@
         "image_asset": "assets/shiritori/complete-0992.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 969
     },
     {
       "requestedId": 972,
@@ -9298,7 +8929,8 @@
         "image_asset": "assets/shiritori/origami.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 972
     },
     {
       "requestedId": 979,
@@ -9326,7 +8958,8 @@
         "image_asset": "assets/shiritori/ss-farewell.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 979
     },
     {
       "requestedId": 1021,
@@ -9354,7 +8987,8 @@
         "image_asset": "assets/shiritori/review93-return-home.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1021
     },
     {
       "requestedId": 1590,
@@ -9382,7 +9016,8 @@
         "image_asset": "assets/shiritori/ss-farewell.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1589
     },
     {
       "requestedId": 984,
@@ -9410,7 +9045,8 @@
         "image_asset": "assets/shiritori/complete-1007.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 984
     },
     {
       "requestedId": 1034,
@@ -9438,7 +9074,8 @@
         "image_asset": "assets/shiritori/complete-1058.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1034
     },
     {
       "requestedId": 1056,
@@ -9466,7 +9103,8 @@
         "image_asset": "assets/shiritori/review93-clever.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1056
     },
     {
       "requestedId": 1065,
@@ -9494,7 +9132,8 @@
         "image_asset": "assets/shiritori/review93-bite-apple.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1065
     },
     {
       "requestedId": 1175,
@@ -9522,7 +9161,8 @@
         "image_asset": "assets/shiritori/complete-1199.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1174
     },
     {
       "requestedId": 1066,
@@ -9550,7 +9190,8 @@
         "image_asset": "assets/shiritori/ss-lend.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1066
     },
     {
       "requestedId": 1073,
@@ -9578,7 +9219,8 @@
         "image_asset": "assets/shiritori/complete-1097.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1073
     },
     {
       "requestedId": 1075,
@@ -9606,7 +9248,8 @@
         "image_asset": "assets/shiritori/complete-1099.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1075
     },
     {
       "requestedId": 1105,
@@ -9634,7 +9277,8 @@
         "image_asset": "assets/shiritori/complete-1131.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1105
     },
     {
       "requestedId": 1170,
@@ -9662,7 +9306,8 @@
         "image_asset": "assets/shiritori/kamihikouki.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1170
     },
     {
       "requestedId": 1173,
@@ -9680,7 +9325,8 @@
       },
       "action": "delete",
       "id": null,
-      "after": null
+      "after": null,
+      "integrationAction": "already-deleted-in-main"
     },
     {
       "requestedId": 1195,
@@ -9708,7 +9354,8 @@
         "image_asset": "assets/shiritori/complete-1222.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1194
     },
     {
       "requestedId": 1198,
@@ -9736,7 +9383,8 @@
         "image_asset": "assets/shiritori/complete-1225.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1197
     },
     {
       "requestedId": 1209,
@@ -9764,7 +9412,8 @@
         "image_asset": "assets/shiritori/complete-1236.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1208
     },
     {
       "requestedId": 1215,
@@ -9792,7 +9441,8 @@
         "image_asset": "assets/shiritori/ss-borrow.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1214
     },
     {
       "requestedId": 1220,
@@ -9820,7 +9470,8 @@
         "image_asset": "assets/shiritori/review93-rented-home.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1219
     },
     {
       "requestedId": 1217,
@@ -9848,7 +9499,8 @@
         "image_asset": "assets/shiritori/complete-1244.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1216
     },
     {
       "requestedId": 1223,
@@ -9869,14 +9521,15 @@
       "after": {
         "reading": "かりそめ",
         "word": "仮初め",
-        "meaning": "ほんのしばらくの間であること。",
+        "meaning": "一時的で、長くは続かないこと。また、物事を軽く考えること。",
         "imagequery": "一時的",
         "level": "3",
         "imagequery_en": "",
         "image_asset": "assets/shiritori/complete-1250.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1222
     },
     {
       "requestedId": 1248,
@@ -9904,7 +9557,8 @@
         "image_asset": "assets/shiritori/review93-cute-puppy.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1247
     },
     {
       "requestedId": 1256,
@@ -9932,7 +9586,8 @@
         "image_asset": "assets/shiritori/ss-communicate.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1255
     },
     {
       "requestedId": 1271,
@@ -9960,7 +9615,8 @@
         "image_asset": "assets/shiritori/review93-five-senses.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1270
     },
     {
       "requestedId": 1272,
@@ -9988,7 +9644,8 @@
         "image_asset": "assets/shiritori/complete-1301.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1271
     },
     {
       "requestedId": 1273,
@@ -10016,7 +9673,8 @@
         "image_asset": "assets/shiritori/review93-kankan.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1272
     },
     {
       "requestedId": 1307,
@@ -10044,7 +9702,8 @@
         "image_asset": "assets/shiritori/review93-director.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1306
     },
     {
       "requestedId": 1309,
@@ -10072,7 +9731,8 @@
         "image_asset": "assets/shiritori/nintai.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1308
     },
     {
       "requestedId": 1372,
@@ -10100,7 +9760,8 @@
         "image_asset": "assets/shiritori/complete-1401.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1371
     },
     {
       "requestedId": 1374,
@@ -10128,7 +9789,8 @@
         "image_asset": "assets/shiritori/complete-1403.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1373
     },
     {
       "requestedId": 1375,
@@ -10156,7 +9818,8 @@
         "image_asset": "assets/shiritori/review93-draft-proposal.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1374
     },
     {
       "requestedId": 1871,
@@ -10184,7 +9847,8 @@
         "image_asset": "assets/shiritori/review93-planning.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1870
     },
     {
       "requestedId": 1419,
@@ -10212,7 +9876,8 @@
         "image_asset": "assets/shiritori/complete-1448.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1418
     },
     {
       "requestedId": 1575,
@@ -10240,7 +9905,8 @@
         "image_asset": "assets/shiritori/review93-competition.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1574
     },
     {
       "requestedId": 1592,
@@ -10268,7 +9934,8 @@
         "image_asset": "assets/shiritori/complete-1624.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1591
     },
     {
       "requestedId": 1658,
@@ -10296,7 +9963,8 @@
         "image_asset": "assets/shiritori/review93-duties.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1657
     },
     {
       "requestedId": 1690,
@@ -10324,7 +9992,8 @@
         "image_asset": "assets/shiritori/complete-1722.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1689
     },
     {
       "requestedId": 1691,
@@ -10352,7 +10021,8 @@
         "image_asset": "assets/shiritori/complete-1723.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1690
     },
     {
       "requestedId": 1693,
@@ -10380,7 +10050,8 @@
         "image_asset": "assets/shiritori/complete-1725.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1692
     },
     {
       "requestedId": 1724,
@@ -10408,7 +10079,8 @@
         "image_asset": "assets/shiritori/complete-1757.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1723
     },
     {
       "requestedId": 1728,
@@ -10436,7 +10108,8 @@
         "image_asset": "assets/shiritori/complete-1761.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1727
     },
     {
       "requestedId": 1733,
@@ -10464,7 +10137,8 @@
         "image_asset": "assets/shiritori/complete-1766.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1732
     },
     {
       "requestedId": 1739,
@@ -10492,7 +10166,8 @@
         "image_asset": "assets/shiritori/complete-1772.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1738
     },
     {
       "requestedId": 1750,
@@ -10520,7 +10195,8 @@
         "image_asset": "assets/shiritori/review93-distinguish.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1749
     },
     {
       "requestedId": 1757,
@@ -10548,7 +10224,8 @@
         "image_asset": "assets/shiritori/ss-class.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1756
     },
     {
       "requestedId": 1758,
@@ -10576,7 +10253,8 @@
         "image_asset": "assets/shiritori/ss-union.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1757
     },
     {
       "requestedId": 1770,
@@ -10604,7 +10282,8 @@
         "image_asset": "assets/shiritori/complete-1804.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1769
     },
     {
       "requestedId": 1790,
@@ -10632,7 +10311,8 @@
         "image_asset": "assets/shiritori/review93-critical.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1789
     },
     {
       "requestedId": 1881,
@@ -10660,7 +10340,8 @@
         "image_asset": "assets/shiritori/complete-1916.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1880
     },
     {
       "requestedId": 1882,
@@ -10688,7 +10369,8 @@
         "image_asset": "assets/shiritori/complete-1917.png",
         "image_mode": "asset",
         "image_credit": "AI生成イラスト"
-      }
+      },
+      "integrationBeforeId": 1881
     }
   ],
   "replacedImages": [
@@ -10777,7 +10459,22 @@
     "complete-0654.png",
     "complete-1199.png"
   ],
-  "removedManifestAssets": [],
+  "removedManifestAssets": [
+    "round2-0364.png",
+    "round2-0417.png",
+    "round2-0872.png",
+    "round2-0888.png",
+    "round2-0911.png",
+    "round2-1065.png",
+    "round2-1220.png",
+    "round2-1248.png",
+    "round2-1271.png",
+    "round2-1273.png",
+    "round2-1307.png",
+    "round2-1375.png",
+    "round2-1432.png",
+    "round2-1942.png"
+  ],
   "imageChecks": [
     {
       "file": "complete-0348.png",
@@ -11775,5 +11472,11 @@
       ],
       "review": "水・ジュース・油が流れる場面を、液と液体の双方の具体例として共有。容器とフライパン全体を含む構図へ再生成。"
     }
-  ]
+  ],
+  "initialBaselineCommit": "b7986ad",
+  "integration": {
+    "mainCommit": "312878c",
+    "standaloneCommit": "af4099d",
+    "policy": "mainの非重複変更と画像点検画面の機能を維持し、103注文で変更したフィールドと83枚の点検済み画像を統合。噛みやんはmainで削除済みのため再削除しない。"
+  }
 }

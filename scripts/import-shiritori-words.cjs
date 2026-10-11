@@ -17,6 +17,10 @@ const batch = batchLines.slice(1);
 // Old batches must never resurrect deleted words or obsolete definitions.
 const ledgerFile=path.join(__dirname,'../data/corrections/2026-10-11-ledger.json');
 const obsolete=new Set(fs.existsSync(ledgerFile)?JSON.parse(fs.readFileSync(ledgerFile,'utf8')).changes.map(c=>[c.before.reading,c.before.word,c.before.meaning].join(',')):[]);
+const correctionHistory=path.join(__dirname,'../data/dictionary-imports/history.json');
+if(fs.existsSync(correctionHistory))for(const record of JSON.parse(fs.readFileSync(correctionHistory,'utf8'))){
+  if(record.type==='vocabulary-corrections')for(const change of record.changes)obsolete.add(change.before.split(',').slice(0,3).join(','));
+}
 const review93File=path.join(__dirname,'../data/corrections/review93-2026-10-11/ledger.json');
 if(fs.existsSync(review93File))for(const c of JSON.parse(fs.readFileSync(review93File,'utf8')).changes)obsolete.add([c.before.reading,c.before.word,c.before.meaning].join(','));
 const oldReviewSource=path.join(__dirname,'../data/meaning-review/source.csv');

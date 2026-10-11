@@ -5,7 +5,8 @@ const ledger=JSON.parse(fs.readFileSync(path.join(root,'data/corrections/review9
 const lines=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split(/\r?\n/);const headers=lines.shift().split(',');
 const rows=lines.map(l=>Object.fromEntries(l.split(',').map((v,i)=>[headers[i],v])));
 const selectedFiles=new Set([...ledger.requests.map(r=>r.before.image_asset),...ledger.replacedImages.map(f=>'assets/shiritori/'+f)]);
-const selected=rows.filter(r=>selectedFiles.has(r.image_asset));
+const coverage=JSON.parse(fs.readFileSync(path.join(root,'data/image-coverage/review-2026-10-10.json'),'utf8'));
+const selected=rows.filter((r,i)=>selectedFiles.has(r.image_asset)||coverage[i].review93);
 const server=http.createServer((req,res)=>{
   const file=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);
   if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404).end();return;}
