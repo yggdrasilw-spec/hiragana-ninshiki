@@ -7,8 +7,7 @@ try{
   const current=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8');
   const history=JSON.parse(fs.readFileSync(path.join(root,'data/dictionary-imports/history.json'),'utf8'));
   const first=history[0];
-  const lines=current.trimEnd().split('\n');
-  const baseline=lines.slice(0,-history.reduce((sum,h)=>sum+h.addedLines.length,0)).join('\n')+'\n';
+  const baseline=require('../scripts/shiritori-correction-ledger.cjs').undoImports(current,history);
   const target=path.join(temp,'whitelist.csv');fs.writeFileSync(target,baseline);
   const batch=path.join(temp,'batch.csv');
   fs.writeFileSync(batch,baseline.split('\n')[0]+'\n'+first.addedLines.join('\n')+'\n');
