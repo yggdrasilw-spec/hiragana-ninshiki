@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const ledger=read('data/corrections/review93-2026-10-11/ledger.json');
-const csv=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8'),lines=csv.trimEnd().split('\n'),heads=lines.shift().split(',');
+const csv=require('../scripts/shiritori-correction-ledger.cjs').dictionaryAtHash(ledger.afterSha256),lines=csv.trimEnd().split('\n'),heads=lines.shift().split(',');
 const rows=lines.map(l=>Object.fromEntries(heads.map((h,i)=>[h,l.split(',')[i]])));
 const find=(word,reading)=>{const matches=rows.filter(r=>r.word===word&&(!reading||r.reading===reading));assert.equal(matches.length,1,word);return matches[0];};
 assert.equal(ledger.requests.length,103);assert.equal(new Set(ledger.requests.map(r=>r.before.image_asset)).size,93);
@@ -37,5 +37,7 @@ for(const [reading,words] of [['いたい',['痛い']],['ひっさん',['筆算'
 }
 assert.ok(!groups.some(g=>g.reading==='かみやん'));
 const history=read('data/dictionary-imports/history.json'),restore=require('../scripts/shiritori-correction-ledger.cjs').undoImports;
-const baseline=restore(csv,history.slice(-1));assert.equal(crypto.createHash('sha256').update(baseline).digest('hex'),ledger.beforeSha256);
+const record=history.find(r=>r.ledger==='data/corrections/review93-2026-10-11/ledger.json');
+assert.ok(record,'The correction remains recorded after later imports');
+const baseline=restore(csv,[record]);assert.equal(crypto.createHash('sha256').update(baseline).digest('hex'),ledger.beforeSha256);
 console.log(JSON.stringify({passed:true,orders:103,sourceImages:93,updatedOrReusedImages:ledger.replacedImages.length,rows:rows.length,identityAndHistory:true}));

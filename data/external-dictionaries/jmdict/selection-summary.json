@@ -1,0 +1,32 @@
+{
+  "dictDate": "2026-10-05",
+  "sourceSha256": "f5ad01f75714dff36f44e66a1c7b5d3e3abb99b9543c587b025653c4d6962115",
+  "baseline": "data/meaning-review/source.csv",
+  "baselineSha256": "eb534574e8521e232dbfbe635fcefc346e452fb6044d46a269b1310e68f9dddc",
+  "candidateRows": 27414,
+  "readings": 13915,
+  "statuses": {
+    "held-uncommon-reading": 1763,
+    "pending": 11184,
+    "accepted": 412,
+    "held-existing-entry": 271,
+    "excluded-blacklist": 209,
+    "held-adopted-entry": 53,
+    "deferred-reviewed": 23
+  },
+  "acceptedMeanings": 414,
+  "levels": [
+    {
+      "level": 1,
+      "rows": 149
+    },
+    {
+      "level": 2,
+      "rows": 242
+    },
+    {
+      "level": 3,
+      "rows": 23
+    }
+  ]
+}

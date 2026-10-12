@@ -20,7 +20,7 @@ for(const ids of [[645,648],[829,1567,1574,2187],[911,4312],[937,2974],[920,3615
 assert.equal(byOrigin.get(1175).image_asset,'assets/shiritori/complete-1199.png');
 assert.match(byOrigin.get(364).meaning,/一本の指/);assert.match(byOrigin.get(864).meaning,/頼まれて/);assert.match(byOrigin.get(984).meaning,/自然/);assert.ok(!byOrigin.get(1195).meaning.includes('通う'));
 for(const o of ledger.requestedOrders){assert.deepEqual(byOrigin.get(o.orderId)||null,o.after);if(o.id)assert.deepEqual(rows[o.id-1],o.after);}
-const coverage=read('data/image-coverage/review-2026-10-10.json');assert.equal(coverage.length,rows.length);
+const coverage=read('data/image-coverage/review-2026-10-10.json');assert.equal(coverage.length,liveRows.length);
 liveRows.forEach((r,i)=>{assert.match(r.reading,/^[ぁ-ゖー]+$/);assert.ok(r.meaning&&!/[\r\n,]/.test(r.meaning));assert.equal(coverage[i].id,i+1);for(const k of ['word','reading','meaning','image_asset'])assert.equal(coverage[i][k],r[k]);});
 const manifest=read('assets/shiritori/manifest.json'),assets=manifest.assets;
 for(const a of assets){const expected=liveRows.flatMap((r,i)=>r.image_asset==='assets/shiritori/'+a.file?[{id:i+1,reading:r.reading,word:r.word,meaning:r.meaning}]:[]);assert.ok(expected.length);assert.deepEqual(a.aliases.map(({id,reading,word,meaning})=>({id,reading,word,meaning})),expected);}
