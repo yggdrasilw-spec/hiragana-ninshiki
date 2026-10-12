@@ -1694,7 +1694,9 @@ function norm(t){return kataToHira(t).replace(/[ 　]/g,'').toLowerCase();}
 /** カタカナモード時にひらがな→カタカナに変換して返す（表示専用） */
 function displayStr(t){ return ST.charMode==='katakana' ? hiraToKata(String(t||'')) : String(t||''); }
 function firstChar(r){for(const c of norm(r)){if(/^[、。！？「」（）]$/.test(c))continue;return SMALL[c]||c;}return '';}
-function lastChar(r){const s=norm(r);if(!s)return '';if(s.endsWith('ー')){const l=s.slice(0,-1).slice(-1);return VOWEL_MAP[l]||l||'';}const l=s.slice(-1);return SMALL[l]||l||'';}
+// 長音の直前の小文字も普通の文字に直してから母音を求める。接続判定と説明表示で共用。
+function longVowel(c){return VOWEL_MAP[SMALL[c]||c]||'';}
+function lastChar(r){const s=norm(r);if(!s)return '';if(s.endsWith('ー')){const l=s.slice(0,-1).slice(-1);return longVowel(l)||SMALL[l]||l||'';}const l=s.slice(-1);return SMALL[l]||l||'';}
 function isEndWord(r){return norm(r).endsWith('ん');}
 
 function escH(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
@@ -3148,7 +3150,7 @@ function splitMora(text){
         prev = pj;
         break;
       }
-      const vowel = VOWEL_MAP[prev] || '';
+      const vowel = longVowel(prev);
       if(vowel) out.push(`（${vowel}）`);
     }else{
       out.push(c);
