@@ -1951,6 +1951,15 @@
           "meaning": "じめんをあるくちいさなくろい虫",
           "reuseReason": "語義に合わせて新規生成した専用画像。",
           "sourceReview": "目視確認済み: A large clear black ant, with six legs and two antennae, walking on soil."
+        },
+        {
+          "id": 162,
+          "originalId": 165,
+          "reading": "ありさん",
+          "word": "蟻さん",
+          "meaning": "ありのことです",
+          "reuseReason": "「蟻さん」はアリの親しみを込めた呼称。同じ小さな黒い虫。",
+          "sourceReview": "語義照合済み: 「蟻さん」はアリの親しみを込めた呼称。同じ小さな黒い虫。"
         }
       ],
       "integration": {
@@ -35164,6 +35173,15 @@
           "meaning": "食べ物などを盛る、浅く平たい器。",
           "reuseReason": "語義に合わせて新規生成した専用画像。",
           "sourceReview": "目視確認済み: A single empty round shallow ceramic plate, white with a blue rim"
+        },
+        {
+          "id": 822,
+          "originalId": 846,
+          "reading": "おさら",
+          "word": "お皿",
+          "meaning": "食べ物をのせる器。",
+          "reuseReason": "「お皿」は皿の丁寧な呼び方。浅く平たい食器。",
+          "sourceReview": "語義照合済み: 「お皿」は皿の丁寧な呼び方。浅く平たい食器。"
         }
       ],
       "integration": {
@@ -42926,6 +42944,15 @@
           "meaning": "自分の親である男性。",
           "reuseReason": "既存の共有画像。全語義の追加確認候補は品質監査レポートを参照。",
           "sourceReview": "確認済み: 子どもに寝る前の絵本を読むお父さん。"
+        },
+        {
+          "id": 885,
+          "originalId": 910,
+          "reading": "おとん",
+          "word": "おとん",
+          "meaning": "おとうさんのこと",
+          "reuseReason": "「おとん」は父親の親しい呼び方。",
+          "sourceReview": "語義照合済み: 「おとん」は父親の親しい呼び方。"
         }
       ]
     },
@@ -44036,6 +44063,15 @@
           "meaning": "地球の周りを回る天体。夜空に見える。",
           "reuseReason": "語義を照合して既存画像を維持。",
           "sourceReview": "目視確認済み: 元シートのコマ内のみを抽出。必要な絵の欠けと隣コマ混入を修正。"
+        },
+        {
+          "id": 860,
+          "originalId": 884,
+          "reading": "おつきさま",
+          "word": "お月様",
+          "meaning": "夜に空に見える月。",
+          "reuseReason": "「お月様」は夜空に見える月の呼称。天体の月に一致。",
+          "sourceReview": "語義照合済み: 「お月様」は夜空に見える月の呼称。天体の月に一致。"
         }
       ],
       "integration": {
@@ -47443,6 +47479,24 @@
           "meaning": "おしっこやうんちをするための場所。",
           "reuseReason": "語義に合わせて新規生成した専用画像。",
           "sourceReview": "目視確認済み: A clean small bathroom with a modern toilet bowl and toilet paper holder"
+        },
+        {
+          "id": 862,
+          "originalId": 886,
+          "reading": "おてあらい",
+          "word": "お手洗い",
+          "meaning": "手を洗ったり、トイレを使ったりする場所。",
+          "reuseReason": "「お手洗い」はトイレを使う場所の丁寧な呼称。",
+          "sourceReview": "語義照合済み: 「お手洗い」はトイレを使う場所の丁寧な呼称。"
+        },
+        {
+          "id": 5025,
+          "originalId": 5123,
+          "reading": "べんじょ",
+          "word": "便所",
+          "meaning": "大小便をするための場所。トイレともいう。",
+          "reuseReason": "「便所」はトイレと同じ排泄のための場所。",
+          "sourceReview": "語義照合済み: 「便所」はトイレと同じ排泄のための場所。"
         }
       ],
       "cropBox": [
@@ -72195,6 +72249,1892 @@
       "scenePrompt": "An open illustrated encyclopedia with clear pictures of a simple leaf and flower on one page and a rock on another, no text.",
       "sha256": "89e1c44ef7afd30c405c752d7c40ee9f37a89ff3f43e6069c3ea5a08a9e5f858",
       "research": {}
+    },
+    {
+      "reading": "うんてんしゅ",
+      "word": "運転手",
+      "meaning": "くるまやバスをうんてんするひと。",
+      "file": "wave6-word-606.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 1,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        15,
+        10,
+        311,
+        310
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "50b0165c62cf2ccd6b1b396782c5f0ae3bde48d363d2d62c611aab758a8d1d8f",
+      "cropChecks": {
+        "tileIndex": 1,
+        "cropBox": [
+          15,
+          10,
+          311,
+          310
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.3379279279279279,
+        "file": "wave6-word-606.png",
+        "sha256": "50b0165c62cf2ccd6b1b396782c5f0ae3bde48d363d2d62c611aab758a8d1d8f"
+      },
+      "aliases": [
+        {
+          "id": 606,
+          "originalId": 618,
+          "reading": "うんてんしゅ",
+          "word": "運転手",
+          "meaning": "くるまやバスをうんてんするひと。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal."
+        }
+      ]
+    },
+    {
+      "reading": "えんとつ",
+      "word": "煙突",
+      "meaning": "やねのうえからけむりをだすところ。",
+      "file": "wave6-word-743.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 2,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        326,
+        10,
+        621,
+        310
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "f76203b9114068e364b4f122d19e7fd09b51cf2af95499c2ee690395abfb68c1",
+      "cropChecks": {
+        "tileIndex": 2,
+        "cropBox": [
+          326,
+          10,
+          621,
+          310
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.23831638418079096,
+        "file": "wave6-word-743.png",
+        "sha256": "f76203b9114068e364b4f122d19e7fd09b51cf2af95499c2ee690395abfb68c1"
+      },
+      "aliases": [
+        {
+          "id": 743,
+          "originalId": 763,
+          "reading": "えんとつ",
+          "word": "煙突",
+          "meaning": "やねのうえからけむりをだすところ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered."
+        }
+      ]
+    },
+    {
+      "reading": "おうさま",
+      "word": "王様",
+      "meaning": "くにをおさめるひと。",
+      "file": "wave6-word-756.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 3,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        635,
+        10,
+        929,
+        310
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "ac4c433f2c42e2df7bb99da00cd7efd6efc9b88c4ddbcc3e8c508c6517577813",
+      "cropChecks": {
+        "tileIndex": 3,
+        "cropBox": [
+          635,
+          10,
+          929,
+          310
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.24609977324263038,
+        "file": "wave6-word-756.png",
+        "sha256": "ac4c433f2c42e2df7bb99da00cd7efd6efc9b88c4ddbcc3e8c508c6517577813"
+      },
+      "aliases": [
+        {
+          "id": 756,
+          "originalId": 777,
+          "reading": "おうさま",
+          "word": "王様",
+          "meaning": "くにをおさめるひと。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter."
+        }
+      ]
+    },
+    {
+      "reading": "おうじ",
+      "word": "王子",
+      "meaning": "おうさまのこども。",
+      "file": "wave6-word-757.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 4,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        947,
+        10,
+        1241,
+        310
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "a668962cc30657cec63daaa37b9f73f6640ee599058e2e29f21adf68e2999875",
+      "cropChecks": {
+        "tileIndex": 4,
+        "cropBox": [
+          947,
+          10,
+          1241,
+          310
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2912471655328798,
+        "file": "wave6-word-757.png",
+        "sha256": "a668962cc30657cec63daaa37b9f73f6640ee599058e2e29f21adf68e2999875"
+      },
+      "aliases": [
+        {
+          "id": 757,
+          "originalId": 778,
+          "reading": "おうじ",
+          "word": "王子",
+          "meaning": "おうさまのこども。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle."
+        },
+        {
+          "id": 758,
+          "originalId": 779,
+          "reading": "おうじさま",
+          "word": "王子様",
+          "meaning": "王子を敬って呼ぶ言い方。",
+          "reuseReason": "「王子様」は王子の敬称。対象が同じ。",
+          "sourceReview": "語義照合済み: 「王子様」は王子の敬称。対象が同じ。"
+        }
+      ],
+      "sharedSenseReview": {
+        "reviewed": true,
+        "ids": [
+          757,
+          758
+        ],
+        "reason": "新規画像の全共有先を、語義・丁寧な呼称・同じ対象であることと照合済み。",
+        "source": "data/image-coverage/2026-10-12-wave6/semantic-review.json"
+      }
+    },
+    {
+      "reading": "おうじょ",
+      "word": "王女",
+      "meaning": "おうさまのむすめ。",
+      "file": "wave6-word-759.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 5,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        15,
+        321,
+        311,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "a45e7208678372fa9b862466fbf8c5ee56b90c566057ff243f1d2b38780da510",
+      "cropChecks": {
+        "tileIndex": 5,
+        "cropBox": [
+          15,
+          321,
+          311,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.3434760774287801,
+        "file": "wave6-word-759.png",
+        "sha256": "a45e7208678372fa9b862466fbf8c5ee56b90c566057ff243f1d2b38780da510"
+      },
+      "aliases": [
+        {
+          "id": 759,
+          "originalId": 780,
+          "reading": "おうじょ",
+          "word": "王女",
+          "meaning": "おうさまのむすめ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle."
+        }
+      ]
+    },
+    {
+      "reading": "おか",
+      "word": "丘",
+      "meaning": "なだらかに盛り上がった土地。",
+      "file": "wave6-word-796.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 6,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        326,
+        321,
+        621,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "dbc98d367b230d833757e54855511e7800a149226aac0048f736c415775a6e1b",
+      "cropChecks": {
+        "tileIndex": 6,
+        "cropBox": [
+          326,
+          321,
+          621,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.23177966101694916,
+        "file": "wave6-word-796.png",
+        "sha256": "dbc98d367b230d833757e54855511e7800a149226aac0048f736c415775a6e1b"
+      },
+      "aliases": [
+        {
+          "id": 796,
+          "originalId": 820,
+          "reading": "おか",
+          "word": "丘",
+          "meaning": "なだらかに盛り上がった土地。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain."
+        }
+      ]
+    },
+    {
+      "reading": "おがわ",
+      "word": "小川",
+      "meaning": "公園や野原などを流れる、小さな川。",
+      "file": "wave6-word-808.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 7,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        635,
+        321,
+        929,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "2cb78943676b63deb8413928c8b88aaf7b1428b17a97e861cd45ece996c90cee",
+      "cropChecks": {
+        "tileIndex": 7,
+        "cropBox": [
+          635,
+          321,
+          929,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.40939281117852544,
+        "file": "wave6-word-808.png",
+        "sha256": "2cb78943676b63deb8413928c8b88aaf7b1428b17a97e861cd45ece996c90cee"
+      },
+      "aliases": [
+        {
+          "id": 808,
+          "originalId": 832,
+          "reading": "おがわ",
+          "word": "小川",
+          "meaning": "公園や野原などを流れる、小さな川。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river."
+        }
+      ]
+    },
+    {
+      "reading": "おきもの",
+      "word": "置き物",
+      "meaning": "かざるためのもの。",
+      "file": "wave6-word-813.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 8,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        947,
+        321,
+        1241,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "ca8a98aebe59879480b430e4188ccdae97407790c1cfbbc1885402575458965b",
+      "cropChecks": {
+        "tileIndex": 8,
+        "cropBox": [
+          947,
+          321,
+          1241,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.20493197278911565,
+        "file": "wave6-word-813.png",
+        "sha256": "ca8a98aebe59879480b430e4188ccdae97407790c1cfbbc1885402575458965b"
+      },
+      "aliases": [
+        {
+          "id": 813,
+          "originalId": 837,
+          "reading": "おきもの",
+          "word": "置き物",
+          "meaning": "かざるためのもの。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird."
+        }
+      ]
+    },
+    {
+      "reading": "おくりもの",
+      "word": "贈り物",
+      "meaning": "プレゼントのこと。",
+      "file": "wave6-word-819.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A wrapped present box with a ribbon and bow, centered.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 9,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        15,
+        633,
+        311,
+        928
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "77ebcd81381d47d0c846d2d5b6a87d176d08f1b3a61822ad04d597072959278c",
+      "cropChecks": {
+        "tileIndex": 9,
+        "cropBox": [
+          15,
+          633,
+          311,
+          928
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.33871965185524505,
+        "file": "wave6-word-819.png",
+        "sha256": "77ebcd81381d47d0c846d2d5b6a87d176d08f1b3a61822ad04d597072959278c"
+      },
+      "aliases": [
+        {
+          "id": 819,
+          "originalId": 843,
+          "reading": "おくりもの",
+          "word": "贈り物",
+          "meaning": "プレゼントのこと。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A wrapped present box with a ribbon and bow, centered."
+        }
+      ]
+    },
+    {
+      "reading": "おしろ",
+      "word": "お城",
+      "meaning": "むかしのおうさまがすんでいたところ。",
+      "file": "wave6-word-833.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 10,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        326,
+        633,
+        621,
+        928
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "23fc69b814e573424c0f91655040f165805682dd482a29aca5f23555cc096523",
+      "cropChecks": {
+        "tileIndex": 10,
+        "cropBox": [
+          326,
+          633,
+          621,
+          928
+        ],
+        "edgeInkFraction": 0.0015476190476190477,
+        "contentFraction": 0.4082734846308532,
+        "file": "wave6-word-833.png",
+        "sha256": "23fc69b814e573424c0f91655040f165805682dd482a29aca5f23555cc096523"
+      },
+      "aliases": [
+        {
+          "id": 833,
+          "originalId": 857,
+          "reading": "おしろ",
+          "word": "お城",
+          "meaning": "むかしのおうさまがすんでいたところ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers."
+        }
+      ]
+    },
+    {
+      "reading": "おてだま",
+      "word": "お手玉",
+      "meaning": "ぬのぶくろのなかにまめをいれたおもちゃ。",
+      "file": "wave6-word-863.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 11,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        635,
+        633,
+        929,
+        928
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "cfe0a5ca30c45e3ae7004724363580c5eecc6b6661e761ad570a59a22f8fb514",
+      "cropChecks": {
+        "tileIndex": 11,
+        "cropBox": [
+          635,
+          633,
+          929,
+          928
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2785771935893001,
+        "file": "wave6-word-863.png",
+        "sha256": "cfe0a5ca30c45e3ae7004724363580c5eecc6b6661e761ad570a59a22f8fb514"
+      },
+      "aliases": [
+        {
+          "id": 863,
+          "originalId": 887,
+          "reading": "おてだま",
+          "word": "お手玉",
+          "meaning": "ぬのぶくろのなかにまめをいれたおもちゃ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams."
+        }
+      ]
+    },
+    {
+      "reading": "おはし",
+      "word": "お箸",
+      "meaning": "たべるときにつかうどうぐ。",
+      "file": "wave6-word-914.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 12,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        947,
+        633,
+        1241,
+        928
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "849276496a362a352949ef20776ab0c89efec9092baba7f1bccadb0c194b9c30",
+      "cropChecks": {
+        "tileIndex": 12,
+        "cropBox": [
+          947,
+          633,
+          1241,
+          928
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2304392943618125,
+        "file": "wave6-word-914.png",
+        "sha256": "849276496a362a352949ef20776ab0c89efec9092baba7f1bccadb0c194b9c30"
+      },
+      "aliases": [
+        {
+          "id": 914,
+          "originalId": 940,
+          "reading": "おはし",
+          "word": "お箸",
+          "meaning": "たべるときにつかうどうぐ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks."
+        }
+      ]
+    },
+    {
+      "reading": "おわん",
+      "word": "お椀",
+      "meaning": "汁物を入れる、口が広くて深い器。",
+      "file": "wave6-word-975.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 13,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        15,
+        939,
+        311,
+        1242
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "0b0a901a54ad2b73b186a3845b724e7c567d1dac6156916e03bd938723b381e3",
+      "cropChecks": {
+        "tileIndex": 13,
+        "cropBox": [
+          15,
+          939,
+          311,
+          1242
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2851440549460351,
+        "file": "wave6-word-975.png",
+        "sha256": "0b0a901a54ad2b73b186a3845b724e7c567d1dac6156916e03bd938723b381e3"
+      },
+      "aliases": [
+        {
+          "id": 975,
+          "originalId": 1003,
+          "reading": "おわん",
+          "word": "お椀",
+          "meaning": "汁物を入れる、口が広くて深い器。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle."
+        },
+        {
+          "id": 6080,
+          "originalId": 6181,
+          "reading": "わん",
+          "word": "椀",
+          "meaning": "汁やご飯などを入れる丸く深い器。",
+          "reuseReason": "「お椀」と「椀」は汁などを入れる深い器。",
+          "sourceReview": "語義照合済み: 「お椀」と「椀」は汁などを入れる深い器。"
+        }
+      ],
+      "sharedSenseReview": {
+        "reviewed": true,
+        "ids": [
+          975,
+          6080
+        ],
+        "reason": "新規画像の全共有先を、語義・丁寧な呼称・同じ対象であることと照合済み。",
+        "source": "data/image-coverage/2026-10-12-wave6/semantic-review.json"
+      }
+    },
+    {
+      "reading": "かぐ",
+      "word": "家具",
+      "meaning": "家の中で使う、机や椅子などの道具。",
+      "file": "wave6-word-1031.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 14,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        326,
+        939,
+        621,
+        1242
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "4a4f803e8fda639a3f65ca72c27b0779b7987fad3626920865a7d2da3b08a13a",
+      "cropChecks": {
+        "tileIndex": 14,
+        "cropBox": [
+          326,
+          939,
+          621,
+          1242
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.32232477485036637,
+        "file": "wave6-word-1031.png",
+        "sha256": "4a4f803e8fda639a3f65ca72c27b0779b7987fad3626920865a7d2da3b08a13a"
+      },
+      "aliases": [
+        {
+          "id": 1031,
+          "originalId": 1063,
+          "reading": "かぐ",
+          "word": "家具",
+          "meaning": "家の中で使う、机や椅子などの道具。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people."
+        }
+      ]
+    },
+    {
+      "reading": "かし",
+      "word": "菓子",
+      "meaning": "食べるために作られた、甘いものや軽い食べ物。",
+      "file": "wave6-word-1046.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 15,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        635,
+        939,
+        929,
+        1242
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "09e29357dc2fcd246ee72a606f943806c4195e02bb4cb8a615b1dfea631db4d2",
+      "cropChecks": {
+        "tileIndex": 15,
+        "cropBox": [
+          635,
+          939,
+          929,
+          1242
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.35273119148649557,
+        "file": "wave6-word-1046.png",
+        "sha256": "09e29357dc2fcd246ee72a606f943806c4195e02bb4cb8a615b1dfea631db4d2"
+      },
+      "aliases": [
+        {
+          "id": 1046,
+          "originalId": 1078,
+          "reading": "かし",
+          "word": "菓子",
+          "meaning": "食べるために作られた、甘いものや軽い食べ物。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text."
+        }
+      ]
+    },
+    {
+      "reading": "かしゅ",
+      "word": "歌手",
+      "meaning": "人前で歌を歌う人。",
+      "file": "wave6-word-1050.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Produce ONE 4x4 contact sheet of SIXTEEN TINY isolated watercolor vocabulary illustrations. THIS IS A MACHINE-CROPPED ASSET: prioritise these geometry requirements over illustration size. Every panel has HUGE PURE WHITE EMPTY MARGINS, at least ONE QUARTER of its width/height ON EVERY SIDE. The ENTIRE scene including all ground, clouds, scenery and shadows must be no larger than HALF the panel's width and HALF its height, centered precisely. Do not enlarge scene to fill panels. Five continuous perfectly straight PURE MAGENTA (#ff00ff) horizontal lines and five PURE MAGENTA vertical lines including outer frame, 8px thick, at 0,25,50,75,100% of full canvas, creating exactly 16 equal WHITE SQUARE cells. Magenta used ONLY in lines, never in art. No text or labels. No objects touch white margins. Gentle warm watercolor children's book style. Accurate subjects, row-major order:\n1: A bus driver seated at the steering wheel in a bus cabin, safely looking ahead; wheels and seat normal.\n2: A red brick chimney projecting from a tiled house roof with a light puff of smoke; chimney clearly centered.\n3: A storybook adult king wearing a gold crown, royal cape and simple robe, standing holding a small scepter.\n4: A storybook young prince with a small gold crown and elegant tunic, standing beside a distant small castle.\n5: A storybook young princess wearing a small gold crown and elegant long dress, standing beside a distant small castle.\n6: A gently rounded low green hill rising smoothly above flat surrounding land, with a small tree to show scale; not a mountain.\n7: A narrow clear shallow stream flowing gently through grassy meadow, with small rocks beside it; not a huge river.\n8: A small decorative ceramic bird figurine on a wooden shelf; unmistakable ornament, no real live bird.\n9: A wrapped present box with a ribbon and bow, centered.\n10: A storybook European stone castle with towers and a central keep, moat optional, no modern skyscrapers.\n11: Three small colorful Japanese beanbag juggling toys otedama sewn from cloth patches, softly rounded palm-sized bags, no ball seams.\n12: A matched pair of simple wooden chopsticks resting diagonally beside a plain small plate, exactly two sticks.\n13: A single Japanese lacquer soup bowl, broad circular mouth and deep curved body, filled with clear soup; no handle.\n14: A simple wooden table and chair with a low cabinet, grouped as household furniture; no objects or people.\n15: A small plate of sweet cookies, candy and a slice of cake representing assorted sweets, no wrappers or text.\n16: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "review": "目視確認済み: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-a.png",
+      "tileIndex": 16,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation.json",
+      "cropBox": [
+        947,
+        939,
+        1241,
+        1242
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "f639e26a4fb8f21686d13d12440da1f10eaa81633c17559c96015278f49d2811",
+      "cropChecks": {
+        "tileIndex": 16,
+        "cropBox": [
+          947,
+          939,
+          1241,
+          1242
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.5755932736130756,
+        "file": "wave6-word-1050.png",
+        "sha256": "f639e26a4fb8f21686d13d12440da1f10eaa81633c17559c96015278f49d2811"
+      },
+      "aliases": [
+        {
+          "id": 1050,
+          "originalId": 1082,
+          "reading": "かしゅ",
+          "word": "歌手",
+          "meaning": "人前で歌を歌う人。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A friendly adult singer singing into a microphone on a small stage; mouth open, no text or music notation."
+        }
+      ]
+    },
+    {
+      "reading": "かべ",
+      "word": "壁",
+      "meaning": "部屋などを仕切る、建物の面。",
+      "file": "wave6-word-1143.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 1,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        11,
+        13,
+        312,
+        311
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "c97d21b0141703615d3d795da9839311aa35dac91dcab2d491713212a721606d",
+      "cropChecks": {
+        "tileIndex": 1,
+        "cropBox": [
+          11,
+          13,
+          312,
+          311
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2142968628063056,
+        "file": "wave6-word-1143.png",
+        "sha256": "c97d21b0141703615d3d795da9839311aa35dac91dcab2d491713212a721606d"
+      },
+      "aliases": [
+        {
+          "id": 1143,
+          "originalId": 1177,
+          "reading": "かべ",
+          "word": "壁",
+          "meaning": "部屋などを仕切る、建物の面。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp."
+        }
+      ]
+    },
+    {
+      "reading": "かぼちゃ",
+      "word": "カボチャ",
+      "meaning": "大きな実を食べる、つる性の野菜。",
+      "file": "wave6-word-1144.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 2,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        327,
+        13,
+        623,
+        311
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "b447871eb0353764a5b38908864458b82709750d5f57748cc1cec4fb766484d2",
+      "cropChecks": {
+        "tileIndex": 2,
+        "cropBox": [
+          327,
+          13,
+          623,
+          311
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.15271857427897698,
+        "file": "wave6-word-1144.png",
+        "sha256": "b447871eb0353764a5b38908864458b82709750d5f57748cc1cec4fb766484d2"
+      },
+      "aliases": [
+        {
+          "id": 1144,
+          "originalId": 1178,
+          "reading": "かぼちゃ",
+          "word": "カボチャ",
+          "meaning": "大きな実を食べる、つる性の野菜。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin."
+        }
+      ]
+    },
+    {
+      "reading": "かみ",
+      "word": "髪",
+      "meaning": "頭に生える毛。",
+      "file": "wave6-word-1156.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 3,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        636,
+        13,
+        933,
+        311
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "ca4c9d1913901517caca44aeb23a17a7bb11d4b87c6389254ca68800c60feb67",
+      "cropChecks": {
+        "tileIndex": 3,
+        "cropBox": [
+          636,
+          13,
+          933,
+          311
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.15450929880460082,
+        "file": "wave6-word-1156.png",
+        "sha256": "ca4c9d1913901517caca44aeb23a17a7bb11d4b87c6389254ca68800c60feb67"
+      },
+      "aliases": [
+        {
+          "id": 1156,
+          "originalId": 1190,
+          "reading": "かみ",
+          "word": "髪",
+          "meaning": "頭に生える毛。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject."
+        }
+      ]
+    },
+    {
+      "reading": "からだ",
+      "word": "体",
+      "meaning": "人や動物の、頭や手足などを合わせた全体。",
+      "file": "wave6-word-1197.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 4,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        943,
+        13,
+        1245,
+        311
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "9fbf8dd5c9839c423acd92dc9d59cbf456db56152526896bf85e5c3d7bb1800f",
+      "cropChecks": {
+        "tileIndex": 4,
+        "cropBox": [
+          943,
+          13,
+          1245,
+          311
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.09179296857638117,
+        "file": "wave6-word-1197.png",
+        "sha256": "9fbf8dd5c9839c423acd92dc9d59cbf456db56152526896bf85e5c3d7bb1800f"
+      },
+      "aliases": [
+        {
+          "id": 1197,
+          "originalId": 1235,
+          "reading": "からだ",
+          "word": "体",
+          "meaning": "人や動物の、頭や手足などを合わせた全体。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body."
+        }
+      ]
+    },
+    {
+      "reading": "かんごし",
+      "word": "看護師",
+      "meaning": "病気やけがをした人の世話をする人。",
+      "file": "wave6-word-1273.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 5,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        11,
+        321,
+        312,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "797695a8cfa8e6ea1be61df5c4d11c02e6756eb82f274937dcbbca73ca677bc2",
+      "cropChecks": {
+        "tileIndex": 5,
+        "cropBox": [
+          11,
+          321,
+          312,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.23981996947113227,
+        "file": "wave6-word-1273.png",
+        "sha256": "797695a8cfa8e6ea1be61df5c4d11c02e6756eb82f274937dcbbca73ca677bc2"
+      },
+      "aliases": [
+        {
+          "id": 1273,
+          "originalId": 1314,
+          "reading": "かんごし",
+          "word": "看護師",
+          "meaning": "病気やけがをした人の世話をする人。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat."
+        }
+      ]
+    },
+    {
+      "reading": "がらす",
+      "word": "ガラス",
+      "meaning": "光を通す、かたい材料。",
+      "file": "wave6-word-1325.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 6,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        327,
+        321,
+        623,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "d73cbfe3a520468e0932d5f7ed578084b4ddba3a914ff0352275e0961b8ba428",
+      "cropChecks": {
+        "tileIndex": 6,
+        "cropBox": [
+          327,
+          321,
+          623,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.05735253834915997,
+        "file": "wave6-word-1325.png",
+        "sha256": "d73cbfe3a520468e0932d5f7ed578084b4ddba3a914ff0352275e0961b8ba428"
+      },
+      "aliases": [
+        {
+          "id": 1325,
+          "originalId": 1366,
+          "reading": "がらす",
+          "word": "ガラス",
+          "meaning": "光を通す、かたい材料。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice."
+        }
+      ]
+    },
+    {
+      "reading": "きし",
+      "word": "岸",
+      "meaning": "海や川や湖と陸地が接するところ。",
+      "file": "wave6-word-1393.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 7,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        636,
+        321,
+        933,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "92ef18214c7d0f3c99147ac6d5427cb4d82450761a53ae7c8722caf1ba52392a",
+      "cropChecks": {
+        "tileIndex": 7,
+        "cropBox": [
+          636,
+          321,
+          933,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2671193921193921,
+        "file": "wave6-word-1393.png",
+        "sha256": "92ef18214c7d0f3c99147ac6d5427cb4d82450761a53ae7c8722caf1ba52392a"
+      },
+      "aliases": [
+        {
+          "id": 1393,
+          "originalId": 1434,
+          "reading": "きし",
+          "word": "岸",
+          "meaning": "海や川や湖と陸地が接するところ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water."
+        }
+      ]
+    },
+    {
+      "reading": "きず",
+      "word": "傷",
+      "meaning": "転んだりぶつけたりして、皮膚や物についた傷。",
+      "file": "wave6-word-1401.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 8,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        943,
+        321,
+        1245,
+        617
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "d0308bfe6fdf13a60a8e48037e902bf23062b5692c148e2720d3aaead5b68c2c",
+      "cropChecks": {
+        "tileIndex": 8,
+        "cropBox": [
+          943,
+          321,
+          1245,
+          617
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.23099382495077858,
+        "file": "wave6-word-1401.png",
+        "sha256": "d0308bfe6fdf13a60a8e48037e902bf23062b5692c148e2720d3aaead5b68c2c"
+      },
+      "aliases": [
+        {
+          "id": 1401,
+          "originalId": 1442,
+          "reading": "きず",
+          "word": "傷",
+          "meaning": "転んだりぶつけたりして、皮膚や物についた傷。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood."
+        }
+      ]
+    },
+    {
+      "reading": "きずあと",
+      "word": "傷跡",
+      "meaning": "けがが治ったあとに残る跡。",
+      "file": "wave6-word-1402.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 9,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        11,
+        631,
+        312,
+        929
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "2c9bf2a3d29cbf1184e195772b8f96fddb83ea4b76c3be8a43dd3431dd8b300c",
+      "cropChecks": {
+        "tileIndex": 9,
+        "cropBox": [
+          11,
+          631,
+          312,
+          929
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.24575798791500367,
+        "file": "wave6-word-1402.png",
+        "sha256": "2c9bf2a3d29cbf1184e195772b8f96fddb83ea4b76c3be8a43dd3431dd8b300c"
+      },
+      "aliases": [
+        {
+          "id": 1402,
+          "originalId": 1443,
+          "reading": "きずあと",
+          "word": "傷跡",
+          "meaning": "けがが治ったあとに残る跡。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound."
+        }
+      ]
+    },
+    {
+      "reading": "きょうだい",
+      "word": "兄弟",
+      "meaning": "同じ親から生まれた人たち。",
+      "file": "wave6-word-1563.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 10,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        327,
+        631,
+        623,
+        929
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "2147398fcddfda431bed651673f6eeec69b526c14b4e596cb8fd42aa9e6874fe",
+      "cropChecks": {
+        "tileIndex": 10,
+        "cropBox": [
+          327,
+          631,
+          623,
+          929
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.1650190458915291,
+        "file": "wave6-word-1563.png",
+        "sha256": "2147398fcddfda431bed651673f6eeec69b526c14b4e596cb8fd42aa9e6874fe"
+      },
+      "aliases": [
+        {
+          "id": 1563,
+          "originalId": 1608,
+          "reading": "きょうだい",
+          "word": "兄弟",
+          "meaning": "同じ親から生まれた人たち。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents."
+        }
+      ]
+    },
+    {
+      "reading": "きょうふう",
+      "word": "強風",
+      "meaning": "歩くのが大変になるほど強い風。",
+      "file": "wave6-word-1571.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 11,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        636,
+        631,
+        933,
+        929
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "2e7b80068eed8a854971aebc1dfd41ae7837d8a2ef1bfe1864eefbf6ab89d681",
+      "cropChecks": {
+        "tileIndex": 11,
+        "cropBox": [
+          636,
+          631,
+          933,
+          929
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.2487966917497119,
+        "file": "wave6-word-1571.png",
+        "sha256": "2e7b80068eed8a854971aebc1dfd41ae7837d8a2ef1bfe1864eefbf6ab89d681"
+      },
+      "aliases": [
+        {
+          "id": 1571,
+          "originalId": 1616,
+          "reading": "きょうふう",
+          "word": "強風",
+          "meaning": "歩くのが大変になるほど強い風。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain."
+        }
+      ]
+    },
+    {
+      "reading": "ぎんこう",
+      "word": "銀行",
+      "meaning": "お金を預けたり借りたりするところ。",
+      "file": "wave6-word-1663.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 12,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        943,
+        631,
+        1245,
+        929
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "5f27c1f3c72893e88e8e96a699a2c06ef7eebbfdf7d0bcd69aff1efd4c1ea7cf",
+      "cropChecks": {
+        "tileIndex": 12,
+        "cropBox": [
+          943,
+          631,
+          1245,
+          929
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.3424152184541535,
+        "file": "wave6-word-1663.png",
+        "sha256": "5f27c1f3c72893e88e8e96a699a2c06ef7eebbfdf7d0bcd69aff1efd4c1ea7cf"
+      },
+      "aliases": [
+        {
+          "id": 1663,
+          "originalId": 1709,
+          "reading": "ぎんこう",
+          "word": "銀行",
+          "meaning": "お金を預けたり借りたりするところ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols."
+        }
+      ]
+    },
+    {
+      "reading": "くい",
+      "word": "杭",
+      "meaning": "目印や土台にするため、地面に打ち込む棒。",
+      "file": "wave6-word-1667.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 13,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        11,
+        940,
+        312,
+        1244
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "f51f28c86a0a9415d06a7b629f2c16dd72a368d22c2e6d464dc677b4642b9bb9",
+      "cropChecks": {
+        "tileIndex": 13,
+        "cropBox": [
+          11,
+          940,
+          312,
+          1244
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.13487934953663228,
+        "file": "wave6-word-1667.png",
+        "sha256": "f51f28c86a0a9415d06a7b629f2c16dd72a368d22c2e6d464dc677b4642b9bb9"
+      },
+      "aliases": [
+        {
+          "id": 1667,
+          "originalId": 1713,
+          "reading": "くい",
+          "word": "杭",
+          "meaning": "目印や土台にするため、地面に打ち込む棒。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree."
+        }
+      ]
+    },
+    {
+      "reading": "くさき",
+      "word": "草木",
+      "meaning": "草や木など、地面に生えている植物。",
+      "file": "wave6-word-1689.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 14,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        327,
+        940,
+        623,
+        1244
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "b9c9f270336c1c2042e9b28352024504acb9406f5930cda4901f7e1f532f739f",
+      "cropChecks": {
+        "tileIndex": 14,
+        "cropBox": [
+          327,
+          940,
+          623,
+          1244
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.21430476529160739,
+        "file": "wave6-word-1689.png",
+        "sha256": "b9c9f270336c1c2042e9b28352024504acb9406f5930cda4901f7e1f532f739f"
+      },
+      "aliases": [
+        {
+          "id": 1689,
+          "originalId": 1736,
+          "reading": "くさき",
+          "word": "草木",
+          "meaning": "草や木など、地面に生えている植物。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants."
+        }
+      ]
+    },
+    {
+      "reading": "くさむら",
+      "word": "草むら",
+      "meaning": "草がたくさん生えている場所。",
+      "file": "wave6-word-1691.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 15,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        636,
+        940,
+        933,
+        1244
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "b93ccecbf7656893d5e2943bdcc9e38a9545ee33b10799755585e942f126c6f0",
+      "cropChecks": {
+        "tileIndex": 15,
+        "cropBox": [
+          636,
+          940,
+          933,
+          1244
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.23122674109516214,
+        "file": "wave6-word-1691.png",
+        "sha256": "b93ccecbf7656893d5e2943bdcc9e38a9545ee33b10799755585e942f126c6f0"
+      },
+      "aliases": [
+        {
+          "id": 1691,
+          "originalId": 1738,
+          "reading": "くさむら",
+          "word": "草むら",
+          "meaning": "草がたくさん生えている場所。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket."
+        }
+      ]
+    },
+    {
+      "reading": "かお",
+      "word": "顔",
+      "meaning": "目や鼻や口がある、頭の前の部分。",
+      "file": "wave6-word-1015.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "ONE sheet, EXACTLY sixteen separate mini watercolor illustrations in a strict 4x4 square grid. Mandatory for automated cutting: FIVE straight uninterrupted pure MAGENTA #ff00ff horizontal and FIVE vertical lines INCLUDING OUTER BORDERS, thin 8px, at 0/25/50/75/100 percent. Pure white cells. Magenta ONLY in grid lines, never inside art. EVERY subject INCLUDING all scenery and shadows must fit in the central HALF WIDTH AND HALF HEIGHT of its panel. HUGE PURE WHITE EMPTY safety margin of ONE QUARTER of each cell on ALL sides. Do not fill the panel. No captions or any text, symbols, numerals or watermark. Gentle warm watercolor picture-book style, clear plausible anatomy and objects. Subjects in row-major order:\n1. A simple solid wall dividing two rooms in a small cutaway house, wall centered, one room with chair and other with lamp.\n2. One whole dark green kabocha squash with one wedge beside it showing orange flesh and seeds; not orange Halloween pumpkin.\n3. Back of a person's head showing thick healthy dark hair; shoulders only faint, hair is the main visible subject.\n4. One fully clothed child standing front-facing, entire head, torso, two arms and two legs clearly visible, to show the whole body.\n5. A friendly nurse in plain pale blue scrubs beside a seated patient, gently checking a bandaged arm; no needles, no logos, no white doctor coat.\n6. One clear colorless pane of glass standing at an angle, with visible thin edges and subtle reflections, shapes behind remain visible; not ice.\n7. A tiny calm lake meeting a grassy land edge, the shoreline is the main subject, show a clear interface between land and water.\n8. A close view of a child's bent knee with one small fresh superficial scrape, no graphic injury or dripping blood.\n9. A close view of a child's bent knee with a faint pale healed scar on otherwise unbroken skin, no fresh blood or open wound.\n10. Two children of different ages standing together as siblings, holding hands, casual everyday clothes; no babies or parents.\n11. A person in a coat leaning forward while walking in strong wind, hair and scarf streaming sideways, tree leaning in wind; no rain.\n12. A small bank building shown as a place to deposit money: a wide entrance with a visible counter and a person carrying a plain coin purse, no signs, no text, no currency symbols.\n13. A thick wooden stake driven vertically into earth, sharpened base embedded and top visible; a marker stake, not a living tree.\n14. A small grouping of green grass and a leafy small tree growing rooted in soil, showing both grasses and woody plants.\n15. A dense patch of tall green wild grasses growing on ground, no trees or flowers; a grassy thicket.\n16. A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.\nEdit instruction: Edit this exact 4x4 vocabulary contact sheet. Preserve ALL SIXTEEN SUBJECTS and their EXACT PANEL ORDER and the magenta grid geometry. The only correction: shrink EVERY complete illustration, together with all shadows/scenery, so the entire content fits within the CENTRAL 50% WIDTH and CENTRAL 50% HEIGHT of its own existing white cell. Center each miniature. This must leave at least 25% cell width/height PURE WHITE EMPTY MARGIN on EACH OF FOUR SIDES, including the wall/house, knee pictures, bank building, wind scene and grasses. Do not just add outer margins around the whole sheet. Keep original cell dividers at 0/25/50/75/100%, pure magenta. No new text, no new subject, no swapping or omission. All original16 illustrations remain recognisable and complete.",
+      "review": "目視確認済み: A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-marked-grid-b.png",
+      "tileIndex": 16,
+      "cropValidation": "data/image-coverage/2026-10-12-wave6/crop-validation-2.json",
+      "cropBox": [
+        943,
+        940,
+        1245,
+        1244
+      ],
+      "cropMethod": "magenta-grid-white-guard-v1",
+      "sha256": "00c9ff385337a769d70000959ee95d7964c613fc252d9d011cb605e7028f83e1",
+      "cropChecks": {
+        "tileIndex": 16,
+        "cropBox": [
+          943,
+          940,
+          1245,
+          1244
+        ],
+        "edgeInkFraction": 0.0,
+        "contentFraction": 0.1894606134541652,
+        "file": "wave6-word-1015.png",
+        "sha256": "00c9ff385337a769d70000959ee95d7964c613fc252d9d011cb605e7028f83e1"
+      },
+      "aliases": [
+        {
+          "id": 1015,
+          "originalId": 1047,
+          "reading": "かお",
+          "word": "顔",
+          "meaning": "目や鼻や口がある、頭の前の部分。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A friendly child's face shown frontally, two eyes, nose and mouth clearly visible, hair framing forehead; face filling center only."
+        }
+      ]
+    },
+    {
+      "reading": "いし",
+      "word": "石",
+      "meaning": "じめんにおちているかたいかたまり",
+      "file": "wave6-word-263.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: illustration-story. Asset type: one square 256px vocabulary illustration for a Japanese elementary-school shiritori game. Subject: Three small natural grey and brown stones lying on a small patch of bare earth; clearly solid rounded irregular rocks, no jewels or stone buildings. Style: gentle warm watercolor children's picture-book illustration, clean white surrounding background, recognizable clear shapes, subtle natural shadow, full subject centered with generous safe margins. No text, letters, numbers, border, watermark, contact sheet or additional panels.",
+      "review": "目視確認済み: Three small natural grey and brown stones lying on a small patch of bare earth; clearly solid rounded irregular rocks, no jewels or stone buildings.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-single-263.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 263,
+          "originalId": 268,
+          "reading": "いし",
+          "word": "石",
+          "meaning": "じめんにおちているかたいかたまり",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: Three small natural grey and brown stones lying on a small patch of bare earth; clearly solid rounded irregular rocks, no jewels or stone buildings."
+        },
+        {
+          "id": 268,
+          "originalId": 273,
+          "reading": "いしころ",
+          "word": "石ころ",
+          "meaning": "ちいさな石のこと",
+          "reuseReason": "「石ころ」は小さな石。新規画像の小石の語義が一致。",
+          "sourceReview": "語義照合済み: 「石ころ」は小さな石。新規画像の小石の語義が一致。"
+        }
+      ],
+      "cropBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "cropMethod": "whole-source-aspect-preserving-pad",
+      "sha256": "d611600ef71bc328263f4a4e6be9eb74df56ffedc8d8324dd326fec6edf32d95",
+      "sharedSenseReview": {
+        "reviewed": true,
+        "ids": [
+          263,
+          268
+        ],
+        "reason": "新規画像の全共有先を、語義・丁寧な呼称・同じ対象であることと照合済み。",
+        "source": "data/image-coverage/2026-10-12-wave6/semantic-review.json"
+      }
+    },
+    {
+      "reading": "いし",
+      "word": "医師",
+      "meaning": "病気やけがを治す仕事をする人。",
+      "file": "wave6-word-265.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Japanese elementary-school shiritori game. Subject: A friendly doctor wearing a white coat and stethoscope gently examining a seated child patient's arm in a simple clinic, no needles, no text, medically plausible hands. Style: gentle warm watercolor children's picture-book illustration, clean white surrounding background, recognizable clear shapes, subtle natural shadow, full subject centered with generous safe margins. No text, letters, numbers, border, watermark, contact sheet or additional panels.",
+      "review": "目視確認済み: A friendly doctor wearing a white coat and stethoscope gently examining a seated child patient's arm in a simple clinic, no needles, no text, medically plausible hands.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-single-265.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 265,
+          "originalId": 270,
+          "reading": "いし",
+          "word": "医師",
+          "meaning": "病気やけがを治す仕事をする人。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A friendly doctor wearing a white coat and stethoscope gently examining a seated child patient's arm in a simple clinic, no needles, no text, medically plausible hands."
+        },
+        {
+          "id": 6127,
+          "originalId": null,
+          "reading": "いしゃ",
+          "word": "医者",
+          "meaning": "びょうきやけがをしらべて、なおすしごとをするひと。",
+          "reuseReason": "「医者」と「医師」は病気・けがを調べ治す職業。",
+          "sourceReview": "語義照合済み: 「医者」と「医師」は病気・けがを調べ治す職業。"
+        }
+      ],
+      "cropBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "cropMethod": "whole-source-aspect-preserving-pad",
+      "sha256": "a7c7e4b4caed826f8bb7ac2bbe5b16dedcdae8f76f8311abce6e7df320bc986e",
+      "sharedSenseReview": {
+        "reviewed": true,
+        "ids": [
+          265,
+          6127
+        ],
+        "reason": "新規画像の全共有先を、語義・丁寧な呼称・同じ対象であることと照合済み。",
+        "source": "data/image-coverage/2026-10-12-wave6/semantic-review.json"
+      }
+    },
+    {
+      "reading": "いりぐち",
+      "word": "入り口",
+      "meaning": "なかにはいるところ。",
+      "file": "wave6-word-422.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Japanese elementary-school shiritori game. Subject: An open doorway seen from outside with a child stepping from outdoors into a room; unmistakable entrance, door hinged normally, no text or arrows. Style: gentle warm watercolor children's picture-book illustration, clean white surrounding background, recognizable clear shapes, subtle natural shadow, full subject centered with generous safe margins. No text, letters, numbers, border, watermark, contact sheet or additional panels.",
+      "review": "目視確認済み: An open doorway seen from outside with a child stepping from outdoors into a room; unmistakable entrance, door hinged normally, no text or arrows.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-single-422.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 422,
+          "originalId": 429,
+          "reading": "いりぐち",
+          "word": "入り口",
+          "meaning": "なかにはいるところ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: An open doorway seen from outside with a child stepping from outdoors into a room; unmistakable entrance, door hinged normally, no text or arrows."
+        }
+      ],
+      "cropBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "cropMethod": "whole-source-aspect-preserving-pad",
+      "sha256": "819498ba10867d1bc037ec5bf2cbd39b4c369312d0ff6292ea142797f050ea24"
+    },
+    {
+      "reading": "いれもの",
+      "word": "入れ物",
+      "meaning": "なかになにかをいれるもの。",
+      "file": "wave6-word-434.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Japanese elementary-school shiritori game. Subject: An open simple storage box holding a few colorful toy blocks, with its lid beside it; clearly a container with objects inside. Style: gentle warm watercolor children's picture-book illustration, clean white surrounding background, recognizable clear shapes, subtle natural shadow, full subject centered with generous safe margins. No text, letters, numbers, border, watermark, contact sheet or additional panels.",
+      "review": "目視確認済み: An open simple storage box holding a few colorful toy blocks, with its lid beside it; clearly a container with objects inside.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-single-434.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 434,
+          "originalId": 442,
+          "reading": "いれもの",
+          "word": "入れ物",
+          "meaning": "なかになにかをいれるもの。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: An open simple storage box holding a few colorful toy blocks, with its lid beside it; clearly a container with objects inside."
+        }
+      ],
+      "cropBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "cropMethod": "whole-source-aspect-preserving-pad",
+      "sha256": "6976244f87a0e8ac7e2fcca56a8dacf327886d067de52ecd9436d70d733913c3"
+    },
+    {
+      "reading": "うちゅうひこうし",
+      "word": "宇宙飛行士",
+      "meaning": "うちゅうへいくひと。",
+      "file": "wave6-word-535.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Japanese elementary-school shiritori game. Subject: One astronaut in a complete white space suit with sealed round helmet, gloves, backpack and boots, floating beside a small window showing Earth in outer space; no flags, no logos. Style: gentle warm watercolor children's picture-book illustration, clean white surrounding background, recognizable clear shapes, subtle natural shadow, full subject centered with generous safe margins. No text, letters, numbers, border, watermark, contact sheet or additional panels.",
+      "review": "目視確認済み: One astronaut in a complete white space suit with sealed round helmet, gloves, backpack and boots, floating beside a small window showing Earth in outer space; no flags, no logos.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-single-535.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 535,
+          "originalId": 545,
+          "reading": "うちゅうひこうし",
+          "word": "宇宙飛行士",
+          "meaning": "うちゅうへいくひと。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: One astronaut in a complete white space suit with sealed round helmet, gloves, backpack and boots, floating beside a small window showing Earth in outer space; no flags, no logos."
+        }
+      ],
+      "cropBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "cropMethod": "whole-source-aspect-preserving-pad",
+      "sha256": "b10e2e0b701b92ae6c1d35b03ff8c194399bb643d353eeef402221f28cd241e0"
+    },
+    {
+      "reading": "あせ",
+      "word": "汗",
+      "meaning": "あついときに、からだから出る水。",
+      "file": "wave6-word-57.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: illustration-story. Asset type: one square vocabulary illustration for a Japanese elementary-school shiritori game. Subject: A child after playing on a warm sunny day, wiping visibly beading sweat from the forehead with a small towel, a few tiny sweat drops on the temple, no tears or rain. Style: gentle warm watercolor children's picture-book illustration, clean white surrounding background, recognizable clear shapes, subtle natural shadow, full subject centered with generous safe margins. No text, letters, numbers, border, watermark, contact sheet or additional panels.",
+      "review": "目視確認済み: A child after playing on a warm sunny day, wiping visibly beading sweat from the forehead with a small towel, a few tiny sweat drops on the temple, no tears or rain.",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-single-57.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 57,
+          "originalId": 57,
+          "reading": "あせ",
+          "word": "汗",
+          "meaning": "あついときに、からだから出る水。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: A child after playing on a warm sunny day, wiping visibly beading sweat from the forehead with a small towel, a few tiny sweat drops on the temple, no tears or rain."
+        }
+      ],
+      "cropBox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "cropMethod": "whole-source-aspect-preserving-pad",
+      "sha256": "81f027b6ac35c6ba4a01a6f3a15fee4910f9b2a996444c428952fb5f70fb1c4b"
+    },
+    {
+      "reading": "あお",
+      "word": "青",
+      "meaning": "晴れた日の空の色。",
+      "file": "wave6-word-10.png",
+      "mode": "asset",
+      "credit": "プログラム生成図",
+      "prompt": "Deterministic Pillow diagram; blue color swatch; exact sRGB #2878df",
+      "review": "数式またはsRGB値で生成した図を確認済み",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-diagram-10.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 10,
+          "originalId": 10,
+          "reading": "あお",
+          "word": "青",
+          "meaning": "晴れた日の空の色。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: blue color swatch"
+        }
+      ],
+      "generator": "scripts/build-shiritori-wave6-diagrams.py",
+      "generationKind": "deterministic-code-diagram",
+      "sha256": "12e011416d3687703c34a3863938d60cac63a24d01a42f707ce44e5a70788544"
+    },
+    {
+      "reading": "あか",
+      "word": "赤",
+      "meaning": "火のような色。",
+      "file": "wave6-word-15.png",
+      "mode": "asset",
+      "credit": "プログラム生成図",
+      "prompt": "Deterministic Pillow diagram; red color swatch; exact sRGB #e33232",
+      "review": "数式またはsRGB値で生成した図を確認済み",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-diagram-15.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 15,
+          "originalId": 15,
+          "reading": "あか",
+          "word": "赤",
+          "meaning": "火のような色。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: red color swatch"
+        }
+      ],
+      "generator": "scripts/build-shiritori-wave6-diagrams.py",
+      "generationKind": "deterministic-code-diagram",
+      "sha256": "298ba26038ac7bb2aa47d7c3af5c2cec777c91d6943615f0935bfb8c1c486831"
+    },
+    {
+      "reading": "うすあか",
+      "word": "薄赤",
+      "meaning": "うすいあかいろ。",
+      "file": "wave6-word-514.png",
+      "mode": "asset",
+      "credit": "プログラム生成図",
+      "prompt": "Deterministic Pillow diagram; pale red color swatch; exact sRGB #f4b3b3",
+      "review": "数式またはsRGB値で生成した図を確認済み",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-diagram-514.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 514,
+          "originalId": 523,
+          "reading": "うすあか",
+          "word": "薄赤",
+          "meaning": "うすいあかいろ。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: pale red color swatch"
+        }
+      ],
+      "generator": "scripts/build-shiritori-wave6-diagrams.py",
+      "generationKind": "deterministic-code-diagram",
+      "sha256": "2a50f6a356207f84c51662fb976de0ac4a2836e6117c968500ba0e519bb87729"
+    },
+    {
+      "reading": "うずまき",
+      "word": "渦巻き",
+      "meaning": "ぐるぐるまわるかたち。",
+      "file": "wave6-word-519.png",
+      "mode": "asset",
+      "credit": "プログラム生成図",
+      "prompt": "Deterministic Pillow diagram; one continuous inward spiral; Archimedean spiral, three turns",
+      "review": "数式またはsRGB値で生成した図を確認済み",
+      "status": "reviewed",
+      "generatedAt": "2026-10-12",
+      "sourceSheet": "sheets/2026-10-12-wave6-diagram-519.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 519,
+          "originalId": 529,
+          "reading": "うずまき",
+          "word": "渦巻き",
+          "meaning": "ぐるぐるまわるかたち。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: one continuous inward spiral"
+        }
+      ],
+      "generator": "scripts/build-shiritori-wave6-diagrams.py",
+      "generationKind": "deterministic-code-diagram",
+      "sha256": "f28cd0def718a7766ee69fd6e9b559c85098304c8b35c5c8fcdb1cb5119077f3"
     }
   ],
   "lastCorrectedAt": "2026-10-12",

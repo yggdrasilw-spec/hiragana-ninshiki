@@ -11,6 +11,7 @@ import csv
 import json
 import re
 import hashlib
+import importlib.util
 from pathlib import Path
 
 from PIL import Image
@@ -20,6 +21,10 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("batches", nargs="+", type=Path)
 args = parser.parse_args()
 root = Path(__file__).resolve().parent.parent
+spec = importlib.util.spec_from_file_location('shiritori_grid', root / 'scripts/crop-shiritori-grid.py')
+grid = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(grid)
+validated_sheets = {}
 csv_path = root / "whitelist.csv"
 before_text = csv_path.read_text(encoding="utf-8")
 manifest_path = root / "assets/shiritori/manifest.json"
@@ -85,15 +90,38 @@ for batch_path in args.batches:
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
                 raise ValueError(f"Invalid generation date: {date}")
             scene = item["scene"]
+            credit = item.get('credit') or 'AI生成イラスト'
+            if credit not in ('AI生成イラスト', 'プログラム生成図'):
+                raise ValueError('Invalid generation credit: ' + filename)
             tile = int(item["tileIndex"])
             if tile < 1:
                 raise ValueError(f"Invalid tile index: {tile}")
+            evidence = None
+            evidence_path = item.get('cropValidation', '')
+            if date >= '2026-10-12' and not evidence_path and not any(
+                    tag in Path(sheet).stem for tag in ('single-', 'diagram-')):
+                raise ValueError('New contact-sheet assets require cropValidation evidence: ' + filename)
+            if evidence_path:
+                report_path = (root / evidence_path).resolve()
+                if not report_path.is_relative_to(root) or not report_path.is_file():
+                    raise ValueError('Invalid crop-validation report path')
+                cache_key = (str(report_path), str(sheet_path))
+                if cache_key not in validated_sheets:
+                    validated_sheets[cache_key] = grid.verify_report(report_path, sheet_path, root / 'assets/shiritori')
+                evidence = validated_sheets[cache_key].get(filename)
+                if not evidence or evidence['tileIndex'] != tile:
+                    raise ValueError('Filename or tile index differs from validated grid: ' + filename)
+                if not filename.endswith(f'-word-{row_id}.png'):
+                    raise ValueError('Validated tile filename must end in its vocabulary row ID: ' + filename)
             pending.append((row, asset_path, {
                 "reading": key[0], "word": key[1], "meaning": row["meaning"],
-                "file": filename, "mode": "asset", "credit": "AI生成イラスト",
+                "file": filename, "mode": "asset", "credit": credit,
                 "prompt": item.get("prompt") or f"Children's picture-book contact sheet, tile {tile}: {scene}. Warm watercolor style, no text, no watermark.",
                 "review": f"目視確認済み: {scene}", "status": "reviewed",
                 "generatedAt": date, "sourceSheet": sheet, "tileIndex": tile,
+                **({'cropValidation': evidence_path, 'cropBox': evidence['cropBox'],
+                    'cropMethod': json.loads(report_path.read_text(encoding='utf-8'))['method'], 'sha256': evidence['sha256'],
+                    'cropChecks': evidence} if evidence else {}),
                 "aliases": [{
                     "id": row_id,
                     "originalId": original_ids[row_id - 1] if row_id <= len(original_ids) else None,
@@ -105,7 +133,7 @@ for batch_path in args.batches:
 for row, asset_path, asset in pending:
     row["image_asset"] = asset_path
     row["image_mode"] = "asset"
-    row["image_credit"] = "AI生成イラスト"
+    row["image_credit"] = asset['credit']
     manifest["assets"].append(asset)
 if pending:
     history_path = root / "data/dictionary-imports/history.json"
