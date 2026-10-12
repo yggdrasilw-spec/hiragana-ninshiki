@@ -1,0 +1,6 @@
+interface:
+  display_name: "しりとり16語画像シート"
+  short_description: "16語を1枚で生成し、実測罫線だけを除去して自動検証・登録する"
+  default_prompt: "$shiritori-image-sheets を使い、未掲載の単語画像を16語ずつのシートで補完してください。"
+policy:
+  allow_implicit_invocation: true
