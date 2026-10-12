@@ -20,6 +20,7 @@ const obsolete=new Set(fs.existsSync(ledgerFile)?JSON.parse(fs.readFileSync(ledg
 const correctionHistory=path.join(__dirname,'../data/dictionary-imports/history.json');
 if(fs.existsSync(correctionHistory))for(const record of JSON.parse(fs.readFileSync(correctionHistory,'utf8'))){
   if(record.type==='vocabulary-corrections')for(const change of record.changes)obsolete.add(change.before.split(',').slice(0,3).join(','));
+  if(record.type==='reviewed-corrections')for(const change of record.changes)obsolete.add([change.before.reading,change.before.word,change.before.meaning].join(','));
 }
 const review93File=path.join(__dirname,'../data/corrections/review93-2026-10-11/ledger.json');
 if(fs.existsSync(review93File))for(const c of JSON.parse(fs.readFileSync(review93File,'utf8')).changes)obsolete.add([c.before.reading,c.before.word,c.before.meaning].join(','));
