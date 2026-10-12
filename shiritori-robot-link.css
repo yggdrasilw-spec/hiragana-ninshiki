@@ -1,0 +1,29 @@
+/* ロボットの輪郭・色は既存のしりとりカードに合わせる。 */
+.rl-bridge{flex-shrink:0;position:relative;width:92px;height:72px;pointer-events:none;overflow:visible}
+.rl-scene{position:absolute;left:0;right:0;top:26px;height:36px;perspective:600px;perspective-origin:50% 18px;transform-style:preserve-3d}
+.rl-assembly,.rl-carriage,.rl-tip,.rl-digit,.rl-piece,.rl-shoe{transform-style:preserve-3d}
+.rl-assembly{position:absolute;top:0;height:36px;transform-origin:50% 18px}
+.rl-assembly.left{left:-14px}.rl-assembly.right{right:-14px}
+.rl-carriage{position:absolute;right:0;top:0;width:56px;height:36px}
+.rl-tip{position:absolute;inset:0;transform-origin:0 18px}
+.rl-shaft{position:absolute;left:0;top:14px;height:8px;box-sizing:border-box;border:1px solid #5de1cc;border-radius:3px;background:repeating-linear-gradient(90deg,#235247 0 10px,#5de1cc 10px 12px,#13382f 12px 23px)}
+.rl-shaft:after{content:'';position:absolute;left:4px;right:4px;top:2px;height:1px;background:#93ffdc}
+.rl-wrist{position:absolute;left:-9px;top:9px;width:12px;height:18px;box-sizing:border-box;border:1px solid #62e5c4;background:#183d38;border-radius:3px;box-shadow:inset 3px 0 #4a8a79}
+.rl-digit{position:absolute;left:12px;width:30px;height:10px;transform-origin:0 5px}.rl-digit.upper{top:0}.rl-digit.lower{top:26px}
+.rl-piece{position:absolute}.rl-face{position:absolute;left:0;top:0;box-sizing:border-box;border:1px solid #76ddba;background:#235344;backface-visibility:visible}
+.rl-face.front{background:linear-gradient(135deg,#326f59,#194338)}.rl-face.back{background:#183d32}.rl-face.top{background:#73c9a8}.rl-face.bottom{background:#12352b}.rl-face.side{background:#409578}
+.rl-rivet{position:absolute;left:4px;top:13px;width:5px;height:5px;border:1px solid #bcffe8;border-radius:50%;background:#174235;transform:translateZ(8.5px)}
+.rl-knuckle{position:absolute;left:22px;top:2px;width:5px;height:5px;border:1px solid #baffdf;border-radius:50%;background:#163c30;transform:translateZ(8.5px)}
+.rl-shoe{position:absolute;inset:0}.rl-support .rl-face.front{background:repeating-linear-gradient(90deg,#193f34 0 3px,#508b6e 3px 4px,#193f34 4px 6px)}
+.rl-plate .rl-face.front{background:linear-gradient(90deg,#3a7f61,#94eac3);border-color:#b7ffe4}.rl-plate .rl-face.top{background:#9bdfbb}
+.rl-socket{position:absolute;top:3px;width:8px;height:30px;box-sizing:border-box;border:1px solid #62e5c4;border-radius:3px;background:linear-gradient(90deg,#152f3b,#3c7771,#152f3b);z-index:5}
+.rl-rail{position:absolute;left:0;right:0;top:18px;height:1px;background:#1affa023}.rl-bridge.locked .rl-rail{background:linear-gradient(90deg,#5b8fff,#1affa0,#ff6b8a);box-shadow:0 0 8px #1affa060}
+.rl-collar{position:absolute;left:50%;top:-4px;width:8px;height:44px;margin-left:-4px;border:1px solid #62e5c4;border-radius:4px;background:linear-gradient(90deg,#163a31,#285547,#163a31);box-sizing:border-box;z-index:6;opacity:0;box-shadow:0 0 12px #1affa040}
+.rl-pin{position:absolute;top:-7px;left:1px;width:5px;height:12px;border:1px solid #93ffdc;background:#244d3c;border-radius:2px;box-sizing:border-box}.rl-light{position:absolute;left:2px;bottom:3px;width:3px;height:3px;border-radius:1px;background:#1affa0;box-shadow:0 0 7px #1affa0}
+.rl-orbit{position:absolute;left:50%;top:-15px;margin-left:-16px;width:32px;height:66px;box-sizing:border-box;border:2px solid transparent;border-top-color:#00e5ff;border-bottom-color:#1affa0;border-radius:50%;opacity:0;z-index:6;pointer-events:none}
+.rl-burst{position:absolute;left:50%;top:18px;z-index:6}.rl-spark{position:absolute;width:3px;height:6px;left:-1.5px;top:-3px;background:#9fffe0;box-shadow:0 0 7px #1affa0;border-radius:2px;opacity:0}.rl-flash{position:absolute;width:50px;height:40px;left:-25px;top:-20px;border-radius:9px;background:#1affa0;filter:blur(8px);opacity:0}
+#linkTrack{padding-top:16px;padding-bottom:16px;min-height:108px}
+#linkStatus{line-height:1.6;overflow-wrap:anywhere}
+#linkCue{align-items:flex-start}
+.sound-credit{font-size:12px;line-height:1.7;overflow-wrap:anywhere}.sound-credit a{color:var(--cyan)}
+@media(max-width:768px){#linkTrack{min-height:94px;padding:12px 0}.rl-bridge{height:64px}}
