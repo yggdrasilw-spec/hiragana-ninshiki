@@ -1260,7 +1260,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
             </div>
           </div>
           <canvas id="drawCanvas" width="900" height="240"></canvas>
-          <div id="predRow"><div class="pred-none">ことばをかいたらにんしきします</div></div>
+          <div id="predRow"><div class="pred-none">１もじずつ かいて、こうほを えらんでね</div></div>
           <!-- ★ 手書きモード補助ボタン: ー・小文字・濁点・半濁点 -->
           <div id="canvasAux" style="display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0;margin-top:2px">
             <button class="sm-btn" id="auxLong"   onclick="appendCanvasAux('ー')">ー のばし棒</button>
@@ -2206,7 +2206,7 @@ const LABELS_KATAKANA=["ヲ","ア","イ","ウ","エ","オ","カ","キ","ク","�
 const MODEL_PATH={hiragana:'./tfjs_model/hiragana/model.json',katakana:'./tfjs_model/katakana/model.json'};
 let LABELS=LABELS_HIRAGANA;
 const TF_SIZE=64,BG_TH=245,LINE_W=16;
-let tfModel=null,predTimer=null;
+let tfModel=null,predTimer=null,predRevision=0;
 const drawCtx=document.getElementById('drawCanvas').getContext('2d',{willReadFrequently:true});
 
 function setTf(kind,text){const b=document.getElementById('tfBar');b.className=kind;document.getElementById('tfText').textContent=text;}
@@ -2356,15 +2356,25 @@ function preprocess(){
   for(let i=0,j=0; i<out.length; i+=4,j++) arr[j] = out[i] / 255;
   return arr;
 }
+function invalidatePrediction(){
+  predRevision++;
+  clearTimeout(predTimer);
+}
 async function runPredict(){
-  if(!tfModel)return;const arr=preprocess();if(!arr){renderPreds(null);return;}
+  if(!tfModel||drawing)return;
+  const revision=predRevision,model=tfModel,labels=LABELS;
+  const arr=preprocess();if(!arr){renderPreds(null);return;}
   const inp=tf.tensor4d(arr,[1,TF_SIZE,TF_SIZE,1]);
-  try{const out=tfModel.predict(inp);const pred=await out.data();out.dispose();renderPreds(pred);}
-  catch(e){console.warn(e);}finally{inp.dispose();}
+  let out;
+  try{
+    out=model.predict(inp);
+    const pred=await out.data();
+    if(revision===predRevision&&model===tfModel&&labels===LABELS&&!drawing)renderPreds(pred);
+  }catch(e){console.warn(e);}finally{if(out)out.dispose();inp.dispose();}
 }
 function renderPreds(pred){
   const row=document.getElementById('predRow');
-  if(!pred){row.innerHTML='<div class="pred-none">ことばをかいたらにんしきします</div>';return;}
+  if(!pred){row.innerHTML='<div class="pred-none">１もじずつ かいて、こうほを えらんでね</div>';return;}
   const top=Array.from(pred).map((v,i)=>({i,v})).sort((a,b)=>b.v-a.v).slice(0,5);
   row.innerHTML='';
   top.forEach((item,rank)=>{
@@ -2443,31 +2453,45 @@ function ptEv(ev){
 
 /** 表示幅に応じた線の太さを返す（キャンバス物理ピクセル単位） */
 function calcLineW(){
-  const dpr=window.devicePixelRatio||1;
-  const dispW=cv.getBoundingClientRect().width;
-  // 表示幅300px基準で線幅8px、最小6・最大20
-  const base=Math.round(dispW/300*8*dpr);
-  return Math.max(6,Math.min(20,base));
+  const rect=cv.getBoundingClientRect();
+  // Cap in CSS pixels before converting to physical pixels, so DPR does not thin the ink.
+  const cssWidth=Math.max(6,Math.min(20,Math.round(rect.width/300*8)));
+  return cssWidth*(cv.width/rect.width);
 }
-
+function paintStroke(st){
+  if(!st.points.length)return;
+  const lw=st.lineWidth||calcLineW(),first=st.points[0];
+  drawCtx.strokeStyle='#1a2040';drawCtx.fillStyle='#1a2040';
+  drawCtx.lineWidth=lw;drawCtx.lineCap='round';drawCtx.lineJoin='round';
+  drawCtx.beginPath();drawCtx.arc(first.x,first.y,lw/2,0,Math.PI*2);drawCtx.fill();
+  drawCtx.beginPath();drawCtx.moveTo(first.x,first.y);
+  for(const p of st.points.slice(1))drawCtx.lineTo(p.x,p.y);
+  drawCtx.stroke();
+}
 function beginStroke(ev){
+  if(drawing||(ev.button!==undefined&&ev.button!==0))return;
   if(cv.width < 2 || cv.height < 2) resizeCV();
+  invalidatePrediction();renderPreds(null);
   drawing=true;ev.preventDefault();cv.setPointerCapture&&cv.setPointerCapture(ev.pointerId);
-  const p=ptEv(ev);curStroke={points:[p]};ST.strokes.push(curStroke);
-  const lw=calcLineW();
-  drawCtx.strokeStyle='#1a2040';drawCtx.lineWidth=lw;drawCtx.lineCap='round';drawCtx.lineJoin='round';
-  drawCtx.beginPath();drawCtx.moveTo(p.x,p.y);
+  const p=ptEv(ev);curStroke={points:[p],lineWidth:calcLineW(),pointerId:ev.pointerId};ST.strokes.push(curStroke);
+  paintStroke(curStroke);
 }
 function moveStroke(ev){
-  if(!drawing||!curStroke)return;ev.preventDefault();
-  const p=ptEv(ev);curStroke.points.push(p);drawCtx.lineTo(p.x,p.y);drawCtx.stroke();
+  if(!drawing||!curStroke||ev.pointerId!==curStroke.pointerId)return;ev.preventDefault();
+  const p=ptEv(ev),last=curStroke.points[curStroke.points.length-1];curStroke.points.push(p);
+  drawCtx.lineWidth=curStroke.lineWidth;
+  drawCtx.beginPath();drawCtx.moveTo(last.x,last.y);drawCtx.lineTo(p.x,p.y);drawCtx.stroke();
 }
-function endStroke(ev){if(!drawing)return;ev.preventDefault();drawing=false;curStroke=null;schedPred(200);}
+function endStroke(ev){
+  if(!drawing||!curStroke||ev.pointerId!==curStroke.pointerId)return;
+  ev.preventDefault();drawing=false;curStroke=null;schedPred(200);
+}
 function clearCV(resetStrokes=true){
+  invalidatePrediction();
+  if(resetStrokes){ST.strokes=[];drawing=false;curStroke=null;}
   drawCtx.save();drawCtx.setTransform(1,0,0,1,0,0);
   drawCtx.fillStyle='#fff';drawCtx.fillRect(0,0,cv.width,cv.height);
-  drawCtx.restore();drawGuides();
-  if(resetStrokes)ST.strokes=[];renderPreds(null);
+  drawCtx.restore();drawGuides();renderPreds(null);
 }
 function drawGuides(){
   // ガイド線はキャンバス物理ピクセルで描く
@@ -2481,27 +2505,27 @@ function drawGuides(){
   drawCtx.restore();
 }
 function undoStroke(){
+  drawing=false;curStroke=null;
   ST.strokes.pop();clearCV(false);
-  const lw=calcLineW();
-  drawCtx.strokeStyle='#1a2040';drawCtx.lineWidth=lw;drawCtx.lineCap='round';drawCtx.lineJoin='round';
-  for(const st of ST.strokes){
-    if(!st.points.length)continue;
-    drawCtx.beginPath();drawCtx.moveTo(st.points[0].x,st.points[0].y);
-    for(const p of st.points.slice(1))drawCtx.lineTo(p.x,p.y);
-    drawCtx.stroke();
-  }
+  for(const st of ST.strokes)paintStroke(st);
   schedPred(200);
 }
 function resizeCV(){
   const rect=cv.getBoundingClientRect();
   const dpr=window.devicePixelRatio||1;
-  const newW=Math.round(rect.width*dpr);
-  const newH=Math.round(rect.height*dpr);
-  if(newW < 2 || newH < 2) return;
-  cv.width=newW;
-  cv.height=newH;
-  // setTransformは使わない — ptEvで明示的にスケール変換するため
+  const newW=Math.round(rect.width*dpr),newH=Math.round(rect.height*dpr);
+  if(newW < 2 || newH < 2 || (newW===cv.width&&newH===cv.height)) return;
+  const scale=Math.min(newW/cv.width,newH/cv.height);
+  const offsetX=(newW-cv.width*scale)/2,offsetY=(newH-cv.height*scale)/2;
+  for(const st of ST.strokes){
+    for(const p of st.points){p.x=p.x*scale+offsetX;p.y=p.y*scale+offsetY;}
+    if(st.lineWidth)st.lineWidth*=scale;
+  }
+  cv.width=newW;cv.height=newH;
+  drawing=false;curStroke=null;
   clearCV(false);
+  for(const st of ST.strokes)paintStroke(st);
+  if(ST.strokes.length)schedPred(200);
 }
 
 /* ═══════════════════════════════════════════════════════════
