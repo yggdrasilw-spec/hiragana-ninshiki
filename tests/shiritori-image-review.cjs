@@ -11,12 +11,14 @@ await page.locator('#showAll').click();await page.locator('#scope').selectOption
 for(const scope of ['all','new']){
  await page.locator('#scope').selectOption(scope);
  for(const item of additions){
-  const entry=coverage.find(e=>e.id===item.id);
+  // The frozen plan's row IDs predate subsequent vocabulary merges.
+  const entry=coverage.find(e=>e.image_asset===`assets/shiritori/${item.filename}`);
+  assert(entry,`Reviewed supplementary asset remains assigned: ${item.filename}`);
   await page.locator('#search').fill(entry.reading);
   let found=false;
   while(true){
    const asset=await page.locator('#asset').textContent();
-   if(asset.startsWith(`単語ID ${item.id} ／`)){
+   if(asset.startsWith(`単語ID ${entry.id} ／`)){
     assert.equal(await page.locator('#word').textContent(),entry.word);
     assert.equal(await page.locator('#meaning').textContent(),entry.meaning);
     assert.equal(await page.locator('#picture').getAttribute('src').then(src=>src.split('?')[0]),entry.image_asset);
@@ -27,7 +29,7 @@ for(const scope of ['all','new']){
    if(await page.locator('#next').isDisabled())break;
    await page.locator('#next').click();
   }
-  assert(found,`New word ID ${item.id} missing in scope ${scope}`);
+  assert(found,`Supplemented word ${entry.word} (current ID ${entry.id}) missing in scope ${scope}`);
  }
 }
 await page.locator('#search').fill('後転');assert.equal(await page.locator('#word').textContent(),'後転');await page.locator('#picture').evaluate(i=>i.decode());await page.locator('#search').fill('');await page.locator('#scope').selectOption('all');if(process.env.REVIEW_POSTER)await page.screenshot({path:process.env.REVIEW_POSTER});

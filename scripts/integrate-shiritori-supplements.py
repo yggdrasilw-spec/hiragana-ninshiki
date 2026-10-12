@@ -2,7 +2,7 @@
 import argparse,csv,hashlib,json,shutil,subprocess
 from pathlib import Path
 from PIL import Image,ImageOps
-parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--wave',choices=['wave3','wave4'],default='wave3');args=parser.parse_args()
+parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--wave',choices=['wave3','wave4','wave5'],default='wave3');args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[1];DIR=ROOT/f'data/image-coverage/2026-10-12-{args.wave}'
 def read(p):return json.loads(p.read_text())
 def write(p,obj):p.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
@@ -21,6 +21,7 @@ for b in plan:
    ys=review.get('rowBoundaries',[round(i*h/4) for i in range(5)])
    inset=review.get('borderInset',0)
    box=[xs[cx]+inset,ys[cy]+inset,xs[cx+1]-inset,ys[cy+1]-inset]
+   box=review.get('cropBoxes',{}).get(str(x['tileIndex']),box)
    x.update(id=x.get('id',ids.get(x['beforeId'])),sourceSheet='sheets/'+dest.name,generatedAt='2026-10-12',cropBox=box,prompt=b['prompt'],visualReview=review['notes'][tile])
    ImageOps.pad(im.crop(box).convert('RGB'),(256,256),method=Image.Resampling.LANCZOS,color='white').save(ROOT/'assets/shiritori'/x['filename'],optimize=True)
 for repair in reviews['repairs']:
