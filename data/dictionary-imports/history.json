@@ -14440,5 +14440,2376 @@
       "ほうさく,豊作,いつもの年よりも、農作物がたくさんとれること。",
       "へいほうめーとる,平方メートル,一辺が一メートルの正方形の広さをもとにした、面積の単位。"
     ]
+  },
+  {
+    "type": "image-assets",
+    "batches": [
+      "data/batches/2026-10-12-integrated-images.csv"
+    ],
+    "sourceCommit": "a8605da",
+    "beforeSha256": "b99b034c29141d7419785dfe944695446a8c7013059c87d8ecb5d93a2c670d7d",
+    "afterSha256": "e683c6984bed3ae64c32833e451b4220d7c672073602186d998d55d99e53c9c4",
+    "modifiedLines": [
+      {
+        "id": 4,
+        "before": "あいす,アイス,つめたくて甘いおかし。,アイスクリーム,1,,,,",
+        "after": "あいす,アイス,つめたくて甘いおかし。,アイスクリーム,1,,assets/shiritori/common-word-4.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 18,
+        "before": "あかちゃん,赤ちゃん,生まれてまもない子ども。,赤ちゃん,1,Baby,,,",
+        "after": "あかちゃん,赤ちゃん,生まれてまもない子ども。,赤ちゃん,1,Baby,assets/shiritori/common-word-18.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 19,
+        "before": "あき,秋,なつがおわってすずしくなるきせつ,秋,1,Autumn,,,",
+        "after": "あき,秋,なつがおわってすずしくなるきせつ,秋,1,Autumn,assets/shiritori/wave2-a-word-19.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 36,
+        "before": "あさ,朝,たいようがのぼるいちにちのはじまり,朝,1,,,,",
+        "after": "あさ,朝,たいようがのぼるいちにちのはじまり,朝,1,,assets/shiritori/wave2-a-word-36.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 37,
+        "before": "あさがお,朝顔,あさにおはながさくしょくぶつ,朝顔 植物,1,Morning glory,,,",
+        "after": "あさがお,朝顔,あさにおはながさくしょくぶつ,朝顔 植物,1,Morning glory,assets/shiritori/common-word-37.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 41,
+        "before": "あしあと,足跡,歩いたあとに地面にのこる足の形。,足跡,1,Footprint,,,",
+        "after": "あしあと,足跡,歩いたあとに地面にのこる足の形。,足跡,1,Footprint,assets/shiritori/common-word-41.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 49,
+        "before": "あじさい,紫陽花,青やむらさき、ピンクの花がさく木。,紫陽花 花,1,Hydrangea,,,",
+        "after": "あじさい,紫陽花,青やむらさき、ピンクの花がさく木。,紫陽花 花,1,Hydrangea,assets/shiritori/common-word-49.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 55,
+        "before": "あずき,小豆,あかいちいさなおまめです,小豆 豆,1,Adzuki bean,,,",
+        "after": "あずき,小豆,あかいちいさなおまめです,小豆 豆,1,Adzuki bean,assets/shiritori/common-word-55.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 77,
+        "before": "あな,穴,地面や物にあいている、くぼんだところ。,穴,1,,,,",
+        "after": "あな,穴,地面や物にあいている、くぼんだところ。,穴,1,,assets/shiritori/wave2-a-word-77.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 85,
+        "before": "あひる,アヒル,水にうかんで泳ぎ、ガーガーとなく鳥。,アヒル,1,,,,",
+        "after": "あひる,アヒル,水にうかんで泳ぎ、ガーガーとなく鳥。,アヒル,1,,assets/shiritori/wave2-a-word-85.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 89,
+        "before": "あぶら,油,てんぷらなどをあげるときにつかうもの,油,1,Oil,,,",
+        "after": "あぶら,油,てんぷらなどをあげるときにつかうもの,油,1,Oil,assets/shiritori/wave2-a-word-89.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 101,
+        "before": "あまがえる,雨蛙,みどり色をした小さなカエル。,雨蛙 カエル,1,Tree frog,,,",
+        "after": "あまがえる,雨蛙,みどり色をした小さなカエル。,雨蛙 カエル,1,Tree frog,assets/shiritori/common-word-101.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 103,
+        "before": "あまぐ,雨具,雨の日に使うかさやレインコート。,雨具,1,Raincoat,,,",
+        "after": "あまぐ,雨具,雨の日に使うかさやレインコート。,雨具,1,Raincoat,assets/shiritori/common-word-103.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 104,
+        "before": "あまぐも,雨雲,あめをふらせるくものこと,雨雲 空,1,Rain cloud,,,",
+        "after": "あまぐも,雨雲,あめをふらせるくものこと,雨雲 空,1,Rain cloud,assets/shiritori/common-word-104.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 117,
+        "before": "あみ,網,糸や細いひもを編んで魚や物をとる道具。,網,1,Net,,,",
+        "after": "あみ,網,糸や細いひもを編んで魚や物をとる道具。,網,1,Net,assets/shiritori/common-word-117.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 120,
+        "before": "あめ,雨,雲から水が落ちてくる天気。,雨 気象,1,,,,",
+        "after": "あめ,雨,雲から水が落ちてくる天気。,雨 気象,1,,assets/shiritori/common-word-120.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 121,
+        "before": "あめ,飴,あまくておいしいおかし,飴 菓子,1,,,,",
+        "after": "あめ,飴,あまくておいしいおかし,飴 菓子,1,,assets/shiritori/wave2-a-word-121.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 123,
+        "before": "あめだま,飴玉,まるいあめのおかし,飴玉,1,Hard candy,,,",
+        "after": "あめだま,飴玉,まるいあめのおかし,飴玉,1,Hard candy,assets/shiritori/common-word-123.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 128,
+        "before": "あめんぼ,アメンボ,みずのうえをすいすいあるくむし。,アメンボ,1,Water strider,,,",
+        "after": "あめんぼ,アメンボ,みずのうえをすいすいあるくむし。,アメンボ,1,Water strider,assets/shiritori/common-word-128.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 132,
+        "before": "あやとり,綾取り,いとでかたちをつくるあそび,あやとり,1,Cat's cradle,,,",
+        "after": "あやとり,綾取り,いとでかたちをつくるあそび,あやとり,1,Cat's cradle,assets/shiritori/common-word-132.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 135,
+        "before": "あゆ,鮎,かわにすむおいしいおさかな,鮎 魚,1,Ayu,,,",
+        "after": "あゆ,鮎,かわにすむおいしいおさかな,鮎 魚,1,Ayu,assets/shiritori/common-word-135.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 138,
+        "before": "あらいぐま,洗熊,黒い目のまわりとしま模様のしっぽがある動物。,アライグマ,1,Raccoon,,,",
+        "after": "あらいぐま,洗熊,黒い目のまわりとしま模様のしっぽがある動物。,アライグマ,1,Raccoon,assets/shiritori/common-word-138.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 157,
+        "before": "あり,アリ,じめんをあるくちいさなくろい虫,アリ 昆虫,1,,,,",
+        "after": "あり,アリ,じめんをあるくちいさなくろい虫,アリ 昆虫,1,,assets/shiritori/wave2-a-word-157.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 200,
+        "before": "いえ,家,人が住むための建物。,家 住宅,1,,,,",
+        "after": "いえ,家,人が住むための建物。,家 住宅,1,,assets/shiritori/common-word-200.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 205,
+        "before": "いか,イカ,海にすむ生き物。八本の腕と二本の長い触腕がある。,イカ,1,,,,",
+        "after": "いか,イカ,海にすむ生き物。八本の腕と二本の長い触腕がある。,イカ,1,,assets/shiritori/common-word-205.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 206,
+        "before": "いか,烏賊,海にすむ生き物で、足のような腕がたくさんある。,烏賊,1,Squid,,,",
+        "after": "いか,烏賊,海にすむ生き物で、足のような腕がたくさんある。,烏賊,1,Squid,assets/shiritori/wave2-a-word-206.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 210,
+        "before": "いかだ,筏,きをならべてうかべるもの,いかだ,1,Raft,,,",
+        "after": "いかだ,筏,きをならべてうかべるもの,いかだ,1,Raft,assets/shiritori/common-word-210.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 215,
+        "before": "いかり,錨,船を止めるために海に沈める道具。,錨,1,Anchor,,,",
+        "after": "いかり,錨,船を止めるために海に沈める道具。,錨,1,Anchor,assets/shiritori/wave2-a-word-215.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 220,
+        "before": "いがぐり,いがぐり,栗の実を包む、とげのある外側。,栗,1,Chestnut burr,,,",
+        "after": "いがぐり,いがぐり,栗の実を包む、とげのある外側。,栗,1,Chestnut burr,assets/shiritori/wave2-a-word-220.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 243,
+        "before": "いけ,池,公園などにある、水をたたえた場所。,池,1,,,,",
+        "after": "いけ,池,公園などにある、水をたたえた場所。,池,1,,assets/shiritori/wave2-a-word-243.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 273,
+        "before": "いしだん,石段,石でできた階段。,階段,1,Stone steps,,,",
+        "after": "いしだん,石段,石でできた階段。,階段,1,Stone steps,assets/shiritori/wave2-a-word-273.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 279,
+        "before": "いしばし,石橋,いしでつくったはし,橋,1,Stone bridge,,,",
+        "after": "いしばし,石橋,いしでつくったはし,橋,1,Stone bridge,assets/shiritori/wave2-a-word-279.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 291,
+        "before": "いす,椅子,人が座るための家具。,椅子,1,,,,",
+        "after": "いす,椅子,人が座るための家具。,椅子,1,,assets/shiritori/wave2-a-word-291.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 298,
+        "before": "いずみ,泉,地面から水がわき出ている小さな場所。,泉,1,Spring,,,",
+        "after": "いずみ,泉,地面から水がわき出ている小さな場所。,泉,1,Spring,assets/shiritori/wave2-a-word-298.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 310,
+        "before": "いた,板,きでできたうすいもの。,板,1,Board,,,",
+        "after": "いた,板,きでできたうすいもの。,板,1,Board,assets/shiritori/wave2-a-word-310.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 330,
+        "before": "いちご,イチゴ,あかくてつぶつぶがあるあまいくだもの。,イチゴ,1,,,,",
+        "after": "いちご,イチゴ,あかくてつぶつぶがあるあまいくだもの。,イチゴ,1,,assets/shiritori/wave2-a-word-330.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 331,
+        "before": "いちご,苺,あかくてあまいくだもの。,苺,1,Strawberry,,,",
+        "after": "いちご,苺,あかくてあまいくだもの。,苺,1,Strawberry,assets/shiritori/common-word-331.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 334,
+        "before": "いちじく,無花果,あまくておいしいくだもの。,無花果,1,Fig,,,",
+        "after": "いちじく,無花果,あまくておいしいくだもの。,無花果,1,Fig,assets/shiritori/wave2-a-word-334.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 343,
+        "before": "いちば,市場,いろいろなものがうっているばしょ。,市場,1,Market,,,",
+        "after": "いちば,市場,いろいろなものがうっているばしょ。,市場,1,Market,assets/shiritori/wave2-a-word-343.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 351,
+        "before": "いちりんしゃ,一輪車,タイヤがひとつだけののりもの。,一輪車,1,Unicycle,,,",
+        "after": "いちりんしゃ,一輪車,タイヤがひとつだけののりもの。,一輪車,1,Unicycle,assets/shiritori/wave2-a-word-351.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 393,
+        "before": "いと,糸,ぬうときや、つなぐときにつかうほそいひも。,糸,1,,,,",
+        "after": "いと,糸,ぬうときや、つなぐときにつかうほそいひも。,糸,1,,assets/shiritori/wave2-a-word-393.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 398,
+        "before": "いぬ,犬,人といっしょに暮らすことが多い動物。,犬,1,,,,",
+        "after": "いぬ,犬,人といっしょに暮らすことが多い動物。,犬,1,,assets/shiritori/common-word-398.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 404,
+        "before": "いのしし,いのしし,するどい牙と突進力をもった、豚に似た生き物。,いのしし,1,wild boar,,,",
+        "after": "いのしし,いのしし,するどい牙と突進力をもった、豚に似た生き物。,いのしし,1,wild boar,assets/shiritori/common-word-404.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 411,
+        "before": "いも,芋,つちのなかにできるたべもの。,野菜,1,Potato,,,",
+        "after": "いも,芋,つちのなかにできるたべもの。,野菜,1,Potato,assets/shiritori/common-word-411.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 414,
+        "before": "いもむし,芋虫,チョウやガの幼虫。,芋虫,1,Caterpillar,,,",
+        "after": "いもむし,芋虫,チョウやガの幼虫。,芋虫,1,Caterpillar,assets/shiritori/wave2-a-word-414.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 415,
+        "before": "いもようかん,芋羊羹,いもでつくったあまいおかし。,和菓子,1,Sweet potato jelly,,,",
+        "after": "いもようかん,芋羊羹,いもでつくったあまいおかし。,和菓子,1,Sweet potato jelly,assets/shiritori/wave2-a-word-415.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 427,
+        "before": "いりたまご,煎り卵,卵をとき、いためて作る料理。,料理,1,Scrambled egg,,,",
+        "after": "いりたまご,煎り卵,卵をとき、いためて作る料理。,料理,1,Scrambled egg,assets/shiritori/wave2-a-word-427.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 432,
+        "before": "いるか,海豚,海にすむ哺乳類。,海豚,1,Dolphin,,,",
+        "after": "いるか,海豚,海にすむ哺乳類。,海豚,1,Dolphin,assets/shiritori/common-word-432.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 440,
+        "before": "いろえんぴつ,色鉛筆,いろをぬるためのえんぴつ。,文房具,1,Colored pencil,,,",
+        "after": "いろえんぴつ,色鉛筆,いろをぬるためのえんぴつ。,文房具,1,Colored pencil,assets/shiritori/wave2-a-word-440.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 443,
+        "before": "いろがみ,色紙,いろがついているかみ。,折り紙,1,Colored paper,,,",
+        "after": "いろがみ,色紙,いろがついているかみ。,折り紙,1,Colored paper,assets/shiritori/wave2-a-word-443.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 447,
+        "before": "いわ,岩,とってもおおきないしのこと。,岩,1,Rock,,,",
+        "after": "いわ,岩,とってもおおきないしのこと。,岩,1,Rock,assets/shiritori/common-word-447.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 456,
+        "before": "いわば,岩場,いわがたくさんあるところ。,地形,1,Rocky place,,,",
+        "after": "いわば,岩場,いわがたくさんあるところ。,地形,1,Rocky place,assets/shiritori/wave2-a-word-456.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 469,
+        "before": "いんこ,インコ,ちいさなとり。,インコ,1,Parakeet,,,",
+        "after": "いんこ,インコ,ちいさなとり。,インコ,1,Parakeet,assets/shiritori/wave2-a-word-469.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 506,
+        "before": "うきわ,浮き輪,みずのうえにうかぶためのどうぐ。,浮き輪 道具,1,Swim ring,,,",
+        "after": "うきわ,浮き輪,みずのうえにうかぶためのどうぐ。,浮き輪 道具,1,Swim ring,assets/shiritori/wave2-a-word-506.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 508,
+        "before": "うぐいす,うぐいす,ホーホケキョと鳴く鳥。,うぐいす,1,Nightingale,,,",
+        "after": "うぐいす,うぐいす,ホーホケキョと鳴く鳥。,うぐいす,1,Nightingale,assets/shiritori/wave2-a-word-508.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 510,
+        "before": "うさぎ,ウサギ,みみがながくてぴょんぴょんはねるどうぶつ。,ウサギ,1,,,,",
+        "after": "うさぎ,ウサギ,みみがながくてぴょんぴょんはねるどうぶつ。,ウサギ,1,,assets/shiritori/common-word-510.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 512,
+        "before": "うし,牛,モーと鳴き、ミルクをとれる動物。,牛,1,,,,",
+        "after": "うし,牛,モーと鳴き、ミルクをとれる動物。,牛,1,,assets/shiritori/common-word-512.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 553,
+        "before": "うでどけい,腕時計,うでにつけるどけい。,腕時計 道具,1,Wristwatch,,,",
+        "after": "うでどけい,腕時計,うでにつけるどけい。,腕時計 道具,1,Wristwatch,assets/shiritori/wave2-a-word-553.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 554,
+        "before": "うどん,うどん,白くて長い麺。,うどん 料理,1,Udon,,,",
+        "after": "うどん,うどん,白くて長い麺。,うどん 料理,1,Udon,assets/shiritori/wave2-a-word-554.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 560,
+        "before": "うに,ウニ,海にすむ、とげのある丸い動物。,ウニ,1,Sea urchin,,,",
+        "after": "うに,ウニ,海にすむ、とげのある丸い動物。,ウニ,1,Sea urchin,assets/shiritori/wave2-a-word-560.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 565,
+        "before": "うばぐるま,乳母車,あかちゃんをのせておすくるま。,乳母車 道具,1,Baby carriage,,,",
+        "after": "うばぐるま,乳母車,あかちゃんをのせておすくるま。,乳母車 道具,1,Baby carriage,assets/shiritori/wave2-a-word-565.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 570,
+        "before": "うま,馬,人を乗せて速く走ることができる動物。,馬,1,,,,",
+        "after": "うま,馬,人を乗せて速く走ることができる動物。,馬,1,,assets/shiritori/common-word-570.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 573,
+        "before": "うみ,海,おおきなみずのひろがり。,海,1,,,,",
+        "after": "うみ,海,おおきなみずのひろがり。,海,1,,assets/shiritori/common-word-573.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 577,
+        "before": "うみべ,海辺,うみのそばのりくち。,海辺 風景,1,Seashore,,,",
+        "after": "うみべ,海辺,うみのそばのりくち。,海辺 風景,1,Seashore,assets/shiritori/wave2-a-word-577.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 579,
+        "before": "うめ,梅,はるのはじめにピンクの花がさく木。,梅,1,,,,",
+        "after": "うめ,梅,はるのはじめにピンクの花がさく木。,梅,1,,assets/shiritori/common-word-579.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 581,
+        "before": "うめぼし,梅干し,うめをほしてつくったすっぱいもの。,梅干し 食べ物,1,Umeboshi,,,",
+        "after": "うめぼし,梅干し,うめをほしてつくったすっぱいもの。,梅干し 食べ物,1,Umeboshi,assets/shiritori/wave2-a-word-581.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 599,
+        "before": "うわぎ,上着,ふくのうえからきるもの。,上着 服,1,Jacket,,,",
+        "after": "うわぎ,上着,ふくのうえからきるもの。,上着 服,1,Jacket,assets/shiritori/wave2-a-word-599.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 603,
+        "before": "うわばき,上履き,がっこうのなかではくくつ、シューズのこと。,上履き 靴,1,Indoor shoes,,,",
+        "after": "うわばき,上履き,がっこうのなかではくくつ、シューズのこと。,上履き 靴,1,Indoor shoes,assets/shiritori/wave2-a-word-603.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 607,
+        "before": "うんてい,雲梯,こうえんにあるてでぶらさがってわたるあそび。,雲梯 遊具,1,Monkey bars,,,",
+        "after": "うんてい,雲梯,こうえんにあるてでぶらさがってわたるあそび。,雲梯 遊具,1,Monkey bars,assets/shiritori/wave2-a-word-607.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 644,
+        "before": "えき,駅,でんしゃがとまって人が乗り降りするところ。,駅,1,,,,",
+        "after": "えき,駅,でんしゃがとまって人が乗り降りするところ。,駅,1,,assets/shiritori/wave2-a-word-644.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 658,
+        "before": "えだ,枝,木の幹からわかれてのびているぶぶん。,枝,1,,,,",
+        "after": "えだ,枝,木の幹からわかれてのびているぶぶん。,枝,1,,assets/shiritori/wave2-a-word-658.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 659,
+        "before": "えだまめ,枝豆,みどりいろのさやにはいったまめ。,枝豆,1,,,,",
+        "after": "えだまめ,枝豆,みどりいろのさやにはいったまめ。,枝豆,1,,assets/shiritori/wave2-a-word-659.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 672,
+        "before": "えのきたけ,エノキタケ,ほそくてしろいきのこ。,榎茸 食べ物,1,Enoki mushroom,,,",
+        "after": "えのきたけ,エノキタケ,ほそくてしろいきのこ。,榎茸 食べ物,1,Enoki mushroom,assets/shiritori/wave2-a-word-672.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 673,
+        "before": "えのぐ,絵の具,えをかくときにつかういろがついたもの。,絵の具 道具,1,Paint,,,",
+        "after": "えのぐ,絵の具,えをかくときにつかういろがついたもの。,絵の具 道具,1,Paint,assets/shiritori/wave2-a-word-673.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 675,
+        "before": "えび,海老,長いひげと細い足をもつ、海や川の生き物。,海老 生物,1,Shrimp,,,",
+        "after": "えび,海老,長いひげと細い足をもつ、海や川の生き物。,海老 生物,1,Shrimp,assets/shiritori/wave2-a-word-675.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 687,
+        "before": "えりまき,襟巻,あたたかくするためにくびにまくもの、マフラー。,襟巻,1,Scarf,,,",
+        "after": "えりまき,襟巻,あたたかくするためにくびにまくもの、マフラー。,襟巻,1,Scarf,assets/shiritori/wave2-a-word-687.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 706,
+        "before": "えんがわ,縁側,家の外側に作る、板張りの細長い通路。,縁側 家,1,Veranda,,,",
+        "after": "えんがわ,縁側,家の外側に作る、板張りの細長い通路。,縁側 家,1,Veranda,assets/shiritori/wave2-a-word-706.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 764,
+        "before": "おうだんほどう,横断歩道,道路を渡る人のために、白い線で示した場所。,横断歩道 道路,1,Crosswalk,,,",
+        "after": "おうだんほどう,横断歩道,道路を渡る人のために、白い線で示した場所。,横断歩道 道路,1,Crosswalk,assets/shiritori/wave2-a-word-764.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 765,
+        "before": "おうち,お家,すんでいるところ。,家 建物,1,House,,,",
+        "after": "おうち,お家,すんでいるところ。,家 建物,1,House,assets/shiritori/wave2-a-word-765.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 793,
+        "before": "だいず,大豆,みそや豆腐などの材料になる豆。畑で育ち、丸い実をつける。,大豆 豆,1,Soybean,,,",
+        "after": "だいず,大豆,みそや豆腐などの材料になる豆。畑で育ち、丸い実をつける。,大豆 豆,1,Soybean,assets/shiritori/wave2-a-word-793.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 804,
+        "before": "おかし,お菓子,チョコレートやクッキーなどの甘い食べ物。,お菓子,1,,,,",
+        "after": "おかし,お菓子,チョコレートやクッキーなどの甘い食べ物。,お菓子,1,,assets/shiritori/wave2-a-word-804.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 811,
+        "before": "おかゆ,お粥,おこめをやわらかくたいたもの。,お粥 料理,1,Rice porridge,,,",
+        "after": "おかゆ,お粥,おこめをやわらかくたいたもの。,お粥 料理,1,Rice porridge,assets/shiritori/wave2-a-word-811.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 846,
+        "before": "おすし,お寿司,ごはんにさかなをのせたもの。,お寿司 料理,1,Sushi,,,",
+        "after": "おすし,お寿司,ごはんにさかなをのせたもの。,お寿司 料理,1,Sushi,assets/shiritori/wave2-a-word-846.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 861,
+        "before": "おだんご,お団子,米の粉などを丸めて作る食べ物。,お団子 和菓子,1,Dumpling,,,",
+        "after": "おだんご,お団子,米の粉などを丸めて作る食べ物。,お団子 和菓子,1,Dumpling,assets/shiritori/wave2-a-word-861.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 901,
+        "before": "おにぎり,おにぎり,ごはんをにぎって形を作った食べ物。,おにぎり,1,,,,",
+        "after": "おにぎり,おにぎり,ごはんをにぎって形を作った食べ物。,おにぎり,1,,assets/shiritori/wave2-a-word-901.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 907,
+        "before": "おにわ,お庭,家のまわりに草や木を植えた場所。,庭 建物,1,Garden,,,",
+        "after": "おにわ,お庭,家のまわりに草や木を植えた場所。,庭 建物,1,Garden,assets/shiritori/wave2-a-word-907.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 925,
+        "before": "おひたし,お浸し,やさいをゆでてだしにつけたもの。,お浸し 料理,1,Ohitashi,,,",
+        "after": "おひたし,お浸し,やさいをゆでてだしにつけたもの。,お浸し 料理,1,Ohitashi,assets/shiritori/wave2-a-word-925.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 934,
+        "before": "おべんとう,お弁当,もちはこべるおひるごはん。,お弁当 食べ物,1,Bento,,,",
+        "after": "おべんとう,お弁当,もちはこべるおひるごはん。,お弁当 食べ物,1,Bento,assets/shiritori/wave2-a-word-934.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1019,
+        "before": "かえる,カエル,水辺にすみ、後ろ足で跳ねる両生類。,カエル,1,,,,",
+        "after": "かえる,カエル,水辺にすみ、後ろ足で跳ねる両生類。,カエル,1,,assets/shiritori/common-word-1019.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1020,
+        "before": "かえる,蛙,後ろ足で跳ねて進む生き物。,蛙 両生類,1,Frog,,,",
+        "after": "かえる,蛙,後ろ足で跳ねて進む生き物。,蛙 両生類,1,Frog,assets/shiritori/wave2-a-word-1020.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1029,
+        "before": "かき,柿,秋に実る、甘い果物。,柿 果物,1,Persimmon,,,",
+        "after": "かき,柿,秋に実る、甘い果物。,柿 果物,1,Persimmon,assets/shiritori/common-word-1029.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1033,
+        "before": "かきごおり,かき氷,細かく削った氷に、シロップなどをかけた食べ物。,かき氷 デザート,1,Shaved ice,,,",
+        "after": "かきごおり,かき氷,細かく削った氷に、シロップなどをかけた食べ物。,かき氷 デザート,1,Shaved ice,assets/shiritori/wave2-a-word-1033.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1035,
+        "before": "かぎ,鍵,かぎ穴に差し込んで、錠を開け閉めする道具。,鍵,1,,,,",
+        "after": "かぎ,鍵,かぎ穴に差し込んで、錠を開け閉めする道具。,鍵,1,,assets/shiritori/common-word-1035.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1119,
+        "before": "かなづち,金槌,くぎを打つための道具。,金槌 道具,1,Hammer,,,",
+        "after": "かなづち,金槌,くぎを打つための道具。,金槌 道具,1,Hammer,assets/shiritori/wave2-a-word-1119.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1124,
+        "before": "かに,蟹,はさみのような爪を持つ、甲殻類。,蟹 動物,1,Crab,,,",
+        "after": "かに,蟹,はさみのような爪を持つ、甲殻類。,蟹 動物,1,Crab,assets/shiritori/common-word-1124.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1143,
+        "before": "かぶとむし,カブトムシ,頭に角がある、甲虫の仲間。,カブトムシ 昆虫,1,Beetle,,,",
+        "after": "かぶとむし,カブトムシ,頭に角がある、甲虫の仲間。,カブトムシ 昆虫,1,Beetle,assets/shiritori/wave2-a-word-1143.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1156,
+        "before": "かまきり,カマキリ,かまのような前脚を持つ昆虫。,カマキリ 昆虫,1,Praying mantis,,,",
+        "after": "かまきり,カマキリ,かまのような前脚を持つ昆虫。,カマキリ 昆虫,1,Praying mantis,assets/shiritori/wave2-a-word-1156.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1161,
+        "before": "かまぼこ,蒲鉾,魚のすり身を蒸して作る食品。,蒲鉾 食品,1,Kamaboko,,,",
+        "after": "かまぼこ,蒲鉾,魚のすり身を蒸して作る食品。,蒲鉾 食品,1,Kamaboko,assets/shiritori/wave2-a-word-1161.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1163,
+        "before": "かみ,紙,植物の繊維などを薄く平らにしたもの。,紙 素材,2,Paper,,,",
+        "after": "かみ,紙,植物の繊維などを薄く平らにしたもの。,紙 素材,2,Paper,assets/shiritori/common-word-1163.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1196,
+        "before": "から,殻,卵などを包んでいる、外側のかたい部分。,殻 自然,1,Shell,,,",
+        "after": "から,殻,卵などを包んでいる、外側のかたい部分。,殻 自然,1,Shell,assets/shiritori/wave2-b-word-1197.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1203,
+        "before": "からし,からし,からし菜の種などから作る、辛みのある調味料。,からし,1,Mustard,,,",
+        "after": "からし,からし,からし菜の種などから作る、辛みのある調味料。,からし,1,Mustard,assets/shiritori/wave2-b-word-1204.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1204,
+        "before": "からす,カラス,黒い羽を持ち、「カーカー」と鳴く鳥。,カラス,1,,,,",
+        "after": "からす,カラス,黒い羽を持ち、「カーカー」と鳴く鳥。,カラス,1,,assets/shiritori/wave2-b-word-1205.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1233,
+        "before": "かれー,カレー,香辛料を使った、とろみのある料理。,カレー 料理,1,Curry,,,",
+        "after": "かれー,カレー,香辛料を使った、とろみのある料理。,カレー 料理,1,Curry,assets/shiritori/wave2-b-word-1234.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1234,
+        "before": "かれき,枯れ木,葉が落ちて、枯れた木。,枯れ木 植物,1,Dead tree,,,",
+        "after": "かれき,枯れ木,葉が落ちて、枯れた木。,枯れ木 植物,1,Dead tree,assets/shiritori/wave2-b-word-1235.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1235,
+        "before": "かれくさ,枯れ草,水分を失って枯れた草。,枯れ草 植物,1,Dead grass,,,",
+        "after": "かれくさ,枯れ草,水分を失って枯れた草。,枯れ草 植物,1,Dead grass,assets/shiritori/wave2-b-word-1236.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1238,
+        "before": "かれは,枯葉,木や草から落ちた葉。,枯葉,1,Dead leaf,,,",
+        "after": "かれは,枯葉,木や草から落ちた葉。,枯葉,1,Dead leaf,assets/shiritori/wave2-b-word-1239.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1243,
+        "before": "かわ,川,陸の水が集まり、海や湖へ流れる水の道。,川,1,,,,",
+        "after": "かわ,川,陸の水が集まり、海や湖へ流れる水の道。,川,1,,assets/shiritori/wave2-b-word-1244.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1253,
+        "before": "かわざかな,川魚,川にすむ魚。,川魚 動物,1,Freshwater fish,,,",
+        "after": "かわざかな,川魚,川にすむ魚。,川魚 動物,1,Freshwater fish,assets/shiritori/wave2-b-word-1254.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1258,
+        "before": "かわら,河原,川岸や川底にある、小石や砂利。,河原 地形,1,River beach,,,",
+        "after": "かわら,河原,川岸や川底にある、小石や砂利。,河原 地形,1,River beach,assets/shiritori/wave2-b-word-1259.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1261,
+        "before": "かん,缶,飲み物などを入れる、金属製の容器。,缶 容器,1,Can,,,",
+        "after": "かん,缶,飲み物などを入れる、金属製の容器。,缶 容器,1,Can,assets/shiritori/wave2-b-word-1262.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1324,
+        "before": "がちょう,ガチョウ,アヒルに似た、水辺にすむ大きな鳥。,ガチョウ,1,,,,",
+        "after": "がちょう,ガチョウ,アヒルに似た、水辺にすむ大きな鳥。,ガチョウ,1,,assets/shiritori/wave2-b-word-1325.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1325,
+        "before": "がっこう,学校,子どもなどが集まり、勉強や運動をするところ。,学校,1,,,,",
+        "after": "がっこう,学校,子どもなどが集まり、勉強や運動をするところ。,学校,1,,assets/shiritori/wave2-b-word-1326.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1328,
+        "before": "がま,ガマ,池や沼の近くに生える、細長い穂をつける植物。,ガマ 植物,1,,,,",
+        "after": "がま,ガマ,池や沼の近くに生える、細長い穂をつける植物。,ガマ 植物,1,,assets/shiritori/wave2-b-word-1329.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1330,
+        "before": "がまぐち,がま口,口金を開けて使う、小銭入れ。,がま口,1,,,,",
+        "after": "がまぐち,がま口,口金を開けて使う、小銭入れ。,がま口,1,,assets/shiritori/wave2-b-word-1331.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1364,
+        "before": "がーぜ,ガーゼ,傷に当てて、血や液を吸い取る布。,ガーゼ,1,,,,",
+        "after": "がーぜ,ガーゼ,傷に当てて、血や液を吸い取る布。,ガーゼ,1,,assets/shiritori/wave2-b-word-1365.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1367,
+        "before": "き,木,幹や枝を持ち、育つと大きくなる植物。,木 樹木,1,Tree,,,",
+        "after": "き,木,幹や枝を持ち、育つと大きくなる植物。,木 樹木,1,Tree,assets/shiritori/wave2-b-word-1368.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1377,
+        "before": "きうい,キウイ,毛のある皮と、甘酸っぱい実を持つ果物。,キウイフルーツ,1,Kiwifruit,,,",
+        "after": "きうい,キウイ,毛のある皮と、甘酸っぱい実を持つ果物。,キウイフルーツ,1,Kiwifruit,assets/shiritori/wave2-b-word-1378.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1392,
+        "before": "ききゅう,気球,袋の中の空気を温めて空を飛ぶ乗り物。,気球,1,Hot air balloon,,,",
+        "after": "ききゅう,気球,袋の中の空気を温めて空を飛ぶ乗り物。,気球,1,Hot air balloon,assets/shiritori/wave2-b-word-1393.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1393,
+        "before": "きく,菊,秋に花を咲かせる、キク科の植物。,菊 植物,1,Chrysanthemum,,,",
+        "after": "きく,菊,秋に花を咲かせる、キク科の植物。,菊 植物,1,Chrysanthemum,assets/shiritori/wave2-b-word-1394.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1407,
+        "before": "きしゃ,汽車,蒸気の力で走る、昔の列車。,汽車,1,Steam train,,,",
+        "after": "きしゃ,汽車,蒸気の力で走る、昔の列車。,汽車,1,Steam train,assets/shiritori/wave2-b-word-1408.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1411,
+        "before": "きじ,雉,日本のキジ科の鳥。,キジ 鳥,1,Pheasant,,,",
+        "after": "きじ,雉,日本のキジ科の鳥。,キジ 鳥,1,Pheasant,assets/shiritori/wave2-b-word-1412.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1425,
+        "before": "きって,切手,手紙やはがきに貼り、郵便料金を示す紙。,切手,1,Postage stamp,,,",
+        "after": "きって,切手,手紙やはがきに貼り、郵便料金を示す紙。,切手,1,Postage stamp,assets/shiritori/wave2-b-word-1426.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1426,
+        "before": "きつつき,キツツキ,木に穴をあけて虫などを食べる鳥。,キツツキ,1,Woodpecker,,,",
+        "after": "きつつき,キツツキ,木に穴をあけて虫などを食べる鳥。,キツツキ,1,Woodpecker,assets/shiritori/wave2-b-word-1427.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1427,
+        "before": "きつね,キツネ,とがった耳とふさふさした尾を持つイヌ科の動物。,キツネ,1,,,,",
+        "after": "きつね,キツネ,とがった耳とふさふさした尾を持つイヌ科の動物。,キツネ,1,,assets/shiritori/wave2-b-word-1428.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1437,
+        "before": "きのこ,キノコ,森などに生える、かさのある菌類。,キノコ,1,,,,",
+        "after": "きのこ,キノコ,森などに生える、かさのある菌類。,キノコ,1,,assets/shiritori/wave2-b-word-1438.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1444,
+        "before": "きびだんご,黍団子,きび粉やもち米などで作る団子。,黍団子,1,Kibi dango,,,",
+        "after": "きびだんご,黍団子,きび粉やもち米などで作る団子。,黍団子,1,Kibi dango,assets/shiritori/wave2-b-word-1445.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1461,
+        "before": "きもの,着物,日本で着られてきた、伝統的な衣服。,着物,1,Kimono,,,",
+        "after": "きもの,着物,日本で着られてきた、伝統的な衣服。,着物,1,Kimono,assets/shiritori/wave2-b-word-1462.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1464,
+        "before": "きゃべつ,キャベツ,葉が丸く重なって育つ野菜。,キャベツ,1,,,,",
+        "after": "きゃべつ,キャベツ,葉が丸く重なって育つ野菜。,キャベツ,1,,assets/shiritori/wave2-b-word-1465.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1555,
+        "before": "きゅうきゅうしゃ,救急車,急な病気やけがをした人を、病院などへ運ぶ車。,救急車,1,Ambulance,,,",
+        "after": "きゅうきゅうしゃ,救急車,急な病気やけがをした人を、病院などへ運ぶ車。,救急車,1,Ambulance,assets/shiritori/wave2-b-word-1556.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1560,
+        "before": "きゅうり,キュウリ,細長くて緑色をした野菜。,キュウリ,1,,,,",
+        "after": "きゅうり,キュウリ,細長くて緑色をした野菜。,キュウリ,1,,assets/shiritori/wave2-b-word-1561.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1585,
+        "before": "きょうりゅう,恐竜,大昔に地球にすんでいた、爬虫類に似た動物。,恐竜,1,Dinosaur,,,",
+        "after": "きょうりゅう,恐竜,大昔に地球にすんでいた、爬虫類に似た動物。,恐竜,1,Dinosaur,assets/shiritori/wave2-b-word-1586.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1607,
+        "before": "きりん,キリン,首がとても長い、アフリカの大型の動物。,キリン,1,,,,",
+        "after": "きりん,キリン,首がとても長い、アフリカの大型の動物。,キリン,1,,assets/shiritori/wave2-b-word-1608.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1623,
+        "before": "きんぎょ,金魚,水槽などで飼う、観賞用の魚。,金魚,1,Goldfish,,,",
+        "after": "きんぎょ,金魚,水槽などで飼う、観賞用の魚。,金魚,1,Goldfish,assets/shiritori/wave2-b-word-1624.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1626,
+        "before": "きんこ,金庫,お金や大切な物をしまう、頑丈な箱。,金庫,1,Safe,,,",
+        "after": "きんこ,金庫,お金や大切な物をしまう、頑丈な箱。,金庫,1,Safe,assets/shiritori/wave2-b-word-1627.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1645,
+        "before": "ぎあ,ギア,歯車や自転車などにある、歯のついた部品。,歯車,1,,,,",
+        "after": "ぎあ,ギア,歯車や自転車などにある、歯のついた部品。,歯車,1,,assets/shiritori/wave2-b-word-1646.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1653,
+        "before": "ぎたー,ギター,弦を指ではじいて音を出す楽器。,ギター,1,,,,",
+        "after": "ぎたー,ギター,弦を指ではじいて音を出す楽器。,ギター,1,,assets/shiritori/wave2-b-word-1654.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1664,
+        "before": "ぎゅうにく,牛肉,牛の肉。,牛肉,1,Beef,,,",
+        "after": "ぎゅうにく,牛肉,牛の肉。,牛肉,1,Beef,assets/shiritori/wave2-b-word-1665.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1665,
+        "before": "ぎゅうにゅう,牛乳,牛からしぼった乳。,牛乳,1,Milk,,,",
+        "after": "ぎゅうにゅう,牛乳,牛からしぼった乳。,牛乳,1,Milk,assets/shiritori/wave2-b-word-1666.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1667,
+        "before": "ぎょうざ,ギョウザ,肉や野菜などを皮で包んで焼いた料理。,ギョウザ,1,,,,",
+        "after": "ぎょうざ,ギョウザ,肉や野菜などを皮で包んで焼いた料理。,ギョウザ,1,,assets/shiritori/wave2-b-word-1668.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1697,
+        "before": "くぎ,釘,板などをつなぎ合わせるために打ち込む金属の棒。,釘,1,Nail,,,",
+        "after": "くぎ,釘,板などをつなぎ合わせるために打ち込む金属の棒。,釘,1,Nail,assets/shiritori/wave2-b-word-1698.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1700,
+        "before": "くさ,草,地面に生える、茎のやわらかい植物。,草,1,Grass,,,",
+        "after": "くさ,草,地面に生える、茎のやわらかい植物。,草,1,Grass,assets/shiritori/wave2-b-word-1701.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1705,
+        "before": "くさり,鎖,金属の輪をつないで作った、長い輪状のひも。,鎖,1,Chain,,,",
+        "after": "くさり,鎖,金属の輪をつないで作った、長い輪状のひも。,鎖,1,Chain,assets/shiritori/wave2-b-word-1706.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1706,
+        "before": "くし,串,焼き鳥などを刺す、細い棒。,串,1,Skewer,,,",
+        "after": "くし,串,焼き鳥などを刺す、細い棒。,串,1,Skewer,assets/shiritori/wave2-b-word-1707.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1710,
+        "before": "くじら,クジラ,海にすむ、大型の哺乳類。,クジラ,1,,,,",
+        "after": "くじら,クジラ,海にすむ、大型の哺乳類。,クジラ,1,,assets/shiritori/wave2-b-word-1711.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1733,
+        "before": "くつ,靴,足を守るため、外を歩くときに履くもの。,靴,1,Shoe,,,",
+        "after": "くつ,靴,足を守るため、外を歩くときに履くもの。,靴,1,Shoe,assets/shiritori/wave2-b-word-1734.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1734,
+        "before": "くつした,靴下,足に履き、靴の中で使う衣類。,靴下,1,Sock,,,",
+        "after": "くつした,靴下,足に履き、靴の中で使う衣類。,靴下,1,Sock,assets/shiritori/wave2-b-word-1735.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1736,
+        "before": "くつべら,靴べら,靴を履くとき、かかとに当てる道具。,靴べら,1,Shoehorn,,,",
+        "after": "くつべら,靴べら,靴を履くとき、かかとに当てる道具。,靴べら,1,Shoehorn,assets/shiritori/wave2-b-word-1737.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1750,
+        "before": "くま,クマ,体が大きく、力の強い哺乳類。,クマ,1,,,,",
+        "after": "くま,クマ,体が大きく、力の強い哺乳類。,クマ,1,,assets/shiritori/wave2-b-word-1751.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1753,
+        "before": "くまのみ,クマノミ,オレンジ色と白のしま模様を持つ、海の魚。,クマノミ,1,Amphiprioninae,,,",
+        "after": "くまのみ,クマノミ,オレンジ色と白のしま模様を持つ、海の魚。,クマノミ,1,Amphiprioninae,assets/shiritori/wave2-b-word-1754.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1762,
+        "before": "くも,雲,空に浮かぶ、水滴や氷の粒の集まり。,雲,1,Cloud,,,",
+        "after": "くも,雲,空に浮かぶ、水滴や氷の粒の集まり。,雲,1,Cloud,assets/shiritori/wave2-b-word-1763.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1776,
+        "before": "くらげ,クラゲ,海にすむ、ゼラチン質の体を持つ生き物。,クラゲ,1,,,,",
+        "after": "くらげ,クラゲ,海にすむ、ゼラチン質の体を持つ生き物。,クラゲ,1,,assets/shiritori/wave2-b-word-1777.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1783,
+        "before": "くらりねっと,クラリネット,木管楽器の一つ。キーを押し、息を吹き込んで音を出す。,クラリネット,1,Clarinet,,,",
+        "after": "くらりねっと,クラリネット,木管楽器の一つ。キーを押し、息を吹き込んで音を出す。,クラリネット,1,Clarinet,assets/shiritori/wave2-b-word-1784.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1785,
+        "before": "くり,栗,秋に実る、いがに包まれた木の実。,クリの実,1,Chestnut,,,",
+        "after": "くり,栗,秋に実る、いがに包まれた木の実。,クリの実,1,Chestnut,assets/shiritori/wave2-b-word-1786.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1788,
+        "before": "くりっぷ,クリップ,紙などを挟んで留める金属の道具。,ゼムクリップ,1,Paperclip,,,",
+        "after": "くりっぷ,クリップ,紙などを挟んで留める金属の道具。,ゼムクリップ,1,Paperclip,assets/shiritori/wave2-b-word-1789.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1797,
+        "before": "くるま,車,人や荷物を運ぶ、車輪のついた乗り物。,自動車,1,Car,,,",
+        "after": "くるま,車,人や荷物を運ぶ、車輪のついた乗り物。,自動車,1,Car,assets/shiritori/wave2-b-word-1798.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1798,
+        "before": "くるまいす,車椅子,座ったまま移動するための、車輪がついた椅子。,車椅子,1,Wheelchair,,,",
+        "after": "くるまいす,車椅子,座ったまま移動するための、車輪がついた椅子。,車椅子,1,Wheelchair,assets/shiritori/wave2-b-word-1799.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1800,
+        "before": "くるみ,胡桃,硬い殻に包まれた木の実。,クルミの実,1,Walnut,,,",
+        "after": "くるみ,胡桃,硬い殻に包まれた木の実。,クルミの実,1,Walnut,assets/shiritori/wave2-b-word-1801.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1810,
+        "before": "くれよん,クレヨン,色のついたろうでできた、絵を描く道具。,クレヨン,1,Crayon,,,",
+        "after": "くれよん,クレヨン,色のついたろうでできた、絵を描く道具。,クレヨン,1,Crayon,assets/shiritori/wave2-b-word-1811.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1812,
+        "before": "くれーぷ,クレープ,薄く焼いた生地で果物やクリームを包んだお菓子。,クレープ,1,Crêpe,,,",
+        "after": "くれーぷ,クレープ,薄く焼いた生地で果物やクリームを包んだお菓子。,クレープ,1,Crêpe,assets/shiritori/wave2-b-word-1813.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1835,
+        "before": "くろーばー,クローバー,三つ葉や四つ葉を持つ、小さな草。,クローバー,1,Clover,,,",
+        "after": "くろーばー,クローバー,三つ葉や四つ葉を持つ、小さな草。,クローバー,1,Clover,assets/shiritori/wave2-b-word-1836.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1839,
+        "before": "くわがた,クワガタ,大きなあごを持つ、甲虫の仲間。,クワガタムシ,1,,,,",
+        "after": "くわがた,クワガタ,大きなあごを持つ、甲虫の仲間。,クワガタムシ,1,,assets/shiritori/wave2-b-word-1840.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1852,
+        "before": "ぐらす,グラス,水やジュースを飲むための、ガラスのコップ。,グラス コップ,1,,,,",
+        "after": "ぐらす,グラス,水やジュースを飲むための、ガラスのコップ。,グラス コップ,1,,assets/shiritori/wave2-b-word-1853.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 1865,
+        "before": "ぐんて,軍手,作業のときに手を保護するための手袋。,軍手,1,,,,",
+        "after": "ぐんて,軍手,作業のときに手を保護するための手袋。,軍手,1,,assets/shiritori/wave2-b-word-1866.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2289,
+        "before": "こっぷ,コップ,水などの液体を入れるための容器。,コップ 容器,2,Cup,,,",
+        "after": "こっぷ,コップ,水などの液体を入れるための容器。,コップ 容器,2,Cup,assets/shiritori/common-word-2290.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2390,
+        "before": "ごはん,ご飯,炊いた米。また、朝食や夕食などの食事。,ご飯,1,Rice,,,",
+        "after": "ごはん,ご飯,炊いた米。また、朝食や夕食などの食事。,ご飯,1,Rice,assets/shiritori/wave2-c-word-2391.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2392,
+        "before": "ごぼう,ゴボウ,土のなかにふかくのびる、細くて茶色いお野菜。,ゴボウ,1,,,,",
+        "after": "ごぼう,ゴボウ,土のなかにふかくのびる、細くて茶色いお野菜。,ゴボウ,1,,assets/shiritori/wave2-c-word-2393.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2393,
+        "before": "ごま,ゴマ,お料理にパラパラとかける、ちいさくて香ばしい粒の実。,ゴマ,1,,,,",
+        "after": "ごま,ゴマ,お料理にパラパラとかける、ちいさくて香ばしい粒の実。,ゴマ,1,,assets/shiritori/wave2-c-word-2394.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2396,
+        "before": "ごみばこ,ゴミ箱,ごみを入れておく箱や容器。,ゴミ箱,1,,,,",
+        "after": "ごみばこ,ゴミ箱,ごみを入れておく箱や容器。,ゴミ箱,1,,assets/shiritori/wave2-c-word-2397.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2402,
+        "before": "ごりら,ゴリラ,アフリカにすむ、大型の類人猿。,ゴリラ,1,,,,",
+        "after": "ごりら,ゴリラ,アフリカにすむ、大型の類人猿。,ゴリラ,1,,assets/shiritori/wave2-c-word-2403.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2420,
+        "before": "さい,犀,鼻の上に大きな角がある、大型の動物。,サイ 動物,1,Rhinoceros,,,",
+        "after": "さい,犀,鼻の上に大きな角がある、大型の動物。,サイ 動物,1,Rhinoceros,assets/shiritori/wave2-c-word-2421.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2434,
+        "before": "さいころ,サイコロ,投げたり転がしたりして、出た目を使う立方体の道具。一般的なものは六面体で、1から6までの目がある。,サイコロ,1,Dice,,,",
+        "after": "さいころ,サイコロ,投げたり転がしたりして、出た目を使う立方体の道具。一般的なものは六面体で、1から6までの目がある。,サイコロ,1,Dice,assets/shiritori/wave2-c-word-2435.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2466,
+        "before": "さいふ,財布,お金やカードなどを入れて持ち歩くための入れ物。,財布,1,Wallet,,,",
+        "after": "さいふ,財布,お金やカードなどを入れて持ち歩くための入れ物。,財布,1,Wallet,assets/shiritori/wave2-c-word-2467.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2480,
+        "before": "さお,竿,細長い棒。また、釣り糸をつけて魚を釣る道具。,竿,1,Pole,,,",
+        "after": "さお,竿,細長い棒。また、釣り糸をつけて魚を釣る道具。,竿,1,Pole,assets/shiritori/wave2-c-word-2481.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2488,
+        "before": "さかな,魚,えらで呼吸し、ひれを使って水中を泳ぐ動物。魚には海にすむものと川にすむものがいる。,魚,1,Fish,,,",
+        "after": "さかな,魚,えらで呼吸し、ひれを使って水中を泳ぐ動物。魚には海にすむものと川にすむものがいる。,魚,1,Fish,assets/shiritori/common-word-2489.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2509,
+        "before": "さぎ,鷺,水辺などにすむ首や足の長い鳥。白い種類のほか、灰色などの種類もいる。,サギ 鳥,1,Heron,,,",
+        "after": "さぎ,鷺,水辺などにすむ首や足の長い鳥。白い種類のほか、灰色などの種類もいる。,サギ 鳥,1,Heron,assets/shiritori/wave2-c-word-2510.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2511,
+        "before": "さく,柵,木や金属などを並べて作る仕切り。人や動物の出入りを防いだり、区切りを示したりする。,柵,1,Fence,,,",
+        "after": "さく,柵,木や金属などを並べて作る仕切り。人や動物の出入りを防いだり、区切りを示したりする。,柵,1,Fence,assets/shiritori/wave2-c-word-2512.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2525,
+        "before": "さくら,桜,春に花を咲かせる木。日本では多くの種類が親しまれている。,サクラ 花,1,Cherry blossom,,,",
+        "after": "さくら,桜,春に花を咲かせる木。日本では多くの種類が親しまれている。,サクラ 花,1,Cherry blossom,assets/shiritori/common-word-2526.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2526,
+        "before": "さくらんぼ,サクランボ,サクラの木になる実。食用の品種は甘酸っぱい味がする。,サクランボ,1,Cherry,,,",
+        "after": "さくらんぼ,サクランボ,サクラの木になる実。食用の品種は甘酸っぱい味がする。,サクランボ,1,Cherry,assets/shiritori/wave2-c-word-2527.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2532,
+        "before": "さけ,サケ,サケ科の魚。多くの種類は海と川を行き来し、川で生まれて海で育った後に産卵のため川へ戻る。,サケ,1,,,,",
+        "after": "さけ,サケ,サケ科の魚。多くの種類は海と川を行き来し、川で生まれて海で育った後に産卵のため川へ戻る。,サケ,1,,assets/shiritori/wave2-c-word-2533.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2542,
+        "before": "ささ,笹,竹の仲間の植物。細長い葉をつける。,ササ 植物,1,Bamboo grass,,,",
+        "after": "ささ,笹,竹の仲間の植物。細長い葉をつける。,ササ 植物,1,Bamboo grass,assets/shiritori/wave2-c-word-2543.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2562,
+        "before": "さしみ,刺身,魚介類などを生のまま切り分けた料理。魚の刺身がよく知られる。,刺身,1,Sashimi,,,",
+        "after": "さしみ,刺身,魚介類などを生のまま切り分けた料理。魚の刺身がよく知られる。,刺身,1,Sashimi,assets/shiritori/wave2-c-word-2563.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2565,
+        "before": "さじ,匙,食べ物をすくって口に運ぶ道具。スプーン。,スプーン,1,Spoon,,,",
+        "after": "さじ,匙,食べ物をすくって口に運ぶ道具。スプーン。,スプーン,1,Spoon,assets/shiritori/wave2-c-word-2566.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2586,
+        "before": "さつまいも,サツマイモ,ヒルガオ科の植物で、地下にできる根を食用にする。焼きいもや料理に使われる。,サツマイモ,1,Sweet potato,,,",
+        "after": "さつまいも,サツマイモ,ヒルガオ科の植物で、地下にできる根を食用にする。焼きいもや料理に使われる。,サツマイモ,1,Sweet potato,assets/shiritori/wave2-c-word-2587.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2590,
+        "before": "さとう,砂糖,甘みをつける調味料。サトウキビやテンサイなどから作る。,砂糖,1,,,,",
+        "after": "さとう,砂糖,甘みをつける調味料。サトウキビやテンサイなどから作る。,砂糖,1,,assets/shiritori/wave2-c-word-2591.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2606,
+        "before": "さば,鯖,背中が青く、流線形の体をした海の魚。塩焼きやしめさばなどにして食べる。,サバ 魚,1,Mackerel,,,",
+        "after": "さば,鯖,背中が青く、流線形の体をした海の魚。塩焼きやしめさばなどにして食べる。,サバ 魚,1,Mackerel,assets/shiritori/wave2-c-word-2607.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2608,
+        "before": "さばく,砂漠,雨が少なく乾燥した地域。砂地だけでなく、岩やれきの多い砂漠もある。,砂漠,1,Desert,,,",
+        "after": "さばく,砂漠,雨が少なく乾燥した地域。砂地だけでなく、岩やれきの多い砂漠もある。,砂漠,1,Desert,assets/shiritori/wave2-c-word-2609.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2619,
+        "before": "さぼてん,サボテン,乾燥に強い植物の一群。多くは茎に水を蓄え、とげを持つ。,サボテン,1,Cactus,,,",
+        "after": "さぼてん,サボテン,乾燥に強い植物の一群。多くは茎に水を蓄え、とげを持つ。,サボテン,1,Cactus,assets/shiritori/wave2-c-word-2620.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2630,
+        "before": "さめ,鮫,軟骨でできた骨格を持つ魚の一群。多くは海にすみ、種類によって大きさや食性が異なる。,サメ,1,Shark,,,",
+        "after": "さめ,鮫,軟骨でできた骨格を持つ魚の一群。多くは海にすみ、種類によって大きさや食性が異なる。,サメ,1,Shark,assets/shiritori/wave2-c-word-2631.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2636,
+        "before": "さやえんどう,サヤエンドウ,若いさやごと食べるエンドウの仲間。,サヤエンドウ,1,Snow pea,,,",
+        "after": "さやえんどう,サヤエンドウ,若いさやごと食べるエンドウの仲間。,サヤエンドウ,1,Snow pea,assets/shiritori/wave2-c-word-2637.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2644,
+        "before": "さら,皿,食べ物などを盛る、浅く平たい器。,皿 食器,1,Plate,,,",
+        "after": "さら,皿,食べ物などを盛る、浅く平たい器。,皿 食器,1,Plate,assets/shiritori/wave2-c-word-2645.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2649,
+        "before": "さらだ,サラダ,野菜などを切って盛り合わせたり、味つけしたりした料理。,サラダ,1,Salad,,,",
+        "after": "さらだ,サラダ,野菜などを切って盛り合わせたり、味つけしたりした料理。,サラダ,1,Salad,assets/shiritori/wave2-c-word-2650.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2653,
+        "before": "さる,猿,霊長類のうち、サルの仲間の動物。種類によって暮らし方や体つきは異なる。,サル,1,Monkey,,,",
+        "after": "さる,猿,霊長類のうち、サルの仲間の動物。種類によって暮らし方や体つきは異なる。,サル,1,Monkey,assets/shiritori/common-word-2654.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2679,
+        "before": "さんぐらす,サングラス,強い光をおさえるための色付きレンズのめがね。,サングラス,1,Sunglasses,,,",
+        "after": "さんぐらす,サングラス,強い光をおさえるための色付きレンズのめがね。,サングラス,1,Sunglasses,assets/shiritori/wave2-c-word-2680.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2704,
+        "before": "さんだる,サンダル,足をおおう部分が少なく、足首やかかとが出る形の履き物。,サンダル,1,Sandals,,,",
+        "after": "さんだる,サンダル,足をおおう部分が少なく、足首やかかとが出る形の履き物。,サンダル,1,Sandals,assets/shiritori/wave2-c-word-2705.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2713,
+        "before": "さんどいっち,サンドイッチ,パンなどの間に具をはさんだ食べ物。,サンドイッチ,1,Sandwich,,,",
+        "after": "さんどいっち,サンドイッチ,パンなどの間に具をはさんだ食べ物。,サンドイッチ,1,Sandwich,assets/shiritori/wave2-c-word-2714.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2724,
+        "before": "さんま,サンマ,細長い体をした海水魚。秋にとれる魚として知られる。,サンマ,1,,,,",
+        "after": "さんま,サンマ,細長い体をした海水魚。秋にとれる魚として知られる。,サンマ,1,,assets/shiritori/wave2-c-word-2725.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2736,
+        "before": "さんりんしゃ,三輪車,三つの車輪がついた乗り物。幼児用の足こぎ三輪車などがある。,三輪車,1,Tricycle,,,",
+        "after": "さんりんしゃ,三輪車,三つの車輪がついた乗り物。幼児用の足こぎ三輪車などがある。,三輪車,1,Tricycle,assets/shiritori/wave2-c-word-2737.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2744,
+        "before": "ざくろ,ザクロ,秋に実が熟す果樹。赤い粒を包んだ果実を食用にする。,ザクロ,1,,,,",
+        "after": "ざくろ,ザクロ,秋に実が熟す果樹。赤い粒を包んだ果実を食用にする。,ザクロ,1,,assets/shiritori/wave2-c-word-2745.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2750,
+        "before": "ざりがに,ザリガニ,川や湖などにすむ、はさみを持つ甲殻類。,ザリガニ,1,,,,",
+        "after": "ざりがに,ザリガニ,川や湖などにすむ、はさみを持つ甲殻類。,ザリガニ,1,,assets/shiritori/wave2-c-word-2751.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2751,
+        "before": "ざる,ざる,竹や金属などで編んだ、食材の水切りや物の整理に使う道具。,ざる,1,,,,",
+        "after": "ざる,ざる,竹や金属などで編んだ、食材の水切りや物の整理に使う道具。,ざる,1,,assets/shiritori/wave2-c-word-2752.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2761,
+        "before": "しお,塩,塩化ナトリウムを主成分とする調味料。海水から作る方法もある。,塩,1,Salt,,,",
+        "after": "しお,塩,塩化ナトリウムを主成分とする調味料。海水から作る方法もある。,塩,1,Salt,assets/shiritori/common-word-2762.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2763,
+        "before": "しか,シカ,シカ科の動物。多くの種類ではオスに角がある。,シカ,1,,,,",
+        "after": "しか,シカ,シカ科の動物。多くの種類ではオスに角がある。,シカ,1,,assets/shiritori/wave2-c-word-2764.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2764,
+        "before": "しか,鹿,シカ科の動物。多くの種類ではオスに枝分かれした角がある。,シカ 動物,1,Deer,,,",
+        "after": "しか,鹿,シカ科の動物。多くの種類ではオスに枝分かれした角がある。,シカ 動物,1,Deer,assets/shiritori/common-word-2765.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2781,
+        "before": "しじみ,シジミ,淡水や汽水にすむ小さな二枚貝。みそ汁などの料理に使われる。,シジミ,1,Freshwater clam,,,",
+        "after": "しじみ,シジミ,淡水や汽水にすむ小さな二枚貝。みそ汁などの料理に使われる。,シジミ,1,Freshwater clam,assets/shiritori/wave2-c-word-2782.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2796,
+        "before": "しばふ,芝生,芝草を短く刈りそろえて育てた場所。,芝生,1,Lawn,,,",
+        "after": "しばふ,芝生,芝草を短く刈りそろえて育てた場所。,芝生,1,Lawn,assets/shiritori/wave2-c-word-2797.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2805,
+        "before": "しま,島,周りを水で囲まれた陸地。,島,1,Island,,,",
+        "after": "しま,島,周りを水で囲まれた陸地。,島,1,Island,assets/shiritori/wave2-c-word-2806.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2808,
+        "before": "しまうま,シマウマ,白黒などのしま模様があるウマ科の動物。主にアフリカにすむ。,シマウマ,1,Zebra,,,",
+        "after": "しまうま,シマウマ,白黒などのしま模様があるウマ科の動物。主にアフリカにすむ。,シマウマ,1,Zebra,assets/shiritori/wave2-c-word-2809.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2819,
+        "before": "しゃつ,シャツ,上半身に着る衣服。,シャツ,1,Shirt,,,",
+        "after": "しゃつ,シャツ,上半身に着る衣服。,シャツ,1,Shirt,assets/shiritori/wave2-c-word-2820.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2821,
+        "before": "しゃぼんだま,シャボン玉,せっけん水などを吹いて作る、薄い膜でできた丸い泡。,シャボン玉,1,Soap bubble,,,",
+        "after": "しゃぼんだま,シャボン玉,せっけん水などを吹いて作る、薄い膜でできた丸い泡。,シャボン玉,1,Soap bubble,assets/shiritori/wave2-c-word-2822.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2847,
+        "before": "しょうゆ,醤油,大豆や小麦などを発酵させて作る、塩味のある調味料。,醤油,1,Soy sauce,,,",
+        "after": "しょうゆ,醤油,大豆や小麦などを発酵させて作る、塩味のある調味料。,醤油,1,Soy sauce,assets/shiritori/wave2-c-word-2848.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2852,
+        "before": "しょくぱん,食パン,小麦粉などを使って焼いた、主に食事に食べるパン。,食パン,1,White bread,,,",
+        "after": "しょくぱん,食パン,小麦粉などを使って焼いた、主に食事に食べるパン。,食パン,1,White bread,assets/shiritori/wave2-c-word-2853.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2862,
+        "before": "しろ,城,敵から身を守るために造られた建物や施設。日本では城主の住まいとしても使われた。,日本の城,1,Castle,,,",
+        "after": "しろ,城,敵から身を守るために造られた建物や施設。日本では城主の住まいとしても使われた。,日本の城,1,Castle,assets/shiritori/wave2-c-word-2863.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2869,
+        "before": "しんじゅ,真珠,貝の体内でできる、光沢のある丸い粒。装飾品に使われる。,真珠,1,Pearl,,,",
+        "after": "しんじゅ,真珠,貝の体内でできる、光沢のある丸い粒。装飾品に使われる。,真珠,1,Pearl,assets/shiritori/wave2-c-word-2870.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2877,
+        "before": "しーる,シール,紙などに貼り付けて使う、薄い印や飾り。封かんや目印にも使う。,シール,1,Sticker,,,",
+        "after": "しーる,シール,紙などに貼り付けて使う、薄い印や飾り。封かんや目印にも使う。,シール,1,Sticker,assets/shiritori/wave2-c-word-2878.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2890,
+        "before": "じしゃく,磁石,鉄などを引きつける力を持つ物体。方位を調べる道具にも使われる。,磁石,1,,,,",
+        "after": "じしゃく,磁石,鉄などを引きつける力を持つ物体。方位を調べる道具にも使われる。,磁石,1,,assets/shiritori/wave2-c-word-2891.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2892,
+        "before": "じてんしゃ,自転車,ペダルをこいで進む、二つの車輪がある乗り物。,自転車,1,Bicycle,,,",
+        "after": "じてんしゃ,自転車,ペダルをこいで進む、二つの車輪がある乗り物。,自転車,1,Bicycle,assets/shiritori/wave2-c-word-2893.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2894,
+        "before": "じどうしゃ,自動車,エンジンなどの動力で道路を走る車。,自動車,1,,,,",
+        "after": "じどうしゃ,自動車,エンジンなどの動力で道路を走る車。,自動車,1,,assets/shiritori/wave2-c-word-2895.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2901,
+        "before": "じゃがいも,ジャガイモ,地下にできる茎を食用にする植物。カレーや肉じゃがなどに使う。,ジャガイモ,1,Potato,,,",
+        "after": "じゃがいも,ジャガイモ,地下にできる茎を食用にする植物。カレーや肉じゃがなどに使う。,ジャガイモ,1,Potato,assets/shiritori/wave2-c-word-2902.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2911,
+        "before": "じゅうたん,絨毯,床に敷く、厚手の織物などでできた敷物。,絨毯,1,,,,",
+        "after": "じゅうたん,絨毯,床に敷く、厚手の織物などでできた敷物。,絨毯,1,,assets/shiritori/wave2-c-word-2912.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2929,
+        "before": "す,巣,鳥や虫などが卵を産んだり、子を育てたりするために作る場所。,鳥の巣,1,Nest,,,",
+        "after": "す,巣,鳥や虫などが卵を産んだり、子を育てたりするために作る場所。,鳥の巣,1,Nest,assets/shiritori/wave2-c-word-2930.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2932,
+        "before": "すいか,スイカ,果肉に水分を多く含む、ウリ科の大きな果物。夏によく食べられる。,スイカ,1,Watermelon,,,",
+        "after": "すいか,スイカ,果肉に水分を多く含む、ウリ科の大きな果物。夏によく食べられる。,スイカ,1,Watermelon,assets/shiritori/common-word-2933.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2960,
+        "before": "すかんく,スカンク,哺乳類の一群。危険を感じると、臭いの強い液体を出して身を守る種類がいる。,スカンク,1,Skunk,,,",
+        "after": "すかんく,スカンク,哺乳類の一群。危険を感じると、臭いの強い液体を出して身を守る種類がいる。,スカンク,1,Skunk,assets/shiritori/wave2-c-word-2961.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2962,
+        "before": "すかーと,スカート,腰から下に着る筒状や広がった形の衣服。,スカート,1,Skirt,,,",
+        "after": "すかーと,スカート,腰から下に着る筒状や広がった形の衣服。,スカート,1,Skirt,assets/shiritori/wave2-c-word-2963.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2968,
+        "before": "すきやき,すき焼き,肉や野菜などを、しょうゆや砂糖などで味つけして煮ながら食べる料理。,すき焼き,1,Sukiyaki,,,",
+        "after": "すきやき,すき焼き,肉や野菜などを、しょうゆや砂糖などで味つけして煮ながら食べる料理。,すき焼き,1,Sukiyaki,assets/shiritori/wave2-c-word-2969.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2984,
+        "before": "すし,寿司,酢飯を使った日本料理。魚介などをのせたり、具を包んだりする種類がある。,寿司,1,,,,",
+        "after": "すし,寿司,酢飯を使った日本料理。魚介などをのせたり、具を包んだりする種類がある。,寿司,1,,assets/shiritori/wave2-c-word-2985.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2986,
+        "before": "すず,鈴,振ると音が鳴る小さな道具。中の玉などが内側に当たって音を出す。,鈴,1,Bell,,,",
+        "after": "すず,鈴,振ると音が鳴る小さな道具。中の玉などが内側に当たって音を出す。,鈴,1,Bell,assets/shiritori/wave2-c-word-2987.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 2989,
+        "before": "すずめ,スズメ,小型の鳥。日本では人里近くにもすみ、チュンチュンと鳴く。,スズメ,1,Sparrow,,,",
+        "after": "すずめ,スズメ,小型の鳥。日本では人里近くにもすみ、チュンチュンと鳴く。,スズメ,1,Sparrow,assets/shiritori/common-word-2990.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3000,
+        "before": "すだれ,簾,竹や葦などを編んで作るすだれ。日よけや目隠しに使う。,すだれ,1,Bamboo blind,,,",
+        "after": "すだれ,簾,竹や葦などを編んで作るすだれ。日よけや目隠しに使う。,すだれ,1,Bamboo blind,assets/shiritori/wave2-c-word-3001.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3003,
+        "before": "すてごさうるす,ステゴサウルス,背中に大きな板状の骨が並び、尾にとげを持つ草食恐竜。,ステゴサウルス,1,Stegosaurus,,,",
+        "after": "すてごさうるす,ステゴサウルス,背中に大きな板状の骨が並び、尾にとげを持つ草食恐竜。,ステゴサウルス,1,Stegosaurus,assets/shiritori/wave2-c-word-3004.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3005,
+        "before": "すてーき,ステーキ,肉の厚い切り身を焼いた料理。牛肉以外の肉や魚を使うこともある。,ステーキ,1,Steak,,,",
+        "after": "すてーき,ステーキ,肉の厚い切り身を焼いた料理。牛肉以外の肉や魚を使うこともある。,ステーキ,1,Steak,assets/shiritori/wave2-c-word-3006.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3011,
+        "before": "すなば,砂場,公園などに設けられた、砂遊びをする場所。,砂場,1,Sandbox,,,",
+        "after": "すなば,砂場,公園などに設けられた、砂遊びをする場所。,砂場,1,Sandbox,assets/shiritori/wave2-c-word-3012.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3019,
+        "before": "すぱげってぃ,スパゲッティ,細長い棒状のめん。また、それを使ったイタリア料理。,スパゲッティ,1,Spaghetti,,,",
+        "after": "すぱげってぃ,スパゲッティ,細長い棒状のめん。また、それを使ったイタリア料理。,スパゲッティ,1,Spaghetti,assets/shiritori/wave2-c-word-3020.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3027,
+        "before": "すべりだい,すべり台,階段を上ってから、傾いた板を滑り降りる遊具。,すべり台,1,,,,",
+        "after": "すべりだい,すべり台,階段を上ってから、傾いた板を滑り降りる遊具。,すべり台,1,,assets/shiritori/wave2-c-word-3028.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3034,
+        "before": "すぽんじ,スポンジ,小さな穴が多く開いた、柔らかく水を吸いやすい材料。食器洗いや清掃にも使う。,スポンジ,1,Sponge,,,",
+        "after": "すぽんじ,スポンジ,小さな穴が多く開いた、柔らかく水を吸いやすい材料。食器洗いや清掃にも使う。,スポンジ,1,Sponge,assets/shiritori/wave2-c-word-3035.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3047,
+        "before": "すりっぱ,スリッパ,お家の中やお部屋に入るとき、靴下の上からパタパタと簡単に履く室内用の靴。,スリッパ,1,Slippers,,,",
+        "after": "すりっぱ,スリッパ,お家の中やお部屋に入るとき、靴下の上からパタパタと簡単に履く室内用の靴。,スリッパ,1,Slippers,assets/shiritori/wave2-c-word-3048.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3110,
+        "before": "せっけん,石鹸,体や物を洗うために使うもの。水といっしょに使って、油やよごれを落とす。,石鹸,1,Soap,,,",
+        "after": "せっけん,石鹸,体や物を洗うために使うもの。水といっしょに使って、油やよごれを落とす。,石鹸,1,Soap,assets/shiritori/common-word-3111.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3216,
+        "before": "そら,空,地上から上を見たときに広がっている空間。,空,1,Sky,,,",
+        "after": "そら,空,地上から上を見たときに広がっている空間。,空,1,Sky,assets/shiritori/common-word-3217.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3325,
+        "before": "たこ,タコ,八本の腕に吸盤を持つ海の生き物。危険を感じると墨を吐く。,タコ,1,Octopus,,,",
+        "after": "たこ,タコ,八本の腕に吸盤を持つ海の生き物。危険を感じると墨を吐く。,タコ,1,Octopus,assets/shiritori/common-word-3326.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3381,
+        "before": "たまご,卵,鳥や虫などが産み 生き物の子が育つもとになるもの。,卵,1,,,,",
+        "after": "たまご,卵,鳥や虫などが産み 生き物の子が育つもとになるもの。,卵,1,,assets/shiritori/common-word-3382.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3386,
+        "before": "たまねぎ,タマネギ,料理に使う野菜。切ると目にしみて涙が出ることがある。,タマネギ,1,Onion,,,",
+        "after": "たまねぎ,タマネギ,料理に使う野菜。切ると目にしみて涙が出ることがある。,タマネギ,1,Onion,assets/shiritori/common-word-3387.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3523,
+        "before": "ちょう,蝶,二枚の大きな羽を持ち 花の蜜を吸う昆虫。,チョウ,1,Butterfly,,,",
+        "after": "ちょう,蝶,二枚の大きな羽を持ち 花の蜜を吸う昆虫。,チョウ,1,Butterfly,assets/shiritori/common-word-3524.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3586,
+        "before": "つえ,杖,歩くときに手で持ち 地面について体を支える棒。,杖,1,Cane,,,",
+        "after": "つえ,杖,歩くときに手で持ち 地面について体を支える棒。,杖,1,Cane,assets/shiritori/wave2-d-word-3587.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3596,
+        "before": "つき,月（天体）,月は、地球の周りを回る天体。太陽の光を反射して明るく見える。,月,1,Moon,,,",
+        "after": "つき,月（天体）,月は、地球の周りを回る天体。太陽の光を反射して明るく見える。,月,1,Moon,assets/shiritori/common-word-3597.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3607,
+        "before": "つくえ,机,勉強や仕事をするために物を置く台。,机,1,Desk,,,",
+        "after": "つくえ,机,勉強や仕事をするために物を置く台。,机,1,Desk,assets/shiritori/common-word-3608.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3608,
+        "before": "つくし,ツクシ,春に地面から出るスギナの胞子を作る部分。,ツクシ,1,Horsetail,,,",
+        "after": "つくし,ツクシ,春に地面から出るスギナの胞子を作る部分。,ツクシ,1,Horsetail,assets/shiritori/wave2-d-word-3609.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3618,
+        "before": "つた,ツタ,ほかの木や壁などにからみついて伸びる植物。,ツタの葉,1,Ivy,,,",
+        "after": "つた,ツタ,ほかの木や壁などにからみついて伸びる植物。,ツタの葉,1,Ivy,assets/shiritori/wave2-d-word-3619.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3623,
+        "before": "つち,土,岩が細かくなった粒や 腐った植物などが混ざった地面の材料。,土,1,Soil,,,",
+        "after": "つち,土,岩が細かくなった粒や 腐った植物などが混ざった地面の材料。,土,1,Soil,assets/shiritori/wave2-d-word-3624.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3626,
+        "before": "つつ,筒,中が空洞で 細長い管の形をしたもの。,筒,1,Cylinder,,,",
+        "after": "つつ,筒,中が空洞で 細長い管の形をしたもの。,筒,1,Cylinder,assets/shiritori/wave2-d-word-3627.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3628,
+        "before": "つつじ,ツツジ,春などに色鮮やかな花を咲かせる低木。,ツツジ,1,Azalea,,,",
+        "after": "つつじ,ツツジ,春などに色鮮やかな花を咲かせる低木。,ツツジ,1,Azalea,assets/shiritori/wave2-d-word-3629.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3637,
+        "before": "つな,綱,糸や繊維をより合わせて作った太いひも。,綱引き,1,Rope,,,",
+        "after": "つな,綱,糸や繊維をより合わせて作った太いひも。,綱引き,1,Rope,assets/shiritori/wave2-d-word-3638.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3646,
+        "before": "つばき,ツバキ,光沢のある葉を持ち 冬から春に花を咲かせる木。,ツバキ,1,Camellia,,,",
+        "after": "つばき,ツバキ,光沢のある葉を持ち 冬から春に花を咲かせる木。,ツバキ,1,Camellia,assets/shiritori/wave2-d-word-3647.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3648,
+        "before": "つばめ,ツバメ,細長い翼と二股の尾を持つ小鳥。空中を飛びながら虫を捕る。,ツバメ,1,Swallow,,,",
+        "after": "つばめ,ツバメ,細長い翼と二股の尾を持つ小鳥。空中を飛びながら虫を捕る。,ツバメ,1,Swallow,assets/shiritori/wave2-d-word-3649.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3651,
+        "before": "つぶあん,粒あん,小豆の粒を残して作ったあんこ。,あんこ,1,Sweet bean paste,,,",
+        "after": "つぶあん,粒あん,小豆の粒を残して作ったあんこ。,あんこ,1,Sweet bean paste,assets/shiritori/wave2-d-word-3652.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3655,
+        "before": "つぼ,壺,口が狭く胴がふくらんだ入れ物。陶器などで作る。,壺,1,Pot,,,",
+        "after": "つぼ,壺,口が狭く胴がふくらんだ入れ物。陶器などで作る。,壺,1,Pot,assets/shiritori/wave2-d-word-3656.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3657,
+        "before": "つぼみ,蕾,花が咲く前に 花びらなどが包まれている部分。,つぼみ,1,Bud,,,",
+        "after": "つぼみ,蕾,花が咲く前に 花びらなどが包まれている部分。,つぼみ,1,Bud,assets/shiritori/wave2-d-word-3658.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3666,
+        "before": "つみき,積み木,木などでできた形の違うブロックを積んで遊ぶおもちゃ。,積み木,1,Toy blocks,,,",
+        "after": "つみき,積み木,木などでできた形の違うブロックを積んで遊ぶおもちゃ。,積み木,1,Toy blocks,assets/shiritori/wave2-d-word-3667.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3685,
+        "before": "つりざお,釣り竿,魚つりで、糸やはりをつけて使う長いぼう。,釣り竿,1,Fishing rod,,,",
+        "after": "つりざお,釣り竿,魚つりで、糸やはりをつけて使う長いぼう。,釣り竿,1,Fishing rod,assets/shiritori/wave2-d-word-3686.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3686,
+        "before": "つりばり,釣り針,魚つりで、魚をひっかけるために糸の先につける小さなはり。,釣り針,1,Fishhook,,,",
+        "after": "つりばり,釣り針,魚つりで、魚をひっかけるために糸の先につける小さなはり。,釣り針,1,Fishhook,assets/shiritori/wave2-d-word-3687.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3688,
+        "before": "つる,ツル,首と足が長い鳥のなかま。日本では、おめでたい鳥として絵などにえがかれます。,ツル 鳥,1,,,,",
+        "after": "つる,ツル,首と足が長い鳥のなかま。日本では、おめでたい鳥として絵などにえがかれます。,ツル 鳥,1,,assets/shiritori/common-word-3689.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3689,
+        "before": "つる,蔓,ほかのものに巻きついたり、地面をはったりして長くのびる植物のくき。アサガオなどに見られます。,アサガオのつる,1,Vine,,,",
+        "after": "つる,蔓,ほかのものに巻きついたり、地面をはったりして長くのびる植物のくき。アサガオなどに見られます。,アサガオのつる,1,Vine,assets/shiritori/wave2-d-word-3690.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3701,
+        "before": "てぃらのさうるす,ティラノサウルス,おおきくてつよい、にくしょくのきょうりゅう。,ティラノサウルス,1,Tyrannosaurus,,,",
+        "after": "てぃらのさうるす,ティラノサウルス,おおきくてつよい、にくしょくのきょうりゅう。,ティラノサウルス,1,Tyrannosaurus,assets/shiritori/wave2-d-word-3702.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3713,
+        "before": "ていしょく,定食,ごはんとおかずなどが、一組になった食事。,定食,1,Set meal,,,",
+        "after": "ていしょく,定食,ごはんとおかずなどが、一組になった食事。,定食,1,Set meal,assets/shiritori/wave2-d-word-3714.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3719,
+        "before": "ていりゅうじょ,停留所,バスや路面電車などが、人を乗せたりおろしたりするために止まる場所。,バス停,1,Bus stop,,,",
+        "after": "ていりゅうじょ,停留所,バスや路面電車などが、人を乗せたりおろしたりするために止まる場所。,バス停,1,Bus stop,assets/shiritori/wave2-d-word-3720.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3734,
+        "before": "てすり,手すり,歩くときなどに、体を支えるためにつかまるぼう。階だんや通路などにあります。,手すり,1,Handrail,,,",
+        "after": "てすり,手すり,歩くときなどに、体を支えるためにつかまるぼう。階だんや通路などにあります。,手すり,1,Handrail,assets/shiritori/wave2-d-word-3735.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3761,
+        "before": "てぬぐい,手ぬぐい,手や体をふくためなどに使う、細長いぬの。頭に巻くこともあります。,手ぬぐい,1,Towel,,,",
+        "after": "てぬぐい,手ぬぐい,手や体をふくためなどに使う、細長いぬの。頭に巻くこともあります。,手ぬぐい,1,Towel,assets/shiritori/wave2-d-word-3762.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3775,
+        "before": "てら,寺,仏教のおしえに関わる建物や場所。おぼうさんがおつとめをしたり、人がおまいりしたりします。,お寺,1,Temple,,,",
+        "after": "てら,寺,仏教のおしえに関わる建物や場所。おぼうさんがおつとめをしたり、人がおまいりしたりします。,お寺,1,Temple,assets/shiritori/wave2-d-word-3776.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3778,
+        "before": "てらす,テラス,建物の外に続く、平らな床のある場所。いすなどを置いて使うこともあります。,テラス,1,Terrace,,,",
+        "after": "てらす,テラス,建物の外に続く、平らな床のある場所。いすなどを置いて使うこともあります。,テラス,1,Terrace,assets/shiritori/wave2-d-word-3779.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3780,
+        "before": "てりやき,照り焼き,肉や魚などにたれをつけ、表面につやが出るようにやいた料理。しょうゆや砂糖などを合わせたたれを使います。,照り焼き,1,Teriyaki,,,",
+        "after": "てりやき,照り焼き,肉や魚などにたれをつけ、表面につやが出るようにやいた料理。しょうゆや砂糖などを合わせたたれを使います。,照り焼き,1,Teriyaki,assets/shiritori/wave2-d-word-3781.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3782,
+        "before": "てれび,テレビ,放送などの映像や音を、見たり聞いたりするための道具。ニュースやアニメなどを楽しめます。,テレビ,1,Television,,,",
+        "after": "てれび,テレビ,放送などの映像や音を、見たり聞いたりするための道具。ニュースやアニメなどを楽しめます。,テレビ,1,Television,assets/shiritori/wave2-d-word-3783.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3801,
+        "before": "てんとうむし,テントウムシ,丸みのある、小さな虫のなかま。赤い羽に黒い点がある種類などがいます。,テントウムシ,1,,,,",
+        "after": "てんとうむし,テントウムシ,丸みのある、小さな虫のなかま。赤い羽に黒い点がある種類などがいます。,テントウムシ,1,,assets/shiritori/wave2-d-word-3802.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3806,
+        "before": "てんぷら,天ぷら,魚や野菜などに、小麦粉などのころもをつけて油であげた料理。,天ぷら,1,Tempura,,,",
+        "after": "てんぷら,天ぷら,魚や野菜などに、小麦粉などのころもをつけて油であげた料理。,天ぷら,1,Tempura,assets/shiritori/wave2-d-word-3807.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3830,
+        "before": "でんしゃ,電車,電気の力で、線路の上を走る乗りもの。,電車,1,,,,",
+        "after": "でんしゃ,電車,電気の力で、線路の上を走る乗りもの。,電車,1,,assets/shiritori/wave2-d-word-3831.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3831,
+        "before": "でんしれんじ,電子レンジ,電気の力で、食べものをあたためる道具。,電子レンジ,1,,,,",
+        "after": "でんしれんじ,電子レンジ,電気の力で、食べものをあたためる道具。,電子レンジ,1,,assets/shiritori/wave2-d-word-3832.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3833,
+        "before": "でんち,電池,おもちゃや時計などをうごかす電気を取り出す道具。丸いものや四角いものなど、いろいろな形があります。,電池,1,,,,",
+        "after": "でんち,電池,おもちゃや時計などをうごかす電気を取り出す道具。丸いものや四角いものなど、いろいろな形があります。,電池,1,,assets/shiritori/wave2-d-word-3834.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3834,
+        "before": "でんちゅう,電柱,電線などを高いところで支えるはしら。,電柱,1,Electric pole,,,",
+        "after": "でんちゅう,電柱,電線などを高いところで支えるはしら。,電柱,1,Electric pole,assets/shiritori/wave2-d-word-3835.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3840,
+        "before": "でんわ,電話,遠くにいる人と、声で話せる道具やしくみ。,電話,1,,,,",
+        "after": "でんわ,電話,遠くにいる人と、声で話せる道具やしくみ。,電話,1,,assets/shiritori/wave2-d-word-3841.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3844,
+        "before": "といれ,トイレ,おしっこやうんちをするための場所。,トイレ,1,Toilet,,,",
+        "after": "といれ,トイレ,おしっこやうんちをするための場所。,トイレ,1,Toilet,assets/shiritori/wave2-d-word-3845.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3854,
+        "before": "とうだい,灯台,船が安全に進めるよう、光などで場所を知らせる設備。海岸や島などにあります。,灯台,1,Lighthouse,,,",
+        "after": "とうだい,灯台,船が安全に進めるよう、光などで場所を知らせる設備。海岸や島などにあります。,灯台,1,Lighthouse,assets/shiritori/wave2-d-word-3855.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3855,
+        "before": "とうにゅう,豆乳,大豆をすりつぶし、水と合わせて煮たものから、かすを取りのぞいた白い液体。飲みものや豆腐の材料に使います。,豆乳,1,Soy milk,,,",
+        "after": "とうにゅう,豆乳,大豆をすりつぶし、水と合わせて煮たものから、かすを取りのぞいた白い液体。飲みものや豆腐の材料に使います。,豆乳,1,Soy milk,assets/shiritori/wave2-d-word-3856.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3856,
+        "before": "とうふ,豆腐,大豆から作る、やわらかい食べもの。豆乳を固めて作ります。,豆腐,1,Tofu,,,",
+        "after": "とうふ,豆腐,大豆から作る、やわらかい食べもの。豆乳を固めて作ります。,豆腐,1,Tofu,assets/shiritori/wave2-d-word-3857.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3858,
+        "before": "とうもろこし,トウモロコシ,つぶつぶの実が集まる、植物とその実の名前。黄色い実などがあり、ゆでたりやいたりして食べます。,トウモロコシ,1,Corn,,,",
+        "after": "とうもろこし,トウモロコシ,つぶつぶの実が集まる、植物とその実の名前。黄色い実などがあり、ゆでたりやいたりして食べます。,トウモロコシ,1,Corn,assets/shiritori/wave2-d-word-3859.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3867,
+        "before": "とかげ,トカゲ,長いしっぽがあり、地面などをはって動く、は虫類のなかま。,トカゲ,1,Lizard,,,",
+        "after": "とかげ,トカゲ,長いしっぽがあり、地面などをはって動く、は虫類のなかま。,トカゲ,1,Lizard,assets/shiritori/wave2-d-word-3868.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3884,
+        "before": "とけい,時計,今の時刻や、たった時間を知らせる道具。はりで表すものや、数字で表すものがあります。,時計,1,Clock,,,",
+        "after": "とけい,時計,今の時刻や、たった時間を知らせる道具。はりで表すものや、数字で表すものがあります。,時計,1,Clock,assets/shiritori/wave2-d-word-3885.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3918,
+        "before": "とびうお,トビウオ,ひれを広げて、水面の上をすべるように飛ぶ魚のなかま。,トビウオ,1,Flying fish,,,",
+        "after": "とびうお,トビウオ,ひれを広げて、水面の上をすべるように飛ぶ魚のなかま。,トビウオ,1,Flying fish,assets/shiritori/wave2-d-word-3919.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3919,
+        "before": "とびばこ,跳び箱,手をついて飛びこえる、体育の道具。箱を積んで高さを変えられます。,跳び箱,1,Vaulting horse,,,",
+        "after": "とびばこ,跳び箱,手をついて飛びこえる、体育の道具。箱を積んで高さを変えられます。,跳び箱,1,Vaulting horse,assets/shiritori/wave2-d-word-3920.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3922,
+        "before": "とまと,トマト,丸い実を食べる野菜。赤いものなどがあり、サラダや料理に使います。,トマト,1,Tomato,,,",
+        "after": "とまと,トマト,丸い実を食べる野菜。赤いものなどがあり、サラダや料理に使います。,トマト,1,Tomato,assets/shiritori/common-word-3923.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3928,
+        "before": "とら,トラ,しまもようのある、大きなネコのなかま。肉を食べる動物です。,トラ,1,Tiger,,,",
+        "after": "とら,トラ,しまもようのある、大きなネコのなかま。肉を食べる動物です。,トラ,1,Tiger,assets/shiritori/wave2-d-word-3929.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3929,
+        "before": "とらっく,トラック,荷物を運ぶための自動車。後ろに荷物をのせる場所があります。,トラック,1,Truck,,,",
+        "after": "とらっく,トラック,荷物を運ぶための自動車。後ろに荷物をのせる場所があります。,トラック,1,Truck,assets/shiritori/wave2-d-word-3930.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3933,
+        "before": "とり,鳥,羽毛におおわれた体と、くちばしがある生きもののなかま。空を飛べない鳥もいます。,小鳥,1,Bird,,,",
+        "after": "とり,鳥,羽毛におおわれた体と、くちばしがある生きもののなかま。空を飛べない鳥もいます。,小鳥,1,Bird,assets/shiritori/wave2-d-word-3934.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3934,
+        "before": "とりい,鳥居,神社の入り口などに立つ、門のような形のもの。赤いものだけでなく、木や石で作ったものなどもあります。,鳥居,1,,,,",
+        "after": "とりい,鳥居,神社の入り口などに立つ、門のような形のもの。赤いものだけでなく、木や石で作ったものなどもあります。,鳥居,1,,assets/shiritori/wave2-d-word-3935.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3937,
+        "before": "とりけらとぷす,トリケラトプス,あたまに３つのつのがあって、くさをたべるきょうりゅう。,トリケラトプス,1,Triceratops,,,",
+        "after": "とりけらとぷす,トリケラトプス,あたまに３つのつのがあって、くさをたべるきょうりゅう。,トリケラトプス,1,Triceratops,assets/shiritori/wave2-d-word-3938.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3953,
+        "before": "とんかつ,とんかつ,ぶた肉にころもをつけ、油であげた料理。,とんかつ,1,Pork cutlet,,,",
+        "after": "とんかつ,とんかつ,ぶた肉にころもをつけ、油であげた料理。,とんかつ,1,Pork cutlet,assets/shiritori/wave2-d-word-3954.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3956,
+        "before": "とんぼ,トンボ,大きな目と、四枚の羽がある虫のなかま。秋だけでなく、春や夏に見られる種類もいます。,トンボ,1,,,,",
+        "after": "とんぼ,トンボ,大きな目と、四枚の羽がある虫のなかま。秋だけでなく、春や夏に見られる種類もいます。,トンボ,1,,assets/shiritori/wave2-d-word-3957.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3973,
+        "before": "どじょう,ドジョウ,川や田んぼにすむ細長い魚。口のまわりにひげがある。,ドジョウ,1,,,,",
+        "after": "どじょう,ドジョウ,川や田んぼにすむ細長い魚。口のまわりにひげがある。,ドジョウ,1,,assets/shiritori/wave2-d-word-3974.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3979,
+        "before": "どーなつ,ドーナツ,小麦粉などで作った生地を輪の形にして焼いたり揚げたりする菓子。,ドーナツ,1,,,,",
+        "after": "どーなつ,ドーナツ,小麦粉などで作った生地を輪の形にして焼いたり揚げたりする菓子。,ドーナツ,1,,assets/shiritori/wave2-d-word-3980.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3991,
+        "before": "どれす,ドレス,上着とスカートがつながった服。式やパーティーで着ることもある。,ドレス,1,Dress,,,",
+        "after": "どれす,ドレス,上着とスカートがつながった服。式やパーティーで着ることもある。,ドレス,1,Dress,assets/shiritori/wave2-d-word-3992.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 3998,
+        "before": "どんぐり,どんぐり,クヌギやカシなどの木になる実。,どんぐり,1,,,,",
+        "after": "どんぐり,どんぐり,クヌギやカシなどの木になる実。,どんぐり,1,,assets/shiritori/wave2-d-word-3999.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4001,
+        "before": "どんぶり,丼,ご飯や麺などを入れる、深さのある器。,丼,1,Bowl,,,",
+        "after": "どんぶり,丼,ご飯や麺などを入れる、深さのある器。,丼,1,Bowl,assets/shiritori/wave2-d-word-4002.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4017,
+        "before": "ないふ,ナイフ,物を切るための刃物。,ナイフ,1,Knife,,,",
+        "after": "ないふ,ナイフ,物を切るための刃物。,ナイフ,1,Knife,assets/shiritori/wave2-d-word-4018.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4021,
+        "before": "なえ,苗,育てている植物の若いもの。,植物の苗,1,Seedling,,,",
+        "after": "なえ,苗,育てている植物の若いもの。,植物の苗,1,Seedling,assets/shiritori/wave2-d-word-4022.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4057,
+        "before": "なし,梨,みずみずしく、歯ごたえのある実を食べる果物。,梨,1,,,,",
+        "after": "なし,梨,みずみずしく、歯ごたえのある実を食べる果物。,梨,1,,assets/shiritori/wave2-d-word-4058.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4058,
+        "before": "なす,ナス,紫色の実を食べる野菜。,ナス,1,Eggplant,,,",
+        "after": "なす,ナス,紫色の実を食べる野菜。,ナス,1,Eggplant,assets/shiritori/common-word-4059.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4059,
+        "before": "なすび,茄子,ナスの別の書き方。,茄子,1,,,,",
+        "after": "なすび,茄子,ナスの別の書き方。,茄子,1,,assets/shiritori/wave2-d-word-4060.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4068,
+        "before": "なっとう,納豆,大豆を発酵させて作る、ねばりのある食べ物。混ぜると糸を引く。,納豆,1,Natto,,,",
+        "after": "なっとう,納豆,大豆を発酵させて作る、ねばりのある食べ物。混ぜると糸を引く。,納豆,1,Natto,assets/shiritori/wave2-d-word-4069.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4083,
+        "before": "なのはな,菜の花,アブラナなどに咲く、黄色い花。春に多く見られる。,菜の花,1,Rape blossom,,,",
+        "after": "なのはな,菜の花,アブラナなどに咲く、黄色い花。春に多く見られる。,菜の花,1,Rape blossom,assets/shiritori/wave2-d-word-4084.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4085,
+        "before": "なふきん,ナフキン,食事のときにひざに置いたり、口をふいたりする布や紙。,ナフキン,1,Napkin,,,",
+        "after": "なふきん,ナフキン,食事のときにひざに置いたり、口をふいたりする布や紙。,ナフキン,1,Napkin,assets/shiritori/wave2-d-word-4086.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4087,
+        "before": "なべ,鍋,食べ物を煮たりゆでたりする調理器具。金属や陶器など、いろいろな材料で作られる。,鍋,1,,,,",
+        "after": "なべ,鍋,食べ物を煮たりゆでたりする調理器具。金属や陶器など、いろいろな材料で作られる。,鍋,1,,assets/shiritori/wave2-d-word-4088.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4094,
+        "before": "なまず,ナマズ,川や湖にすむ魚で、口のまわりにひげのようなものがある。,ナマズ,1,,,,",
+        "after": "なまず,ナマズ,川や湖にすむ魚で、口のまわりにひげのようなものがある。,ナマズ,1,,assets/shiritori/wave2-d-word-4095.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4096,
+        "before": "なみ,波,風や海底の動きなどで、水面が上下に動くこと。海岸に打ち寄せる波もある。,海の波,1,Wave,,,",
+        "after": "なみ,波,風や海底の動きなどで、水面が上下に動くこと。海岸に打ち寄せる波もある。,海の波,1,Wave,assets/shiritori/wave2-d-word-4097.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4099,
+        "before": "なめくじ,ナメクジ,殻のない、やわらかい体をした陸にすむ貝の仲間。,ナメクジ,1,Slug,,,",
+        "after": "なめくじ,ナメクジ,殻のない、やわらかい体をした陸にすむ貝の仲間。,ナメクジ,1,Slug,assets/shiritori/wave2-d-word-4100.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4213,
+        "before": "にんじん,ニンジン,根を食べる野菜。オレンジ色のものがよく知られる。,ニンジン,1,Carrot,,,",
+        "after": "にんじん,ニンジン,根を食べる野菜。オレンジ色のものがよく知られる。,ニンジン,1,Carrot,assets/shiritori/common-word-4214.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4284,
+        "before": "ねこ,猫,ネコ科の動物。人に飼われることも多い。,猫,1,,,,",
+        "after": "ねこ,猫,ネコ科の動物。人に飼われることも多い。,猫,1,,assets/shiritori/common-word-4285.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4292,
+        "before": "ねずみ,ネズミ,前歯が伸び続ける小型の哺乳類。,ネズミ,1,Mouse,,,",
+        "after": "ねずみ,ネズミ,前歯が伸び続ける小型の哺乳類。,ネズミ,1,Mouse,assets/shiritori/common-word-4293.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4371,
+        "before": "のり,海苔,食用にする海藻。また、それを薄く広げて乾かした食品。,おにぎり,1,Seaweed,,,",
+        "after": "のり,海苔,食用にする海藻。また、それを薄く広げて乾かした食品。,おにぎり,1,Seaweed,assets/shiritori/common-word-4372.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4575,
+        "before": "ばす,バス,多くの人を乗せて道路を走る自動車。,バス,1,Bus,,,",
+        "after": "ばす,バス,多くの人を乗せて道路を走る自動車。,バス,1,Bus,assets/shiritori/wave2-e-word-4576.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4576,
+        "before": "ばすけっと,バスケット,物を入れるかご。,バスケット,1,Basket,,,",
+        "after": "ばすけっと,バスケット,物を入れるかご。,バスケット,1,Basket,assets/shiritori/wave2-e-word-4577.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4578,
+        "before": "ばすてい,バス停,バスが止まり、乗り降りする場所。,バス停,1,Bus stop,,,",
+        "after": "ばすてい,バス停,バスが止まり、乗り降りする場所。,バス停,1,Bus stop,assets/shiritori/wave2-e-word-4579.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4581,
+        "before": "ばち,撥,太鼓などを打つための棒。,撥,1,Drumstick,,,",
+        "after": "ばち,撥,太鼓などを打つための棒。,撥,1,Drumstick,assets/shiritori/wave2-e-word-4582.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4585,
+        "before": "ばっぐ,バッグ,物を入れて持ち歩く袋。,バッグ,1,Bag,,,",
+        "after": "ばっぐ,バッグ,物を入れて持ち歩く袋。,バッグ,1,Bag,assets/shiritori/wave2-e-word-4586.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4586,
+        "before": "ばった,バッタ,後ろ足で跳ねる昆虫。,バッタ,1,,,,",
+        "after": "ばった,バッタ,後ろ足で跳ねる昆虫。,バッタ,1,,assets/shiritori/wave2-e-word-4587.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4587,
+        "before": "ばっと,バット,野球でボールを打つための棒。,バット,1,,,,",
+        "after": "ばっと,バット,野球でボールを打つための棒。,バット,1,,assets/shiritori/wave2-e-word-4588.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4590,
+        "before": "ばなな,バナナ,黄色い皮をむいて食べる、細長い果物。,バナナ,1,,,,",
+        "after": "ばなな,バナナ,黄色い皮をむいて食べる、細長い果物。,バナナ,1,,assets/shiritori/common-word-4591.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4597,
+        "before": "ばら,バラ,トゲのあるものが多い茎に、花を咲かせる植物。,バラ,1,,,,",
+        "after": "ばら,バラ,トゲのあるものが多い茎に、花を咲かせる植物。,バラ,1,,assets/shiritori/wave2-e-word-4598.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4615,
+        "before": "ばんそうこう,ばんそうこう,小さな傷をおおうために貼るもの。,ばんそうこう,1,Adhesive bandage,,,",
+        "after": "ばんそうこう,ばんそうこう,小さな傷をおおうために貼るもの。,ばんそうこう,1,Adhesive bandage,assets/shiritori/wave2-e-word-4616.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4620,
+        "before": "ぱい,パイ,生地で具を包んだり、上にのせたりして焼く料理。,パイ,1,Pie,,,",
+        "after": "ぱい,パイ,生地で具を包んだり、上にのせたりして焼く料理。,パイ,1,Pie,assets/shiritori/wave2-e-word-4621.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4621,
+        "before": "ぱいなっぷる,パイナップル,硬い皮と葉の冠があり、甘酸っぱい果物。,パイナップル,1,Pineapple,,,",
+        "after": "ぱいなっぷる,パイナップル,硬い皮と葉の冠があり、甘酸っぱい果物。,パイナップル,1,Pineapple,assets/shiritori/wave2-e-word-4622.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4622,
+        "before": "ぱいぷ,パイプ,水や空気などを通す管。,パイプ,1,Pipe,,,",
+        "after": "ぱいぷ,パイプ,水や空気などを通す管。,パイプ,1,Pipe,assets/shiritori/wave2-e-word-4623.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4628,
+        "before": "ぱじゃま,パジャマ,寝るときに着る服。,パジャマ,1,,,,",
+        "after": "ぱじゃま,パジャマ,寝るときに着る服。,パジャマ,1,,assets/shiritori/wave2-e-word-4629.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4630,
+        "before": "ぱすた,パスタ,小麦粉などから作るイタリアの麺類や、その料理。,パスタ,1,Pasta,,,",
+        "after": "ぱすた,パスタ,小麦粉などから作るイタリアの麺類や、その料理。,パスタ,1,Pasta,assets/shiritori/wave2-e-word-4631.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4631,
+        "before": "ぱせり,パセリ,香りのある葉を料理に使う野菜。,パセリ,1,,,,",
+        "after": "ぱせり,パセリ,香りのある葉を料理に使う野菜。,パセリ,1,,assets/shiritori/wave2-e-word-4632.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4632,
+        "before": "ぱそこん,パソコン,文書や画像などの情報を扱うコンピューター。,パソコン,1,Personal computer,,,",
+        "after": "ぱそこん,パソコン,文書や画像などの情報を扱うコンピューター。,パソコン,1,Personal computer,assets/shiritori/wave2-e-word-4633.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4635,
+        "before": "ぱとかー,パトカー,警察が見回りや緊急出動に使う車。,パトカー,1,Police car,,,",
+        "after": "ぱとかー,パトカー,警察が見回りや緊急出動に使う車。,パトカー,1,Police car,assets/shiritori/wave2-e-word-4636.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4644,
+        "before": "ぱぷりか,パプリカ,赤や黄色などの実を食べる、ピーマンの仲間の野菜。,パプリカ,1,Bell pepper,,,",
+        "after": "ぱぷりか,パプリカ,赤や黄色などの実を食べる、ピーマンの仲間の野菜。,パプリカ,1,Bell pepper,assets/shiritori/wave2-e-word-4645.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4653,
+        "before": "ぱらそる,パラソル,日差しをさえぎるための傘。,パラソル,1,Parasol,,,",
+        "after": "ぱらそる,パラソル,日差しをさえぎるための傘。,パラソル,1,Parasol,assets/shiritori/wave2-e-word-4654.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4657,
+        "before": "ぱるふぇ,パルフェ,パフェのこと。アイスや果物などを盛り合わせたデザート。,パフェ,1,,,,",
+        "after": "ぱるふぇ,パルフェ,パフェのこと。アイスや果物などを盛り合わせたデザート。,パフェ,1,,assets/shiritori/wave2-e-word-4658.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4658,
+        "before": "ぱん,パン,小麦粉などをこねて発酵させ、焼いた食品。,パン,1,,,,",
+        "after": "ぱん,パン,小麦粉などをこねて発酵させ、焼いた食品。,パン,1,,assets/shiritori/wave2-e-word-4659.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4660,
+        "before": "ぱんだ,パンダ,白と黒の模様があるクマの仲間。主に竹を食べる。,ジャイアントパンダ,1,,,,",
+        "after": "ぱんだ,パンダ,白と黒の模様があるクマの仲間。主に竹を食べる。,ジャイアントパンダ,1,,assets/shiritori/common-word-4661.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4663,
+        "before": "ぱんや,パン屋,パンを作ったり売ったりする店。,パン屋,1,Bakery,,,",
+        "after": "ぱんや,パン屋,パンを作ったり売ったりする店。,パン屋,1,Bakery,assets/shiritori/wave2-e-word-4664.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4683,
+        "before": "ひきにく,ひき肉,細かくひいた肉。,ひき肉,1,Ground meat,,,",
+        "after": "ひきにく,ひき肉,細かくひいた肉。,ひき肉,1,Ground meat,assets/shiritori/wave2-e-word-4684.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4687,
+        "before": "ひこうき,飛行機,翼で揚力を得て空を飛ぶ乗り物。,飛行機,1,,,,",
+        "after": "ひこうき,飛行機,翼で揚力を得て空を飛ぶ乗り物。,飛行機,1,,assets/shiritori/wave2-e-word-4688.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4688,
+        "before": "ひこうせん,飛行船,ガスを入れた大きな袋で浮かび、動力で進む航空機。,飛行船,1,,,,",
+        "after": "ひこうせん,飛行船,ガスを入れた大きな袋で浮かび、動力で進む航空機。,飛行船,1,,assets/shiritori/wave2-e-word-4689.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4690,
+        "before": "ひざかけ,膝掛け,膝や脚に掛けて温める布。,膝掛け,1,Lap blanket,,,",
+        "after": "ひざかけ,膝掛け,膝や脚に掛けて温める布。,膝掛け,1,Lap blanket,assets/shiritori/wave2-e-word-4691.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4698,
+        "before": "ひつじ,ヒツジ,毛や肉などを利用する家畜。,ヒツジ,1,,,,",
+        "after": "ひつじ,ヒツジ,毛や肉などを利用する家畜。,ヒツジ,1,,assets/shiritori/wave2-e-word-4699.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4705,
+        "before": "ひとで,ヒトデ,星のような形をした海の動物。,ヒトデ,1,Starfish,,,",
+        "after": "ひとで,ヒトデ,星のような形をした海の動物。,ヒトデ,1,Starfish,assets/shiritori/wave2-e-word-4706.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4710,
+        "before": "ひな,ひな,卵からかえって間もない鳥の子。,ひな,1,Chick,,,",
+        "after": "ひな,ひな,卵からかえって間もない鳥の子。,ひな,1,Chick,assets/shiritori/wave2-e-word-4711.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4728,
+        "before": "ひまわり,ヒマワリ,大きな黄色い花を咲かせる植物。,ヒマワリ,1,,,,",
+        "after": "ひまわり,ヒマワリ,大きな黄色い花を咲かせる植物。,ヒマワリ,1,,assets/shiritori/common-word-4729.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4732,
+        "before": "ひも,紐,物をしばったり結んだりする細長いもの。,紐,1,,,,",
+        "after": "ひも,紐,物をしばったり結んだりする細長いもの。,紐,1,,assets/shiritori/wave2-e-word-4733.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4740,
+        "before": "ひょう,ヒョウ,体に黒い斑点模様があるネコ科の動物。,ヒョウ 動物,1,Leopard,,,",
+        "after": "ひょう,ヒョウ,体に黒い斑点模様があるネコ科の動物。,ヒョウ 動物,1,Leopard,assets/shiritori/wave2-e-word-4741.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4748,
+        "before": "ひよこ,ヒヨコ,ヒヨコは、ニワトリの子。,ヒヨコ,1,,,,",
+        "after": "ひよこ,ヒヨコ,ヒヨコは、ニワトリの子。,ヒヨコ,1,,assets/shiritori/wave2-e-word-4749.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4762,
+        "before": "びすけっと,ビスケット,小麦粉などを使って焼いた菓子。,ビスケット,1,Biscuit,,,",
+        "after": "びすけっと,ビスケット,小麦粉などを使って焼いた菓子。,ビスケット,1,Biscuit,assets/shiritori/wave2-e-word-4763.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4771,
+        "before": "びにーるぶくろ,ビニール袋,薄いプラスチックで作った袋。,ビニール袋,1,Plastic bag,,,",
+        "after": "びにーるぶくろ,ビニール袋,薄いプラスチックで作った袋。,ビニール袋,1,Plastic bag,assets/shiritori/wave2-e-word-4772.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4783,
+        "before": "びわ,ビワ,初夏に実る、オレンジ色の果物。,ビワ,1,,,,",
+        "after": "びわ,ビワ,初夏に実る、オレンジ色の果物。,ビワ,1,,assets/shiritori/wave2-e-word-4784.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4784,
+        "before": "びん,瓶,液体や食べ物などを入れる、口の狭い容器。ガラス製のものが多い。,ガラス瓶,1,,,,",
+        "after": "びん,瓶,液体や食べ物などを入れる、口の狭い容器。ガラス製のものが多い。,ガラス瓶,1,,assets/shiritori/wave2-e-word-4785.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4787,
+        "before": "びーず,ビーズ,糸などを通して飾りにする小さな玉。,ビーズ,1,Beads,,,",
+        "after": "びーず,ビーズ,糸などを通して飾りにする小さな玉。,ビーズ,1,Beads,assets/shiritori/wave2-e-word-4788.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4788,
+        "before": "びーだま,ビー玉,ガラスでできた小さな玉。遊びに使う。,ビー玉,1,,,,",
+        "after": "びーだま,ビー玉,ガラスでできた小さな玉。遊びに使う。,ビー玉,1,,assets/shiritori/wave2-e-word-4789.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4790,
+        "before": "ぴあの,ピアノ,鍵盤を押して音を出す楽器。,ピアノ,1,,,,",
+        "after": "ぴあの,ピアノ,鍵盤を押して音を出す楽器。,ピアノ,1,,assets/shiritori/wave2-e-word-4791.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4796,
+        "before": "ぴざ,ピザ,平たい生地に具やチーズをのせて焼いた料理。,ピザ,1,Pizza,,,",
+        "after": "ぴざ,ピザ,平たい生地に具やチーズをのせて焼いた料理。,ピザ,1,Pizza,assets/shiritori/wave2-e-word-4797.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4814,
+        "before": "ぴーなっつ,ピーナッツ,ピーナッツは、落花生の種。,ピーナッツ,1,Peanut,,,",
+        "after": "ぴーなっつ,ピーナッツ,ピーナッツは、落花生の種。,ピーナッツ,1,Peanut,assets/shiritori/wave2-e-word-4815.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4815,
+        "before": "ぴーまん,ピーマン,緑色などの実を食べる野菜。,ピーマン,1,,,,",
+        "after": "ぴーまん,ピーマン,緑色などの実を食べる野菜。,ピーマン,1,,assets/shiritori/wave2-e-word-4816.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4825,
+        "before": "ふうしゃ,風車,風の力で羽根を回す装置。,風車,1,Windmill,,,",
+        "after": "ふうしゃ,風車,風の力で羽根を回す装置。,風車,1,Windmill,assets/shiritori/wave2-e-word-4826.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4826,
+        "before": "ふうせん,風船,空気やガスを入れてふくらませる袋状のもの。,風船,1,,,,",
+        "after": "ふうせん,風船,空気やガスを入れてふくらませる袋状のもの。,風船,1,,assets/shiritori/wave2-e-word-4827.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4830,
+        "before": "ふえ,笛,息を吹き込むなどして音を出す楽器。,笛,1,Flute,,,",
+        "after": "ふえ,笛,息を吹き込むなどして音を出す楽器。,笛,1,Flute,assets/shiritori/wave2-e-word-4831.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4840,
+        "before": "ふきん,布巾,食器や台などを拭く布。,布巾,1,Dishcloth,,,",
+        "after": "ふきん,布巾,食器や台などを拭く布。,布巾,1,Dishcloth,assets/shiritori/wave2-e-word-4841.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4851,
+        "before": "ふくろう,フクロウ,夜に活動する種類が多い鳥。,フクロウ,1,,,,",
+        "after": "ふくろう,フクロウ,夜に活動する種類が多い鳥。,フクロウ,1,,assets/shiritori/wave2-e-word-4852.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4879,
+        "before": "ふで,筆,毛などを束ね、墨や絵の具をつけて書いたり描いたりする道具。,筆,1,,,,",
+        "after": "ふで,筆,毛などを束ね、墨や絵の具をつけて書いたり描いたりする道具。,筆,1,,assets/shiritori/wave2-e-word-4880.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4886,
+        "before": "ふね,船,人や物を乗せて水上を進む乗り物。,船,1,,,,",
+        "after": "ふね,船,人や物を乗せて水上を進む乗り物。,船,1,,assets/shiritori/wave2-e-word-4887.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4887,
+        "before": "ふみきり,踏切,道路と線路が同じ高さで交わる場所。,踏切,1,Level crossing,,,",
+        "after": "ふみきり,踏切,道路と線路が同じ高さで交わる場所。,踏切,1,Level crossing,assets/shiritori/wave2-e-word-4888.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4893,
+        "before": "ふらいぱん,フライパン,焼いたり炒めたりするための浅い鍋。,フライパン,1,Frying pan,,,",
+        "after": "ふらいぱん,フライパン,焼いたり炒めたりするための浅い鍋。,フライパン,1,Frying pan,assets/shiritori/wave2-e-word-4894.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4896,
+        "before": "ふらふーぷ,フラフープ,体のまわりで回して遊ぶ輪。,フラフープ,1,Hula hoop,,,",
+        "after": "ふらふーぷ,フラフープ,体のまわりで回して遊ぶ輪。,フラフープ,1,Hula hoop,assets/shiritori/wave2-e-word-4897.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4924,
+        "before": "ぶた,豚,家畜として飼われる哺乳類。,豚,1,,,,",
+        "after": "ぶた,豚,家畜として飼われる哺乳類。,豚,1,,assets/shiritori/wave2-e-word-4925.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4931,
+        "before": "ぶどう,ブドウ,つるに房状の実がなる果物。,ブドウ,1,,,,",
+        "after": "ぶどう,ブドウ,つるに房状の実がなる果物。,ブドウ,1,,assets/shiritori/wave2-e-word-4932.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4939,
+        "before": "ぶらんこ,ブランコ,つるした座板に乗り、前後に揺らして遊ぶ遊具。,ブランコ,1,,,,",
+        "after": "ぶらんこ,ブランコ,つるした座板に乗り、前後に揺らして遊ぶ遊具。,ブランコ,1,,assets/shiritori/wave2-e-word-4940.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4977,
+        "before": "ぷりん,プリン,卵や牛乳などで作る、柔らかい甘いお菓子。,プリン,1,,,,",
+        "after": "ぷりん,プリン,卵や牛乳などで作る、柔らかい甘いお菓子。,プリン,1,,assets/shiritori/wave2-e-word-4978.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4984,
+        "before": "ぷれぜんと,プレゼント,人に贈る品物。誕生日や祝いのときに贈ることも多い。,プレゼント,1,,,,",
+        "after": "ぷれぜんと,プレゼント,人に贈る品物。誕生日や祝いのときに贈ることも多い。,プレゼント,1,,assets/shiritori/wave2-e-word-4985.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4988,
+        "before": "ぷーどる,プードル,犬の品種の一つ。大きさの違う種類がある。,プードル,1,Poodle,,,",
+        "after": "ぷーどる,プードル,犬の品種の一つ。大きさの違う種類がある。,プードル,1,Poodle,assets/shiritori/wave2-e-word-4989.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 4989,
+        "before": "ぷーる,プール,水をためて泳ぐための設備。,プール,1,,,,",
+        "after": "ぷーる,プール,水をためて泳ぐための設備。,プール,1,,assets/shiritori/wave2-e-word-4990.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5007,
+        "before": "へっどほん,ヘッドホン,耳に当てて音を聞くための装置。,ヘッドホン,1,Headphones,,,",
+        "after": "へっどほん,ヘッドホン,耳に当てて音を聞くための装置。,ヘッドホン,1,Headphones,assets/shiritori/wave2-e-word-5008.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5010,
+        "before": "へび,ヘビ,足がなく、細長い体で地面をはう爬虫類。,ヘビ,1,,,,",
+        "after": "へび,ヘビ,足がなく、細長い体で地面をはう爬虫類。,ヘビ,1,,assets/shiritori/wave2-e-word-5011.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5015,
+        "before": "へりこぷたー,ヘリコプター,回転する羽根で揚力を得て飛ぶ乗り物。,ヘリコプター,1,,,,",
+        "after": "へりこぷたー,ヘリコプター,回転する羽根で揚力を得て飛ぶ乗り物。,ヘリコプター,1,,assets/shiritori/wave2-e-word-5016.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5026,
+        "before": "べっど,ベッド,横になって眠るための家具。,ベッド,1,,,,",
+        "after": "べっど,ベッド,横になって眠るための家具。,ベッド,1,,assets/shiritori/wave2-e-word-5027.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5071,
+        "before": "ぺんぎん,ペンギン,南半球にすむ、泳ぎが得意な鳥。,ペンギン,1,,,,",
+        "after": "ぺんぎん,ペンギン,南半球にすむ、泳ぎが得意な鳥。,ペンギン,1,,assets/shiritori/common-word-5072.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5335,
+        "before": "みけねこ,三毛猫,白・黒・茶色など三色の毛を持つ猫。,三毛猫,1,Calico cat,,,",
+        "after": "みけねこ,三毛猫,白・黒・茶色など三色の毛を持つ猫。,三毛猫,1,Calico cat,assets/shiritori/wave2-e-word-5336.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5347,
+        "before": "みずうみ,湖,周りを陸地に囲まれた水域。,湖,1,,,,",
+        "after": "みずうみ,湖,周りを陸地に囲まれた水域。,湖,1,,assets/shiritori/wave2-f-word-5348.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5348,
+        "before": "みずぎ,水着,水泳や水遊びのときに着る服。,水着,1,Swimsuit,,,",
+        "after": "みずぎ,水着,水泳や水遊びのときに着る服。,水着,1,Swimsuit,assets/shiritori/wave2-f-word-5349.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5351,
+        "before": "みずさし,水差し,水を入れて注ぐための容器。,水差し,1,Water pitcher,,,",
+        "after": "みずさし,水差し,水を入れて注ぐための容器。,水差し,1,Water pitcher,assets/shiritori/wave2-f-word-5352.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5353,
+        "before": "みずたまり,みずたまり,水たまりは、雨などで地面にたまった水。,みずたまり,1,Puddle,,,",
+        "after": "みずたまり,みずたまり,水たまりは、雨などで地面にたまった水。,みずたまり,1,Puddle,assets/shiritori/wave2-f-word-5354.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5354,
+        "before": "みずでっぽう,水鉄砲,水を飛ばして遊ぶおもちゃ。,水鉄砲,1,Water gun,,,",
+        "after": "みずでっぽう,水鉄砲,水を飛ばして遊ぶおもちゃ。,水鉄砲,1,Water gun,assets/shiritori/wave2-f-word-5355.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5359,
+        "before": "みそ,味噌,大豆などを発酵させて作る調味料。,味噌,1,Miso,,,",
+        "after": "みそ,味噌,大豆などを発酵させて作る調味料。,味噌,1,Miso,assets/shiritori/wave2-f-word-5360.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5360,
+        "before": "みそしる,味噌汁,だしに味噌を溶かして作る汁物。,味噌汁,1,,,,",
+        "after": "みそしる,味噌汁,だしに味噌を溶かして作る汁物。,味噌汁,1,,assets/shiritori/wave2-f-word-5361.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5362,
+        "before": "みち,道,人や車などが通るためのところ。,道,1,Road,,,",
+        "after": "みち,道,人や車などが通るためのところ。,道,1,Road,assets/shiritori/wave2-f-word-5363.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5370,
+        "before": "みつばち,ミツバチ,花の蜜や花粉を集めるハチ。,ミツバチ,1,,,,",
+        "after": "みつばち,ミツバチ,花の蜜や花粉を集めるハチ。,ミツバチ,1,,assets/shiritori/wave2-f-word-5371.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5392,
+        "before": "みみあて,耳当て,耳を寒さから守るために着けるもの。,耳当て,1,Earmuffs,,,",
+        "after": "みみあて,耳当て,耳を寒さから守るために着けるもの。,耳当て,1,Earmuffs,assets/shiritori/wave2-f-word-5393.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5394,
+        "before": "みみず,ミミズ,土の中などにすむ、足のない細長い動物。昆虫ではない。,ミミズ,1,,,,",
+        "after": "みみず,ミミズ,土の中などにすむ、足のない細長い動物。昆虫ではない。,ミミズ,1,,assets/shiritori/wave2-f-word-5395.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5395,
+        "before": "みみずく,ミミズク,頭に羽角と呼ばれる羽毛の束があるフクロウの仲間。,ミミズク,1,Owl,,,",
+        "after": "みみずく,ミミズク,頭に羽角と呼ばれる羽毛の束があるフクロウの仲間。,ミミズク,1,Owl,assets/shiritori/wave2-f-word-5396.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5419,
+        "before": "みるく,ミルク,哺乳類の母親が子に飲ませる乳。牛などの乳を飲み物や食品に使う。,ミルク,1,Milk,,,",
+        "after": "みるく,ミルク,哺乳類の母親が子に飲ませる乳。牛などの乳を飲み物や食品に使う。,ミルク,1,Milk,assets/shiritori/wave2-f-word-5420.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5422,
+        "before": "みーとぼーる,ミートボール,ひき肉などを丸めて作った料理。,ミートボール,1,Meatball,,,",
+        "after": "みーとぼーる,ミートボール,ひき肉などを丸めて作った料理。,ミートボール,1,Meatball,assets/shiritori/wave2-f-word-5423.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5430,
+        "before": "むぎ,麦,小麦や大麦など、穀物の仲間。パンや麺、飲み物などに使われる。,麦,1,,,,",
+        "after": "むぎ,麦,小麦や大麦など、穀物の仲間。パンや麺、飲み物などに使われる。,麦,1,,assets/shiritori/wave2-f-word-5431.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5435,
+        "before": "むぎわらぼうし,麦わら帽子,麦わらなどを編んで作った帽子。,麦わら帽子,1,Straw hat,,,",
+        "after": "むぎわらぼうし,麦わら帽子,麦わらなどを編んで作った帽子。,麦わら帽子,1,Straw hat,assets/shiritori/wave2-f-word-5436.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5442,
+        "before": "むしかご,虫かご,捕まえた虫を入れておくかご。,虫かご,1,Insect cage,,,",
+        "after": "むしかご,虫かご,捕まえた虫を入れておくかご。,虫かご,1,Insect cage,assets/shiritori/wave2-f-word-5443.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5443,
+        "before": "むしとりあみ,虫取り網,虫を捕まえるための網。,虫取り網,1,Butterfly net,,,",
+        "after": "むしとりあみ,虫取り網,虫を捕まえるための網。,虫取り網,1,Butterfly net,assets/shiritori/wave2-f-word-5444.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5445,
+        "before": "むしぱん,蒸しパン,生地を蒸してふくらませた食べ物。,蒸しパン,1,Steamed bread,,,",
+        "after": "むしぱん,蒸しパン,生地を蒸してふくらませた食べ物。,蒸しパン,1,Steamed bread,assets/shiritori/wave2-f-word-5446.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5446,
+        "before": "むしめがね,虫眼鏡,小さな物を大きく見せるレンズの道具。,虫眼鏡,1,,,,",
+        "after": "むしめがね,虫眼鏡,小さな物を大きく見せるレンズの道具。,虫眼鏡,1,,assets/shiritori/wave2-f-word-5447.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5450,
+        "before": "むすびめ,結び目,ひもなどを結んだ部分。,結び目,1,Knot,,,",
+        "after": "むすびめ,結び目,ひもなどを結んだ部分。,結び目,1,Knot,assets/shiritori/wave2-f-word-5451.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5465,
+        "before": "め,芽,植物の茎や葉などになる、成長し始めた部分。,植物 芽,1,Bud,,,",
+        "after": "め,芽,植物の茎や葉などになる、成長し始めた部分。,植物 芽,1,Bud,assets/shiritori/wave2-f-word-5466.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5491,
+        "before": "めがね,眼鏡,レンズを通して物を見やすくするため、顔にかける道具。,眼鏡,1,,,,",
+        "after": "めがね,眼鏡,レンズを通して物を見やすくするため、顔にかける道具。,眼鏡,1,,assets/shiritori/wave2-f-word-5492.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5492,
+        "before": "めがねけーす,眼鏡ケース,眼鏡を入れて保管する入れ物。,眼鏡ケース,1,Glasses case,,,",
+        "after": "めがねけーす,眼鏡ケース,眼鏡を入れて保管する入れ物。,眼鏡ケース,1,Glasses case,assets/shiritori/wave2-f-word-5493.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5528,
+        "before": "めだか,メダカ,川や田んぼの水路などにすむ小さな淡水魚。,メダカ,1,,,,",
+        "after": "めだか,メダカ,川や田んぼの水路などにすむ小さな淡水魚。,メダカ,1,,assets/shiritori/wave2-f-word-5529.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5530,
+        "before": "めだまやき,目玉焼き,卵を割り、形を崩さずに焼いた料理。,目玉焼き,1,Fried egg,,,",
+        "after": "めだまやき,目玉焼き,卵を割り、形を崩さずに焼いた料理。,目玉焼き,1,Fried egg,assets/shiritori/wave2-f-word-5531.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5537,
+        "before": "めもちょう,メモ帳,短い書き付けをするための小さなノート。,メモ帳,1,Notepad,,,",
+        "after": "めもちょう,メモ帳,短い書き付けをするための小さなノート。,メモ帳,1,Notepad,assets/shiritori/wave2-f-word-5538.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5548,
+        "before": "めろん,メロン,甘くて水分の多い果物。,メロン,1,,,,",
+        "after": "めろん,メロン,甘くて水分の多い果物。,メロン,1,,assets/shiritori/wave2-f-word-5549.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5554,
+        "before": "めんぼう,綿棒,細い棒の先に綿を巻き付けた道具。,綿棒,1,Cotton swab,,,",
+        "after": "めんぼう,綿棒,細い棒の先に綿を巻き付けた道具。,綿棒,1,Cotton swab,assets/shiritori/wave2-f-word-5555.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5561,
+        "before": "もくば,木馬,木で作った馬の形のおもちゃ。揺らして遊ぶものもある。,木馬,1,Rocking horse,,,",
+        "after": "もくば,木馬,木で作った馬の形のおもちゃ。揺らして遊ぶものもある。,木馬,1,Rocking horse,assets/shiritori/wave2-f-word-5562.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5565,
+        "before": "もぐら,モグラ,土の中にトンネルを掘って暮らす哺乳類。,モグラ,1,,,,",
+        "after": "もぐら,モグラ,土の中にトンネルを掘って暮らす哺乳類。,モグラ,1,,assets/shiritori/wave2-f-word-5566.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5580,
+        "before": "もっきん,木琴,木の板をたたいて音を出す楽器。,木琴,1,Xylophone,,,",
+        "after": "もっきん,木琴,木の板をたたいて音を出す楽器。,木琴,1,Xylophone,assets/shiritori/wave2-f-word-5581.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5593,
+        "before": "もみじ,モミジ,秋に葉が赤や黄色に色づくカエデ類の木。,モミジ,1,,,,",
+        "after": "もみじ,モミジ,秋に葉が赤や黄色に色づくカエデ類の木。,モミジ,1,,assets/shiritori/wave2-f-word-5594.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5594,
+        "before": "もみのき,モミの木,クリスマスツリーにも使われる針葉樹。,モミの木,1,Fir tree,,,",
+        "after": "もみのき,モミの木,クリスマスツリーにも使われる針葉樹。,モミの木,1,Fir tree,assets/shiritori/wave2-f-word-5595.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5595,
+        "before": "もも,桃,表面にうぶ毛があり、甘く水分の多い果物。,桃,1,,,,",
+        "after": "もも,桃,表面にうぶ毛があり、甘く水分の多い果物。,桃,1,,assets/shiritori/common-word-5596.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5602,
+        "before": "もやし,もやし,豆や穀物の種を発芽させた若い芽。,もやし,1,,,,",
+        "after": "もやし,もやし,豆や穀物の種を発芽させた若い芽。,もやし,1,,assets/shiritori/wave2-f-word-5603.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5605,
+        "before": "もり,森,木がたくさん生えている広い場所。,森,1,,,,",
+        "after": "もり,森,木がたくさん生えている広い場所。,森,1,,assets/shiritori/wave2-f-word-5606.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5626,
+        "before": "やおや,八百屋,野菜や果物を売る店。,八百屋,1,Greengrocer,,,",
+        "after": "やおや,八百屋,野菜や果物を売る店。,八百屋,1,Greengrocer,assets/shiritori/wave2-f-word-5627.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5628,
+        "before": "やかん,やかん,水を入れて火にかけ、湯を沸かす道具。,やかん,1,,,,",
+        "after": "やかん,やかん,水を入れて火にかけ、湯を沸かす道具。,やかん,1,,assets/shiritori/wave2-f-word-5629.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5629,
+        "before": "やきいも,焼き芋,さつまいもを焼いた食べ物。,焼き芋,1,Baked sweet potato,,,",
+        "after": "やきいも,焼き芋,さつまいもを焼いた食べ物。,焼き芋,1,Baked sweet potato,assets/shiritori/wave2-f-word-5630.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5631,
+        "before": "やきおにぎり,焼きおにぎり,表面を焼いて香ばしくしたおにぎり。,焼きおにぎり,1,Grilled rice ball,,,",
+        "after": "やきおにぎり,焼きおにぎり,表面を焼いて香ばしくしたおにぎり。,焼きおにぎり,1,Grilled rice ball,assets/shiritori/wave2-f-word-5632.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5632,
+        "before": "やきそば,焼きそば,麺と具を炒めて作る料理。,焼きそば,1,Yakisoba,,,",
+        "after": "やきそば,焼きそば,麺と具を炒めて作る料理。,焼きそば,1,Yakisoba,assets/shiritori/wave2-f-word-5633.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5633,
+        "before": "やきとり,焼き鳥,鶏肉などを串に刺して焼いた料理。,焼き鳥,1,Yakitori,,,",
+        "after": "やきとり,焼き鳥,鶏肉などを串に刺して焼いた料理。,焼き鳥,1,Yakitori,assets/shiritori/wave2-f-word-5634.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5639,
+        "before": "やぎ,ヤギ,角やあごひげを持つ家畜。,ヤギ,1,,,,",
+        "after": "やぎ,ヤギ,角やあごひげを持つ家畜。,ヤギ,1,,assets/shiritori/wave2-f-word-5640.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5650,
+        "before": "やさい,野菜,食べるために栽培する植物や、その一部。,野菜,1,,,,",
+        "after": "やさい,野菜,食べるために栽培する植物や、その一部。,野菜,1,,assets/shiritori/wave2-f-word-5651.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5652,
+        "before": "やしのき,椰子の木,ヤシの木は、熱帯や亜熱帯に多く生える木。,やしのき,1,,,,",
+        "after": "やしのき,椰子の木,ヤシの木は、熱帯や亜熱帯に多く生える木。,やしのき,1,,assets/shiritori/wave2-f-word-5653.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5660,
+        "before": "やどかり,ヤドカリ,柔らかい腹を貝殻に入れて暮らす甲殻類。,ヤドカリ,1,Hermit crab,,,",
+        "after": "やどかり,ヤドカリ,柔らかい腹を貝殻に入れて暮らす甲殻類。,ヤドカリ,1,Hermit crab,assets/shiritori/wave2-f-word-5661.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5673,
+        "before": "やま,山,周りの土地より高く盛り上がった地形。,山,1,,,,",
+        "after": "やま,山,周りの土地より高く盛り上がった地形。,山,1,,assets/shiritori/wave2-f-word-5674.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5678,
+        "before": "やまごや,山小屋,山の中にある休憩や宿泊のための小屋。,山小屋,1,Mountain hut,,,",
+        "after": "やまごや,山小屋,山の中にある休憩や宿泊のための小屋。,山小屋,1,Mountain hut,assets/shiritori/wave2-f-word-5679.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5714,
+        "before": "ゆうびんぽすと,郵便ポスト,送る郵便物を入れる箱。,郵便ポスト,1,Post box,,,",
+        "after": "ゆうびんぽすと,郵便ポスト,送る郵便物を入れる箱。,郵便ポスト,1,Post box,assets/shiritori/wave2-f-word-5715.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5717,
+        "before": "ゆかた,浴衣,夏祭りや湯上がりなどに着る、薄手の着物。,浴衣,1,Yukata,,,",
+        "after": "ゆかた,浴衣,夏祭りや湯上がりなどに着る、薄手の着物。,浴衣,1,Yukata,assets/shiritori/wave2-f-word-5718.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5724,
+        "before": "ゆきだるま,雪だるま,雪を丸めたり積んだりして作る人形。,雪だるま,1,,,,",
+        "after": "ゆきだるま,雪だるま,雪を丸めたり積んだりして作る人形。,雪だるま,1,,assets/shiritori/wave2-f-word-5725.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5733,
+        "before": "ゆず,ユズ,香りのよい黄色い実をつける柑橘類。,ユズ,1,Yuzu,,,",
+        "after": "ゆず,ユズ,香りのよい黄色い実をつける柑橘類。,ユズ,1,Yuzu,assets/shiritori/wave2-f-word-5734.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5735,
+        "before": "ゆたんぽ,湯たんぽ,湯を入れて寝床などを温める容器。,湯たんぽ,1,Hot water bottle,,,",
+        "after": "ゆたんぽ,湯たんぽ,湯を入れて寝床などを温める容器。,湯たんぽ,1,Hot water bottle,assets/shiritori/wave2-f-word-5736.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5741,
+        "before": "ゆのみ,湯飲み,お茶などを飲むための器。,湯飲み,1,Teacup,,,",
+        "after": "ゆのみ,湯飲み,お茶などを飲むための器。,湯飲み,1,Teacup,assets/shiritori/wave2-f-word-5742.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5747,
+        "before": "ゆびわ,指輪,指にはめる輪の形の飾り。,指輪,1,Ring jewelry,,,",
+        "after": "ゆびわ,指輪,指にはめる輪の形の飾り。,指輪,1,Ring jewelry,assets/shiritori/wave2-f-word-5748.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5752,
+        "before": "ゆり,ユリ,大きな花を咲かせる植物の仲間。,ユリ,1,Lily,,,",
+        "after": "ゆり,ユリ,大きな花を咲かせる植物の仲間。,ユリ,1,Lily,assets/shiritori/wave2-f-word-5753.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5760,
+        "before": "ようかん,羊羹,あんなどを寒天で固めて作る和菓子。,羊羹,1,Yokan,,,",
+        "after": "ようかん,羊羹,あんなどを寒天で固めて作る和菓子。,羊羹,1,Yokan,assets/shiritori/wave2-f-word-5761.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5804,
+        "before": "よーぐると,ヨーグルト,乳を乳酸菌で発酵させた食品。,ヨーグルト,1,Yogurt,,,",
+        "after": "よーぐると,ヨーグルト,乳を乳酸菌で発酵させた食品。,ヨーグルト,1,Yogurt,assets/shiritori/wave2-f-word-5805.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5807,
+        "before": "よーよー,ヨーヨー,糸のついた円盤を上下させて遊ぶおもちゃ。,ヨーヨー,1,Yoyo,,,",
+        "after": "よーよー,ヨーヨー,糸のついた円盤を上下させて遊ぶおもちゃ。,ヨーヨー,1,Yoyo,assets/shiritori/wave2-f-word-5808.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5809,
+        "before": "らいおん,ライオン,たてがみを持つ大型のネコ科動物。,ライオン,1,,,,",
+        "after": "らいおん,ライオン,たてがみを持つ大型のネコ科動物。,ライオン,1,,assets/shiritori/wave2-f-word-5810.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5823,
+        "before": "らくだ,ラクダ,こぶを持ち、乾燥した地域に適応した動物。,ラクダ,1,,,,",
+        "after": "らくだ,ラクダ,こぶを持ち、乾燥した地域に適応した動物。,ラクダ,1,,assets/shiritori/wave2-f-word-5824.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5828,
+        "before": "らけっと,ラケット,テニスなどでボールを打つ道具。,ラケット,1,Racket,,,",
+        "after": "らけっと,ラケット,テニスなどでボールを打つ道具。,ラケット,1,Racket,assets/shiritori/wave2-f-word-5829.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5832,
+        "before": "らっかせい,落花生,地中に実ができる豆の仲間。ピーナッツともいう。,落花生,1,Peanut,,,",
+        "after": "らっかせい,落花生,地中に実ができる豆の仲間。ピーナッツともいう。,落花生,1,Peanut,assets/shiritori/wave2-f-word-5833.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5861,
+        "before": "らんどせる,ランドセル,小学生が通学のときに背負うかばん。,ランドセル,1,,,,",
+        "after": "らんどせる,ランドセル,小学生が通学のときに背負うかばん。,ランドセル,1,,assets/shiritori/wave2-f-word-5862.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 5924,
+        "before": "りんご,リンゴ,丸い実を食べる果物。,リンゴ,1,,,,",
+        "after": "りんご,リンゴ,丸い実を食べる果物。,リンゴ,1,,assets/shiritori/common-word-5925.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6120,
+        "before": "へあすたいる,ヘアスタイル,かみの長さや分け方などで決まる、かみがた。,髪型,1,,,,",
+        "after": "へあすたいる,ヘアスタイル,かみの長さや分け方などで決まる、かみがた。,髪型,1,,assets/shiritori/school-word-6121.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6121,
+        "before": "ほいっする,ホイッスル,息をふきこんで音を出す、スポーツなどで使う笛。,ホイッスル 笛,1,,,,",
+        "after": "ほいっする,ホイッスル,息をふきこんで音を出す、スポーツなどで使う笛。,ホイッスル 笛,1,,assets/shiritori/school-word-6122.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6122,
+        "before": "ほうかご,放課後,学校で、その日の授業がすべて終わったあとの時間。,学校 放課後,1,,,,",
+        "after": "ほうかご,放課後,学校で、その日の授業がすべて終わったあとの時間。,学校 放課後,1,,assets/shiritori/school-word-6123.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6123,
+        "before": "ほうさく,豊作,米や野菜などが、いつもの年よりたくさんとれること。,豊作 収穫,2,,,,",
+        "after": "ほうさく,豊作,米や野菜などが、いつもの年よりたくさんとれること。,豊作 収穫,2,,assets/shiritori/school-word-6124.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6124,
+        "before": "むき,向き,物の正面がどちらを向いているかを表すことば。,向き 矢印,1,,,,",
+        "after": "むき,向き,物の正面がどちらを向いているかを表すことば。,向き 矢印,1,,assets/shiritori/school-word-6125.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6125,
+        "before": "むいか,六日,月のはじめから数えて六番目の日。または六日間。,カレンダー 六日,1,,,,",
+        "after": "むいか,六日,月のはじめから数えて六番目の日。または六日間。,カレンダー 六日,1,,assets/shiritori/school-word-6126.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6126,
+        "before": "れいすい,冷水,温度が低い、つめたい水。,冷たい水,1,,,,",
+        "after": "れいすい,冷水,温度が低い、つめたい水。,冷たい水,1,,assets/shiritori/school-word-6127.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6127,
+        "before": "れいとう,冷凍,食べ物などをとても冷やして、こおらせること。,食品 冷凍,2,,,,",
+        "after": "れいとう,冷凍,食べ物などをとても冷やして、こおらせること。,食品 冷凍,2,,assets/shiritori/school-word-6128.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6128,
+        "before": "れいだい,例題,解き方を説明するために、見本として出す問題。,算数 例題,2,,,,",
+        "after": "れいだい,例題,解き方を説明するために、見本として出す問題。,算数 例題,2,,assets/shiritori/school-word-6129.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6129,
+        "before": "れいわ,令和,日本で使う年の呼び名の一つ。2019年5月1日から始まった。,令和 カレンダー,2,,,,",
+        "after": "れいわ,令和,日本で使う年の呼び名の一つ。2019年5月1日から始まった。,令和 カレンダー,2,,assets/shiritori/school-word-6130.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6130,
+        "before": "ろうどく,朗読,本や文章を、聞く人に伝わるように声を出して読むこと。,本 朗読,2,,,,",
+        "after": "ろうどく,朗読,本や文章を、聞く人に伝わるように声を出して読むこと。,本 朗読,2,,assets/shiritori/school-word-6131.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6131,
+        "before": "わかば,若葉,木や草に新しく出た、やわらかい葉。,若葉,1,,,,",
+        "after": "わかば,若葉,木や草に新しく出た、やわらかい葉。,若葉,1,,assets/shiritori/school-word-6132.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6132,
+        "before": "わいぱー,ワイパー,車の前のガラスなどについた雨やよごれをふき取る装置。,車 ワイパー,1,,,,",
+        "after": "わいぱー,ワイパー,車の前のガラスなどについた雨やよごれをふき取る装置。,車 ワイパー,1,,assets/shiritori/school-word-6133.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6133,
+        "before": "へいほうめーとる,平方メートル,面積の単位。一辺が1メートルの正方形の広さを1平方メートルという。,平方メートル 正方形,2,,,,",
+        "after": "へいほうめーとる,平方メートル,面積の単位。一辺が1メートルの正方形の広さを1平方メートルという。,平方メートル 正方形,2,,assets/shiritori/school-word-6134.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6134,
+        "before": "へあけあ,ヘアケア,かみを洗ったり、ととのえたりして手入れをすること。,髪 手入れ,2,,,,",
+        "after": "へあけあ,ヘアケア,かみを洗ったり、ととのえたりして手入れをすること。,髪 手入れ,2,,assets/shiritori/school-word-6135.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6135,
+        "before": "ほいくしょ,保育所,家族が仕事などをしているあいだ、幼い子どもを預かって育てる施設。,保育所,2,,,,",
+        "after": "ほいくしょ,保育所,家族が仕事などをしているあいだ、幼い子どもを預かって育てる施設。,保育所,2,,assets/shiritori/school-word-6136.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6136,
+        "before": "れぎゅらー,レギュラー,スポーツの試合で、ふだん先発して出場する選手。,スポーツ レギュラー選手,2,,,,",
+        "after": "れぎゅらー,レギュラー,スポーツの試合で、ふだん先発して出場する選手。,スポーツ レギュラー選手,2,,assets/shiritori/school-word-6137.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6137,
+        "before": "れおたーど,レオタード,体操やバレエなどで着る、体にぴったりしたつなぎの服。,レオタード,2,,,,",
+        "after": "れおたーど,レオタード,体操やバレエなどで着る、体にぴったりしたつなぎの服。,レオタード,2,,assets/shiritori/school-word-6138.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6138,
+        "before": "るーぷ,ループ,ひもの輪や、道が輪のようにつながっている形。,ひも 輪,2,,,,",
+        "after": "るーぷ,ループ,ひもの輪や、道が輪のようにつながっている形。,ひも 輪,2,,assets/shiritori/school-word-6139.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6139,
+        "before": "るーきー,ルーキー,そのチームや仕事に入ったばかりの、新人。,スポーツ 新人選手,2,,,,",
+        "after": "るーきー,ルーキー,そのチームや仕事に入ったばかりの、新人。,スポーツ 新人選手,2,,assets/shiritori/school-word-6140.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6140,
+        "before": "ゆうぐれ,夕暮れ,日がしずむころの、空がだんだん暗くなる時間。,夕暮れ,1,,,,",
+        "after": "ゆうぐれ,夕暮れ,日がしずむころの、空がだんだん暗くなる時間。,夕暮れ,1,,assets/shiritori/school-word-6141.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6141,
+        "before": "ようちゅう,幼虫,チョウやカブトムシなどの、成虫になる前の子どもの姿。,幼虫 昆虫,1,,,,",
+        "after": "ようちゅう,幼虫,チョウやカブトムシなどの、成虫になる前の子どもの姿。,幼虫 昆虫,1,,assets/shiritori/school-word-6142.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6142,
+        "before": "むきめい,無記名,紙などに、名前を書いていないこと。,無記名 用紙,2,,,,",
+        "after": "むきめい,無記名,紙などに、名前を書いていないこと。,無記名 用紙,2,,assets/shiritori/school-word-6143.png,asset,AI生成イラスト"
+      },
+      {
+        "id": 6143,
+        "before": "れいぞう,冷蔵,食べ物などを、こおらないくらいに冷やして保存すること。,冷蔵庫 食品,2,,,,",
+        "after": "れいぞう,冷蔵,食べ物などを、こおらないくらいに冷やして保存すること。,冷蔵庫 食品,2,,assets/shiritori/school-word-6144.png,asset,AI生成イラスト"
+      }
+    ]
   }
 ]
