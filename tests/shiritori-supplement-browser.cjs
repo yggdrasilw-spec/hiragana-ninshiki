@@ -3,7 +3,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve(__dirname,'..');
 const csv=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split('\n');const heads=csv.shift().split(',');
 const rows=csv.map(l=>Object.fromEntries(l.split(',').map((v,i)=>[heads[i],v])));
-const selected=rows.filter(r=>/^assets\/shiritori\/wave[34]-word-/.test(r.image_asset));
+const selected=rows.filter(r=>/^assets\/shiritori\/wave[345]-word-/.test(r.image_asset));
 const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404).end();return;}res.setHeader('Content-Type',({'.html':'text/html;charset=utf-8','.csv':'text/csv;charset=utf-8','.js':'text/javascript','.css':'text/css','.json':'application/json','.png':'image/png'})[path.extname(file)]||'application/octet-stream');fs.createReadStream(file).pipe(res);});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port;const browser=await chromium.launch({headless:true,executablePath:'/usr/bin/chromium'});
 try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
