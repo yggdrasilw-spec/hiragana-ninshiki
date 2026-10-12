@@ -76,4 +76,16 @@ function historicalRows(){
   assert.equal(crypto.createHash('sha256').update(heads.join(',')+'\n'+result.join('\n')+'\n').digest('hex'),ledger.beforeSha256,'All changes restore the original reviewed dictionary exactly');
   return result;
 }
-module.exports={historicalRows,undoImports};
+function dictionaryAtHash(expectedHash){
+  const text=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8');
+  const hash=crypto.createHash('sha256').update(text).digest('hex');
+  if(hash===expectedHash)return text;
+  const imports=JSON.parse(fs.readFileSync(path.join(root,'data/dictionary-imports/history.json'),'utf8'));
+  const index=imports.findIndex(record=>record.afterSha256===expectedHash);
+  const restored=index>=0?undoImports(text,imports.slice(index+1)):
+    imports[0]?.beforeSha256===expectedHash?undoImports(text,imports):null;
+  assert.ok(restored,'Requested dictionary state is recorded in the import history');
+  assert.equal(crypto.createHash('sha256').update(restored).digest('hex'),expectedHash);
+  return restored;
+}
+module.exports={historicalRows,undoImports,dictionaryAtHash};

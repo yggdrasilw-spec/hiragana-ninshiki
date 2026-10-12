@@ -1,8 +1,10 @@
 // Meanings and explicitly sourced display-name typos only. Every row has a review.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const { historicalRows, externalKeys, key } = require('./shiritori-vocabulary-lineage.cjs');
 const root=path.resolve(__dirname,'..'),dir=path.join(root,'data/meaning-review');
 const source=fs.readFileSync(path.join(dir,'source.csv'),'utf8').trim().split(/\r?\n/);
-const current=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split(/\r?\n/);
+const allCurrent=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').trim().split(/\r?\n/);
+const current=historicalRows(allCurrent);
 assert.equal(current.length,source.length,'Source and destination row counts differ');
 const reviews=new Map();
 for(const part of ['1','2','3','root','root-tail']){
@@ -63,7 +65,11 @@ const summary={sourceCommit:'aa8c295',rows:source.length-1,reviewed:reviews.size
   levels:[1,2,3].map(level=>({level,rows:source.slice(1).filter(line=>Number(line.split(',')[4])===level).length,
     changed:changes.filter(change=>Number(source[change.id].split(',')[4])===level).length,
     needsSource:pending.filter(row=>row.level===level).length}))};
-fs.writeFileSync(path.join(root,'whitelist.csv'),output.join('\n')+'\n');
+// Keep subsequently imported vocabulary in its current position, with images intact.
+const additions=externalKeys();let historicalIndex=0;
+const merged=allCurrent.map(line=>additions.has(key(line))?line:output[historicalIndex++]);
+assert.equal(historicalIndex,output.length,'Historical rows consumed exactly once');
+fs.writeFileSync(path.join(root,'whitelist.csv'),merged.join('\n')+'\n');
 fs.writeFileSync(path.join(dir,'pending-sources.json'),JSON.stringify(pending,null,2)+'\n');
 fs.writeFileSync(path.join(dir,'changes.json'),JSON.stringify(changes,null,2)+'\n');
 fs.writeFileSync(path.join(dir,'summary.json'),JSON.stringify(summary,null,2)+'\n');

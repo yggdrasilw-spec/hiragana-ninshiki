@@ -44,9 +44,12 @@ const expected = fs.readdirSync(batchDir).filter(name => name.endsWith('.csv')).
   const lines=fs.readFileSync(path.join(batchDir,name),'utf8').trim().split(/\r?\n/);
   return lines[0].startsWith('reading,word,meaning,')?lines.slice(1):[];
 });
-assert.equal(additions.length, expected.length);
+const { externalKeys, externalResolution } = require('../scripts/shiritori-vocabulary-lineage.cjs');
+const external = externalKeys();
+const currentKeys = new Set(csv.trim().split(/\r?\n/).slice(1).map(key));
+assert.equal(additions.length, expected.filter(line => !external.has(key(line))).length);
 assert.equal(new Set(additions.map(key)).size, additions.length);
-for (const line of expected) assert.ok(vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported: ' + line);
+for (const line of expected) assert.ok(external.has(key(line)) ? currentKeys.has(externalResolution(line).key) : vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported or explicitly unified: ' + line);
 for (const line of additions) { const cols = line.split(','); assert.match(cols[0], /^[ぁ-ゖー]+$/); assert.ok(cols.length >= 6 && cols.length <= 9); assert.match(cols[4], /^[123]$/); }
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/shiritori/manifest.json'), 'utf8'));
 for (const asset of manifest.assets) {
