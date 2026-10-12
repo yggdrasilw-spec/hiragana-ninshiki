@@ -43,6 +43,39 @@ class CropTests(unittest.TestCase):
             self.assertEqual(image.getpixel((128, 128)), (30 + i * 8, 80, 100))
             self.assertEqual(image.getpixel((0, 0)), (255, 255, 255))
 
+    def test_pastel_art_next_to_line_is_not_a_fringe(self):
+        image = sheet()
+        ImageDraw.Draw(image).rectangle((50, 202, 89, 280), fill=(230, 210, 235))
+        with self.assertRaises(module.GridError):
+            module.extract(image, method='magenta-grid-lines-only-v2')
+        outputs, _ = module.extract(image)
+        self.assertEqual(outputs[4][1]['cropBox'], [8, 202, 194, 398])
+        self.assertGreater(outputs[4][1]['contentFraction'], 0.01)
+
+    def test_v2_report_is_still_reproducible(self):
+        with tempfile.TemporaryDirectory(dir=SCRIPT.parent) as directory:
+            root = Path(directory)
+            source = root / 'sheet.png'
+            sheet().save(source)
+            old = SCRIPT
+            subprocess.run([sys.executable, str(old), str(source), '--method', 'magenta-grid-lines-only-v2', '--names',
+                            ','.join(f'tile-{i}' for i in range(16)), '--output',
+                            str(root / 'out'), '--report', str(root / 'report.json')],
+                           capture_output=True, check=True)
+            self.assertEqual(len(module.verify_report(root / 'report.json', source, root / 'out')), 16)
+
+    def test_sparse_fringe_requires_stable_measured_bounds(self):
+        image = sheet()
+        draw = ImageDraw.Draw(image)
+        draw.rectangle((80, 190, 82, 190), fill=(255, 235, 255))
+        draw.rectangle((80, 188, 82, 188), fill=(255, 235, 255))
+        draw.rectangle((100, 182, 120, 187), fill=(20, 40, 80))
+        with self.assertRaises(module.GridError):
+            module.extract(image, method='magenta-grid-lines-only-v3')
+        outputs, _ = module.extract(image)
+        self.assertEqual(outputs[0][1]['cropBox'][3], 188)
+        self.assertGreater(outputs[0][1]['edgeInkFraction'], 0)
+
     def test_missing_grid_rejected(self):
         with self.assertRaises(module.GridError):
             module.extract(Image.new('RGB', (800, 800), 'white'))
