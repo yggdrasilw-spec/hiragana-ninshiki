@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "58fbde2d854eb474213c43b1dd10a4b218939867c4bdc4167dd2def68b7ddfbd",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      311,
+      321
+    ],
+    [
+      623,
+      631
+    ],
+    [
+      936,
+      949
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      312,
+      318
+    ],
+    [
+      624,
+      630
+    ],
+    [
+      928,
+      943
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        6,
+        311,
+        312
+      ],
+      "edgeInkFraction": 0.9730213749277874,
+      "contentFraction": 0.9783618873906151,
+      "file": "expansion512-word-6826.png",
+      "sha256": "e3b846bca8e89e6f844ad811c4494e2787220faed8171f6a328c7cecbfb2113f"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        321,
+        6,
+        623,
+        312
+      ],
+      "edgeInkFraction": 0.8435409457900808,
+      "contentFraction": 0.9059754144483401,
+      "file": "expansion512-word-6827.png",
+      "sha256": "b954736ae3527c61922ec75f0235c845b7ecaed05fec80e6eeb538a3d716250d"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        631,
+        6,
+        936,
+        312
+      ],
+      "edgeInkFraction": 0.42713711990820424,
+      "contentFraction": 0.684999464266581,
+      "file": "expansion512-word-6828.png",
+      "sha256": "4a94fa1758c4164bcc01b24f48ea3bdc724d7a85bd9d1b9d6b35525bc068d862"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        949,
+        6,
+        1248,
+        312
+      ],
+      "edgeInkFraction": 0.6855652173913044,
+      "contentFraction": 0.7248999934421929,
+      "file": "expansion512-word-6829.png",
+      "sha256": "6fc12fa1926a569ca2be08da8ab4125d5df27039fd6bef8fdec13b4ff28c8e62"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        318,
+        311,
+        624
+      ],
+      "edgeInkFraction": 0.4371461582900058,
+      "contentFraction": 0.634312639784596,
+      "file": "expansion512-word-6830.png",
+      "sha256": "e42cd32881272af73a0c18180223050bb7571aaa3621853a9f10065cd6be5120"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        321,
+        318,
+        623,
+        624
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9998809678396745,
+      "file": "expansion512-word-6831.png",
+      "sha256": "1a42babd267352a7fb8a93ecd33b97c0445c3fcc3b6b579ace04d717fa80e402"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        631,
+        318,
+        936,
+        624
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9988106718097075,
+      "file": "expansion512-word-6832.png",
+      "sha256": "590f9bc349d3f46897a24c0b7cf7401550b3cc6d671e08590361d33ff9f71d0b"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        949,
+        318,
+        1248,
+        624
+      ],
+      "edgeInkFraction": 0.963304347826087,
+      "contentFraction": 0.9644894747196537,
+      "file": "expansion512-word-6833.png",
+      "sha256": "f52656d3a40beb9c918348081c69206edd1d8b6fe9db98cd7360dfa80b584d3b"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        630,
+        311,
+        928
+      ],
+      "edgeInkFraction": 0.9602811950790862,
+      "contentFraction": 0.9868893397846106,
+      "file": "expansion512-word-6834.png",
+      "sha256": "a4bdd0a07ae629a474e9756f8bff8046e80c4a81d6d0749ebece8813cc3b3960"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        321,
+        630,
+        623,
+        928
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9984332637006089,
+      "file": "expansion512-word-6835.png",
+      "sha256": "84df5914a0f32b6acc698d6b5eecefae2ece674edce3ff1df4b18ea45af9b160"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        631,
+        630,
+        936,
+        928
+      ],
+      "edgeInkFraction": 0.9568353694008144,
+      "contentFraction": 0.9821542523930026,
+      "file": "expansion512-word-6836.png",
+      "sha256": "e35f506acffad9e610b7caa66cd9b3c4fd2cab109d68f1b728f12f025a1b558e"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        949,
+        630,
+        1248,
+        928
+      ],
+      "edgeInkFraction": 0.9350382128159906,
+      "contentFraction": 0.9595183048640884,
+      "file": "expansion512-word-6837.png",
+      "sha256": "60f7befbb86facc97345398c421a0342adc07fe9a93d6885f96655e0b0aabe70"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        943,
+        311,
+        1247
+      ],
+      "edgeInkFraction": 0.6932173913043478,
+      "contentFraction": 0.7618355481727574,
+      "file": "expansion512-word-6838.png",
+      "sha256": "c88ae824c3945dbab0494f8eaad2e873dfa6dfa989f757dbd90c0e72bd63dce7"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        321,
+        943,
+        623,
+        1247
+      ],
+      "edgeInkFraction": 0.8890046296296297,
+      "contentFraction": 0.904703293830603,
+      "file": "expansion512-word-6839.png",
+      "sha256": "81d609155c6da6469cc718034432edef466dfb377ce1df752af8bccab596a040"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        631,
+        943,
+        936,
+        1247
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9999784296807592,
+      "file": "expansion512-word-6840.png",
+      "sha256": "ccf02cea8ac16101b4e800d37543d0477e32c50551a36729aab7b7e66a7127ce"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        949,
+        943,
+        1248,
+        1247
+      ],
+      "edgeInkFraction": 0.7486910994764397,
+      "contentFraction": 0.8495093293434255,
+      "file": "expansion512-word-6841.png",
+      "sha256": "adedb5360c11bc8b5ac006f16652288aa6934ec02016c5f697cd3179b69dcd59"
+    }
+  ]
+}
