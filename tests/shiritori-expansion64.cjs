@@ -1,0 +1,33 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),cp=require('node:child_process');
+const root=path.resolve(__dirname,'..');
+const current=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').replace(/\r\n/g,'\n');
+const rows=current.trimEnd().split('\n').slice(1).map(l=>l.split(','));
+const plan=require('../data/image-coverage/2026-10-13-expansion64/plan.json');
+const reviews=require('../data/dictionary-imports/2026-10-13-expansion64.review.json');
+const manifest=require('../assets/shiritori/manifest.json');
+const before=current.split('\n').slice(0,plan.baselineRows+1).join('\n')+'\n';
+assert.equal(crypto.createHash('sha256').update(before).digest('hex'),plan.baselineSha256,'Every existing row and image assignment preserved');
+assert.equal(rows.length,plan.baselineRows+64);
+const ids=new Set(),readings=new Set();
+for(const x of plan.items){
+ const row=rows[x.id-1]; assert.deepEqual(row.slice(0,3),[x.reading,x.word,x.meaning]);
+ assert.equal(Number(row[4]),x.level);assert.equal(row[6],'assets/shiritori/'+x.filename);assert.equal(row[7],'asset');
+ assert.ok(!ids.has(x.id));ids.add(x.id);readings.add(x.reading);
+ const m=manifest.assets.find(a=>a.file===x.filename);assert.ok(m&&m.status==='reviewed');
+ assert.equal(m.meaning,x.meaning);assert.equal(m.cropValidation,x.cropValidation);
+ assert.ok(m.aliases.some(a=>a.id===x.id&&a.meaning===x.meaning));
+ const review=reviews.find(r=>r.id===x.id);assert.ok(review.lexicalSource&&review.meaningReason&&review.ageReason&&review.imageReason);
+ assert.ok(review.sources.length>0);assert.equal(review.status,'reviewed');
+ if(x.level===1)assert.doesNotMatch(x.meaning,/[\u4e00-\u9fff]/);
+}
+assert.equal(ids.size,64);assert.equal(readings.size,63,'Self-reliance and self-control are distinct meanings of one reading');
+assert.equal(reviews.find(r=>r.word==='ヒグラシ').entryId,'2012710','Cicada, not all-day homophone');
+assert.equal(reviews.find(r=>r.word==='そろえる').entryId,'1406120');
+assert.equal(reviews.filter(r=>r.partOfSpeech.includes('adj-na')).length,12);
+assert.ok(rows.filter(r=>r[0]==='しんちょう').some(r=>r[1]==='身長'));
+assert.ok(rows.filter(r=>r[0]==='しんちょう').some(r=>r[1]==='慎重'));
+assert.equal(rows.filter(r=>r[0]==='じりつ').length,2);
+const run=cp.spawnSync(process.execPath,[path.join(root,'scripts/import-shiritori-words.cjs'),path.join(root,'data/dictionary-imports/2026-10-13-expansion64.csv'),'--append'],{encoding:'utf8'});
+assert.equal(run.status,0,run.stderr);assert.equal(JSON.parse(run.stdout).added,0,'Repeated import does not duplicate the batch');
+assert.equal(fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').replace(/\r\n/g,'\n'),current);
+console.log(JSON.stringify({passed:true,rows:rows.length,added:64,newReadings:62,images:64,adjNa:12,existingRowsPreserved:true,homonyms:true,idempotent:true}));
