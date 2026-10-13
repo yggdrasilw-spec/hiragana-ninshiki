@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "f1ac873ff953ce916478edbfa3afba043bd60be0ba624da60bee5690b5629b87",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      311,
+      319
+    ],
+    [
+      623,
+      631
+    ],
+    [
+      935,
+      943
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      623,
+      631
+    ],
+    [
+      933,
+      942
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        6,
+        311,
+        311
+      ],
+      "edgeInkFraction": 0.8795138888888889,
+      "contentFraction": 0.8088775121180763,
+      "file": "wave8-word-1775.png",
+      "sha256": "a888ce849d6e7b505b70d9b42b5916b117ea79e29c0bb62876fd8ca583a88a16"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        319,
+        6,
+        623,
+        311
+      ],
+      "edgeInkFraction": 0.9997121473805411,
+      "contentFraction": 0.9948339085418464,
+      "file": "wave8-word-1781.png",
+      "sha256": "b2ab0187ba21a76867377756c1a04c2b68a77bc9d5a8694b9058b4beb65d0894"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        631,
+        6,
+        935,
+        311
+      ],
+      "edgeInkFraction": 0.9849740932642487,
+      "contentFraction": 0.9865077653149267,
+      "file": "wave8-word-1804.png",
+      "sha256": "938b17ddb784a1bfd25c83fd277cd910902d28c82d84d693a0776b7aa21a8964"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        943,
+        6,
+        1245,
+        311
+      ],
+      "edgeInkFraction": 0.9998266897746967,
+      "contentFraction": 0.9995657366192596,
+      "file": "wave8-word-1805.png",
+      "sha256": "8400f438df7f9bbcb0ca6d6afb2766a540756199edbfb1b44f263034f7f3dac7"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        318,
+        311,
+        623
+      ],
+      "edgeInkFraction": 0.9993055555555556,
+      "contentFraction": 0.9946734927291542,
+      "file": "wave8-word-1828.png",
+      "sha256": "a00e223b019e92e0ef943bd38a88c56038bda85a53e59c9fc2c8dc53d6a65eab"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        319,
+        318,
+        623,
+        623
+      ],
+      "edgeInkFraction": 0.9998848589522165,
+      "contentFraction": 0.9988783433994823,
+      "file": "wave8-word-1829.png",
+      "sha256": "0da5b6639ccbad7a4e1b3919c5ed522fce9bdfa04f621bfa864a993e00c79e1a"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        631,
+        318,
+        935,
+        623
+      ],
+      "edgeInkFraction": 0.9875071963154864,
+      "contentFraction": 0.9975086281276963,
+      "file": "wave8-word-1851.png",
+      "sha256": "edf9f70d44da54cbc4654982a6d3bab1624571b8adb2e05cff227fb0fa793558"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        943,
+        318,
+        1245,
+        623
+      ],
+      "edgeInkFraction": 0.982842287694974,
+      "contentFraction": 0.9488112039952231,
+      "file": "wave8-word-1868.png",
+      "sha256": "60c482a54c0b70964e674399586cc3d50920037353b045cfa013119f8257db03"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        631,
+        311,
+        933
+      ],
+      "edgeInkFraction": 0.8504944735311227,
+      "contentFraction": 0.8421266858814987,
+      "file": "wave8-word-1875.png",
+      "sha256": "a42a762cf11d8120c4214fc2792396f921277f78d861ccf800f0bb6fa52f5013"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        319,
+        631,
+        623,
+        933
+      ],
+      "edgeInkFraction": 0.9522569444444444,
+      "contentFraction": 0.9304200069710701,
+      "file": "wave8-word-1884.png",
+      "sha256": "b6d946ee7f941960bf940a3c547feac010e127619e2dd6eb9a8067dfffb43fee"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        631,
+        631,
+        935,
+        933
+      ],
+      "edgeInkFraction": 0.9969328703703704,
+      "contentFraction": 0.9707868595329383,
+      "file": "wave8-word-1886.png",
+      "sha256": "4126c600b52c50959cca2518cb8906aef26a364123b8950ab326adc32857ae1c"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        943,
+        631,
+        1245,
+        933
+      ],
+      "edgeInkFraction": 0.9755516840882694,
+      "contentFraction": 0.9952633656418578,
+      "file": "wave8-word-1890.png",
+      "sha256": "a973fc88cca0c688d632226fa7e168a9a0face7d67110ab64e48802c3717db87"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        942,
+        311,
+        1247
+      ],
+      "edgeInkFraction": 0.9133680555555556,
+      "contentFraction": 0.9596318283317902,
+      "file": "wave8-word-1905.png",
+      "sha256": "b24a271ef154accd9236f293c6ef96cbd4f617f48bf46b8e706a62ae1be91fd9"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        319,
+        942,
+        623,
+        1247
+      ],
+      "edgeInkFraction": 0.9711571675302245,
+      "contentFraction": 0.8709447799827438,
+      "file": "wave8-word-1915.png",
+      "sha256": "c7ea976c6ba6f51d10686f2dd54a80c204a35500dd546b23028d48b1caab5e07"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        631,
+        942,
+        935,
+        1247
+      ],
+      "edgeInkFraction": 0.9911341393206679,
+      "contentFraction": 0.9958369283865401,
+      "file": "wave8-word-1932.png",
+      "sha256": "12330b19fc1f017c7b87cbee41d84c115adf9df68af876b331194685f499a6e8"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        943,
+        942,
+        1245,
+        1247
+      ],
+      "edgeInkFraction": 0.9994222992489891,
+      "contentFraction": 0.9969710129193355,
+      "file": "wave8-word-1947.png",
+      "sha256": "8cd8daee25aab5b28dd7caff1102bced6751e7a48b03729967413feee432daf1"
+    }
+  ]
+}

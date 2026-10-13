@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "addedImages": 512,
+  "addedWordAssignments": 512,
+  "sheets": 32,
+  "vocabularyRows": 6521,
+  "registeredRows": 3703,
+  "missingRows": 2818,
+  "existingImagesPreserved": true,
+  "meaningAndLevelPreserved": true,
+  "cropReproduction": true,
+  "tests": [
+    "shiritori-data.cjs",
+    "shiritori-import-history.cjs",
+    "audit-shiritori-image-coverage.py",
+    "git diff --check"
+  ],
+  "browser": {
+    "passed": true,
+    "imagesPerViewport": 512,
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "surfaces": [
+      "shiritori.html",
+      "shiritori-image-review.html"
+    ],
+    "offline": true
+  }
+}
