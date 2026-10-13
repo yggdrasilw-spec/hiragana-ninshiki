@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "8fb54b1a1931411d9606ce2d6aa7e13bb6c40664352f14a407632e654b2b1349",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      307,
+      322
+    ],
+    [
+      620,
+      634
+    ],
+    [
+      932,
+      946
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      321
+    ],
+    [
+      621,
+      630
+    ],
+    [
+      933,
+      942
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        6,
+        307,
+        311
+      ],
+      "edgeInkFraction": 0.24050116550116551,
+      "contentFraction": 0.6455152619087046,
+      "file": "expansion512-fix5-word-6886.png",
+      "sha256": "9919148c9cba62314004d6eed3c8ee7c84618ed7b62eae68abbcf6b4c7888aac"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        6,
+        620,
+        311
+      ],
+      "edgeInkFraction": 0.4140197789412449,
+      "contentFraction": 0.5668280338871163,
+      "file": "expansion512-fix5-word-6958.png",
+      "sha256": "a2748bb2e14a3b61bac1398b217b24abd442623533347948562f81a7bf9bbe5f"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        634,
+        6,
+        932,
+        311
+      ],
+      "edgeInkFraction": 0.19185573007562537,
+      "contentFraction": 0.5592694465837826,
+      "file": "expansion512-fix5-word-6996.png",
+      "sha256": "46e2f389e53438223057788a809e1ad2c0057b1f44315b60b8fad9bc296a8fbb"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        946,
+        6,
+        1248,
+        311
+      ],
+      "edgeInkFraction": 0.550895436164067,
+      "contentFraction": 0.6478992508956682,
+      "file": "expansion512-fix5-word-7057.png",
+      "sha256": "ab4208a02800a4a0a68d800380fec4e4a90ae5e881136ccc427ec069eee6359e"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        321,
+        307,
+        621
+      ],
+      "edgeInkFraction": 0.8608465608465609,
+      "contentFraction": 0.9623905723905724,
+      "file": "expansion512-fix5-word-7074.png",
+      "sha256": "9c7c83600fd1d3a0c2bf83d2b7aa663f31ac67163d82942ef16d2a4c4d8ea445"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        321,
+        620,
+        621
+      ],
+      "edgeInkFraction": 0.3884389671361502,
+      "contentFraction": 0.6380872483221477,
+      "file": "expansion512-fix5-reference-6.png",
+      "sha256": "fec2bf3b877e9f0d54c5aa619b33f0c98570b54ea520affd0df1475040e91ecf"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        634,
+        321,
+        932,
+        621
+      ],
+      "edgeInkFraction": 0.5127347417840376,
+      "contentFraction": 0.5779977628635347,
+      "file": "expansion512-fix5-reference-7.png",
+      "sha256": "83942f86717fb86b9ecd117f5782e63f474f9d4b0029db2c22aa9e8807923c0f"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        946,
+        321,
+        1248,
+        621
+      ],
+      "edgeInkFraction": 0.9381701631701632,
+      "contentFraction": 0.9379580573951435,
+      "file": "expansion512-fix5-reference-8.png",
+      "sha256": "80e67d6b5d774a448d33daebcd36918506f3b30814510f4e7101b2ce30156b69"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        630,
+        307,
+        933
+      ],
+      "edgeInkFraction": 0.7260233918128655,
+      "contentFraction": 0.9194919491949195,
+      "file": "expansion512-fix5-reference-9.png",
+      "sha256": "8eb64324ef3c254c1090e67f3b85a2c729a0eebc66aa55a0da75485d5b790042"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        630,
+        620,
+        933
+      ],
+      "edgeInkFraction": 0.4004670169293637,
+      "contentFraction": 0.5382638935034443,
+      "file": "expansion512-fix5-reference-10.png",
+      "sha256": "7c9c758b9a3a2636e59ddd06a707fa37024fc6f4f78316e56a887a21f1743255"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        634,
+        630,
+        932,
+        933
+      ],
+      "edgeInkFraction": 0.990134267367192,
+      "contentFraction": 0.9745387290406893,
+      "file": "expansion512-fix5-reference-11.png",
+      "sha256": "f4695a77364a91e72d65fc2167399e7ac3c1e89f1a3b6924242f7328b7c473a7"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        946,
+        630,
+        1248,
+        933
+      ],
+      "edgeInkFraction": 0.4068985507246377,
+      "contentFraction": 0.7373396280025354,
+      "file": "expansion512-fix5-reference-12.png",
+      "sha256": "16f1fdcc77b15028d5ea391b64f082ce2415cd78f89171fbbf9a3fa9c01595b5"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        942,
+        307,
+        1247
+      ],
+      "edgeInkFraction": 0.5687062937062937,
+      "contentFraction": 0.788916487277143,
+      "file": "expansion512-fix5-reference-13.png",
+      "sha256": "03c9791368955a9c3d6900aeb01a27808b6d2e3a4fc1673f73c5b46a39720f28"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        942,
+        620,
+        1247
+      ],
+      "edgeInkFraction": 0.733216986620128,
+      "contentFraction": 0.8639674331609638,
+      "file": "expansion512-fix5-reference-14.png",
+      "sha256": "ec5349257ecf844ed1df7b2be8495e057512d2bde0d0abcccfd1479718915eec"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        634,
+        942,
+        932,
+        1247
+      ],
+      "edgeInkFraction": 0.5760325770796975,
+      "contentFraction": 0.7596655297612499,
+      "file": "expansion512-fix5-reference-15.png",
+      "sha256": "eb29156d9fbbb01015aa0246c63d409cde90c44f61253bb64142a067999211af"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        946,
+        942,
+        1248,
+        1247
+      ],
+      "edgeInkFraction": 0.4508376660889659,
+      "contentFraction": 0.8378460536315275,
+      "file": "expansion512-fix5-reference-16.png",
+      "sha256": "bf2b3403e15b0088fdf43e235342fdc4c84b1e5c52e3d2613a82899192be6760"
+    }
+  ]
+}
