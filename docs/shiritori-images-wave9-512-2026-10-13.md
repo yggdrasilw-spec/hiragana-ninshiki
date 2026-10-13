@@ -19,6 +19,6 @@
 
 登録バッチ：data/batches/2026-10-13-wave9-images.csv
 
-ローカルへの登録を完了。コミット・プッシュ・公開は実施していません。
+画像512枚と登録記録は、新規語512語とともにコミット b9ae83d に保存され、GitHubの main への反映を確認済みです。
 
-[アプリの画像確認画面](../shiritori-image-
+[アプリの画像確認画面](../shiritori-image-review.html)
