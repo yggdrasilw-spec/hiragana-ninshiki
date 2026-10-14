@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "newWords": 512,
+  "preservedOriginalRows": 7609,
+  "uniqueReadings": 7849,
+  "newWordImagesCovered": 512,
+  "newWordImagesMissing": 0,
+  "adoptedPrimaryImages": 368,
+  "approvedSheets": 23,
+  "approvedExistingImageReuses": 101,
+  "sharedNewImageWords": 43,
+  "fullCoverageAudit": {
+    "vocabularyRows": 8121,
+    "reviewedTargetRows": 3021,
+    "assets": 5782,
+    "missingTargetAssets": 0,
+    "brokenAssetReferences": 0
+  },
+  "checks": [
+    "node tests/shiritori-expansion512b.cjs",
+    "node tests/shiritori-data.cjs",
+    "node tests/shiritori-import-quality.cjs",
+    "node tests/shiritori-import-history.cjs",
+    "python -X utf8 scripts/audit-shiritori-image-coverage.py",
+    "git diff --check"
+  ],
+  "reimport": {
+    "added": 0,
+    "rows": 8121
+  },
+  "browserValidation": "browser-validation.json"
+}
