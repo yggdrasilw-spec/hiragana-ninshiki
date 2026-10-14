@@ -1,0 +1,4386 @@
+[
+  {
+    "sheet": 1,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "くしゃみ・縮む・潜るなどの動作を確認。縮むは同じ服の大小、空くは席の使用前後。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7098,
+        "reading": "くしゃみ",
+        "word": "くしゃみ",
+        "meaning": "はなのしげきなどで、いきがきゅうにつよくふきだすこと。",
+        "filename": "expansion512-oct14-word-7098.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7099,
+        "reading": "ちじむ",
+        "word": "縮む",
+        "meaning": "ながさや、おおきさが、まえよりちいさくなること。",
+        "filename": "expansion512-oct14-word-7099.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7100,
+        "reading": "もぐる",
+        "word": "潜る",
+        "meaning": "みずのなかなどへ、からだをいれること。",
+        "filename": "expansion512-oct14-word-7100.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7101,
+        "reading": "めぐる",
+        "word": "回る",
+        "meaning": "いくつかの場所を、順にまわって訪ねること。",
+        "filename": "expansion512-oct14-word-7101.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7102,
+        "reading": "あう",
+        "word": "会う",
+        "meaning": "ひとと、おなじばしょで、かおをあわせること。",
+        "filename": "expansion512-oct14-word-7102.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7103,
+        "reading": "あおぐ",
+        "word": "扇ぐ",
+        "meaning": "うちわなどをうごかして、かぜをおこすこと。",
+        "filename": "expansion512-oct14-word-7103.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7104,
+        "reading": "あかす",
+        "word": "明かす",
+        "meaning": "かくしていた事実や秘密を、人に知らせること。",
+        "filename": "expansion512-oct14-word-7104.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7105,
+        "reading": "あがる",
+        "word": "上がる",
+        "meaning": "ひくいところから、たかいところへうつること。",
+        "filename": "expansion512-oct14-word-7105.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7106,
+        "reading": "あきる",
+        "word": "飽きる",
+        "meaning": "おなじことがつづき、おもしろいとおもわなくなること。",
+        "filename": "expansion512-oct14-word-7106.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7107,
+        "reading": "あく",
+        "word": "空く",
+        "meaning": "つかわれていたばしょが、つかわれていないじょうたいになること。",
+        "filename": "expansion512-oct14-word-7107.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7108,
+        "reading": "あせる",
+        "word": "焦る",
+        "meaning": "はやくしなければとおもい、おちつかなくなること。",
+        "filename": "expansion512-oct14-word-7108.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7109,
+        "reading": "あそぶ",
+        "word": "遊ぶ",
+        "meaning": "すきなことや、たのしいことをしてすごすこと。",
+        "filename": "expansion512-oct14-word-7109.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7110,
+        "reading": "あたる",
+        "word": "当たる",
+        "meaning": "うごいてきたものが、ほかのものにぶつかること。",
+        "filename": "expansion512-oct14-word-7110.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7111,
+        "reading": "あつぎ",
+        "word": "厚着",
+        "meaning": "あついふくや、なんまいものふくをきて、さむさをふせぐこと。",
+        "filename": "expansion512-oct14-word-7111.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7112,
+        "reading": "あまる",
+        "word": "余る",
+        "meaning": "ひつようなだけつかっても、まだのこること。",
+        "filename": "expansion512-oct14-word-7112.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      },
+      {
+        "id": 7113,
+        "reading": "あむ",
+        "word": "編む",
+        "meaning": "いとなどをくみあわせて、ぬのや、ものをつくること。",
+        "filename": "expansion512-oct14-word-7113.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet01.png"
+      }
+    ]
+  },
+  {
+    "sheet": 2,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "歩む・荒れる・暗記・育児などの場面を確認。祝いのコマの罫線色混入は再編集後に機械検証。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7114,
+        "reading": "あゆむ",
+        "word": "歩む",
+        "meaning": "足を動かして、一歩ずつ進むこと。",
+        "filename": "expansion512-oct14-v2-word-7114.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7115,
+        "reading": "あれる",
+        "word": "荒れる",
+        "meaning": "風や波が強くなり、おだやかでなくなること。",
+        "filename": "expansion512-oct14-v2-word-7115.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7116,
+        "reading": "あんき",
+        "word": "暗記",
+        "meaning": "文章や言葉などを、見なくても言えるように覚えること。",
+        "filename": "expansion512-oct14-v2-word-7116.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7117,
+        "reading": "いう",
+        "word": "言う",
+        "meaning": "こえにだして、ことばをつたえること。",
+        "filename": "expansion512-oct14-v2-word-7117.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7118,
+        "reading": "いかす",
+        "word": "生かす",
+        "meaning": "もののよさや人の力を、役立つように使うこと。",
+        "filename": "expansion512-oct14-v2-word-7118.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7119,
+        "reading": "いきき",
+        "word": "行き来",
+        "meaning": "あるばしょと、べつのばしょのあいだを、いったりきたりすること。",
+        "filename": "expansion512-oct14-v2-word-7119.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7120,
+        "reading": "いきる",
+        "word": "生きる",
+        "meaning": "いのちをたもち、くらしていること。",
+        "filename": "expansion512-oct14-v2-word-7120.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7121,
+        "reading": "いくじ",
+        "word": "育児",
+        "meaning": "小さな子どもの世話をして育てること。",
+        "filename": "expansion512-oct14-v2-word-7121.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7122,
+        "reading": "いける",
+        "word": "生ける",
+        "meaning": "切った花などを、形を整えて花びんなどにかざること。",
+        "filename": "expansion512-oct14-v2-word-7122.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7123,
+        "reading": "いじる",
+        "word": "弄る",
+        "meaning": "手でさわったり動かしたりして、ものを扱うこと。",
+        "filename": "expansion512-oct14-v2-word-7123.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7124,
+        "reading": "いどう",
+        "word": "移動",
+        "meaning": "あるばしょから、べつのばしょへうつること。",
+        "filename": "expansion512-oct14-v2-word-7124.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7125,
+        "reading": "いどむ",
+        "word": "挑む",
+        "meaning": "むずかしいことや、競争に取り組もうとすること。",
+        "filename": "expansion512-oct14-v2-word-7125.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7126,
+        "reading": "いのる",
+        "word": "祈る",
+        "meaning": "ねがいがかなうように、かみさまなどにおねがいすること。",
+        "filename": "expansion512-oct14-v2-word-7126.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7127,
+        "reading": "いばる",
+        "word": "威張る",
+        "meaning": "じぶんがえらいように、ほかのひとにふるまうこと。",
+        "filename": "expansion512-oct14-v2-word-7127.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7128,
+        "reading": "いれる",
+        "word": "入れる",
+        "meaning": "そとにあるものを、なかへうつすこと。",
+        "filename": "expansion512-oct14-v2-word-7128.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      },
+      {
+        "id": 7129,
+        "reading": "いわう",
+        "word": "祝う",
+        "meaning": "うれしいできごとを、よろこび、きもちをあらわすこと。",
+        "filename": "expansion512-oct14-v2-word-7129.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet02-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 3,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "浮くを水面で静かに浮く姿へ修正。唸るは口から低い声の線が出る姿へ修正。写すと映るを区別。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7130,
+        "reading": "うかぶ",
+        "word": "浮かぶ",
+        "meaning": "みずのひょうめんに、とどまっていること。",
+        "filename": "expansion512-oct14-v2-word-7130.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7131,
+        "reading": "うかる",
+        "word": "受かる",
+        "meaning": "しけんなどで、ごうかくすること。",
+        "filename": "expansion512-oct14-v2-word-7131.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7132,
+        "reading": "うく",
+        "word": "浮く",
+        "meaning": "みずなどのなかで、しずまずにいること。",
+        "filename": "expansion512-oct14-v2-word-7132.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7133,
+        "reading": "うける",
+        "word": "受ける",
+        "meaning": "相手が渡したものや、働きかけを受け取ること。",
+        "filename": "expansion512-oct14-v2-word-7133.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7134,
+        "reading": "うごく",
+        "word": "動く",
+        "meaning": "いちや、かたちがかわること。",
+        "filename": "expansion512-oct14-v2-word-7134.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7135,
+        "reading": "うすぎ",
+        "word": "薄着",
+        "meaning": "うすいふくや、すくないまいすうのふくをきること。",
+        "filename": "expansion512-oct14-v2-word-7135.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7136,
+        "reading": "うたう",
+        "word": "歌う",
+        "meaning": "おんがくにあわせて、こえをだすこと。",
+        "filename": "expansion512-oct14-v2-word-7136.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7137,
+        "reading": "うつ",
+        "word": "打つ",
+        "meaning": "てや、どうぐをつかって、ものにちからをくわえること。",
+        "filename": "expansion512-oct14-v2-word-7137.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7138,
+        "reading": "うつす",
+        "word": "写す",
+        "meaning": "もとのえやもじをみて、おなじようにかくこと。",
+        "filename": "expansion512-oct14-v2-word-7138.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7139,
+        "reading": "うつる",
+        "word": "映る",
+        "meaning": "かがみや、みずのひょうめんなどに、すがたがあらわれること。",
+        "filename": "expansion512-oct14-v2-word-7139.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7140,
+        "reading": "うなる",
+        "word": "唸る",
+        "meaning": "くちをおおきくあけずに、ひくいこえをだすこと。",
+        "filename": "expansion512-oct14-v2-word-7140.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7141,
+        "reading": "うまる",
+        "word": "埋まる",
+        "meaning": "つちなどにおおわれて、みえなくなること。",
+        "filename": "expansion512-oct14-v2-word-7141.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7142,
+        "reading": "うめる",
+        "word": "埋める",
+        "meaning": "あななどに、つちやものをいれて、いっぱいにすること。",
+        "filename": "expansion512-oct14-v2-word-7142.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7143,
+        "reading": "うれる",
+        "word": "売れる",
+        "meaning": "みせなどにあるものを、ひとがかってくれること。",
+        "filename": "expansion512-oct14-v2-word-7143.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7144,
+        "reading": "える",
+        "word": "得る",
+        "meaning": "ほしかったものや、知識などを手に入れること。",
+        "filename": "expansion512-oct14-v2-word-7144.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      },
+      {
+        "id": 7145,
+        "reading": "おう",
+        "word": "追う",
+        "meaning": "さきにすすむひとやものの、あとをたどること。",
+        "filename": "expansion512-oct14-v2-word-7145.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet03-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 4,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "起こすは眠っている子を起こす場面。怒る・踊る・覆う・送る・介護・会話を説明と対応。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7146,
+        "reading": "おおう",
+        "word": "覆う",
+        "meaning": "もののうえや、まわりに、べつのものをかぶせること。",
+        "filename": "expansion512-oct14-word-7146.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7147,
+        "reading": "おがむ",
+        "word": "拝む",
+        "meaning": "神仏などに向かって、手を合わせたり頭を下げたりすること。",
+        "filename": "expansion512-oct14-word-7147.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7148,
+        "reading": "おくる",
+        "word": "送る",
+        "meaning": "ものなどを、べつのばしょのひとへとどけること。",
+        "filename": "expansion512-oct14-word-7148.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7149,
+        "reading": "おこす",
+        "word": "起こす",
+        "meaning": "ねているひとが、おきるようにすること。",
+        "filename": "expansion512-oct14-word-7149.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7150,
+        "reading": "おこる",
+        "word": "怒る",
+        "meaning": "いやなことなどで、はらをたてること。",
+        "filename": "expansion512-oct14-word-7150.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7151,
+        "reading": "おしゃれ",
+        "word": "お洒落",
+        "meaning": "ふくやかみがたなどを、すてきになるようにくふうすること。",
+        "filename": "expansion512-oct14-word-7151.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7152,
+        "reading": "おどる",
+        "word": "踊る",
+        "meaning": "おんがくなどにあわせて、からだをうごかすこと。",
+        "filename": "expansion512-oct14-word-7152.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7153,
+        "reading": "おもう",
+        "word": "思う",
+        "meaning": "こころのなかで、かんがえたり、かんじたりすること。",
+        "filename": "expansion512-oct14-word-7153.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7154,
+        "reading": "おれる",
+        "word": "折れる",
+        "meaning": "ものがまがって、ふたつにわかれたり、くのじになったりすること。",
+        "filename": "expansion512-oct14-word-7154.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7155,
+        "reading": "おわび",
+        "word": "お詫び",
+        "meaning": "わるかったことについて、あやまること。",
+        "filename": "expansion512-oct14-word-7155.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7156,
+        "reading": "おわる",
+        "word": "終わる",
+        "meaning": "つづいていたことが、そこでおしまいになること。",
+        "filename": "expansion512-oct14-word-7156.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7157,
+        "reading": "かあつ",
+        "word": "加圧",
+        "meaning": "空気や水などに、押す力を加えること。",
+        "filename": "expansion512-oct14-word-7157.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7158,
+        "reading": "かいご",
+        "word": "介護",
+        "meaning": "生活に助けが必要な人の、食事や移動などを手伝うこと。",
+        "filename": "expansion512-oct14-word-7158.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7159,
+        "reading": "かいひ",
+        "word": "回避",
+        "meaning": "危険や困ったことを、さけること。",
+        "filename": "expansion512-oct14-word-7159.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7160,
+        "reading": "かいわ",
+        "word": "会話",
+        "meaning": "ふたりいじょうで、ことばをやりとりすること。",
+        "filename": "expansion512-oct14-word-7160.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      },
+      {
+        "id": 7161,
+        "reading": "かえす",
+        "word": "返す",
+        "meaning": "かりたものなどを、もとのもちぬしへわたすこと。",
+        "filename": "expansion512-oct14-word-7161.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet04.png"
+      }
+    ]
+  },
+  {
+    "sheet": 5,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "掛けるはフックへかばん、加速は車の速さの増加。仮装・枯れる・借りる等を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7162,
+        "reading": "かおる",
+        "word": "香る",
+        "meaning": "よいにおいが、まわりにただようこと。",
+        "filename": "expansion512-oct14-word-7162.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7163,
+        "reading": "かかる",
+        "word": "掛かる",
+        "meaning": "何かをするために、時間やお金などが必要になること。",
+        "filename": "expansion512-oct14-word-7163.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7164,
+        "reading": "かぎる",
+        "word": "限る",
+        "meaning": "数や範囲などに、決まった境目をつけること。",
+        "filename": "expansion512-oct14-word-7164.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7165,
+        "reading": "かくす",
+        "word": "隠す",
+        "meaning": "ひとにみえたり、しられたりしないようにすること。",
+        "filename": "expansion512-oct14-word-7165.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7166,
+        "reading": "かくほ",
+        "word": "確保",
+        "meaning": "必要なものや場所を、たしかに手に入れておくこと。",
+        "filename": "expansion512-oct14-word-7166.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7167,
+        "reading": "かける",
+        "word": "掛ける",
+        "meaning": "ものを、ふっくなどにひっかけて、とめること。",
+        "filename": "expansion512-oct14-word-7167.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7168,
+        "reading": "かこむ",
+        "word": "囲む",
+        "meaning": "あるもののまわりを、ほかのものやひとでとりまくこと。",
+        "filename": "expansion512-oct14-word-7168.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7169,
+        "reading": "かざる",
+        "word": "飾る",
+        "meaning": "みたところがすてきになるように、ものをおくこと。",
+        "filename": "expansion512-oct14-word-7169.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7170,
+        "reading": "かすむ",
+        "word": "霞む",
+        "meaning": "遠くのものなどが、ぼんやりして見えにくくなること。",
+        "filename": "expansion512-oct14-word-7170.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7171,
+        "reading": "かそう",
+        "word": "仮装",
+        "meaning": "いつもとちがうふくなどをきて、べつのひとやもののすがたになること。",
+        "filename": "expansion512-oct14-word-7171.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7172,
+        "reading": "かそく",
+        "word": "加速",
+        "meaning": "動く速さが増えること。また、速さを増やすこと。",
+        "filename": "expansion512-oct14-word-7172.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7173,
+        "reading": "かたる",
+        "word": "語る",
+        "meaning": "できごとや考えなどを、言葉でくわしく話すこと。",
+        "filename": "expansion512-oct14-word-7173.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7174,
+        "reading": "かなう",
+        "word": "叶う",
+        "meaning": "ねがっていたことが、ほんとうになること。",
+        "filename": "expansion512-oct14-word-7174.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7175,
+        "reading": "かばう",
+        "word": "庇う",
+        "meaning": "あいてがあぶないめにあわないように、まもること。",
+        "filename": "expansion512-oct14-word-7175.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7176,
+        "reading": "かりる",
+        "word": "借りる",
+        "meaning": "あとでかえすやくそくで、ほかのひとのものをつかわせてもらうこと。",
+        "filename": "expansion512-oct14-word-7176.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      },
+      {
+        "id": 7177,
+        "reading": "かれる",
+        "word": "枯れる",
+        "meaning": "しょくぶつがみずけやいのちをうしない、かわいてしまうこと。",
+        "filename": "expansion512-oct14-word-7177.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet05.png"
+      }
+    ]
+  },
+  {
+    "sheet": 6,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "看護・企画・着替え・競う・寄贈・帰宅・気づく等を確認。緩和は辛さをやわらげる一例。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7178,
+        "reading": "かんご",
+        "word": "看護",
+        "meaning": "病気やけがをした人の、世話や手当てをすること。",
+        "filename": "expansion512-oct14-word-7178.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7179,
+        "reading": "かんよ",
+        "word": "関与",
+        "meaning": "あることに関わって、働きかけること。",
+        "filename": "expansion512-oct14-word-7179.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7180,
+        "reading": "かんわ",
+        "word": "緩和",
+        "meaning": "きびしさや強さなどを、やわらげること。",
+        "filename": "expansion512-oct14-word-7180.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7181,
+        "reading": "がっち",
+        "word": "合致",
+        "meaning": "考えや条件などが、ぴったり合うこと。",
+        "filename": "expansion512-oct14-word-7181.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7182,
+        "reading": "きえる",
+        "word": "消える",
+        "meaning": "みえていたものが、みえなくなること。",
+        "filename": "expansion512-oct14-word-7182.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7183,
+        "reading": "きかく",
+        "word": "企画",
+        "meaning": "何を、どのように行うかを考えて、計画を立てること。",
+        "filename": "expansion512-oct14-word-7183.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7184,
+        "reading": "きがえ",
+        "word": "着替え",
+        "meaning": "きているふくをぬいで、べつのふくをきること。",
+        "filename": "expansion512-oct14-word-7184.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7185,
+        "reading": "きさい",
+        "word": "記載",
+        "meaning": "文章や表などに、必要なことを書きしるすこと。",
+        "filename": "expansion512-oct14-word-7185.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7186,
+        "reading": "きずく",
+        "word": "築く",
+        "meaning": "材料を積んだり組み合わせたりして、建物などを作ること。",
+        "filename": "expansion512-oct14-word-7186.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7187,
+        "reading": "きせい",
+        "word": "帰省",
+        "meaning": "ふだん住んでいる所から、実家などへ帰ること。",
+        "filename": "expansion512-oct14-word-7187.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7188,
+        "reading": "きせる",
+        "word": "着せる",
+        "meaning": "ほかのひとが、ふくをみにつけるようにすること。",
+        "filename": "expansion512-oct14-word-7188.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7189,
+        "reading": "きそう",
+        "word": "競う",
+        "meaning": "どちらがすぐれているか、あいてとくらべながらがんばること。",
+        "filename": "expansion512-oct14-word-7189.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7190,
+        "reading": "きぞう",
+        "word": "寄贈",
+        "meaning": "役立ててもらうために、学校などへ物をおくること。",
+        "filename": "expansion512-oct14-word-7190.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7191,
+        "reading": "きたく",
+        "word": "帰宅",
+        "meaning": "そとから、じぶんのいえへかえること。",
+        "filename": "expansion512-oct14-word-7191.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7192,
+        "reading": "きづく",
+        "word": "気づく",
+        "meaning": "それまでわからなかったことに、はっとしてわかること。",
+        "filename": "expansion512-oct14-word-7192.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      },
+      {
+        "id": 7193,
+        "reading": "くぎる",
+        "word": "区切る",
+        "meaning": "つながっているものを、いくつかの部分に分けること。",
+        "filename": "expansion512-oct14-word-7193.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet06.png"
+      }
+    ]
+  },
+  {
+    "sheet": 7,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "崩す・砕く・配る・汲む・曇る・悔やむ・来る・暮れる等を確認。交互は順の入れかわり。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7194,
+        "reading": "くずす",
+        "word": "崩す",
+        "meaning": "まとまっていたものを、ばらばらにすること。",
+        "filename": "expansion512-oct14-word-7194.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7195,
+        "reading": "くだく",
+        "word": "砕く",
+        "meaning": "かたいものにちからをくわえて、ちいさなかけらにすること。",
+        "filename": "expansion512-oct14-word-7195.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7196,
+        "reading": "くばる",
+        "word": "配る",
+        "meaning": "ものを、それぞれのひとやばしょにわたすこと。",
+        "filename": "expansion512-oct14-word-7196.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7197,
+        "reading": "くむ",
+        "word": "汲む",
+        "meaning": "みずなどを、ようきですくいとること。",
+        "filename": "expansion512-oct14-word-7197.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7198,
+        "reading": "くもる",
+        "word": "曇る",
+        "meaning": "そらにくもがひろがり、ひざしがさえぎられること。",
+        "filename": "expansion512-oct14-word-7198.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7199,
+        "reading": "くやむ",
+        "word": "悔やむ",
+        "meaning": "前にしたことを、しなければよかったと思うこと。",
+        "filename": "expansion512-oct14-word-7199.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7200,
+        "reading": "くる",
+        "word": "来る",
+        "meaning": "ほかのところから、こちらへちかづくこと。",
+        "filename": "expansion512-oct14-word-7200.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7201,
+        "reading": "くれる",
+        "word": "暮れる",
+        "meaning": "ひがしずみ、あたりがくらくなること。",
+        "filename": "expansion512-oct14-word-7201.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7202,
+        "reading": "くろう",
+        "word": "苦労",
+        "meaning": "困難に向き合い、心や体を使って取り組むこと。",
+        "filename": "expansion512-oct14-word-7202.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7203,
+        "reading": "けいか",
+        "word": "経過",
+        "meaning": "時間が過ぎること。また、その間に物事が進むこと。",
+        "filename": "expansion512-oct14-word-7203.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7204,
+        "reading": "けんさ",
+        "word": "検査",
+        "meaning": "ものの状態などを、基準にそって調べること。",
+        "filename": "expansion512-oct14-word-7204.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7205,
+        "reading": "こうぎ",
+        "word": "講義",
+        "meaning": "先生などが、ある分野の内容をまとめて教えること。",
+        "filename": "expansion512-oct14-word-7205.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7206,
+        "reading": "こうご",
+        "word": "交互",
+        "meaning": "ふたつ以上のものが、順番に入れかわること。",
+        "filename": "expansion512-oct14-word-7206.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7207,
+        "reading": "こうぼ",
+        "word": "公募",
+        "meaning": "広く知らせて、作品や参加者などを集めること。",
+        "filename": "expansion512-oct14-word-7207.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7208,
+        "reading": "こがす",
+        "word": "焦がす",
+        "meaning": "あたためすぎて、もののいろをこげちゃいろやくろにすること。",
+        "filename": "expansion512-oct14-word-7208.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      },
+      {
+        "id": 7209,
+        "reading": "このむ",
+        "word": "好む",
+        "meaning": "すきだとおもい、それをえらびたくなること。",
+        "filename": "expansion512-oct14-word-7209.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet07.png"
+      }
+    ]
+  },
+  {
+    "sheet": 8,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "拒む・混む・込める・子守・籠もる・肥やす・雇用・孤立等を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7210,
+        "reading": "こばむ",
+        "word": "拒む",
+        "meaning": "相手の願いや申し出などを、受け入れないこと。",
+        "filename": "expansion512-oct14-word-7210.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7211,
+        "reading": "こむ",
+        "word": "混む",
+        "meaning": "ひとやものがたくさんあつまって、すきまがすくなくなること。",
+        "filename": "expansion512-oct14-word-7211.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7212,
+        "reading": "こめる",
+        "word": "込める",
+        "meaning": "気持ちや力などを、十分に注ぐこと。",
+        "filename": "expansion512-oct14-word-7212.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7213,
+        "reading": "こもり",
+        "word": "子守",
+        "meaning": "ちいさなこどものせわをすること。",
+        "filename": "expansion512-oct14-word-7213.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7214,
+        "reading": "こもる",
+        "word": "籠もる",
+        "meaning": "家や部屋などの中にいて、外に出ないこと。",
+        "filename": "expansion512-oct14-word-7214.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7215,
+        "reading": "こやす",
+        "word": "肥やす",
+        "meaning": "肥料などで、土の中の養分を増やすこと。",
+        "filename": "expansion512-oct14-word-7215.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7216,
+        "reading": "こよう",
+        "word": "雇用",
+        "meaning": "仕事をしてもらうために、人をやとうこと。",
+        "filename": "expansion512-oct14-word-7216.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7217,
+        "reading": "こりつ",
+        "word": "孤立",
+        "meaning": "周りから離れて、助けやつながりを得にくくなること。",
+        "filename": "expansion512-oct14-word-7217.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7218,
+        "reading": "ごかい",
+        "word": "誤解",
+        "meaning": "相手の言葉や事実を、まちがって受け取ること。",
+        "filename": "expansion512-oct14-word-7218.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7219,
+        "reading": "ごらく",
+        "word": "娯楽",
+        "meaning": "楽しむためにする、遊びや趣味など。",
+        "filename": "expansion512-oct14-word-7219.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7220,
+        "reading": "さがす",
+        "word": "捜す",
+        "meaning": "みつからないひとやものを、みつけようとすること。",
+        "filename": "expansion512-oct14-word-7220.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7221,
+        "reading": "さげる",
+        "word": "下げる",
+        "meaning": "たかいところにあるものを、ひくいところへうつすこと。",
+        "filename": "expansion512-oct14-word-7221.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7222,
+        "reading": "さとす",
+        "word": "諭す",
+        "meaning": "相手がわかるように、道理をやさしく説明して教えること。",
+        "filename": "expansion512-oct14-word-7222.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7223,
+        "reading": "さます",
+        "word": "冷ます",
+        "meaning": "あついものの、ねつをさげること。",
+        "filename": "expansion512-oct14-word-7223.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7224,
+        "reading": "さわぐ",
+        "word": "騒ぐ",
+        "meaning": "おおきなこえやおとをだして、にぎやかにすること。",
+        "filename": "expansion512-oct14-word-7224.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      },
+      {
+        "id": 7225,
+        "reading": "しいく",
+        "word": "飼育",
+        "meaning": "動物にえさをあげ、住む場所を整えて育てること。",
+        "filename": "expansion512-oct14-word-7225.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet08.png"
+      }
+    ]
+  },
+  {
+    "sheet": 9,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "司会・叱る・茂る・思考・試作・指示・沈む等を確認。沈むは石が水中へ沈む図。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7226,
+        "reading": "しかい",
+        "word": "司会",
+        "meaning": "集まりで、話や出し物が順に進むように案内する役。",
+        "filename": "expansion512-oct14-word-7226.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7227,
+        "reading": "しかる",
+        "word": "叱る",
+        "meaning": "よくないことをしたひとに、なおすようにつよくいうこと。",
+        "filename": "expansion512-oct14-word-7227.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7228,
+        "reading": "しげる",
+        "word": "茂る",
+        "meaning": "くさやきのはが、たくさんはえてひろがること。",
+        "filename": "expansion512-oct14-word-7228.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7229,
+        "reading": "しこう",
+        "word": "思考",
+        "meaning": "物事について、筋道を立てて考えること。",
+        "filename": "expansion512-oct14-word-7229.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7230,
+        "reading": "しさく",
+        "word": "試作",
+        "meaning": "本格的に作る前に、試しに作って確かめること。",
+        "filename": "expansion512-oct14-word-7230.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7231,
+        "reading": "しじ",
+        "word": "指示",
+        "meaning": "何をすればよいか、具体的に知らせること。",
+        "filename": "expansion512-oct14-word-7231.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7232,
+        "reading": "しずむ",
+        "word": "沈む",
+        "meaning": "みずのひょうめんから、したへはいっていくこと。",
+        "filename": "expansion512-oct14-word-7232.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7233,
+        "reading": "したく",
+        "word": "支度",
+        "meaning": "これからすることにそなえて、ものなどをととのえること。",
+        "filename": "expansion512-oct14-word-7233.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7234,
+        "reading": "したみ",
+        "word": "下見",
+        "meaning": "あとで使う場所などを、前もって見て確かめること。",
+        "filename": "expansion512-oct14-word-7234.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7235,
+        "reading": "しつぎ",
+        "word": "質疑",
+        "meaning": "わからない点や疑問を、相手にたずねること。",
+        "filename": "expansion512-oct14-word-7235.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7236,
+        "reading": "しつれい",
+        "word": "失礼",
+        "meaning": "相手への礼儀に欠けるふるまいをすること。",
+        "filename": "expansion512-oct14-word-7236.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7237,
+        "reading": "してい",
+        "word": "指定",
+        "meaning": "どのものや場所にするか、はっきり決めること。",
+        "filename": "expansion512-oct14-word-7237.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7238,
+        "reading": "してき",
+        "word": "指摘",
+        "meaning": "問題や大切な点を、具体的に取り上げて知らせること。",
+        "filename": "expansion512-oct14-word-7238.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7239,
+        "reading": "しどう",
+        "word": "指導",
+        "meaning": "できるようになるための、やり方や考え方を教えること。",
+        "filename": "expansion512-oct14-word-7239.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7240,
+        "reading": "しばる",
+        "word": "縛る",
+        "meaning": "ひもなどをまきつけて、うごかないようにとめること。",
+        "filename": "expansion512-oct14-word-7240.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      },
+      {
+        "id": 7241,
+        "reading": "しぼむ",
+        "word": "萎む",
+        "meaning": "ふくらんでいたものが、ちいさくなること。",
+        "filename": "expansion512-oct14-word-7241.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet09.png"
+      }
+    ]
+  },
+  {
+    "sheet": 10,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "締まるはふたの締め付け。染みるは水がスポンジへ入る。鳴るは時計の振動。図示・抱く・研ぐ等を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7242,
+        "reading": "しまる",
+        "word": "締まる",
+        "meaning": "ゆるんでいたものが、きつくなること。",
+        "filename": "expansion512-oct14-v2-word-7242.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7243,
+        "reading": "しみる",
+        "word": "染みる",
+        "meaning": "みずなどが、もののなかへしみこむこと。",
+        "filename": "expansion512-oct14-v2-word-7243.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7244,
+        "reading": "しめい",
+        "word": "指名",
+        "meaning": "名前を挙げて、特定の人を選ぶこと。",
+        "filename": "expansion512-oct14-v2-word-7244.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7245,
+        "reading": "しめす",
+        "word": "示す",
+        "meaning": "相手にわかるように、見せたり知らせたりすること。",
+        "filename": "expansion512-oct14-v2-word-7245.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7246,
+        "reading": "しゅび",
+        "word": "守備",
+        "meaning": "スポーツで、相手に点を取られないように守ること。",
+        "filename": "expansion512-oct14-v2-word-7246.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7247,
+        "reading": "しょじ",
+        "word": "所持",
+        "meaning": "ものを自分の手もとに持っていること。",
+        "filename": "expansion512-oct14-v2-word-7247.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7248,
+        "reading": "しょり",
+        "word": "処理",
+        "meaning": "必要な作業をして、物事を片づけること。",
+        "filename": "expansion512-oct14-v2-word-7248.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7249,
+        "reading": "しる",
+        "word": "知る",
+        "meaning": "はなしをきいたりしらべたりして、わかるようになること。",
+        "filename": "expansion512-oct14-v2-word-7249.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7250,
+        "reading": "ずし",
+        "word": "図示",
+        "meaning": "言葉だけでなく、図を使って示すこと。",
+        "filename": "expansion512-oct14-v2-word-7250.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7251,
+        "reading": "だく",
+        "word": "抱く",
+        "meaning": "うででつつむようにして、ひとやものをもつこと。",
+        "filename": "expansion512-oct14-v2-word-7251.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7252,
+        "reading": "ちる",
+        "word": "散る",
+        "meaning": "はなびらやはなどが、ついていたところからはなれておちること。",
+        "filename": "expansion512-oct14-v2-word-7252.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7253,
+        "reading": "てる",
+        "word": "照る",
+        "meaning": "たいようなどのひかりが、あたること。",
+        "filename": "expansion512-oct14-v2-word-7253.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7254,
+        "reading": "とぐ",
+        "word": "研ぐ",
+        "meaning": "刃物などをこすって、よく切れるようにすること。",
+        "filename": "expansion512-oct14-v2-word-7254.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7255,
+        "reading": "なく",
+        "word": "泣く",
+        "meaning": "かなしいときなどに、なみだやこえをだすこと。",
+        "filename": "expansion512-oct14-v2-word-7255.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7256,
+        "reading": "なる",
+        "word": "鳴る",
+        "meaning": "ものから、おとがでること。",
+        "filename": "expansion512-oct14-v2-word-7256.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      },
+      {
+        "id": 7257,
+        "reading": "ふむ",
+        "word": "踏む",
+        "meaning": "あしをのせて、うえからおさえること。",
+        "filename": "expansion512-oct14-v2-word-7257.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet10-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 11,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "降る・減る・保護・補佐・保持・彫る・舞う・見る等を確認。予知は気象の予測場面の一例。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7258,
+        "reading": "ふる",
+        "word": "降る",
+        "meaning": "あめやゆきなどが、そらからおちてくること。",
+        "filename": "expansion512-oct14-word-7258.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7259,
+        "reading": "へる",
+        "word": "減る",
+        "meaning": "かずや、りょうが、まえよりすくなくなること。",
+        "filename": "expansion512-oct14-word-7259.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7260,
+        "reading": "ほご",
+        "word": "保護",
+        "meaning": "危険や害を受けないように、守ること。",
+        "filename": "expansion512-oct14-word-7260.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7261,
+        "reading": "ほさ",
+        "word": "補佐",
+        "meaning": "中心になって働く人を、そばで助けること。",
+        "filename": "expansion512-oct14-word-7261.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7262,
+        "reading": "ほじ",
+        "word": "保持",
+        "meaning": "持っているものや状態を、そのまま保つこと。",
+        "filename": "expansion512-oct14-word-7262.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7263,
+        "reading": "ほる",
+        "word": "彫る",
+        "meaning": "きやいしなどをけずって、かたちやもようをつくること。",
+        "filename": "expansion512-oct14-word-7263.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7264,
+        "reading": "まう",
+        "word": "舞う",
+        "meaning": "空中を、ひらひらと動くこと。",
+        "filename": "expansion512-oct14-word-7264.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7265,
+        "reading": "みる",
+        "word": "見る",
+        "meaning": "めをつかって、もののすがたやようすをとらえること。",
+        "filename": "expansion512-oct14-word-7265.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7266,
+        "reading": "むく",
+        "word": "剥く",
+        "meaning": "かわや、そとをおおっているものを、とりのぞくこと。",
+        "filename": "expansion512-oct14-word-7266.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7267,
+        "reading": "もむ",
+        "word": "揉む",
+        "meaning": "てでおしたり、にぎったりをくりかえすこと。",
+        "filename": "expansion512-oct14-word-7267.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7268,
+        "reading": "やむ",
+        "word": "止む",
+        "meaning": "つづいていたあめやおとなどが、とまること。",
+        "filename": "expansion512-oct14-word-7268.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7269,
+        "reading": "ゆう",
+        "word": "結う",
+        "meaning": "髪などをまとめて、ひもなどでしばること。",
+        "filename": "expansion512-oct14-word-7269.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7270,
+        "reading": "よき",
+        "word": "予期",
+        "meaning": "これから起こることを、前もって予想すること。",
+        "filename": "expansion512-oct14-word-7270.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7271,
+        "reading": "よち",
+        "word": "予知",
+        "meaning": "これから起こることを、前もって知ること。",
+        "filename": "expansion512-oct14-word-7271.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7272,
+        "reading": "わる",
+        "word": "割る",
+        "meaning": "ものにちからをくわえて、いくつかにわけること。",
+        "filename": "expansion512-oct14-word-7272.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      },
+      {
+        "id": 7273,
+        "reading": "おおらか",
+        "word": "おおらか",
+        "meaning": "こまかいことをきにしすぎず、ゆったりしているようす。",
+        "filename": "expansion512-oct14-word-7273.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet11.png"
+      }
+    ]
+  },
+  {
+    "sheet": 12,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "ささやか・消極的・的確・莫大・不正確などを確認。不正確は針の値と比較。抽象語は場面例。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7274,
+        "reading": "かすか",
+        "word": "かすか",
+        "meaning": "おとやひかりなどが、とてもよわく、わずかにわかるようす。",
+        "filename": "expansion512-oct14-word-7274.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7275,
+        "reading": "ささやか",
+        "word": "ささやか",
+        "meaning": "規模や量は小さいが、心をこめたようす。",
+        "filename": "expansion512-oct14-word-7275.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7276,
+        "reading": "しょうきょくてき",
+        "word": "消極的",
+        "meaning": "自分から進んで行動しようとしないようす。",
+        "filename": "expansion512-oct14-word-7276.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7277,
+        "reading": "てきかく",
+        "word": "的確",
+        "meaning": "大切な点を正しくとらえ、ぴったり合っているようす。",
+        "filename": "expansion512-oct14-word-7277.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7278,
+        "reading": "ばくだい",
+        "word": "莫大",
+        "meaning": "量や金額などが、とても大きいようす。",
+        "filename": "expansion512-oct14-word-7278.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7279,
+        "reading": "ふせいかく",
+        "word": "不正確",
+        "meaning": "数値や説明などが、正しいものとずれているようす。",
+        "filename": "expansion512-oct14-word-7279.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7280,
+        "reading": "ぶじ",
+        "word": "無事",
+        "meaning": "あぶないことや、こまったことがなく、すごせているようす。",
+        "filename": "expansion512-oct14-word-7280.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7281,
+        "reading": "むよう",
+        "word": "無用",
+        "meaning": "必要がないこと。",
+        "filename": "expansion512-oct14-word-7281.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7282,
+        "reading": "れいりょう",
+        "word": "冷涼",
+        "meaning": "気温が低めで、すずしいようす。",
+        "filename": "expansion512-oct14-word-7282.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7283,
+        "reading": "わずか",
+        "word": "わずか",
+        "meaning": "かずや、りょうなどが、とてもすくないようす。",
+        "filename": "expansion512-oct14-word-7283.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7284,
+        "reading": "あきらか",
+        "word": "明らか",
+        "meaning": "はっきりしていて、よくわかるようす。",
+        "filename": "expansion512-oct14-word-7284.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7285,
+        "reading": "あしばや",
+        "word": "足早",
+        "meaning": "あるくはやさが、いつもよりはやいようす。",
+        "filename": "expansion512-oct14-word-7285.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7286,
+        "reading": "あべこべ",
+        "word": "あべこべ",
+        "meaning": "じゅんばんやむきなどが、ほんらいとははんたいのようす。",
+        "filename": "expansion512-oct14-word-7286.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7287,
+        "reading": "あやふや",
+        "word": "あやふや",
+        "meaning": "はっきりせず、たしかだといえないようす。",
+        "filename": "expansion512-oct14-word-7287.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7288,
+        "reading": "あんい",
+        "word": "安易",
+        "meaning": "十分に考えず、手軽なやり方を選ぶようす。",
+        "filename": "expansion512-oct14-word-7288.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      },
+      {
+        "id": 7289,
+        "reading": "あんか",
+        "word": "安価",
+        "meaning": "値段が安いようす。",
+        "filename": "expansion512-oct14-word-7289.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet12.png"
+      }
+    ]
+  },
+  {
+    "sheet": 13,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "イコールは左右3個ずつ。一律は同じ贈り物。大げさは実物の小魚と話中の大魚へ修正。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7290,
+        "reading": "あんせい",
+        "word": "安静",
+        "meaning": "体をあまり動かさず、静かに休むこと。",
+        "filename": "expansion512-oct14-v2-word-7290.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7291,
+        "reading": "あんたい",
+        "word": "安泰",
+        "meaning": "危険や心配がなく、落ち着いているようす。",
+        "filename": "expansion512-oct14-v2-word-7291.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7292,
+        "reading": "いこーる",
+        "word": "イコール",
+        "meaning": "ふたつの値や量が、等しいこと。式では「＝」で表す。",
+        "filename": "expansion512-oct14-v2-word-7292.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7293,
+        "reading": "いしつ",
+        "word": "異質",
+        "meaning": "ほかのものと、性質や種類が違うようす。",
+        "filename": "expansion512-oct14-v2-word-7293.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7294,
+        "reading": "いしょく",
+        "word": "異色",
+        "meaning": "同じ分野のほかのものとは、特徴が大きく違うようす。",
+        "filename": "expansion512-oct14-v2-word-7294.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7295,
+        "reading": "いだい",
+        "word": "偉大",
+        "meaning": "功績や力などが、とてもすぐれているようす。",
+        "filename": "expansion512-oct14-v2-word-7295.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7296,
+        "reading": "いちず",
+        "word": "一途",
+        "meaning": "ひとつのことに、心を集中しているようす。",
+        "filename": "expansion512-oct14-v2-word-7296.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7297,
+        "reading": "いちよう",
+        "word": "一様",
+        "meaning": "どこも同じようで、違いがないようす。",
+        "filename": "expansion512-oct14-v2-word-7297.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7298,
+        "reading": "いちりつ",
+        "word": "一律",
+        "meaning": "条件の違いによらず、すべて同じにするようす。",
+        "filename": "expansion512-oct14-v2-word-7298.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7299,
+        "reading": "いっぱい",
+        "word": "一杯",
+        "meaning": "ものがたくさんはいり、もうはいらないようす。",
+        "filename": "expansion512-oct14-v2-word-7299.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7300,
+        "reading": "いとてき",
+        "word": "意図的",
+        "meaning": "偶然ではなく、考えや目的があって行うようす。",
+        "filename": "expansion512-oct14-v2-word-7300.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7301,
+        "reading": "いれい",
+        "word": "異例",
+        "meaning": "いつもの例や、ふつうのやり方と違うようす。",
+        "filename": "expansion512-oct14-v2-word-7301.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7302,
+        "reading": "うちき",
+        "word": "内気",
+        "meaning": "ひとのまえで、じぶんのきもちをだすのがにがてなようす。",
+        "filename": "expansion512-oct14-v2-word-7302.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7303,
+        "reading": "うらはら",
+        "word": "裏腹",
+        "meaning": "言葉と気持ちなどが、反対になっているようす。",
+        "filename": "expansion512-oct14-v2-word-7303.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7304,
+        "reading": "えこ",
+        "word": "エコ",
+        "meaning": "環境への負担を減らそうとする考えや取り組み。",
+        "filename": "expansion512-oct14-v2-word-7304.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      },
+      {
+        "id": 7305,
+        "reading": "おおげさ",
+        "word": "大げさ",
+        "meaning": "ほんとうのようすより、おおきくみせたりつたえたりするようす。",
+        "filename": "expansion512-oct14-v2-word-7305.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet13-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 14,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "多めは盛りの比較。カチカチは砕けない石に修正。カラフル・華麗・軽やか・簡潔を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7306,
+        "reading": "おおつぶ",
+        "word": "大粒",
+        "meaning": "つぶの、ひとつひとつが、おおきいようす。",
+        "filename": "expansion512-oct14-v2-word-7306.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7307,
+        "reading": "おおまか",
+        "word": "大まか",
+        "meaning": "細かな点にこだわらず、全体を大きくとらえるようす。",
+        "filename": "expansion512-oct14-v2-word-7307.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7308,
+        "reading": "おおめ",
+        "word": "多め",
+        "meaning": "ふつうや、きじゅんより、りょうがすこしおおいようす。",
+        "filename": "expansion512-oct14-v2-word-7308.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7309,
+        "reading": "おごそか",
+        "word": "厳か",
+        "meaning": "気持ちが引きしまるほど、重々しく落ち着いているようす。",
+        "filename": "expansion512-oct14-v2-word-7309.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7310,
+        "reading": "おとく",
+        "word": "お得",
+        "meaning": "ねだんやつかいかたなどで、いつもよりりえきがあるようす。",
+        "filename": "expansion512-oct14-v2-word-7310.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7311,
+        "reading": "かくべつ",
+        "word": "格別",
+        "meaning": "ほかのものと、はっきり違うほど特別なようす。",
+        "filename": "expansion512-oct14-v2-word-7311.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7312,
+        "reading": "かくやす",
+        "word": "格安",
+        "meaning": "ふつうの値段とくらべて、とても安いようす。",
+        "filename": "expansion512-oct14-v2-word-7312.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7313,
+        "reading": "かじょう",
+        "word": "過剰",
+        "meaning": "必要な量や、適した程度をこえているようす。",
+        "filename": "expansion512-oct14-v2-word-7313.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7314,
+        "reading": "かたくな",
+        "word": "頑な",
+        "meaning": "自分の考えを変えようとしないようす。",
+        "filename": "expansion512-oct14-v2-word-7314.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7315,
+        "reading": "かちかち",
+        "word": "カチカチ",
+        "meaning": "ものがとてもかたく、かんたんにはまがらないようす。",
+        "filename": "expansion512-oct14-v2-word-7315.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7316,
+        "reading": "かって",
+        "word": "勝手",
+        "meaning": "ほかの人の都合を考えず、自分の思うままにするようす。",
+        "filename": "expansion512-oct14-v2-word-7316.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7317,
+        "reading": "かみつ",
+        "word": "過密",
+        "meaning": "人やもの、予定などが、つまりすぎているようす。",
+        "filename": "expansion512-oct14-v2-word-7317.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7318,
+        "reading": "からふる",
+        "word": "カラフル",
+        "meaning": "いろいろないろがつかわれ、あざやかなようす。",
+        "filename": "expansion512-oct14-v2-word-7318.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7319,
+        "reading": "かれい",
+        "word": "華麗",
+        "meaning": "はなやかで、美しいようす。",
+        "filename": "expansion512-oct14-v2-word-7319.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7320,
+        "reading": "かろやか",
+        "word": "軽やか",
+        "meaning": "うごきなどがかるく、すばやいようす。",
+        "filename": "expansion512-oct14-v2-word-7320.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      },
+      {
+        "id": 7321,
+        "reading": "かんけつ",
+        "word": "簡潔",
+        "meaning": "むだがなく、短くまとまっているようす。",
+        "filename": "expansion512-oct14-v2-word-7321.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet14-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 15,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "簡素・完璧・寒冷・頑固・気がかり・気軽等を確認。均一の焼き菓子を含め場面例を照合。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7322,
+        "reading": "かんそ",
+        "word": "簡素",
+        "meaning": "かざりや、余分なものが少ないようす。",
+        "filename": "expansion512-oct14-word-7322.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7323,
+        "reading": "かんぺき",
+        "word": "完璧",
+        "meaning": "欠けたところや、まちがいがないようす。",
+        "filename": "expansion512-oct14-word-7323.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7324,
+        "reading": "かんれい",
+        "word": "寒冷",
+        "meaning": "気温が低く、寒いようす。",
+        "filename": "expansion512-oct14-word-7324.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7325,
+        "reading": "がんこ",
+        "word": "頑固",
+        "meaning": "じぶんのかんがえを、なかなかかえないようす。",
+        "filename": "expansion512-oct14-word-7325.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7326,
+        "reading": "きがかり",
+        "word": "気がかり",
+        "meaning": "しんぱいで、きになっていること。",
+        "filename": "expansion512-oct14-word-7326.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7327,
+        "reading": "きがる",
+        "word": "気軽",
+        "meaning": "おおきなふあんや、かまえたきもちがないようす。",
+        "filename": "expansion512-oct14-word-7327.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7328,
+        "reading": "きじょう",
+        "word": "気丈",
+        "meaning": "つらいことがあっても、気持ちを強く保つようす。",
+        "filename": "expansion512-oct14-word-7328.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7329,
+        "reading": "きのどく",
+        "word": "気の毒",
+        "meaning": "こまっているひとなどをみて、かわいそうにおもうこと。",
+        "filename": "expansion512-oct14-word-7329.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7330,
+        "reading": "きばつ",
+        "word": "奇抜",
+        "meaning": "ふつうとは大きく違い、人をおどろかせるようす。",
+        "filename": "expansion512-oct14-word-7330.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7331,
+        "reading": "きまま",
+        "word": "気まま",
+        "meaning": "自分の気持ちのままに、自由にふるまうようす。",
+        "filename": "expansion512-oct14-word-7331.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7332,
+        "reading": "きゅーと",
+        "word": "キュート",
+        "meaning": "すがたや、しぐさなどが、かわいらしいようす。",
+        "filename": "expansion512-oct14-word-7332.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7333,
+        "reading": "きょがく",
+        "word": "巨額",
+        "meaning": "お金の額が、とても大きいこと。",
+        "filename": "expansion512-oct14-word-7333.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7334,
+        "reading": "きょだい",
+        "word": "巨大",
+        "meaning": "ふつうのものとくらべて、とてもおおきいようす。",
+        "filename": "expansion512-oct14-word-7334.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7335,
+        "reading": "きよらか",
+        "word": "清らか",
+        "meaning": "にごりや、よごれがなく、すんでいるようす。",
+        "filename": "expansion512-oct14-word-7335.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7336,
+        "reading": "きらく",
+        "word": "気楽",
+        "meaning": "しんぱいや、きづかいがすくなく、らくなきもちでいるようす。",
+        "filename": "expansion512-oct14-word-7336.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      },
+      {
+        "id": 7337,
+        "reading": "きんいつ",
+        "word": "均一",
+        "meaning": "どの部分も、同じ量や性質になっているようす。",
+        "filename": "expansion512-oct14-word-7337.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet15.png"
+      }
+    ]
+  },
+  {
+    "sheet": 16,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "均等は4等分のピザ。逆は反対の矢印。高度は空中の高さではなく精密なロボット組立へ修正。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7338,
+        "reading": "きんしつ",
+        "word": "均質",
+        "meaning": "どの部分も、性質や品質がそろっているようす。",
+        "filename": "expansion512-oct14-v2-word-7338.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7339,
+        "reading": "きんとう",
+        "word": "均等",
+        "meaning": "量や割合などが、等しく分かれているようす。",
+        "filename": "expansion512-oct14-v2-word-7339.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7340,
+        "reading": "ぎゃく",
+        "word": "逆",
+        "meaning": "むきや、じゅんじょなどが、はんたいであること。",
+        "filename": "expansion512-oct14-v2-word-7340.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7341,
+        "reading": "くたくた",
+        "word": "くたくた",
+        "meaning": "とてもつかれて、ちからがでないようす。",
+        "filename": "expansion512-oct14-v2-word-7341.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7342,
+        "reading": "けいそつ",
+        "word": "軽率",
+        "meaning": "十分に考えずに、行動するようす。",
+        "filename": "expansion512-oct14-v2-word-7342.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7343,
+        "reading": "けんご",
+        "word": "堅固",
+        "meaning": "つくりがしっかりしていて、こわれにくいようす。",
+        "filename": "expansion512-oct14-v2-word-7343.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7344,
+        "reading": "けんざい",
+        "word": "健在",
+        "meaning": "人が元気でいたり、力が変わらずに残っていたりするようす。",
+        "filename": "expansion512-oct14-v2-word-7344.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7345,
+        "reading": "けんちょ",
+        "word": "顕著",
+        "meaning": "違いや特徴などが、はっきり目立つようす。",
+        "filename": "expansion512-oct14-v2-word-7345.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7346,
+        "reading": "げきてき",
+        "word": "劇的",
+        "meaning": "変化などが大きく、人に強い印象を与えるようす。",
+        "filename": "expansion512-oct14-v2-word-7346.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7347,
+        "reading": "げんかく",
+        "word": "厳格",
+        "meaning": "きまりを、きびしく守るようす。",
+        "filename": "expansion512-oct14-v2-word-7347.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7348,
+        "reading": "こうえい",
+        "word": "光栄",
+        "meaning": "ほめられたり認められたりして、名誉に思うこと。",
+        "filename": "expansion512-oct14-v2-word-7348.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7349,
+        "reading": "こうてき",
+        "word": "公的",
+        "meaning": "個人ではなく、社会全体や公の組織に関わるようす。",
+        "filename": "expansion512-oct14-v2-word-7349.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7350,
+        "reading": "こうど",
+        "word": "高度",
+        "meaning": "程度や技術などが、高い水準にあるようす。",
+        "filename": "expansion512-oct14-v2-word-7350.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7351,
+        "reading": "こきざみ",
+        "word": "小刻み",
+        "meaning": "動きや間隔などが、細かく分かれているようす。",
+        "filename": "expansion512-oct14-v2-word-7351.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7352,
+        "reading": "こっけい",
+        "word": "滑稽",
+        "meaning": "動きや話などがおもしろく、笑いたくなるようす。",
+        "filename": "expansion512-oct14-v2-word-7352.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      },
+      {
+        "id": 7353,
+        "reading": "こどく",
+        "word": "孤独",
+        "meaning": "ひとりで、ほかの人とのつながりが少ないこと。",
+        "filename": "expansion512-oct14-v2-word-7353.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet16-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 17,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "小幅は同じ長さで幅の異なるリボン。互角は同じ勢いの対戦。自明は明らかに空の透明なコップの例。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7354,
+        "reading": "こはば",
+        "word": "小幅",
+        "meaning": "はばや、変化の程度が小さいようす。",
+        "filename": "expansion512-oct14-v2-word-7354.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7355,
+        "reading": "こふう",
+        "word": "古風",
+        "meaning": "昔からの形や、やり方を感じさせるようす。",
+        "filename": "expansion512-oct14-v2-word-7355.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7356,
+        "reading": "こまか",
+        "word": "細か",
+        "meaning": "ひとつひとつが、ちいさくわかれているようす。",
+        "filename": "expansion512-oct14-v2-word-7356.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7357,
+        "reading": "こみかる",
+        "word": "コミカル",
+        "meaning": "人を笑わせるような、おもしろいようす。",
+        "filename": "expansion512-oct14-v2-word-7357.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7358,
+        "reading": "こゆう",
+        "word": "固有",
+        "meaning": "そのものだけが持つ、特有の性質や特徴。",
+        "filename": "expansion512-oct14-v2-word-7358.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7359,
+        "reading": "ごうかい",
+        "word": "豪快",
+        "meaning": "動きやふるまいが、大きく力強いようす。",
+        "filename": "expansion512-oct14-v2-word-7359.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7360,
+        "reading": "ごかく",
+        "word": "互角",
+        "meaning": "ふたつの力や、成績などが、ほぼ同じであること。",
+        "filename": "expansion512-oct14-v2-word-7360.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7361,
+        "reading": "しゃい",
+        "word": "シャイ",
+        "meaning": "人の前で、はずかしがるようす。",
+        "filename": "expansion512-oct14-v2-word-7361.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7362,
+        "reading": "しんき",
+        "word": "新規",
+        "meaning": "これまでになく、新しく始めること。",
+        "filename": "expansion512-oct14-v2-word-7362.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7363,
+        "reading": "しんし",
+        "word": "真摯",
+        "meaning": "物事に、まじめに向き合うようす。",
+        "filename": "expansion512-oct14-v2-word-7363.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7364,
+        "reading": "しんぴ",
+        "word": "神秘",
+        "meaning": "ふつうの考えでは説明しにくい、不思議なこと。",
+        "filename": "expansion512-oct14-v2-word-7364.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7365,
+        "reading": "じざい",
+        "word": "自在",
+        "meaning": "自分の思うとおりに、自由に扱えるようす。",
+        "filename": "expansion512-oct14-v2-word-7365.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7366,
+        "reading": "じみち",
+        "word": "地道",
+        "meaning": "派手なことをせず、こつこつ続けるようす。",
+        "filename": "expansion512-oct14-v2-word-7366.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7367,
+        "reading": "じめい",
+        "word": "自明",
+        "meaning": "説明がなくても、明らかだとわかるようす。",
+        "filename": "expansion512-oct14-v2-word-7367.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7368,
+        "reading": "すりむ",
+        "word": "スリム",
+        "meaning": "形が、ほっそりしているようす。",
+        "filename": "expansion512-oct14-v2-word-7368.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      },
+      {
+        "id": 7369,
+        "reading": "すろー",
+        "word": "スロー",
+        "meaning": "うごきや、すすみかたが、ゆっくりしているようす。",
+        "filename": "expansion512-oct14-v2-word-7369.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet17-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 18,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "正規・粗大・ソフト・素朴・粗末・平ら等を確認。独自は他と違う器の柄の一例。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7370,
+        "reading": "せいき",
+        "word": "正規",
+        "meaning": "決められた正式な手続きや、形にそっているようす。",
+        "filename": "expansion512-oct14-word-7370.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7371,
+        "reading": "そだい",
+        "word": "粗大",
+        "meaning": "形やつくりが、大きいようす。",
+        "filename": "expansion512-oct14-word-7371.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7372,
+        "reading": "そふと",
+        "word": "ソフト",
+        "meaning": "やわらかく、やさしいかんじのようす。",
+        "filename": "expansion512-oct14-word-7372.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7373,
+        "reading": "そぼく",
+        "word": "素朴",
+        "meaning": "かざりけがなく、自然で気取らないようす。",
+        "filename": "expansion512-oct14-word-7373.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7374,
+        "reading": "そまつ",
+        "word": "粗末",
+        "meaning": "つくりや品質が、十分によくないようす。",
+        "filename": "expansion512-oct14-word-7374.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7375,
+        "reading": "たいら",
+        "word": "平ら",
+        "meaning": "でこぼこや、かたむきがないようす。",
+        "filename": "expansion512-oct14-word-7375.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7376,
+        "reading": "たがく",
+        "word": "多額",
+        "meaning": "お金の額が、大きいこと。",
+        "filename": "expansion512-oct14-word-7376.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7377,
+        "reading": "たしつ",
+        "word": "多湿",
+        "meaning": "空気に含まれる水蒸気が、多いようす。",
+        "filename": "expansion512-oct14-word-7377.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7378,
+        "reading": "ただい",
+        "word": "多大",
+        "meaning": "量や影響などが、とても大きいようす。",
+        "filename": "expansion512-oct14-word-7378.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7379,
+        "reading": "たんき",
+        "word": "短気",
+        "meaning": "ちょっとしたことで、すぐにおこるようす。",
+        "filename": "expansion512-oct14-word-7379.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7380,
+        "reading": "つよき",
+        "word": "強気",
+        "meaning": "自信を持ち、相手に負けまいとするようす。",
+        "filename": "expansion512-oct14-word-7380.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7381,
+        "reading": "てうす",
+        "word": "手薄",
+        "meaning": "必要な人手や、備えが足りないようす。",
+        "filename": "expansion512-oct14-word-7381.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7382,
+        "reading": "てきぎ",
+        "word": "適宜",
+        "meaning": "その場に合うように、やり方を選ぶこと。",
+        "filename": "expansion512-oct14-word-7382.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7383,
+        "reading": "てきじ",
+        "word": "適時",
+        "meaning": "ちょうどよい時期や、時刻に行うこと。",
+        "filename": "expansion512-oct14-word-7383.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7384,
+        "reading": "てごろ",
+        "word": "手ごろ",
+        "meaning": "おおきさやねだんなどが、あつかいやすいようす。",
+        "filename": "expansion512-oct14-word-7384.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      },
+      {
+        "id": 7385,
+        "reading": "どくじ",
+        "word": "独自",
+        "meaning": "ほかと違い、そのものならではのやり方や特徴。",
+        "filename": "expansion512-oct14-word-7385.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet18.png"
+      }
+    ]
+  },
+  {
+    "sheet": 19,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "値打ちの宝冠の罫線色混入を修正。フェア・不屈・不慣れ・不備・不明等の場面を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7386,
+        "reading": "ないす",
+        "word": "ナイス",
+        "meaning": "とてもよいとおもったときに、ほめることば。",
+        "filename": "expansion512-oct14-v2-word-7386.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7387,
+        "reading": "ねうち",
+        "word": "値打ち",
+        "meaning": "そのものに、どれほどの価値があるかということ。",
+        "filename": "expansion512-oct14-v2-word-7387.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7388,
+        "reading": "のりき",
+        "word": "乗り気",
+        "meaning": "ぜひやりたいと、きもちがむいているようす。",
+        "filename": "expansion512-oct14-v2-word-7388.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7389,
+        "reading": "はるか",
+        "word": "遥か",
+        "meaning": "距離や時間などが、大きく離れているようす。",
+        "filename": "expansion512-oct14-v2-word-7389.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7390,
+        "reading": "はんぱ",
+        "word": "半端",
+        "meaning": "全部そろわず、途中や余りになっているようす。",
+        "filename": "expansion512-oct14-v2-word-7390.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7391,
+        "reading": "ひそか",
+        "word": "密か",
+        "meaning": "ほかの人に知られないように、静かに行うようす。",
+        "filename": "expansion512-oct14-v2-word-7391.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7392,
+        "reading": "ひっす",
+        "word": "必須",
+        "meaning": "欠かすことができず、必ず必要なこと。",
+        "filename": "expansion512-oct14-v2-word-7392.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7393,
+        "reading": "びさい",
+        "word": "微細",
+        "meaning": "とても小さく、細かなようす。",
+        "filename": "expansion512-oct14-v2-word-7393.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7394,
+        "reading": "ふい",
+        "word": "不意",
+        "meaning": "予想していなかったことが、突然起こること。",
+        "filename": "expansion512-oct14-v2-word-7394.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7395,
+        "reading": "ふぇあ",
+        "word": "フェア",
+        "meaning": "ひいきやずるさがなく、公平なようす。",
+        "filename": "expansion512-oct14-v2-word-7395.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7396,
+        "reading": "ふくつ",
+        "word": "不屈",
+        "meaning": "困難があっても、あきらめずに取り組むようす。",
+        "filename": "expansion512-oct14-v2-word-7396.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7397,
+        "reading": "ふなれ",
+        "word": "不慣れ",
+        "meaning": "まだなれていなくて、うまくできないようす。",
+        "filename": "expansion512-oct14-v2-word-7397.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7398,
+        "reading": "ふび",
+        "word": "不備",
+        "meaning": "必要なものがそろわず、不十分な点があること。",
+        "filename": "expansion512-oct14-v2-word-7398.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7399,
+        "reading": "ふめい",
+        "word": "不明",
+        "meaning": "はっきりわからず、確かめられていないこと。",
+        "filename": "expansion512-oct14-v2-word-7399.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7400,
+        "reading": "ふりー",
+        "word": "フリー",
+        "meaning": "しばりや制限がなく、自由であるようす。",
+        "filename": "expansion512-oct14-v2-word-7400.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      },
+      {
+        "id": 7401,
+        "reading": "ほんき",
+        "word": "本気",
+        "meaning": "ふざけたりせず、しんけんにかんがえているようす。",
+        "filename": "expansion512-oct14-v2-word-7401.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet19-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 20,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "稀は多数の灰色玉に青玉1個へ修正。無害は生きた野生のカエルから布のぬいぐるみへ修正。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7402,
+        "reading": "まぢか",
+        "word": "間近",
+        "meaning": "ばしょやじかんが、すぐちかくにあるようす。",
+        "filename": "expansion512-oct14-v2-word-7402.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7403,
+        "reading": "まっか",
+        "word": "真っ赤",
+        "meaning": "あかいいろが、とてもつよいようす。",
+        "filename": "expansion512-oct14-v2-word-7403.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7404,
+        "reading": "まれ",
+        "word": "稀",
+        "meaning": "起こることや、見られることが、とても少ないようす。",
+        "filename": "expansion512-oct14-v2-word-7404.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7405,
+        "reading": "みがる",
+        "word": "身軽",
+        "meaning": "にもつなどがすくなく、うごきやすいようす。",
+        "filename": "expansion512-oct14-v2-word-7405.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7406,
+        "reading": "みぢか",
+        "word": "身近",
+        "meaning": "じぶんのすぐそばにあったり、よくせっしたりするようす。",
+        "filename": "expansion512-oct14-v2-word-7406.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7407,
+        "reading": "みてい",
+        "word": "未定",
+        "meaning": "まだ、はっきり決まっていないこと。",
+        "filename": "expansion512-oct14-v2-word-7407.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7408,
+        "reading": "むいみ",
+        "word": "無意味",
+        "meaning": "意味や、役立つ効果がないこと。",
+        "filename": "expansion512-oct14-v2-word-7408.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7409,
+        "reading": "むがい",
+        "word": "無害",
+        "meaning": "害を与えないこと。",
+        "filename": "expansion512-oct14-v2-word-7409.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7410,
+        "reading": "むきず",
+        "word": "無傷",
+        "meaning": "きずが、ひとつもないようす。",
+        "filename": "expansion512-oct14-v2-word-7410.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7411,
+        "reading": "むくち",
+        "word": "無口",
+        "meaning": "あまりことばをはなさないようす。",
+        "filename": "expansion512-oct14-v2-word-7411.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7412,
+        "reading": "むすう",
+        "word": "無数",
+        "meaning": "数えきれないほど、たくさんあること。",
+        "filename": "expansion512-oct14-v2-word-7412.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7413,
+        "reading": "むてき",
+        "word": "無敵",
+        "meaning": "まけるあいてがいないほど、つよいようす。",
+        "filename": "expansion512-oct14-v2-word-7413.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7414,
+        "reading": "めいよ",
+        "word": "名誉",
+        "meaning": "よい行いや成果を、社会から高く認められること。",
+        "filename": "expansion512-oct14-v2-word-7414.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7415,
+        "reading": "ゆうい",
+        "word": "優位",
+        "meaning": "相手より、有利な立場にあること。",
+        "filename": "expansion512-oct14-v2-word-7415.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7416,
+        "reading": "ゆうび",
+        "word": "優美",
+        "meaning": "すがたや動きが、上品で美しいようす。",
+        "filename": "expansion512-oct14-v2-word-7416.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      },
+      {
+        "id": 7417,
+        "reading": "ようい",
+        "word": "容易",
+        "meaning": "手間や苦労が少なく、簡単にできるようす。",
+        "filename": "expansion512-oct14-v2-word-7417.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet20-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 21,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "おしべの花粉とめしべの先・子房を区別。みぞれは雨と雪の混在。レアの宝石色と不均等罫線を修正。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7418,
+        "reading": "よけい",
+        "word": "余計",
+        "meaning": "必要な量や程度をこえて、余分にあるようす。",
+        "filename": "expansion512-oct14-v4-word-7418.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7419,
+        "reading": "よわき",
+        "word": "弱気",
+        "meaning": "じしんがなく、うまくいかないとおもってしまうようす。",
+        "filename": "expansion512-oct14-v4-word-7419.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7420,
+        "reading": "りある",
+        "word": "リアル",
+        "meaning": "現実のものに、とても近いようす。",
+        "filename": "expansion512-oct14-v4-word-7420.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7421,
+        "reading": "りこう",
+        "word": "利口",
+        "meaning": "ものごとがよくわかり、うまくかんがえられるようす。",
+        "filename": "expansion512-oct14-v4-word-7421.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7422,
+        "reading": "るーず",
+        "word": "ルーズ",
+        "meaning": "時間やきまりに、きちんとしていないようす。",
+        "filename": "expansion512-oct14-v4-word-7422.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7423,
+        "reading": "れあ",
+        "word": "レア",
+        "meaning": "数が少なく、めったに出会えないようす。",
+        "filename": "expansion512-oct14-v4-word-7423.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7424,
+        "reading": "れとろ",
+        "word": "レトロ",
+        "meaning": "昔の時代を思い出させるようす。",
+        "filename": "expansion512-oct14-v4-word-7424.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7425,
+        "reading": "れんか",
+        "word": "廉価",
+        "meaning": "値段が安いこと。",
+        "filename": "expansion512-oct14-v4-word-7425.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7426,
+        "reading": "ろんぐ",
+        "word": "ロング",
+        "meaning": "ながさや、じかんが、ながいようす。",
+        "filename": "expansion512-oct14-v4-word-7426.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7427,
+        "reading": "わいど",
+        "word": "ワイド",
+        "meaning": "はばが、ひろいようす。",
+        "filename": "expansion512-oct14-v4-word-7427.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7428,
+        "reading": "じしょ",
+        "word": "辞書",
+        "meaning": "言葉の読みや意味、使い方などを調べる本やデータ。",
+        "filename": "expansion512-oct14-v4-word-7428.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7429,
+        "reading": "おしべ",
+        "word": "おしべ",
+        "meaning": "花の中で、花粉を作る部分。",
+        "filename": "expansion512-oct14-v4-word-7429.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7430,
+        "reading": "めしべ",
+        "word": "めしべ",
+        "meaning": "花の中で、先に花粉を受け、もとに子房がある部分。",
+        "filename": "expansion512-oct14-v4-word-7430.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7431,
+        "reading": "みぞれ",
+        "word": "みぞれ",
+        "meaning": "あめとゆきが、まじってふること。",
+        "filename": "expansion512-oct14-v4-word-7431.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7432,
+        "reading": "かなしみ",
+        "word": "悲しみ",
+        "meaning": "つらいことやさびしいことで、こころがいたむきもち。",
+        "filename": "expansion512-oct14-v4-word-7432.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      },
+      {
+        "id": 7433,
+        "reading": "あい",
+        "word": "愛",
+        "meaning": "ひとやものを、たいせつにおもうきもち。",
+        "filename": "expansion512-oct14-v4-word-7433.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet21-v4.png"
+      }
+    ]
+  },
+  {
+    "sheet": 22,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "痣は皮膚の色の違い、厚さと厚みは面間の距離、足場・宛名・雨戸・安否・アンプなどを確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7434,
+        "reading": "あいそ",
+        "word": "愛想",
+        "meaning": "人に接するときの、感じのよい態度やふるまい。",
+        "filename": "expansion512-oct14-word-7434.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7435,
+        "reading": "あいま",
+        "word": "合間",
+        "meaning": "ものごとと、ものごとのあいだにある、みじかいじかん。",
+        "filename": "expansion512-oct14-word-7435.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7436,
+        "reading": "あかじ",
+        "word": "赤字",
+        "meaning": "入ってくるお金より、出ていくお金が多いこと。",
+        "filename": "expansion512-oct14-word-7436.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7437,
+        "reading": "あくむ",
+        "word": "悪夢",
+        "meaning": "こわかったり、つらかったりする夢。",
+        "filename": "expansion512-oct14-word-7437.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7438,
+        "reading": "あざ",
+        "word": "痣",
+        "meaning": "うまれつき、ひふのいろが、まわりとちがってみえるところ。",
+        "filename": "expansion512-oct14-word-7438.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7439,
+        "reading": "あしば",
+        "word": "足場",
+        "meaning": "作業をするときに、足を置いたり立ったりする場所。",
+        "filename": "expansion512-oct14-word-7439.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7440,
+        "reading": "あせり",
+        "word": "焦り",
+        "meaning": "はやくしなければとおもい、おちつかないきもち。",
+        "filename": "expansion512-oct14-word-7440.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7441,
+        "reading": "あたり",
+        "word": "辺り",
+        "meaning": "あるばしょの、ちかくやまわり。",
+        "filename": "expansion512-oct14-word-7441.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7442,
+        "reading": "あつさ",
+        "word": "厚さ",
+        "meaning": "いたやほんなどの、おもてからうらまでのながさ。",
+        "filename": "expansion512-oct14-word-7442.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7443,
+        "reading": "あつみ",
+        "word": "厚み",
+        "meaning": "もののおもてからうらまでが、どれほどあるかということ。",
+        "filename": "expansion512-oct14-word-7443.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7444,
+        "reading": "あてな",
+        "word": "宛名",
+        "meaning": "てがみやにもつを、とどけるあいてのなまえ。",
+        "filename": "expansion512-oct14-word-7444.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7445,
+        "reading": "あにき",
+        "word": "兄貴",
+        "meaning": "自分の兄を、親しみをこめて呼ぶ言葉。",
+        "filename": "expansion512-oct14-word-7445.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7446,
+        "reading": "あにめ",
+        "word": "アニメ",
+        "meaning": "えなどをすこしずつかえて、うごいてみえるようにしたえいぞう。",
+        "filename": "expansion512-oct14-word-7446.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7447,
+        "reading": "あまど",
+        "word": "雨戸",
+        "meaning": "雨や風などを防ぐために、窓の外側につける戸。",
+        "filename": "expansion512-oct14-word-7447.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7448,
+        "reading": "あんぴ",
+        "word": "安否",
+        "meaning": "その人が無事でいるか、どうかということ。",
+        "filename": "expansion512-oct14-word-7448.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      },
+      {
+        "id": 7449,
+        "reading": "あんぷ",
+        "word": "アンプ",
+        "meaning": "音などの電気信号を強める装置。",
+        "filename": "expansion512-oct14-word-7449.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet22.png"
+      }
+    ]
+  },
+  {
+    "sheet": 23,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "五つはリンゴ5個、五日は5番目の升。一度は紙飛行機を1回飛ばす例。鋳型と硫黄を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7450,
+        "reading": "あーち",
+        "word": "アーチ",
+        "meaning": "上へふくらむ、弓のような曲線の形や構造。",
+        "filename": "expansion512-oct14-v3-word-7450.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7451,
+        "reading": "あーと",
+        "word": "アート",
+        "meaning": "絵や彫刻などで、考えや感じたことを表す芸術。",
+        "filename": "expansion512-oct14-v3-word-7451.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7452,
+        "reading": "いおう",
+        "word": "硫黄",
+        "meaning": "黄色い固体になる元素。温泉地や火山の周りでも見られる。",
+        "filename": "expansion512-oct14-v3-word-7452.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7453,
+        "reading": "いがく",
+        "word": "医学",
+        "meaning": "人の体や病気を調べ、治療や予防を研究する学問。",
+        "filename": "expansion512-oct14-v3-word-7453.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7454,
+        "reading": "いがた",
+        "word": "鋳型",
+        "meaning": "溶かした金属などを流し入れ、形を作るための型。",
+        "filename": "expansion512-oct14-v3-word-7454.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7455,
+        "reading": "いこく",
+        "word": "異国",
+        "meaning": "自分の国とは、別の国。",
+        "filename": "expansion512-oct14-v3-word-7455.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7456,
+        "reading": "いちい",
+        "word": "一位",
+        "meaning": "じゅんいで、いちばんうえであること。",
+        "filename": "expansion512-oct14-v3-word-7456.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7457,
+        "reading": "いちど",
+        "word": "一度",
+        "meaning": "あることを、いっかいおこなうこと。",
+        "filename": "expansion512-oct14-v3-word-7457.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7458,
+        "reading": "いつか",
+        "word": "五日",
+        "meaning": "つきのはじめから、いつつめのひ。",
+        "filename": "expansion512-oct14-v3-word-7458.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7459,
+        "reading": "いつつ",
+        "word": "五つ",
+        "meaning": "ひとつずつかぞえて、ごこあること。",
+        "filename": "expansion512-oct14-v3-word-7459.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7460,
+        "reading": "いつわ",
+        "word": "逸話",
+        "meaning": "ある人の特徴などがわかる、あまり知られていない話。",
+        "filename": "expansion512-oct14-v3-word-7460.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7461,
+        "reading": "いない",
+        "word": "以内",
+        "meaning": "決めた数や範囲を、こえないこと。",
+        "filename": "expansion512-oct14-v3-word-7461.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7462,
+        "reading": "いのり",
+        "word": "祈り",
+        "meaning": "ねがいがかなうように、かみさまなどへむけるきもち。",
+        "filename": "expansion512-oct14-v3-word-7462.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7463,
+        "reading": "いびき",
+        "word": "鼾",
+        "meaning": "ねているときに、のどやはなのほうからでるおと。",
+        "filename": "expansion512-oct14-v3-word-7463.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7464,
+        "reading": "いふく",
+        "word": "衣服",
+        "meaning": "からだにきたり、みにつけたりするふく。",
+        "filename": "expansion512-oct14-v3-word-7464.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      },
+      {
+        "id": 7465,
+        "reading": "いぶき",
+        "word": "息吹",
+        "meaning": "息をはくこと。",
+        "filename": "expansion512-oct14-v3-word-7465.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet23-v3.png"
+      }
+    ]
+  },
+  {
+    "sheet": 24,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "鋳物・以来・入れ歯・インク・ウェブ等を確認。鋳型の道具と鋳物の結果を別の意味として対応。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7466,
+        "reading": "いぶつ",
+        "word": "遺物",
+        "meaning": "昔の人が使い、あとに残ったもの。",
+        "filename": "expansion512-oct14-v3-word-7466.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7467,
+        "reading": "いもの",
+        "word": "鋳物",
+        "meaning": "溶かした金属を型に流して、固めて作ったもの。",
+        "filename": "expansion512-oct14-v3-word-7467.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7468,
+        "reading": "いらい",
+        "word": "以来",
+        "meaning": "あるできごとが起きてから、今までの間。",
+        "filename": "expansion512-oct14-v3-word-7468.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7469,
+        "reading": "いるい",
+        "word": "衣類",
+        "meaning": "人が身につける、いろいろな服のまとまり。",
+        "filename": "expansion512-oct14-v3-word-7469.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7470,
+        "reading": "いれば",
+        "word": "入れ歯",
+        "meaning": "なくなった歯の代わりに、口に入れて使う人工の歯。",
+        "filename": "expansion512-oct14-v3-word-7470.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7471,
+        "reading": "いわい",
+        "word": "祝い",
+        "meaning": "うれしいできごとを、よろこぶこと。",
+        "filename": "expansion512-oct14-v3-word-7471.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7472,
+        "reading": "いんく",
+        "word": "インク",
+        "meaning": "ペンなどでもじをかくための、いろのついたえき。",
+        "filename": "expansion512-oct14-v3-word-7472.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7473,
+        "reading": "うぇぶ",
+        "word": "ウェブ",
+        "meaning": "インターネットで、ページどうしをリンクでつなぐ仕組み。",
+        "filename": "expansion512-oct14-v3-word-7473.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7474,
+        "reading": "うち",
+        "word": "家",
+        "meaning": "ひとが、くらすためのたてものや、すまい。",
+        "filename": "expansion512-oct14-v3-word-7474.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7475,
+        "reading": "うまれ",
+        "word": "生まれ",
+        "meaning": "生まれた場所や、育った家などのこと。",
+        "filename": "expansion512-oct14-v3-word-7475.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7476,
+        "reading": "うむ",
+        "word": "有無",
+        "meaning": "あるか、ないかということ。",
+        "filename": "expansion512-oct14-v3-word-7476.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7477,
+        "reading": "うりて",
+        "word": "売り手",
+        "meaning": "ものやサービスを、売る側の人。",
+        "filename": "expansion512-oct14-v3-word-7477.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7478,
+        "reading": "うるし",
+        "word": "漆",
+        "meaning": "ウルシの木からとれる、器などに塗る材料。",
+        "filename": "expansion512-oct14-v3-word-7478.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7479,
+        "reading": "うんゆ",
+        "word": "運輸",
+        "meaning": "人や荷物を、乗り物で運ぶこと。",
+        "filename": "expansion512-oct14-v3-word-7479.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7480,
+        "reading": "えいち",
+        "word": "英知",
+        "meaning": "すぐれた知恵や、深い知識。",
+        "filename": "expansion512-oct14-v3-word-7480.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      },
+      {
+        "id": 7481,
+        "reading": "えいよ",
+        "word": "栄誉",
+        "meaning": "すぐれた行いや成果で、ほまれを受けること。",
+        "filename": "expansion512-oct14-v3-word-7481.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet24-v3.png"
+      }
+    ]
+  },
+  {
+    "sheet": 25,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "枝葉・笑み・絵文字・獲物・エリア・エール等を確認。扇は折り畳める形、王座は席、王妃は人物。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7482,
+        "reading": "えだは",
+        "word": "枝葉",
+        "meaning": "きなどの、えだとは。",
+        "filename": "expansion512-oct14-word-7482.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7483,
+        "reading": "えみ",
+        "word": "笑み",
+        "meaning": "うれしさなどで、かおにあらわれる、にこっとしたようす。",
+        "filename": "expansion512-oct14-word-7483.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7484,
+        "reading": "えもじ",
+        "word": "絵文字",
+        "meaning": "えのかたちで、ものやきもちをつたえる、もじのようなもの。",
+        "filename": "expansion512-oct14-word-7484.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7485,
+        "reading": "えもの",
+        "word": "獲物",
+        "meaning": "動物がえさとして捕らえる、ほかの動物。",
+        "filename": "expansion512-oct14-word-7485.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7486,
+        "reading": "えりあ",
+        "word": "エリア",
+        "meaning": "ある目的や特徴で分けた、場所の範囲。",
+        "filename": "expansion512-oct14-word-7486.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7487,
+        "reading": "えーる",
+        "word": "エール",
+        "meaning": "がんばる人へ送る、応援の声や気持ち。",
+        "filename": "expansion512-oct14-word-7487.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7488,
+        "reading": "おいる",
+        "word": "オイル",
+        "meaning": "料理や機械などに使う、油。",
+        "filename": "expansion512-oct14-word-7488.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7489,
+        "reading": "おうい",
+        "word": "王位",
+        "meaning": "王であるという、地位。",
+        "filename": "expansion512-oct14-word-7489.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7490,
+        "reading": "おうぎ",
+        "word": "扇",
+        "meaning": "広げて使い、たたんで持てる、風を送る道具。",
+        "filename": "expansion512-oct14-word-7490.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7491,
+        "reading": "おうざ",
+        "word": "王座",
+        "meaning": "王がすわる席。",
+        "filename": "expansion512-oct14-word-7491.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7492,
+        "reading": "おうひ",
+        "word": "王妃",
+        "meaning": "王の妻。",
+        "filename": "expansion512-oct14-word-7492.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7493,
+        "reading": "おきば",
+        "word": "置き場",
+        "meaning": "ものをおいておくための、ばしょ。",
+        "filename": "expansion512-oct14-word-7493.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7494,
+        "reading": "おくち",
+        "word": "奥地",
+        "meaning": "交通の便利な所や海岸などから、遠くはなれた土地。",
+        "filename": "expansion512-oct14-word-7494.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7495,
+        "reading": "おくれ",
+        "word": "遅れ",
+        "meaning": "きまったじかんや、ほかのひとより、あとになること。",
+        "filename": "expansion512-oct14-word-7495.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7496,
+        "reading": "おすい",
+        "word": "汚水",
+        "meaning": "汚れがまじった、水。",
+        "filename": "expansion512-oct14-word-7496.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      },
+      {
+        "id": 7497,
+        "reading": "おせじ",
+        "word": "お世辞",
+        "meaning": "相手をよろこばせるために、ほめて言う言葉。",
+        "filename": "expansion512-oct14-word-7497.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet25.png"
+      }
+    ]
+  },
+  {
+    "sheet": 26,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "重さと重しを区別。数はものの個数。過疎は人の少ない地域の例。黴・蚊帳・崖を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7498,
+        "reading": "おそれ",
+        "word": "恐れ",
+        "meaning": "こわいと感じたり、心配したりする気持ち。",
+        "filename": "expansion512-oct14-word-7498.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7499,
+        "reading": "おっと",
+        "word": "夫",
+        "meaning": "結婚している相手の、男性。",
+        "filename": "expansion512-oct14-word-7499.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7500,
+        "reading": "おもさ",
+        "word": "重さ",
+        "meaning": "ものが、どれくらいおもいかということ。",
+        "filename": "expansion512-oct14-word-7500.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7501,
+        "reading": "おもし",
+        "word": "重し",
+        "meaning": "ものをうごかないように、おさえるためにのせる、おもいもの。",
+        "filename": "expansion512-oct14-word-7501.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7502,
+        "reading": "およぎ",
+        "word": "泳ぎ",
+        "meaning": "みずのなかを、からだをうごかしてすすむこと。",
+        "filename": "expansion512-oct14-word-7502.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7503,
+        "reading": "おり",
+        "word": "檻",
+        "meaning": "動物などが外に出ないように、さくで囲った場所。",
+        "filename": "expansion512-oct14-word-7503.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7504,
+        "reading": "おれい",
+        "word": "お礼",
+        "meaning": "してもらったことに、ありがとうのきもちをつたえること。",
+        "filename": "expansion512-oct14-word-7504.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7505,
+        "reading": "おわり",
+        "word": "終わり",
+        "meaning": "つづいていたことが、おしまいになるところ。",
+        "filename": "expansion512-oct14-word-7505.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7506,
+        "reading": "かず",
+        "word": "数",
+        "meaning": "ものが、いくつあるかをあらわすもの。",
+        "filename": "expansion512-oct14-word-7506.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7507,
+        "reading": "かそ",
+        "word": "過疎",
+        "meaning": "ある地域で、住む人が少なくなること。",
+        "filename": "expansion512-oct14-word-7507.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7508,
+        "reading": "かど",
+        "word": "角",
+        "meaning": "ふたつのへりやめんが、であうところ。",
+        "filename": "expansion512-oct14-word-7508.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7509,
+        "reading": "かひ",
+        "word": "可否",
+        "meaning": "よいか、わるいか。また、できるか、できないかということ。",
+        "filename": "expansion512-oct14-word-7509.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7510,
+        "reading": "かび",
+        "word": "黴",
+        "meaning": "しめったものなどにひろがる、ふわふわしたり、こなのようだったりするきん。",
+        "filename": "expansion512-oct14-word-7510.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7511,
+        "reading": "かや",
+        "word": "蚊帳",
+        "meaning": "蚊を防ぐために、人のまわりにつるす網。",
+        "filename": "expansion512-oct14-word-7511.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7512,
+        "reading": "がか",
+        "word": "画家",
+        "meaning": "えをかくことを、しごとにしているひと。",
+        "filename": "expansion512-oct14-word-7512.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      },
+      {
+        "id": 7513,
+        "reading": "がけ",
+        "word": "崖",
+        "meaning": "じめんや、やまのめんが、きゅうにたちあがっているところ。",
+        "filename": "expansion512-oct14-word-7513.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet26.png"
+      }
+    ]
+  },
+  {
+    "sheet": 27,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "柄・機器・木々・器具・季語・基礎・基地等を確認。再生成して等寸の罫線検証に合格。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7514,
+        "reading": "がら",
+        "word": "柄",
+        "meaning": "ぬのや、もののひょうめんについた、もよう。",
+        "filename": "expansion512-oct14-v2-word-7514.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7515,
+        "reading": "きき",
+        "word": "機器",
+        "meaning": "仕事や作業に使う、機械や装置。",
+        "filename": "expansion512-oct14-v2-word-7515.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7516,
+        "reading": "きぎ",
+        "word": "木々",
+        "meaning": "いくつもの、き。",
+        "filename": "expansion512-oct14-v2-word-7516.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7517,
+        "reading": "きぐ",
+        "word": "器具",
+        "meaning": "ある目的のために使う、道具。",
+        "filename": "expansion512-oct14-v2-word-7517.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7518,
+        "reading": "きご",
+        "word": "季語",
+        "meaning": "俳句などで、季節を表すために使う言葉。",
+        "filename": "expansion512-oct14-v2-word-7518.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7519,
+        "reading": "きそ",
+        "word": "基礎",
+        "meaning": "建物や学習などを、下から支えるもと。",
+        "filename": "expansion512-oct14-v2-word-7519.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7520,
+        "reading": "きち",
+        "word": "基地",
+        "meaning": "活動を始めたり、物資を集めたりする拠点。",
+        "filename": "expansion512-oct14-v2-word-7520.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7521,
+        "reading": "きど",
+        "word": "木戸",
+        "meaning": "木で作った、出入り口の戸。",
+        "filename": "expansion512-oct14-v2-word-7521.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7522,
+        "reading": "きろ",
+        "word": "帰路",
+        "meaning": "帰るときに通る、道。",
+        "filename": "expansion512-oct14-v2-word-7522.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7523,
+        "reading": "ぎし",
+        "word": "技師",
+        "meaning": "専門の技術を持ち、設計や製造などの仕事をする人。",
+        "filename": "expansion512-oct14-v2-word-7523.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7524,
+        "reading": "ぎじ",
+        "word": "議事",
+        "meaning": "会議で、話し合うことや、その内容。",
+        "filename": "expansion512-oct14-v2-word-7524.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7525,
+        "reading": "ぎり",
+        "word": "義理",
+        "meaning": "人との関係で、果たすべきだと考えられるつとめ。",
+        "filename": "expansion512-oct14-v2-word-7525.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7526,
+        "reading": "くれ",
+        "word": "暮れ",
+        "meaning": "日や月、年などが、終わりに近づく時期。",
+        "filename": "expansion512-oct14-v2-word-7526.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7527,
+        "reading": "げい",
+        "word": "芸",
+        "meaning": "人を楽しませるための、歌や踊りなどの技。",
+        "filename": "expansion512-oct14-v2-word-7527.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7528,
+        "reading": "げか",
+        "word": "外科",
+        "meaning": "手術などで、病気やけがを治す医学の分野。",
+        "filename": "expansion512-oct14-v2-word-7528.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      },
+      {
+        "id": 7529,
+        "reading": "こご",
+        "word": "古語",
+        "meaning": "昔に使われ、今ではふだん使われない言葉。",
+        "filename": "expansion512-oct14-v2-word-7529.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet27-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 28,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "四肢は左右の手足、軸は車輪の中心。時差は曖昧な時計絵から2本の針の正確な8時間差図へ差し替え。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7530,
+        "reading": "ころ",
+        "word": "頃",
+        "meaning": "はっきりと決めない、ある時期の前後。",
+        "filename": "expansion512-oct14-v2-word-7530.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7531,
+        "reading": "ごい",
+        "word": "語彙",
+        "meaning": "ある人や言語などが使う、言葉の集まり。",
+        "filename": "expansion512-oct14-v2-word-7531.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7532,
+        "reading": "ごく",
+        "word": "語句",
+        "meaning": "ひとつの言葉や、いくつかの言葉がつながったもの。",
+        "filename": "expansion512-oct14-v2-word-7532.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7533,
+        "reading": "ごご",
+        "word": "午後",
+        "meaning": "ひるのじゅうにじから、よるのじゅうにじまでのじかん。",
+        "filename": "expansion512-oct14-v2-word-7533.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7534,
+        "reading": "ごじ",
+        "word": "誤字",
+        "meaning": "まちがって書いた、文字。",
+        "filename": "expansion512-oct14-v2-word-7534.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7535,
+        "reading": "しし",
+        "word": "四肢",
+        "meaning": "人や動物の、左右の手足。",
+        "filename": "expansion512-oct14-v2-word-7535.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7536,
+        "reading": "しな",
+        "word": "品",
+        "meaning": "売ったり使ったりする、もの。",
+        "filename": "expansion512-oct14-v2-word-7536.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7537,
+        "reading": "しば",
+        "word": "芝",
+        "meaning": "じめんをおおうように、みじかくはえるくさ。",
+        "filename": "expansion512-oct14-v2-word-7537.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7538,
+        "reading": "しぶ",
+        "word": "支部",
+        "meaning": "大きな組織の一部として、ある地域などで活動する集まり。",
+        "filename": "expansion512-oct14-v2-word-7538.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7539,
+        "reading": "しみ",
+        "word": "染み",
+        "meaning": "よごれなどで、まわりといろがかわったところ。",
+        "filename": "expansion512-oct14-v2-word-7539.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7540,
+        "reading": "しや",
+        "word": "視野",
+        "meaning": "目を動かさずに、見える範囲。",
+        "filename": "expansion512-oct14-v2-word-7540.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7541,
+        "reading": "しり",
+        "word": "尻",
+        "meaning": "からだのこしよりしたの、すわるときにつくぶぶん。",
+        "filename": "expansion512-oct14-v2-word-7541.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7542,
+        "reading": "じく",
+        "word": "軸",
+        "meaning": "回転するものの中心を通る、棒や線。",
+        "filename": "expansion512-oct14-v2-word-7542.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7543,
+        "reading": "じこ",
+        "word": "事故",
+        "meaning": "思いがけず起こり、人やものに害を与えるできごと。",
+        "filename": "expansion512-oct14-v2-word-7543.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      },
+      {
+        "id": 7544,
+        "reading": "じさ",
+        "word": "時差",
+        "meaning": "ふたつの地域で使う時刻の、ずれ。",
+        "filename": "expansion512-oct14-diagram-word-7544.png",
+        "sourceSheet": "sheets/diagram-expansion512-oct14-word-7544.png"
+      },
+      {
+        "id": 7545,
+        "reading": "じち",
+        "word": "自治",
+        "meaning": "地域や集まりのことを、自分たちで決めて治めること。",
+        "filename": "expansion512-oct14-v2-word-7545.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet28-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 29,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "〇は空の皿、ソロは1人の演奏、縦と谷を区別。ダム・地下・地区・弟子・刺・土器・土手を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7546,
+        "reading": "せし",
+        "word": "セ氏",
+        "meaning": "温度を表す尺度のひとつ。「℃」の記号で表す。",
+        "filename": "expansion512-oct14-word-7546.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7547,
+        "reading": "ぜろ",
+        "word": "〇",
+        "meaning": "ひとつもないことを、かずであらわすもの。",
+        "filename": "expansion512-oct14-word-7547.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7548,
+        "reading": "そろ",
+        "word": "ソロ",
+        "meaning": "ひとりで演奏したり、歌ったりすること。",
+        "filename": "expansion512-oct14-word-7548.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7549,
+        "reading": "たぐ",
+        "word": "タグ",
+        "meaning": "ものに名前などをつけて、見分けるための札や印。",
+        "filename": "expansion512-oct14-word-7549.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7550,
+        "reading": "たて",
+        "word": "縦",
+        "meaning": "うえとしたを、つなぐむき。",
+        "filename": "expansion512-oct14-word-7550.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7551,
+        "reading": "たに",
+        "word": "谷",
+        "meaning": "やまとやまのあいだにある、ひくいところ。",
+        "filename": "expansion512-oct14-word-7551.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7552,
+        "reading": "たば",
+        "word": "束",
+        "meaning": "いくつかのものを、まとめてしばったもの。",
+        "filename": "expansion512-oct14-word-7552.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7553,
+        "reading": "たる",
+        "word": "樽",
+        "meaning": "液体などを入れる、丸い胴をもつ大きな容器。",
+        "filename": "expansion512-oct14-word-7553.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7554,
+        "reading": "だむ",
+        "word": "ダム",
+        "meaning": "川の水をせき止め、ためたり流れを調節したりする施設。",
+        "filename": "expansion512-oct14-word-7554.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7555,
+        "reading": "ちか",
+        "word": "地下",
+        "meaning": "じめんより、したのところ。",
+        "filename": "expansion512-oct14-word-7555.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7556,
+        "reading": "ちく",
+        "word": "地区",
+        "meaning": "ある目的や特徴で分けた、地域の一部。",
+        "filename": "expansion512-oct14-word-7556.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7557,
+        "reading": "でし",
+        "word": "弟子",
+        "meaning": "先生について、学問や技術などを学ぶ人。",
+        "filename": "expansion512-oct14-word-7557.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7558,
+        "reading": "とげ",
+        "word": "刺",
+        "meaning": "しょくぶつなどについている、ほそくとがったぶぶん。",
+        "filename": "expansion512-oct14-word-7558.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7559,
+        "reading": "とも",
+        "word": "友",
+        "meaning": "いっしょにすごしたり、たすけあったりする、ともだち。",
+        "filename": "expansion512-oct14-word-7559.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7560,
+        "reading": "どき",
+        "word": "土器",
+        "meaning": "粘土で形を作り、焼いて固めた器。",
+        "filename": "expansion512-oct14-word-7560.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      },
+      {
+        "id": 7561,
+        "reading": "どて",
+        "word": "土手",
+        "meaning": "かわのきしなどで、つちをもりあげてつくったところ。",
+        "filename": "expansion512-oct14-word-7561.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet29.png"
+      }
+    ]
+  },
+  {
+    "sheet": 30,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "ミリは1cmを10等分した正確な模式図へ差し替え。無地は模様なし。矛・ノブ・皮膚・武士等を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7562,
+        "reading": "どま",
+        "word": "土間",
+        "meaning": "家の中で、床板をはらず、靴のまま使える場所。",
+        "filename": "expansion512-oct14-word-7562.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7563,
+        "reading": "なや",
+        "word": "納屋",
+        "meaning": "農具や収穫物などを、しまっておく建物。",
+        "filename": "expansion512-oct14-word-7563.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7564,
+        "reading": "にせ",
+        "word": "偽",
+        "meaning": "本物のように見せて作ったもの。",
+        "filename": "expansion512-oct14-word-7564.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7565,
+        "reading": "のぶ",
+        "word": "ノブ",
+        "meaning": "戸を開けたり機械を調節したりする、つまみ。",
+        "filename": "expansion512-oct14-word-7565.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7566,
+        "reading": "ひふ",
+        "word": "皮膚",
+        "meaning": "人や動物の体の表面をおおい、守る部分。",
+        "filename": "expansion512-oct14-word-7566.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7567,
+        "reading": "ひゆ",
+        "word": "比喩",
+        "meaning": "ほかのものに、たとえて表すこと。",
+        "filename": "expansion512-oct14-word-7567.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7568,
+        "reading": "びす",
+        "word": "ビス",
+        "meaning": "材料どうしをとめる、小さなねじ。",
+        "filename": "expansion512-oct14-word-7568.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7569,
+        "reading": "びる",
+        "word": "ビル",
+        "meaning": "いくつものかいがある、おおきなたてもの。",
+        "filename": "expansion512-oct14-word-7569.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7570,
+        "reading": "ふぼ",
+        "word": "父母",
+        "meaning": "おとうさんと、おかあさん。",
+        "filename": "expansion512-oct14-word-7570.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7571,
+        "reading": "ぶし",
+        "word": "武士",
+        "meaning": "昔の日本で、武器を持って戦うことなどを役目とした人。",
+        "filename": "expansion512-oct14-word-7571.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7572,
+        "reading": "ぷろ",
+        "word": "プロ",
+        "meaning": "ある仕事や技術を、専門として行う人。",
+        "filename": "expansion512-oct14-word-7572.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7573,
+        "reading": "ほこ",
+        "word": "矛",
+        "meaning": "長い柄の先に刃をつけた、昔の武器。",
+        "filename": "expansion512-oct14-word-7573.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7574,
+        "reading": "ぼし",
+        "word": "母子",
+        "meaning": "おかあさんと、そのこども。",
+        "filename": "expansion512-oct14-word-7574.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7575,
+        "reading": "みり",
+        "word": "ミリ",
+        "meaning": "長さの単位「ミリメートル」を短くした呼び方。十ミリで一センチメートルになる。",
+        "filename": "expansion512-oct14-diagram-word-7575.png",
+        "sourceSheet": "sheets/diagram-expansion512-oct14-word-7575.png"
+      },
+      {
+        "id": 7576,
+        "reading": "むじ",
+        "word": "無地",
+        "meaning": "もようがなく、いちめんがおなじいろのようす。",
+        "filename": "expansion512-oct14-word-7576.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      },
+      {
+        "id": 7577,
+        "reading": "めか",
+        "word": "メカ",
+        "meaning": "機械や、その動く仕組み。",
+        "filename": "expansion512-oct14-word-7577.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet30.png"
+      }
+    ]
+  },
+  {
+    "sheet": 31,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "雌は母牛と子、ラメは金属のように光る織物。和語は風景だけでなく自然の語の絵を話す人物へ修正。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7578,
+        "reading": "めす",
+        "word": "雌",
+        "meaning": "動物の性別のうち、卵や子を産む側。",
+        "filename": "expansion512-oct14-v2-word-7578.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7579,
+        "reading": "めど",
+        "word": "目処",
+        "meaning": "物事ができそうだと見通せる、目安。",
+        "filename": "expansion512-oct14-v2-word-7579.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7580,
+        "reading": "やぐ",
+        "word": "夜具",
+        "meaning": "ふとんなど、寝るときに使うもの。",
+        "filename": "expansion512-oct14-v2-word-7580.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7581,
+        "reading": "よか",
+        "word": "余暇",
+        "meaning": "仕事や勉強などの合間にある、自由に使える時間。",
+        "filename": "expansion512-oct14-v2-word-7581.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7582,
+        "reading": "よが",
+        "word": "ヨガ",
+        "meaning": "姿勢や呼吸を整えるなどして、心と体を整える取り組み。",
+        "filename": "expansion512-oct14-v2-word-7582.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7583,
+        "reading": "よさ",
+        "word": "良さ",
+        "meaning": "ものやひとがもつ、すぐれたところ。",
+        "filename": "expansion512-oct14-v2-word-7583.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7584,
+        "reading": "よせ",
+        "word": "寄席",
+        "meaning": "落語や漫才などを、客の前で演じる場所。",
+        "filename": "expansion512-oct14-v2-word-7584.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7585,
+        "reading": "よび",
+        "word": "予備",
+        "meaning": "あとで必要になるときに備え、用意しておくことやもの。",
+        "filename": "expansion512-oct14-v2-word-7585.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7586,
+        "reading": "らぼ",
+        "word": "ラボ",
+        "meaning": "実験や研究を行う場所。",
+        "filename": "expansion512-oct14-v2-word-7586.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7587,
+        "reading": "らめ",
+        "word": "ラメ",
+        "meaning": "金属のように光る糸を、織りこんだ布。",
+        "filename": "expansion512-oct14-v2-word-7587.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7588,
+        "reading": "わか",
+        "word": "和歌",
+        "meaning": "日本で受けつがれてきた歌。短歌などが含まれる。",
+        "filename": "expansion512-oct14-v2-word-7588.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7589,
+        "reading": "わご",
+        "word": "和語",
+        "meaning": "中国語や外国語に由来せず、古くから日本で使われてきた言葉。",
+        "filename": "expansion512-oct14-v2-word-7589.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7590,
+        "reading": "あだな",
+        "word": "あだ名",
+        "meaning": "ほんとうのなまえとはべつに、したしみなどでつけるよびな。",
+        "filename": "expansion512-oct14-v2-word-7590.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7591,
+        "reading": "あかし",
+        "word": "証",
+        "meaning": "あることが本当だと、示すもの。",
+        "filename": "expansion512-oct14-v2-word-7591.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7592,
+        "reading": "あんだ",
+        "word": "安打",
+        "meaning": "野球で、守備の失敗によらず、打った人がアウトにならずに塁へ進める打球。",
+        "filename": "expansion512-oct14-v2-word-7592.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      },
+      {
+        "id": 7593,
+        "reading": "いしき",
+        "word": "意識",
+        "meaning": "自分の状態や、周りのできごとを感じ取っていること。",
+        "filename": "expansion512-oct14-v2-word-7593.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet31-v2.png"
+      }
+    ]
+  },
+  {
+    "sheet": 32,
+    "passed": true,
+    "reviewedAt": "2026-10-14",
+    "notes": "王手は駒の成りの絵を採用せず、飛車の縦の利きが王へ届く正確な模式図へ差し替え。コール・在庫等を確認。",
+    "limitation": "抽象語は具体的な場面例。画像だけで語義全体を示すという判定ではない。",
+    "items": [
+      {
+        "id": 7594,
+        "reading": "いみ",
+        "word": "意味",
+        "meaning": "ことばなどが、あらわしているないよう。",
+        "filename": "expansion512-oct14-word-7594.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7595,
+        "reading": "えらー",
+        "word": "エラー",
+        "meaning": "作業や動きなどで起こる、まちがい。",
+        "filename": "expansion512-oct14-word-7595.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7596,
+        "reading": "えこー",
+        "word": "エコー",
+        "meaning": "声や音がはね返り、少しあとから聞こえること。",
+        "filename": "expansion512-oct14-word-7596.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7597,
+        "reading": "おうて",
+        "word": "王手",
+        "meaning": "将棋で、次に相手の王将を取れる形にする手。",
+        "filename": "expansion512-oct14-diagram-word-7597.png",
+        "sourceSheet": "sheets/diagram-expansion512-oct14-word-7597.png"
+      },
+      {
+        "id": 7598,
+        "reading": "かがく",
+        "word": "科学",
+        "meaning": "観察や実験などで確かめながら、物事の仕組みを調べる学問。",
+        "filename": "expansion512-oct14-word-7598.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7599,
+        "reading": "かーぶ",
+        "word": "カーブ",
+        "meaning": "みちや、せんなどが、まるくまがっているところ。",
+        "filename": "expansion512-oct14-word-7599.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7600,
+        "reading": "がいど",
+        "word": "ガイド",
+        "meaning": "観光地などで、場所を案内する人。",
+        "filename": "expansion512-oct14-word-7600.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7601,
+        "reading": "きーぷ",
+        "word": "キープ",
+        "meaning": "持っているものや状態を、そのまま保つこと。",
+        "filename": "expansion512-oct14-word-7601.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7602,
+        "reading": "くかく",
+        "word": "区画",
+        "meaning": "土地や場所を、境目をつけて分けた、ひとつの部分。",
+        "filename": "expansion512-oct14-word-7602.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7603,
+        "reading": "こーち",
+        "word": "コーチ",
+        "meaning": "スポーツなどで、上達するように教える人。",
+        "filename": "expansion512-oct14-word-7603.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7604,
+        "reading": "こーる",
+        "word": "コール",
+        "meaning": "声を出して呼びかけたり、知らせたりすること。",
+        "filename": "expansion512-oct14-word-7604.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7605,
+        "reading": "ざいこ",
+        "word": "在庫",
+        "meaning": "売ったり使ったりするために、保管してある品物。",
+        "filename": "expansion512-oct14-word-7605.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7606,
+        "reading": "しご",
+        "word": "私語",
+        "meaning": "授業や会議などの途中で、関係のない話をすること。",
+        "filename": "expansion512-oct14-word-7606.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7607,
+        "reading": "しせつ",
+        "word": "施設",
+        "meaning": "ある目的のために作られた、建物や設備。",
+        "filename": "expansion512-oct14-word-7607.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7608,
+        "reading": "しゅき",
+        "word": "手記",
+        "meaning": "自分の経験などを、自分で書きしるした文章。",
+        "filename": "expansion512-oct14-word-7608.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      },
+      {
+        "id": 7609,
+        "reading": "もぎ",
+        "word": "模擬",
+        "meaning": "練習や試験のために、本当の場合と似せて行うこと。",
+        "filename": "expansion512-oct14-word-7609.png",
+        "sourceSheet": "sheets/expansion512-oct14-sheet32.png"
+      }
+    ]
+  }
+]
