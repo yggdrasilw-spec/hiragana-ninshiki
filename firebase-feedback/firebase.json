@@ -1,0 +1,5 @@
+{
+  "firestore": {"rules": "firestore.rules"},
+  "auth": {"providers": {"anonymous": true}},
+  "emulators": {"firestore": {"port": 8185},"auth": {"port": 9195},"ui": {"enabled": false}}
+}
