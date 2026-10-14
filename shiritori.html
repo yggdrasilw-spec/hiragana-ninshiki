@@ -1169,6 +1169,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.link-spark{display:none}body.panic #panicOverlay{display:none}}
 </style>
 <link rel="stylesheet" href="shiritori-robot-link.css?v=20261013">
+<link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
 </head>
 <body>
 
@@ -1440,6 +1441,21 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
       </div>
     </div>
 
+    <div class="set-sec">
+      <div class="set-hd">🖼️ 画像のえらびかた</div>
+      <div class="set-bd">
+        <div id="imagePolicyControls"></div>
+        <p class="image-policy-help">分野は語の説明と検索語から自動で分けています。動物・植物などをWikimedia優先にすると、保存済みのAI画像があっても検索します。Wikimediaには写真以外の図もあり、検索結果が正しいとは限りません。見つからないときは保存済み画像を表示します。保存済み画像がない語は、既定でもWikimediaを検索します。</p>
+      </div>
+    </div>
+    <div class="set-sec">
+      <div class="set-hd">📋 このアプリについて・誤り報告</div>
+      <div class="set-bd">
+        <p class="image-policy-help">ひらがな・カタカナ・ローマ字打ちを楽しく学ぶことを主眼にしています。語の説明と画像の作成にはAIを使用しており、不正確な部分があります。</p>
+        <div class="notice-actions"><button class="set-act" type="button" onclick="ShiritoriFeedback.notice()">注意書きをみる</button><button class="set-act" type="button" onclick="ShiritoriFeedback.open()">誤りを報告する</button><button class="set-act" type="button" onclick="ShiritoriFeedback.retry()">未送信の報告を送る</button></div>
+        <p id="feedbackQueueStatus" class="image-policy-help" aria-live="polite"></p>
+      </div>
+    </div>
     <!-- GAS -->
     <div class="set-sec">
       <div class="set-hd">🌐 データのよみこみ</div>
@@ -1513,6 +1529,9 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <div id="flyEl"></div>
 <div id="panicOverlay"></div>
 
+<script src="shiritori-image-policy.js?v=20261014"></script>
+<script src="shiritori-feedback-config.js?v=20261014"></script>
+<script src="shiritori-feedback.js?v=20261014"></script>
 <script src="shiritori-robot-link.js?v=20261013"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
@@ -1567,7 +1586,7 @@ function parseCSV(csvText){
     grp.words.push(r.word);
     grp.meanings.push(r.meaning);
     grp.meaningLevels.push(r.level);
-    grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn, asset:r.imageAsset, mode:r.imageMode, credit:r.imageCredit });
+    grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn, asset:r.imageAsset, mode:r.imageMode, credit:r.imageCredit, category:typeof ShiritoriImagePolicy==='undefined'?'other':ShiritoriImagePolicy.category(r.word,r.meaning,r.imagequery) });
     // levelは最小値（一番やさしい方）を採用
     grp.level = Math.min(grp.level, r.level);
   }
@@ -1611,6 +1630,7 @@ const ST = {
   cpuAllowN: false,      // CPUが「ん」で終わる語を使いうるか
   dziRule: false,        // 「ぢ」→「じ」つなぎルール
   showHints: false,      // 右下の「つかえることば」ヒント表示（初回起動時OFF）
+  imagePolicy: ShiritoriImagePolicy.normalize(null),
 };
 
 
@@ -1663,6 +1683,7 @@ function loadSettings(){
     if(s.cpuAllowN!=null) ST.cpuAllowN = s.cpuAllowN;
     if(s.dziRule!=null)   ST.dziRule   = s.dziRule;
     if(s.showHints!=null) ST.showHints = s.showHints;
+    ST.imagePolicy = ShiritoriImagePolicy.normalize(s.imagePolicy);
   }catch{}
 }
 function saveSettings(){
@@ -1680,6 +1701,7 @@ function saveSettings(){
     cpuAllowN: ST.cpuAllowN,
     dziRule:   ST.dziRule,
     showHints: ST.showHints,
+    imagePolicy: ST.imagePolicy,
   }));}catch(e){console.warn('設定を保存できませんでした。',e.name);}
 }
 
@@ -2720,6 +2742,7 @@ function showPage(name){
   if(name==='settings') syncSettingsUI();
 }
 function syncSettingsUI(){
+  syncImagePolicyUI();
   document.getElementById('statYouWords').textContent=ST.statsYouWords;
   document.getElementById('statNewWords').textContent=ST.statsNewWords;
   // char mode btns
@@ -2814,6 +2837,27 @@ function toggleShowHints(){
 ═══════════════════════════════════════════════════════════ */
 const IMG_CACHE = new Map(); // query(+lang) → url|null
 
+function syncImagePolicyUI(){
+  const panel=document.getElementById('imagePolicyControls');
+  if(!panel)return;
+  panel.replaceChildren();
+  const options=[['default','すべての分野の既定'],...Object.entries(ShiritoriImagePolicy.categories)];
+  for(const [key,label] of options){
+    const row=document.createElement('label');row.className='image-policy-row';
+    const text=document.createElement('span');text.textContent=label;row.append(text);
+    const select=document.createElement('select');select.className='image-policy-select';select.dataset.category=key;
+    const values=[...(key==='default'?[]:[['inherit','既定に合わせる']]),['asset','保存済み画像を優先（AI生成など）'],['wikimedia','Wikimedia画像を優先']];
+    for(const [value,title] of values){const o=document.createElement('option');o.value=value;o.textContent=title;select.append(o);}
+    select.value=key==='default'?ST.imagePolicy.default:ST.imagePolicy.categories[key];
+    select.onchange=()=>{
+      if(key==='default')ST.imagePolicy.default=select.value;else ST.imagePolicy.categories[key]=select.value;
+      saveSettings();IMG_CACHE.clear();
+      if(detailView){const reading=detailView.reading,idx=ST.homoIdx;showDetail(reading,lookupRow(reading),detailView.isNew);if(idx && detailView?.words.length>idx)changeDetailMeaning(idx);}
+    };
+    row.append(select);panel.append(row);
+  }
+}
+
 function isDisambigTitle(title){
   if(!title) return false;
   return /\(曖昧さ回避\)|\(disambiguation\)/.test(title);
@@ -2887,8 +2931,7 @@ function isPublicDomainLicense(licenseShort){
  * Commons、ダメなら取得元 wiki のローカルファイルとして extmetadata を取得し、
  * 画像を採用してよいかを判定する。
  * 戻り値:
- *   { ok:true,  credit:null }        … パブリックドメイン等、表記不要と確認できた
- *   { ok:true,  credit:{text} }      … 作者名またはライセンス名を確認できた（要表記）
+ *   { ok:true,  credit:{text,sourceUrl,licenseUrl} } … 出典と採用可能なライセンスを確認できた
  *   { ok:false, credit:null }        … 著作者・ライセンスとも確認できなかった（採用しない）
  */
 async function checkImgCredit(url, hostHint){
@@ -2908,13 +2951,14 @@ async function checkImgCredit(url, hostHint){
     const creditField = stripTags(extmeta.Credit?.value);
     const licenseShort = extmeta.LicenseShortName?.value || '';
 
-    if(isPublicDomainLicense(licenseShort)){
-      return { ok:true, credit:null };
-    }
+    const sourceUrl=`https://${host}/wiki/${encodeURIComponent('File:'+filename)}`;
+    const licenseUrl=extmeta.LicenseUrl?.value;
+    const safeLicense=/^https?:\/\//.test(licenseUrl||'')?licenseUrl:null;
+    if(isPublicDomainLicense(licenseShort))return {ok:true,credit:{text:`Wikimedia / ${artist ? artist+' / ':''}${licenseShort}`,sourceUrl,licenseUrl:safeLicense}};
     const who = artist || creditField;
-    if(who || licenseShort){
-      const text = who ? (licenseShort ? `${who} / ${licenseShort}` : who) : licenseShort;
-      return { ok:true, credit:{ text } };
+    if(who && /^CC[ -]BY(?:[ -]SA)?(?:\s+\d+(?:\.\d+)?)?$/i.test(licenseShort.trim()) && safeLicense){
+      const text = `Wikimedia / ${who} / ${licenseShort}`;
+      return { ok:true, credit:{ text,sourceUrl,licenseUrl:safeLicense } };
     }
     // extmetadata はあるが Artist/Credit/License すべて空 → 確認できなかった扱い
     return { ok:false, credit:null };
@@ -2990,12 +3034,16 @@ async function fetchImg(query, enQueryArg=null){
   }
   if(!jaQuery && !asset) return { url:null, credit:null };
 
-  const cacheKey = JSON.stringify([jaQuery, enQuery, asset, mode, assetCredit]);
+  const policy=typeof ST==='undefined'?(mode==='asset'?'asset':'wikimedia'):ShiritoriImagePolicy.source(ST.imagePolicy,query?.category||'other');
+  // A Wikimedia preference explicitly bypasses the CSV's asset-only priority.
+  const effectiveMode=policy==='wikimedia'?'fallback':mode;
+
+  const cacheKey = JSON.stringify([jaQuery, enQuery, asset, effectiveMode, assetCredit,policy]);
   if(IMG_CACHE.has(cacheKey)) return IMG_CACHE.get(cacheKey);
 
   const assetResult = async()=> asset && await canLoadImage(asset)
     ? { url:asset, credit:{ text:assetCredit } } : null;
-  if(mode === 'asset'){
+  if(policy==='asset' && asset){
     const preferred = await assetResult();
     if(preferred){ IMG_CACHE.set(cacheKey, preferred); return preferred; }
   }
@@ -3032,7 +3080,10 @@ async function fetchImg(query, enQueryArg=null){
     }
   }catch{ result = { url:null, credit:null }; }
 
-  if(!result.url && mode !== 'asset') result = await assetResult() || result;
+  if(!result.url && effectiveMode !== 'asset'){
+    result = await assetResult() || result;
+    if(result.url && policy==='wikimedia')result={...result,credit:{...result.credit,text:`Wikimedia画像が見つからないため保存済み画像：${assetCredit}`}};
+  }
 
   IMG_CACHE.set(cacheKey, result);
   return result;
@@ -3048,7 +3099,7 @@ function renderImgHtml(url, credit){
   if(!url) return '<div class="img-ph">🖼️</div>';
   const u = escH(url);
   const creditHtml = credit?.text
-    ? `<div class="img-credit" title="${escH(credit.text)}">${escH(credit.text)}</div>`
+    ? `<div class="img-credit" title="${escH(credit.text)}">${escH(credit.text)}${/^https?:\/\//.test(credit.sourceUrl||'')?` · <a href="${escH(credit.sourceUrl)}" target="_blank" rel="noopener noreferrer">出典</a>`:''}${/^https?:\/\//.test(credit.licenseUrl||'')?` · <a href="${escH(credit.licenseUrl)}" target="_blank" rel="noopener noreferrer">利用条件</a>`:''}</div>`
     : '';
   return `<div class="img-frame">`
        + `<img class="img-bg" src="${u}" alt="" aria-hidden="true"/>`
@@ -3176,7 +3227,7 @@ function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
     ${explanation.details?`<div class="det-text det-details">${escH(explanation.details)}</div>`:''}
     ${isMulti?`<div class="det-homo" aria-live="polite">いみ ${idx+1} / ${words.length}</div>
       <div class="det-controls"><button type="button" id="detPrev">◀ まえのいみ</button><button type="button" id="detNext">つぎのいみ ▶</button></div>`:''}
-    <div class="det-controls"><button type="button" id="detRead">🔊 いみを きく</button>${explanation.details?'<button type="button" id="detReadDetails">🔊 くわしく きく</button>':''}<button type="button" id="detStop">■ とめる</button></div>
+    <div class="det-controls"><button type="button" id="detRead">🔊 いみを きく</button>${explanation.details?'<button type="button" id="detReadDetails">🔊 くわしく きく</button>':''}<button type="button" id="detStop">■ とめる</button><button type="button" id="detReport">まちがいを ほうこく</button></div>
     ${isNew?'<div class="det-new">✨ アプリがこのことばをおぼえたよ！</div>':''}
   `;
   document.getElementById('detPrev')?.addEventListener('click',()=>changeDetailMeaning(-1));
@@ -3184,6 +3235,7 @@ function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
   document.getElementById('detRead').addEventListener('click',()=>{if(!ST.voice){document.getElementById('detRead').textContent='上の「おと」をオンにしてね';return;}readCurrentMeaning();});
   document.getElementById('detReadDetails')?.addEventListener('click',()=>{if(!ST.voice){document.getElementById('detReadDetails').textContent='上の「おと」をオンにしてね';return;}readCurrentMeaning(true);});
   document.getElementById('detStop').addEventListener('click',()=>{window.speechSynthesis?.cancel();if(finishSpeech)finishSpeech();});
+  document.getElementById('detReport').addEventListener('click',()=>ShiritoriFeedback.open({reading,word:w,meaning:m,imageUrl:detailView?.imgs[idx]?.url||'',imageCredit:detailView?.imgs[idx]?.credit?.text||'',category:lookupRow(reading)?.imagequeries[idx]?.category||'other'}));
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3851,6 +3903,7 @@ async function boot(){
 
   // タイトル画面表示（モデル読込・音声ウォームアップはここで実行）
   showTitleScreen();
+  ShiritoriFeedback.init();
 }
 boot();
 </script>

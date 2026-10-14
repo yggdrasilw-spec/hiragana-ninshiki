@@ -1,0 +1,13 @@
+.shiri-dialog{border:1px solid #1affa0;border-radius:18px;background:#101528;color:#fff;width:min(540px,calc(100% - 24px));max-height:85dvh;padding:22px;overflow:auto;box-sizing:border-box;line-height:1.8}
+.shiri-dialog::backdrop{background:#000b}
+.shiri-dialog h2{font-size:20px;margin:0 0 12px}
+.shiri-dialog label{display:block;margin:10px 0}
+.shiri-dialog input,.shiri-dialog select,.shiri-dialog textarea,.image-policy-select{display:block;width:100%;box-sizing:border-box;background:#080b18;color:#fff;border:1px solid #56617d;border-radius:8px;padding:10px;font:inherit;min-height:44px}
+.shiri-dialog textarea{min-height:100px;resize:vertical}
+.shiri-dialog button,.notice-actions button{min-height:44px;white-space:normal}
+.notice-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.feedback-context{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;color:#c3d0e7}
+.image-policy-row{display:grid;grid-template-columns:minmax(100px,1fr) minmax(160px,1.5fr);gap:10px;align-items:center;margin:12px 0}
+.image-policy-help{font-size:12px;line-height:1.8;color:#c3d0e7}
+.shiri-dialog a,.img-credit a{color:#7dffe2}
+@media(max-width:420px){.image-policy-row{grid-template-columns:1fr}.shiri-dialog{padding:16px}}

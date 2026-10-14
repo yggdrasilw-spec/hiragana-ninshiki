@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function limitPath() { return /databases/$(database)/documents/reportLimits/$(request.auth.uid); }
+    function canSend() {
+      return !exists(limitPath()) || request.time >= get(limitPath()).data.updatedAt + duration.value(30, 's');
+    }
+    match /reports/{id} {
+      // Only the sender can retrieve their own receipt by ID; listing is forbidden.
+      allow get: if signedIn() && resource.data.uid == request.auth.uid;
+      allow list, update, delete: if false;
+      allow create: if signedIn() && canSend()
+        && id.matches('^[a-f0-9-]{36}$')
+        && request.resource.data.keys().hasAll(['id','uid','word','reading','meaning','imageUrl','imageCredit','category','kind','message','createdAt','appVersion','receivedAt'])
+        && request.resource.data.keys().hasOnly(['id','uid','word','reading','meaning','imageUrl','imageCredit','category','kind','message','createdAt','appVersion','receivedAt'])
+        && request.resource.data.id == id && request.resource.data.uid == request.auth.uid
+        && request.resource.data.word is string && request.resource.data.word.size() > 0 && request.resource.data.word.size() <= 120
+        && request.resource.data.message is string && request.resource.data.message.size() >= 3 && request.resource.data.message.size() <= 2000
+        && request.resource.data.reading is string && request.resource.data.reading.size() <= 120
+        && request.resource.data.meaning is string && request.resource.data.meaning.size() <= 3000
+        && request.resource.data.imageUrl is string && request.resource.data.imageUrl.size() <= 2000
+        && request.resource.data.imageCredit is string && request.resource.data.imageCredit.size() <= 2000
+        && request.resource.data.category in ['animal','plant','fungi','nature','other']
+        && request.resource.data.kind in ['image','meaning','reading','category','other']
+        && request.resource.data.createdAt is string && request.resource.data.createdAt.size() <= 40
+        && request.resource.data.appVersion == '20261014'
+        && request.resource.data.receivedAt == request.time
+        && getAfter(limitPath()).data.lastReportId == id
+        && getAfter(limitPath()).data.updatedAt == request.time;
+    }
+    match /reportLimits/{uid} {
+      allow read, delete: if false;
+      allow create, update: if signedIn() && request.auth.uid == uid && canSend()
+        && request.resource.data.keys().hasOnly(['lastReportId','updatedAt'])
+        && request.resource.data.lastReportId is string
+        && request.resource.data.updatedAt == request.time
+        && !exists(/databases/$(database)/documents/reports/$(request.resource.data.lastReportId))
+        && getAfter(/databases/$(database)/documents/reports/$(request.resource.data.lastReportId)).data.uid == uid;
+    }
+  }
+}
