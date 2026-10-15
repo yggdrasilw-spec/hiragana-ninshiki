@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "e1a8068b49c67943b50a4de4636a39e700c0544ac7e455f8d8dc8092116b7da6",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      309,
+      322
+    ],
+    [
+      620,
+      633
+    ],
+    [
+      936,
+      947
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      624,
+      630
+    ],
+    [
+      936,
+      942
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        6,
+        309,
+        311
+      ],
+      "edgeInkFraction": 0.2927409988385598,
+      "contentFraction": 0.6975711387685728,
+      "file": "gas-vocabulary-word-11239.png",
+      "sha256": "ddc717e515d7bf8510ff9466c96df22d125c7a3b58cbd4535e0f7fba4c8e2347"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        6,
+        620,
+        311
+      ],
+      "edgeInkFraction": 0.06672484002326934,
+      "contentFraction": 0.4808669820662339,
+      "file": "gas-vocabulary-word-11240.png",
+      "sha256": "0d26197a309703d018aaa619d061917cb87bc021a225810dc312417c2935fea7"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        633,
+        6,
+        936,
+        311
+      ],
+      "edgeInkFraction": 0.02433679354094579,
+      "contentFraction": 0.12056484336958286,
+      "file": "gas-vocabulary-word-11241.png",
+      "sha256": "a7acbfb836c895a60d223ca0878df180f79b2bb38f9b6e1fd251dad3bcdc6c26"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        947,
+        6,
+        1245,
+        311
+      ],
+      "edgeInkFraction": 0.39290285049447354,
+      "contentFraction": 0.6876003960831775,
+      "file": "gas-vocabulary-word-11242.png",
+      "sha256": "685611818b1001f60b1ccf0322a7343f8b9332a0e760fd6f3c1bfcf3264c6d7a"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        318,
+        309,
+        624
+      ],
+      "edgeInkFraction": 0.008695652173913044,
+      "contentFraction": 0.4615166021815638,
+      "file": "gas-vocabulary-word-11243.png",
+      "sha256": "873a45c928c6f3ed1527327a16661974f75bf4047bff84506dc320c30e4ab968"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        318,
+        620,
+        624
+      ],
+      "edgeInkFraction": 0.02497096399535424,
+      "contentFraction": 0.519553011361144,
+      "file": "gas-vocabulary-word-11244.png",
+      "sha256": "1f126b4cd257e1928791fca51561c4a589aa045a2a01b6ff63db2a8179607b16"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        633,
+        318,
+        936,
+        624
+      ],
+      "edgeInkFraction": 0.05365572826712723,
+      "contentFraction": 0.31056537026251646,
+      "file": "gas-vocabulary-word-11245.png",
+      "sha256": "88102c9a804f8fcdd2795cac164f7377d44703ed6f29a81b3460aeaef0f9de67"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        947,
+        318,
+        1245,
+        624
+      ],
+      "edgeInkFraction": 0.9851335656213704,
+      "contentFraction": 0.938577444400579,
+      "file": "gas-vocabulary-word-11246.png",
+      "sha256": "d830c6c42c2b4aa6d00f57346a8e4b506cc77ef61538839966e1f7a45857982b"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        630,
+        309,
+        936
+      ],
+      "edgeInkFraction": 0.8676521739130435,
+      "contentFraction": 0.9538876866242595,
+      "file": "gas-vocabulary-word-11247.png",
+      "sha256": "5cca567ffd287973237f8355b6ccf726594f6c5a2a96e8fb6e32814b4e65fee1"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        630,
+        620,
+        936
+      ],
+      "edgeInkFraction": 0.9786295005807201,
+      "contentFraction": 0.8919375356406545,
+      "file": "gas-vocabulary-word-11248.png",
+      "sha256": "d124727d63c08116929aca8985f62f6f66088c7e3fce70a6cff61171dce7bffc"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        633,
+        630,
+        936,
+        936
+      ],
+      "edgeInkFraction": 0.31370178468624066,
+      "contentFraction": 0.643240794667702,
+      "file": "gas-vocabulary-word-11249.png",
+      "sha256": "2c7cf6f6320283474d71d9e01d8c52e54092197930f3b0cc994a858ff7655a54"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        947,
+        630,
+        1245,
+        936
+      ],
+      "edgeInkFraction": 0.9984901277584204,
+      "contentFraction": 0.9894065008553757,
+      "file": "gas-vocabulary-word-11250.png",
+      "sha256": "0aef3599e25b651713fd095a13994221425789e325300d265036399c01dc52d2"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        942,
+        309,
+        1248
+      ],
+      "edgeInkFraction": 0.264463768115942,
+      "contentFraction": 0.4647955057162218,
+      "file": "gas-vocabulary-word-11251.png",
+      "sha256": "58415f4e15d96e11375511eca481016c4de0fd0278f27445672e79face9bc464"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        942,
+        620,
+        1248
+      ],
+      "edgeInkFraction": 0.21155632984901276,
+      "contentFraction": 0.5087730841777427,
+      "file": "gas-vocabulary-word-11252.png",
+      "sha256": "9d91c6ac611faec9ab43bc88c237e93268b96a1fbaff8f10a4ce42f6f489ae0b"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        633,
+        942,
+        936,
+        1248
+      ],
+      "edgeInkFraction": 0.6028209556706966,
+      "contentFraction": 0.8122694622403417,
+      "file": "gas-vocabulary-word-11253.png",
+      "sha256": "6ff3828c16ed2f14970171eba9ed68343db5ebbd8c4b05136ebec07d919b4af8"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        947,
+        942,
+        1245,
+        1248
+      ],
+      "edgeInkFraction": 0.8246806039488966,
+      "contentFraction": 0.9150436460937843,
+      "file": "gas-vocabulary-word-11254.png",
+      "sha256": "7c1cc68f31a918390398ae2084648e5aba0c97b9f33afff43d880cffdc216779"
+    }
+  ]
+}
