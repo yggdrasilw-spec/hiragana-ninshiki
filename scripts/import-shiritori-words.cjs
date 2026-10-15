@@ -36,7 +36,8 @@ for (const line of batch) {
     throw new Error('Invalid row: ' + line);
   }
   if (cols[6] && !/^assets\/shiritori\/[\w-]+\.(png|jpe?g|webp)$/i.test(cols[6])) throw new Error('Invalid asset path: ' + cols[6]);
-  if (cols[7] && !['asset', 'fallback'].includes(cols[7])) throw new Error('Invalid image mode: ' + cols[7]);
+  if (cols[7] && !['asset', 'fallback', 'none'].includes(cols[7])) throw new Error('Invalid image mode: ' + cols[7]);
+  if (cols[7] === 'none' && cols[6]) throw new Error('Explanation-only vocabulary cannot carry an image asset: ' + cols[1]);
   if (cols[6] && !fs.existsSync(path.resolve(__dirname, '..', cols[6]))) throw new Error('Missing asset: ' + cols[6]);
   const key=cols.slice(0,3).join(',');
   if(!keys.has(key)&&!obsolete.has(key)){

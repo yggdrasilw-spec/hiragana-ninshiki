@@ -1,0 +1,1808 @@
+{
+  "scope": "LA28公式分野と2026冬季16分野を基準に照合。全メダル種目の男女別距離別の網羅とは区別する。",
+  "sources": [
+    "https://la28.org/en/games-plan/olympics.html",
+    "https://support.olympics.com/hc/en-gb/articles/43002667811219-What-sports-are-in-the-Olympic-Winter-Games-Milano-Cortina-2026",
+    "https://www.nao.ac.jp/new-info/planet.html",
+    "https://www.nao.ac.jp/new-info/satellite.html"
+  ],
+  "checks": [
+    {
+      "group": "八惑星",
+      "word": "水星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "水星",
+          "reading": "すいせい",
+          "meaning": "太陽のまわりを回る八つの惑星のうち、太陽にいちばん近い惑星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "金星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "金星",
+          "reading": "きんせい",
+          "meaning": "太陽から二番目の惑星。厚い雲におおわれ、地表はとても熱い。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "地球",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "地球",
+          "reading": "ちきゅう",
+          "meaning": "私たちが住む太陽系の惑星。太陽の周りを回っている。"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "火星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "火星",
+          "reading": "かせい",
+          "meaning": "太陽から四番目の惑星。表面の鉄を含む物質のため赤っぽく見える。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "木星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "木星",
+          "reading": "もくせい",
+          "meaning": "太陽系でいちばん大きい惑星。しま模様や大赤斑で知られる。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "土星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "土星",
+          "reading": "どせい",
+          "meaning": "氷の粒などからできた、大きく目立つ環がある惑星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "天王星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "天王星",
+          "reading": "てんのうせい",
+          "meaning": "青緑色に見える惑星。自転の軸が大きくかたむいている。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "八惑星",
+      "word": "海王星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "海王星",
+          "reading": "かいおうせい",
+          "meaning": "太陽系の八つの惑星の中で、太陽からいちばん遠くを回る惑星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "五準惑星",
+      "word": "ケレス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ケレス",
+          "reading": "けれす",
+          "meaning": "火星と木星の間の小惑星帯にある、準惑星の名前。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "五準惑星",
+      "word": "冥王星",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "冥王星",
+          "reading": "めいおうせい",
+          "meaning": "海王星より外側の領域を回る準惑星。八つの惑星には含まれない。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "五準惑星",
+      "word": "エリス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "エリス",
+          "reading": "えりす",
+          "meaning": "海王星より遠い領域を回る、準惑星の名前。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "五準惑星",
+      "word": "ハウメア",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ハウメア",
+          "reading": "はうめあ",
+          "meaning": "海王星より遠い領域を回る、細長い形をした準惑星の名前。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "五準惑星",
+      "word": "マケマケ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "マケマケ",
+          "reading": "まけまけ",
+          "meaning": "海王星より遠い領域を回る、準惑星の名前。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "太陽系"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "月",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "月",
+          "reading": "つき",
+          "meaning": "地球の周りを回る天体。夜空に見える。"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "フォボス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "フォボス",
+          "reading": "ふぉぼす",
+          "meaning": "火星のまわりを回る、でこぼこした形の小さな衛星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ダイモス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ダイモス",
+          "reading": "だいもす",
+          "meaning": "火星のまわりを回る、フォボスより小さな衛星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "イオ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "イオ",
+          "reading": "いお",
+          "meaning": "木星の衛星。活発な火山活動があり、黄色や赤などの色が見られる。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "エウロパ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "エウロパ",
+          "reading": "えうろぱ",
+          "meaning": "木星の衛星。氷の表面にすじがあり、内部の海の存在が考えられている。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ガニメデ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ガニメデ",
+          "reading": "がにめで",
+          "meaning": "木星の衛星。太陽系の衛星の中でいちばん大きい。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "カリスト",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カリスト",
+          "reading": "かりすと",
+          "meaning": "木星の衛星。古いクレーターが表面にたくさん残っている。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "タイタン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "タイタン",
+          "reading": "たいたん",
+          "meaning": "土星でいちばん大きな衛星。厚い大気や、液体のメタンなどの湖がある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "エンケラドス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "エンケラドス",
+          "reading": "えんけらどす",
+          "meaning": "土星の衛星。南極付近から氷の粒や水蒸気をふき出す。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ミマス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ミマス",
+          "reading": "みます",
+          "meaning": "土星の衛星。表面の大きなクレーターが特徴。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "テティス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "テティス",
+          "reading": "ててぃす",
+          "meaning": "土星の衛星。氷を多く含み、大きなクレーターや谷がある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ディオネ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ディオネ",
+          "reading": "でぃおね",
+          "meaning": "土星の衛星。氷の表面に明るいすじが見える。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "レア",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "レア",
+          "reading": "れあ",
+          "meaning": "土星の衛星。氷を多く含み、クレーターがたくさんある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "イアペトゥス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "イアペトゥス",
+          "reading": "いあぺとぅす",
+          "meaning": "土星の衛星。明るい部分と暗い部分の差が大きい。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ヒペリオン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ヒペリオン",
+          "reading": "ひぺりおん",
+          "meaning": "土星の衛星。形がいびつで、スポンジのようにくぼみが多い。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ミランダ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ミランダ",
+          "reading": "みらんだ",
+          "meaning": "天王星の衛星。大きながけや複雑な地形がある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "アリエル",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アリエル",
+          "reading": "ありえる",
+          "meaning": "天王星の衛星。表面に谷やクレーターがある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "ウンブリエル",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ウンブリエル",
+          "reading": "うんぶりえる",
+          "meaning": "天王星の衛星。暗い表面にクレーターが多い。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "チタニア",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "チタニア",
+          "reading": "ちたにあ",
+          "meaning": "天王星でいちばん大きい衛星。谷やクレーターがある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "オベロン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "オベロン",
+          "reading": "おべろん",
+          "meaning": "天王星の大きな衛星の一つ。表面にクレーターが多い。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "トリトン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "トリトン",
+          "reading": "とりとん",
+          "meaning": "海王星でいちばん大きい衛星。海王星の自転とは逆向きに公転する。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な衛星",
+      "word": "カロン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カロン",
+          "reading": "かろん",
+          "meaning": "冥王星のいちばん大きな衛星。冥王星とたがいの同じ側を向け合って回る。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "衛星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "太陽",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "太陽",
+          "reading": "たいよう",
+          "meaning": "地球に最も近い恒星。地球に光や熱を届けている。"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "シリウス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "シリウス",
+          "reading": "しりうす",
+          "meaning": "おおいぬ座の恒星。地球の夜空で最も明るく見える恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "カノープス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カノープス",
+          "reading": "かのーぷす",
+          "meaning": "りゅうこつ座の明るい恒星。日本では南の低い空に見える場所がある。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "アークトゥルス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アークトゥルス",
+          "reading": "あーくとぅるす",
+          "meaning": "うしかい座の、オレンジ色に見える明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "ベガ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ベガ",
+          "reading": "べが",
+          "meaning": "こと座の明るい恒星。七夕の織り姫星として知られる。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "カペラ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カペラ",
+          "reading": "かぺら",
+          "meaning": "ぎょしゃ座の、黄色く明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "リゲル",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "リゲル",
+          "reading": "りげる",
+          "meaning": "オリオン座の、青白く明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "プロキオン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "プロキオン",
+          "reading": "ぷろきおん",
+          "meaning": "こいぬ座の明るい恒星。冬の大三角の一つ。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "ベテルギウス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ベテルギウス",
+          "reading": "べてるぎうす",
+          "meaning": "オリオン座の、赤っぽい超巨星。冬の大三角の一つ。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "アルタイル",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アルタイル",
+          "reading": "あるたいる",
+          "meaning": "わし座の明るい恒星。七夕の彦星として知られる。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "アルデバラン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アルデバラン",
+          "reading": "あるでばらん",
+          "meaning": "おうし座の、赤っぽく明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "アンタレス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アンタレス",
+          "reading": "あんたれす",
+          "meaning": "さそり座の、赤く明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "スピカ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スピカ",
+          "reading": "すぴか",
+          "meaning": "おとめ座の、青白く明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "ポルックス",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "ポルックス",
+          "reading": "ぽるっくす",
+          "meaning": "ふたご座で最も明るい星。"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "フォーマルハウト",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "フォーマルハウト",
+          "reading": "ふぉーまるはうと",
+          "meaning": "みなみのうお座の明るい恒星。秋の夜の南の空で目立つ。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "デネブ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "デネブ",
+          "reading": "でねぶ",
+          "meaning": "はくちょう座の明るい恒星。夏の大三角の一つ。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "レグルス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "レグルス",
+          "reading": "れぐるす",
+          "meaning": "しし座の、青白く明るい恒星。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "カストル",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カストル",
+          "reading": "かすとる",
+          "meaning": "ふたご座の恒星。ポルックスと並んで見える。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "代表的な恒星",
+      "word": "ポラリス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ポラリス",
+          "reading": "ぽらりす",
+          "meaning": "こぐま座の恒星。現在の北極星として知られる。画像は想像図で、大きさや距離の比率は実際と異なる。",
+          "category": "恒星"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "スリーエックススリー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スリーエックススリー",
+          "reading": "すりーえっくすすりー",
+          "meaning": "一チーム三人で一つのゴールを使う、バスケットボールの種目の呼び方。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "アーチェリー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アーチェリー",
+          "reading": "あーちぇりー",
+          "meaning": "弓で矢を飛ばし、的の中心にどれだけ近いかを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "体操競技",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "体操競技",
+          "reading": "たいそうきょうぎ",
+          "meaning": "床や鉄棒などの器械で技を行い、難しさやできばえを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "アーティスティックスイミング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アーティスティックスイミング",
+          "reading": "あーてぃすてぃっくすいみんぐ",
+          "meaning": "水の中で音楽に合わせて泳ぎや技をそろえ、表現などを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "陸上競技",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "陸上競技",
+          "reading": "りくじょうきょうぎ",
+          "meaning": "走る・跳ぶ・投げる運動を中心とするスポーツ。"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "バドミントン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "バドミントン",
+          "reading": "ばどみんとん",
+          "meaning": "ラケットで羽根の付いたシャトルを打ち合うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "野球",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "野球",
+          "reading": "やきゅう",
+          "meaning": "バットで打ったボールを守備側が取り、得点を競うチームスポーツ。"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "バスケットボール",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "バスケットボール",
+          "reading": "ばすけっとぼーる",
+          "meaning": "ボールを相手のゴールに投げ入れて得点を競う球技。"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ビーチバレー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ビーチバレー",
+          "reading": "びーちばれー",
+          "meaning": "砂のコートで行うバレーボール。五輪では一チーム二人で行う。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ビーエムエックスフリースタイル",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ビーエムエックスフリースタイル",
+          "reading": "びーえむえっくすふりーすたいる",
+          "meaning": "小型の自転車を使い、ジャンプや回転などの技を競う種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ビーエムエックスレーシング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ビーエムエックスレーシング",
+          "reading": "びーえむえっくすれーしんぐ",
+          "meaning": "小型の自転車で、起伏のある短いコースを競走する種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ボクシング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ボクシング",
+          "reading": "ぼくしんぐ",
+          "meaning": "グローブを着けたこぶしで相手を打ち、決められたルールで競う格闘技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "スポーツクライミング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スポーツクライミング",
+          "reading": "すぽーつくらいみんぐ",
+          "meaning": "壁のホールドなどを使って登り、高さや速さなどを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "クリケット",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "クリケット",
+          "reading": "くりけっと",
+          "meaning": "バットでボールを打ち、二つのウィケットの間を走るなどして得点する球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ロードレース",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ロードレース",
+          "reading": "ろーどれーす",
+          "meaning": "自転車競技で、道路のコースを走って順位や時間を競う種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "トラックレース",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "トラックレース",
+          "reading": "とらっくれーす",
+          "meaning": "自転車競技で、すり鉢形の競技場のコースを走る種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "飛び込み",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "飛び込み",
+          "reading": "とびこみ",
+          "meaning": "高い台や飛び板から水に飛びこみ、空中の技や入水を競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "馬術",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "馬術",
+          "reading": "ばじゅつ",
+          "meaning": "人と馬が組になり、障害飛越や決められた動きなどを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "フェンシング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "フェンシング",
+          "reading": "ふぇんしんぐ",
+          "meaning": "防具を着け、細い剣で相手の決められた部分を突くなどして競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "フラッグフットボール",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "フラッグフットボール",
+          "reading": "ふらっぐふっとぼーる",
+          "meaning": "タックルの代わりに腰の旗を取る、アメリカンフットボールの仲間の球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "サッカー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "サッカー",
+          "reading": "さっかー",
+          "meaning": "主に足でボールを扱い、相手のゴールに入れて得点を競う球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ゴルフ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ゴルフ",
+          "reading": "ごるふ",
+          "meaning": "クラブでボールを打ち、少ない打数で穴に入れることを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ハンドボール",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "ハンドボール",
+          "reading": "はんどぼーる",
+          "meaning": "手でボールを投げ、相手のゴールに入れる球技。"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ホッケー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ホッケー",
+          "reading": "ほっけー",
+          "meaning": "先の曲がったスティックでボールを扱い、ゴールをねらう球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "柔道",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "柔道",
+          "reading": "じゅうどう",
+          "meaning": "相手を投げたり押さえたりして勝敗を競う武道。"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ラクロス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ラクロス",
+          "reading": "らくろす",
+          "meaning": "先に網が付いたスティックでボールを運び、ゴールをねらう球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "近代五種",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "近代五種",
+          "reading": "きんだいごしゅ",
+          "meaning": "フェンシング・水泳・射撃・ランニングなどを組み合わせる競技。五輪では2028年から馬術に代わり障害物種目を行う。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "マウンテンバイク競技",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "マウンテンバイク競技",
+          "reading": "まうんてんばいくきょうぎ",
+          "meaning": "太いタイヤの自転車を使い、山道などのコースを走るスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "オープンウォータースイミング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "オープンウォータースイミング",
+          "reading": "おーぷんうぉーたーすいみんぐ",
+          "meaning": "海や湖など、プールの外の水域で泳ぐ競技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "新体操",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "新体操",
+          "reading": "しんたいそう",
+          "meaning": "音楽に合わせ、リボンやボールなどの手具を使って演技するスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ローイング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ローイング",
+          "reading": "ろーいんぐ",
+          "meaning": "オールで船をこぎ、コースを進む速さを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "コースタルローイング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "コースタルローイング",
+          "reading": "こーすたるろーいんぐ",
+          "meaning": "海岸近くの波のある水域などで行う、オールで船をこぐスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "七人制ラグビー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "七人制ラグビー",
+          "reading": "しちにんせいらぐびー",
+          "meaning": "一チーム七人で行う、ラグビーの種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "セーリング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "セーリング",
+          "reading": "せーりんぐ",
+          "meaning": "帆で風を受ける船を操り、海などのコースを進む速さを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "射撃",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "射撃",
+          "reading": "しゃげき",
+          "meaning": "銃を使って的をねらい、命中の正確さなどを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "スケートボード競技",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スケートボード競技",
+          "reading": "すけーとぼーどきょうぎ",
+          "meaning": "車輪の付いた板に乗り、障害物や曲面を使った技を競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "カヌースラローム",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カヌースラローム",
+          "reading": "かぬーすらろーむ",
+          "meaning": "流れのある川などで、つり下げたゲートを順に通るカヌーの種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ソフトボール",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ソフトボール",
+          "reading": "そふとぼーる",
+          "meaning": "野球より大きいボールを使い、下手から投げる球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "カヌースプリント",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カヌースプリント",
+          "reading": "かぬーすぷりんと",
+          "meaning": "流れが穏やかなコースで、カヌーやカヤックをこぐ速さを競う種目。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "スカッシュ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スカッシュ",
+          "reading": "すかっしゅ",
+          "meaning": "壁に囲まれたコートで、ボールを壁に打ち返し合うラケット競技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "サーフィン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "サーフィン",
+          "reading": "さーふぃん",
+          "meaning": "ボードに乗って波をすべり、技や波の使い方を競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "競泳",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "競泳",
+          "reading": "きょうえい",
+          "meaning": "決められた泳ぎ方と距離で、泳ぐ速さを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "卓球",
+      "present": true,
+      "matches": [
+        {
+          "source": "既存",
+          "word": "卓球",
+          "reading": "たっきゅう",
+          "meaning": "だいをはさんで、らけっとでちいさなぼーるをうちあう、すぽーつ。"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "テコンドー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "テコンドー",
+          "reading": "てこんどー",
+          "meaning": "韓国で発展した、足のけり技を多く使う武道・格闘技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "テニス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "テニス",
+          "reading": "てにす",
+          "meaning": "ラケットでボールをネットの向こうへ打ち返す球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "トランポリン競技",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "トランポリン競技",
+          "reading": "とらんぽりんきょうぎ",
+          "meaning": "トランポリンで連続して高く跳び、回転などの技を競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "トライアスロン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "トライアスロン",
+          "reading": "とらいあすろん",
+          "meaning": "水泳・自転車・ランニングを、この順につないで行うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "バレーボール",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "バレーボール",
+          "reading": "ばれーぼーる",
+          "meaning": "ボールを床に落とさずに、ネットをこえて相手コートへ返す球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "水球",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "水球",
+          "reading": "すいきゅう",
+          "meaning": "水の中でボールをパスし、相手のゴールに入れて得点を競う球技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "ウエイトリフティング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ウエイトリフティング",
+          "reading": "うえいとりふてぃんぐ",
+          "meaning": "バーベルを持ち上げ、その重さを競うスポーツ。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "LA28競技分野",
+      "word": "レスリング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "レスリング",
+          "reading": "れすりんぐ",
+          "meaning": "相手と組み合い、投げたり背中をマットに付けたりして競う格闘技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "アルペンスキー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アルペンスキー",
+          "reading": "あるぺんすきー",
+          "meaning": "雪の斜面に立つ旗門を通り、すべる速さを競うスキー競技。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "バイアスロン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "バイアスロン",
+          "reading": "ばいあすろん",
+          "meaning": "クロスカントリースキーとライフル射撃を組み合わせた競技。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "ボブスレー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ボブスレー",
+          "reading": "ぼぶすれー",
+          "meaning": "ハンドルのあるそりに乗り、氷のコースをすべる速さを競うスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "クロスカントリースキー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "クロスカントリースキー",
+          "reading": "くろすかんとりーすきー",
+          "meaning": "上り下りのある雪のコースを、スキーで進む速さを競うスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "カーリング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "カーリング",
+          "reading": "かーりんぐ",
+          "meaning": "氷上でストーンをすべらせ、円い目標の中心に近付けるチーム競技。",
+          "category": "スポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "フィギュアスケート",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "フィギュアスケート",
+          "reading": "ふぃぎゅあすけーと",
+          "meaning": "氷の上で音楽に合わせ、ジャンプや回転などの演技をするスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "フリースタイルスキー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "フリースタイルスキー",
+          "reading": "ふりーすたいるすきー",
+          "meaning": "雪上でこぶをすべったり空中の技を行ったりする、スキー競技の仲間。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "アイスホッケー",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アイスホッケー",
+          "reading": "あいすほっけー",
+          "meaning": "氷上でスティックを使ってパックを打ち、ゴールをねらう球技。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "リュージュ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "リュージュ",
+          "reading": "りゅーじゅ",
+          "meaning": "小さなそりにあおむけで乗り、足から氷のコースをすべるスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "ノルディック複合",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ノルディック複合",
+          "reading": "のるでぃっくふくごう",
+          "meaning": "スキージャンプとクロスカントリースキーを組み合わせた競技。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "ショートトラック",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ショートトラック",
+          "reading": "しょーととらっく",
+          "meaning": "短い氷のトラックで、複数の選手が同時にすべるスケート競技。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "スケルトン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スケルトン",
+          "reading": "すけるとん",
+          "meaning": "小さなそりにうつぶせで乗り、頭から氷のコースをすべるスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "スキージャンプ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スキージャンプ",
+          "reading": "すきーじゃんぷ",
+          "meaning": "雪の助走路から飛び出し、飛距離や飛び方などを競うスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "スキーマウンテニアリング",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スキーマウンテニアリング",
+          "reading": "すきーまうんてにありんぐ",
+          "meaning": "雪山をスキーなどで登ったりすべり下りたりして、速さを競うスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "スノーボード",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スノーボード",
+          "reading": "すのーぼーど",
+          "meaning": "一枚の板に両足を固定し、雪の上をすべるスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "冬季16分野",
+      "word": "スピードスケート",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "スピードスケート",
+          "reading": "すぴーどすけーと",
+          "meaning": "氷のコースをスケートですべり、速さを競うスポーツ。",
+          "category": "冬のスポーツ"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "コーラ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "コーラ",
+          "reading": "こーら",
+          "meaning": "カラメルの色と独特の香りがある、甘い炭酸飲料の仲間。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "コカ・コーラ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "コカ・コーラ",
+          "reading": "こかこーら",
+          "meaning": "コカ・コーラ社の、独特の香りがあるコーラ飲料の商品名。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "ペプシ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ペプシ",
+          "reading": "ぺぷし",
+          "meaning": "ペプシコのブランドで知られる、コーラ飲料の名前。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "ファンタ",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ファンタ",
+          "reading": "ふぁんた",
+          "meaning": "コカ・コーラ社の、果物風味の炭酸飲料のブランド名。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "CCレモン",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "CCレモン",
+          "reading": "しーしーれもん",
+          "meaning": "サントリーの、レモン風味の炭酸飲料の商品名。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "アクエリアス",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "アクエリアス",
+          "reading": "あくえりあす",
+          "meaning": "コカ・コーラ社の、水分や電解質を補うスポーツ飲料のブランド名。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "ポカリスエット",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "ポカリスエット",
+          "reading": "ぽかりすえっと",
+          "meaning": "大塚製薬の、水分や電解質を補う飲料の商品名。",
+          "category": "飲料商品"
+        }
+      ]
+    },
+    {
+      "group": "指定飲料と車",
+      "word": "NSX",
+      "present": true,
+      "matches": [
+        {
+          "source": "今回",
+          "word": "NSX",
+          "reading": "えぬえすえっくす",
+          "meaning": "ホンダの、高い走行性能を持つスポーツカーの名前。",
+          "category": "ホンダの車種"
+        }
+      ]
+    }
+  ],
+  "missing": []
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "sheet": 1,
+    "passed": true,
+    "method": "原シートの全16セルを語義・順序と照合。切り出し境界の合否は別途機械検証。",
+    "notes": "一般飲料・包装のない一般菓子と八つの天体。水星の岩石面、金星の雲、木星のしま、土星の環、天王星の傾いた環、冥王星の分類に対応。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet01.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet01-crop.json"
+  },
+  {
+    "sheet": 2,
+    "passed": true,
+    "method": "原シートの全16セルを語義・順序と照合。切り出し境界の合否は別途機械検証。",
+    "notes": "準惑星・月・火星と木星の衛星。ハウメアの細長い形、イオの色と火山、エウロパのすじ、ガニメデとカリストの表面の違いを確認。未知の表面や軌道は概念図として扱う。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet02.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet02-crop.json"
+  },
+  {
+    "sheet": 3,
+    "passed": true,
+    "method": "原シートの全16セルを語義・順序と照合。切り出し境界の合否は別途機械検証。",
+    "notes": "親惑星の区別、タイタンの大気、エンケラドスの噴出、ミマスの大クレーター、イアペトゥスの明暗、ヒペリオンの凹凸を確認。サイズや軌道は縮尺を表さない。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet03.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet03-crop.json"
+  },
+  {
+    "sheet": 4,
+    "passed": true,
+    "method": "原シートの全16セルを語義・順序と照合。切り出し境界の合否は別途機械検証。",
+    "notes": "土星・天王星・海王星の衛星。ヤヌスとエピメテウスの関係、アトラスとパンの赤道の隆起、ミランダの地形、ネレイドの細長い軌道を確認。概念図として採用。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet04.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet04-crop.json"
+  },
+  {
+    "sheet": 5,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "海王星・冥王星の衛星と恒星の概念図を対応確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet05.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet05-crop.json"
+  },
+  {
+    "sheet": 6,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：赤色の説明がある星と、中立の白い発光球を区別。誤った星座図を取り除いた概念図。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet06-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet06-v2-crop.json"
+  },
+  {
+    "sheet": 7,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：星座線・神話人物を削除。赤色星とカペラの黄系の表現を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet07-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet07-v2-crop.json"
+  },
+  {
+    "sheet": 8,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：全16セルが一つずつの恒星。余分な行・列や星座絵なし。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet08-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet08-v2-crop.json"
+  },
+  {
+    "sheet": 9,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：恒星の概念図として採用。座標・星座の図は使わない。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet09-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet09-v2-crop.json"
+  },
+  {
+    "sheet": 10,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：メンカル・ハマルの色と、その他の恒星の中立的な発光球を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet10-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet10-v2-crop.json"
+  },
+  {
+    "sheet": 11,
+    "passed": true,
+    "method": "原シート全16セルの語義・順序・構造を視覚照合。",
+    "notes": "v3：最初の十セルは恒星、残り六セルは陸上。織姫星・彦星の場所がランナーにずれないよう修正し、障害走の水ごうも確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet11-v3.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet11-v3-crop.json"
+  },
+  {
+    "sheet": 12,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "競歩・陸上の跳躍と投てき・長距離・競泳の、用具や動作を語義と確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet12.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet12-crop.json"
+  },
+  {
+    "sheet": 13,
+    "passed": true,
+    "method": "原シート全16セルの語義・順序・構造を視覚照合。",
+    "notes": "v3：メドレーリレーは水中からの背泳ぎスタート。四泳法・飛び込み・水球・体操を対応確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet13-v3.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet13-v3-crop.json"
+  },
+  {
+    "sheet": 14,
+    "passed": true,
+    "method": "原シート全16セルの語義・順序・構造を視覚照合。",
+    "notes": "v2：一本の鉄棒と二本の段違い平行棒を区別。武道・レスリング・フェンシング各種を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet14-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet14-v2-crop.json"
+  },
+  {
+    "sheet": 15,
+    "passed": true,
+    "method": "原シート全16セルの語義・順序・構造を視覚照合。",
+    "notes": "v2：重量挙げの二段階、近代五種の障害物、トライアスロン系の種目順を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet15-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet15-v2-crop.json"
+  },
+  {
+    "sheet": 16,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：ホッケーを芝上のボール競技に修正。バスケ・バレー・ラグビーなどのボールと場を区別。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet16-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet16-v2-crop.json"
+  },
+  {
+    "sheet": 17,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "球技・カーリング・ボッチャ・セーリング等の用具を確認。旗を取るフラッグフットボールを区別。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet17.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet17-crop.json"
+  },
+  {
+    "sheet": 18,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "水上競技・クライミング・スケートボード等を対応確認。ボルダーにロープなし、リードにロープあり。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet18.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet18-crop.json"
+  },
+  {
+    "sheet": 19,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：BMXのヘルメットを追加。自転車・馬術・スキーの種目を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet19-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet19-v2-crop.json"
+  },
+  {
+    "sheet": 20,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "雪上競技のスキーとスノーボードを区別。ノルディック複合は二種目を示す構図。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet20.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet20-crop.json"
+  },
+  {
+    "sheet": 21,
+    "passed": true,
+    "method": "採用する修正版の全16セルを視覚照合。切り出しは別の機械検証。",
+    "notes": "v4：冬競技12セルと天狗・大天狗・赤鬼・青鬼を全16セル照合。リュージュは足先からあおむけ、スケルトンは頭からうつぶせ、モノボブは一人。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet21-v4.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet21-v4-crop.json"
+  },
+  {
+    "sheet": 22,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：ぬりかべは無顔の石壁、一反木綿は無顔の布に修正。猫又は二本の尾。現代の特定漫画の姿を避ける。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet22-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet22-v2-crop.json"
+  },
+  {
+    "sheet": 23,
+    "passed": true,
+    "method": "採用する修正版の全16セルを視覚照合。切り出しは別の機械検証。",
+    "notes": "v2：山の妖怪・混成獣・輪入道・目目連などを、説明とセル順序で確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet23-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet23-v2-crop.json"
+  },
+  {
+    "sheet": 24,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "大入道・予言獣・狐・鬼などを各語義と対応確認。流血のない独自の伝承画。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet24.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet24-crop.json"
+  },
+  {
+    "sheet": 25,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：ペガサスから角を除去。一本角はユニコーンだけ。四神・神獣・グリフォンなどの構造を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet25-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet25-v2-crop.json"
+  },
+  {
+    "sheet": 26,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：セイレーンを古代ギリシャの鳥の体へ修正。混成獣の体の要素を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet26-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet26-v2-crop.json"
+  },
+  {
+    "sheet": 27,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "北欧・欧州の伝承生物の各セルを対応確認。スレイプニルの複数の脚、妖精の各場面を確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet27.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet27-crop.json"
+  },
+  {
+    "sheet": 28,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "v2：ジンを青い筋肉質の映画風の姿から、砂色の煙の精霊へ変更。ほかの伝承生物と一般のエコバッグを確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet28-v2.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet28-v2-crop.json"
+  },
+  {
+    "sheet": 29,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "生活・環境・機器の語を、具体的な道具または利用場面で表現している。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet29.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet29-crop.json"
+  },
+  {
+    "sheet": 30,
+    "passed": true,
+    "method": "採用する修正版の全16セルを視覚照合。切り出しは別の機械検証。",
+    "notes": "v3：映像・端末・図解・話し合いの全16場面が語義に対応。フォルダー、ショートカット、フローチャートなどを確認。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet30-v3.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet30-v3-crop.json"
+  },
+  {
+    "sheet": 31,
+    "passed": true,
+    "method": "採用する修正版の全16セルを視覚照合。切り出しは別の機械検証。",
+    "notes": "v3：発表・改善・助言からコードレスまで全16セルを照合。家電はコードなし、携帯端末は持ち運びの描写。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet31-v3.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet31-v3-crop.json"
+  },
+  {
+    "sheet": 32,
+    "passed": true,
+    "method": "採用する修正版の全16セルを視覚照合。切り出しは別の機械検証。",
+    "notes": "v4：工作・小物全16セルを語義と照合。型抜きステンシル、浮き出すエンボス、フィルム被覆、樹脂、ビーズなどを区別。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet32-v4.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet32-v4-crop.json"
+  },
+  {
+    "sheet": 33,
+    "passed": true,
+    "method": "採用する修正版の全16セルを視覚照合。切り出しは別の機械検証。",
+    "notes": "v3：衣服・かばん・食器など全16セルを照合。サロペットとつなぎ、異なる用途の袋を区別。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet33-v3.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet33-v3-crop.json"
+  },
+  {
+    "sheet": 34,
+    "passed": true,
+    "method": "原シート全16セルを語義・順序・対象の構造と視覚照合。境界は別途機械検証。",
+    "notes": "調理器具16種を順序・形・使用例と確認。ピーラー・水切り・へら・トングなどを区別。",
+    "adoptedSource": "assets/shiritori/sheets/expansion1024f-sheet34.png",
+    "cropValidation": "data/image-coverage/2026-10-16-expansion1024f/sheet34-crop.json"
+  }
+]
