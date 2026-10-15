@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "vocabularyRows": 9698,
+  "newWords": 512,
+  "priorRowsPreserved": 9186,
+  "nameCards": 360,
+  "generatedMusicIllustrations": 152,
+  "sourceSheets": 10,
+  "fillerTilesNotRegistered": 8,
+  "reservedReadingCollisions": 0,
+  "missingImages": 0,
+  "gridReports": 10,
+  "browser": {
+    "passed": true,
+    "viewports": [
+      1280,
+      390
+    ],
+    "detailWordsPerViewport": 512,
+    "cardsPerViewport": 360,
+    "illustrationsPerViewport": 152,
+    "inputCategoriesPerViewport": 8,
+    "reviewCategoriesPerViewport": 8,
+    "noExternalSearchForNameCards": true,
+    "missingCardFallback": true,
+    "pageErrors": 0
+  },
+  "checks": [
+    "node tests/shiritori-expansion512e.cjs",
+    "node tests/shiritori-import-history.cjs",
+    "node tests/shiritori-data.cjs",
+    "python -X utf8 scripts/audit-shiritori-image-coverage.py",
+    "node tests/shiritori-expansion512e-browser.cjs"
+  ],
+  "csvSha256": "494ea00630a102a265552bd54b06525ab60c719cf4d4055fab5222c369e8f60f"
+}
