@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "dictionarySha256": "10c654464e6603af91465d4aa51cab62a43e5f290c2a203241933e5d577057e1",
+  "addedWords": 1476,
+  "newReadings": 1429,
+  "adoptedSheets": 34,
+  "newImages": 544,
+  "reusedImageAssignments": 18,
+  "explanationOnly": 914,
+  "tests": {
+    "node tests/shiritori-expansion1024f.cjs": "passed",
+    "node tests/shiritori-explanation-only.cjs": "passed",
+    "node tests/shiritori-data.cjs": "passed",
+    "node tests/shiritori-import-history.cjs": "passed",
+    "node tests/shiritori-image-policy.cjs": "passed",
+    "python -X utf8 scripts/audit-shiritori-image-coverage.py": "passed",
+    "node tests/shiritori-expansion1024f-browser.cjs": "passed",
+    "git diff --check": "passed"
+  },
+  "browser": {
+    "passed": true,
+    "offline": true,
+    "results": [
+      {
+        "width": 1280,
+        "gameWords": 1476,
+        "catalogWords": 1476,
+        "explanationOnly": 914,
+        "illustrated": 562,
+        "inputSamples": 10,
+        "passed": true
+      },
+      {
+        "width": 390,
+        "gameWords": 1476,
+        "catalogWords": 1476,
+        "explanationOnly": 914,
+        "illustrated": 562,
+        "inputSamples": 10,
+        "passed": true
+      }
+    ]
+  },
+  "manualScreenshotReview": [
+    "game-1280.png",
+    "catalog-1280.png",
+    "game-390.png",
+    "catalog-390.png"
+  ]
+}

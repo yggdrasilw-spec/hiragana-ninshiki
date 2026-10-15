@@ -1445,7 +1445,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
       <div class="set-hd">🖼️ 画像のえらびかた</div>
       <div class="set-bd">
         <div id="imagePolicyControls"></div>
-        <p class="image-policy-help">分野は語の説明と検索語から自動で分けています。動物・植物などをWikimedia優先にすると、保存済みのAI画像があっても検索します。Wikimediaには写真以外の図もあり、検索結果が正しいとは限りません。見つからないときは保存済み画像を表示します。保存済み画像がない語は、既定でもWikimediaを検索します。</p>
+        <p class="image-policy-help">分野は語の説明と検索語から自動で分けています。動物・植物などをWikimedia優先にすると、保存済みのAI画像があっても検索します。Wikimediaには写真以外の図もあり、検索結果が正しいとは限りません。見つからないときは保存済み画像を表示します。保存済み画像がない語は、既定でもWikimediaを検索します。商品名など、説明のみで登録した語は画像を表示しません。</p>
       </div>
     </div>
     <div class="set-sec">
@@ -1569,7 +1569,7 @@ function parseCSV(csvText){
     const level         = parseInt(parts[4]||'1') || 1;
     const imagequeryEn  = (parts[5]||'').trim() || null;
     const imageAsset    = (parts[6]||'').trim() || null;
-    const imageMode     = (parts[7]||'').trim() === 'asset' ? 'asset' : 'fallback';
+    const imageMode     = ['asset','none'].includes((parts[7]||'').trim()) ? parts[7].trim() : 'fallback';
     const imageCredit   = (parts[8]||'').trim() || null;
     if(!reading || !word) continue;
     rawRows.push({ reading, word, meaning, imagequery, level, imagequeryEn, imageAsset, imageMode, imageCredit });
@@ -3021,6 +3021,11 @@ async function fetchCommonsByFulltext(query){
  * 確認できなければその候補は使わず次の候補にフォールバックする。
  */
 async function fetchImg(query, enQueryArg=null){
+  // Per-sense editorial choice: do not load an asset, cache, or search result.
+  // Check before normalising mode; a global Wikimedia preference cannot override it.
+  if(query && typeof query === 'object' && query.mode === 'none'){
+    return {url:null,credit:{text:'このことばは説明のみです（画像は表示しません）'}};
+  }
   let jaQuery, enQuery, asset=null, mode='fallback', assetCredit=null;
   if(query && typeof query === 'object'){
     jaQuery = query.ja || null;
@@ -3104,7 +3109,9 @@ async function fetchImg(query, enQueryArg=null){
  * （いわゆる letterbox blur 表示）。
  */
 function renderImgHtml(url, credit){
-  if(!url) return '<div class="img-ph">🖼️</div>';
+  if(!url) return credit?.text==='このことばは説明のみです（画像は表示しません）'
+    ? '<div class="img-ph" style="font-size:15px;text-align:center;padding:16px">このことばは<br>せつめいだけを みせるよ</div>'
+    : '<div class="img-ph">🖼️</div>';
   const u = escH(url);
   const creditHtml = credit?.text
     ? `<div class="img-credit" title="${escH(credit.text)}">${escH(credit.text)}${/^https?:\/\//.test(credit.sourceUrl||'')?` · <a href="${escH(credit.sourceUrl)}" target="_blank" rel="noopener noreferrer">出典</a>`:''}${/^https?:\/\//.test(credit.licenseUrl||'')?` · <a href="${escH(credit.licenseUrl)}" target="_blank" rel="noopener noreferrer">利用条件</a>`:''}</div>`
