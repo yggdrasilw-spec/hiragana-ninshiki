@@ -3034,6 +3034,14 @@ async function fetchImg(query, enQueryArg=null){
   }
   if(!jaQuery && !asset) return { url:null, credit:null };
 
+  // These authored cards deliberately omit portraits, logos and character art.
+  // Honor this per-meaning restriction even with Wikimedia selected or a broken asset.
+  if(assetCredit === '独自文字カード（外部検索なし）'){
+    return asset && await canLoadImage(asset)
+      ? { url:asset, credit:{ text:assetCredit } }
+      : { url:null, credit:null };
+  }
+
   const policy=typeof ST==='undefined'?(mode==='asset'?'asset':'wikimedia'):ShiritoriImagePolicy.source(ST.imagePolicy,query?.category||'other');
   // A Wikimedia preference explicitly bypasses the CSV's asset-only priority.
   const effectiveMode=policy==='wikimedia'?'fallback':mode;

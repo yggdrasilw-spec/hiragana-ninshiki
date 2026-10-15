@@ -91,7 +91,7 @@ for batch_path in args.batches:
                 raise ValueError(f"Invalid generation date: {date}")
             scene = item["scene"]
             credit = item.get('credit') or 'AI生成イラスト'
-            if credit not in ('AI生成イラスト', 'プログラム生成図'):
+            if credit not in ('AI生成イラスト', 'プログラム生成図', '独自文字カード（外部検索なし）'):
                 raise ValueError('Invalid generation credit: ' + filename)
             tile = int(item["tileIndex"])
             if tile < 1:
