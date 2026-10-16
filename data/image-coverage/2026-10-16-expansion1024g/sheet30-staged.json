@@ -1,0 +1,529 @@
+{
+  "sheet": 30,
+  "sourceSheet": "sheets/expansion1024g-sheet30.png",
+  "prompt": "Use case: illustration-story. Asset type: Japanese elementary vocabulary illustrations, sheet 30. Edit the provided 2048x2048 template, painting ONLY inside its sixteen white panels. Every single panel MUST have identical width and height. All horizontal lines must be EXACTLY at 0%,25%,50%,75%,100%, not based on artwork. Keep precisely the 4x4 equal grid and 5 continuous pure magenta #ff00ff lines in each direction, including outer frame. Preserve line position, width and full canvas. Each panel is an independent clear gentle picture-book illustration as isolated vignettes on a pure white background, large and easily understood. Never use magenta for illustration. Avoid all pink, purple and neon colors in artwork, objects, decorations, lighting and shadows. Use warm orange, red, yellow, green, blue and neutral colors. No pink/purple concert lights. Nothing crosses the grid. No text, letters, numbers, labels, symbols resembling writing or watermarks. For abstract words show a concrete situation illustrating the meaning. Diverse natural children and adults, no stereotypes. Correct anatomy and objects. Panels in strict row-major order (left to right, top to bottom):\n1. ガードレール — 道路の端などに設ける車の転落などを防ぐ柵。\n2. 生糸 — 蚕の繭から取ったままの絹の糸。\n3. 機械化 — 人がしていた作業などを機械で行うようにすること。\n4. 聞き手 — 話を聞く側の人。\n5. 聞き取り — 話や音を聞いて内容を捉えること。\n6. 効き目 — 薬や方法などによって現れる効果。\n7. 企業 — 品物やサービスなどを生み出す事業を行う組織。\n8. 気配り — 周りの様子を考えて細かいことにも気をつけること。\n9. 喜劇 — 見ている人を笑わせる内容の劇。\n10. 帰国 — 外国から自分の国に帰ること。\n11. 器材 — 作業などに使う器具や材料。\n12. 岸辺 — 川や海や湖の岸の近く。\n13. 旗手 — 集団の先頭などで旗を持つ人。\n14. 気象学 — 大気の状態や天気の仕組みを調べる学問。\n15. 気象台 — 気象の観測や予報などを行う施設。\n16. 期日 — あらかじめ決められた日。\nSafety and clarity: Vehicles must be driven only by unmistakable adults, never children. Industrial machinery and knives are used by adults. Do not put a child in a car driver's seat. Keep artwork separated by the measured template grid.\nDo not add numerical claims, prices, quantities, currency denominations, calorie values or stroke-order numbers unless explicitly required by the target word. Mathematical concepts should have neutral concrete examples without unverified numeric diagrams.\n",
+  "tiles": [
+    {
+      "reading": "がーどれーる",
+      "word": "ガードレール",
+      "meaning": "道路の端などに設ける車の転落などを防ぐ柵。",
+      "level": 2,
+      "entryId": "1039760",
+      "sourceKana": "ガードレール",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1039760 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1039760",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1039760"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。道路の端などに設ける車の転落などを防ぐ柵。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 469,
+      "sheet": 30,
+      "tileIndex": 1
+    },
+    {
+      "reading": "きいと",
+      "word": "生糸",
+      "meaning": "蚕の繭から取ったままの絹の糸。",
+      "level": 2,
+      "entryId": "1379080",
+      "sourceKana": "きいと",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1379080 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1379080",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1379080"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。蚕の繭から取ったままの絹の糸。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 470,
+      "sheet": 30,
+      "tileIndex": 2
+    },
+    {
+      "reading": "きかいか",
+      "word": "機械化",
+      "meaning": "人がしていた作業などを機械で行うようにすること。",
+      "level": 2,
+      "entryId": "1220820",
+      "sourceKana": "きかいか",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1220820 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1220820",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1220820"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。人がしていた作業などを機械で行うようにすること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 471,
+      "sheet": 30,
+      "tileIndex": 3
+    },
+    {
+      "reading": "ききて",
+      "word": "聞き手",
+      "meaning": "話を聞く側の人。",
+      "level": 2,
+      "entryId": "1505810",
+      "sourceKana": "ききて",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1505810 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1505810",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1505810"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。話を聞く側の人。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 472,
+      "sheet": 30,
+      "tileIndex": 4
+    },
+    {
+      "reading": "ききとり",
+      "word": "聞き取り",
+      "meaning": "話や音を聞いて内容を捉えること。",
+      "level": 2,
+      "entryId": "1505790",
+      "sourceKana": "ききとり",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1505790 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1505790",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1505790"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。話や音を聞いて内容を捉えること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 473,
+      "sheet": 30,
+      "tileIndex": 5
+    },
+    {
+      "reading": "ききめ",
+      "word": "効き目",
+      "meaning": "薬や方法などによって現れる効果。",
+      "level": 2,
+      "entryId": "1591070",
+      "sourceKana": "ききめ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1591070 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1591070",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1591070"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。薬や方法などによって現れる効果。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 474,
+      "sheet": 30,
+      "tileIndex": 6
+    },
+    {
+      "reading": "きぎょう",
+      "word": "企業",
+      "meaning": "品物やサービスなどを生み出す事業を行う組織。",
+      "level": 2,
+      "entryId": "1218190",
+      "sourceKana": "きぎょう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1218190 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1218190",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1218190"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。品物やサービスなどを生み出す事業を行う組織。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 475,
+      "sheet": 30,
+      "tileIndex": 7
+    },
+    {
+      "reading": "きくばり",
+      "word": "気配り",
+      "meaning": "周りの様子を考えて細かいことにも気をつけること。",
+      "level": 2,
+      "entryId": "1614540",
+      "sourceKana": "きくばり",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1614540 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1614540",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1614540"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。周りの様子を考えて細かいことにも気をつけること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 476,
+      "sheet": 30,
+      "tileIndex": 8
+    },
+    {
+      "reading": "きげき",
+      "word": "喜劇",
+      "meaning": "見ている人を笑わせる内容の劇。",
+      "level": 2,
+      "entryId": "1218810",
+      "sourceKana": "きげき",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1218810 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1218810",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1218810"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。見ている人を笑わせる内容の劇。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 477,
+      "sheet": 30,
+      "tileIndex": 9
+    },
+    {
+      "reading": "きこく",
+      "word": "帰国",
+      "meaning": "外国から自分の国に帰ること。",
+      "level": 2,
+      "entryId": "1221330",
+      "sourceKana": "きこく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1221330 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1221330",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1221330"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。外国から自分の国に帰ること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 478,
+      "sheet": 30,
+      "tileIndex": 10
+    },
+    {
+      "reading": "きざい",
+      "word": "器材",
+      "meaning": "作業などに使う器具や材料。",
+      "level": 2,
+      "entryId": "1218930",
+      "sourceKana": "きざい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1218930 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1218930",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1218930"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。作業などに使う器具や材料。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 479,
+      "sheet": 30,
+      "tileIndex": 11
+    },
+    {
+      "reading": "きしべ",
+      "word": "岸辺",
+      "meaning": "川や海や湖の岸の近く。",
+      "level": 2,
+      "entryId": "1217060",
+      "sourceKana": "きしべ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1217060 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1217060",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1217060"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。川や海や湖の岸の近く。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 480,
+      "sheet": 30,
+      "tileIndex": 12
+    },
+    {
+      "reading": "きしゅ",
+      "word": "旗手",
+      "meaning": "集団の先頭などで旗を持つ人。",
+      "level": 2,
+      "entryId": "1220260",
+      "sourceKana": "きしゅ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1220260 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1220260",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1220260"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。集団の先頭などで旗を持つ人。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 481,
+      "sheet": 30,
+      "tileIndex": 13
+    },
+    {
+      "reading": "きしょうがく",
+      "word": "気象学",
+      "meaning": "大気の状態や天気の仕組みを調べる学問。",
+      "level": 2,
+      "entryId": "1222280",
+      "sourceKana": "きしょうがく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1222280 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1222280",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1222280"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。大気の状態や天気の仕組みを調べる学問。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 482,
+      "sheet": 30,
+      "tileIndex": 14
+    },
+    {
+      "reading": "きしょうだい",
+      "word": "気象台",
+      "meaning": "気象の観測や予報などを行う施設。",
+      "level": 2,
+      "entryId": "1222290",
+      "sourceKana": "きしょうだい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1222290 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1222290",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1222290"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。気象の観測や予報などを行う施設。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 483,
+      "sheet": 30,
+      "tileIndex": 15
+    },
+    {
+      "reading": "きじつ",
+      "word": "期日",
+      "meaning": "あらかじめ決められた日。",
+      "level": 2,
+      "entryId": "1220610",
+      "sourceKana": "きじつ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1220610 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1220610",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1220610"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。あらかじめ決められた日。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 484,
+      "sheet": 30,
+      "tileIndex": 16
+    }
+  ],
+  "report": "data\\image-coverage\\2026-10-16-expansion1024g\\sheet30-staging-crop.json",
+  "outputDirectory": "data\\image-coverage\\2026-10-16-expansion1024g\\crop-staging\\sheet30",
+  "passed": true
+}

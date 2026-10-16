@@ -1,0 +1,527 @@
+{
+  "sheet": 40,
+  "sourceSheet": "sheets/expansion1024g-sheet40.png",
+  "prompt": "Use case: illustration-story. Asset type: Japanese elementary vocabulary illustrations, sheet 40. Edit the provided 2048x2048 template, painting ONLY inside its sixteen white panels. Every single panel MUST have identical width and height. All horizontal lines must be EXACTLY at 0%,25%,50%,75%,100%, not based on artwork. Keep precisely the 4x4 equal grid and 5 continuous pure magenta #ff00ff lines in each direction, including outer frame. Preserve line position, width and full canvas. Each panel is an independent clear gentle picture-book illustration as isolated vignettes on a pure white background, large and easily understood. Never use magenta for illustration. Avoid all pink, purple and neon colors in artwork, objects, decorations, lighting and shadows. Use warm orange, red, yellow, green, blue and neutral colors. No pink/purple concert lights. Nothing crosses the grid. No text, letters, numbers, labels, symbols resembling writing or watermarks. For abstract words show a concrete situation illustrating the meaning. Diverse natural children and adults, no stereotypes. Correct anatomy and objects. Panels in strict row-major order (left to right, top to bottom):\n1. 航空 — 飛行機などが空を飛ぶこと。\n2. 航空会社 — 飛行機で人や荷物を運ぶ会社。\n3. 高校生 — 高等学校で学ぶ生徒。\n4. 考古学 — 昔の道具や建物の跡などから人の暮らしを調べる学問。\n5. 広告 — 商品や催しなどを多くの人に知らせるもの。\n6. 公式 — 計算や数量の関係などを一般的に表した式。\n7. 香辛料 — 料理に香りや辛みなどをつける材料。\n8. 降水量 — 雨や雪などが降った量を水の深さで表したもの。\n9. 構図 — 絵や写真の中で物を配置する組み立て方。\n10. 洪水 — 大雨などで川の水が増えてあふれること。\n11. 高速道路 — 車が高速で安全に走れるように作られた道路。\n12. 高速バス — 高速道路などを通って離れた町を結ぶバス。\n13. 構造 — 物を組み立てている部分のつながりや仕組み。\n14. 光沢 — 物の表面で光が反射してつやつや見えること。\n15. 交通費 — 乗り物などで移動するために使うお金。\n16. 交通網 — 道路や鉄道などがつながった道筋の全体。\nSafety and clarity: Vehicles must be driven only by unmistakable adults, never children. Industrial machinery and knives are used by adults. Do not put a child in a car driver's seat. Keep artwork separated by the measured template grid.\nDo not add numerical claims, prices, quantities, currency denominations, calorie values or stroke-order numbers unless explicitly required by the target word. Mathematical concepts should have neutral concrete examples without unverified numeric diagrams.\n",
+  "tiles": [
+    {
+      "reading": "こうくう",
+      "word": "航空",
+      "meaning": "飛行機などが空を飛ぶこと。",
+      "level": 2,
+      "entryId": "1281270",
+      "sourceKana": "こうくう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1281270 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281270",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281270"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。飛行機などが空を飛ぶこと。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 629,
+      "sheet": 40,
+      "tileIndex": 1
+    },
+    {
+      "reading": "こうくうがいしゃ",
+      "word": "航空会社",
+      "meaning": "飛行機で人や荷物を運ぶ会社。",
+      "level": 2,
+      "entryId": "1281300",
+      "sourceKana": "こうくうがいしゃ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1281300 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281300",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281300"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。飛行機で人や荷物を運ぶ会社。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 630,
+      "sheet": 40,
+      "tileIndex": 2
+    },
+    {
+      "reading": "こうこうせい",
+      "word": "高校生",
+      "meaning": "高等学校で学ぶ生徒。",
+      "level": 2,
+      "entryId": "1283510",
+      "sourceKana": "こうこうせい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1283510 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1283510",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1283510"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。高等学校で学ぶ生徒。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 631,
+      "sheet": 40,
+      "tileIndex": 3
+    },
+    {
+      "reading": "こうこがく",
+      "word": "考古学",
+      "meaning": "昔の道具や建物の跡などから人の暮らしを調べる学問。",
+      "level": 2,
+      "entryId": "1281120",
+      "sourceKana": "こうこがく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "adj-no"
+      ],
+      "lexicalSource": "JMdict 1281120 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281120",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281120"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。昔の道具や建物の跡などから人の暮らしを調べる学問。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 632,
+      "sheet": 40,
+      "tileIndex": 4
+    },
+    {
+      "reading": "こうこく",
+      "word": "広告",
+      "meaning": "商品や催しなどを多くの人に知らせるもの。",
+      "level": 2,
+      "entryId": "1278510",
+      "sourceKana": "こうこく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt"
+      ],
+      "lexicalSource": "JMdict 1278510 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1278510",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1278510"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。商品や催しなどを多くの人に知らせるもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 633,
+      "sheet": 40,
+      "tileIndex": 5
+    },
+    {
+      "reading": "こうしき",
+      "word": "公式",
+      "meaning": "計算や数量の関係などを一般的に表した式。",
+      "level": 2,
+      "entryId": "1273820",
+      "sourceKana": "こうしき",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "adj-no",
+        "n",
+        "n-suf"
+      ],
+      "lexicalSource": "JMdict 1273820 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1273820",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1273820"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。計算や数量の関係などを一般的に表した式。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 634,
+      "sheet": 40,
+      "tileIndex": 6
+    },
+    {
+      "reading": "こうしんりょう",
+      "word": "香辛料",
+      "meaning": "料理に香りや辛みなどをつける材料。",
+      "level": 2,
+      "entryId": "1283050",
+      "sourceKana": "こうしんりょう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1283050 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1283050",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1283050"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。料理に香りや辛みなどをつける材料。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 635,
+      "sheet": 40,
+      "tileIndex": 7
+    },
+    {
+      "reading": "こうすいりょう",
+      "word": "降水量",
+      "meaning": "雨や雪などが降った量を水の深さで表したもの。",
+      "level": 2,
+      "entryId": "1282900",
+      "sourceKana": "こうすいりょう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1282900 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1282900",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1282900"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。雨や雪などが降った量を水の深さで表したもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 636,
+      "sheet": 40,
+      "tileIndex": 8
+    },
+    {
+      "reading": "こうず",
+      "word": "構図",
+      "meaning": "絵や写真の中で物を配置する組み立て方。",
+      "level": 2,
+      "entryId": "1279720",
+      "sourceKana": "こうず",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1279720 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279720",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279720"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。絵や写真の中で物を配置する組み立て方。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 637,
+      "sheet": 40,
+      "tileIndex": 9
+    },
+    {
+      "reading": "こうずい",
+      "word": "洪水",
+      "meaning": "大雨などで川の水が増えてあふれること。",
+      "level": 2,
+      "entryId": "1279930",
+      "sourceKana": "こうずい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1279930 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279930",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279930"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。大雨などで川の水が増えてあふれること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 638,
+      "sheet": 40,
+      "tileIndex": 10
+    },
+    {
+      "reading": "こうそくどうろ",
+      "word": "高速道路",
+      "meaning": "車が高速で安全に走れるように作られた道路。",
+      "level": 2,
+      "entryId": "1283720",
+      "sourceKana": "こうそくどうろ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1283720 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1283720",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1283720"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。車が高速で安全に走れるように作られた道路。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 639,
+      "sheet": 40,
+      "tileIndex": 11
+    },
+    {
+      "reading": "こうそくばす",
+      "word": "高速バス",
+      "meaning": "高速道路などを通って離れた町を結ぶバス。",
+      "level": 2,
+      "entryId": "2840573",
+      "sourceKana": "こうそくバス",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 2840573 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2840573",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2840573"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。高速道路などを通って離れた町を結ぶバス。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 640,
+      "sheet": 40,
+      "tileIndex": 12
+    },
+    {
+      "reading": "こうぞう",
+      "word": "構造",
+      "meaning": "物を組み立てている部分のつながりや仕組み。",
+      "level": 2,
+      "entryId": "1279790",
+      "sourceKana": "こうぞう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1279790 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279790",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279790"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物を組み立てている部分のつながりや仕組み。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 641,
+      "sheet": 40,
+      "tileIndex": 13
+    },
+    {
+      "reading": "こうたく",
+      "word": "光沢",
+      "meaning": "物の表面で光が反射してつやつや見えること。",
+      "level": 2,
+      "entryId": "1273050",
+      "sourceKana": "こうたく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1273050 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1273050",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1273050"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物の表面で光が反射してつやつや見えること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 642,
+      "sheet": 40,
+      "tileIndex": 14
+    },
+    {
+      "reading": "こうつうひ",
+      "word": "交通費",
+      "meaning": "乗り物などで移動するために使うお金。",
+      "level": 2,
+      "entryId": "1272410",
+      "sourceKana": "こうつうひ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1272410 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1272410",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1272410"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。乗り物などで移動するために使うお金。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 643,
+      "sheet": 40,
+      "tileIndex": 15
+    },
+    {
+      "reading": "こうつうもう",
+      "word": "交通網",
+      "meaning": "道路や鉄道などがつながった道筋の全体。",
+      "level": 2,
+      "entryId": "1272430",
+      "sourceKana": "こうつうもう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1272430 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1272430",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1272430"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。道路や鉄道などがつながった道筋の全体。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 644,
+      "sheet": 40,
+      "tileIndex": 16
+    }
+  ],
+  "report": "data\\image-coverage\\2026-10-16-expansion1024g\\sheet40-staging-crop.json",
+  "outputDirectory": "data\\image-coverage\\2026-10-16-expansion1024g\\crop-staging\\sheet40",
+  "passed": true
+}

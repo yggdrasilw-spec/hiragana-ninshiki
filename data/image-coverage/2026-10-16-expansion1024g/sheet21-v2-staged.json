@@ -1,0 +1,534 @@
+{
+  "sheet": 21,
+  "sourceSheet": "sheets/expansion1024g-sheet21-v2.png",
+  "prompt": "Use case: illustration-story. Asset type: Japanese elementary vocabulary illustrations, sheet 21. Edit the provided 2048x2048 template, painting ONLY inside its sixteen white panels. Every single panel MUST have identical width and height. All horizontal lines must be EXACTLY at 0%,25%,50%,75%,100%, not based on artwork. Keep precisely the 4x4 equal grid and 5 continuous pure magenta #ff00ff lines in each direction, including outer frame. Preserve line position, width and full canvas. Each panel is an independent clear gentle picture-book illustration as isolated vignettes on a pure white background, large and easily understood. Never use magenta for illustration. Avoid all pink, purple and neon colors in artwork, objects, decorations, lighting and shadows. Use warm orange, red, yellow, green, blue and neutral colors. No pink/purple concert lights. Nothing crosses the grid. No text, letters, numbers, labels, symbols resembling writing or watermarks. For abstract words show a concrete situation illustrating the meaning. Diverse natural children and adults, no stereotypes. Correct anatomy and objects. Panels in strict row-major order (left to right, top to bottom):\n1. 各地 — いろいろな土地や地域。\n2. 拡張 — 範囲や働きなどを広げること。\n3. 確定 — 物事がはっきり決まること。\n4. 獲得 — 努力などによって手に入れること。\n5. 確率 — あることが起きる見込みを数で表したもの。\n6. 駆け足 — 小さく走って進むこと。\n7. 家計簿 — 家庭で使ったお金や入ったお金を記録する帳面。\n8. 掛け声 — 勢いをつけたり合図をしたりするために出す声。\n9. 掛け軸 — 絵や書を布や紙で仕立てて壁などに掛けるもの。\n10. 囲い — 周りを囲んで区切るもの。\n11. 火災 — 建物や山などが燃える火事。\n12. 佳作 — 特によくできた作品やその評価。\n13. 飾り — 美しく見せるためにつけたり置いたりするもの。\n14. 飾り付け — 物を飾って見た目を整えること。\n15. 火山灰 — 火山から噴き出した細かい岩などの粒。\n16. 貸し切り — 乗り物や場所などを一つの集団だけで借りること。\nSafety and clarity: Vehicles must be driven only by unmistakable adults, never children. Industrial machinery and knives are used by adults. Do not put a child in a car driver's seat. Keep artwork separated by the measured template grid.\nCritical override for panel5 確率: show a coin tossed in the air, with the two possible faces represented by a small simple sun and a small simple star on separate generic coins; no numbers, ratios, pie chart, balls or written claims. Critical override for panel14 飾り付け: decorations are ONLY orange, yellow, green and blue paper chains and balloons; no pink, purple, magenta, fuchsia or violet anywhere except grid.\n",
+  "tiles": [
+    {
+      "reading": "かくち",
+      "word": "各地",
+      "meaning": "いろいろな土地や地域。",
+      "level": 2,
+      "entryId": "1205100",
+      "sourceKana": "かくち",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1205100 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205100",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205100"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。いろいろな土地や地域。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 324,
+      "sheet": 21,
+      "tileIndex": 1
+    },
+    {
+      "reading": "かくちょう",
+      "word": "拡張",
+      "meaning": "範囲や働きなどを広げること。",
+      "level": 2,
+      "entryId": "1205220",
+      "sourceKana": "かくちょう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt"
+      ],
+      "lexicalSource": "JMdict 1205220 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205220",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205220"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。範囲や働きなどを広げること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 325,
+      "sheet": 21,
+      "tileIndex": 2
+    },
+    {
+      "reading": "かくてい",
+      "word": "確定",
+      "meaning": "物事がはっきり決まること。",
+      "level": 2,
+      "entryId": "1205880",
+      "sourceKana": "かくてい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1205880 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205880",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205880"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物事がはっきり決まること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 326,
+      "sheet": 21,
+      "tileIndex": 3
+    },
+    {
+      "reading": "かくとく",
+      "word": "獲得",
+      "meaning": "努力などによって手に入れること。",
+      "level": 2,
+      "entryId": "1205750",
+      "sourceKana": "かくとく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt",
+        "adj-no"
+      ],
+      "lexicalSource": "JMdict 1205750 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205750",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205750"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。努力などによって手に入れること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 327,
+      "sheet": 21,
+      "tileIndex": 4
+    },
+    {
+      "reading": "かくりつ",
+      "word": "確率",
+      "meaning": "あることが起きる見込みを数で表したもの。",
+      "level": 2,
+      "entryId": "1205950",
+      "sourceKana": "かくりつ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1205950 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205950",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1205950"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。あることが起きる見込みを数で表したもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 328,
+      "sheet": 21,
+      "tileIndex": 5
+    },
+    {
+      "reading": "かけあし",
+      "word": "駆け足",
+      "meaning": "小さく走って進むこと。",
+      "level": 2,
+      "entryId": "1244800",
+      "sourceKana": "かけあし",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1244800 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1244800",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1244800"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。小さく走って進むこと。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 329,
+      "sheet": 21,
+      "tileIndex": 6
+    },
+    {
+      "reading": "かけいぼ",
+      "word": "家計簿",
+      "meaning": "家庭で使ったお金や入ったお金を記録する帳面。",
+      "level": 2,
+      "entryId": "1191920",
+      "sourceKana": "かけいぼ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1191920 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1191920",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1191920"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。家庭で使ったお金や入ったお金を記録する帳面。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 330,
+      "sheet": 21,
+      "tileIndex": 7
+    },
+    {
+      "reading": "かけごえ",
+      "word": "掛け声",
+      "meaning": "勢いをつけたり合図をしたりするために出す声。",
+      "level": 2,
+      "entryId": "1590070",
+      "sourceKana": "かけごえ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1590070 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590070",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590070"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。勢いをつけたり合図をしたりするために出す声。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 331,
+      "sheet": 21,
+      "tileIndex": 8
+    },
+    {
+      "reading": "かけじく",
+      "word": "掛け軸",
+      "meaning": "絵や書を布や紙で仕立てて壁などに掛けるもの。",
+      "level": 2,
+      "entryId": "1590090",
+      "sourceKana": "かけじく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1590090 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590090",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590090"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。絵や書を布や紙で仕立てて壁などに掛けるもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 332,
+      "sheet": 21,
+      "tileIndex": 9
+    },
+    {
+      "reading": "かこい",
+      "word": "囲い",
+      "meaning": "周りを囲んで区切るもの。",
+      "level": 2,
+      "entryId": "1155950",
+      "sourceKana": "かこい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1155950 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1155950",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1155950"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。周りを囲んで区切るもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 333,
+      "sheet": 21,
+      "tileIndex": 10
+    },
+    {
+      "reading": "かさい",
+      "word": "火災",
+      "meaning": "建物や山などが燃える火事。",
+      "level": 2,
+      "entryId": "1193880",
+      "sourceKana": "かさい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1193880 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1193880",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1193880"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。建物や山などが燃える火事。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 334,
+      "sheet": 21,
+      "tileIndex": 11
+    },
+    {
+      "reading": "かさく",
+      "word": "佳作",
+      "meaning": "特によくできた作品やその評価。",
+      "level": 2,
+      "entryId": "1189760",
+      "sourceKana": "かさく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1189760 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1189760",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1189760"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。特によくできた作品やその評価。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 335,
+      "sheet": 21,
+      "tileIndex": 12
+    },
+    {
+      "reading": "かざり",
+      "word": "飾り",
+      "meaning": "美しく見せるためにつけたり置いたりするもの。",
+      "level": 2,
+      "entryId": "1357160",
+      "sourceKana": "かざり",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "n-suf"
+      ],
+      "lexicalSource": "JMdict 1357160 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1357160",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1357160"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。美しく見せるためにつけたり置いたりするもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 336,
+      "sheet": 21,
+      "tileIndex": 13
+    },
+    {
+      "reading": "かざりつけ",
+      "word": "飾り付け",
+      "meaning": "物を飾って見た目を整えること。",
+      "level": 2,
+      "entryId": "1590220",
+      "sourceKana": "かざりつけ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1590220 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590220",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590220"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物を飾って見た目を整えること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 337,
+      "sheet": 21,
+      "tileIndex": 14
+    },
+    {
+      "reading": "かざんばい",
+      "word": "火山灰",
+      "meaning": "火山から噴き出した細かい岩などの粒。",
+      "level": 2,
+      "entryId": "1193920",
+      "sourceKana": "かざんばい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1193920 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1193920",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1193920"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。火山から噴き出した細かい岩などの粒。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 338,
+      "sheet": 21,
+      "tileIndex": 15
+    },
+    {
+      "reading": "かしきり",
+      "word": "貸し切り",
+      "meaning": "乗り物や場所などを一つの集団だけで借りること。",
+      "level": 2,
+      "entryId": "1590230",
+      "sourceKana": "かしきり",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "adj-no"
+      ],
+      "lexicalSource": "JMdict 1590230 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590230",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1590230"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。乗り物や場所などを一つの集団だけで借りること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 339,
+      "sheet": 21,
+      "tileIndex": 16
+    }
+  ],
+  "report": "data\\image-coverage\\2026-10-16-expansion1024g\\sheet21-v2-staging-crop.json",
+  "outputDirectory": "data\\image-coverage\\2026-10-16-expansion1024g\\crop-staging\\sheet21-v2",
+  "passed": true
+}

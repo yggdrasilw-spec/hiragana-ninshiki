@@ -1,0 +1,524 @@
+{
+  "sheet": 50,
+  "sourceSheet": "sheets/expansion1024g-sheet50.png",
+  "prompt": "Use case: illustration-story. Asset type: Japanese elementary vocabulary illustrations, sheet 50. Edit the provided 2048x2048 template, painting ONLY inside its sixteen white panels. Every single panel MUST have identical width and height. All horizontal lines must be EXACTLY at 0%,25%,50%,75%,100%, not based on artwork. Keep precisely the 4x4 equal grid and 5 continuous pure magenta #ff00ff lines in each direction, including outer frame. Preserve line position, width and full canvas. Each panel is an independent clear gentle picture-book illustration as isolated vignettes on a pure white background, large and easily understood. Never use magenta for illustration. Avoid all pink, purple and neon colors in artwork, objects, decorations, lighting and shadows. Use warm orange, red, yellow, green, blue and neutral colors. No pink/purple concert lights. Nothing crosses the grid. No text, letters, numbers, labels, symbols resembling writing or watermarks. For abstract words show a concrete situation illustrating the meaning. Diverse natural children and adults, no stereotypes. Correct anatomy and objects. Panels in strict row-major order (left to right, top to bottom):\n1. サンドペーパー — 表面をこすって滑らかにする紙やすり。\n2. 桟橋 — 船に乗り降りするため岸から水上に突き出した設備。\n3. 三部作 — 三つの作品をひとまとまりにしたもの。\n4. 産物 — その土地や活動から生み出されたもの。\n5. 三塁手 — 野球で三塁付近を守る選手。\n6. 三塁打 — 野球で打者が三塁まで進める安打。\n7. サンルーフ — 光や風を入れるために車の屋根にある窓。\n8. サーカス — 曲芸などを見せる興行。\n9. サーキット — 自動車などの競走用に作られた周回コース。\n10. サークル — 共通の趣味や目的で活動する仲間の集まり。\n11. サーチライト — 遠くまで強い光を当てる照明。\n12. サーバー — 通信を通じてほかの機器に情報や機能を提供するコンピューター。\n13. サービス — 人の役に立つ働きや手助け。\n14. サービスエリア — 高速道路で車を止めて休める施設。\n15. 材料 — 物や料理などを作るもとになるもの。\n16. 座席 — 人が座るために用意された席。\nSafety and clarity: Vehicles must be driven only by unmistakable adults, never children. Industrial machinery and knives are used by adults. Do not put a child in a car driver's seat. Keep artwork separated by the measured template grid.\nDo not add numerical claims, prices, quantities, currency denominations, calorie values or stroke-order numbers unless explicitly required by the target word. Mathematical concepts should have neutral concrete examples without unverified numeric diagrams.\n",
+  "tiles": [
+    {
+      "reading": "さんどぺーぱー",
+      "word": "サンドペーパー",
+      "meaning": "表面をこすって滑らかにする紙やすり。",
+      "level": 2,
+      "entryId": "1058650",
+      "sourceKana": "サンドペーパー",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1058650 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1058650",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1058650"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。表面をこすって滑らかにする紙やすり。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 791,
+      "sheet": 50,
+      "tileIndex": 1
+    },
+    {
+      "reading": "さんばし",
+      "word": "桟橋",
+      "meaning": "船に乗り降りするため岸から水上に突き出した設備。",
+      "level": 2,
+      "entryId": "1303650",
+      "sourceKana": "さんばし",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1303650 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1303650",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1303650"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。船に乗り降りするため岸から水上に突き出した設備。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 792,
+      "sheet": 50,
+      "tileIndex": 2
+    },
+    {
+      "reading": "さんぶさく",
+      "word": "三部作",
+      "meaning": "三つの作品をひとまとまりにしたもの。",
+      "level": 2,
+      "entryId": "1658000",
+      "sourceKana": "さんぶさく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1658000 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1658000",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1658000"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。三つの作品をひとまとまりにしたもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 793,
+      "sheet": 50,
+      "tileIndex": 3
+    },
+    {
+      "reading": "さんぶつ",
+      "word": "産物",
+      "meaning": "その土地や活動から生み出されたもの。",
+      "level": 2,
+      "entryId": "1303870",
+      "sourceKana": "さんぶつ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1303870 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1303870",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1303870"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。その土地や活動から生み出されたもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 794,
+      "sheet": 50,
+      "tileIndex": 4
+    },
+    {
+      "reading": "さんるいしゅ",
+      "word": "三塁手",
+      "meaning": "野球で三塁付近を守る選手。",
+      "level": 2,
+      "entryId": "1301890",
+      "sourceKana": "さんるいしゅ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1301890 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1301890",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1301890"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。野球で三塁付近を守る選手。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 795,
+      "sheet": 50,
+      "tileIndex": 5
+    },
+    {
+      "reading": "さんるいだ",
+      "word": "三塁打",
+      "meaning": "野球で打者が三塁まで進める安打。",
+      "level": 2,
+      "entryId": "1301910",
+      "sourceKana": "さんるいだ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1301910 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1301910",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1301910"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。野球で打者が三塁まで進める安打。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 796,
+      "sheet": 50,
+      "tileIndex": 6
+    },
+    {
+      "reading": "さんるーふ",
+      "word": "サンルーフ",
+      "meaning": "光や風を入れるために車の屋根にある窓。",
+      "level": 2,
+      "entryId": "1058860",
+      "sourceKana": "サンルーフ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1058860 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1058860",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1058860"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。光や風を入れるために車の屋根にある窓。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 797,
+      "sheet": 50,
+      "tileIndex": 7
+    },
+    {
+      "reading": "さーかす",
+      "word": "サーカス",
+      "meaning": "曲芸などを見せる興行。",
+      "level": 2,
+      "entryId": "1054750",
+      "sourceKana": "サーカス",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1054750 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054750",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054750"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。曲芸などを見せる興行。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 798,
+      "sheet": 50,
+      "tileIndex": 8
+    },
+    {
+      "reading": "さーきっと",
+      "word": "サーキット",
+      "meaning": "自動車などの競走用に作られた周回コース。",
+      "level": 2,
+      "entryId": "1054780",
+      "sourceKana": "サーキット",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1054780 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054780",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054780"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。自動車などの競走用に作られた周回コース。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 799,
+      "sheet": 50,
+      "tileIndex": 9
+    },
+    {
+      "reading": "さーくる",
+      "word": "サークル",
+      "meaning": "共通の趣味や目的で活動する仲間の集まり。",
+      "level": 2,
+      "entryId": "1054850",
+      "sourceKana": "サークル",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1054850 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054850",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054850"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。共通の趣味や目的で活動する仲間の集まり。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 800,
+      "sheet": 50,
+      "tileIndex": 10
+    },
+    {
+      "reading": "さーちらいと",
+      "word": "サーチライト",
+      "meaning": "遠くまで強い光を当てる照明。",
+      "level": 2,
+      "entryId": "1054920",
+      "sourceKana": "サーチライト",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1054920 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054920",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054920"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。遠くまで強い光を当てる照明。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 801,
+      "sheet": 50,
+      "tileIndex": 11
+    },
+    {
+      "reading": "さーばー",
+      "word": "サーバー",
+      "meaning": "通信を通じてほかの機器に情報や機能を提供するコンピューター。",
+      "level": 2,
+      "entryId": "1054970",
+      "sourceKana": "サーバー",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1054970 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054970",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1054970"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。通信を通じてほかの機器に情報や機能を提供するコンピューター。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 802,
+      "sheet": 50,
+      "tileIndex": 12
+    },
+    {
+      "reading": "さーびす",
+      "word": "サービス",
+      "meaning": "人の役に立つ働きや手助け。",
+      "level": 2,
+      "entryId": "1055000",
+      "sourceKana": "サービス",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1055000 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1055000",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1055000"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。人の役に立つ働きや手助け。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 803,
+      "sheet": 50,
+      "tileIndex": 13
+    },
+    {
+      "reading": "さーびすえりあ",
+      "word": "サービスエリア",
+      "meaning": "高速道路で車を止めて休める施設。",
+      "level": 2,
+      "entryId": "1055020",
+      "sourceKana": "サービスエリア",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1055020 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1055020",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1055020"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。高速道路で車を止めて休める施設。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 804,
+      "sheet": 50,
+      "tileIndex": 14
+    },
+    {
+      "reading": "ざいりょう",
+      "word": "材料",
+      "meaning": "物や料理などを作るもとになるもの。",
+      "level": 2,
+      "entryId": "1296670",
+      "sourceKana": "ざいりょう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1296670 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1296670",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1296670"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物や料理などを作るもとになるもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 805,
+      "sheet": 50,
+      "tileIndex": 15
+    },
+    {
+      "reading": "ざせき",
+      "word": "座席",
+      "meaning": "人が座るために用意された席。",
+      "level": 2,
+      "entryId": "1291880",
+      "sourceKana": "ざせき",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1291880 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1291880",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1291880"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。人が座るために用意された席。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 806,
+      "sheet": 50,
+      "tileIndex": 16
+    }
+  ],
+  "report": "data\\image-coverage\\2026-10-16-expansion1024g\\sheet50-staging-crop.json",
+  "outputDirectory": "data\\image-coverage\\2026-10-16-expansion1024g\\crop-staging\\sheet50",
+  "passed": true
+}

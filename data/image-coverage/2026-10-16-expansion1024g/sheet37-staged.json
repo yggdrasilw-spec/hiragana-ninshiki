@@ -1,0 +1,527 @@
+{
+  "sheet": 37,
+  "sourceSheet": "sheets/expansion1024g-sheet37.png",
+  "prompt": "Use case: illustration-story. Asset type: Japanese elementary vocabulary illustrations, sheet 37. Edit the provided 2048x2048 template, painting ONLY inside its sixteen white panels. Every single panel MUST have identical width and height. All horizontal lines must be EXACTLY at 0%,25%,50%,75%,100%, not based on artwork. Keep precisely the 4x4 equal grid and 5 continuous pure magenta #ff00ff lines in each direction, including outer frame. Preserve line position, width and full canvas. Each panel is an independent clear gentle picture-book illustration as isolated vignettes on a pure white background, large and easily understood. Never use magenta for illustration. Avoid all pink, purple and neon colors in artwork, objects, decorations, lighting and shadows. Use warm orange, red, yellow, green, blue and neutral colors. No pink/purple concert lights. Nothing crosses the grid. No text, letters, numbers, labels, symbols resembling writing or watermarks. For abstract words show a concrete situation illustrating the meaning. Diverse natural children and adults, no stereotypes. Correct anatomy and objects. Panels in strict row-major order (left to right, top to bottom):\n1. 結合 — 二つ以上のものが結びついて一つになること。\n2. 気配 — 姿がはっきり見えなくても感じられる様子。\n3. 研究者 — 物事を詳しく調べて新しい知識を得ようとする人。\n4. 懸垂 — 鉄棒などにぶら下がって腕の力で体を上げる運動。\n5. 建築家 — 建物を計画して設計する仕事の人。\n6. 建築物 — 家やビルなどの建てられたもの。\n7. ケーキ — 小麦粉や卵などを使って作る洋菓子。\n8. ケージ — 動物などを入れる柵状の囲いやかご。\n9. ケース — 物を入れておく箱や容器。\n10. ケーブル — 電気や信号などを伝えるための太い線。\n11. 芸術 — 絵や音楽などで考えや感覚を表現する活動や作品。\n12. 芸術家 — 絵や彫刻や音楽などの作品を生み出す人。\n13. 芸能 — 演劇や舞踊など人に見せるための芸。\n14. 芸名 — 芸能活動などで使う名前。\n15. 激流 — 勢いよく激しく流れる水の流れ。\n16. 下水 — 暮らしや工場などで使った後の水。\nSafety and clarity: Vehicles must be driven only by unmistakable adults, never children. Industrial machinery and knives are used by adults. Do not put a child in a car driver's seat. Keep artwork separated by the measured template grid.\nDo not add numerical claims, prices, quantities, currency denominations, calorie values or stroke-order numbers unless explicitly required by the target word. Mathematical concepts should have neutral concrete examples without unverified numeric diagrams.\n",
+  "tiles": [
+    {
+      "reading": "けつごう",
+      "word": "結合",
+      "meaning": "二つ以上のものが結びついて一つになること。",
+      "level": 2,
+      "entryId": "1254770",
+      "sourceKana": "けつごう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1254770 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1254770",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1254770"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。二つ以上のものが結びついて一つになること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 581,
+      "sheet": 37,
+      "tileIndex": 1
+    },
+    {
+      "reading": "けはい",
+      "word": "気配",
+      "meaning": "姿がはっきり見えなくても感じられる様子。",
+      "level": 2,
+      "entryId": "1222510",
+      "sourceKana": "けはい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1222510 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1222510",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1222510"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。姿がはっきり見えなくても感じられる様子。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 582,
+      "sheet": 37,
+      "tileIndex": 2
+    },
+    {
+      "reading": "けんきゅうしゃ",
+      "word": "研究者",
+      "meaning": "物事を詳しく調べて新しい知識を得ようとする人。",
+      "level": 2,
+      "entryId": "1258590",
+      "sourceKana": "けんきゅうしゃ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1258590 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1258590",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1258590"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物事を詳しく調べて新しい知識を得ようとする人。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 583,
+      "sheet": 37,
+      "tileIndex": 3
+    },
+    {
+      "reading": "けんすい",
+      "word": "懸垂",
+      "meaning": "鉄棒などにぶら下がって腕の力で体を上げる運動。",
+      "level": 2,
+      "entryId": "1257700",
+      "sourceKana": "けんすい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1257700 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1257700",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1257700"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。鉄棒などにぶら下がって腕の力で体を上げる運動。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 584,
+      "sheet": 37,
+      "tileIndex": 4
+    },
+    {
+      "reading": "けんちくか",
+      "word": "建築家",
+      "meaning": "建物を計画して設計する仕事の人。",
+      "level": 2,
+      "entryId": "1257510",
+      "sourceKana": "けんちくか",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1257510 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1257510",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1257510"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。建物を計画して設計する仕事の人。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 585,
+      "sheet": 37,
+      "tileIndex": 5
+    },
+    {
+      "reading": "けんちくぶつ",
+      "word": "建築物",
+      "meaning": "家やビルなどの建てられたもの。",
+      "level": 2,
+      "entryId": "1714330",
+      "sourceKana": "けんちくぶつ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1714330 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1714330",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1714330"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。家やビルなどの建てられたもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 586,
+      "sheet": 37,
+      "tileIndex": 6
+    },
+    {
+      "reading": "けーき",
+      "word": "ケーキ",
+      "meaning": "小麦粉や卵などを使って作る洋菓子。",
+      "level": 2,
+      "entryId": "1047860",
+      "sourceKana": "ケーキ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1047860 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047860",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047860"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。小麦粉や卵などを使って作る洋菓子。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 587,
+      "sheet": 37,
+      "tileIndex": 7
+    },
+    {
+      "reading": "けーじ",
+      "word": "ケージ",
+      "meaning": "動物などを入れる柵状の囲いやかご。",
+      "level": 2,
+      "entryId": "1047870",
+      "sourceKana": "ケージ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1047870 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047870",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047870"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。動物などを入れる柵状の囲いやかご。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 588,
+      "sheet": 37,
+      "tileIndex": 8
+    },
+    {
+      "reading": "けーす",
+      "word": "ケース",
+      "meaning": "物を入れておく箱や容器。",
+      "level": 2,
+      "entryId": "1047880",
+      "sourceKana": "ケース",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1047880 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047880",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047880"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物を入れておく箱や容器。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 589,
+      "sheet": 37,
+      "tileIndex": 9
+    },
+    {
+      "reading": "けーぶる",
+      "word": "ケーブル",
+      "meaning": "電気や信号などを伝えるための太い線。",
+      "level": 2,
+      "entryId": "1048000",
+      "sourceKana": "ケーブル",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1048000 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1048000",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1048000"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。電気や信号などを伝えるための太い線。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 590,
+      "sheet": 37,
+      "tileIndex": 10
+    },
+    {
+      "reading": "げいじゅつ",
+      "word": "芸術",
+      "meaning": "絵や音楽などで考えや感覚を表現する活動や作品。",
+      "level": 2,
+      "entryId": "1253060",
+      "sourceKana": "げいじゅつ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1253060 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253060",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253060"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。絵や音楽などで考えや感覚を表現する活動や作品。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 591,
+      "sheet": 37,
+      "tileIndex": 11
+    },
+    {
+      "reading": "げいじゅつか",
+      "word": "芸術家",
+      "meaning": "絵や彫刻や音楽などの作品を生み出す人。",
+      "level": 2,
+      "entryId": "1253070",
+      "sourceKana": "げいじゅつか",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1253070 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253070",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253070"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。絵や彫刻や音楽などの作品を生み出す人。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 592,
+      "sheet": 37,
+      "tileIndex": 12
+    },
+    {
+      "reading": "げいのう",
+      "word": "芸能",
+      "meaning": "演劇や舞踊など人に見せるための芸。",
+      "level": 2,
+      "entryId": "1253130",
+      "sourceKana": "げいのう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1253130 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253130",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253130"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。演劇や舞踊など人に見せるための芸。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 593,
+      "sheet": 37,
+      "tileIndex": 13
+    },
+    {
+      "reading": "げいめい",
+      "word": "芸名",
+      "meaning": "芸能活動などで使う名前。",
+      "level": 2,
+      "entryId": "1253170",
+      "sourceKana": "げいめい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1253170 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253170",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253170"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。芸能活動などで使う名前。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 594,
+      "sheet": 37,
+      "tileIndex": 14
+    },
+    {
+      "reading": "げきりゅう",
+      "word": "激流",
+      "meaning": "勢いよく激しく流れる水の流れ。",
+      "level": 2,
+      "entryId": "1253750",
+      "sourceKana": "げきりゅう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1253750 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253750",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1253750"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。勢いよく激しく流れる水の流れ。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 595,
+      "sheet": 37,
+      "tileIndex": 15
+    },
+    {
+      "reading": "げすい",
+      "word": "下水",
+      "meaning": "暮らしや工場などで使った後の水。",
+      "level": 2,
+      "entryId": "1185510",
+      "sourceKana": "げすい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1185510 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1185510",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1185510"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。暮らしや工場などで使った後の水。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 596,
+      "sheet": 37,
+      "tileIndex": 16
+    }
+  ],
+  "report": "data\\image-coverage\\2026-10-16-expansion1024g\\sheet37-staging-crop.json",
+  "outputDirectory": "data\\image-coverage\\2026-10-16-expansion1024g\\crop-staging\\sheet37",
+  "passed": true
+}
