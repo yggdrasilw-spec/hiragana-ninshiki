@@ -120,6 +120,8 @@ for (const item of result) {
 }
 // The actual level filter must keep the level-3 grammar sense out of level 2.
 context.ST = { level: 2, whitelist: words };
+context.ShiritoriVocabulary=require('../shiritori-vocabulary.js');
+context.ST.cpuGenres=Object.keys(context.ShiritoriVocabulary.categories);
 vm.runInContext(html.slice(html.indexOf('const VOWEL_MAP='), html.indexOf('function moderationText(')), context);
 vm.runInContext(html.slice(html.indexOf('function parseBlacklistTxt('), html.indexOf('function loadSettings(')), context);
 context.blacklistText = fs.readFileSync(path.join(root, 'blacklist.txt'), 'utf8');

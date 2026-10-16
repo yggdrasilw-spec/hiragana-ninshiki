@@ -5,8 +5,11 @@ const html=fs.readFileSync(path.join(root,'shiritori.html'),'utf8');
 for(const script of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g))new vm.Script(script[1]);
 const between=(start,end)=>html.slice(html.indexOf(start),html.indexOf(end));
 const spoken=[];
+const vocabulary=require('../shiritori-vocabulary.js');
 const context=vm.createContext({ST:{level:1,detailToken:3,homoIdx:0},norm:s=>s,spoken,
   speakAsync:async(text,maxMs)=>spoken.push({text,maxMs})});
+context.ShiritoriVocabulary=vocabulary;
+context.ST.cpuGenres=Object.keys(vocabulary.categories);
 vm.runInContext(between('function parseCSV(', 'const ST =')+
   between('function getPool(', 'function setWlStatus(')+
   between('function splitMeaning(', 'function changeDetailMeaning(')+
