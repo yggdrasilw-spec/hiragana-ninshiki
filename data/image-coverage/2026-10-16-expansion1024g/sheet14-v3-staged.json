@@ -1,0 +1,527 @@
+{
+  "sheet": 14,
+  "sourceSheet": "sheets/expansion1024g-sheet14-v3.png",
+  "prompt": "Use case: illustration-story. Asset type: Japanese elementary vocabulary illustrations, sheet 14. Edit the provided 2048x2048 template, painting ONLY inside its sixteen white panels. Every single panel MUST have identical width and height. All horizontal lines must be EXACTLY at 0%,25%,50%,75%,100%, not based on artwork. Keep precisely the 4x4 equal grid and 5 continuous pure magenta #ff00ff lines in each direction, including outer frame. Preserve line position, width and full canvas. Each panel is an independent clear gentle picture-book illustration as isolated vignettes on a pure white background, large and easily understood. Never use magenta for illustration. Avoid all pink, purple and neon colors in artwork, objects, decorations, lighting and shadows. Use warm orange, red, yellow, green, blue and neutral colors. No pink/purple concert lights. Nothing crosses the grid. No text, letters, numbers, labels, symbols resembling writing or watermarks. For abstract words show a concrete situation illustrating the meaning. Diverse natural children and adults, no stereotypes. Correct anatomy and objects. Panels in strict row-major order (left to right, top to bottom):\n1. エッセイ — 身近な出来事や感じたことなどを自由に書いた文章。\n2. 江戸っ子 — 東京の昔の町に生まれ育った人を指す呼び方。\n3. 絵はがき — 絵や写真が印刷されているはがき。\n4. エピソード — ある人や出来事についての短い話。\n5. 絵巻物 — 絵や文章を横に続けて巻物にしたもの。\n6. エメラルド — 緑色をした宝石。\n7. 襟元 — 服の襟のあたり。\n8. エレベーター — 箱のような部屋が上下して人や荷物を運ぶ装置。\n9. 遠泳 — 長い距離を泳ぐこと。\n10. 遠距離 — 遠く離れた距離。\n11. 遠近法 — 遠さや奥行きが伝わるように絵を描く方法。\n12. 円形 — 円の形。\n13. 演出 — 舞台や映像がよく伝わるように表現を工夫すること。\n14. エンジニア — 機械や情報などの技術に関わる仕事の人。\n15. 円卓 — 丸い形のテーブル。\n16. エンディング — 物語や番組などの終わりの部分。\nSafety and clarity: Vehicles must be driven only by unmistakable adults, never children. Industrial machinery and knives are used by adults. Do not put a child in a car driver's seat. Keep artwork separated by the measured template grid.\nABSOLUTE GRID PRIORITY: preserve Image 1 template lines, never rearrange line positions to fit art. All 16 squares must have identical side lengths. The THIRD internal HORIZONTAL LINE MUST be at exactly 75% canvas height, never 73%. Draw only inside fixed cells.\n",
+  "tiles": [
+    {
+      "reading": "えっせい",
+      "word": "エッセイ",
+      "meaning": "身近な出来事や感じたことなどを自由に書いた文章。",
+      "level": 2,
+      "entryId": "1029100",
+      "sourceKana": "エッセイ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1029100 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1029100",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1029100"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。身近な出来事や感じたことなどを自由に書いた文章。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 212,
+      "sheet": 14,
+      "tileIndex": 1
+    },
+    {
+      "reading": "えどっこ",
+      "word": "江戸っ子",
+      "meaning": "東京の昔の町に生まれ育った人を指す呼び方。",
+      "level": 2,
+      "entryId": "1279880",
+      "sourceKana": "えどっこ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1279880 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279880",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1279880"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。東京の昔の町に生まれ育った人を指す呼び方。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 213,
+      "sheet": 14,
+      "tileIndex": 2
+    },
+    {
+      "reading": "えはがき",
+      "word": "絵はがき",
+      "meaning": "絵や写真が印刷されているはがき。",
+      "level": 2,
+      "entryId": "1588710",
+      "sourceKana": "えはがき",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1588710 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1588710",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1588710"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。絵や写真が印刷されているはがき。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 214,
+      "sheet": 14,
+      "tileIndex": 3
+    },
+    {
+      "reading": "えぴそーど",
+      "word": "エピソード",
+      "meaning": "ある人や出来事についての短い話。",
+      "level": 2,
+      "entryId": "1029620",
+      "sourceKana": "エピソード",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1029620 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1029620",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1029620"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。ある人や出来事についての短い話。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 215,
+      "sheet": 14,
+      "tileIndex": 4
+    },
+    {
+      "reading": "えまきもの",
+      "word": "絵巻物",
+      "meaning": "絵や文章を横に続けて巻物にしたもの。",
+      "level": 2,
+      "entryId": "1202320",
+      "sourceKana": "えまきもの",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1202320 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1202320",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1202320"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。絵や文章を横に続けて巻物にしたもの。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 216,
+      "sheet": 14,
+      "tileIndex": 5
+    },
+    {
+      "reading": "えめらるど",
+      "word": "エメラルド",
+      "meaning": "緑色をした宝石。",
+      "level": 2,
+      "entryId": "1029970",
+      "sourceKana": "エメラルド",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1029970 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1029970",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1029970"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。緑色をした宝石。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 217,
+      "sheet": 14,
+      "tileIndex": 6
+    },
+    {
+      "reading": "えりもと",
+      "word": "襟元",
+      "meaning": "服の襟のあたり。",
+      "level": 2,
+      "entryId": "1242010",
+      "sourceKana": "えりもと",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1242010 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1242010",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1242010"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。服の襟のあたり。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 218,
+      "sheet": 14,
+      "tileIndex": 7
+    },
+    {
+      "reading": "えれべーたー",
+      "word": "エレベーター",
+      "meaning": "箱のような部屋が上下して人や荷物を運ぶ装置。",
+      "level": 2,
+      "entryId": "1030630",
+      "sourceKana": "エレベーター",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1030630 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1030630",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1030630"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。箱のような部屋が上下して人や荷物を運ぶ装置。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 219,
+      "sheet": 14,
+      "tileIndex": 8
+    },
+    {
+      "reading": "えんえい",
+      "word": "遠泳",
+      "meaning": "長い距離を泳ぐこと。",
+      "level": 2,
+      "entryId": "1177870",
+      "sourceKana": "えんえい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vi"
+      ],
+      "lexicalSource": "JMdict 1177870 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1177870",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1177870"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。長い距離を泳ぐこと。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 220,
+      "sheet": 14,
+      "tileIndex": 9
+    },
+    {
+      "reading": "えんきょり",
+      "word": "遠距離",
+      "meaning": "遠く離れた距離。",
+      "level": 2,
+      "entryId": "1178050",
+      "sourceKana": "えんきょり",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "adj-no"
+      ],
+      "lexicalSource": "JMdict 1178050 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1178050",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1178050"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。遠く離れた距離。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 221,
+      "sheet": 14,
+      "tileIndex": 10
+    },
+    {
+      "reading": "えんきんほう",
+      "word": "遠近法",
+      "meaning": "遠さや奥行きが伝わるように絵を描く方法。",
+      "level": 2,
+      "entryId": "1178070",
+      "sourceKana": "えんきんほう",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1178070 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1178070",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1178070"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。遠さや奥行きが伝わるように絵を描く方法。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 222,
+      "sheet": 14,
+      "tileIndex": 11
+    },
+    {
+      "reading": "えんけい",
+      "word": "円形",
+      "meaning": "円の形。",
+      "level": 2,
+      "entryId": "1576590",
+      "sourceKana": "えんけい",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1576590 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1576590",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1576590"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。円の形。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "円形"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 223,
+      "sheet": 14,
+      "tileIndex": 12
+    },
+    {
+      "reading": "えんしゅつ",
+      "word": "演出",
+      "meaning": "舞台や映像がよく伝わるように表現を工夫すること。",
+      "level": 2,
+      "entryId": "1176950",
+      "sourceKana": "えんしゅつ",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n",
+        "vs",
+        "vt"
+      ],
+      "lexicalSource": "JMdict 1176950 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1176950",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1176950"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。舞台や映像がよく伝わるように表現を工夫すること。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 224,
+      "sheet": 14,
+      "tileIndex": 13
+    },
+    {
+      "reading": "えんじにあ",
+      "word": "エンジニア",
+      "meaning": "機械や情報などの技術に関わる仕事の人。",
+      "level": 2,
+      "entryId": "1030910",
+      "sourceKana": "エンジニア",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1030910 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1030910",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1030910"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。機械や情報などの技術に関わる仕事の人。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 225,
+      "sheet": 14,
+      "tileIndex": 14
+    },
+    {
+      "reading": "えんたく",
+      "word": "円卓",
+      "meaning": "丸い形のテーブル。",
+      "level": 2,
+      "entryId": "1175980",
+      "sourceKana": "えんたく",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1175980 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1175980",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1175980"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。丸い形のテーブル。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 226,
+      "sheet": 14,
+      "tileIndex": 15
+    },
+    {
+      "reading": "えんでぃんぐ",
+      "word": "エンディング",
+      "meaning": "物語や番組などの終わりの部分。",
+      "level": 2,
+      "entryId": "1031150",
+      "sourceKana": "エンディング",
+      "senseIndex": 0,
+      "partOfSpeech": [
+        "n"
+      ],
+      "lexicalSource": "JMdict 1031150 / 2026-10-05 / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1031150",
+      "sources": [
+        "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1031150"
+      ],
+      "meaningReason": "選択した見出しの意味を具体的な日本語で独自に説明。物語や番組などの終わりの部分。",
+      "ageReason": "小学校の生活・読書・学習で意味を説明できる語を選定。漢字や抽象的な内容を含むためレベル2。",
+      "definitionAuthor": "独自作成（2026-10-16）",
+      "reviewStatus": "meaning-review-pending",
+      "kanaAppliesToKanji": [
+        "*"
+      ],
+      "appliesToKana": [
+        "*"
+      ],
+      "appliesToKanji": [
+        "*"
+      ],
+      "slot": 227,
+      "sheet": 14,
+      "tileIndex": 16
+    }
+  ],
+  "report": "data\\image-coverage\\2026-10-16-expansion1024g\\sheet14-v3-staging-crop.json",
+  "outputDirectory": "data\\image-coverage\\2026-10-16-expansion1024g\\crop-staging\\sheet14-v3",
+  "passed": true
+}

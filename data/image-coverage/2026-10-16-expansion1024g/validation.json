@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "date": "2026-10-16",
+  "afterSha256": "9f33babb656214d01298f2022ad2fee8d763f4b25ea893872ef79eaa8c2c59df",
+  "tests": [
+    "shiritori-expansion1024g",
+    "shiritori-data",
+    "shiritori-import-history",
+    "shiritori-image-policy"
+  ],
+  "coverageAudit": {
+    "vocabularyRows": 12300,
+    "assets": 9337,
+    "missingTargetAssets": 0,
+    "brokenAssetReferences": 0
+  },
+  "browser": {
+    "passed": true,
+    "offline": true,
+    "results": [
+      {
+        "width": 1280,
+        "gameWords": 1024,
+        "catalogWords": 1024,
+        "explanationOnly": 0,
+        "illustrated": 1024,
+        "inputSamples": 12,
+        "passed": true
+      },
+      {
+        "width": 390,
+        "gameWords": 1024,
+        "catalogWords": 1024,
+        "explanationOnly": 0,
+        "illustrated": 1024,
+        "inputSamples": 12,
+        "passed": true
+      }
+    ]
+  },
+  "visualReview": {
+    "passed": true,
+    "files": [
+      "game-1280.png",
+      "game-390.png",
+      "catalog-1280.png",
+      "catalog-390.png"
+    ]
+  },
+  "sourceSheets": 64,
+  "generatedImages": 1018,
+  "reusedImages": 6,
+  "precedingRowsPreserved": 11276,
+  "concurrentGasReadingCollisions": 0
+}
