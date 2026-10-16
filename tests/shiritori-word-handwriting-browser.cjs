@@ -23,11 +23,12 @@ const server=http.createServer((req,res)=>{
       await page.evaluate(()=>{document.getElementById('titleScreen').remove();document.querySelectorAll('dialog[open]').forEach(d=>d.close());ST.voice=false;resizeCV();});
       assert.equal(await page.evaluate(()=>ST.handwritingMode),'single');
       await page.evaluate(()=>{document.querySelectorAll('dialog[open]').forEach(d=>d.close());showPage('settings');setSettingsTab('input');});
-      await page.locator('[data-handwriting="word"]').click();
+      await page.locator('#enableWordHandwriting').check();
       assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('shiri-settings')).handwritingMode),'word');
       await page.reload();
       await page.evaluate(()=>{document.getElementById('titleScreen').remove();document.querySelectorAll('dialog[open]').forEach(d=>d.close());ST.voice=false;resizeCV();});
       assert.equal(await page.evaluate(()=>ST.handwritingMode),'word');
+      assert.equal(await page.locator('#enableWordHandwriting').isChecked(),true);
       const real=await page.evaluate(async()=>{
         if(typeof tf==='undefined')return {skipped:'TensorFlow.js fixture missing'};
         await loadModelUrl(MODEL_PATH.hiragana);
@@ -57,6 +58,14 @@ const server=http.createServer((req,res)=>{
         fs.writeFileSync(path.join(out,'geometric-baseline.json'),JSON.stringify(baseline,null,2));
         console.log(JSON.stringify({geometricBaseline:baseline}));
       }
+      // Draw two letters with real pointer events; no recognition button is pressed.
+      await page.evaluate(()=>{clearCV();showPage('game');resizeCV();});
+      await page.locator('#drawCanvas').scrollIntoViewIfNeeded();const board=await page.locator('#drawCanvas').boundingBox();
+      for(const x of [.25,.65]){await page.mouse.move(board.x+board.width*(x+.06),board.y+board.height*.2);await page.mouse.down();await page.mouse.move(board.x+board.width*(x-.06),board.y+board.height*.5,{steps:5});await page.mouse.move(board.x+board.width*(x+.06),board.y+board.height*.8,{steps:5});await page.mouse.up();}
+      await page.waitForFunction(()=>document.querySelectorAll('#wordCharacters button').length>=2);
+      assert.ok(await page.locator('#handwritingBounds g').count()>=2);console.log(JSON.stringify({width,automaticRecognition:true}));
+      await page.evaluate(()=>{WordHandwritingUI.setMode('single');});assert.equal(await page.locator('#enableWordHandwriting').isChecked(),false);
+      await page.evaluate(()=>{WordHandwritingUI.setMode('word');});
       const checks=await page.evaluate(async()=>{
         clearCV();setCurrentInput('');
         const actualTf=typeof tf==='undefined'?null:tf,actualModel=tfModel;

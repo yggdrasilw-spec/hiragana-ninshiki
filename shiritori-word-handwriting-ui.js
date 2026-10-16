@@ -14,14 +14,14 @@ const WordHandwritingUI=(()=>{
         const e=engine();edit(e.smallMap[item.ch]||e.largeMap[item.ch]||item.ch);
       };
       $('btnWordOther').onclick=()=>{pickerOpen=!pickerOpen;render();};
-      document.querySelectorAll('[data-handwriting]').forEach(b=>b.onclick=()=>setMode(b.dataset.handwriting));
+      $('enableWordHandwriting').onchange=()=>setMode($('enableWordHandwriting').checked?'word':'single');
     }
     $('wordHandwriting').classList.toggle('hidden',!active());
     $('predRow').classList.toggle('hidden',active());
     $('canvasAux').classList.toggle('hidden',active());
     $('wordKatakanaNote').classList.toggle('hidden',ST.charMode==='hiragana');
     $('modeCanvas').classList.toggle('word-handwriting',active());
-    document.querySelectorAll('[data-handwriting]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.handwriting===ST.handwritingMode)));
+    $('enableWordHandwriting').checked=ST.handwritingMode==='word';
     render();
   }
   function setMode(mode){
@@ -40,7 +40,7 @@ const WordHandwritingUI=(()=>{
     const choices=$('wordCharacterChoices');choices.replaceChildren();
     $('btnReadWord').disabled=busy||!tfModel||!ST.strokes.length;
     $('btnAcceptWord').disabled=busy||!results.length;
-    $('wordStatus').textContent=busy?'よみとり中…':results.length?'ちがう もじは、おして なおせるよ。':'ひだりから ことばを かいて「よみとる」。小さい字は小さめに。';
+    $('wordStatus').textContent=busy?'よみとり中…':results.length?'ちがう もじは、おして なおせるよ。':'ひだりから ことばを かいてね。手を とめると 自動で よみとるよ。小さい字は 小さめに。';
     results.forEach((r,i)=>{
       const b=document.createElement('button');b.type='button';b.className='word-candidate';
       b.textContent=r.chars.map(c=>c.ch).join('');b.setAttribute('aria-pressed',String(i===selected));
