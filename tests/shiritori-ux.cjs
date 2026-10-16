@@ -11,6 +11,8 @@ const server=http.createServer((req,res)=>{const file=path.join(root,decodeURICo
  const page=await browser.newPage({viewport:{width,height}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
  await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+ // The startup notice is modal; dismiss it before testing game keyboard input.
+ await page.locator('#noticeStart').click();
  await page.emulateMedia({reducedMotion:'reduce'});
  assert.equal(await page.evaluate(()=>{ST.voice=false;return getCpuDelay({words:['a','b'],meanings:['x'.repeat(1000)]});}),650,'Mute delay does not grow with meaning length');
  await page.evaluate(async()=>{ST.voice=false;await launchGame();switchIn('kbd');getCpuDelay=()=>80;});
@@ -35,7 +37,8 @@ const server=http.createServer((req,res)=>{const file=path.join(root,decodeURICo
    resetGame();ST.tail='は';ST.cpuAllowN=false;
    const pool=getPool().filter(r=>!isEndWord(r.reading)&&firstChar(r.reading)==='は');
    const random=Math.random;
-   try{Math.random=()=>0.999999;return cpuChoose()===pool[pool.length-1];}finally{Math.random=random;}
+   // getPool projects meaning rows, so compare the selected reading, not object identity.
+   try{Math.random=()=>0.999999;return pool.length>6&&cpuChoose()?.reading===pool[pool.length-1]?.reading;}finally{Math.random=random;}
  }),true);
  // A speech implementation that never emits end/error must still release the turn.
  await page.evaluate(async()=>{

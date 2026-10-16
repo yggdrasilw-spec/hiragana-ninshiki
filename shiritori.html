@@ -1184,6 +1184,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 #wordSuggestions button{min-height:44px;margin:4px;white-space:normal}
 </style>
 <link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
+<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261017">
 </head>
 <body>
 
@@ -1275,8 +1276,26 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
               <input id="modelFiles" type="file" multiple accept=".json,.bin"/>
             </div>
           </div>
-          <canvas id="drawCanvas" width="900" height="240"></canvas>
+          <div class="draw-surface">
+            <canvas id="drawCanvas" width="900" height="240"></canvas>
+            <svg id="handwritingBounds" aria-hidden="true" preserveAspectRatio="none"></svg>
+            <svg id="handwritingProcess" aria-hidden="true" preserveAspectRatio="none"></svg>
+          </div>
+          <div class="handwriting-review-tools">
+            <button type="button" id="btnProcessToggle" aria-pressed="false">書いた順・向き OFF</button>
+            <button type="button" id="btnStrokeReplay" hidden>▶ かいた順に みる</button>
+            <button type="button" id="btnInspectCharacter" hidden disabled>🔍 １もじを 大きく</button>
+            <span id="strokeReviewStatus" role="status" aria-live="polite"></span>
+          </div>
           <div id="predRow"><div class="pred-none">１もじずつ かいて、こうほを えらんでね</div></div>
+          <div id="wordHandwriting" class="hidden">
+            <div class="word-toolbar"><button type="button" id="btnReadWord">よみとる</button><button type="button" id="btnAcceptWord" disabled>この ことばを いれる</button></div>
+            <p id="wordStatus" role="status" aria-live="polite"></p>
+            <p id="wordBoundsHint" hidden>わくの 数字は、下の もじと おなじだよ。１もじとして よんだ はんいを かこんでいるよ。</p>
+            <div id="wordResults" aria-label="ことばのこうほ"></div>
+            <div id="wordCharacters" aria-label="１もじずつ なおす"></div>
+            <div id="wordCorrection" class="hidden"><div id="wordCharacterChoices" aria-label="もじのこうほ"></div><button type="button" id="btnWordSmall">大きい字 ↔ 小さい字</button> <button type="button" id="btnWordOther" aria-expanded="false" aria-controls="wordKanaPicker">ほかの ひらがな</button><div id="wordKanaPicker" hidden aria-label="ひらがなから えらぶ"></div></div>
+          </div>
           <!-- ★ 手書きモード補助ボタン: ー・小文字・濁点・半濁点 -->
           <div id="canvasAux" style="display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0;margin-top:2px">
             <button class="sm-btn" id="auxLong"   onclick="appendCanvasAux('ー')">ー のばし棒</button>
@@ -1408,6 +1427,22 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
             ⌨️<div class="im-name">キーボード</div>
           </button>
         </div>
+      </div>
+    </div>
+
+    <div class="set-sec">
+      <div class="set-hd">✏️ てがきの よみとりかた</div>
+      <div class="set-bd">
+        <div class="handwriting-options">
+          <button type="button" data-handwriting="single" aria-pressed="true">１もじずつ（これまで）</button>
+          <button type="button" data-handwriting="word" aria-pressed="false">ことばを まとめて（おためし）</button>
+        </div>
+        <p class="image-policy-help">まとめ書きは、ひらがな用です。左から右へ、文字の間を少しあけて書いてください。読み取った候補は１文字ずつ直せます。小さい「ゃ・ゅ・ょ・っ」などは、大きさを手がかりに候補を出します。</p>
+        <p class="image-policy-help">現在は読み取りの試作です。字形の正誤判定はまだありません。候補を選べたことは「正しく書けた」という判定にはなりません。</p>
+        <label class="handwriting-review-setting"><input type="checkbox" id="showHandwritingProcess">書いた順・向き・筆跡の再生を使う</label>
+        <p class="image-policy-help">数字は実際に書いた順、矢印は線を書いた向きです。お手本の正しい書き順を判定する表示ではありません。</p>
+        <p class="image-policy-help"><a href="kana-feedback-lab.html" target="_blank" rel="noopener">かなの かたち研究室を開く（助言の検証用）</a></p>
+        <p id="wordKatakanaNote" class="image-policy-help hidden">カタカナでは「１もじずつ」を使います。ひらがなに戻すと、選んだ設定で使えます。</p>
       </div>
     </div>
 
@@ -1562,6 +1597,9 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-feedback-config.js?v=20261014"></script>
 <script src="shiritori-feedback.js?v=20261014"></script>
 <script src="shiritori-robot-link.js?v=20261013"></script>
+<script src="shiritori-word-handwriting.js?v=20261016"></script>
+<script src="shiritori-handwriting-review.js?v=20261017b"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261017"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 
@@ -1635,6 +1673,8 @@ const ST = {
   demoRunning: false,
   voice: false,
   inputMode: 'canvas',   // canvas | btn | kbd
+  handwritingMode: 'single', // single | word (hiragana only; experimental)
+  showHandwritingProcess: false,
   charMode: 'hiragana',  // hiragana | katakana
   level: 1,
   cpuGenres: Object.keys(ShiritoriVocabulary.categories),
@@ -1707,6 +1747,8 @@ function loadSettings(){
     ST.skipLinkAnimation=s.skipLinkAnimation===true;
     if(s.charMode)   ST.charMode   = s.charMode;
     if(s.inputMode)  ST.inputMode  = s.inputMode;
+    ST.handwritingMode=s.handwritingMode==='word'?'word':'single';
+    ST.showHandwritingProcess=s.showHandwritingProcess===true;
     if(s.voice!=null)ST.voice      = s.voice;
     if(s.statsYouWords!=null) ST.statsYouWords = s.statsYouWords;
     if(s.statsNewWords!=null) ST.statsNewWords = s.statsNewWords;
@@ -1728,6 +1770,8 @@ function saveSettings(){
     skipLinkAnimation: ST.skipLinkAnimation,
     charMode: ST.charMode,
     inputMode: ST.inputMode,
+    handwritingMode: ST.handwritingMode,
+    showHandwritingProcess: ST.showHandwritingProcess,
     voice: ST.voice,
     statsYouWords: ST.statsYouWords,
     statsNewWords: ST.statsNewWords,
@@ -2283,7 +2327,7 @@ const LABELS_KATAKANA=["ヲ","ア","イ","ウ","エ","オ","カ","キ","ク","�
 const MODEL_PATH={hiragana:'./tfjs_model/hiragana/model.json',katakana:'./tfjs_model/katakana/model.json'};
 let LABELS=LABELS_HIRAGANA;
 const TF_SIZE=64,BG_TH=245,LINE_W=16;
-let tfModel=null,predTimer=null,predRevision=0;
+let tfModel=null,predTimer=null,predRevision=0,modelLoadRevision=0;
 const drawCtx=document.getElementById('drawCanvas').getContext('2d',{willReadFrequently:true});
 
 function setTf(kind,text){const b=document.getElementById('tfBar');b.className=kind;document.getElementById('tfText').textContent=text;}
@@ -2291,39 +2335,54 @@ function setTf(kind,text){const b=document.getElementById('tfBar');b.className=k
 // モデル読込直後にダミー推論を1回流し、WebGLシェーダーのコンパイル等の
 // 初回コストをここで消化しておく（実際の手書き時にメインスレッドが
 // 長時間ブロックされて1〜2画目の描画が止まる問題を防ぐ）。
-async function warmupModel(){
-  if(!tfModel) return;
+async function warmupModel(model=tfModel){
+  if(!model) return;
+  let dummy,out;
   try{
-    const dummy = tf.zeros([1,TF_SIZE,TF_SIZE,1]);
-    const out = tfModel.predict(dummy);
+    dummy = tf.zeros([1,TF_SIZE,TF_SIZE,1]);
+    out = model.predict(dummy);
     await out.data();
-    out.dispose();
-    dummy.dispose();
-  }catch(e){console.warn('warmupModel failed',e);}
+  }catch(e){console.warn('warmupModel failed',e);}finally{out?.dispose();dummy?.dispose();}
 }
 
 async function loadModelUrl(url){
+  const request=++modelLoadRevision,mode=ST.charMode;
+  invalidatePrediction();
+  tfModel=null;
+  WordHandwritingUI.refresh();
   setTf('loading','よみこみ中…');
   try{
-    if(ST.charMode === 'katakana'){
-      tfModel = await tf.loadGraphModel(url);
-    } else {
-      tfModel = await tf.loadLayersModel(url);
-    }
-    await warmupModel();
+    const loaded=await (mode==='katakana'?tf.loadGraphModel(url):tf.loadLayersModel(url));
+    if(request!==modelLoadRevision){loaded.dispose();return;}
+    tfModel=loaded;
+    await warmupModel(loaded);
+    if(request!==modelLoadRevision)return;
     setTf('ok','AIにんしき OK ✓');
+    WordHandwritingUI.sync();
   }catch(e){
+    if(request!==modelLoadRevision)return;
     console.warn('[loadModelUrl]',url,e);
     tfModel=null;
     setTf('err','モデルが みつかりません');
+    WordHandwritingUI.refresh();
   }
 }
-async function loadModelFiles(files){setTf('loading','よみこみ中…');try{tfModel=await tf.loadLayersModel(tf.io.browserFiles(Array.from(files)));await warmupModel();setTf('ok','AIにんしき OK ✓');}catch{setTf('err','よみこみしっぱい');}}
+async function loadModelFiles(files){
+  const request=++modelLoadRevision;invalidatePrediction();tfModel=null;WordHandwritingUI.refresh();setTf('loading','よみこみ中…');
+  try{
+    const loaded=await tf.loadLayersModel(tf.io.browserFiles(Array.from(files)));
+    if(request!==modelLoadRevision){loaded.dispose();return;}
+    tfModel=loaded;await warmupModel(loaded);
+    if(request===modelLoadRevision){setTf('ok','AIにんしき OK ✓');WordHandwritingUI.sync();}
+  }catch{if(request===modelLoadRevision){tfModel=null;setTf('err','よみこみしっぱい');WordHandwritingUI.refresh();}}
+}
 
 // ひらがな／カタカナ モード切り替え
 async function setCharMode(mode, btn){
   const changed = (ST.charMode !== mode);
   ST.charMode = mode;
+  if(changed)clearCV(true);
+  WordHandwritingUI.sync();
   LABELS = mode === 'hiragana' ? LABELS_HIRAGANA : LABELS_KATAKANA;
   saveSettings();
   // ボタンのactive更新（UIは必ず更新）
@@ -2436,8 +2495,10 @@ function preprocess(){
 function invalidatePrediction(){
   predRevision++;
   clearTimeout(predTimer);
+  WordHandwritingUI.invalidate();
 }
 async function runPredict(){
+  if(WordHandwritingUI.active())return WordHandwritingUI.predict();
   if(!tfModel||drawing)return;
   const revision=predRevision,model=tfModel,labels=LABELS;
   const arr=preprocess();if(!arr){renderPreds(null);return;}
@@ -2450,9 +2511,11 @@ async function runPredict(){
   }catch(e){console.warn(e);}finally{if(out)out.dispose();inp.dispose();}
 }
 function renderPreds(pred){
+  WordHandwritingUI.singleBounds(null);
   const row=document.getElementById('predRow');
   if(!pred){row.innerHTML='<div class="pred-none">１もじずつ かいて、こうほを えらんでね</div>';return;}
   const top=Array.from(pred).map((v,i)=>({i,v})).sort((a,b)=>b.v-a.v).slice(0,5);
+  WordHandwritingUI.singleBounds(LABELS[top[0]?.i]||null);
   row.innerHTML='';
   top.forEach((item,rank)=>{
     const ch=LABELS[item.i]||'?';
@@ -2471,7 +2534,7 @@ function renderPreds(pred){
     row.appendChild(el);
   });
 }
-function schedPred(d=200){clearTimeout(predTimer);if(tfModel)predTimer=setTimeout(runPredict,d);}
+function schedPred(d=200){clearTimeout(predTimer);if(tfModel)predTimer=setTimeout(runPredict,WordHandwritingUI.active()?850:d);}
 
 /* ═══════════════════════════════════════════════════════════
    手書きモード補助ボタン
@@ -2524,13 +2587,15 @@ function ptEv(ev){
   const dpr=window.devicePixelRatio||1;
   return{
     x:(ev.clientX-r.left)*(cv.width/r.width),
-    y:(ev.clientY-r.top)*(cv.height/r.height)
+    y:(ev.clientY-r.top)*(cv.height/r.height),
+    t:performance.now()
   };
 }
 
 /** 表示幅に応じた線の太さを返す（キャンバス物理ピクセル単位） */
 function calcLineW(){
   const rect=cv.getBoundingClientRect();
+  if(WordHandwritingUI.active())return 4*(cv.width/rect.width);
   // Cap in CSS pixels before converting to physical pixels, so DPR does not thin the ink.
   const cssWidth=Math.max(6,Math.min(20,Math.round(rect.width/300*8)));
   return cssWidth*(cv.width/rect.width);
@@ -2562,6 +2627,7 @@ function moveStroke(ev){
 function endStroke(ev){
   if(!drawing||!curStroke||ev.pointerId!==curStroke.pointerId)return;
   ev.preventDefault();drawing=false;curStroke=null;schedPred(200);
+  WordHandwritingUI.refresh();
 }
 function clearCV(resetStrokes=true){
   invalidatePrediction();
@@ -2569,6 +2635,7 @@ function clearCV(resetStrokes=true){
   drawCtx.save();drawCtx.setTransform(1,0,0,1,0,0);
   drawCtx.fillStyle='#fff';drawCtx.fillRect(0,0,cv.width,cv.height);
   drawCtx.restore();drawGuides();renderPreds(null);
+  WordHandwritingUI.refresh();
 }
 function drawGuides(){
   // ガイド線はキャンバス物理ピクセルで描く
@@ -2747,6 +2814,7 @@ function backspaceInput(){
   updateKbSmallModeUI();
 }
 function switchIn(mode){
+  invalidatePrediction();
   ST.inputMode=mode;saveSettings();
   if(mode!=='btn'){ kbSmallNext=false; updateKbSmallModeUI(); }
   ['canvas','btn','kbd'].forEach(m=>{
@@ -2778,12 +2846,14 @@ function kbdHandler(e){
    PAGES
 ═══════════════════════════════════════════════════════════ */
 function showPage(name){
+  HandwritingReview.cancel();
   document.getElementById('pageGame').classList.toggle('active',name==='game');
   document.getElementById('pageSettings').classList.toggle('active',name==='settings');
   document.querySelectorAll('.main-tab').forEach((t,i)=>t.classList.toggle('active',i===(name==='game'?0:1)));
   if(name==='settings') syncSettingsUI();
 }
 function syncSettingsUI(){
+  WordHandwritingUI.sync();
   initSettingsTabs();syncCpuGenreUI();
   document.getElementById('togSkipLink').classList.toggle('on',ST.skipLinkAnimation);
   document.getElementById('togSkipLink').setAttribute('aria-pressed',String(ST.skipLinkAnimation));
@@ -2828,7 +2898,7 @@ function setLevel(lv,btn){
 }
 let settingsTab='words';
 function initSettingsTabs(){
-  const groups=['input','words','input','effects','effects','words','words','images','admin','admin','admin','admin'];
+  const groups=['input','words','input','input','effects','effects','words','words','images','admin','admin','admin','admin'];
   document.querySelectorAll('#pageSettings .set-wrap > .set-sec').forEach((s,i)=>s.dataset.settingsGroup=groups[i]||'admin');
   setSettingsTab(settingsTab);
 }
@@ -3992,6 +4062,7 @@ async function launchGame(){
 ═══════════════════════════════════════════════════════════ */
 async function boot(){
   loadSettings();
+  WordHandwritingUI.sync();
   LABELS = ST.charMode === 'katakana' ? LABELS_KATAKANA : LABELS_HIRAGANA;
   ST.gasUrl = GAS_WEB_APP_URL;
   initBuiltinList();

@@ -36,13 +36,15 @@ const server=http.createServer((req,res)=>{const relative=new URL(req.url,'http:
  endStroke(event(200,70));invalidatePrediction();
  tfModel={predict(){return{data:async()=>Float32Array.from({length:71},(_,i)=>i===0?1:0),dispose(){}};}};
  await runPredict();const best=document.querySelector('#predRow .pred-ch')?.textContent;
+ const boundsCount=document.querySelectorAll('#handwritingBounds .handwriting-box').length;
  document.querySelector('#predRow .pred-chip').click();const accepted=ST.currentInput;const clearAfterAccept=preprocess()===null;
  tfModel=null;cv.setPointerCapture=capture;
- return{blank:blank===null,cssLine,dot,dotCount,dotAfterUndo,resized,norm,normExpected,normAfter,blankAfterUndo,staleAfterClear,staleDuringDrawing,disposed,best,accepted,clearAfterAccept};
+ return{blank:blank===null,cssLine,dot,dotCount,dotAfterUndo,resized,norm,normExpected,normAfter,blankAfterUndo,staleAfterClear,staleDuringDrawing,disposed,best,boundsCount,accepted,clearAfterAccept};
  });
  assert.equal(result.blank,true);assert.equal(result.dot,true);assert.equal(result.dotCount,1);assert.equal(result.dotAfterUndo,true);assert.equal(result.resized,true);
  result.normExpected.forEach((v,i)=>assert.ok(Math.abs(v-result.normAfter[i])<1e-8));
  assert.equal(result.blankAfterUndo,true);assert.equal(result.staleAfterClear,0);assert.equal(result.staleDuringDrawing,0);assert.equal(result.disposed,5);assert.equal(result.best,'あ');assert.equal(result.accepted,'あ');assert.equal(result.clearAfterAccept,true);
+ assert.equal(result.boundsCount,1,'legacy recognition range is visible');
  widths.push(result.cssLine);console.log(JSON.stringify({dpr,...result}));await page.close();
  }
  assert.ok(widths.every(width=>Math.abs(width-widths[0])<1e-8));console.log('Handwriting regression checks passed.');

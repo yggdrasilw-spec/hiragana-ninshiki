@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>かなの かたち研究室</title><link rel="stylesheet" href="kana-feedback-lab.css?v=20261017c"></head>
+<body>
+<header><div><span class="eyebrow">ひらがなを かいてみよう</span><h1>かなの かたち研究室 <small>おためし</small></h1><p>じを かいて、おてほんと くらべよう。</p></div><a class="back" href="shiritori.html">しりとりへ</a></header>
+<main>
+  <section class="boards">
+    <article class="board"><div class="board-heading"><h2>１もじ かいてね</h2><span id="inkSource">じぶんで かいた じ</span></div>
+      <svg id="writing" viewBox="0 0 320 320" role="img" aria-label="指やペンで１文字を書く欄"><g class="guides"><path d="M160 0V320M0 160H320"/></g><g id="ghost"></g><g id="ink"></g><g id="focus"></g></svg>
+      <div class="tools"><button id="undo" type="button">１かく もどす</button><button id="clear" type="button">けす</button><button id="read" class="primary" type="button" disabled>よみとる</button><button id="compare" type="button" hidden>もういちど くらべる</button></div>
+      <label class="check"><input id="showGhost" type="checkbox">おてほんを かさねる</label>
+      <label class="check"><input id="showDirections" type="checkbox" checked>かく じゅんばんと むきを みる</label>
+    </article>
+    <article class="board"><div class="board-heading"><h2>おてほん</h2><span id="referenceChar"></span></div><svg id="reference" viewBox="0 0 320 320" role="img" aria-label="お手本の形と書く順番"></svg><p class="muted"><span id="referenceHint">よみとると、ここに おてほんが でるよ。</span></p><p class="source">お手本：<a href="https://kanjivg.tagaini.net/" target="_blank" rel="noopener">KanjiVG</a> / Ulrich Apel<br><a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>・ひらがな86字を抽出、表示時に拡大・点列化</p></article>
+  </section>
+  <section class="recognition"><h2>かいた じは どれかな？</h2><p id="modelStatus" role="status">よみとる じゅんびを しているよ。</p><button id="retryModel" hidden>もういちど じゅんびする</button><p id="recognitionMessage" role="status">１もじ かいて、「よみとる」を おしてね。</p><div id="recognitionCandidates" class="tools"></div><details id="otherCharacters" hidden><summary>ちがう じを えらぶ</summary><div id="characters" aria-label="ひらがなを選ぶ"></div></details></section>
+  <section class="results" aria-labelledby="resultTitle"><div class="result-top"><h2 id="resultTitle">おてほんと くらべよう</h2><span class="badge">おためし</span></div><p id="message" role="status" aria-live="polite">まる・ばつは つけないよ。かいた じを たしかめよう。</p><div id="advice"></div></section>
+  <details class="review"><summary>先生・開発者用の確認と記録</summary><p class="muted">お手本はひらがな86字。認識モデルは71字です。小さい字などは読み取り後に選び直せます。１字だけでは小さい字の意図や大きさを確定できません。</p><details><summary>観察した数値・線の対応を見る</summary><pre id="measurements">まだ比較していません。</pre></details><p class="muted">助言の候補は、人手レビュー・児童の実筆跡での校正前です。「助言なし」も合格を意味しません。</p><div class="tools"><label>筆跡の扱い<select id="caseKind"><option value="uncertain">判断保留</option><option value="near-reference">お手本に近い例</option><option value="acceptable-variation">許容したい変形</option><option value="error">直したい誤例</option></select></label><label>助言の評価<select id="adviceRating"><option value="unreviewed">未確認</option><option value="useful">役に立つ</option><option value="misleading">指摘が合わない</option><option value="missing">必要な指摘がない</option></select></label></div><label class="note">確認メモ<textarea id="reviewNote" rows="2" maxlength="1200" placeholder="どの箇所の助言が合うか・合わないか"></textarea></label><div class="tools"><button id="saveCase" type="button">この例を端末に保存</button><button id="exportCases" type="button">保存した例をJSONで出す</button><span id="savedStatus" role="status" aria-live="polite"></span></div></details>
+  <details class="demos"><summary>検証用の作図例を試す</summary><p class="muted">お手本から機械的に作った比較用の例です。児童の筆跡や「正解・誤り」の実測データではありません。</p><label>作図する文字<select id="demoCharacter"></select></label><div class="tools"><button data-demo="reference">お手本に近い例</button><button data-demo="wide">横に広い例</button><button data-demo="reverse">書く向きを逆にした例</button><button data-demo="short">線の不足を試す例</button></div></details>
+  <footer>観察・表示と評価エンジンを分離しています。しりとりの勝敗や学習の習得記録には反映しません。</footer>
+</main><script type="module" src="kana-feedback-lab.mjs?v=20261017c"></script>
+</body></html>
