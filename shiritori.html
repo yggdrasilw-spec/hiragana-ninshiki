@@ -1433,11 +1433,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     <div class="set-sec">
       <div class="set-hd">✏️ てがきの よみとりかた</div>
       <div class="set-bd">
-        <div class="handwriting-options">
-          <button type="button" data-handwriting="single" aria-pressed="true">１もじずつ（これまで）</button>
-          <button type="button" data-handwriting="word" aria-pressed="false">ことばを まとめて（おためし）</button>
-        </div>
-        <p class="image-policy-help">まとめ書きは、ひらがな用です。左から右へ、文字の間を少しあけて書いてください。読み取った候補は１文字ずつ直せます。小さい「ゃ・ゅ・ょ・っ」などは、大きさを手がかりに候補を出します。</p>
+        <label class="handwriting-review-setting"><input type="checkbox" id="enableWordHandwriting" aria-describedby="wordHandwritingHelp">複数の もじを 自動で よみとる（暫定版）</label>
+        <p id="wordHandwritingHelp" class="image-policy-help">オンにすると、ひらがなを まとめて かけます。かく手を 少し とめると、自動で よみとるよ。左から右へ、もじの あいだを 少し あけてね。ちがう もじは １もじずつ なおせます。小さい「ゃ・ゅ・ょ・っ」などは 小さめに。オフにすると、これまでの「１もじずつ」に もどります。</p>
         <p class="image-policy-help">現在は読み取りの試作です。字形の正誤判定はまだありません。候補を選べたことは「正しく書けた」という判定にはなりません。</p>
         <label class="handwriting-review-setting"><input type="checkbox" id="showHandwritingProcess">書いた順・向き・筆跡の再生を使う</label>
         <p class="image-policy-help">数字は実際に書いた順、矢印は線を書いた向きです。お手本の正しい書き順を判定する表示ではありません。</p>
@@ -1599,7 +1596,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-robot-link.js?v=20261013"></script>
 <script src="shiritori-word-handwriting.js?v=20261016"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
-<script src="shiritori-word-handwriting-ui.js?v=20261017"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261017c"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 
@@ -2359,6 +2356,7 @@ async function loadModelUrl(url){
     if(request!==modelLoadRevision)return;
     setTf('ok','AIにんしき OK ✓');
     WordHandwritingUI.sync();
+    if(WordHandwritingUI.active()&&ST.strokes.length)schedPred();
   }catch(e){
     if(request!==modelLoadRevision)return;
     console.warn('[loadModelUrl]',url,e);
