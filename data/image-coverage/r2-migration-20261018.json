@@ -58,5 +58,63 @@
   "reviewStatePreserved": true,
   "knownPreexistingTestFailures": [
     "tests/shiritori-expansion512d.cjs: frozen baseline hash differs; same failure reproduced from unmodified HEAD test."
-  ]
+  ],
+  "historyVerification": {
+    "passed": true,
+    "commitsPreserved": 148,
+    "everyNonImageTreeIdentical": true,
+    "parentGraphPreserved": true,
+    "historicalImageBlobsRemoved": 12587,
+    "remainingReachableImageBlobs": 0,
+    "size": "count: 0\nsize: 0 bytes\nin-pack: 3235\npacks: 1\nsize-pack: 27.41 MiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n"
+  },
+  "githubVerification": {
+    "branches": 7,
+    "normalClonePackMiB": 39.42,
+    "normalCloneImageObjects": 0,
+    "retainedMergedPullRequests": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "pullRequestImageObjects": 1824,
+    "mirrorPackMiB": 543.24,
+    "repositoryRecreated": false,
+    "normalCloneRepackedSize": "count: 0\nsize: 0 bytes\nin-pack: 3235\npacks: 1\nsize-pack: 39.42 MiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n"
+  },
+  "publishedGameChecks": {
+    "passed": true,
+    "appOrigin": "https://yggdrasilw-spec.github.io/hiragana-ninshiki",
+    "imageOrigin": "https://shiritori-images.yggdrasil-learning.workers.dev",
+    "localImages": [],
+    "results": [
+      {
+        "viewport": "desktop",
+        "history": [
+          "りんご",
+          "ごうれい",
+          "いいえ",
+          "えいかく",
+          "く",
+          "くつ"
+        ],
+        "deliveredImages": 10,
+        "errors": []
+      },
+      {
+        "viewport": "mobile",
+        "history": [
+          "りんご",
+          "ごうい",
+          "いいえ",
+          "えんそう",
+          "ういんかー",
+          "あかはらいもり"
+        ],
+        "deliveredImages": 10,
+        "errors": []
+      }
+    ]
+  }
 }
