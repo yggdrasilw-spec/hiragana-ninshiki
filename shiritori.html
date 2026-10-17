@@ -1184,7 +1184,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 #wordSuggestions button{min-height:44px;margin:4px;white-space:normal}
 </style>
 <link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
-<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261017">
+<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261017d">
 </head>
 <body>
 
@@ -1247,7 +1247,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
       <div id="wordContent"><div class="wph" id="wph">ここに ことばが でるよ</div></div>
       <div id="wordActions">
         <button id="btnBackspace" class="wa-btn" type="button" aria-label="さいごのもじをけす">⌫</button>
-        <button id="btnOk" class="wa-btn ok" type="button" aria-label="ことばをかくてい" disabled>➜</button>
+        <button id="btnOk" class="wa-btn ok" type="button" aria-label="このことばで こたえる" disabled>こたえる ➜</button>
       </div>
     </div>
 
@@ -1289,13 +1289,14 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
           </div>
           <div id="predRow"><div class="pred-none">１もじずつ かいて、こうほを えらんでね</div></div>
           <div id="wordHandwriting" class="hidden">
-            <div class="word-toolbar"><button type="button" id="btnReadWord">よみとる</button><button type="button" id="btnAcceptWord" disabled>この ことばを いれる</button></div>
+            <div class="word-toolbar"><button type="button" id="btnReadWord">よみとる</button></div>
             <p id="wordStatus" role="status" aria-live="polite"></p>
             <p id="wordBoundsHint" hidden>わくの 数字は、下の もじと おなじだよ。１もじとして よんだ はんいを かこんでいるよ。</p>
             <div id="wordResults" aria-label="ことばのこうほ"></div>
             <div id="wordCharacters" aria-label="１もじずつ なおす"></div>
             <div id="wordCorrection" class="hidden"><div id="wordCharacterChoices" aria-label="もじのこうほ"></div><button type="button" id="btnWordSmall">大きい字 ↔ 小さい字</button> <button type="button" id="btnWordOther" aria-expanded="false" aria-controls="wordKanaPicker">ほかの ひらがな</button><div id="wordKanaPicker" hidden aria-label="ひらがなから えらぶ"></div></div>
           </div>
+          <div id="wordSubmitActions" class="word-submit-actions hidden"><button type="button" id="btnSubmitWord" disabled>この ことばで こたえる</button><button type="button" id="btnAcceptWord" disabled>にゅうりょく だけする</button></div>
           <!-- ★ 手書きモード補助ボタン: ー・小文字・濁点・半濁点 -->
           <div id="canvasAux" style="display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0;margin-top:2px">
             <button class="sm-btn" id="auxLong"   onclick="appendCanvasAux('ー')">ー のばし棒</button>
@@ -1594,9 +1595,9 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-feedback-config.js?v=20261014"></script>
 <script src="shiritori-feedback.js?v=20261014"></script>
 <script src="shiritori-robot-link.js?v=20261013"></script>
-<script src="shiritori-word-handwriting.js?v=20261016"></script>
+<script src="shiritori-word-handwriting.js?v=20261017d"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
-<script src="shiritori-word-handwriting-ui.js?v=20261017c"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261017d"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 

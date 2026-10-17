@@ -8,7 +8,8 @@ const WordHandwritingUI=(()=>{
     if(!initialized){
       initialized=true;
       $('btnReadWord').onclick=()=>runPredict();
-      $('btnAcceptWord').onclick=accept;
+      $('btnAcceptWord').onclick=()=>accept(false);
+      $('btnSubmitWord').onclick=()=>accept(true);
       $('btnWordSmall').onclick=()=>{
         const item=results[selected]?.chars[editing];if(!item)return;
         const e=engine();edit(e.smallMap[item.ch]||e.largeMap[item.ch]||item.ch);
@@ -17,6 +18,7 @@ const WordHandwritingUI=(()=>{
       $('enableWordHandwriting').onchange=()=>setMode($('enableWordHandwriting').checked?'word':'single');
     }
     $('wordHandwriting').classList.toggle('hidden',!active());
+    $('wordSubmitActions').classList.toggle('hidden',!active());
     $('predRow').classList.toggle('hidden',active());
     $('canvasAux').classList.toggle('hidden',active());
     $('wordKatakanaNote').classList.toggle('hidden',ST.charMode==='hiragana');
@@ -40,10 +42,13 @@ const WordHandwritingUI=(()=>{
     const choices=$('wordCharacterChoices');choices.replaceChildren();
     $('btnReadWord').disabled=busy||!tfModel||!ST.strokes.length;
     $('btnAcceptWord').disabled=busy||!results.length;
-    $('wordStatus').textContent=busy?'よみとり中…':results.length?'ちがう もじは、おして なおせるよ。':'ひだりから ことばを かいてね。手を とめると 自動で よみとるよ。小さい字は 小さめに。';
+    $('btnSubmitWord').disabled=busy||!results.length||ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked;
+    const chosen=results[selected]?.chars.map(c=>c.ch).join('');
+    $('btnSubmitWord').textContent=chosen?`「${ST.currentInput+chosen}」で こたえる`:'この ことばで こたえる';
+    $('wordStatus').textContent=busy?'よみとり中…':results.length?'ことばを えらんで、下の「こたえる」を おしてね。ちがう もじは １もじずつ なおせるよ。':'ひだりから ことばを かいてね。手を とめると 自動で よみとるよ。小さい字は 小さめに。';
     results.forEach((r,i)=>{
       const b=document.createElement('button');b.type='button';b.className='word-candidate';
-      b.textContent=r.chars.map(c=>c.ch).join('');b.setAttribute('aria-pressed',String(i===selected));
+      b.textContent=r.chars.map(c=>c.ch).join('');b.dataset.known=String(inWhitelist(ST.currentInput+b.textContent));b.setAttribute('aria-label',b.textContent+(b.dataset.known==='true'?'、じしょに ある ことば':''));b.setAttribute('aria-pressed',String(i===selected));
       b.onclick=()=>{selected=i;editing=-1;pickerOpen=false;render();};holder.appendChild(b);
     });
     results[selected]?.chars.forEach((c,i)=>{
@@ -146,7 +151,9 @@ const WordHandwritingUI=(()=>{
         await new Promise(resolve=>setTimeout(resolve,0));
       }
       if(!valid())return;
-      results=engine().decode(plan,predictions);selected=0;editing=-1;busy=false;render();
+      // Use the complete player dictionary; CPU genre/grade choices must not hide words.
+      const readings=new Set(ST.whitelist.map(row=>norm(row.reading))),prefix=ST.currentInput;
+      results=engine().decode(plan,predictions,{isKnown:text=>readings.has(norm(prefix+text))});selected=0;editing=-1;busy=false;render();
       if(!results.length)$('wordStatus').textContent='よめなかったよ。もじの あいだを 少し あけてみてね。';
     }catch(error){
       if(!valid())return;
@@ -155,10 +162,14 @@ const WordHandwritingUI=(()=>{
       console.warn('word handwriting',error);
     }
   }
-  function accept(){
+  function accept(submit=false){
     if(busy||!active()||!results[selected])return;
+    if(submit&&(ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked))return;
     setCurrentInput(ST.currentInput+results[selected].chars.map(c=>c.ch).join(''));
     clearCV(true);
+    if(submit)return submitWord();
+    setStatus('ready','ことばを いれたよ。','上の「こたえる」を おすと、しりとりが すすむよ。');
+    $('btnOk').focus({preventScroll:true});$('wordBox').scrollIntoView({block:'nearest'});
   }
   return {active,sync,invalidate,predict,rasterize,setMode,refresh:render,singleBounds};
 })();
