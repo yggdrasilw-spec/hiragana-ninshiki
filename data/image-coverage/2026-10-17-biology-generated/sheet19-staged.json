@@ -1,0 +1,680 @@
+{
+  "sheet": 19,
+  "sourceSheet": "sheets/biology20261017-sheet19.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. 豆苗 (Pea shoots): エンドウの若い葉や茎を食べる野菜。\n2. かいわれ大根 (Daikon sprouts): ダイコンの種から出た若い芽を食べる野菜。\n3. ブロッコリースプラウト (Broccoli sprouts): ブロッコリーの種から出た若い芽を食べる野菜。\n4. アイスプラント (Mesembryanthemum crystallinum): 表面につぶつぶした水滴のような細胞がある葉を食べる野菜。\n5. 食用菊 (Edible chrysanthemum): 花びらを食べるために育てるキク。野菜として売られる植物。\n6. ぶなしめじ (Hypsizygus marmoreus): まとまって生える茶色いかさの食用のきのこの仲間。菌類。\n7. マッシュルーム (Agaricus bisporus): 丸みのあるかさを持つ食用のきのこの仲間。菌類。\n8. ふじ (Fuji apple): 甘みと歯ごたえがあるリンゴの品種。赤い皮を持つ果物。\n9. つがる (Tsugaru apple): 夏の終わりごろから収穫される甘いリンゴの品種。赤い皮を持つ果物。\n10. 王林 (Orin apple): 黄緑色の皮と甘い香りを持つリンゴの品種。果物の一つ。\n11. 紅玉 (Jonathan apple): 赤い皮としっかりした酸味を持つリンゴの品種。加工にも使う果物。\n12. ジョナゴールド (Jonagold apple): 赤色と黄色の皮を持つ甘酸っぱいリンゴの品種。果物の一つ。\n13. 陸奥 (Mutsu apple): 大きな実になるリンゴの品種。袋をかけると皮が赤く色づく果物。\n14. 世界一 (Sekai Ichi apple): とても大きな実になるリンゴの品種。果物の一つ。\n15. シナノスイート (Shinano Sweet apple): 長野県で育てられた甘みの強いリンゴの品種。赤い皮を持つ果物。\n16. シナノゴールド (Shinano Gold apple): 黄色い皮を持つ甘酸っぱいリンゴの品種。果物の一つ。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet19-crop.json",
+  "tiles": [
+    {
+      "category": "野菜",
+      "reading": "とうみょう",
+      "word": "豆苗",
+      "meaning": "エンドウの若い葉や茎を食べる野菜。",
+      "imagequery": "豆苗 野菜",
+      "imagequery_en": "Pea shoots",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12780,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2738880",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2738880",
+          "entryId": "2738880",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "豆苗",
+            "とうみょう",
+            "トウミョウ",
+            "トウミャオ",
+            "トーミョウ",
+            "トウミャウ"
+          ],
+          "senseEvidence": [
+            "pea sprouts"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12780.png",
+      "semanticReviewedMeaning": "エンドウの若い葉や茎を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "かいわれだいこん",
+      "word": "かいわれ大根",
+      "meaning": "ダイコンの種から出た若い芽を食べる野菜。",
+      "imagequery": "かいわれ大根 野菜",
+      "imagequery_en": "Daikon sprouts",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12781,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2076530",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2076530",
+          "entryId": "2076530",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "かいわれ大根",
+            "貝割れ大根",
+            "カイワレ大根",
+            "穎割れ大根",
+            "かいわれだいこん"
+          ],
+          "senseEvidence": [
+            "(white) radish sprouts",
+            "daikon sprouts"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12781.png",
+      "semanticReviewedMeaning": "ダイコンの種から出た若い芽を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ぶろっこりーすぷらうと",
+      "word": "ブロッコリースプラウト",
+      "meaning": "ブロッコリーの種から出た若い芽を食べる野菜。",
+      "imagequery": "ブロッコリースプラウト 野菜",
+      "imagequery_en": "Broccoli sprouts",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12782,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.murakamifarm.com/sprout/sp/products/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.murakamifarm.com/sprout/sp/products/",
+          "checkedAt": "2026-10-17",
+          "note": "生産者の商品情報でブロッコリーの芽の食用名を確認。"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12782.png",
+      "semanticReviewedMeaning": "ブロッコリーの種から出た若い芽を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "あいすぷらんと",
+      "word": "アイスプラント",
+      "meaning": "表面につぶつぶした水滴のような細胞がある葉を食べる野菜。",
+      "imagequery": "アイスプラント 野菜",
+      "imagequery_en": "Mesembryanthemum crystallinum",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12783,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2449090",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2449090",
+          "entryId": "2449090",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "アイスプラント",
+            "アイス・プラント"
+          ],
+          "senseEvidence": [
+            "ice plant (Mesembryanthemum crystallinum)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12783.png",
+      "semanticReviewedMeaning": "表面につぶつぶした水滴のような細胞がある葉を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "しょくようぎく",
+      "word": "食用菊",
+      "meaning": "花びらを食べるために育てるキク。野菜として売られる植物。",
+      "imagequery": "食用菊 野菜",
+      "imagequery_en": "Edible chrysanthemum",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12784,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2221120",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2221120",
+          "entryId": "2221120",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "食用菊",
+            "しょくようぎく"
+          ],
+          "senseEvidence": [
+            "edible chrysanthemum"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12784.png",
+      "semanticReviewedMeaning": "花びらを食べるために育てるキク。野菜として売られる植物。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ぶなしめじ",
+      "word": "ぶなしめじ",
+      "meaning": "まとまって生える茶色いかさの食用のきのこの仲間。菌類。",
+      "imagequery": "ぶなしめじ 野菜",
+      "imagequery_en": "Hypsizygus marmoreus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12785,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2678540",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2678540",
+          "entryId": "2678540",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "橅湿地",
+            "橅占地",
+            "ぶなしめじ",
+            "ブナシメジ"
+          ],
+          "senseEvidence": [
+            "brown beech mushroom (Hypsizygus marmoreus)",
+            "brown clamshell mushroom"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12785.png",
+      "semanticReviewedMeaning": "まとまって生える茶色いかさの食用のきのこの仲間。菌類。"
+    },
+    {
+      "category": "野菜",
+      "reading": "まっしゅるーむ",
+      "word": "マッシュルーム",
+      "meaning": "丸みのあるかさを持つ食用のきのこの仲間。菌類。",
+      "imagequery": "マッシュルーム 野菜",
+      "imagequery_en": "Agaricus bisporus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12786,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1128400",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1128400",
+          "entryId": "1128400",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "マッシュルーム",
+            "マシュルーム"
+          ],
+          "senseEvidence": [
+            "common mushroom (Agaricus bisporus)",
+            "white mushroom"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12786.png",
+      "semanticReviewedMeaning": "丸みのあるかさを持つ食用のきのこの仲間。菌類。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "ふじ",
+      "word": "ふじ",
+      "meaning": "甘みと歯ごたえがあるリンゴの品種。赤い皮を持つ果物。",
+      "imagequery": "ふじ リンゴ 果物",
+      "imagequery_en": "Fuji apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12617,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語はフジ：つるを伸ばし、紫色などの花を房状に垂らして咲かせる植物。。今回はリンゴの意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12617.png",
+      "semanticReviewedMeaning": "甘みと歯ごたえがあるリンゴの品種。赤い皮を持つ果物。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "つがる",
+      "word": "つがる",
+      "meaning": "夏の終わりごろから収穫される甘いリンゴの品種。赤い皮を持つ果物。",
+      "imagequery": "つがる リンゴ 果物",
+      "imagequery_en": "Tsugaru apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12618,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_summary/01/type03.html / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_summary/01/type03.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0af71a11ea2df087b70a74aa50172732d36479a89eaaa545232c94088904ed48",
+          "type": "official-name-list",
+          "sourceKey": "rice-maff"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12618.png",
+      "semanticReviewedMeaning": "夏の終わりごろから収穫される甘いリンゴの品種。赤い皮を持つ果物。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "おうりん",
+      "word": "王林",
+      "meaning": "黄緑色の皮と甘い香りを持つリンゴの品種。果物の一つ。",
+      "imagequery": "王林 リンゴ 果物",
+      "imagequery_en": "Orin apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12619,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12619.png",
+      "semanticReviewedMeaning": "黄緑色の皮と甘い香りを持つリンゴの品種。果物の一つ。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "こうぎょく",
+      "word": "紅玉",
+      "meaning": "赤い皮としっかりした酸味を持つリンゴの品種。加工にも使う果物。",
+      "imagequery": "紅玉 リンゴ 果物",
+      "imagequery_en": "Jonathan apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12620,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12620.png",
+      "semanticReviewedMeaning": "赤い皮としっかりした酸味を持つリンゴの品種。加工にも使う果物。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "じょなごーるど",
+      "word": "ジョナゴールド",
+      "meaning": "赤色と黄色の皮を持つ甘酸っぱいリンゴの品種。果物の一つ。",
+      "imagequery": "ジョナゴールド リンゴ 果物",
+      "imagequery_en": "Jonagold apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12621,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12621.png",
+      "semanticReviewedMeaning": "赤色と黄色の皮を持つ甘酸っぱいリンゴの品種。果物の一つ。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "むつ",
+      "word": "陸奥",
+      "meaning": "大きな実になるリンゴの品種。袋をかけると皮が赤く色づく果物。",
+      "imagequery": "陸奥 リンゴ 果物",
+      "imagequery_en": "Mutsu apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12622,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語はムツ：ふかめのうみなどにすむ、くちがおおきいさかな。。今回はリンゴの意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12622.png",
+      "semanticReviewedMeaning": "大きな実になるリンゴの品種。袋をかけると皮が赤く色づく果物。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "せかいいち",
+      "word": "世界一",
+      "meaning": "とても大きな実になるリンゴの品種。果物の一つ。",
+      "imagequery": "世界一 リンゴ 果物",
+      "imagequery_en": "Sekai Ichi apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12623,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12623.png",
+      "semanticReviewedMeaning": "とても大きな実になるリンゴの品種。果物の一つ。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "しなのすいーと",
+      "word": "シナノスイート",
+      "meaning": "長野県で育てられた甘みの強いリンゴの品種。赤い皮を持つ果物。",
+      "imagequery": "シナノスイート リンゴ 果物",
+      "imagequery_en": "Shinano Sweet apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12624,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12624.png",
+      "semanticReviewedMeaning": "長野県で育てられた甘みの強いリンゴの品種。赤い皮を持つ果物。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "しなのごーるど",
+      "word": "シナノゴールド",
+      "meaning": "黄色い皮を持つ甘酸っぱいリンゴの品種。果物の一つ。",
+      "imagequery": "シナノゴールド リンゴ 果物",
+      "imagequery_en": "Shinano Gold apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12625,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12625.png",
+      "semanticReviewedMeaning": "黄色い皮を持つ甘酸っぱいリンゴの品種。果物の一つ。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "豆苗・スプラウトの形、アイスプラントの表面、キク・菌類とリンゴの皮色を確認。",
+  "approvedIds": [
+    12780,
+    12781,
+    12782,
+    12783,
+    12784,
+    12785,
+    12786,
+    12617,
+    12618,
+    12619,
+    12620,
+    12621,
+    12622,
+    12623,
+    12624,
+    12625
+  ],
+  "semanticSheetSha256": "0f2de96438409b2b426cbfef373addf7d5adc398542930af2bbd14e353396a51",
+  "reviewedAt": "2026-10-17"
+}

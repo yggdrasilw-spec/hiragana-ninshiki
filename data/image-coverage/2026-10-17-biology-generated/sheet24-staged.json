@@ -1,0 +1,746 @@
+{
+  "sheet": 24,
+  "sourceSheet": "sheets/biology20261017-sheet24.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. ポンカン (Ponkan citrus): 香りがよく皮をむきやすい甘い柑橘の果物。\n2. シークワーサー (Citrus depressa): 沖縄などで栽培される小さな柑橘の果物。酸っぱい果汁を使う。\n3. カボス (Citrus sphaerocarpa): 大分県でよく栽培される柑橘の果物。酸っぱい果汁を使う。\n4. キンカン (Kumquat): 小さな橙色の実がなる柑橘の果物。皮ごと食べられる。\n5. あまおう (Amaou strawberry): 福岡県で作られるイチゴのブランド名。品種名は福岡Ｓ６号。赤い実を食べる果物。\n6. スカイベリー (Skyberry strawberry): 栃木県で育てられたイチゴの販売名。品種名は栃木ｉ２７号。大きな実がなる果物。\n7. ミルキーベリー (Milky Berry strawberry): 栃木県で育てられた白いイチゴの販売名。品種名は栃木ｉＷ１号。果物の一つ。\n8. とちおとめ (Tochiotome strawberry): 栃木県で育てられたイチゴの品種。甘みと酸味のある果物。\n9. とちあいか (Tochiaika strawberry): 栃木県で育てられたイチゴの品種。酸味が少なく甘みのある果物。\n10. 女峰 (Nyoho strawberry): 栃木県で育てられたイチゴの品種。酸味と香りがあり加工にも使う果物。\n11. とよのか (Toyonoka strawberry): 九州などで広く栽培されてきたイチゴの品種。香りのよい果物。\n12. さちのか (Sachinoka strawberry): とよのかなどを親にして生まれたイチゴの品種。赤い実がなる果物。\n13. 紅ほっぺ (Benihoppe strawberry): 静岡県で育てられたイチゴの品種。果肉も赤くなり甘酸っぱい果物。\n14. 章姫 (Akihime strawberry): 静岡県で育てられたイチゴの品種。細長い形で酸味が少ない果物。\n15. かおり野 (Kaorino strawberry): 三重県で育てられたイチゴの品種。甘い香りのある果物。\n16. きらぴ香 (Kirapika strawberry): 静岡県で育てられたイチゴの品種。つやと香りのある果物。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet24-crop.json",
+  "tiles": [
+    {
+      "category": "柑橘",
+      "reading": "ぽんかん",
+      "word": "ポンカン",
+      "meaning": "香りがよく皮をむきやすい甘い柑橘の果物。",
+      "imagequery": "ポンカン 柑橘 果物",
+      "imagequery_en": "Ponkan citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12690,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1918460",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1918460",
+          "entryId": "1918460",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ポン柑",
+            "椪柑",
+            "凸柑",
+            "ぽん柑",
+            "ポンカン",
+            "ぽんかん"
+          ],
+          "senseEvidence": [
+            "ponkan orange (Citrus reticulata)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12690.png",
+      "semanticReviewedMeaning": "香りがよく皮をむきやすい甘い柑橘の果物。"
+    },
+    {
+      "category": "柑橘",
+      "reading": "しーくわーさー",
+      "word": "シークワーサー",
+      "meaning": "沖縄などで栽培される小さな柑橘の果物。酸っぱい果汁を使う。",
+      "imagequery": "シークワーサー 柑橘 果物",
+      "imagequery_en": "Citrus depressa",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12691,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2093200",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2093200",
+          "entryId": "2093200",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "シークヮーサー",
+            "シークワーサー",
+            "シークァーサー",
+            "シークワーサ",
+            "シークヮーサ",
+            "シィクワシャー",
+            "シークワーシャー",
+            "シークァーサ",
+            "シクワーシャー",
+            "しいくわあさあ"
+          ],
+          "senseEvidence": [
+            "flat lemon (Citrus depressa)",
+            "Hirami lemon",
+            "thin-skinned flat lemon",
+            "shekwasha",
+            "Taiwan tangerine"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12691.png",
+      "semanticReviewedMeaning": "沖縄などで栽培される小さな柑橘の果物。酸っぱい果汁を使う。"
+    },
+    {
+      "category": "柑橘",
+      "reading": "かぼす",
+      "word": "カボス",
+      "meaning": "大分県でよく栽培される柑橘の果物。酸っぱい果汁を使う。",
+      "imagequery": "カボス 柑橘 果物",
+      "imagequery_en": "Citrus sphaerocarpa",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12692,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2111750",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2111750",
+          "entryId": "2111750",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "香母酢",
+            "臭橙",
+            "かぼす",
+            "カボス"
+          ],
+          "senseEvidence": [
+            "kabosu (type of citrus fruit) (Citrus sphaerocarpa)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12692.png",
+      "semanticReviewedMeaning": "大分県でよく栽培される柑橘の果物。酸っぱい果汁を使う。"
+    },
+    {
+      "category": "柑橘",
+      "reading": "きんかん",
+      "word": "キンカン",
+      "meaning": "小さな橙色の実がなる柑橘の果物。皮ごと食べられる。",
+      "imagequery": "キンカン 柑橘 果物",
+      "imagequery_en": "Kumquat",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12693,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1242210",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1242210",
+          "entryId": "1242210",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "近刊",
+            "きんかん"
+          ],
+          "senseEvidence": [
+            "forthcoming publication",
+            "to be published soon",
+            "coming soon",
+            "in preparation",
+            "recent publication"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12693.png",
+      "semanticReviewedMeaning": "小さな橙色の実がなる柑橘の果物。皮ごと食べられる。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "あまおう",
+      "word": "あまおう",
+      "meaning": "福岡県で作られるイチゴのブランド名。品種名は福岡Ｓ６号。赤い実を食べる果物。",
+      "imagequery": "あまおう イチゴ 果物",
+      "imagequery_en": "Amaou strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12694,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.fukuoka.lg.jp/contents/amaouburando.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2799920",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.fukuoka.lg.jp/contents/amaouburando.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "2c4a34d98c6036ca28dca6925337564c0176ac2f32eb7dcdd129d70f99ec5627",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-fukuoka"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2799920",
+          "entryId": "2799920",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "甘王",
+            "あまおう"
+          ],
+          "senseEvidence": [
+            "amaou",
+            "strawberry cultivar"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12694.png",
+      "semanticReviewedMeaning": "福岡県で作られるイチゴのブランド名。品種名は福岡Ｓ６号。赤い実を食べる果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "すかいべりー",
+      "word": "スカイベリー",
+      "meaning": "栃木県で育てられたイチゴの販売名。品種名は栃木ｉ２７号。大きな実がなる果物。",
+      "imagequery": "スカイベリー イチゴ 果物",
+      "imagequery_en": "Skyberry strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12695,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html / https://www.pref.tochigi.lg.jp/g04/syouhyou/ichigo/kanri.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "3315f943970ef501710d7f796ec693b5b4224a3df0648ef58a32311b670b22e4",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-tochigi"
+        },
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g04/syouhyou/ichigo/kanri.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "92c1d1aa236c0bbcf2c3966f1d9d2b3276bc961ebac661f7e7230bea3d5df380",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-trademarks"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12695.png",
+      "semanticReviewedMeaning": "栃木県で育てられたイチゴの販売名。品種名は栃木ｉ２７号。大きな実がなる果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "みるきーべりー",
+      "word": "ミルキーベリー",
+      "meaning": "栃木県で育てられた白いイチゴの販売名。品種名は栃木ｉＷ１号。果物の一つ。",
+      "imagequery": "ミルキーベリー イチゴ 果物",
+      "imagequery_en": "Milky Berry strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12696,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html / https://www.pref.tochigi.lg.jp/g04/syouhyou/ichigo/kanri.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "3315f943970ef501710d7f796ec693b5b4224a3df0648ef58a32311b670b22e4",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-tochigi"
+        },
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g04/syouhyou/ichigo/kanri.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "92c1d1aa236c0bbcf2c3966f1d9d2b3276bc961ebac661f7e7230bea3d5df380",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-trademarks"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12696.png",
+      "semanticReviewedMeaning": "栃木県で育てられた白いイチゴの販売名。品種名は栃木ｉＷ１号。果物の一つ。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "とちおとめ",
+      "word": "とちおとめ",
+      "meaning": "栃木県で育てられたイチゴの品種。甘みと酸味のある果物。",
+      "imagequery": "とちおとめ イチゴ 果物",
+      "imagequery_en": "Tochiotome strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12697,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html / https://www.pref.miyagi.jp/soshiki/engei/mouikko.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2854351",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "3315f943970ef501710d7f796ec693b5b4224a3df0648ef58a32311b670b22e4",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-tochigi"
+        },
+        {
+          "url": "https://www.pref.miyagi.jp/soshiki/engei/mouikko.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "05a73d029eb0879225ee76b62abc55204e058168e36b637cfcf9398968bf494e",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-miyagi"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2854351",
+          "entryId": "2854351",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "とちおとめ"
+          ],
+          "senseEvidence": [
+            "tochiotome (Fragaria x ananassa)",
+            "strawberry cultivar from Tochigi Prefecture"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12697.png",
+      "semanticReviewedMeaning": "栃木県で育てられたイチゴの品種。甘みと酸味のある果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "とちあいか",
+      "word": "とちあいか",
+      "meaning": "栃木県で育てられたイチゴの品種。酸味が少なく甘みのある果物。",
+      "imagequery": "とちあいか イチゴ 果物",
+      "imagequery_en": "Tochiaika strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12698,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html / https://www.pref.tochigi.lg.jp/g04/syouhyou/ichigo/kanri.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "3315f943970ef501710d7f796ec693b5b4224a3df0648ef58a32311b670b22e4",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-tochigi"
+        },
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g04/syouhyou/ichigo/kanri.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "92c1d1aa236c0bbcf2c3966f1d9d2b3276bc961ebac661f7e7230bea3d5df380",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-trademarks"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12698.png",
+      "semanticReviewedMeaning": "栃木県で育てられたイチゴの品種。酸味が少なく甘みのある果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "にょほう",
+      "word": "女峰",
+      "meaning": "栃木県で育てられたイチゴの品種。酸味と香りがあり加工にも使う果物。",
+      "imagequery": "女峰 イチゴ 果物",
+      "imagequery_en": "Nyoho strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12699,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html / https://www.pref.miyagi.jp/soshiki/engei/mouikko.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "3315f943970ef501710d7f796ec693b5b4224a3df0648ef58a32311b670b22e4",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-tochigi"
+        },
+        {
+          "url": "https://www.pref.miyagi.jp/soshiki/engei/mouikko.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "05a73d029eb0879225ee76b62abc55204e058168e36b637cfcf9398968bf494e",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-miyagi"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12699.png",
+      "semanticReviewedMeaning": "栃木県で育てられたイチゴの品種。酸味と香りがあり加工にも使う果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "とよのか",
+      "word": "とよのか",
+      "meaning": "九州などで広く栽培されてきたイチゴの品種。香りのよい果物。",
+      "imagequery": "とよのか イチゴ 果物",
+      "imagequery_en": "Toyonoka strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12700,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0300/0301/001491.html / https://www.pref.kumamoto.jp/soshiki/75/846.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0300/0301/001491.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b05c226d279c26c16a3e4f3df3744a2aaece865871400574d7972894db168c8c",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-oic"
+        },
+        {
+          "url": "https://www.pref.kumamoto.jp/soshiki/75/846.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "1d0d453b4fe614ccf7f74b54df10547d74067c8cd43e59c3c1cee81a678d08b1",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-kumamoto"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12700.png",
+      "semanticReviewedMeaning": "九州などで広く栽培されてきたイチゴの品種。香りのよい果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "さちのか",
+      "word": "さちのか",
+      "meaning": "とよのかなどを親にして生まれたイチゴの品種。赤い実がなる果物。",
+      "imagequery": "さちのか イチゴ 果物",
+      "imagequery_en": "Sachinoka strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12701,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0300/0301/index.html / https://www.naro.go.jp/collab/breed/0300/0301/001491.html / https://www.pref.miyagi.jp/soshiki/engei/mouikko.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0300/0301/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b05798ac14ce23973f32149447242c27647db2dcf0b3fbaafba43154d458c188",
+          "type": "official-name-list",
+          "sourceKey": "naro-strawberry"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0300/0301/001491.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b05c226d279c26c16a3e4f3df3744a2aaece865871400574d7972894db168c8c",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-oic"
+        },
+        {
+          "url": "https://www.pref.miyagi.jp/soshiki/engei/mouikko.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "05a73d029eb0879225ee76b62abc55204e058168e36b637cfcf9398968bf494e",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-miyagi"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12701.png",
+      "semanticReviewedMeaning": "とよのかなどを親にして生まれたイチゴの品種。赤い実がなる果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "べにほっぺ",
+      "word": "紅ほっぺ",
+      "meaning": "静岡県で育てられたイチゴの品種。果肉も赤くなり甘酸っぱい果物。",
+      "imagequery": "紅ほっぺ イチゴ 果物",
+      "imagequery_en": "Benihoppe strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12702,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.jashimizu.or.jp/work/list/friuts/strawberry/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.jashimizu.or.jp/work/list/friuts/strawberry/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0be888639d525d934d04cc04335bee07d210486851144634e662ce29b4d8254",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-shizuoka"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12702.png",
+      "semanticReviewedMeaning": "静岡県で育てられたイチゴの品種。果肉も赤くなり甘酸っぱい果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "あきひめ",
+      "word": "章姫",
+      "meaning": "静岡県で育てられたイチゴの品種。細長い形で酸味が少ない果物。",
+      "imagequery": "章姫 イチゴ 果物",
+      "imagequery_en": "Akihime strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12703,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.jashimizu.or.jp/work/list/friuts/strawberry/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.jashimizu.or.jp/work/list/friuts/strawberry/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0be888639d525d934d04cc04335bee07d210486851144634e662ce29b4d8254",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-shizuoka"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12703.png",
+      "semanticReviewedMeaning": "静岡県で育てられたイチゴの品種。細長い形で酸味が少ない果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "かおりの",
+      "word": "かおり野",
+      "meaning": "三重県で育てられたイチゴの品種。甘い香りのある果物。",
+      "imagequery": "かおり野 イチゴ 果物",
+      "imagequery_en": "Kaorino strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12704,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.saitama.lg.jp/saitama-wassyoi/enjoy/news041227.html / https://www.pref.mie.lg.jp/app/db/d000401/detail.asp?no=89",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/saitama-wassyoi/enjoy/news041227.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "8be3594f3cdc45c9d258e080a3753057baec29e1ca5e10e72a0e6be9877c8cee",
+          "type": "official-name-list",
+          "sourceKey": "saitama-formal"
+        },
+        {
+          "url": "https://www.pref.mie.lg.jp/app/db/d000401/detail.asp?no=89",
+          "retrievedAt": "2026-10-17",
+          "sha256": "8e0c9e5206ad338cd49b3e0036a7ca7ad58234aa442ad8ac7ce3d5f202f33cf3",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-mie"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12704.png",
+      "semanticReviewedMeaning": "三重県で育てられたイチゴの品種。甘い香りのある果物。"
+    },
+    {
+      "category": "イチゴ",
+      "reading": "きらぴか",
+      "word": "きらぴ香",
+      "meaning": "静岡県で育てられたイチゴの品種。つやと香りのある果物。",
+      "imagequery": "きらぴ香 イチゴ 果物",
+      "imagequery_en": "Kirapika strawberry",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "strawberry",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12705,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.jashimizu.or.jp/work/list/friuts/strawberry/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.jashimizu.or.jp/work/list/friuts/strawberry/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0be888639d525d934d04cc04335bee07d210486851144634e662ce29b4d8254",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-shizuoka"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12705.png",
+      "semanticReviewedMeaning": "静岡県で育てられたイチゴの品種。つやと香りのある果物。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "柑橘4種とイチゴ12品種の皮色、果肉、葉、白い花を確認。ミルキーベリーは白い実、章姫は長い形、紅ほっぺは赤い断面。",
+  "approvedIds": [
+    12690,
+    12691,
+    12692,
+    12693,
+    12694,
+    12695,
+    12696,
+    12697,
+    12698,
+    12699,
+    12700,
+    12701,
+    12702,
+    12703,
+    12704,
+    12705
+  ],
+  "semanticSheetSha256": "4db5500da5af2ecc73d80a78a1ec7f2c3ed49d4c5778a2ffb7204df7be4aa030",
+  "reviewedAt": "2026-10-17"
+}

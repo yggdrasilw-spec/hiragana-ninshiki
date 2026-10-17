@@ -1,0 +1,731 @@
+{
+  "sheet": 17,
+  "sourceSheet": "sheets/biology20261017-sheet17.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. ターサイ (Tatsoi): 地面に広がるように濃い緑色の葉が育つ野菜。\n2. からし菜 (Mustard greens): 辛みのある葉を食べる野菜。種からからしも作る。\n3. 高菜 (Takana mustard): 大きな葉や茎を漬物などにして食べるカラシナの仲間の野菜。\n4. 野沢菜 (Nozawana): 長野県などで栽培され葉や茎を漬物にする野菜。\n5. 芽キャベツ (Brussels sprouts): 茎につく小さな丸い芽を食べるキャベツの仲間の野菜。\n6. ケール (Kale): 大きく広がる葉を持つキャベツの仲間の野菜。\n7. コールラビ (Kohlrabi): 地上の茎が丸く太るキャベツの仲間の野菜。\n8. ロマネスコ (Romanesco broccoli): とがった小さなかたまりが規則正しく並ぶカリフラワーの仲間の野菜。\n9. リーフレタス (Leaf lettuce): 葉が丸い玉にならず広がって育つレタスの仲間の野菜。\n10. サニーレタス (Red leaf lettuce): 葉の先が赤紫色になる葉レタスの呼び名。野菜の一つ。\n11. サンチュ (Stem lettuce leaves): 葉を一枚ずつ取って食べるレタスの仲間の野菜。\n12. エンダイブ (Endive): 少し苦みのある葉を食べるレタスに近い仲間の野菜。\n13. トレビス (Radicchio): 赤紫色の葉が丸くまとまるチコリーの仲間の野菜。\n14. チコリー (Chicory): ほろ苦い葉や芽などを食べる野菜。\n15. ビーツ (Beetroot): 赤紫色の根がよく知られる野菜。黄色い根の種類もある。\n16. ラディッシュ (Radish): 小さな丸い根などを食べる大根の仲間の野菜。ハツカダイコンとも呼ばれる。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet17-crop.json",
+  "tiles": [
+    {
+      "category": "野菜",
+      "reading": "たーさい",
+      "word": "ターサイ",
+      "meaning": "地面に広がるように濃い緑色の葉が育つ野菜。",
+      "imagequery": "ターサイ 野菜",
+      "imagequery_en": "Tatsoi",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12748,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2828039",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "2242893c740fda748c0e64a2de2a902663201dec25a6915bc619b491f9777727",
+          "type": "official-name-list",
+          "sourceKey": "rice-tohoku"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2828039",
+          "entryId": "2828039",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "塌菜",
+            "たあさい",
+            "タアサイ",
+            "ターサイ"
+          ],
+          "senseEvidence": [
+            "tatsoi (Brassica rapa)",
+            "tah tsai",
+            "rosette bok choy"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12748.png",
+      "semanticReviewedMeaning": "地面に広がるように濃い緑色の葉が育つ野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "からしな",
+      "word": "からし菜",
+      "meaning": "辛みのある葉を食べる野菜。種からからしも作る。",
+      "imagequery": "からし菜 野菜",
+      "imagequery_en": "Mustard greens",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12749,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1715460",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1715460",
+          "entryId": "1715460",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "からし菜",
+            "芥子菜",
+            "芥菜",
+            "からしな",
+            "カラシナ"
+          ],
+          "senseEvidence": [
+            "Indian mustard (Brassica juncea)",
+            "Chinese mustard",
+            "leaf mustard",
+            "brown mustard",
+            "mustard greens"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12749.png",
+      "semanticReviewedMeaning": "辛みのある葉を食べる野菜。種からからしも作る。"
+    },
+    {
+      "category": "野菜",
+      "reading": "たかな",
+      "word": "高菜",
+      "meaning": "大きな葉や茎を漬物などにして食べるカラシナの仲間の野菜。",
+      "imagequery": "高菜 野菜",
+      "imagequery_en": "Takana mustard",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12750,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1809250",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1809250",
+          "entryId": "1809250",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "高菜",
+            "たかな",
+            "タカナ"
+          ],
+          "senseEvidence": [
+            "leaf mustard (Brassica juncea var. integrifolia)",
+            "mustard greens"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12750.png",
+      "semanticReviewedMeaning": "大きな葉や茎を漬物などにして食べるカラシナの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "のざわな",
+      "word": "野沢菜",
+      "meaning": "長野県などで栽培され葉や茎を漬物にする野菜。",
+      "imagequery": "野沢菜 野菜",
+      "imagequery_en": "Nozawana",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12751,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2540130",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2540130",
+          "entryId": "2540130",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "野沢菜",
+            "のざわな",
+            "ノザワナ"
+          ],
+          "senseEvidence": [
+            "rape (Brassica rapa)",
+            "common rape",
+            "cole",
+            "coleseed",
+            "coleseed greens"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12751.png",
+      "semanticReviewedMeaning": "長野県などで栽培され葉や茎を漬物にする野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "めきゃべつ",
+      "word": "芽キャベツ",
+      "meaning": "茎につく小さな丸い芽を食べるキャベツの仲間の野菜。",
+      "imagequery": "芽キャベツ 野菜",
+      "imagequery_en": "Brussels sprouts",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12752,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1976050",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1976050",
+          "entryId": "1976050",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "芽キャベツ",
+            "めキャベツ",
+            "メキャベツ"
+          ],
+          "senseEvidence": [
+            "Brussels sprout (Brassica oleracea var. gemmifera)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12752.png",
+      "semanticReviewedMeaning": "茎につく小さな丸い芽を食べるキャベツの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "けーる",
+      "word": "ケール",
+      "meaning": "大きく広がる葉を持つキャベツの仲間の野菜。",
+      "imagequery": "ケール 野菜",
+      "imagequery_en": "Kale",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12753,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2461570",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2461570",
+          "entryId": "2461570",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ケール"
+          ],
+          "senseEvidence": [
+            "kale (Brassica oleracea var. acephala)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12753.png",
+      "semanticReviewedMeaning": "大きく広がる葉を持つキャベツの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "こーるらび",
+      "word": "コールラビ",
+      "meaning": "地上の茎が丸く太るキャベツの仲間の野菜。",
+      "imagequery": "コールラビ 野菜",
+      "imagequery_en": "Kohlrabi",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12754,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2488210",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2488210",
+          "entryId": "2488210",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "コールラビ"
+          ],
+          "senseEvidence": [
+            "kohlrabi"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12754.png",
+      "semanticReviewedMeaning": "地上の茎が丸く太るキャベツの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ろまねすこ",
+      "word": "ロマネスコ",
+      "meaning": "とがった小さなかたまりが規則正しく並ぶカリフラワーの仲間の野菜。",
+      "imagequery": "ロマネスコ 野菜",
+      "imagequery_en": "Romanesco broccoli",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12755,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2828347",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2828347",
+          "entryId": "2828347",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ロマネスコ"
+          ],
+          "senseEvidence": [
+            "Broccolo Romanesco (Brassica oleracea var. botrytis)",
+            "Romanesco broccoli",
+            "Roman cauliflower",
+            "Romanesque cauliflower",
+            "Romanesco"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12755.png",
+      "semanticReviewedMeaning": "とがった小さなかたまりが規則正しく並ぶカリフラワーの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "りーふれたす",
+      "word": "リーフレタス",
+      "meaning": "葉が丸い玉にならず広がって育つレタスの仲間の野菜。",
+      "imagequery": "リーフレタス 野菜",
+      "imagequery_en": "Leaf lettuce",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12756,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12756.png",
+      "semanticReviewedMeaning": "葉が丸い玉にならず広がって育つレタスの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "さにーれたす",
+      "word": "サニーレタス",
+      "meaning": "葉の先が赤紫色になる葉レタスの呼び名。野菜の一つ。",
+      "imagequery": "サニーレタス 野菜",
+      "imagequery_en": "Red leaf lettuce",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12757,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2498100",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2498100",
+          "entryId": "2498100",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "サニーレタス"
+          ],
+          "senseEvidence": [
+            "lollo rosso",
+            "red-leaf lettuce"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12757.png",
+      "semanticReviewedMeaning": "葉の先が赤紫色になる葉レタスの呼び名。野菜の一つ。"
+    },
+    {
+      "category": "野菜",
+      "reading": "さんちゅ",
+      "word": "サンチュ",
+      "meaning": "葉を一枚ずつ取って食べるレタスの仲間の野菜。",
+      "imagequery": "サンチュ 野菜",
+      "imagequery_en": "Stem lettuce leaves",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12758,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2186430",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2186430",
+          "entryId": "2186430",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "サンチュ"
+          ],
+          "senseEvidence": [
+            "Korean lettuce"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12758.png",
+      "semanticReviewedMeaning": "葉を一枚ずつ取って食べるレタスの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "えんだいぶ",
+      "word": "エンダイブ",
+      "meaning": "少し苦みのある葉を食べるレタスに近い仲間の野菜。",
+      "imagequery": "エンダイブ 野菜",
+      "imagequery_en": "Endive",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12759,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1031120",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1031120",
+          "entryId": "1031120",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "エンダイブ"
+          ],
+          "senseEvidence": [
+            "endive"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12759.png",
+      "semanticReviewedMeaning": "少し苦みのある葉を食べるレタスに近い仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "とれびす",
+      "word": "トレビス",
+      "meaning": "赤紫色の葉が丸くまとまるチコリーの仲間の野菜。",
+      "imagequery": "トレビス 野菜",
+      "imagequery_en": "Radicchio",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12760,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2841721",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2841721",
+          "entryId": "2841721",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "トレビス",
+            "トレヴィス"
+          ],
+          "senseEvidence": [
+            "radicchio (Cichorium intybus var. foliosum)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12760.png",
+      "semanticReviewedMeaning": "赤紫色の葉が丸くまとまるチコリーの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ちこりー",
+      "word": "チコリー",
+      "meaning": "ほろ苦い葉や芽などを食べる野菜。",
+      "imagequery": "チコリー 野菜",
+      "imagequery_en": "Chicory",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12761,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2072120",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2072120",
+          "entryId": "2072120",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "チコリ",
+            "チコリー"
+          ],
+          "senseEvidence": [
+            "chicory"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12761.png",
+      "semanticReviewedMeaning": "ほろ苦い葉や芽などを食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "びーつ",
+      "word": "ビーツ",
+      "meaning": "赤紫色の根がよく知られる野菜。黄色い根の種類もある。",
+      "imagequery": "ビーツ 野菜",
+      "imagequery_en": "Beetroot",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12762,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2479020",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2479020",
+          "entryId": "2479020",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ビーツ"
+          ],
+          "senseEvidence": [
+            "beets",
+            "beats"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12762.png",
+      "semanticReviewedMeaning": "赤紫色の根がよく知られる野菜。黄色い根の種類もある。"
+    },
+    {
+      "category": "野菜",
+      "reading": "らでぃっしゅ",
+      "word": "ラディッシュ",
+      "meaning": "小さな丸い根などを食べる大根の仲間の野菜。ハツカダイコンとも呼ばれる。",
+      "imagequery": "ラディッシュ 野菜",
+      "imagequery_en": "Radish",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12763,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1139360",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1139360",
+          "entryId": "1139360",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ラディッシュ"
+          ],
+          "senseEvidence": [
+            "radish"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12763.png",
+      "semanticReviewedMeaning": "小さな丸い根などを食べる大根の仲間の野菜。ハツカダイコンとも呼ばれる。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "葉菜の葉形・色、芽キャベツのつき方、コールラビの肥大茎、ロマネスコの花蕾、ビーツとラディッシュの断面を確認。",
+  "approvedIds": [
+    12748,
+    12749,
+    12750,
+    12751,
+    12752,
+    12753,
+    12754,
+    12755,
+    12756,
+    12757,
+    12758,
+    12759,
+    12760,
+    12761,
+    12762,
+    12763
+  ],
+  "semanticSheetSha256": "fdb201eafbfa9dfbeb67a0fa19a01780e22521460c0d0d3ec766e3617a1e8d06",
+  "reviewedAt": "2026-10-17"
+}

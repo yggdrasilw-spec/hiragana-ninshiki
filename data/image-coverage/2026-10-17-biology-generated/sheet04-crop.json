@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "6dc6d00029d228e8277fd22898f93985dd98388ff6914ff915e9d5b4bfd6239e",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      9
+    ],
+    [
+      308,
+      322
+    ],
+    [
+      620,
+      634
+    ],
+    [
+      932,
+      946
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      309,
+      320
+    ],
+    [
+      619,
+      630
+    ],
+    [
+      936,
+      942
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        9,
+        5,
+        308,
+        309
+      ],
+      "edgeInkFraction": 0.04985456660849331,
+      "contentFraction": 0.58760561520859,
+      "file": "biology20261017-word-12440.png",
+      "sha256": "264c292c056f7288dc1ea94607502def6046d8ebd07f5a0d335d678ceb1347f8"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        5,
+        620,
+        309
+      ],
+      "edgeInkFraction": 0.0655011655011655,
+      "contentFraction": 0.4545544860473331,
+      "file": "biology20261017-word-12441.png",
+      "sha256": "4b899422a6dedf2eb21729f6973930ddf17311626fa823b2cc6117cd35b77567"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        634,
+        5,
+        932,
+        309
+      ],
+      "edgeInkFraction": 0.060722610722610725,
+      "contentFraction": 0.35423657718120805,
+      "file": "biology20261017-word-12442.png",
+      "sha256": "3647eb5ac114d22042a02687bf82f82ead6bbc4deb4618f4c3242769599aedf2"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        946,
+        5,
+        1245,
+        309
+      ],
+      "edgeInkFraction": 0.03816172193135544,
+      "contentFraction": 0.3711934518570674,
+      "file": "biology20261017-word-12443.png",
+      "sha256": "619da56a866927c1b923d4a68f88187e013c2761a559846eb2c343eecd004c4a"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        9,
+        320,
+        308,
+        619
+      ],
+      "edgeInkFraction": 0.09184272300469483,
+      "contentFraction": 0.5673873894028031,
+      "file": "biology20261017-word-12444.png",
+      "sha256": "c650af5524ef690faf5e8dd05b3ad2472f8f1499032e29a3dd50dbfc16c92cec"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        320,
+        620,
+        619
+      ],
+      "edgeInkFraction": 0.07654320987654321,
+      "contentFraction": 0.38463783080065544,
+      "file": "biology20261017-word-12445.png",
+      "sha256": "6a3cf5a69ce002c5d8c37ce477d31b838beabb4243f8b398bd42a8d8382bdcf6"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        634,
+        320,
+        932,
+        619
+      ],
+      "edgeInkFraction": 0.11675485008818343,
+      "contentFraction": 0.5282148548854122,
+      "file": "biology20261017-word-12446.png",
+      "sha256": "74605ab221f75a888a71f7a8d4c4e27c0f1cc2648db3e53f727219f4dadf9b55"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        946,
+        320,
+        1245,
+        619
+      ],
+      "edgeInkFraction": 0.08262910798122065,
+      "contentFraction": 0.4313933848614669,
+      "file": "biology20261017-word-12447.png",
+      "sha256": "5b741e822c61f65386b75db94fc39b252590eb7c969b192cd33c8575038391e8"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        9,
+        630,
+        308,
+        936
+      ],
+      "edgeInkFraction": 0.022956521739130435,
+      "contentFraction": 0.5604192624652983,
+      "file": "biology20261017-word-12448.png",
+      "sha256": "4e99910702416965bec2093080f71fbc63e1ebf4669559aea784690397a3d603"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        630,
+        620,
+        936
+      ],
+      "edgeInkFraction": 0.08530778164924506,
+      "contentFraction": 0.6160788700267579,
+      "file": "biology20261017-word-12449.png",
+      "sha256": "d23665b606ddb22ecc40c6f8a0008d4bfe771a6ed79eaabbcfd5ccce364b5d5b"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        634,
+        630,
+        932,
+        936
+      ],
+      "edgeInkFraction": 0.025493612078977934,
+      "contentFraction": 0.5266263104794491,
+      "file": "biology20261017-word-12450.png",
+      "sha256": "c0f60799a5537a9f518e840a3aa02b5a269b07b0e3e8d0e0a686eaebca7a410b"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        946,
+        630,
+        1245,
+        936
+      ],
+      "edgeInkFraction": 0.042666666666666665,
+      "contentFraction": 0.5573698821780663,
+      "file": "biology20261017-word-12451.png",
+      "sha256": "fa07dcab25e6894154339630d6ccea6d7b426887931b0eced7e2174df8337f81"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        9,
+        942,
+        308,
+        1248
+      ],
+      "edgeInkFraction": 0.01855072463768116,
+      "contentFraction": 0.5996677377751547,
+      "file": "biology20261017-word-12452.png",
+      "sha256": "64441fe766841bfb5294e139c7f83d8a795f0146773298e87604e379cd5413a7"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        942,
+        620,
+        1248
+      ],
+      "edgeInkFraction": 0.02938443670150987,
+      "contentFraction": 0.5196078431372549,
+      "file": "biology20261017-word-12453.png",
+      "sha256": "239a3ec98bd7898a22c6e250dbfff928ad93c466cab489930854596309e4e3ac"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        634,
+        942,
+        932,
+        1248
+      ],
+      "edgeInkFraction": 0.01602787456445993,
+      "contentFraction": 0.4139360442163443,
+      "file": "biology20261017-word-12454.png",
+      "sha256": "8bade17f64a0cc7568fdf7638fcfd62f9aaa4b76389510d83bc4d4eb6a585dd1"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        946,
+        942,
+        1245,
+        1248
+      ],
+      "edgeInkFraction": 0.010724637681159421,
+      "contentFraction": 0.5641462828163596,
+      "file": "biology20261017-word-12455.png",
+      "sha256": "edf4821afdb453ae543a482d8221985455948b45ecb50268827be3b026285ce6"
+    }
+  ]
+}

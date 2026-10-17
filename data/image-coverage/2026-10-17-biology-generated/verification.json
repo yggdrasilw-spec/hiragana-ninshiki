@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-17",
+  "passed": true,
+  "csvSha256": "461ac5b52e4b648cdf6ccdf39a13ad461f7acbaadbfc288142fe80d903d0d27e",
+  "addedMeanings": 594,
+  "newImages": 578,
+  "sharedImageMeanings": 16,
+  "addedSnakes": 86,
+  "hirosima2026RiceBrands": 38,
+  "originalRowsPreserved": 12300,
+  "approvedSheets": 37,
+  "cropReportsRecomputedAtImport": true,
+  "browser": {
+    "passed": true,
+    "results": [
+      {
+        "width": 1280,
+        "displayed": {
+          "failures": [],
+          "meanings": 594,
+          "savedImages": 594
+        },
+        "catalog": {
+          "failures": [],
+          "meanings": 594
+        },
+        "gradeBands": 5,
+        "playerInputAboveLevel": true,
+        "endingNRule": true,
+        "homonyms": true
+      },
+      {
+        "width": 390,
+        "displayed": {
+          "failures": [],
+          "meanings": 594,
+          "savedImages": 594
+        },
+        "catalog": {
+          "failures": [],
+          "meanings": 594
+        },
+        "gradeBands": 5,
+        "playerInputAboveLevel": true,
+        "endingNRule": true,
+        "homonyms": true
+      }
+    ]
+  },
+  "checks": [
+    {
+      "command": "node tests/shiritori-data.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-vocabulary.cjs",
+      "passed": true
+    },
+    {
+      "command": "python -X utf8 tests/shiritori-grade-policy.py",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-biology-cultivars.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-biology-images.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-import-history.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-image-policy.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-image-review.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-import-quality.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-biology-cultivars-browser.cjs",
+      "passed": true
+    },
+    {
+      "command": "git diff --check",
+      "passed": true
+    }
+  ],
+  "browserRuntime": "Bundled Playwright with local Microsoft Edge; no external image network required",
+  "catalogScope": "new",
+  "publication": "local-worktree"
+}

@@ -9,7 +9,7 @@ spec = importlib.util.spec_from_file_location('grade_builder', ROOT / 'scripts/b
 builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
 runtime, review = builder.build()
-assert len(review) == 12300
+assert len(review) == len((ROOT / 'whitelist.csv').read_text(encoding='utf-8').splitlines()) - 1
 assert all(row['status'] == 'assigned' for row in review)
 assert runtime == builder.build()[0]
 

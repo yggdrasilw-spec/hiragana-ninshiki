@@ -1,0 +1,733 @@
+{
+  "sheet": 15,
+  "sourceSheet": "sheets/biology20261017-sheet15.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. ホウネンエビ (Branchinella kugenumaensis): 水田などで腹側を上にして泳ぐ小さな甲殻類。\n2. ブロッコリー (Broccoli): 緑色の小さなつぼみの集まりや茎を食べる野菜。\n3. 小松菜 (Komatsuna): 緑色の葉と茎を食べる野菜。葉が広がって育つ。\n4. セロリ (Celery): 香りの強い葉柄や葉を食べる野菜。\n5. 春菊 (Glebionis coronaria): 切れ込みのある香りの強い葉を食べる野菜。\n6. カリフラワー (Cauliflower): 白色などの小さなつぼみの集まりを食べる野菜。\n7. チンゲンサイ (Bok choy): 葉のつけ根が厚く淡い緑色になる野菜。\n8. 水菜 (Mizuna): 細い茎と深い切れ込みのある葉を食べる野菜。\n9. スイートコーン (Sweet corn): 甘い粒を食べるトウモロコシの仲間の野菜。若いうちに収穫する。\n10. 里芋 (Taro): 地下の茎が太ってできるいもを食べる野菜。加熱するとねばりが出る。\n11. 山の芋 (Dioscorea japonica): 地下のいもを食べる植物や野菜の呼び名。ヤマノイモの仲間を指すこともある。\n12. さやいんげん (Green bean): インゲンマメの若いさやを食べる野菜。\n13. えんどう (Pea): 若いさやや中の豆を食べる野菜。\n14. しょうが (Ginger): 地下の茎を使う香りと辛みのある野菜。\n15. オクラ (Okra): 角ばったさやや丸いさやを食べる野菜。切るとねばりが出る。\n16. ししとう (Shishito pepper): 小さな緑色の実を食べるトウガラシの仲間の野菜。辛い実が混じることもある。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet15-crop.json",
+  "tiles": [
+    {
+      "category": "その他生物",
+      "reading": "ほうねんえび",
+      "word": "ホウネンエビ",
+      "meaning": "水田などで腹側を上にして泳ぐ小さな甲殻類。",
+      "imagequery": "ホウネンエビ 動物",
+      "imagequery_en": "Branchinella kugenumaensis",
+      "kind": "species-or-group",
+      "sourceGroup": "other",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12616,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://api.gbif.org/v1/species/match?name=Branchinella%20kugenumaensis",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?name=Branchinella%20kugenumaensis",
+          "retrievedAt": "2026-10-17",
+          "sha256": "8797e0b53de38d5658d197bccd1741174f42d7750d727f7802fb3ed2bf8a7453",
+          "type": "taxon-match",
+          "taxon": {
+            "usageKey": 2235222,
+            "scientificName": "Branchinella kugenumaensis (Ishikawa, 1895)",
+            "canonicalName": "Branchinella kugenumaensis",
+            "rank": "SPECIES",
+            "status": "ACCEPTED",
+            "matchType": "EXACT",
+            "confidence": 99
+          }
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12616.png",
+      "semanticReviewedMeaning": "水田などで腹側を上にして泳ぐ小さな甲殻類。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ぶろっこりー",
+      "word": "ブロッコリー",
+      "meaning": "緑色の小さなつぼみの集まりや茎を食べる野菜。",
+      "imagequery": "ブロッコリー 野菜",
+      "imagequery_en": "Broccoli",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12716,
+      "level": 1,
+      "grade": 1,
+      "lexicalSource": "https://www.takii.co.jp/tsk/y_garden/index.html / https://www.pref.saitama.lg.jp/saitama-wassyoi/know/recommend/item/yasai08.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2005660",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "低学年の日常の食生活で一般的に触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.takii.co.jp/tsk/y_garden/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "18b5375803b68084eabd11f1dfbd18083f6e74577281583caa1589dcdfadb4ea",
+          "type": "official-name-list",
+          "sourceKey": "takii-vegetables"
+        },
+        {
+          "url": "https://www.pref.saitama.lg.jp/saitama-wassyoi/know/recommend/item/yasai08.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "7478fb0f63d60784b341bb0ef6181822f80eb34c2c6544abcf346c9c45572092",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-saitama"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2005660",
+          "entryId": "2005660",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ブロコリ",
+            "ブロッコリー",
+            "ブロッコリ"
+          ],
+          "senseEvidence": [
+            "broccoli"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12716.png",
+      "semanticReviewedMeaning": "緑色の小さなつぼみの集まりや茎を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "こまつな",
+      "word": "小松菜",
+      "meaning": "緑色の葉と茎を食べる野菜。葉が広がって育つ。",
+      "imagequery": "小松菜 野菜",
+      "imagequery_en": "Komatsuna",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12717,
+      "level": 1,
+      "grade": 1,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1348300",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "低学年の日常の食生活で一般的に触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1348300",
+          "entryId": "1348300",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "小松菜",
+            "こまつな",
+            "コマツナ"
+          ],
+          "senseEvidence": [
+            "Japanese mustard spinach (Brassica rapa var. perviridis)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12717.png",
+      "semanticReviewedMeaning": "緑色の葉と茎を食べる野菜。葉が広がって育つ。"
+    },
+    {
+      "category": "野菜",
+      "reading": "せろり",
+      "word": "セロリ",
+      "meaning": "香りの強い葉柄や葉を食べる野菜。",
+      "imagequery": "セロリ 野菜",
+      "imagequery_en": "Celery",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12718,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1074960",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1074960",
+          "entryId": "1074960",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "セロリ",
+            "セルリー"
+          ],
+          "senseEvidence": [
+            "celery"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12718.png",
+      "semanticReviewedMeaning": "香りの強い葉柄や葉を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "しゅんぎく",
+      "word": "春菊",
+      "meaning": "切れ込みのある香りの強い葉を食べる野菜。",
+      "imagequery": "春菊 野菜",
+      "imagequery_en": "Glebionis coronaria",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12719,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1341070",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1341070",
+          "entryId": "1341070",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "春菊",
+            "しゅんぎく",
+            "シュンギク"
+          ],
+          "senseEvidence": [
+            "edible chrysanthemum (Glebionis coronaria)",
+            "crown daisy",
+            "garland chrysanthemum"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12719.png",
+      "semanticReviewedMeaning": "切れ込みのある香りの強い葉を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "かりふらわー",
+      "word": "カリフラワー",
+      "meaning": "白色などの小さなつぼみの集まりを食べる野菜。",
+      "imagequery": "カリフラワー 野菜",
+      "imagequery_en": "Cauliflower",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12720,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1038840",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1038840",
+          "entryId": "1038840",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "カリフラワー"
+          ],
+          "senseEvidence": [
+            "cauliflower"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12720.png",
+      "semanticReviewedMeaning": "白色などの小さなつぼみの集まりを食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ちんげんさい",
+      "word": "チンゲンサイ",
+      "meaning": "葉のつけ根が厚く淡い緑色になる野菜。",
+      "imagequery": "チンゲンサイ 野菜",
+      "imagequery_en": "Bok choy",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12721,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2072290",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2072290",
+          "entryId": "2072290",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "青梗菜",
+            "チンゲン菜",
+            "チンゲンサイ"
+          ],
+          "senseEvidence": [
+            "bok choy (Brassica rapa subsp. chinensis; esp. cultivars with green stalks)",
+            "pak choi"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12721.png",
+      "semanticReviewedMeaning": "葉のつけ根が厚く淡い緑色になる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "みずな",
+      "word": "水菜",
+      "meaning": "細い茎と深い切れ込みのある葉を食べる野菜。",
+      "imagequery": "水菜 野菜",
+      "imagequery_en": "Mizuna",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12722,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1737400",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1737400",
+          "entryId": "1737400",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "水菜",
+            "みず菜",
+            "みずな",
+            "ミズナ"
+          ],
+          "senseEvidence": [
+            "mizuna (Brassica rapa var. nipposinica)",
+            "potherb mustard",
+            "Elatostema umbellatum var. majus (variety of plant related to the nettles)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12722.png",
+      "semanticReviewedMeaning": "細い茎と深い切れ込みのある葉を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "すいーとこーん",
+      "word": "スイートコーン",
+      "meaning": "甘い粒を食べるトウモロコシの仲間の野菜。若いうちに収穫する。",
+      "imagequery": "スイートコーン 野菜",
+      "imagequery_en": "Sweet corn",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12723,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.takii.co.jp/tsk/y_garden/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.takii.co.jp/tsk/y_garden/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "18b5375803b68084eabd11f1dfbd18083f6e74577281583caa1589dcdfadb4ea",
+          "type": "official-name-list",
+          "sourceKey": "takii-vegetables"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12723.png",
+      "semanticReviewedMeaning": "甘い粒を食べるトウモロコシの仲間の野菜。若いうちに収穫する。"
+    },
+    {
+      "category": "野菜",
+      "reading": "さといも",
+      "word": "里芋",
+      "meaning": "地下の茎が太ってできるいもを食べる野菜。加熱するとねばりが出る。",
+      "imagequery": "里芋 野菜",
+      "imagequery_en": "Taro",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12724,
+      "level": 1,
+      "grade": 1,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1550780",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "低学年の日常の食生活で一般的に触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1550780",
+          "entryId": "1550780",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "里芋",
+            "さといも",
+            "サトイモ"
+          ],
+          "senseEvidence": [
+            "taro (Colocasia esculenta)",
+            "dasheen",
+            "eddo"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12724.png",
+      "semanticReviewedMeaning": "地下の茎が太ってできるいもを食べる野菜。加熱するとねばりが出る。"
+    },
+    {
+      "category": "野菜",
+      "reading": "やまのいも",
+      "word": "山の芋",
+      "meaning": "地下のいもを食べる植物や野菜の呼び名。ヤマノイモの仲間を指すこともある。",
+      "imagequery": "山の芋 野菜",
+      "imagequery_en": "Dioscorea japonica",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12725,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2194090",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2194090",
+          "entryId": "2194090",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "山の芋",
+            "薯蕷",
+            "藷蕷",
+            "やまのいも",
+            "しょよ",
+            "じょよ",
+            "じょうよ",
+            "ヤマノイモ"
+          ],
+          "senseEvidence": [
+            "Japanese yam (Dioscorea japonica)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12725.png",
+      "semanticReviewedMeaning": "地下のいもを食べる植物や野菜の呼び名。ヤマノイモの仲間を指すこともある。"
+    },
+    {
+      "category": "野菜",
+      "reading": "さやいんげん",
+      "word": "さやいんげん",
+      "meaning": "インゲンマメの若いさやを食べる野菜。",
+      "imagequery": "さやいんげん 野菜",
+      "imagequery_en": "Green bean",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12726,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281530",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1281530",
+          "entryId": "1281530",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "莢隠元",
+            "さやいんげん",
+            "サヤインゲン"
+          ],
+          "senseEvidence": [
+            "green beans",
+            "French beans",
+            "string beans"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12726.png",
+      "semanticReviewedMeaning": "インゲンマメの若いさやを食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "えんどう",
+      "word": "えんどう",
+      "meaning": "若いさやや中の豆を食べる野菜。",
+      "imagequery": "えんどう 野菜",
+      "imagequery_en": "Pea",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12727,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.takii.co.jp/tsk/y_garden/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1176760",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語は沿道：道路に沿った場所。。今回は野菜の意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "url": "https://www.takii.co.jp/tsk/y_garden/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "18b5375803b68084eabd11f1dfbd18083f6e74577281583caa1589dcdfadb4ea",
+          "type": "official-name-list",
+          "sourceKey": "takii-vegetables"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1176760",
+          "entryId": "1176760",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "沿道",
+            "えんどう"
+          ],
+          "senseEvidence": [
+            "roadside",
+            "wayside",
+            "route"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12727.png",
+      "semanticReviewedMeaning": "若いさやや中の豆を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "しょうが",
+      "word": "しょうが",
+      "meaning": "地下の茎を使う香りと辛みのある野菜。",
+      "imagequery": "しょうが 野菜",
+      "imagequery_en": "Ginger",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12728,
+      "level": 1,
+      "grade": 1,
+      "lexicalSource": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1347500",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "低学年の日常の食生活で一般的に触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1347500",
+          "entryId": "1347500",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "唱歌",
+            "しょうか",
+            "しょうが"
+          ],
+          "senseEvidence": [
+            "singing",
+            "song",
+            "music class (at pre-WWII schools)",
+            "song for music classes"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12728.png",
+      "semanticReviewedMeaning": "地下の茎を使う香りと辛みのある野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "おくら",
+      "word": "オクラ",
+      "meaning": "角ばったさやや丸いさやを食べる野菜。切るとねばりが出る。",
+      "imagequery": "オクラ 野菜",
+      "imagequery_en": "Okra",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12729,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.takii.co.jp/tsk/y_garden/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1034270",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語はおくら：穀物などをしまっておく建物。。今回は野菜の意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "url": "https://www.takii.co.jp/tsk/y_garden/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "18b5375803b68084eabd11f1dfbd18083f6e74577281583caa1589dcdfadb4ea",
+          "type": "official-name-list",
+          "sourceKey": "takii-vegetables"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1034270",
+          "entryId": "1034270",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "オクラ"
+          ],
+          "senseEvidence": [
+            "okra (Abelmoschus esculentus)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12729.png",
+      "semanticReviewedMeaning": "角ばったさやや丸いさやを食べる野菜。切るとねばりが出る。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ししとう",
+      "word": "ししとう",
+      "meaning": "小さな緑色の実を食べるトウガラシの仲間の野菜。辛い実が混じることもある。",
+      "imagequery": "ししとう 野菜",
+      "imagequery_en": "Shishito pepper",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12731,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1311090",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1311090",
+          "entryId": "1311090",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "しし唐",
+            "獅子唐",
+            "ししとう",
+            "シシトウ"
+          ],
+          "senseEvidence": [
+            "shishito pepper (variety of Capsicum annuum)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12731.png",
+      "semanticReviewedMeaning": "小さな緑色の実を食べるトウガラシの仲間の野菜。辛い実が混じることもある。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "ホウネンエビと各野菜の葉柄、花蕾、果実、芋、さやの形を確認。",
+  "approvedIds": [
+    12616,
+    12716,
+    12717,
+    12718,
+    12719,
+    12720,
+    12721,
+    12722,
+    12723,
+    12724,
+    12725,
+    12726,
+    12727,
+    12728,
+    12729,
+    12731
+  ],
+  "semanticSheetSha256": "54d2258118677efb53c057ba4c2668dc3f568dfe27495c92045ed8cb052e138c",
+  "reviewedAt": "2026-10-17"
+}

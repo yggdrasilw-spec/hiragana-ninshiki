@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "a0835d2fdd111baa59ed3fc3af728f01e6a30c4ee2d51dd3e69c42f1709879bc",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      9
+    ],
+    [
+      307,
+      322
+    ],
+    [
+      620,
+      633
+    ],
+    [
+      932,
+      946
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      310,
+      318
+    ],
+    [
+      624,
+      630
+    ],
+    [
+      932,
+      944
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        9,
+        5,
+        307,
+        310
+      ],
+      "edgeInkFraction": 0.03461314717859221,
+      "contentFraction": 0.45270106722411707,
+      "file": "biology20261017-word-12882.png",
+      "sha256": "38e23a86479521399248fb0660be90f71448774728ccd122787b5afa86c3885f"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        5,
+        620,
+        310
+      ],
+      "edgeInkFraction": 0.043280977312390924,
+      "contentFraction": 0.5418417867752228,
+      "file": "biology20261017-word-12883.png",
+      "sha256": "feacd7adde665ce5d084e70f9c896b11bf68a238e9074f276c154e0505efb6de"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        633,
+        5,
+        932,
+        310
+      ],
+      "edgeInkFraction": 0.024796747967479674,
+      "contentFraction": 0.27789900762103187,
+      "file": "biology20261017-word-12884.png",
+      "sha256": "f048a97923423cd8d0734e01871f03d695e8fdb0ee105d20b2f199221404f2a0"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        946,
+        5,
+        1245,
+        310
+      ],
+      "edgeInkFraction": 0.0367595818815331,
+      "contentFraction": 0.4495202587861177,
+      "file": "biology20261017-word-12885.png",
+      "sha256": "a41761c4be4cf2a4c09d441109b171ebc263dae7f2a3d788835b20dbe94e5fe8"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        9,
+        318,
+        307,
+        624
+      ],
+      "edgeInkFraction": 0.0675377468060395,
+      "contentFraction": 0.3136048602886345,
+      "file": "biology20261017-word-12886.png",
+      "sha256": "93a8ff74196a3a8684107f85b59ea380c2b553d763b086c7ce7c5a6356e94e21"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        318,
+        620,
+        624
+      ],
+      "edgeInkFraction": 0.0421602787456446,
+      "contentFraction": 0.3945584945387551,
+      "file": "biology20261017-word-12887.png",
+      "sha256": "db9d532a04f5bae3765435d677f224ba85f6fb81c1edb66226c966254268565a"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        633,
+        318,
+        932,
+        624
+      ],
+      "edgeInkFraction": 0.049507246376811594,
+      "contentFraction": 0.43055282313594334,
+      "file": "biology20261017-word-12888.png",
+      "sha256": "0d985e4363692caba39e9d83abc4ae1108bc62afb9367d7928019aca131bb0fa"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        946,
+        318,
+        1245,
+        624
+      ],
+      "edgeInkFraction": 0.035188405797101446,
+      "contentFraction": 0.41205980720047214,
+      "file": "biology20261017-word-12889.png",
+      "sha256": "9181fb48c896c672e1f81537956e436e237e49bbf0229f34ed1cea024290306f"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        9,
+        630,
+        307,
+        932
+      ],
+      "edgeInkFraction": 0.04473684210526316,
+      "contentFraction": 0.5735921596515401,
+      "file": "biology20261017-word-12890.png",
+      "sha256": "bfeac80f47afcc2dca9995cd87ef3450a2b3753303d726adf9f326f5fd8ea0d2"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        630,
+        620,
+        932
+      ],
+      "edgeInkFraction": 0.023216374269005847,
+      "contentFraction": 0.2333770389795102,
+      "file": "biology20261017-word-12891.png",
+      "sha256": "675a81d129c088743f1532f35fc6e9f48733fdd920a56c0a11b1972bdec8d332"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        633,
+        630,
+        932,
+        932
+      ],
+      "edgeInkFraction": 0.021891418563922942,
+      "contentFraction": 0.2529181155728809,
+      "file": "biology20261017-word-12892.png",
+      "sha256": "c6f30c1e68df502341b57ce0749ffd68a10a940e8464b94df5908a186be9ff90"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        946,
+        630,
+        1245,
+        932
+      ],
+      "edgeInkFraction": 0.18423817863397549,
+      "contentFraction": 0.5620501007774259,
+      "file": "biology20261017-word-12893.png",
+      "sha256": "2a2a554b431a52d2bcdce32567c9878eca734b1e260d5f45df5d059c850f159b"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        9,
+        944,
+        307,
+        1248
+      ],
+      "edgeInkFraction": 0.023310023310023312,
+      "contentFraction": 0.3950679971741434,
+      "file": "biology20261017-word-12894.png",
+      "sha256": "555e5f8f9f244e0ea27287e97a74d4acf401cf093d01896bca34f367bdd3bdb3"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        944,
+        620,
+        1248
+      ],
+      "edgeInkFraction": 0.020104895104895104,
+      "contentFraction": 0.4436374072765807,
+      "file": "biology20261017-unused-danger-80-13.png",
+      "sha256": "2e36daf24c98e44d22ae80a31580a4c741871f706f66a35bbeffad06422f4aaa"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        633,
+        944,
+        932,
+        1248
+      ],
+      "edgeInkFraction": 0.027981384525887144,
+      "contentFraction": 0.4397883295194508,
+      "file": "biology20261017-unused-danger-80-14.png",
+      "sha256": "d0758141c58c911be23461ee249a52e25b2c7d30130b68c08be4ca3a30f2bf3b"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        946,
+        944,
+        1245,
+        1248
+      ],
+      "edgeInkFraction": 0.030366492146596858,
+      "contentFraction": 0.43412251364196447,
+      "file": "biology20261017-unused-danger-80-15.png",
+      "sha256": "bc928f2c014619565b31c28a7081739f49624dcd03aead1009e1341b4cda03d2"
+    }
+  ]
+}

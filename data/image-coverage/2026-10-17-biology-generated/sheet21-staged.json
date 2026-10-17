@@ -1,0 +1,737 @@
+{
+  "sheet": 21,
+  "sourceSheet": "sheets/biology20261017-sheet21.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. 美丘 (Mioka apple): 果汁が多く歯ごたえのある甘いリンゴの品種。果物の一つ。\n2. ほのか (Honoka apple): ふじの枝変わりから生まれた早めに収穫するリンゴの品種。果物の一つ。\n3. 祝 (Iwai apple): 夏の早い時期に収穫する小ぶりのリンゴの品種。果物の一つ。\n4. 巨峰 (Kyoho grape): 黒紫色の大きな実がなるブドウの品種。果物の一つ。\n5. ピオーネ (Pione grape): 黒紫色の大きな実とよい香りを持つブドウの品種。果物の一つ。\n6. デラウェア (Delaware grape): 小さな赤紫色の実がなるブドウの品種。果物の一つ。\n7. シャインマスカット (Shine Muscat grape): 黄緑色の大きな実とマスカットの香りを持つブドウの品種。皮ごと食べられる果物。\n8. 甲斐路 (Kaiji grape): 赤い実がなるブドウの品種。山梨県でよく栽培される果物。\n9. 甲州 (Koshu grape): 薄い赤紫色の実がなるブドウの品種。ワイン作りにも使う果物。\n10. 藤稔 (Fujiminori grape): とても大きな黒紫色の実がなるブドウの品種。果物の一つ。\n11. 安芸クイーン (Aki Queen grape): 赤い大粒の実がなるブドウの品種。果物の一つ。\n12. サニールージュ (Sunny Rouge grape): 赤い実がなり早めの時期に収穫するブドウの品種。果物の一つ。\n13. クイーンニーナ (Queen Nina grape): 赤い大きな実がなる甘いブドウの品種。果物の一つ。\n14. ブラックビート (Black Beat grape): 黒紫色の実がなり比較的早く収穫するブドウの品種。果物の一つ。\n15. マスカットベーリーＡ (Muscat Bailey A grape): 黒紫色の実がなるブドウの品種。ワイン作りにも使う果物。\n16. スチューベン (Steuben grape): 黒紫色の小さめの実がなる甘いブドウの品種。果物の一つ。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet21-crop.json",
+  "tiles": [
+    {
+      "category": "リンゴ",
+      "reading": "みおか",
+      "word": "美丘",
+      "meaning": "果汁が多く歯ごたえのある甘いリンゴの品種。果物の一つ。",
+      "imagequery": "美丘 リンゴ 果物",
+      "imagequery_en": "Mioka apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12642,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12642.png",
+      "semanticReviewedMeaning": "果汁が多く歯ごたえのある甘いリンゴの品種。果物の一つ。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "ほのか",
+      "word": "ほのか",
+      "meaning": "ふじの枝変わりから生まれた早めに収穫するリンゴの品種。果物の一つ。",
+      "imagequery": "ほのか リンゴ 果物",
+      "imagequery_en": "Honoka apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12643,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_summary/01/type03.html / https://www.pref.hiroshima.lg.jp/site/sake/moeibuki.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_summary/01/type03.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0af71a11ea2df087b70a74aa50172732d36479a89eaaa545232c94088904ed48",
+          "type": "official-name-list",
+          "sourceKey": "rice-maff"
+        },
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/site/sake/moeibuki.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "4a755765ba34584b4489a34b68f6191ffe9ff3ea5acbafcf54b08f25c2231952",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-moeibuki"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12643.png",
+      "semanticReviewedMeaning": "ふじの枝変わりから生まれた早めに収穫するリンゴの品種。果物の一つ。"
+    },
+    {
+      "category": "リンゴ",
+      "reading": "いわい",
+      "word": "祝",
+      "meaning": "夏の早い時期に収穫する小ぶりのリンゴの品種。果物の一つ。",
+      "imagequery": "祝 リンゴ 果物",
+      "imagequery_en": "Iwai apple",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "apples",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12644,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://aomori-ringo.or.jp/starcut/variety.html / https://www.pref.niigata.lg.jp/sec/nosanengei/1249934676283.html / https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語は祝い：うれしいできごとを、よろこぶこと。。今回はリンゴの意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "url": "https://aomori-ringo.or.jp/starcut/variety.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f2922e17c8bae03acb70de5491bbdceab577296da7e691882c9870e01bf3b7cb",
+          "type": "official-name-list",
+          "sourceKey": "apples"
+        },
+        {
+          "url": "https://www.pref.niigata.lg.jp/sec/nosanengei/1249934676283.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "afad998505554b1311ea9fa537b00f0559a962546eb939e93061bada4d5ffa82",
+          "type": "official-name-list",
+          "sourceKey": "rice-niigata"
+        },
+        {
+          "url": "https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "2242893c740fda748c0e64a2de2a902663201dec25a6915bc619b491f9777727",
+          "type": "official-name-list",
+          "sourceKey": "rice-tohoku"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12644.png",
+      "semanticReviewedMeaning": "夏の早い時期に収穫する小ぶりのリンゴの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "きょほう",
+      "word": "巨峰",
+      "meaning": "黒紫色の大きな実がなるブドウの品種。果物の一つ。",
+      "imagequery": "巨峰 ブドウ 果物",
+      "imagequery_en": "Kyoho grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12645,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1232300",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1232300",
+          "entryId": "1232300",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "巨峰",
+            "きょほう"
+          ],
+          "senseEvidence": [
+            "lofty peak",
+            "kyoho (large purple-black grape variety)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12645.png",
+      "semanticReviewedMeaning": "黒紫色の大きな実がなるブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "ぴおーね",
+      "word": "ピオーネ",
+      "meaning": "黒紫色の大きな実とよい香りを持つブドウの品種。果物の一つ。",
+      "imagequery": "ピオーネ ブドウ 果物",
+      "imagequery_en": "Pione grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12646,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2865706",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2865706",
+          "entryId": "2865706",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ピオーネ"
+          ],
+          "senseEvidence": [
+            "pione (grape variety)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12646.png",
+      "semanticReviewedMeaning": "黒紫色の大きな実とよい香りを持つブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "でらうぇあ",
+      "word": "デラウェア",
+      "meaning": "小さな赤紫色の実がなるブドウの品種。果物の一つ。",
+      "imagequery": "デラウェア ブドウ 果物",
+      "imagequery_en": "Delaware grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12647,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1084240",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1084240",
+          "entryId": "1084240",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "デラウェア",
+            "デラウエア"
+          ],
+          "senseEvidence": [
+            "Delaware (US state)",
+            "Delaware (grape variety)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12647.png",
+      "semanticReviewedMeaning": "小さな赤紫色の実がなるブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "しゃいんますかっと",
+      "word": "シャインマスカット",
+      "meaning": "黄緑色の大きな実とマスカットの香りを持つブドウの品種。皮ごと食べられる果物。",
+      "imagequery": "シャインマスカット ブドウ 果物",
+      "imagequery_en": "Shine Muscat grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12648,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2849308",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "url": "https://www.pref.nagano.lg.jp/nosei/sangyo/nogyo/shinshu/nosanbutsu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "eb1593bbd3a70f37aa604608b878ef55fc80f45ae7fa945f1ab722f21ccac051",
+          "type": "official-name-list",
+          "sourceKey": "nagano-grape"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2849308",
+          "entryId": "2849308",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "シャインマスカット",
+            "シャイン・マスカット"
+          ],
+          "senseEvidence": [
+            "Shine Muscat (grape variety)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12648.png",
+      "semanticReviewedMeaning": "黄緑色の大きな実とマスカットの香りを持つブドウの品種。皮ごと食べられる果物。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "かいじ",
+      "word": "甲斐路",
+      "meaning": "赤い実がなるブドウの品種。山梨県でよく栽培される果物。",
+      "imagequery": "甲斐路 ブドウ 果物",
+      "imagequery_en": "Kaiji grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12649,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2101380",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2101380",
+          "entryId": "2101380",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "甲斐路",
+            "かいじ"
+          ],
+          "senseEvidence": [
+            "bright red table grape, a cross between a Flame Tokay and a Neo Muscat"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12649.png",
+      "semanticReviewedMeaning": "赤い実がなるブドウの品種。山梨県でよく栽培される果物。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "こうしゅう",
+      "word": "甲州",
+      "meaning": "薄い赤紫色の実がなるブドウの品種。ワイン作りにも使う果物。",
+      "imagequery": "甲州 ブドウ 果物",
+      "imagequery_en": "Koshu grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12650,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語は公衆：まちにいるたくさんの、特定の誰かではない一般の人々のこと（公衆電話など）。。今回はブドウの意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12650.png",
+      "semanticReviewedMeaning": "薄い赤紫色の実がなるブドウの品種。ワイン作りにも使う果物。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "ふじみのり",
+      "word": "藤稔",
+      "meaning": "とても大きな黒紫色の実がなるブドウの品種。果物の一つ。",
+      "imagequery": "藤稔 ブドウ 果物",
+      "imagequery_en": "Fujiminori grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12651,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2865705",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2865705",
+          "entryId": "2865705",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "藤稔",
+            "藤みのり",
+            "ふじみのり"
+          ],
+          "senseEvidence": [
+            "fujiminori (grape variety)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12651.png",
+      "semanticReviewedMeaning": "とても大きな黒紫色の実がなるブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "あきくいーん",
+      "word": "安芸クイーン",
+      "meaning": "赤い大粒の実がなるブドウの品種。果物の一つ。",
+      "imagequery": "安芸クイーン ブドウ 果物",
+      "imagequery_en": "Aki Queen grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12652,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/publicity_report/publication/archive/files/fruit15_Grape_Cultivar_Queen_Nina.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.naro.go.jp/publicity_report/publication/archive/files/fruit15_Grape_Cultivar_Queen_Nina.pdf",
+          "checkedAt": "2026-10-17",
+          "note": "農研機構の育成報告中で品種名と赤色の果皮を確認。"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12652.png",
+      "semanticReviewedMeaning": "赤い大粒の実がなるブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "さにーるーじゅ",
+      "word": "サニールージュ",
+      "meaning": "赤い実がなり早めの時期に収穫するブドウの品種。果物の一つ。",
+      "imagequery": "サニールージュ ブドウ 果物",
+      "imagequery_en": "Sunny Rouge grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12653,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12653.png",
+      "semanticReviewedMeaning": "赤い実がなり早めの時期に収穫するブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "くいーんにーな",
+      "word": "クイーンニーナ",
+      "meaning": "赤い大きな実がなる甘いブドウの品種。果物の一つ。",
+      "imagequery": "クイーンニーナ ブドウ 果物",
+      "imagequery_en": "Queen Nina grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12654,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/ / https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/miryoku/shoku/budo/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "005b90e84fe8744274c23e0a40816b192cd9569196645fa9afee672fc6731731",
+          "type": "official-name-list",
+          "sourceKey": "grapes"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12654.png",
+      "semanticReviewedMeaning": "赤い大きな実がなる甘いブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "ぶらっくびーと",
+      "word": "ブラックビート",
+      "meaning": "黒紫色の実がなり比較的早く収穫するブドウの品種。果物の一つ。",
+      "imagequery": "ブラックビート ブドウ 果物",
+      "imagequery_en": "Black Beat grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12655,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/documents/65895/14jouhoukoku3.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.pref.yamanashi.jp/documents/65895/14jouhoukoku3.pdf",
+          "checkedAt": "2026-10-17",
+          "note": "山梨県の果粒の着色調査で品種名と黒色系の果皮を確認。"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12655.png",
+      "semanticReviewedMeaning": "黒紫色の実がなり比較的早く収穫するブドウの品種。果物の一つ。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "ますかっとべーりーえー",
+      "word": "マスカットベーリーＡ",
+      "meaning": "黒紫色の実がなるブドウの品種。ワイン作りにも使う果物。",
+      "imagequery": "マスカットベーリーＡ ブドウ 果物",
+      "imagequery_en": "Muscat Bailey A grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12656,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.yamanashi.jp/documents/78009/04_kazyusaigaitaisaku.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.pref.yamanashi.jp/documents/78009/04_kazyusaigaitaisaku.pdf",
+          "checkedAt": "2026-10-17",
+          "note": "県の果樹品種一覧で表記と用途を確認。"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12656.png",
+      "semanticReviewedMeaning": "黒紫色の実がなるブドウの品種。ワイン作りにも使う果物。"
+    },
+    {
+      "category": "ブドウ",
+      "reading": "すちゅーべん",
+      "word": "スチューベン",
+      "meaning": "黒紫色の小さめの実がなる甘いブドウの品種。果物の一つ。",
+      "imagequery": "スチューベン ブドウ 果物",
+      "imagequery_en": "Steuben grape",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "grapes",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12657,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.aomori.lg.jp/soshiki/nourin/ni-nosui/tiikikeiei_torikumi_22turuta.html / https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/nourin/ni-nosui/tiikikeiei_torikumi_22turuta.html",
+          "checkedAt": "2026-10-17",
+          "note": "青森県の鶴田町紹介で栽培されるブドウ品種と確認。Web検索で本文を確認。直接取得は403。"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12657.png",
+      "semanticReviewedMeaning": "黒紫色の小さめの実がなる甘いブドウの品種。果物の一つ。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "リンゴの皮色と形、ブドウの黄緑・赤紫・黒紫色と粒形を説明と照合。品種同定写真ではなく模式的な果物の絵。",
+  "approvedIds": [
+    12642,
+    12643,
+    12644,
+    12645,
+    12646,
+    12647,
+    12648,
+    12649,
+    12650,
+    12651,
+    12652,
+    12653,
+    12654,
+    12655,
+    12656,
+    12657
+  ],
+  "semanticSheetSha256": "d8c0c42e867ed6a0e67df445bb59f799e411cc60e3169bb7d591f5c6862339a3",
+  "reviewedAt": "2026-10-17"
+}
