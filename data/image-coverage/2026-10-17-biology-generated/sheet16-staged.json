@@ -1,0 +1,724 @@
+{
+  "sheet": 16,
+  "sourceSheet": "sheets/biology20261017-sheet16.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. とうがん (Winter melon): 大きな実と白っぽい果肉を持つ野菜。夏に収穫して貯蔵できる。\n2. はやとうり (Chayote): 洋なしのような形の実を食べる野菜。\n3. スナップエンドウ (Snap pea): 厚みのあるさやと中の豆を一緒に食べるエンドウの仲間の野菜。\n4. 絹さや (Snow pea): 平たく小さなさやを食べるサヤエンドウの野菜としての呼び名。\n5. グリーンピース (Green peas): エンドウの未熟な緑色の豆を食べる野菜。\n6. しそ (Perilla frutescens): 香りの強い葉を持つ植物。葉や実を野菜として使う。\n7. みょうが (Myoga): つぼみの集まりなどを食べる香りのある野菜。\n8. クレソン (Watercress): 水辺で育つ少し辛みのある葉を食べる野菜。\n9. パクチー (Coriander leaves): 独特の香りを持つ葉や茎を食べる野菜。コリアンダーとも呼ばれる。\n10. 空心菜 (Water spinach): 茎の中が空洞になった野菜。葉や茎を食べる。\n11. つるむらさき (Basella alba): つるを伸ばして育つ野菜。葉や茎を食べるとねばりがある。\n12. モロヘイヤ (Corchorus olitorius): 葉を食べる野菜。刻むとねばりが出る。\n13. おかひじき (Salsola komarovii): 細長い葉を持つ野菜。海辺に自生する植物を栽培したものもある。\n14. おかのり (Malva verticillata): 葉を食べるとねばりがある野菜。アオイの仲間。\n15. おかわかめ (Anredera cordifolia): 厚みのある葉を食べるつる性の野菜。雲南百薬とも呼ばれる。\n16. ふだん草 (Swiss chard): 葉や太い葉柄を食べる野菜。葉柄が赤色や黄色のものもある。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet16-crop.json",
+  "tiles": [
+    {
+      "category": "野菜",
+      "reading": "とうがん",
+      "word": "とうがん",
+      "meaning": "大きな実と白っぽい果肉を持つ野菜。夏に収穫して貯蔵できる。",
+      "imagequery": "とうがん 野菜",
+      "imagequery_en": "Winter melon",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12732,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.takii.co.jp/tsk/y_garden/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1447640",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.takii.co.jp/tsk/y_garden/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "18b5375803b68084eabd11f1dfbd18083f6e74577281583caa1589dcdfadb4ea",
+          "type": "official-name-list",
+          "sourceKey": "takii-vegetables"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1447640",
+          "entryId": "1447640",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "東岸",
+            "とうがん"
+          ],
+          "senseEvidence": [
+            "eastern coast",
+            "east bank"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12732.png",
+      "semanticReviewedMeaning": "大きな実と白っぽい果肉を持つ野菜。夏に収穫して貯蔵できる。"
+    },
+    {
+      "category": "野菜",
+      "reading": "はやとうり",
+      "word": "はやとうり",
+      "meaning": "洋なしのような形の実を食べる野菜。",
+      "imagequery": "はやとうり 野菜",
+      "imagequery_en": "Chayote",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12733,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2829564",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2829564",
+          "entryId": "2829564",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "隼人瓜",
+            "隼人うり",
+            "はやとうり",
+            "ハヤトウリ"
+          ],
+          "senseEvidence": [
+            "chayote (Sechium edule)",
+            "christophine",
+            "christophene"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12733.png",
+      "semanticReviewedMeaning": "洋なしのような形の実を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "すなっぷえんどう",
+      "word": "スナップエンドウ",
+      "meaning": "厚みのあるさやと中の豆を一緒に食べるエンドウの仲間の野菜。",
+      "imagequery": "スナップエンドウ 野菜",
+      "imagequery_en": "Snap pea",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12734,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2860643",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2860643",
+          "entryId": "2860643",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "スナップ豌豆",
+            "スナップえんどう",
+            "スナップエンドウ"
+          ],
+          "senseEvidence": [
+            "snap pea",
+            "sugar snap pea",
+            "sugar pea"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12734.png",
+      "semanticReviewedMeaning": "厚みのあるさやと中の豆を一緒に食べるエンドウの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "きぬさや",
+      "word": "絹さや",
+      "meaning": "平たく小さなさやを食べるサヤエンドウの野菜としての呼び名。",
+      "imagequery": "絹さや 野菜",
+      "imagequery_en": "Snow pea",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12735,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1258800",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1258800",
+          "entryId": "1258800",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "絹さや",
+            "絹莢",
+            "きぬさや"
+          ],
+          "senseEvidence": [
+            "snow pea",
+            "snow peas",
+            "mange tout"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12735.png",
+      "semanticReviewedMeaning": "平たく小さなさやを食べるサヤエンドウの野菜としての呼び名。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ぐりーんぴーす",
+      "word": "グリーンピース",
+      "meaning": "エンドウの未熟な緑色の豆を食べる野菜。",
+      "imagequery": "グリーンピース 野菜",
+      "imagequery_en": "Green peas",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12736,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047020",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1047020",
+          "entryId": "1047020",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "グリーンピース",
+            "グリンピース",
+            "グリーン・ピース",
+            "グリン・ピース"
+          ],
+          "senseEvidence": [
+            "green peas"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12736.png",
+      "semanticReviewedMeaning": "エンドウの未熟な緑色の豆を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "しそ",
+      "word": "しそ",
+      "meaning": "香りの強い葉を持つ植物。葉や実を野菜として使う。",
+      "imagequery": "しそ 野菜",
+      "imagequery_en": "Perilla frutescens",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12737,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1307580",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1307580",
+          "entryId": "1307580",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "始祖",
+            "しそ"
+          ],
+          "senseEvidence": [
+            "founder",
+            "originator",
+            "pioneer"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12737.png",
+      "semanticReviewedMeaning": "香りの強い葉を持つ植物。葉や実を野菜として使う。"
+    },
+    {
+      "category": "野菜",
+      "reading": "みょうが",
+      "word": "みょうが",
+      "meaning": "つぼみの集まりなどを食べる香りのある野菜。",
+      "imagequery": "みょうが 野菜",
+      "imagequery_en": "Myoga",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12738,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1571510",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1571510",
+          "entryId": "1571510",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "茗荷",
+            "蘘荷",
+            "みょうが",
+            "ミョウガ"
+          ],
+          "senseEvidence": [
+            "Japanese ginger (Zingiber mioga)",
+            "myoga ginger",
+            "mioga ginger"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12738.png",
+      "semanticReviewedMeaning": "つぼみの集まりなどを食べる香りのある野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "くれそん",
+      "word": "クレソン",
+      "meaning": "水辺で育つ少し辛みのある葉を食べる野菜。",
+      "imagequery": "クレソン 野菜",
+      "imagequery_en": "Watercress",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12739,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2069970",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2069970",
+          "entryId": "2069970",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "クレソン"
+          ],
+          "senseEvidence": [
+            "watercress (Nasturtium officinale)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12739.png",
+      "semanticReviewedMeaning": "水辺で育つ少し辛みのある葉を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ぱくちー",
+      "word": "パクチー",
+      "meaning": "独特の香りを持つ葉や茎を食べる野菜。コリアンダーとも呼ばれる。",
+      "imagequery": "パクチー 野菜",
+      "imagequery_en": "Coriander leaves",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12740,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2186440",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2186440",
+          "entryId": "2186440",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "パクチー"
+          ],
+          "senseEvidence": [
+            "coriander (Coriandrum sativum)",
+            "cilantro",
+            "dhania",
+            "Chinese parsley"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12740.png",
+      "semanticReviewedMeaning": "独特の香りを持つ葉や茎を食べる野菜。コリアンダーとも呼ばれる。"
+    },
+    {
+      "category": "野菜",
+      "reading": "くうしんさい",
+      "word": "空心菜",
+      "meaning": "茎の中が空洞になった野菜。葉や茎を食べる。",
+      "imagequery": "空心菜 野菜",
+      "imagequery_en": "Water spinach",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12741,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2399810",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2399810",
+          "entryId": "2399810",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "空芯菜",
+            "空心菜",
+            "くうしんさい",
+            "クウシンサイ"
+          ],
+          "senseEvidence": [
+            "Chinese water spinach (Ipomoea aquatica)",
+            "ong choy",
+            "kang kong",
+            "water morning glory",
+            "water convolvulus",
+            "swamp cabbage",
+            "hung tsai",
+            "rau muong",
+            "pak boong",
+            "swamp morning-glory"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12741.png",
+      "semanticReviewedMeaning": "茎の中が空洞になった野菜。葉や茎を食べる。"
+    },
+    {
+      "category": "野菜",
+      "reading": "つるむらさき",
+      "word": "つるむらさき",
+      "meaning": "つるを伸ばして育つ野菜。葉や茎を食べるとねばりがある。",
+      "imagequery": "つるむらさき 野菜",
+      "imagequery_en": "Basella alba",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12742,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2800020",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2800020",
+          "entryId": "2800020",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "蔓紫",
+            "つるむらさき",
+            "ツルムラサキ"
+          ],
+          "senseEvidence": [
+            "Malabar spinach (Basella alba)",
+            "Indian spinach"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12742.png",
+      "semanticReviewedMeaning": "つるを伸ばして育つ野菜。葉や茎を食べるとねばりがある。"
+    },
+    {
+      "category": "野菜",
+      "reading": "もろへいや",
+      "word": "モロヘイヤ",
+      "meaning": "葉を食べる野菜。刻むとねばりが出る。",
+      "imagequery": "モロヘイヤ 野菜",
+      "imagequery_en": "Corchorus olitorius",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12743,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2122960",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2122960",
+          "entryId": "2122960",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "モロヘイヤ"
+          ],
+          "senseEvidence": [
+            "Jew's mallow",
+            "Nalta jute",
+            "Tussa jute"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12743.png",
+      "semanticReviewedMeaning": "葉を食べる野菜。刻むとねばりが出る。"
+    },
+    {
+      "category": "野菜",
+      "reading": "おかひじき",
+      "word": "おかひじき",
+      "meaning": "細長い葉を持つ野菜。海辺に自生する植物を栽培したものもある。",
+      "imagequery": "おかひじき 野菜",
+      "imagequery_en": "Salsola komarovii",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12744,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2508280",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2508280",
+          "entryId": "2508280",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "陸鹿尾菜",
+            "おかひじき",
+            "オカヒジキ"
+          ],
+          "senseEvidence": [
+            "Salsola komarovii (species of saltwort)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12744.png",
+      "semanticReviewedMeaning": "細長い葉を持つ野菜。海辺に自生する植物を栽培したものもある。"
+    },
+    {
+      "category": "野菜",
+      "reading": "おかのり",
+      "word": "おかのり",
+      "meaning": "葉を食べるとねばりがある野菜。アオイの仲間。",
+      "imagequery": "おかのり 野菜",
+      "imagequery_en": "Malva verticillata",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12745,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.sankyoseed.co.jp/news/6385/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.sankyoseed.co.jp/news/6385/",
+          "checkedAt": "2026-10-17",
+          "note": "種苗生産者が食用のオカノリを扱うことをWeb検索で確認。直接取得は403。"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12745.png",
+      "semanticReviewedMeaning": "葉を食べるとねばりがある野菜。アオイの仲間。"
+    },
+    {
+      "category": "野菜",
+      "reading": "おかわかめ",
+      "word": "おかわかめ",
+      "meaning": "厚みのある葉を食べるつる性の野菜。雲南百薬とも呼ばれる。",
+      "imagequery": "おかわかめ 野菜",
+      "imagequery_en": "Anredera cordifolia",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12746,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.botanic.jp/plants-aa/akazak.htm",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.botanic.jp/plants-aa/akazak.htm",
+          "checkedAt": "2026-10-17",
+          "note": "食用名オカワカメと植物名アカザカズラの対応を確認。分類はAnredera cordifolia。"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12746.png",
+      "semanticReviewedMeaning": "厚みのある葉を食べるつる性の野菜。雲南百薬とも呼ばれる。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ふだんそう",
+      "word": "ふだん草",
+      "meaning": "葉や太い葉柄を食べる野菜。葉柄が赤色や黄色のものもある。",
+      "imagequery": "ふだん草 野菜",
+      "imagequery_en": "Swiss chard",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12747,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1740290",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1740290",
+          "entryId": "1740290",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ふだん草",
+            "不断草",
+            "フダン草",
+            "ふだんそう",
+            "フダンソウ"
+          ],
+          "senseEvidence": [
+            "Swiss chard (Beta vulgaris var. cicla)",
+            "silverbeet"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12747.png",
+      "semanticReviewedMeaning": "葉や太い葉柄を食べる野菜。葉柄が赤色や黄色のものもある。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "葉菜・香味野菜の葉形、つる、豆のさや、とうがんとハヤトウリの断面を確認。",
+  "approvedIds": [
+    12732,
+    12733,
+    12734,
+    12735,
+    12736,
+    12737,
+    12738,
+    12739,
+    12740,
+    12741,
+    12742,
+    12743,
+    12744,
+    12745,
+    12746,
+    12747
+  ],
+  "semanticSheetSha256": "0fab8d77699da5d53be8cbd2185f2e46da2e87c7cffee626f4f0043620411534",
+  "reviewedAt": "2026-10-17"
+}

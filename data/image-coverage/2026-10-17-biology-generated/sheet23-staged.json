@@ -1,0 +1,736 @@
+{
+  "sheet": 23,
+  "sourceSheet": "sheets/biology20261017-sheet23.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. せとみ (Setomi citrus): 山口県で育てられた粒の食感が特徴の柑橘の品種。果物の一つ。\n2. たまみ (Tamami citrus): 清見とウィルキングを交配して生まれた柑橘の品種。香りのよい果物。\n3. 南津海 (Natsumi citrus): 春に食べごろになる柑橘の品種。小ぶりで甘みのある果物。\n4. 麗紅 (Reikou citrus): 濃い橙色の皮を持つ香りのよい柑橘の品種。果物の一つ。\n5. みはや (Mihaya citrus): 赤みの濃い橙色の皮を持つ比較的早く収穫する柑橘の品種。果物の一つ。\n6. あすみ (Asumi citrus): 香りがよく甘みの強い柑橘の品種。果物の一つ。\n7. 津之輝 (Tsunokagayaki citrus): 冬に収穫する濃い橙色の柑橘の品種。果物の一つ。\n8. 日向夏 (Hyuganatsu citrus): 黄色い皮を持つ柑橘の果物。皮の内側の白い部分も一緒に食べる。\n9. 河内晩柑 (Kawachi Bankan citrus): 黄色い皮を持ち果汁が多い柑橘の果物。春から夏に食べられる。\n10. 文旦 (Citrus maxima): 大きな実と厚い皮を持つ柑橘の果物。\n11. 土佐文旦 (Tosa Buntan citrus): 高知県でよく栽培される文旦の品種。厚い皮を持つ柑橘の果物。\n12. 晩白柚 (Banpeiyu citrus): とても大きな実になる文旦の仲間の品種。柑橘の果物。\n13. 八朔 (Hassaku citrus): 少し苦みのあるしっかりした果肉を持つ柑橘の果物。\n14. 伊予柑 (Iyokan citrus): 香りの強い橙色の皮と果汁の多い果肉を持つ柑橘の果物。\n15. 夏みかん (Citrus natsudaidai): 厚い皮と酸味のある果肉を持つ柑橘の果物。\n16. 甘夏 (Amanatsu citrus): 夏みかんから生まれた酸味が早く減る品種。柑橘の果物。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet23-crop.json",
+  "tiles": [
+    {
+      "category": "柑橘",
+      "reading": "せとみ",
+      "word": "せとみ",
+      "meaning": "山口県で育てられた粒の食感が特徴の柑橘の品種。果物の一つ。",
+      "imagequery": "せとみ 柑橘 果物",
+      "imagequery_en": "Setomi citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12674,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11410.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11410.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b6a785887df25758c450a4539f67e89f87cc098e19cabcd871a00d47325eeea1",
+          "type": "official-name-list",
+          "sourceKey": "citrus-names"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12674.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "たまみ",
+      "word": "たまみ",
+      "meaning": "清見とウィルキングを交配して生まれた柑橘の品種。香りのよい果物。",
+      "imagequery": "たまみ 柑橘 果物",
+      "imagequery_en": "Tamami citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12675,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.pref.ehime.jp/page/11410.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://www.pref.ehime.jp/page/11410.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b6a785887df25758c450a4539f67e89f87cc098e19cabcd871a00d47325eeea1",
+          "type": "official-name-list",
+          "sourceKey": "citrus-names"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12675.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "なつみ",
+      "word": "南津海",
+      "meaning": "春に食べごろになる柑橘の品種。小ぶりで甘みのある果物。",
+      "imagequery": "南津海 柑橘 果物",
+      "imagequery_en": "Natsumi citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12676,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.pref.ehime.jp/page/11410.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://www.pref.ehime.jp/page/11410.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b6a785887df25758c450a4539f67e89f87cc098e19cabcd871a00d47325eeea1",
+          "type": "official-name-list",
+          "sourceKey": "citrus-names"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12676.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "れいこう",
+      "word": "麗紅",
+      "meaning": "濃い橙色の皮を持つ香りのよい柑橘の品種。果物の一つ。",
+      "imagequery": "麗紅 柑橘 果物",
+      "imagequery_en": "Reikou citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12677,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12677.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "みはや",
+      "word": "みはや",
+      "meaning": "赤みの濃い橙色の皮を持つ比較的早く収穫する柑橘の品種。果物の一つ。",
+      "imagequery": "みはや 柑橘 果物",
+      "imagequery_en": "Mihaya citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12678,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.pref.kumamoto.jp/soshiki/75/846.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "url": "https://www.pref.kumamoto.jp/soshiki/75/846.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "1d0d453b4fe614ccf7f74b54df10547d74067c8cd43e59c3c1cee81a678d08b1",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-kumamoto"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12678.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "あすみ",
+      "word": "あすみ",
+      "meaning": "香りがよく甘みの強い柑橘の品種。果物の一つ。",
+      "imagequery": "あすみ 柑橘 果物",
+      "imagequery_en": "Asumi citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12679,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12679.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "つのかがやき",
+      "word": "津之輝",
+      "meaning": "冬に収穫する濃い橙色の柑橘の品種。果物の一つ。",
+      "imagequery": "津之輝 柑橘 果物",
+      "imagequery_en": "Tsunokagayaki citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12680,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12680.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "ひゅうがなつ",
+      "word": "日向夏",
+      "meaning": "黄色い皮を持つ柑橘の果物。皮の内側の白い部分も一緒に食べる。",
+      "imagequery": "日向夏 柑橘 果物",
+      "imagequery_en": "Hyuganatsu citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12681,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.pref.ehime.jp/page/11410.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2683220",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://www.pref.ehime.jp/page/11410.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b6a785887df25758c450a4539f67e89f87cc098e19cabcd871a00d47325eeea1",
+          "type": "official-name-list",
+          "sourceKey": "citrus-names"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2683220",
+          "entryId": "2683220",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "日向夏",
+            "ひゅうがなつ",
+            "ヒュウガナツ"
+          ],
+          "senseEvidence": [
+            "hyuganatsu (species of citrus, Citrus tamurana)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12681.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "かわちばんかん",
+      "word": "河内晩柑",
+      "meaning": "黄色い皮を持ち果汁が多い柑橘の果物。春から夏に食べられる。",
+      "imagequery": "河内晩柑 柑橘 果物",
+      "imagequery_en": "Kawachi Bankan citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12682,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.pref.ehime.jp/page/11410.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2739020",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://www.pref.ehime.jp/page/11410.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b6a785887df25758c450a4539f67e89f87cc098e19cabcd871a00d47325eeea1",
+          "type": "official-name-list",
+          "sourceKey": "citrus-names"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2739020",
+          "entryId": "2739020",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "河内晩柑",
+            "かわちばんかん"
+          ],
+          "senseEvidence": [
+            "kawachi-bankan pomelo"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12682.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "ぶんたん",
+      "word": "文旦",
+      "meaning": "大きな実と厚い皮を持つ柑橘の果物。",
+      "imagequery": "文旦 柑橘 果物",
+      "imagequery_en": "Citrus maxima",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12683,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://ja-kochi.or.jp/informations/press-release/39507/ / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1629900",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://ja-kochi.or.jp/informations/press-release/39507/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f6041bed704cfc8652c3e9c26a79201fc051c7fc9a3d419ff9c04f10b9d09995",
+          "type": "official-name-list",
+          "sourceKey": "buntan"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1629900",
+          "entryId": "1629900",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "文旦",
+            "文橙",
+            "ぶんたん",
+            "ぼんたん",
+            "ブンタン",
+            "ボンタン"
+          ],
+          "senseEvidence": [
+            "pomelo (Citrus maxima)",
+            "shaddock"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12683.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "とさぶんたん",
+      "word": "土佐文旦",
+      "meaning": "高知県でよく栽培される文旦の品種。厚い皮を持つ柑橘の果物。",
+      "imagequery": "土佐文旦 柑橘 果物",
+      "imagequery_en": "Tosa Buntan citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12684,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://ja-kochi.or.jp/informations/press-release/39507/",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://ja-kochi.or.jp/informations/press-release/39507/",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f6041bed704cfc8652c3e9c26a79201fc051c7fc9a3d419ff9c04f10b9d09995",
+          "type": "official-name-list",
+          "sourceKey": "buntan"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12684.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "ばんぺいゆ",
+      "word": "晩白柚",
+      "meaning": "とても大きな実になる文旦の仲間の品種。柑橘の果物。",
+      "imagequery": "晩白柚 柑橘 果物",
+      "imagequery_en": "Banpeiyu citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12685,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2111790",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2111790",
+          "entryId": "2111790",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "晩白柚",
+            "ばんぺいゆ",
+            "バンペイユ"
+          ],
+          "senseEvidence": [
+            "cultivar of pomelo (Citrus maxima, Citrus grandis)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12685.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "はっさく",
+      "word": "八朔",
+      "meaning": "少し苦みのあるしっかりした果肉を持つ柑橘の果物。",
+      "imagequery": "八朔 柑橘 果物",
+      "imagequery_en": "Hassaku citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12686,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.pref.ehime.jp/page/11410.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1476770",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "url": "https://www.pref.ehime.jp/page/11410.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b6a785887df25758c450a4539f67e89f87cc098e19cabcd871a00d47325eeea1",
+          "type": "official-name-list",
+          "sourceKey": "citrus-names"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1476770",
+          "entryId": "1476770",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "八朔",
+            "はっさく"
+          ],
+          "senseEvidence": [
+            "Hassaku orange (Citrus hassaku)",
+            "1st of August (lunar calendar)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12686.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "いよかん",
+      "word": "伊予柑",
+      "meaning": "香りの強い橙色の皮と果汁の多い果肉を持つ柑橘の果物。",
+      "imagequery": "伊予柑 柑橘 果物",
+      "imagequery_en": "Iyokan citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12687,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2111760",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2111760",
+          "entryId": "2111760",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "伊予柑",
+            "いよかん",
+            "イヨカン"
+          ],
+          "senseEvidence": [
+            "iyokan (Citrus iyo)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12687.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "なつみかん",
+      "word": "夏みかん",
+      "meaning": "厚い皮と酸味のある果肉を持つ柑橘の果物。",
+      "imagequery": "夏みかん 柑橘 果物",
+      "imagequery_en": "Citrus natsudaidai",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12688,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1191630",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1191630",
+          "entryId": "1191630",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "夏みかん",
+            "夏蜜柑",
+            "なつみかん",
+            "ナツミカン"
+          ],
+          "senseEvidence": [
+            "natsumikan (Citrus natsudaidai)",
+            "Japanese summer orange"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12688.png"
+    },
+    {
+      "category": "柑橘",
+      "reading": "あまなつ",
+      "word": "甘夏",
+      "meaning": "夏みかんから生まれた酸味が早く減る品種。柑橘の果物。",
+      "imagequery": "甘夏 柑橘 果物",
+      "imagequery_en": "Amanatsu citrus",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "citrus",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12689,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.ehime.jp/page/11417.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1950640",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.ehime.jp/page/11417.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "c0043b229fbebf804cb7d2179115515087c7060c82df34ff36bbcc992a7cd1d4",
+          "type": "official-name-list",
+          "sourceKey": "citrus"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1950640",
+          "entryId": "1950640",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "甘夏",
+            "あまなつ",
+            "アマナツ"
+          ],
+          "senseEvidence": [
+            "amanatsu (Citrus natsudaidai)",
+            "Japanese summer orange",
+            "less sour variety of the natsumikan"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12689.png"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": false,
+  "semanticReview": "柑橘の橙色と黄色の皮、白い内皮、果肉の形を説明と照合。文旦類は厚い皮を描写。",
+  "approvedIds": [
+    12674,
+    12675,
+    12676,
+    12677,
+    12678,
+    12679,
+    12680,
+    12681,
+    12682,
+    12683,
+    12684,
+    12685,
+    12686,
+    12687,
+    12688,
+    12689
+  ],
+  "semanticSheetSha256": "99f9cf400455986380f228f2544bb7871eea75d2202fdaf0ecbb3ca61897d093",
+  "reviewedAt": "2026-10-17",
+  "rejectionReason": "修正版で絵の特徴を修正。旧切り出しはこのフォルダーへ保管。",
+  "rejectedOutputDirectory": "data\\image-coverage\\2026-10-17-biology-generated\\rejected-sheet23"
+}

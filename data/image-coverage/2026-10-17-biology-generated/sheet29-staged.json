@@ -1,0 +1,656 @@
+{
+  "sheet": 29,
+  "sourceSheet": "sheets/biology20261017-sheet29.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. 縁結び (Enmusubi rice): たくさんの米がとれやすいイネの品種。広島県の産地品種銘柄にもある。\n2. どんとこい (Dontokoi rice): 倒れにくく栽培しやすいように育てられた食用米のイネの品種。\n3. ホウレイ (Hourei rice): 中国地方などで栽培される食用米のイネの品種。広島県の産地品種銘柄にもある。\n4. 金のいぶき (Kin no Ibuki rice): 芽になる胚芽の部分が大きいイネの品種。玄米で食べる用途を考えて育てられた米。\n5. 恋初めし (Koisomeshi rice): 暖かい地域向けに育てられた食用米のイネの品種。暑い時期にも米の品質を保ちやすい。\n6. 恋の予感 (Koi no Yokan rice): 広島県の奨励品種にもなっているイネの品種。暑さに強く多くの米がとれる。\n7. つきあかり (Tsukiakari rice): 大粒でつやのある米がとれるイネの品種。比較的早く収穫できる。\n8. ミルキークイーン (Milky Queen rice): でんぷんの性質によりねばりの強い米になるイネの品種。冷めても硬くなりにくい。\n9. つくばＳＤ１号 (Tsukuba SD1 rice): コシヒカリをもとに背を低くしたイネの品種。倒れにくく食用米がたくさんとれる。\n10. にこまる (Nikomaru rice): 暑さに強く西日本などで栽培されるイネの品種。食味のよい米がとれる。\n11. ヒカリ新世紀 (Hikari Shinseiki rice): コシヒカリをもとに背を低くしたイネの品種。倒れにくく食用米をとる。\n12. 姫ごのみ (Himegonomi rice): やわらかくねばりのある米がとれるイネの品種。西日本などで栽培される。\n13. 夢の華 (Yume no Hana rice): 夢ごこちと夢かほりを親に持つ食用米のイネの品種。広島県の産地品種銘柄にもある。\n14. 八反 (Hattan rice): 広島県にゆかりのある酒米のイネの品種名。八反３５号や八反錦につながる系統。\n15. 八反３５号 (Hattan 35 rice): 広島県で選ばれ育てられた酒米用のイネの品種。八反から生まれた。\n16. 八反錦１号 (Hattan Nishiki 1 rice): 広島県で育てられた酒米用のイネの品種。八反３５号とアキツホを親に持つ。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet29-crop.json",
+  "tiles": [
+    {
+      "category": "コメ",
+      "reading": "えんむすび",
+      "word": "縁結び",
+      "meaning": "たくさんの米がとれやすいイネの品種。広島県の産地品種銘柄にもある。",
+      "imagequery": "縁結び イネ 植物",
+      "imagequery_en": "Enmusubi rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12355,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12355.png",
+      "semanticReviewedMeaning": "たくさんの米がとれやすいイネの品種。広島県の産地品種銘柄にもある。"
+    },
+    {
+      "category": "コメ",
+      "reading": "どんとこい",
+      "word": "どんとこい",
+      "meaning": "倒れにくく栽培しやすいように育てられた食用米のイネの品種。",
+      "imagequery": "どんとこい イネ 植物",
+      "imagequery_en": "Dontokoi rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12356,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12356.png",
+      "semanticReviewedMeaning": "倒れにくく栽培しやすいように育てられた食用米のイネの品種。"
+    },
+    {
+      "category": "コメ",
+      "reading": "ほうれい",
+      "word": "ホウレイ",
+      "meaning": "中国地方などで栽培される食用米のイネの品種。広島県の産地品種銘柄にもある。",
+      "imagequery": "ホウレイ イネ 植物",
+      "imagequery_en": "Hourei rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12357,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12357.png",
+      "semanticReviewedMeaning": "中国地方などで栽培される食用米のイネの品種。広島県の産地品種銘柄にもある。"
+    },
+    {
+      "category": "コメ",
+      "reading": "きんのいぶき",
+      "word": "金のいぶき",
+      "meaning": "芽になる胚芽の部分が大きいイネの品種。玄米で食べる用途を考えて育てられた米。",
+      "imagequery": "金のいぶき イネ 植物",
+      "imagequery_en": "Kin no Ibuki rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12358,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "2242893c740fda748c0e64a2de2a902663201dec25a6915bc619b491f9777727",
+          "type": "official-name-list",
+          "sourceKey": "rice-tohoku"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12358.png",
+      "semanticReviewedMeaning": "芽になる胚芽の部分が大きいイネの品種。玄米で食べる用途を考えて育てられた米。"
+    },
+    {
+      "category": "コメ",
+      "reading": "こいそめし",
+      "word": "恋初めし",
+      "meaning": "暖かい地域向けに育てられた食用米のイネの品種。暑い時期にも米の品質を保ちやすい。",
+      "imagequery": "恋初めし イネ 植物",
+      "imagequery_en": "Koisomeshi rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12359,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12359.png",
+      "semanticReviewedMeaning": "暖かい地域向けに育てられた食用米のイネの品種。暑い時期にも米の品質を保ちやすい。"
+    },
+    {
+      "category": "コメ",
+      "reading": "こいのよかん",
+      "word": "恋の予感",
+      "meaning": "広島県の奨励品種にもなっているイネの品種。暑さに強く多くの米がとれる。",
+      "imagequery": "恋の予感 イネ 植物",
+      "imagequery_en": "Koi no Yokan rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12360,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f0f318d2513e1dfb2fff4bd3a7dd23a4759a7a87761a4fbf7a0609c635a9a371",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-seeds"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12360.png",
+      "semanticReviewedMeaning": "広島県の奨励品種にもなっているイネの品種。暑さに強く多くの米がとれる。"
+    },
+    {
+      "category": "コメ",
+      "reading": "つきあかり",
+      "word": "つきあかり",
+      "meaning": "大粒でつやのある米がとれるイネの品種。比較的早く収穫できる。",
+      "imagequery": "つきあかり イネ 植物",
+      "imagequery_en": "Tsukiakari rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12361,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12361.png",
+      "semanticReviewedMeaning": "大粒でつやのある米がとれるイネの品種。比較的早く収穫できる。"
+    },
+    {
+      "category": "コメ",
+      "reading": "みるきーくいーん",
+      "word": "ミルキークイーン",
+      "meaning": "でんぷんの性質によりねばりの強い米になるイネの品種。冷めても硬くなりにくい。",
+      "imagequery": "ミルキークイーン イネ 植物",
+      "imagequery_en": "Milky Queen rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12362,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.naro.go.jp/laboratory/tarc/rice_faq/kind/025065.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "2242893c740fda748c0e64a2de2a902663201dec25a6915bc619b491f9777727",
+          "type": "official-name-list",
+          "sourceKey": "rice-tohoku"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12362.png",
+      "semanticReviewedMeaning": "でんぷんの性質によりねばりの強い米になるイネの品種。冷めても硬くなりにくい。"
+    },
+    {
+      "category": "コメ",
+      "reading": "つくばえすでぃーいちごう",
+      "word": "つくばＳＤ１号",
+      "meaning": "コシヒカリをもとに背を低くしたイネの品種。倒れにくく食用米がたくさんとれる。",
+      "imagequery": "つくばＳＤ１号 イネ 植物",
+      "imagequery_en": "Tsukuba SD1 rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12363,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/j/seisan/ryutu/info/attach/pdf/inasaku_catalog-7.pdf / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.maff.go.jp/j/seisan/ryutu/info/attach/pdf/inasaku_catalog-7.pdf",
+          "checkedAt": "2026-10-17",
+          "note": "コシヒカリを短稈化した多収の米であることを育成解説で確認。"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12363.png",
+      "semanticReviewedMeaning": "コシヒカリをもとに背を低くしたイネの品種。倒れにくく食用米がたくさんとれる。"
+    },
+    {
+      "category": "コメ",
+      "reading": "にこまる",
+      "word": "にこまる",
+      "meaning": "暑さに強く西日本などで栽培されるイネの品種。食味のよい米がとれる。",
+      "imagequery": "にこまる イネ 植物",
+      "imagequery_en": "Nikomaru rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12364,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_summary/01/type03.html / https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_summary/01/type03.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0af71a11ea2df087b70a74aa50172732d36479a89eaaa545232c94088904ed48",
+          "type": "official-name-list",
+          "sourceKey": "rice-maff"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12364.png",
+      "semanticReviewedMeaning": "暑さに強く西日本などで栽培されるイネの品種。食味のよい米がとれる。"
+    },
+    {
+      "category": "コメ",
+      "reading": "ひかりしんせいき",
+      "word": "ヒカリ新世紀",
+      "meaning": "コシヒカリをもとに背を低くしたイネの品種。倒れにくく食用米をとる。",
+      "imagequery": "ヒカリ新世紀 イネ 植物",
+      "imagequery_en": "Hikari Shinseiki rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12365,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12365.png",
+      "semanticReviewedMeaning": "コシヒカリをもとに背を低くしたイネの品種。倒れにくく食用米をとる。"
+    },
+    {
+      "category": "コメ",
+      "reading": "ひめごのみ",
+      "word": "姫ごのみ",
+      "meaning": "やわらかくねばりのある米がとれるイネの品種。西日本などで栽培される。",
+      "imagequery": "姫ごのみ イネ 植物",
+      "imagequery_en": "Himegonomi rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12366,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12366.png",
+      "semanticReviewedMeaning": "やわらかくねばりのある米がとれるイネの品種。西日本などで栽培される。"
+    },
+    {
+      "category": "コメ",
+      "reading": "ゆめのはな",
+      "word": "夢の華",
+      "meaning": "夢ごこちと夢かほりを親に持つ食用米のイネの品種。広島県の産地品種銘柄にもある。",
+      "imagequery": "夢の華 イネ 植物",
+      "imagequery_en": "Yume no Hana rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12367,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.hinshu2.maff.go.jp/vips/cmm/apCMM112.aspx?LANGUAGE=Japanese&TOUROKU_NO=12054 / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "specific-editorial-source",
+          "url": "https://www.hinshu2.maff.go.jp/vips/cmm/apCMM112.aspx?LANGUAGE=Japanese&TOUROKU_NO=12054",
+          "checkedAt": "2026-10-17",
+          "note": "品種登録の説明で夢ごこちと夢かほりを親とする食用の粳種と確認。"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12367.png",
+      "semanticReviewedMeaning": "夢ごこちと夢かほりを親に持つ食用米のイネの品種。広島県の産地品種銘柄にもある。"
+    },
+    {
+      "category": "コメ",
+      "reading": "はったん",
+      "word": "八反",
+      "meaning": "広島県にゆかりのある酒米のイネの品種名。八反３５号や八反錦につながる系統。",
+      "imagequery": "八反 イネ 植物",
+      "imagequery_en": "Hattan rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12368,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html / https://www.pref.hiroshima.lg.jp/soshiki/30/ikusei.html / https://www.pref.hiroshima.lg.jp/site/sake/moeibuki.html",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f0f318d2513e1dfb2fff4bd3a7dd23a4759a7a87761a4fbf7a0609c635a9a371",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-seeds"
+        },
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/30/ikusei.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "36d744e956e26f7dc68f989a1de6cc401211b5493555eb2352fbccf43b239790",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-breeding"
+        },
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/site/sake/moeibuki.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "4a755765ba34584b4489a34b68f6191ffe9ff3ea5acbafcf54b08f25c2231952",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-moeibuki"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12368.png",
+      "semanticReviewedMeaning": "広島県にゆかりのある酒米のイネの品種名。八反３５号や八反錦につながる系統。"
+    },
+    {
+      "category": "コメ",
+      "reading": "はったんさんじゅうごごう",
+      "word": "八反３５号",
+      "meaning": "広島県で選ばれ育てられた酒米用のイネの品種。八反から生まれた。",
+      "imagequery": "八反３５号 イネ 植物",
+      "imagequery_en": "Hattan 35 rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12369,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f0f318d2513e1dfb2fff4bd3a7dd23a4759a7a87761a4fbf7a0609c635a9a371",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-seeds"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12369.png",
+      "semanticReviewedMeaning": "広島県で選ばれ育てられた酒米用のイネの品種。八反から生まれた。"
+    },
+    {
+      "category": "コメ",
+      "reading": "はったんにしきいちごう",
+      "word": "八反錦１号",
+      "meaning": "広島県で育てられた酒米用のイネの品種。八反３５号とアキツホを親に持つ。",
+      "imagequery": "八反錦１号 イネ 植物",
+      "imagequery_en": "Hattan Nishiki 1 rice",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "rice",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12370,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html / https://www.pref.hiroshima.lg.jp/soshiki/30/ikusei.html / https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/82/shushi.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "f0f318d2513e1dfb2fff4bd3a7dd23a4759a7a87761a4fbf7a0609c635a9a371",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-seeds"
+        },
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/30/ikusei.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "36d744e956e26f7dc68f989a1de6cc401211b5493555eb2352fbccf43b239790",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-breeding"
+        },
+        {
+          "url": "https://www.maff.go.jp/chushi/seisan/syuyou_seisan/meigara/attach/pdf/sinsei-19.pdf",
+          "retrievedAt": "2026-10-17",
+          "type": "official-name-list",
+          "sourceKey": "maff-2026-rice"
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12370.png",
+      "semanticReviewedMeaning": "広島県で育てられた酒米用のイネの品種。八反３５号とアキツホを親に持つ。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "食用米13件と酒米3件の稲穂を確認。金のいぶきは玄米粒、酒米は生米とし飲酒を描かない。",
+  "approvedIds": [
+    12355,
+    12356,
+    12357,
+    12358,
+    12359,
+    12360,
+    12361,
+    12362,
+    12363,
+    12364,
+    12365,
+    12366,
+    12367,
+    12368,
+    12369,
+    12370
+  ],
+  "semanticSheetSha256": "0dbd9ed370c2720b7c7478245074860a9472968e8a1bd958055182aa37bdcb37",
+  "reviewedAt": "2026-10-17"
+}

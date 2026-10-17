@@ -1,0 +1,766 @@
+{
+  "sheet": 18,
+  "sourceSheet": "sheets/biology20261017-sheet18.png",
+  "prompt": "Use case: scientific-educational. Asset type: individual vocabulary images for a Japanese children's shiritori dictionary.\nEDIT TARGET: attached 2048x2048 equal 4 by 4 white grid template. Paint exactly sixteen independent illustrations into its cells, in row-major order, left to right then top to bottom. Preserve the exact canvas size, all cell dimensions, ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA #ff00ff lines INCLUDING the outer frame, their positions, straightness and thickness. Do not erase, cover, move or redraw dividers. Magenta is reserved only for the grid. No extra panels, no captions, labels, letters, numerals, logos or watermarks.\nStyle: clear gentle natural-history picture-book illustration with accurate species anatomy and distinguishing colors. Each complete subject and its shadow stays inside its own cell; use the cell generously, no mandatory large margins. Light neutral background. Never substitute another species or invent variety-specific coloration. Crop must not amputate the subject. For rice cultivars use botanically plausible ordinary green/gold rice panicles and pale grains, with a small plain bowl of cooked white rice only for table-rice cultivars. Sake-rice shows panicle and uncooked rice, without alcohol bottles. Forage-rice shows lush rice stems/leaves, without a cooked-rice bowl. Cultivar illustrations are illustrative examples, never diagnostic identification photographs.\nSixteen subjects in exact order:\n1. 長芋 (Dioscorea polystachya): 細長いいもを持つヤマノイモの仲間の野菜。すりおろすとねばりが出る。\n2. 大和芋 (Yamato yam): 手のひら形や丸形などのいもがあるヤマノイモの仲間の野菜の呼び名。\n3. 自然薯 (Japanese yam): 日本に自生するヤマノイモのいもや栽培したもの。ねばりの強い野菜。\n4. 菊芋 (Jerusalem artichoke): キクの仲間の植物。地下の茎が太ったいもを食べる野菜。\n5. ヤーコン (Yacon): 大きな葉を持つ植物。太った根を食べる野菜。\n6. くわい (Sagittaria trifolia): 水田で育てる野菜。芽が伸びた地下の茎を食べる。\n7. ユリネ (Edible lily bulb): 食用に栽培したユリの地下の球根。重なったりん片を食べる野菜。\n8. らっきょう (Allium chinense): 地下のふくらんだ葉のつけ根を食べる香りの強い野菜。\n9. エシャレット (Young rakkyo): 若採りしたラッキョウを葉つきで食べる野菜の呼び名。\n10. エシャロット (Shallot): 小さな球が分かれて育つタマネギの仲間の野菜。エシャレットとは別のもの。\n11. わけぎ (Allium wakegi): ネギに似た細い葉を持ち株が分かれて育つ野菜。\n12. あさつき (Allium schoenoprasum): ネギの仲間の野菜。細い葉などを薬味にする。\n13. リーキ (Leek): 太い白い葉のつけ根を食べるネギの仲間の野菜。\n14. うど (Aralia cordata): 白くやわらかい若い茎などを食べる香りのある野菜。\n15. ぜんまい (Osmunda japonica): 渦巻き状の若い葉を食べる山菜。シダの仲間の植物。\n16. こごみ (Matteuccia struthiopteris): クサソテツの若い葉を山菜として食べるときの呼び名。植物の一つ。",
+  "cropValidation": "data/image-coverage/2026-10-17-biology-generated/sheet18-crop.json",
+  "tiles": [
+    {
+      "category": "野菜",
+      "reading": "ながいも",
+      "word": "長芋",
+      "meaning": "細長いいもを持つヤマノイモの仲間の野菜。すりおろすとねばりが出る。",
+      "imagequery": "長芋 野菜",
+      "imagequery_en": "Dioscorea polystachya",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12764,
+      "level": 2,
+      "grade": 2,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1797570",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "中学年で食生活や栽培を通して触れる野菜の意味。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1797570",
+          "entryId": "1797570",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "長芋",
+            "長薯",
+            "ながいも",
+            "ナガイモ"
+          ],
+          "senseEvidence": [
+            "Chinese yam (Dioscorea batatas)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 1,
+      "filename": "biology20261017-word-12764.png",
+      "semanticReviewedMeaning": "細長いいもを持つヤマノイモの仲間の野菜。すりおろすとねばりが出る。"
+    },
+    {
+      "category": "野菜",
+      "reading": "やまといも",
+      "word": "大和芋",
+      "meaning": "手のひら形や丸形などのいもがあるヤマノイモの仲間の野菜の呼び名。",
+      "imagequery": "大和芋 野菜",
+      "imagequery_en": "Yamato yam",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12765,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1786040",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1786040",
+          "entryId": "1786040",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "大和芋",
+            "大和いも",
+            "やまといも"
+          ],
+          "senseEvidence": [
+            "Chinese yam (variety of Dioscorea opposita)",
+            "Japanese yam (variety of Dioscorea japonica)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 2,
+      "filename": "biology20261017-word-12765.png",
+      "semanticReviewedMeaning": "手のひら形や丸形などのいもがあるヤマノイモの仲間の野菜の呼び名。"
+    },
+    {
+      "category": "野菜",
+      "reading": "じねんじょ",
+      "word": "自然薯",
+      "meaning": "日本に自生するヤマノイモのいもや栽培したもの。ねばりの強い野菜。",
+      "imagequery": "自然薯 野菜",
+      "imagequery_en": "Japanese yam",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12766,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1726750",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1726750",
+          "entryId": "1726750",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "自然薯",
+            "自然生",
+            "じねんじょ",
+            "じねんじょう"
+          ],
+          "senseEvidence": [
+            "Japanese yam (Dioscorea japonica)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 3,
+      "filename": "biology20261017-word-12766.png",
+      "semanticReviewedMeaning": "日本に自生するヤマノイモのいもや栽培したもの。ねばりの強い野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "きくいも",
+      "word": "菊芋",
+      "meaning": "キクの仲間の植物。地下の茎が太ったいもを食べる野菜。",
+      "imagequery": "菊芋 野菜",
+      "imagequery_en": "Jerusalem artichoke",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12767,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2107120",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2107120",
+          "entryId": "2107120",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "菊芋",
+            "きくいも",
+            "キクイモ"
+          ],
+          "senseEvidence": [
+            "Jerusalem artichoke (Helianthus tuberosus)",
+            "topinambur",
+            "girasol",
+            "girasole"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 4,
+      "filename": "biology20261017-word-12767.png",
+      "semanticReviewedMeaning": "キクの仲間の植物。地下の茎が太ったいもを食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "やーこん",
+      "word": "ヤーコン",
+      "meaning": "大きな葉を持つ植物。太った根を食べる野菜。",
+      "imagequery": "ヤーコン 野菜",
+      "imagequery_en": "Yacon",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": true,
+      "status": "add",
+      "id": 12768,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.naro.go.jp/collab/breed/0100/0107/index.html / https://www.naro.go.jp/collab/breed/0400/0405/index.html / https://www.naro.go.jp/collab/breed/0400/0411/index.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2240480",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0100/0107/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "594ef7d64edb2a74f5933ddf4b817e1578b362776004085dc7a2adb6656cc7d9",
+          "type": "official-name-list",
+          "sourceKey": "rice-naro"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0405/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "d44f6ed68fa7a4c3575eeec54a830139bc8d6dc00476d0275eaca4b432e01b16",
+          "type": "official-name-list",
+          "sourceKey": "naro-citrus"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0400/0411/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "0c63667563461a425d32f13b9cdf910357ca630715584212b5b96b321ed6e026",
+          "type": "official-name-list",
+          "sourceKey": "naro-grapes"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2240480",
+          "entryId": "2240480",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "ヤーコン"
+          ],
+          "senseEvidence": [
+            "yacon (Andean species of plant grown for its tuber; Smallanthus sonchifolius)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 5,
+      "filename": "biology20261017-word-12768.png",
+      "semanticReviewedMeaning": "大きな葉を持つ植物。太った根を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "くわい",
+      "word": "くわい",
+      "meaning": "水田で育てる野菜。芽が伸びた地下の茎を食べる。",
+      "imagequery": "くわい 野菜",
+      "imagequery_en": "Sagittaria trifolia",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12769,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.saitama.lg.jp/saitama-wassyoi/know/recommend/item/yasai08.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1772000",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.saitama.lg.jp/saitama-wassyoi/know/recommend/item/yasai08.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "7478fb0f63d60784b341bb0ef6181822f80eb34c2c6544abcf346c9c45572092",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-saitama"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1772000",
+          "entryId": "1772000",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "慈姑",
+            "くわい",
+            "クワイ"
+          ],
+          "senseEvidence": [
+            "Sagittaria trifolia var. edulis (edible variant of threeleaf arrowhead)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 6,
+      "filename": "biology20261017-word-12769.png",
+      "semanticReviewedMeaning": "水田で育てる野菜。芽が伸びた地下の茎を食べる。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ゆりね",
+      "word": "ユリネ",
+      "meaning": "食用に栽培したユリの地下の球根。重なったりん片を食べる野菜。",
+      "imagequery": "ユリネ 野菜",
+      "imagequery_en": "Edible lily bulb",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12770,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1488170",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1488170",
+          "entryId": "1488170",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "百合根",
+            "ユリ根",
+            "ゆりね",
+            "ユリね"
+          ],
+          "senseEvidence": [
+            "lily bulb"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 7,
+      "filename": "biology20261017-word-12770.png",
+      "semanticReviewedMeaning": "食用に栽培したユリの地下の球根。重なったりん片を食べる野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "らっきょう",
+      "word": "らっきょう",
+      "meaning": "地下のふくらんだ葉のつけ根を食べる香りの強い野菜。",
+      "imagequery": "らっきょう 野菜",
+      "imagequery_en": "Allium chinense",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12771,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2079740",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2079740",
+          "entryId": "2079740",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "辣韮",
+            "薤",
+            "辣韭",
+            "茖葱",
+            "らっきょう",
+            "らっきょ",
+            "ラッキョウ",
+            "ラッキョ"
+          ],
+          "senseEvidence": [
+            "Chinese onion (Allium chinense)",
+            "Chinese scallion",
+            "Kiangsi scallion",
+            "rakkyo",
+            "pickled Chinese onion"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 8,
+      "filename": "biology20261017-word-12771.png",
+      "semanticReviewedMeaning": "地下のふくらんだ葉のつけ根を食べる香りの強い野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "えしゃれっと",
+      "word": "エシャレット",
+      "meaning": "若採りしたラッキョウを葉つきで食べる野菜の呼び名。",
+      "imagequery": "エシャレット 野菜",
+      "imagequery_en": "Young rakkyo",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12772,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2859692",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2859692",
+          "entryId": "2859692",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "エシャレット"
+          ],
+          "senseEvidence": [
+            "Chinese onion (harvested when young; Allium chinense)",
+            "Chinese scallion"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 9,
+      "filename": "biology20261017-word-12772.png",
+      "semanticReviewedMeaning": "若採りしたラッキョウを葉つきで食べる野菜の呼び名。"
+    },
+    {
+      "category": "野菜",
+      "reading": "えしゃろっと",
+      "word": "エシャロット",
+      "meaning": "小さな球が分かれて育つタマネギの仲間の野菜。エシャレットとは別のもの。",
+      "imagequery": "エシャロット 野菜",
+      "imagequery_en": "Shallot",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12773,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1028480",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1028480",
+          "entryId": "1028480",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "エシャロット"
+          ],
+          "senseEvidence": [
+            "shallot",
+            "Chinese onion (harvested when young; Allium chinense)",
+            "Chinese scallion"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 10,
+      "filename": "biology20261017-word-12773.png",
+      "semanticReviewedMeaning": "小さな球が分かれて育つタマネギの仲間の野菜。エシャレットとは別のもの。"
+    },
+    {
+      "category": "野菜",
+      "reading": "わけぎ",
+      "word": "わけぎ",
+      "meaning": "ネギに似た細い葉を持ち株が分かれて育つ野菜。",
+      "imagequery": "わけぎ 野菜",
+      "imagequery_en": "Allium wakegi",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12774,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.hiroshima.lg.jp/soshiki/30/ikusei.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1954620",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/30/ikusei.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "36d744e956e26f7dc68f989a1de6cc401211b5493555eb2352fbccf43b239790",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-breeding"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1954620",
+          "entryId": "1954620",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "分葱",
+            "わけぎ",
+            "ワケギ"
+          ],
+          "senseEvidence": [
+            "tree onion (Allium x proliferum)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 11,
+      "filename": "biology20261017-word-12774.png",
+      "semanticReviewedMeaning": "ネギに似た細い葉を持ち株が分かれて育つ野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "あさつき",
+      "word": "あさつき",
+      "meaning": "ネギの仲間の野菜。細い葉などを薬味にする。",
+      "imagequery": "あさつき 野菜",
+      "imagequery_en": "Allium schoenoprasum",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12775,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1754080",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1754080",
+          "entryId": "1754080",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "浅葱",
+            "あさつき",
+            "アサツキ"
+          ],
+          "senseEvidence": [
+            "chive (Allium schoenoprasum)",
+            "chives"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 12,
+      "filename": "biology20261017-word-12775.png",
+      "semanticReviewedMeaning": "ネギの仲間の野菜。細い葉などを薬味にする。"
+    },
+    {
+      "category": "野菜",
+      "reading": "りーき",
+      "word": "リーキ",
+      "meaning": "太い白い葉のつけ根を食べるネギの仲間の野菜。",
+      "imagequery": "リーキ 野菜",
+      "imagequery_en": "Leek",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12776,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1140450",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1140450",
+          "entryId": "1140450",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "リーキ",
+            "リーク"
+          ],
+          "senseEvidence": [
+            "leek (Allium porrum)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 13,
+      "filename": "biology20261017-word-12776.png",
+      "semanticReviewedMeaning": "太い白い葉のつけ根を食べるネギの仲間の野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "うど",
+      "word": "うど",
+      "meaning": "白くやわらかい若い茎などを食べる香りのある野菜。",
+      "imagequery": "うど 野菜",
+      "imagequery_en": "Aralia cordata",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12777,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html / https://www.naro.go.jp/collab/breed/0300/0301/index.html / https://www.pref.hiroshima.lg.jp/soshiki/31/cgcresearchersblog2.html / https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1954090",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/g59/ikuseihinsyu.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "3315f943970ef501710d7f796ec693b5b4224a3df0648ef58a32311b670b22e4",
+          "type": "official-name-list",
+          "sourceKey": "strawberry-tochigi"
+        },
+        {
+          "url": "https://www.naro.go.jp/collab/breed/0300/0301/index.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "b05798ac14ce23973f32149447242c27647db2dcf0b3fbaafba43154d458c188",
+          "type": "official-name-list",
+          "sourceKey": "naro-strawberry"
+        },
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/31/cgcresearchersblog2.html",
+          "retrievedAt": "2026-10-17",
+          "sha256": "96e6a126eb6e7df0bdc4dcfad929ab681bbb5dac963a0787389a57eda2695397",
+          "type": "official-name-list",
+          "sourceKey": "hiroshima-feed"
+        },
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1954090",
+          "entryId": "1954090",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "独活",
+            "獨活",
+            "ウド",
+            "うど",
+            "どっかつ",
+            "つちたら"
+          ],
+          "senseEvidence": [
+            "udo (plant related to ginseng, used in medicine and cooking) (Aralia cordata)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 14,
+      "filename": "biology20261017-word-12777.png",
+      "semanticReviewedMeaning": "白くやわらかい若い茎などを食べる香りのある野菜。"
+    },
+    {
+      "category": "野菜",
+      "reading": "ぜんまい",
+      "word": "ぜんまい",
+      "meaning": "渦巻き状の若い葉を食べる山菜。シダの仲間の植物。",
+      "imagequery": "ぜんまい 野菜",
+      "imagequery_en": "Osmunda japonica",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12778,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1099490",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "distinctSenseReason": "既存の同音語はゼンマイ：金属のばねを巻いて力をため それが戻る力で動く仕組み。。今回は野菜の意味であり同義の表記ゆれではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=1099490",
+          "entryId": "1099490",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "発条",
+            "弾機",
+            "撥条",
+            "ばね",
+            "ぜんまい",
+            "バネ"
+          ],
+          "senseEvidence": [
+            "spring (device)",
+            "spring (in one's legs)",
+            "bounce",
+            "springboard",
+            "impetus"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 15,
+      "filename": "biology20261017-word-12778.png",
+      "semanticReviewedMeaning": "渦巻き状の若い葉を食べる山菜。シダの仲間の植物。"
+    },
+    {
+      "category": "野菜",
+      "reading": "こごみ",
+      "word": "こごみ",
+      "meaning": "クサソテツの若い葉を山菜として食べるときの呼び名。植物の一つ。",
+      "imagequery": "こごみ 野菜",
+      "imagequery_en": "Matteuccia struthiopteris",
+      "kind": "cultivar-or-horticultural-name",
+      "sourceGroup": "vegetables",
+      "gameEndingN": false,
+      "status": "add",
+      "id": 12779,
+      "level": 2,
+      "grade": 4,
+      "lexicalSource": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2848440",
+      "meaningReason": "一般名・品種名・販売名の区別と対象の特徴を確認し子ども向けに書き下ろした説明。",
+      "ageReason": "品種や種の具体名で一般児童の共通知識とは限らないため制限なしの学習帯に配置。",
+      "imageReason": "保存画像は追加せず語義に限定した検索語で既存のWikimedia検索を利用する。種・品種の写真を全件検証したという意味ではない。",
+      "sources": [
+        {
+          "type": "lexical-entry",
+          "url": "https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&e=2848440",
+          "entryId": "2848440",
+          "dictionaryDate": "2026-10-05",
+          "forms": [
+            "こごみ",
+            "コゴミ"
+          ],
+          "senseEvidence": [
+            "ostrich fern (Matteuccia struthiopteris)"
+          ]
+        }
+      ],
+      "image_mode": "fallback",
+      "image_asset": "",
+      "image_credit": "",
+      "tileIndex": 16,
+      "filename": "biology20261017-word-12779.png",
+      "semanticReviewedMeaning": "クサソテツの若い葉を山菜として食べるときの呼び名。植物の一つ。"
+    }
+  ],
+  "mechanicalPassed": true,
+  "semanticPassed": true,
+  "semanticReview": "ヤマノイモ類の形、塊茎・鱗茎、ネギ類の葉、山菜の芽の違いを確認。",
+  "approvedIds": [
+    12764,
+    12765,
+    12766,
+    12767,
+    12768,
+    12769,
+    12770,
+    12771,
+    12772,
+    12773,
+    12774,
+    12775,
+    12776,
+    12777,
+    12778,
+    12779
+  ],
+  "semanticSheetSha256": "99220b3428d7233ce31fc3361e18aadb4f22ab427760361bb4bb47339ded9a91",
+  "reviewedAt": "2026-10-17"
+}
