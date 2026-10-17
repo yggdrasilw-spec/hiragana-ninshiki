@@ -10,7 +10,7 @@ const server=http.createServer((req,res)=>{const file=path.join(root,decodeURICo
  for(const [name,width,height] of [['desktop',1280,900],['mobile',390,844],['small',320,640],['tablet',820,700]]){
  const page=await browser.newPage({viewport:{width,height}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
- await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
  // The startup notice is modal; dismiss it before testing game keyboard input.
  await page.locator('#noticeStart').click();
  await page.emulateMedia({reducedMotion:'reduce'});

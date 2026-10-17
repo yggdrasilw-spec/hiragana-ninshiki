@@ -17,7 +17,7 @@ const server=http.createServer((req,res)=>{
       const page=await browser.newPage({viewport:{width,height}}),errors=[];
       page.on('pageerror',error=>errors.push(error.message));
       await page.route('**/*',route=>route.request().url().startsWith(origin)?route.continue():route.fulfill({status:200,contentType:'application/json',body:'{}'}));
-      await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+      await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
       await page.evaluate(()=>{
         ST.voice=false;ST.level=1;document.getElementById('titleScreen')?.remove();
         fetchImg=async()=>({url:null,credit:null});

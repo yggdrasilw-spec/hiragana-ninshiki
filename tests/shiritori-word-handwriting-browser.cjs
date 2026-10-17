@@ -19,7 +19,7 @@ const server=http.createServer((req,res)=>{
         if(route.request().url().includes('/tf.min.js')&&fs.existsSync(path.join(out,'tf.min.js')))return route.fulfill({path:path.join(out,'tf.min.js'),contentType:'text/javascript'});
         return route.abort();
       });
-      await page.goto(origin+'/shiritori.html');
+      await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');
       await page.evaluate(()=>{document.getElementById('titleScreen').remove();document.querySelectorAll('dialog[open]').forEach(d=>d.close());ST.voice=false;resizeCV();});
       assert.equal(await page.evaluate(()=>ST.handwritingMode),'single');
       await page.evaluate(()=>{document.querySelectorAll('dialog[open]').forEach(d=>d.close());showPage('settings');setSettingsTab('input');});

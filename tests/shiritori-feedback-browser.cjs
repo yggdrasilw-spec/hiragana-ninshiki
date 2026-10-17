@@ -15,7 +15,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
     if(live && /^https:\/\/(www\.gstatic\.com|[^/]*googleapis\.com)\//.test(url))return route.continue();
     return route.fulfill({contentType:'application/json',body:'{}'});
    });
-   await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+   await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
    assert.equal(await page.locator('#shiriNotice').isVisible(),true);assert.match(await page.locator('#shiriNotice').innerText(),/不正確/);
    await page.locator('#noticeStart').click();await page.evaluate(()=>{document.getElementById('titleScreen')?.remove();showPage('settings');});
    await page.locator('[data-category="animal"]').selectOption('wikimedia');

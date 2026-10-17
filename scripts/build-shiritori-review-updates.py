@@ -28,6 +28,10 @@ def digest(blob):
 
 def build():
     current = rows((ROOT / 'whitelist.csv').read_bytes())
+    previous_catalog = json.loads(OUTPUT.read_text(encoding='utf-8')) if OUTPUT.exists() else {}
+    previous_images = previous_catalog.get('images', {})
+    previous_text_dates = {tuple(e['text']): e.get('textUpdatedAt', '') for e in previous_catalog.get('entries', [])}
+    previous_assignment_dates = {(*e['text'], e.get('image_asset', '')): e.get('imageAssignedAt', '') for e in previous_catalog.get('entries', [])}
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
     text_dates = {}
     assignment_dates = {}
@@ -78,12 +82,15 @@ def build():
         blob = (ROOT / asset).read_bytes()
         fingerprint = digest(blob)
         updated = image_dates.get(asset, '')
-        if asset in pending_images:
+        previous = previous_images.get(asset, {})
+        if previous.get('sha256') == fingerprint:
+            updated = previous.get('updatedAt', updated)
+        elif previous or asset in pending_images or not updated:
             updated = now
         images[asset] = {'sha256': fingerprint, 'updatedAt': updated}
-    entries = [{'id': i + 1, 'text': list(text_key(r)), 'textUpdatedAt': text_dates.get(text_key(r), ''),
+    entries = [{'id': i + 1, 'text': list(text_key(r)), 'textUpdatedAt': previous_text_dates.get(text_key(r), text_dates.get(text_key(r), '')),
                 'image_asset': r.get('image_asset', ''),
-                'imageAssignedAt': assignment_dates.get(assignment_key(r), '') if r.get('image_asset') else ''} for i, r in enumerate(current)]
+                'imageAssignedAt': previous_assignment_dates.get(assignment_key(r), assignment_dates.get(assignment_key(r), '')) if r.get('image_asset') else ''} for i, r in enumerate(current)]
     payload = {'version': 1, 'csvSha256': digest((ROOT / 'whitelist.csv').read_bytes()),
                'entries': entries, 'images': images}
     # No run timestamp: an unchanged tree produces exactly the same catalog.

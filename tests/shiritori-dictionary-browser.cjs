@@ -15,7 +15,7 @@ const server=http.createServer((req,res)=>{
     for(const width of [320,390,1280]){
       const page=await browser.newPage({viewport:{width,height:900}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
       await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
-      await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+      await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
       await page.evaluate(()=>{ST.voice=false;document.getElementById('titleScreen')?.remove();});
       if(width<769)await page.locator('#mobTabRight').click();
       for(const row of selected){

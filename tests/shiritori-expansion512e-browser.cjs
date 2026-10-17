@@ -12,7 +12,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'}),errors=[];let external=0;
   page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/*',r=>{if(r.request().url().startsWith(origin))return r.continue();external++;return r.fulfill({status:200,contentType:'application/json',body:'{}'});});
-  await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+  await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
   await page.evaluate(()=>{ST.voice=false;ST.level=3;document.getElementById('titleScreen')?.remove();switchIn('kbd');});
   await page.locator('#noticeStart').click();if(width<769)await page.locator('#mobTabRight').click();
   const levels=await page.evaluate(items=>[1,2,3].map(level=>{ST.level=level;const pool=new Set(getPool().map(r=>r.reading));return items.filter(r=>pool.has(r.reading)!==(level===3)).map(r=>r.reading);}),selected);
@@ -44,7 +44,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
   if(width<769)await page.locator('#mobTabRight').click();
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.screenshot({path:'C:/Users/user/.cache/shiritori-qa/expansion512e-'+width+'.png'});
-  await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
+  await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
   await page.locator('#scope').selectOption('new');await page.locator('#sort').selectOption('dictionary');
   for(const row of samples){
    await page.locator('#search').fill(row.word+' '+row.reading);let found=false;

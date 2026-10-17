@@ -5,3 +5,25 @@
 /firebase-feedback/.firebase/
 **/firestore-debug.log
 **/ui-debug.log
+
+# Image binaries live in Cloudflare R2. Keep local originals for generation/audits.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avif
+*.svg
+*.ico
+*.bmp
+*.tif
+*.tiff
+*.PNG
+*.JPG
+*.JPEG
+*.WEBP
+*.GIF
+*.SVG
+**/node_modules/
+**/.wrangler/
+/cloudflare/images/.dev.vars*

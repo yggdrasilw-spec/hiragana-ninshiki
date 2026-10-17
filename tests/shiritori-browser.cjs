@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
       page.on('pageerror', error => errors.push(error.message));
       // Deterministic search failure, including offline operation. Local assets remain available.
       await page.route('**/*', route => route.request().url().startsWith(origin) ? route.continue() : route.fulfill({ status: 200, contentType: 'application/json', body: '{}' }));
-      await page.goto(origin + '/shiritori.html');
+      await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin + '/shiritori.html');
       await page.waitForFunction(() => ST.wlLoaded);
       await page.evaluate(() => { ST.voice = false; document.getElementById('titleScreen')?.remove(); switchIn('keyboard'); });
       if (name === 'mobile') await page.locator('#mobTabRight').click();

@@ -10,7 +10,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
 try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
  const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
- await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
  await page.evaluate(()=>{ST.voice=false;ST.level=3;document.getElementById('titleScreen')?.remove();switchIn('kbd');});
  if(viewport.width<500)await page.locator('#mobTabRight').click();
  for(const row of selected){
@@ -33,7 +33,7 @@ try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
   await page.waitForFunction(reading=>ST.used.has(reading),reading);
  }
  if(process.env.QA_OUTPUT){fs.mkdirSync(process.env.QA_OUTPUT,{recursive:true});await page.screenshot({path:path.join(process.env.QA_OUTPUT,'expansion512-'+viewport.width+'.png')});}
- await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
  await page.locator('#scope').selectOption('new');await page.locator('#sort').selectOption('dictionary');
  for(const row of selected.filter(r=>r.image_asset).filter((r,i)=>i%16===0||['ふかす','てんじくねずみ','きらら'].includes(r.reading))){
   const id=rows.indexOf(row)+1;await page.locator('#search').fill(row.word);
@@ -46,7 +46,7 @@ try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
   await page.locator('#picture').evaluate(i=>i.decode());
   assert.equal(await page.locator('#word').innerText(),row.word);
   assert.equal(await page.locator('#meaning').innerText(),row.meaning);
-  assert.ok((await page.locator('#picture').getAttribute('src')).startsWith(row.image_asset));
+  assert.ok((await page.locator('#picture').getAttribute('src')).includes('/'+row.image_asset));
  }
  assert.deepEqual(errors,[]);await page.close();
 }console.log(JSON.stringify({passed:true,wordsPerViewport:selected.length,viewports:2,offline:true,homonyms:true,reviewCatalog:true}));

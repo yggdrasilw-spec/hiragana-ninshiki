@@ -1,0 +1,12 @@
+{
+  "name": "shiritori-image-delivery",
+  "private": true,
+  "scripts": {
+    "check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "sync": "node ../../scripts/sync-shiritori-r2.cjs --wrangler node_modules/wrangler/bin/wrangler.js"
+  },
+  "dependencies": { "@aws-sdk/client-s3": "3.1152.0" },
+  "devDependencies": { "wrangler": "4.151.1" }
+}

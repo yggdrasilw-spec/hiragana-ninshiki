@@ -1190,7 +1190,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 
 <!-- TITLE SCREEN -->
 <div id="titleScreen">
-  <img id="titleImg" src="./shiritori_title.png" alt="しりとり" draggable="false"/>
+  <img id="titleImg" src="https://shiritori-images.yggdrasil-learning.workers.dev/shiritori_title.png" alt="しりとり" draggable="false"/>
   <div id="titleTap">タップしてスタート ▶</div>
   <div id="titleLoading">よみこみちゅう…</div>
   <button id="titleModeBtn" onclick="toggleCharModeFromTitle(event)" onpointerdown="event.stopPropagation()"></button>
@@ -1589,6 +1589,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <div id="flyEl"></div>
 <div id="panicOverlay"></div>
 
+<script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
 <script src="shiritori-vocabulary.js?v=20261016b"></script>
 <script src="shiritori-grade-policy.js?v=20261016b"></script>
@@ -3015,12 +3016,12 @@ async function fetchJson(url){
   finally{ clearTimeout(timer); }
 }
 
-// アセットはこのアプリに保存した画像のみ。CSVから外部URLや親フォルダは指定しない。
+// CSVの安全な相対パスだけを、固定したR2配信先に変換する。
 function localImageAsset(path){
   if(!path) return null;
   const cleaned = String(path).replace(/^\.\//, '');
   return /^assets\/shiritori\/[a-zA-Z0-9_-]+\.(png|jpe?g|webp)$/i.test(cleaned)
-    ? './' + cleaned : null;
+    ? ShiritoriAssets.url(cleaned) : null;
 }
 
 function canLoadImage(url){

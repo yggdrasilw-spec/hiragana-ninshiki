@@ -10,7 +10,7 @@ const server=http.createServer((req,res)=>{const f=path.resolve(root,'.'+new URL
  try{for(const width of [1280,390]){
   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
-  await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+  await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
   await page.evaluate(()=>{ST.voice=false;ST.level=3;document.getElementById('titleScreen')?.remove();switchIn('kbd');});await page.locator('#noticeStart').click();
   if(width<769)await page.locator('#mobTabRight').click();
   const checked=await page.evaluate(async rows=>{
@@ -44,7 +44,7 @@ const server=http.createServer((req,res)=>{const f=path.resolve(root,'.'+new URL
   const inputSamples=['こかこーら','ぺぷし','ふぁんた','ぽかりすえっと','えぬえすえっくす','ふぇらーり','ぼぶすれー','ばかうけ','すいせい','すばる'];
   if(width<769)await page.locator('#mobTabCenter').click();await page.locator('#tabKbd').click();
   for(const reading of inputSamples){await page.evaluate(()=>{ST.tail='';ST.cpuBusy=false;ST.gameOver=false;document.getElementById('btnOk').disabled=false;});await page.locator('#kbdInput').fill(reading);await page.locator('#kbdInput').press('Enter');await page.waitForFunction(r=>ST.used.has(r),reading);await page.waitForFunction(()=>!ST.cpuBusy);}
-  await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();await page.locator('#scope').selectOption('all');await page.locator('#sort').selectOption('dictionary');
+  await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();await page.locator('#scope').selectOption('all');await page.locator('#sort').selectOption('dictionary');
   // Review every imported sense by exact ID; same word+reading can now have two senses.
   const catalog=await page.evaluate(async rows=>{
    const failures=[];
@@ -55,7 +55,7 @@ const server=http.createServer((req,res)=>{const f=path.resolve(root,'.'+new URL
     if(document.getElementById('meaning').textContent!==r.meaning)failures.push('Meaning '+r.id);
     const img=document.getElementById('picture');
     if(r.image_mode==='none'){if(!img.hidden||!document.getElementById('imageError').textContent.includes('説明のみ'))failures.push('None '+r.id);}
-    else{try{await img.decode();if(img.naturalWidth!==256||!img.getAttribute('src').startsWith(r.image_asset))failures.push('Image '+r.id);}catch{failures.push('Decode '+r.id);}}
+    else{try{await img.decode();if(img.naturalWidth!==256||!img.getAttribute('src').includes('/'+r.image_asset))failures.push('Image '+r.id);}catch{failures.push('Decode '+r.id);}}
    }
    return {failures,rows:rows.length};
   },selected);assert.deepEqual(catalog.failures,[]);assert.deepEqual(errors,[]);

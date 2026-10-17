@@ -9,7 +9,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
 try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
  const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
- await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
  await page.evaluate(()=>{ST.voice=false;ST.level=3;document.getElementById('titleScreen')?.remove();switchIn('keyboard');});
  if(viewport.width<500)await page.locator('#mobTabRight').click();
  for(const row of selected){
@@ -23,7 +23,7 @@ try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
  assert.equal(await page.evaluate(()=>lookupRow('いか').words.length),2);
  assert.equal(await page.evaluate(()=>lookupRow('はるさめ').words.length),2);
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
- await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
  await page.locator('#scope').selectOption('new');await page.locator('#sort').selectOption('dictionary');
  for(const row of selected){
   const id=rows.indexOf(row)+1;await page.locator('#search').fill(row.word);
@@ -36,7 +36,7 @@ try{for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
   await page.locator('#picture').evaluate(i=>i.decode());
   assert.equal(await page.locator('#word').innerText(),row.word);
   assert.equal(await page.locator('#meaning').innerText(),row.meaning);
-  assert.ok((await page.locator('#picture').getAttribute('src')).startsWith(row.image_asset));
+  assert.ok((await page.locator('#picture').getAttribute('src')).includes('/'+row.image_asset));
  }
  assert.deepEqual(errors,[]);await page.close();
 }console.log(JSON.stringify({passed:true,imagesPerViewport:selected.length,viewports:2,offline:true,homonyms:true,reviewCatalog:true}));

@@ -1,0 +1,10 @@
+{
+  "name": "shiritori-images",
+  "main": "worker.mjs",
+  "account_id": "2630c9c698e944d5688eef9171419108",
+  "compatibility_date": "2026-10-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": { "enabled": true, "head_sampling_rate": 0.01 },
+  "r2_buckets": [{ "binding": "ASSETS", "bucket_name": "shiritori-images" }]
+}

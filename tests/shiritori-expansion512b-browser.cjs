@@ -11,7 +11,7 @@ const browser=await chromium.launch({headless:true,executablePath:process.env.QA
 try{for(const width of [1280,390]){
  const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
- await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
  await page.evaluate(()=>{ST.voice=false;ST.level=3;document.getElementById('titleScreen')?.remove();switchIn('kbd');});
  await page.locator('#noticeStart').click();
  if(width<769)await page.locator('#mobTabRight').click();
@@ -39,7 +39,7 @@ try{for(const width of [1280,390]){
  }
  await page.screenshot({path:'C:/Users/user/.cache/shiritori-qa/expansion512b-'+width+'.png'});
  console.log(JSON.stringify({width,gameWords:512,passed:true}));
- await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
  await page.locator('#scope').selectOption('new');await page.locator('#sort').selectOption('dictionary');
  for(const row of selected){
   // Exact combined word/reading avoids hundreds of unrelated matches for 品.
@@ -52,7 +52,7 @@ try{for(const width of [1280,390]){
   await page.locator('#picture').evaluate(i=>i.decode());
   assert.equal(await page.locator('#word').innerText(),row.word);assert.equal(await page.locator('#meaning').innerText(),row.meaning);
   assert.equal(await page.locator('#picture').evaluate(i=>i.naturalWidth),256);
-  assert.ok((await page.locator('#picture').getAttribute('src')).startsWith(row.image_asset));
+  assert.ok((await page.locator('#picture').getAttribute('src')).includes('/'+row.image_asset));
  }
  assert.deepEqual(errors,[]);await page.close();console.log(JSON.stringify({width,reviewWords:512,passed:true}));
 }const result={passed:true,wordsPerViewport:512,viewports:[1280,390],game:true,reviewCatalog:true,offline:true,credits:true,levelFiltering:true,inputSamplesPerViewport:12,pageErrors:0};

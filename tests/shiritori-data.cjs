@@ -2,7 +2,6 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
-const cp = require('node:child_process');
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'shiritori.html'), 'utf8');
 for (const script of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(script[1]);
@@ -12,14 +11,14 @@ let available = new Set();
 class MockImage {
   set src(url) { queueMicrotask(() => { this.naturalWidth = available.has(url) ? 800 : 0; if (this.naturalWidth) this.onload?.(); else this.onerror?.(); }); }
 }
-const context = vm.createContext({ Image: MockImage, URL, AbortController, setTimeout, clearTimeout, console, fetch: async () => ({ ok: true, json: async () => ({}) }), escH: s => String(s) });
+const context = vm.createContext({ ShiritoriAssets: require('../shiritori-assets.js'), Image: MockImage, URL, AbortController, setTimeout, clearTimeout, console, fetch: async () => ({ ok: true, json: async () => ({}) }), escH: s => String(s) });
 vm.runInContext(parser + images, context);
 const evalIn = code => vm.runInContext(code, context);
 const csv = fs.readFileSync(path.join(root, 'whitelist.csv'), 'utf8');
 context.csv = csv;
 const rows = evalIn('parseCSV(csv)');
 // Baseline before the first 「は」 batch; keep this fixed after committing.
-const old = cp.execFileSync('git', ['show', 'b0c8dbf:whitelist.csv'], { cwd: root, encoding: 'utf8' }).trim().split(/\r?\n/).slice(1);
+const old = fs.readFileSync(path.join(__dirname, 'fixtures/shiritori-before-ha.csv'), 'utf8').trim().split(/\r?\n/).slice(1);
 // Explanations may be intentionally edited; preserve the vocabulary and asset lineage.
 const reviewSource=path.join(root,'data/meaning-review/source.csv');
 const now = (fs.existsSync(reviewSource)?fs.readFileSync(reviewSource,'utf8'):csv).trim().split(/\r?\n/).slice(1);
@@ -67,21 +66,21 @@ const legacy = evalIn('parseCSV(legacy)')[0];
 assert.equal(legacy.words.length, 2); assert.equal(legacy.level, 1); assert.equal(legacy.imagequeries[1].en, 'Bridge');
 assert.equal(evalIn("localImageAsset('../outside.png')"), null);
 assert.equal(evalIn("localImageAsset('https://example.com/a.png')"), null);
-assert.equal(evalIn("localImageAsset('assets/shiritori/hakushu.png')"), './assets/shiritori/hakushu.png');
+assert.equal(evalIn("localImageAsset('assets/shiritori/hakushu.png')"), 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hakushu.png');
 context.queries = 0;
 evalIn(`fetchPageImage = async () => { queries++; return null; }; fetchPageImageBySearch = async () => { queries++; return null; }; fetchCommonsByTitle = async () => { queries++; return null; }; fetchCommonsByFulltext = async () => { queries++; return null; };`);
 (async () => {
-  available = new Set(['./assets/shiritori/hakushu.png', './assets/shiritori/hayane.png']);
+  available = new Set(['https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hakushu.png', 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hayane.png']);
   const preferred = await evalIn("fetchImg({ja:'拍手',asset:'assets/shiritori/hakushu.png',mode:'asset'})");
-  assert.equal(preferred.url, './assets/shiritori/hakushu.png'); assert.equal(context.queries, 0);
+  assert.equal(preferred.url, 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hakushu.png'); assert.equal(context.queries, 0);
   assert.equal(preferred.credit.text, 'AI生成イラスト');
   const fallback = await evalIn("fetchImg({ja:'早寝',en:'Early bedtime',asset:'assets/shiritori/hayane.png'})");
-  assert.equal(fallback.url, './assets/shiritori/hayane.png'); assert.equal(context.queries, 8);
+  assert.equal(fallback.url, 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hayane.png'); assert.equal(context.queries, 8);
   const count = context.queries;
   await evalIn("fetchImg({ja:'早寝',en:'Early bedtime',asset:'assets/shiritori/hayane.png'})");
   assert.equal(context.queries, count, 'Cache avoids repeated search');
   const sameQuery = await evalIn("fetchImg({ja:'早寝',asset:'assets/shiritori/hakushu.png',mode:'asset',credit:'別の意味'})");
-  assert.equal(sameQuery.url, './assets/shiritori/hakushu.png'); assert.equal(sameQuery.credit.text, '別の意味');
+  assert.equal(sameQuery.url, 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hakushu.png'); assert.equal(sameQuery.credit.text, '別の意味');
   available.add('https://upload.wikimedia.org/example.png');
   evalIn("fetchPageImage = async () => { queries++; return 'https://upload.wikimedia.org/example.png'; }; checkImgCredit = async () => ({ok:true,credit:{text:'Author / CC BY'}});");
   const missing = await evalIn("fetchImg({ja:'別の語',asset:'assets/shiritori/missing.png',mode:'asset'})");
@@ -90,7 +89,7 @@ evalIn(`fetchPageImage = async () => { queries++; return null; }; fetchPageImage
   assert.equal(photo.url, 'https://upload.wikimedia.org/example.png', 'Wikimedia precedes fallback');
   available.delete('https://upload.wikimedia.org/example.png');
   const broken = await evalIn("fetchImg({ja:'壊れた写真',asset:'assets/shiritori/hayane.png'})");
-  assert.equal(broken.url, './assets/shiritori/hayane.png', 'Broken Wikimedia image uses asset');
+  assert.equal(broken.url, 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/hayane.png', 'Broken Wikimedia image uses asset');
   evalIn('fetchPageImage = async () => null;');
   const empty = await evalIn("fetchImg({ja:'画像なし',asset:'assets/shiritori/missing.png'})");
   assert.equal(empty.url, null); assert.equal(empty.credit, null);

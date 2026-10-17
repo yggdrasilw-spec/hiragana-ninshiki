@@ -21,7 +21,7 @@ const server=http.createServer((req,res)=>{
     for(const [name,viewport] of [['desktop',{width:1280,height:900}],['mobile',{width:390,height:844}]]){
       const page=await browser.newPage({viewport}),errors=[];page.on('pageerror',e=>errors.push(e.message));
       await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
-      await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+      await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
       await page.evaluate(()=>{ST.voice=false;ST.level=3;document.getElementById('titleScreen')?.remove();switchIn('keyboard');});
       if(name==='mobile')await page.locator('#mobTabRight').click();
       for(const row of selected){
@@ -37,7 +37,7 @@ const server=http.createServer((req,res)=>{
         if(['いやいや','空腹','一指','感覚','義務','借り暮らし','屈伸','芋づる'].includes(row.word))await page.screenshot({path:path.join(output,name+'-'+path.basename(row.image_asset)),fullPage:true});
         assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No horizontal overflow');
       }
-      await page.goto(origin+'/shiritori-image-review.html');
+      await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');
       await page.locator('#message').filter({hasText:'準備できました'}).waitFor();
       await page.locator('details summary').click();
       for(const word of ['痛い','一指','筆算','割り込み','居合わせる','屈伸','借り暮らし','義務']){

@@ -11,7 +11,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'}),errors=[];
   page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
-  await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+  await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
   await page.evaluate(()=>{ST.voice=false;ST.level=5;document.getElementById('titleScreen')?.remove();switchIn('kbd');});
   await page.locator('#noticeStart').click();
   if(width<769)await page.locator('#mobTabRight').click();
@@ -63,7 +63,7 @@ const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new 
   await page.evaluate(async()=>{ST.level=4;await showDetail('せんぼんにしき',lookupRow('せんぼんにしき'));});
   if(width<769)await page.locator('#mobTabRight').click();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.screenshot({path:path.join(out,'game-'+width+'.png')});
-  await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();await page.locator('#scope').selectOption('new');await page.locator('#sort').selectOption('dictionary');
+  await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori-image-review.html');await page.locator('#message').filter({hasText:'準備できました'}).waitFor();await page.locator('#scope').selectOption('new');await page.locator('#sort').selectOption('dictionary');
   const catalog=await page.evaluate(async items=>{
    const failures=[];
    for(const x of items){

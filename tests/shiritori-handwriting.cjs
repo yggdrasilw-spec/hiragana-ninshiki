@@ -7,7 +7,7 @@ const server=http.createServer((req,res)=>{const relative=new URL(req.url,'http:
  for(const dpr of [1,2,3]){
  const page=await browser.newPage({viewport:{width:Number(process.env.QA_VIEWPORT_WIDTH||1280),height:900},deviceScaleFactor:dpr});
  await page.route('https://**/*',r=>r.abort());
- await page.goto('http://127.0.0.1:'+server.address().port+'/shiritori.html');
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto('http://127.0.0.1:'+server.address().port+'/shiritori.html');
  const result=await page.evaluate(async()=>{
  document.getElementById('titleScreen').remove();ST.voice=false;resizeCV();clearCV();
  const blank=preprocess();const cssLine=calcLineW()/(cv.width/cv.getBoundingClientRect().width);

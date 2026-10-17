@@ -40,7 +40,7 @@ assert.ok(!review.some(x=>x.word==='モルフォナイト'));assert.ok(review.so
 const html=fs.readFileSync(path.join(root,'shiritori.html'),'utf8');
 for(const script of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g))new vm.Script(script[1]);
 const images=html.slice(html.indexOf('const IMG_CACHE ='),html.indexOf('async function showDetail('));
-const ctx=vm.createContext({URL,Image:class{},AbortController,setTimeout,clearTimeout,ST:{imagePolicy:{}},ShiritoriImagePolicy:{source:()=> 'wikimedia'},available:true,searches:0});
+const ctx=vm.createContext({ShiritoriAssets:require('../shiritori-assets.js'),URL,Image:class{},AbortController,setTimeout,clearTimeout,ST:{imagePolicy:{}},ShiritoriImagePolicy:{source:()=> 'wikimedia'},available:true,searches:0});
 vm.runInContext(images,ctx);
 vm.runInContext("canLoadImage=async()=>available; fetchPageImage=fetchPageImageBySearch=fetchCommonsByTitle=fetchCommonsByFulltext=async()=>{searches++;return null;};",ctx);
 (async()=>{
@@ -48,7 +48,7 @@ vm.runInContext("canLoadImage=async()=>available; fetchPageImage=fetchPageImageB
   ctx.ShiritoriImagePolicy.source=()=>source;
   ctx.available=true;
   const found=await vm.runInContext("fetchImg({ja:'大谷翔平',asset:'assets/shiritori/test-card.png',mode:'asset',credit:'独自文字カード（外部検索なし）'})",ctx);
-  assert.equal(found.url,'./assets/shiritori/test-card.png');assert.equal(ctx.searches,0);
+  assert.equal(found.url,'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/test-card.png');assert.equal(ctx.searches,0);
   ctx.available=false;
   const missing=await vm.runInContext("fetchImg({ja:'大谷翔平',asset:'assets/shiritori/missing-card.png',credit:'独自文字カード（外部検索なし）'})",ctx);
   assert.equal(missing.url,null);assert.equal(ctx.searches,0);
