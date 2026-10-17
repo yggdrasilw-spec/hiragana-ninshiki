@@ -57,7 +57,10 @@ node scripts/sync-shiritori-r2.cjs --s3-credentials C:/private/r2-credentials.js
 
 ## Workerの確認・更新
 
+WorkerをCLIから更新するときは `workers_scripts:write` も付けてログインしてください。画像の差分転送だけではこの権限は不要です。
+
 ```powershell
+node cloudflare/images/node_modules/wrangler/bin/wrangler.js login --scopes account:read user:read workers:write workers_scripts:write
 npm --prefix cloudflare/images run check
 npm --prefix cloudflare/images run deploy
 node tests/shiritori-r2.cjs

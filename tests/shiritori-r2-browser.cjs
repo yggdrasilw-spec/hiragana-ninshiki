@@ -26,6 +26,7 @@ const server = http.createServer((req, res) => {
       page.on('response', response => { if (response.url().startsWith(assets.origin) && response.ok()) delivered.add(new URL(response.url()).pathname); });
       await page.route('**/*', route => {
         const url = route.request().url();
+        if (url.startsWith(origin + '/') && /\.(png|jpe?g|webp|gif|svg)(\?|$)/i.test(url)) { localImages.push(url); return route.fulfill({ status: 404, body: '' }); }
         if (url.startsWith(origin) || url.startsWith(assets.origin + '/')) return route.continue();
         return route.fulfill({ status: 200, contentType: 'application/json', body: '{}' });
       });
