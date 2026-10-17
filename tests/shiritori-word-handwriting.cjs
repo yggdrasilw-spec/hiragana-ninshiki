@@ -20,3 +20,13 @@ assert.deepEqual(engine.decode(engine.plan([]),[]),[]);
 assert.throws(()=>engine.plan(Array.from({length:65},()=>left)),/too-many-strokes/);
 assert.equal(engine.smallMap[engine.largeMap['っ']],'っ');
 console.log('Word segmentation, late marks, spatial ordering, small kana and limits passed.');
+
+// A dictionary word outside the visual top five must still be offered first.
+const ranked=Array.from({length:8},(_,i)=>({text:'候補'+i,score:10-i}));
+assert.equal(engine.rankCandidates(ranked,text=>text==='候補6')[0].text,'候補6');
+assert.deepEqual(engine.rankCandidates(ranked,()=>false),ranked.slice(0,5));
+assert.deepEqual(engine.rankCandidates(ranked,text=>['候補6','候補2'].includes(text)).slice(0,2).map(r=>r.text),['候補2','候補6']);
+const pairPredictions=plan.segments.map(s=>[{ch:'く',p:.7},{ch:'し',p:.3}]);
+const dictionaryFirst=engine.decode(plan,pairPredictions,{isKnown:text=>text==='くし'});
+assert.equal(dictionaryFirst[0].text,'くし');assert.equal(dictionaryFirst[0].chars.map(c=>c.ch).join(''),'くし');
+console.log('Dictionary-first ordering preserves model candidates and stroke ranges.');

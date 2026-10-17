@@ -12,8 +12,8 @@ const server=http.createServer((req,res)=>{
   await new Promise(r=>server.listen(0,'127.0.0.1',r));fs.mkdirSync(out,{recursive:true});
   const origin=`http://127.0.0.1:${server.address().port}`,browser=await chromium.launch({channel:process.env.QA_BROWSER||'chrome',headless:true});
   try{
-    for(const width of [1280,390,320]){
-      const page=await browser.newPage({viewport:{width,height:900},deviceScaleFactor:width===390?2:1}),errors=[];
+    for(const width of (process.env.QA_WIDTHS||'1280,820,390,320').split(',').map(Number)){
+      const page=await browser.newPage({viewport:{width,height:width===820?700:900},deviceScaleFactor:width===390?2:1}),errors=[];
       page.on('pageerror',e=>errors.push(e.message));
       await page.route('https://**/*',route=>{
         if(route.request().url().includes('/tf.min.js')&&fs.existsSync(path.join(out,'tf.min.js')))return route.fulfill({path:path.join(out,'tf.min.js'),contentType:'text/javascript'});
@@ -68,7 +68,8 @@ const server=http.createServer((req,res)=>{
       await page.evaluate(()=>{WordHandwritingUI.setMode('word');});
       const checks=await page.evaluate(async()=>{
         clearCV();setCurrentInput('');
-        const actualTf=typeof tf==='undefined'?null:tf,actualModel=tfModel;
+        const actualTf=typeof tf==='undefined'?null:tf,actualModel=tfModel,actualWhitelist=ST.whitelist;
+        ST.whitelist=[];
         let disposed=0;
         // Deterministic classifier isolates candidate editing/state from model accuracy.
         tf={tensor4d(data,shape){return {shape,dispose(){disposed++;}};}};
@@ -121,7 +122,7 @@ const server=http.createServer((req,res)=>{
         const katakanaFallback=!WordHandwritingUI.active()&&!document.getElementById('predRow').classList.contains('hidden');
         ST.charMode='hiragana';WordHandwritingUI.sync();
         const restored=WordHandwritingUI.active();
-        cv.setPointerCapture=capture;tf=actualTf;tfModel=actualModel;invalidatePrediction();
+        cv.setPointerCapture=capture;tf=actualTf;tfModel=actualModel;ST.whitelist=actualWhitelist;invalidatePrediction();
         return {chars,boxes,aligned,alternateBoxes,alternateText,overlayDoesNotChangeInk,highlighted,clearedBoxes,before,after,pickerWorked,otherBefore,otherAfter,accepted,strokesAfter,readEnabled,stale,readDisabled,legacyVisible,noStale,katakanaFallback,restored,disposed};
       });
       assert.notEqual(checks.before,checks.after);assert.match(checks.accepted,/^[つっ]{2}$/);assert.equal(checks.strokesAfter,0);
@@ -131,6 +132,17 @@ const server=http.createServer((req,res)=>{
       assert.deepEqual(checks.boxes,checks.chars.map((ch,i)=>({number:i+1,ch})));
       assert.equal(checks.alternateBoxes,checks.alternateText);
       for(const key of ['aligned','overlayDoesNotChangeInk','highlighted','clearedBoxes'])assert.equal(checks[key],true,key);
+      const dictionary=await page.evaluate(async()=>{
+        const saved={tf,model:tfModel,whitelist:ST.whitelist,genres:ST.cpuGenres};
+        try{
+          clearCV();setCurrentInput('く');ST.cpuGenres=[];
+          ST.whitelist=[{reading:'くし',words:['くし'],meanings:['テスト'],imagequeries:[{ja:'くし'}],level:4}];
+          tf={tensor4d(data,shape){return {shape,dispose(){}};}};tfModel={predict(input){return {data:async()=>Float32Array.from({length:input.shape[0]*71},(_,i)=>i%71===LABELS.indexOf('あ')?.8:i%71===LABELS.indexOf('し')?.2:.00001),dispose(){}};}};
+          ST.strokes=[{points:[{x:20,y:20},{x:40,y:80}],lineWidth:4}];await runPredict();
+          return {first:document.querySelector('#wordResults button').textContent,known:document.querySelector('#wordResults button').dataset.known,answer:document.getElementById('btnSubmitWord').textContent};
+        }finally{tf=saved.tf;tfModel=saved.model;ST.whitelist=saved.whitelist;ST.cpuGenres=saved.genres;clearCV();setCurrentInput('');}
+      });
+      assert.deepEqual(dictionary,{first:'し',known:'true',answer:'「くし」で こたえる'});
       const modelRace=await page.evaluate(async()=>{
         const originalTf=tf,originalModel=tfModel;let oldReady,newReady,oldDisposed=0;
         const newer={predict(){return {data:async()=>[],dispose(){}};},dispose(){}};
@@ -201,6 +213,24 @@ const server=http.createServer((req,res)=>{
         await page.locator('#wordCharacters button').first().click();await page.locator('#btnInspectCharacter').click();
         await page.screenshot({path:path.join(out,`${width}-character-review.png`),fullPage:true});
         await page.locator('#btnReviewClose').click();
+      }
+      if(!real.skipped){
+        await page.emulateMedia({reducedMotion:'reduce'});
+        await page.evaluate(strokes=>{resetGame();ST.voice=false;ST.skipLinkAnimation=true;getCpuDelay=()=>80;HandwritingReview.setEnabled(false);switchIn('canvas');ST.strokes=strokes;clearCV(false);ST.strokes.forEach(paintStroke);},fixtures.sample('くし'));
+        await page.evaluate(()=>runPredict());
+        assert.equal(await page.locator('#wordResults button').first().innerText(),'くし');assert.equal(await page.locator('#wordResults button').first().getAttribute('data-known'),'true');
+        if(width<=390)assert.ok((await page.locator('#btnSubmitWord').boundingBox()).width>220,'wide answer button');
+        assert.equal(await page.locator('#btnOk').evaluate(b=>b.scrollWidth<=b.clientWidth),true,'answer label fits');
+        await page.locator('#btnSubmitWord').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,`${width}-answer-ready.png`),fullPage:true});
+        await page.locator('#btnSubmitWord').click();await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy);
+        const turn=await page.evaluate(()=>({first:ST.history[0].reading,speaker:ST.history[0].speaker,next:ST.history[1].speaker,used:ST.used.has('くし'),you:ST.score.you,cpu:ST.score.cpu,ink:ST.strokes.length,input:ST.currentInput}));
+        assert.deepEqual(turn,{first:'くし',speaker:'あなた',next:'CPU',used:true,you:1,cpu:1,ink:0,input:''});
+        // The direct answer still obeys the normal shiritori connection rule.
+        await page.evaluate(strokes=>{resetGame();ST.tail='あ';ST.strokes=strokes;clearCV(false);ST.strokes.forEach(paintStroke);},fixtures.sample('くし'));await page.evaluate(()=>runPredict());
+        await page.locator('#btnSubmitWord').click();await page.waitForFunction(()=>!ST.cpuBusy);
+        assert.equal(await page.evaluate(()=>ST.history.length),0);assert.equal(await page.evaluate(()=>ST.currentInput),'くし');
+        console.log(JSON.stringify({width,dictionary,fullGameTurn:turn,normalValidation:true}));
+        await page.evaluate(()=>HandwritingReview.setEnabled(true));
       }
       console.log(JSON.stringify({width,real,checks,review}));
       await page.reload();assert.equal(await page.evaluate(()=>ST.showHandwritingProcess),true,'review preference persists');

@@ -38,3 +38,22 @@
 #handwritingReviewDialog p{font-size:13px;line-height:1.6}
 #characterReviewSvg{display:block;width:100%;background:white;border-radius:10px;margin-bottom:12px}
 @media(max-width:768px){#colCenter .panel:has(#modeCanvas:not(.hidden)){min-height:360px!important}#colCenter .panel:has(#modeCanvas.word-handwriting:not(.hidden)){min-height:550px!important}#modeCanvas.word-handwriting{min-height:495px}}
+
+.word-submit-actions{display:flex;flex-wrap:wrap;gap:8px;flex-shrink:0;padding:8px 0 2px}
+.word-submit-actions.hidden{display:none!important}
+.word-submit-actions button{min-height:48px;min-width:44px;max-width:100%;padding:9px 12px;border-radius:10px;border:1px solid var(--border);background:var(--panel,#172132);color:var(--text);font:inherit;cursor:pointer;overflow-wrap:anywhere}
+.word-submit-actions #btnSubmitWord{flex:1;min-width:0;border:2px solid var(--cyan);background:#113849;font-weight:800}
+.word-submit-actions button:disabled{opacity:.45;cursor:default}
+.word-submit-actions button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+#wordResults button[data-known="true"]::after{content:'じしょ';display:inline-block;font-size:10px;margin-left:6px;color:var(--cyan)}
+
+#btnOk{width:auto;min-width:88px;padding:0 8px;font-size:14px;white-space:nowrap}
+#wordHandwriting{flex:1 1 auto;min-height:0;max-height:none}
+#colCenter:has(#modeCanvas.word-handwriting:not(.hidden)){overflow-y:auto}
+#colCenter .panel:has(#modeCanvas.word-handwriting:not(.hidden)){min-height:440px!important}
+@media(max-width:768px){
+  #colCenter .panel:has(#modeCanvas.word-handwriting:not(.hidden)){min-height:680px!important}
+  #modeCanvas.word-handwriting{min-height:635px}
+  .word-submit-actions #btnSubmitWord{flex-basis:100%}
+  .word-submit-actions #btnAcceptWord{width:100%;min-height:44px}
+}

@@ -50,7 +50,7 @@
     }
     return result.sort((a,b)=>b.score-a.score);
   }
-  function decode(plan,predictions){
+  function decode(plan,predictions,{isKnown}={}){
     if(!plan.count)return [];
     const beams=Array.from({length:plan.count+1},()=>[]);beams[0]=[{text:'',score:0,chars:[]}];
     const byStart=Array.from({length:plan.count},()=>[]);
@@ -69,9 +69,15 @@
     }
     const unique=new Map();
     for(const b of beams[plan.count].sort((a,b)=>b.score-a.score))if(!unique.has(b.text))unique.set(b.text,b);
-    return [...unique.values()].slice(0,5);
+    return rankCandidates([...unique.values()],isKnown);
   }
-  const api={bounds,plan,decode,alternatives,smallMap,largeMap};
+  function rankCandidates(candidates,isKnown=()=>false,limit=5){
+    // Dictionary membership changes order only; keep the model's text and stroke ranges.
+    return candidates.map(candidate=>({candidate,known:!!isKnown(candidate.text)}))
+      .sort((a,b)=>Number(b.known)-Number(a.known)||b.candidate.score-a.candidate.score)
+      .slice(0,limit).map(item=>item.candidate);
+  }
+  const api={bounds,plan,decode,rankCandidates,alternatives,smallMap,largeMap};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;
   else root.ShiritoriWordHandwriting=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
