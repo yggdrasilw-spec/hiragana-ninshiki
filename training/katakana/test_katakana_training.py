@@ -8,6 +8,8 @@ import tempfile
 import unittest
 import zipfile
 import io
+from contextlib import redirect_stdout
+from types import SimpleNamespace
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -235,6 +237,43 @@ class SynthesisTests(unittest.TestCase):
             local = Path(k.extract_dataset_zip(archive, root / "out", reserve_bytes=0,
                                               progress=False, labels=k.LABELS, require_all=False))
             self.assertEqual(len(list(local.glob("*/*.png"))), 3)
+
+    def test_real_zip_detection_and_evaluation_cell(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            with self.assertRaises(FileNotFoundError):
+                k.resolve_real_zip(upload_dir=root)
+            image = io.BytesIO()
+            self.base.save(image, format='PNG')
+            archive = root / 'real-katakana-one.zip'
+            with zipfile.ZipFile(archive, 'w') as bundle:
+                bundle.writestr('ガ/one.png', image.getvalue())
+                bundle.writestr('manifest.json', json.dumps({'script': 'katakana'}))
+            self.assertEqual(k.resolve_real_zip(upload_dir=root), str(archive))
+            notebook = json.loads((Path(__file__).parent / 'etl5_train_marks.ipynb').read_text(encoding='utf-8'))
+            source = next(''.join(c['source']) for c in notebook['cells']
+                          if c['cell_type'] == 'code' and ''.join(c['source']).startswith('# 8.'))
+            probabilities = np.zeros((1, 72))
+            probabilities[0, k.LABELS.index('ガ')] = 1
+            namespace = dict(vars(k), OUTPUT_DIR=root,
+                             best_model=lambda *a, **kw: SimpleNamespace(numpy=lambda: probabilities),
+                             resolve_real_zip=lambda p: k.resolve_real_zip(p, root),
+                             extract_dataset_zip=lambda p, dest, **kw: k.extract_dataset_zip(p, root / 'extracted', progress=False, **kw))
+            output = io.StringIO()
+            with redirect_stdout(output):
+                exec(source, namespace)
+            self.assertIn('実筆評価完了: 1枚 / Top1 100.0%', output.getvalue())
+            report = json.loads((root / 'real-test-report.json').read_text(encoding='utf-8'))
+            self.assertEqual(report['characters']['ガ']['count'], 1)
+            second = root / 'real-katakana-two.zip'
+            second.write_bytes(archive.read_bytes())
+            with self.assertRaises(ValueError):
+                k.resolve_real_zip(upload_dir=root)
+            self.assertEqual(k.resolve_real_zip(archive, root), str(archive))
+            with zipfile.ZipFile(second, 'w') as bundle:
+                bundle.writestr('manifest.json', json.dumps({'script': 'hiragana'}))
+            with self.assertRaises(ValueError):
+                k.resolve_real_zip(second, root)
 
 
 if __name__ == "__main__":

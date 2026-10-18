@@ -32,6 +32,27 @@ def digest(value):
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
+def resolve_real_zip(path=None, upload_dir="/content"):
+    """Detect capture ZIPs only; never guess which of multiple writers to use."""
+    if path:
+        selected = Path(path)
+        if not selected.is_file():
+            raise FileNotFoundError(f"実筆ZIPが見つかりません: {selected}")
+    else:
+        candidates = sorted(Path(upload_dir).glob("real-katakana-*.zip"))
+        if not candidates:
+            raise FileNotFoundError("カタカナの収集ZIPがありません。real-katakana-*.zipを/contentへアップロードするか、REAL_ZIPへ実際のパスを指定してください。ひらがなZIPはこのカタカナモデルでは評価できません。")
+        if len(candidates) > 1:
+            raise ValueError("実筆ZIPが複数あります。REAL_ZIPに評価する1つのパスを指定してください: " + ", ".join(map(str, candidates)))
+        selected = candidates[0]
+    with zipfile.ZipFile(selected) as bundle:
+        if "manifest.json" in bundle.namelist():
+            manifest = json.loads(bundle.read("manifest.json"))
+            if manifest.get("script") not in (None, "katakana"):
+                raise ValueError("このZIPはカタカナの実筆ではありません。カタカナを選んで収集してください。")
+    return str(selected)
+
+
 def save_json(path, value):
     path = Path(path)
     temp = path.with_suffix(path.suffix + ".tmp")

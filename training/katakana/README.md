@@ -81,6 +81,9 @@ Top1・Top5、文字別Top1と件数、混同行列、同じ清音入力での�
 
 実筆画像は [収集アプリ](../../handwriting-capture.html) で用意できます。
 そこで出力する `real-katakana-....zip` をColabへアップロードし、⑧の `REAL_ZIP` に指定します。
+`REAL_ZIP = None` のままでも、`/content` に該当ZIPが1つなら自動検出します。
+見つからない場合・複数ある場合・ひらがなのZIPを指定した場合は案内して停止します。
+⑧は開始、使用ZIP、評価枚数、Top1／Top5、文字別結果と保存先を表示します。
 濁音・半濁音を数文字だけ集めたZIPでも評価できます。
 詳しくは [収集アプリの使い方](../../docs/handwriting-capture.md) を参照してください。
 

@@ -184,10 +184,14 @@ cell("markdown", """
 このデータを後から追加学習に使う場合、別の実筆テストを確保してください。
 """)
 cell("code", """
-# 8. 任意：合成ではない実筆の評価。フォルダを用意してから実行。
-REAL_ZIP = None  # 収集アプリのZIP: '/content/real-katakana-....zip'
+# 8. 合成ではない実筆の評価。収集アプリのZIPをアップロードして実行。
+REAL_ZIP = None  # Noneなら/contentのreal-katakana-*.zipを自動検出。複数ある場合は1つのパスを指定。
 REAL_DIR = None  # '/content/drive/MyDrive/ETL/real_katakana_test'
+print('実筆評価を開始します。入力データを確認しています。', flush=True)
+if not REAL_DIR or REAL_ZIP:
+    REAL_ZIP = resolve_real_zip(REAL_ZIP)
 if REAL_ZIP:
+    print('使用する実筆ZIP:', REAL_ZIP, flush=True)
     REAL_DIR = extract_dataset_zip(REAL_ZIP, '/content/katakana-real-test', reserve_bytes=0,
                                    labels=LABELS, require_all=False)
 if REAL_DIR:
@@ -198,6 +202,9 @@ if REAL_DIR:
                 real.append((folder.name, path))
     if not real:
         raise ValueError('実筆画像がありません')
+    print(f'実筆画像 {len(real)}枚・{len(set(char for char, _ in real))}文字を評価します。', flush=True)
+    if 'best_model' not in globals():
+        raise RuntimeError('評価モデルが未読込です。先に⑥の学習セルを実行してbest_modelを準備してください。')
     stats = {char: {'count': 0, 'top1': 0, 'top5': 0} for char in LABELS}
     for char, path in real:
         arr = np.asarray(normalize(ink_image(path)), dtype=np.float32)[None, ..., None] / 255.
@@ -210,7 +217,15 @@ if REAL_DIR:
     report = {'evaluation': 'real handwriting', 'characters': stats,
               'missing_characters': [c for c, s in stats.items() if not s['count']]}
     save_json(Path(OUTPUT_DIR) / 'real-test-report.json', report)
-    print(report)
+    total = len(real)
+    top1 = sum(s['top1'] for s in stats.values()) / total
+    top5 = sum(s['top5'] for s in stats.values()) / total
+    print(f'実筆評価完了: {total}枚 / Top1 {top1:.1%} / Top5 {top5:.1%}')
+    for char, entry in stats.items():
+        if entry['count']:
+            print(char, entry)
+    print('未評価の文字:', ''.join(report['missing_characters']))
+    print('結果保存先:', Path(OUTPUT_DIR) / 'real-test-report.json')
 """)
 cell("markdown", """
 ### TensorFlow.jsへの変換（任意、学習完了後）
