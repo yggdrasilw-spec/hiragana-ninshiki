@@ -96,6 +96,8 @@ Top1・Top5、文字別Top1と件数、混同行列、同じ清音入力での�
 任意の変換セルは、学習環境を変更しない独立したvenvへTensorFlow.jsコンバータを入れます。
 変換用venvにはuvでPython 3.12を用意し、学習ランタイムのPython版と分離します。
 SavedModelからGraphModelへ変換し、重みファイルの存在を検査します。
+⑩は子プロセスの標準出力とエラーを画面に表示し、出力先へ `converter-install.log`、
+`converter-versions.log`、`converter-日時.log` を保存します。失敗時は変換ログ末尾で原因を確認します。
 変換時に `labels.json` と入力仕様も出力します。
 `model.json` と全重みファイルに加え、アプリのラベル順を72文字へ合わせる必要があります。
 旧アプリの46文字ラベルのままモデルだけを置き換えないでください。

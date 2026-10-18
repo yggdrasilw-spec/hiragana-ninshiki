@@ -10,6 +10,8 @@ import zipfile
 import io
 from contextlib import redirect_stdout
 from types import SimpleNamespace
+import subprocess
+import sys
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -274,6 +276,26 @@ class SynthesisTests(unittest.TestCase):
                 bundle.writestr('manifest.json', json.dumps({'script': 'hiragana'}))
             with self.assertRaises(ValueError):
                 k.resolve_real_zip(second, root)
+
+    def test_converter_errors_are_visible_and_saved(self):
+        notebook = json.loads((Path(__file__).parent / 'etl5_train_marks.ipynb').read_text(encoding='utf-8'))
+        source = next(''.join(c['source']) for c in notebook['cells']
+                      if c['cell_type'] == 'code' and ''.join(c['source']).startswith('# 10.'))
+        tree = ast.parse(source)
+        helper = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'run_conversion_command')
+        with tempfile.TemporaryDirectory() as temp:
+            namespace = dict(Path=Path, OUTPUT_DIR=temp, subprocess=subprocess)
+            exec(compile(ast.Module(body=[helper], type_ignores=[]), '<converter helper>', 'exec'), namespace)
+            output = io.StringIO()
+            with redirect_stdout(output):
+                with self.assertRaisesRegex(RuntimeError, '終了コード7'):
+                    namespace['run_conversion_command']([sys.executable, '-c',
+                        'import sys; print("actual-converter-error", file=sys.stderr); sys.exit(7)'], 'failure.log')
+            self.assertIn('actual-converter-error', output.getvalue())
+            self.assertIn('actual-converter-error', (Path(temp) / 'failure.log').read_text(encoding='utf-8'))
+            with redirect_stdout(io.StringIO()):
+                namespace['run_conversion_command']([sys.executable, '-c', 'print("ok")'], 'success.log')
+            self.assertIn('ok', (Path(temp) / 'success.log').read_text(encoding='utf-8'))
 
 
 if __name__ == "__main__":

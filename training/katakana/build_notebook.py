@@ -250,6 +250,22 @@ best_model.export(str(saved))
 cell("code", """
 # 10. 独立した変換環境を用意（初回のみインストール）。失敗は例外で停止。
 import subprocess, sys
+
+def run_conversion_command(command, log_name, env=None):
+    # 子プロセスの本当のエラーを、CalledProcessErrorに埋もれさせない。
+    log_path = Path(OUTPUT_DIR) / log_name
+    print('実行:', ' '.join(map(str, command)), flush=True)
+    with log_path.open('w', encoding='utf-8') as log:
+        with subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                              text=True, encoding='utf-8', errors='replace', env=env) as process:
+            for line in process.stdout:
+                print(line, end='', flush=True)
+                log.write(line)
+            code = process.wait()
+    print('ログ保存先:', log_path, flush=True)
+    if code:
+        raise RuntimeError(f'変換の準備または実行が終了コード{code}で失敗しました。直前のログ末尾20〜40行を確認してください。全ログ: {log_path}')
+
 converter_env = Path('/content/katakana-tfjs-env')
 if not (converter_env / 'bin/python').exists():
     # 2.19のコンバータ環境をPython 3.13以降に作らないよう、3.12を明示。
@@ -259,12 +275,16 @@ if not (converter_env / 'bin/python').exists():
 converter_python = str(converter_env / 'bin/python')
 subprocess.run([converter_python, '-c',
                 'import sys; assert sys.version_info[:2] == (3, 12), "変換用環境を新しいパスで作り直してください"'], check=True)
-subprocess.run([converter_python, '-m', 'pip', 'install', '-q',
-                'tensorflowjs==4.22.0', 'tensorflow==2.19.0', 'tf-keras==2.19.0'], check=True)
+run_conversion_command([converter_python, '-m', 'pip', 'install',
+                'tensorflowjs==4.22.0', 'tensorflow==2.19.0', 'tf-keras==2.19.0'], 'converter-install.log')
+run_conversion_command([converter_python, '-c',
+    'import sys, importlib.metadata as m; print(sys.version); '
+    'print({p: m.version(p) for p in ["tensorflowjs", "tensorflow", "tf-keras", "keras", "numpy"]})'],
+    'converter-versions.log')
 tfjs_out = Path(OUTPUT_DIR) / ('tfjs-' + stamp)
-subprocess.run([str(converter_env / 'bin/tensorflowjs_converter'),
+run_conversion_command([str(converter_env / 'bin/tensorflowjs_converter'),
                 '--input_format=tf_saved_model', '--output_format=tfjs_graph_model',
-                str(saved), str(tfjs_out)], check=True)
+                str(saved), str(tfjs_out)], 'converter-' + stamp + '.log')
 converted = json.loads((tfjs_out / 'model.json').read_text())
 assert converted['format'] == 'graph-model'
 for group in converted['weightsManifest']:
