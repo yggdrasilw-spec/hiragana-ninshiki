@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "8fb9e722227b80ef9e396205876b3c5795b31128df09cec0611a93c8e0748247",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      8
+    ],
+    [
+      309,
+      320
+    ],
+    [
+      620,
+      633
+    ],
+    [
+      935,
+      947
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      320
+    ],
+    [
+      623,
+      630
+    ],
+    [
+      935,
+      943
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        8,
+        6,
+        309,
+        311
+      ],
+      "edgeInkFraction": 0.9592013888888888,
+      "contentFraction": 0.9612548336147269,
+      "file": "culture512-word-14271.png",
+      "sha256": "ea62c2103562560fad0ad425387922f1c7991fc2afebe3a4e7c5cfa2c9ddc0ba"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        320,
+        6,
+        620,
+        311
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 1.0,
+      "file": "culture512-word-14272.png",
+      "sha256": "9261dc80a43d146fad10fb6b142e7feb4ea3e6f5019c3a9bb445becb6c102e14"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        633,
+        6,
+        935,
+        311
+      ],
+      "edgeInkFraction": 0.9734257654534951,
+      "contentFraction": 0.9599826294647704,
+      "file": "culture512-word-14273.png",
+      "sha256": "f164fde0838899510bc7edd7508a6a996c1f22f5f0f417fe5d4baacb55f6392e"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        947,
+        6,
+        1245,
+        311
+      ],
+      "edgeInkFraction": 0.9988365328679465,
+      "contentFraction": 0.9895808119705138,
+      "file": "culture512-word-14274.png",
+      "sha256": "bc027974b706cae061e2cb6b50b09a211ebbc97bb61b2aa55be8d6e49161e17f"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        8,
+        320,
+        309,
+        623
+      ],
+      "edgeInkFraction": 0.9149825783972125,
+      "contentFraction": 0.9039943861495784,
+      "file": "culture512-word-14275.png",
+      "sha256": "1bd81fe6b590b634b91a9e87ebacd891c25587f3489ab1fe8f608a5bb1031173"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        320,
+        320,
+        620,
+        623
+      ],
+      "edgeInkFraction": 0.9678301337987202,
+      "contentFraction": 0.9727062706270627,
+      "file": "culture512-word-14276.png",
+      "sha256": "3f958dc3878b8ca82eb75c54570c2c54d86c062559a812e46bfafda12929e851"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        633,
+        320,
+        935,
+        623
+      ],
+      "edgeInkFraction": 0.9856231884057971,
+      "contentFraction": 0.9873450921251066,
+      "file": "culture512-word-14277.png",
+      "sha256": "b123e5fb20a28022aa0f6416bf886fed5c7746166931ff06da7868f1d487639a"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        947,
+        320,
+        1245,
+        623
+      ],
+      "edgeInkFraction": 0.9969060128429655,
+      "contentFraction": 0.9845615434026624,
+      "file": "culture512-word-14278.png",
+      "sha256": "d4badca7c4616d3a91b677236cd4ce3b2276e5a5aa5acac041e2daf5694471bf"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        8,
+        630,
+        309,
+        935
+      ],
+      "edgeInkFraction": 0.9967592592592592,
+      "contentFraction": 0.996971842492239,
+      "file": "culture512-word-14279.png",
+      "sha256": "6aead566251fcb8672ea7e87053a45ceaa313f99f7a8a063110f3efdecc4789c"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        320,
+        630,
+        620,
+        935
+      ],
+      "edgeInkFraction": 0.9860869565217392,
+      "contentFraction": 0.9968306010928962,
+      "file": "culture512-word-14280.png",
+      "sha256": "7a53cfbbd2553c925d2ad7cca6bc9999d27f53237063e445deec27dcf0970794"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        633,
+        630,
+        935,
+        935
+      ],
+      "edgeInkFraction": 0.9768341998844599,
+      "contentFraction": 0.9878080555857127,
+      "file": "culture512-word-14281.png",
+      "sha256": "e79a33a3e2b8fccd8fab04b5e6ea8be4754375e534c3770aecd2de4c4c09ff93"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        947,
+        630,
+        1245,
+        935
+      ],
+      "edgeInkFraction": 0.9764397905759162,
+      "contentFraction": 0.9600176036967764,
+      "file": "culture512-word-14282.png",
+      "sha256": "84402e76aba13559c6fd5fbd716bbc50136804c5596e6cde0580050251d177c7"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        8,
+        943,
+        309,
+        1247
+      ],
+      "edgeInkFraction": 0.9194202898550725,
+      "contentFraction": 0.9848094072390278,
+      "file": "culture512-word-14283.png",
+      "sha256": "297b5577e9ccb980a9f5bcdf9d78874e93017ca45d49e5c4ab3c82bb288cd5d4"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        320,
+        943,
+        620,
+        1247
+      ],
+      "edgeInkFraction": 0.9358885017421603,
+      "contentFraction": 0.9665679824561404,
+      "file": "culture512-word-14284.png",
+      "sha256": "44f654542f5fac8b056acede29e88e1cc9dd2126ac595cee9c26c43d0322eaa9"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        633,
+        943,
+        935,
+        1247
+      ],
+      "edgeInkFraction": 0.9304398148148149,
+      "contentFraction": 0.9650139421401185,
+      "file": "culture512-word-14285.png",
+      "sha256": "873be3327d56c81fda556098763a6609abcb5d068d2e579507d66fe099190ac5"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        947,
+        943,
+        1245,
+        1247
+      ],
+      "edgeInkFraction": 0.934032634032634,
+      "contentFraction": 0.9453594136347581,
+      "file": "culture512-word-14286.png",
+      "sha256": "cb84939f04344ba89a804c0f4bdbf7e5cdb380dfefb20703064f180b3ac065e3"
+    }
+  ]
+}

@@ -260,3 +260,5 @@ python scripts/import-shiritori-assets.py data/batches/agent-physical-verbs.csv 
 ## 確認アプリの更新情報
 
 `whitelist.csv` の単語・意味、または `assets/shiritori/` の画像を変更したら、`python scripts/build-shiritori-review-updates.py` を実行し、生成される `data/image-coverage/review-updates.json` もコミットしてください。確認アプリはこの更新日時で優先順を作り、画像のSHA-256指紋で同じファイル名の差し替えを検出します。
+
+物語・酒・武器兵器・文化芸術512項目（画像480枚＋正式名の共有32件）は [追加記録](docs/shiritori-culture512-2026-10-19.md) を参照。

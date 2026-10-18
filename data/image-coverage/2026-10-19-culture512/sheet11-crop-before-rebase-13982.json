@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "ce1c4a730123edeca5fd0e8f8b8bedac534d8efbb2941d75d4903af7c8a0e87f",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      307,
+      321
+    ],
+    [
+      620,
+      633
+    ],
+    [
+      934,
+      946
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      310,
+      318
+    ],
+    [
+      624,
+      632
+    ],
+    [
+      934,
+      942
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        5,
+        307,
+        310
+      ],
+      "edgeInkFraction": 0.0072261072261072265,
+      "contentFraction": 0.15421979356405585,
+      "file": "culture512-word-14143.png",
+      "sha256": "dadbf7a3f0b87838f25e760c88fb7180e805addfec5e8e1f53da43dfd057a06d"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        321,
+        5,
+        620,
+        310
+      ],
+      "edgeInkFraction": 0.04413472706155633,
+      "contentFraction": 0.21127254783705246,
+      "file": "culture512-word-14144.png",
+      "sha256": "45c3f1212182a59b507f58f2f93370d749d48b7bc727ffce7938f412f507e6a4"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        633,
+        5,
+        934,
+        310
+      ],
+      "edgeInkFraction": 0.02193287037037037,
+      "contentFraction": 0.202886553019988,
+      "file": "culture512-word-14145.png",
+      "sha256": "e4c1c32a17ded0edf8e102eee89f9d06ddd43b36cbf8e139aae075392fce4ca0"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        946,
+        5,
+        1245,
+        310
+      ],
+      "edgeInkFraction": 0.027642276422764227,
+      "contentFraction": 0.0790394210208893,
+      "file": "culture512-word-14146.png",
+      "sha256": "a83ccaa21c172cb15c2b3fcddd8e9db6d5eec878480b6a391c02c8582541e13f"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        318,
+        307,
+        624
+      ],
+      "edgeInkFraction": 0.015648632926119836,
+      "contentFraction": 0.13278757069606742,
+      "file": "culture512-word-14147.png",
+      "sha256": "6963416b53aa2f8fb858ada98632ec616b0e846f5d4cb5de3f057955609d769d"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        321,
+        318,
+        620,
+        624
+      ],
+      "edgeInkFraction": 0.022028985507246378,
+      "contentFraction": 0.14788947909152514,
+      "file": "culture512-word-14148.png",
+      "sha256": "b15ce98394663427fa5e93a3436a1e7020a8ddf0cb21d9388d4d73eab3c35dba"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        633,
+        318,
+        934,
+        624
+      ],
+      "edgeInkFraction": 0.01317157712305026,
+      "contentFraction": 0.08517360432545111,
+      "file": "culture512-word-14149.png",
+      "sha256": "b60218c0534588a586a17bc27eca15e87bb4cf92d371c9218032db120f98fc39"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        946,
+        318,
+        1245,
+        624
+      ],
+      "edgeInkFraction": 0.003942028985507246,
+      "contentFraction": 0.362329770258159,
+      "file": "culture512-word-14150.png",
+      "sha256": "731ffa1fe4bdeb340131a1dcdd52286123504290c9eab4f96b7d3e0c87d34f9c"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        632,
+        307,
+        934
+      ],
+      "edgeInkFraction": 0.0367311072056239,
+      "contentFraction": 0.12986375900283184,
+      "file": "culture512-word-14151.png",
+      "sha256": "d7f8f02bfaaec8e1f9eb9396ebaf610b3fe8c35042031a1e5dc7f1391edb7828"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        321,
+        632,
+        620,
+        934
+      ],
+      "edgeInkFraction": 0.02422650321074139,
+      "contentFraction": 0.09001306784203415,
+      "file": "culture512-word-14152.png",
+      "sha256": "f64d9e0813adcf4e5afe8e46f849dde7e0a916ad4da3526ecef49473badb26fb"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        633,
+        632,
+        934,
+        934
+      ],
+      "edgeInkFraction": 0.023676556137289122,
+      "contentFraction": 0.04753470770720116,
+      "file": "culture512-word-14153.png",
+      "sha256": "3fdb4540b7b140be40e3c570155719e9229fef4214b832645db8e1ad8ec9387f"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        946,
+        632,
+        1245,
+        934
+      ],
+      "edgeInkFraction": 0.014127262113251606,
+      "contentFraction": 0.041340893486012976,
+      "file": "culture512-word-14154.png",
+      "sha256": "8f292339d5de9d55b462831e80dac4617525115cbd21ce793fe9d712a6b53f44"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        942,
+        307,
+        1246
+      ],
+      "edgeInkFraction": 0.018155283129013426,
+      "contentFraction": 0.29692760942760943,
+      "file": "culture512-word-14155.png",
+      "sha256": "0295a24baaa85f43bcf64a8972079a95991de47a0e41145f0aa68d808b805dbe"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        321,
+        942,
+        620,
+        1246
+      ],
+      "edgeInkFraction": 0.008493310063990692,
+      "contentFraction": 0.24509329343425454,
+      "file": "culture512-word-14156.png",
+      "sha256": "ac0a0839cdf439cf361db6b45e12cbdcd921ad22b9d72f824a5b4e13ba8a02cc"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        633,
+        942,
+        934,
+        1246
+      ],
+      "edgeInkFraction": 0.04979710144927536,
+      "contentFraction": 0.4738372093023256,
+      "file": "culture512-word-14157.png",
+      "sha256": "6f85dd516ab627912d5f3907fb9ce3c26e43aefef1eab76c16c9eae24944cab5"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        946,
+        942,
+        1245,
+        1246
+      ],
+      "edgeInkFraction": 0.038336242001163465,
+      "contentFraction": 0.42919380390776274,
+      "file": "culture512-word-14158.png",
+      "sha256": "6244a562d53d6b032b65f18a5512ac250e9f1fcfc3bd068ba794ba27d02f70de"
+    }
+  ]
+}
