@@ -40,6 +40,7 @@ const server=http.createServer((req,res)=>{
   // IME Enter cannot commit; normal physical input still works.
   await page.locator('#kbdInput').fill('りす');await page.locator('#kbdInput').dispatchEvent('keydown',{key:'Enter',isComposing:true});assert.equal(await page.evaluate(()=>ST.history.length),0);
   await word('りす');await page.locator('#handoff').waitFor();
+  assert.ok(await page.locator('#handoff').evaluate(e=>{const r=e.getBoundingClientRect();return Math.abs(r.left+r.width/2-innerWidth/2)<2&&Math.abs(r.top+r.height/2-innerHeight/2)<2;}),'Handoff dialog stays centered');
   assert.equal(await page.evaluate(()=>ST.cpuBusy),true);
   await page.evaluate(async()=>{setCurrentInput('すいか');await submitWord();});assert.equal(await page.evaluate(()=>ST.history.length),1,'No input during handoff');
   await page.screenshot({path:path.join(out,`${width}-handoff.png`),fullPage:true});

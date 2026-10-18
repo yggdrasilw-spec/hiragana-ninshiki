@@ -9,7 +9,7 @@
 #giveUp{min-height:44px;flex-shrink:0}
 .many-players .score-chip,.many-players .history-scores{display:none}
 .many-players #linkArena .link-who{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}
-.player-dialog{width:min(520px,calc(100vw - 24px));max-height:88dvh;overflow-y:auto;box-sizing:border-box;background:#101b2d;color:var(--text);border:2px solid var(--cyan);border-radius:16px;padding:20px}
+.player-dialog{margin:auto;width:min(520px,calc(100vw - 24px));max-height:88dvh;overflow-y:auto;box-sizing:border-box;background:#101b2d;color:var(--text);border:2px solid var(--cyan);border-radius:16px;padding:20px}
 .player-dialog::backdrop{background:#030816ce}
 .player-dialog h2{font-size:21px;margin:0 0 12px;overflow-wrap:anywhere}
 .player-dialog p{font-size:14px;line-height:1.7}
