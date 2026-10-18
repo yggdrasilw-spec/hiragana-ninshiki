@@ -112,10 +112,10 @@ let reports=[],trained=null,trainedSpec=null,trainingInfo=null;
 const modelCache=new Map();
 function syncModelOptions(){
   $('testModel').replaceChildren();
-  for(const spec of KanaModels.models.filter(s=>s.script===settings.script)){
+  for(const spec of KanaModels.models){
     const option=document.createElement('option');option.value=spec.id;option.textContent=spec.name;$('testModel').append(option);
   }
-  if(settings.script==='katakana')$('testModel').value='katakana-marks-20261018';
+  $('testModel').value=settings.script==='katakana'?'katakana-marks-20261018':'hiragana';
   reports=[];$('evaluationResults').replaceChildren();$('evaluationStatus').textContent='';
 }
 function testSpec(){return KanaModels.models.find(s=>s.id===$('testModel').value);}
@@ -154,7 +154,11 @@ async function evaluateModel(model,spec,list){
     await tf.nextFrame();
   }return result;
 }
-$('testModel').onchange=()=>{if(settings.set==='weak')selectChar(chars()[0]);};
+$('testModel').onchange=()=>{
+  const id=$('testModel').value,spec=testSpec();
+  if(spec.script!==settings.script){$('script').value=spec.script;changeSetting('script',spec.script);$('testModel').value=id;}
+  if(settings.set==='weak')selectChar(chars()[0]);
+};
 $('downloadReport').onclick=()=>{
   if(busy||!reports.length)return;const url=URL.createObjectURL(new Blob([JSON.stringify({version:1,createdAt:new Date().toISOString(),script:settings.script,writer:settings.writer,reports},null,2)],{type:'application/json'}));
   const link=document.createElement('a');link.href=url;link.download=`kana-evaluation-${Date.now()}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);

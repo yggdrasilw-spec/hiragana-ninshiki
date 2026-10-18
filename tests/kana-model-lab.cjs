@@ -18,6 +18,10 @@ let exportedFiles;
    await page.route('https://**/*',route=>route.request().url().includes('/tf.min.js')?route.fulfill({path:path.join(root,'qa-output','tf.min.js'),contentType:'text/javascript'}):route.abort());
    await page.goto(`http://127.0.0.1:${server.address().port}/handwriting-capture.html`);
    await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('１文字を書いて'));
+   assert.equal(await page.locator('#testModel option').count(),3);
+   await page.selectOption('#testModel','hiragana');assert.equal(await page.locator('#script').inputValue(),'hiragana');
+   await page.selectOption('#testModel','katakana');assert.equal(await page.locator('#script').inputValue(),'katakana');assert.equal(await page.locator('#testModel').inputValue(),'katakana');
+   await page.selectOption('#testModel','katakana-marks-20261018');
    const check=await page.evaluate(async()=>{
     await tf.setBackend('cpu');await tf.ready();const results=[];
     const cv=document.createElement('canvas');cv.width=cv.height=256;const ctx=cv.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,256,256);
