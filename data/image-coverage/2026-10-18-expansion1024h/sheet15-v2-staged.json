@@ -1,0 +1,25 @@
+{
+  "sheet": 15,
+  "sourceSheet": "sheets/expansion1024h-sheet15-v2.png",
+  "prompt": "Use case: illustration-story. Edit the attached 2048x2048 equal 4 by 4 template. Paint EXACTLY sixteen independent vocabulary pictures, row-major left to right then top to bottom. Preserve all FIVE horizontal and FIVE vertical continuous straight pure MAGENTA #ff00ff grid lines INCLUDING OUTER FRAME, exact positions and thickness, equal cell sizes and canvas dimensions. Magenta ONLY in lines. Paint only white panel interiors. Warm clear children's picture-book style, recognizable accurate subjects and anatomy. Use each cell generously, no required large white margins. Keep every object and shadow wholly inside its cell. NO words, letters, numerals, logos, watermarks, labels or captions. Abstract words use a simple concrete daily scene that distinguishes the requested meaning. No imitation of famous characters. Do not depict unsafe behavior as something to copy. Each of the following SIXTEEN panels must match the exact meaning:\n1. 球団: 野球などのチームとそれを運営する組織。\n2. 宮殿: 王や女王などが住む大きく立派な建物。\n3. 急病: 急にかかる病気。\n4. 給油: 車などに燃料の油を入れること。\n5. 給油所: 車などに燃料を入れる場所。\n6. キュロット: すそがスカートのように広がった短いズボン。\n7. 教員: 学校で教える仕事をする人。\n8. 共感: 人の気持ちや考えを自分もそうだと感じること。\n9. 競走馬: 競馬で走るために育てられた馬。\n10. 共有: 一つの物などをいっしょに持ったり使ったりすること。\n11. 共用: 何人かでいっしょに使うこと。\n12. 曲線: 曲がっている線。\n13. 曲目: 演奏する曲の名前や種類。\n14. 巨人: 物語などに出てくるとても大きな人。\n15. 巨体: とても大きな体。\n16. 去年: 今年の一つ前の年。\nStrict palette: NO pink, violet, purple or magenta in any object, fabric, flower, background or shadow. Use muted red/orange, blue/cyan, green, brown and neutral colors. Magenta is reserved exclusively for straight grid lines. All 4 rows and 4 columns MUST have identical dimensions, use the provided equal grid exactly, do not squeeze any row.\nSpecific content and geometry constraints: Panel 6 culottes: clearly draw WIDE-LEG SHORT TROUSERS, TWO SEPARATE LEG TUBES with an obvious gap between the two hems, a central crotch seam and two individual leg openings, displayed on a hanger. NOT an undivided skirt. Other fifteen panels remain the assigned subjects.",
+  "cropValidation": "data/image-coverage/2026-10-18-expansion1024h/sheet15-v2-crop.json",
+  "passed": false,
+  "slots": [
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240
+  ]
+}

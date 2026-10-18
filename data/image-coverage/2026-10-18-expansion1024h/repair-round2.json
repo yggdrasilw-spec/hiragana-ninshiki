@@ -1,0 +1,59 @@
+[
+  {
+    "sheet": 6,
+    "version": "v3",
+    "prompt": "Edit the FIRST provided image as the target. Change ONLY illustration colors: in panel 11 candy shop, replace every pink/purple/magenta sweet, wrapper and decoration with blue, green, white, muted red or orange. Across the whole artwork, replace any remaining bright pink/purple with these safe colors. Preserve ALL grid lines exactly, all sixteen subjects, order and scene geometry. DO NOT change any magenta grid line. Only the grid may be magenta.",
+    "promptFile": "C:/Users/user/hiragana-ninshiki/data/image-coverage/2026-10-18-expansion1024h/sheet06-v3.prompt.txt",
+    "references": [
+      "C:/Users/user/hiragana-ninshiki/assets/shiritori/sheets/expansion1024h-sheet06-v2.png"
+    ]
+  },
+  {
+    "sheet": 11,
+    "version": "v3",
+    "prompt": "Edit the FIRST provided image as the target. Repair grid geometry ONLY. The horizontal line between the THIRD and FOURTH rows is too high. Move it DOWN to exactly 75 percent of canvas height (about y=940 on this 1254 pixel image). Keep the middle divider at 50 percent and first at 25 percent. All four rows must have identical inside heights. Redistribute the third/fourth row illustrations to fit without cutting any subject. Keep the corrected large round porous karumeyaki candy and Kansai landmarks exactly as these subjects. Preserve all sixteen meanings and order. No new pink/purple art. The SECOND provided image is the equal-size grid reference only; do not output a blank template.",
+    "promptFile": "C:/Users/user/hiragana-ninshiki/data/image-coverage/2026-10-18-expansion1024h/sheet11-v3.prompt.txt",
+    "references": [
+      "C:/Users/user/hiragana-ninshiki/assets/shiritori/sheets/expansion1024h-sheet11-v2.png",
+      "C:/Users/user/.codex/skills/shiritori-image-sheets/assets/equal-grid-4x4.png"
+    ]
+  },
+  {
+    "sheet": 13,
+    "version": "v3",
+    "prompt": "Edit the FIRST provided image as the target. Repair grid line rendering ONLY: exactly FIVE perfectly straight solid pure #ff00ff lines horizontally and FIVE vertically including outer border. Equal quarter positions. Each line uniformly 8 pixels wide on this square canvas, with crisp edges and NO wide pale-pink gradient fringe. Preserve all sixteen pictures and order. Keep all artwork fully in its own cell. Remove any fluorescent pink or violet from artwork, but retain the pure magenta dividing lines. The SECOND provided image is the equal-size grid reference only; do not output a blank template.",
+    "promptFile": "C:/Users/user/hiragana-ninshiki/data/image-coverage/2026-10-18-expansion1024h/sheet13-v3.prompt.txt",
+    "references": [
+      "C:/Users/user/hiragana-ninshiki/assets/shiritori/sheets/expansion1024h-sheet13-v2.png",
+      "C:/Users/user/.codex/skills/shiritori-image-sheets/assets/equal-grid-4x4.png"
+    ]
+  },
+  {
+    "sheet": 15,
+    "version": "v3",
+    "prompt": "Edit the FIRST provided image as the target. Repair grid geometry ONLY. The horizontal line between the THIRD and FOURTH rows is too high. Move it DOWN to exactly 75 percent of canvas height (about y=940 on this 1254 pixel image). Keep first and second dividers at 25 and 50 percent. All four rows must have identical inside heights. Redistribute third/fourth row pictures to fit without cutting subjects. Preserve all sixteen meanings and order. The culottes in panel 6 MUST retain the clear split between TWO wide trouser legs and individual leg openings, not become a skirt. The SECOND provided image is the equal-size grid reference only; do not output a blank template.",
+    "promptFile": "C:/Users/user/hiragana-ninshiki/data/image-coverage/2026-10-18-expansion1024h/sheet15-v3.prompt.txt",
+    "references": [
+      "C:/Users/user/hiragana-ninshiki/assets/shiritori/sheets/expansion1024h-sheet15-v2.png",
+      "C:/Users/user/.codex/skills/shiritori-image-sheets/assets/equal-grid-4x4.png"
+    ]
+  },
+  {
+    "sheet": 29,
+    "version": "v3",
+    "prompt": "Edit the FIRST provided image as the target. Change ONLY panel 14 (bottom row, second column): replace the child lifting an enormous rock with a child SPRINTING WITH FULL EFFORT on a safe school running track. Determined face, swinging arms, running shoes, movement lines; no heavy rock and no dangerous lifting. Preserve all other fifteen pictures, particularly panel 12 showing a straight complete train with a length arrow spanning its ends. Preserve the exact equal 4x4 magenta grid and every line position. No magenta or pink art.",
+    "promptFile": "C:/Users/user/hiragana-ninshiki/data/image-coverage/2026-10-18-expansion1024h/sheet29-v3.prompt.txt",
+    "references": [
+      "C:/Users/user/hiragana-ninshiki/assets/shiritori/sheets/expansion1024h-sheet29-v2.png"
+    ]
+  },
+  {
+    "sheet": 33,
+    "version": "v2",
+    "prompt": "Edit the FIRST provided image as the target. Change ONLY illustration colors. In panel 5 treasure chest replace every purple/pink gemstone with blue, green, orange or colorless gems. Replace all remaining pink/purple/magenta in artwork with muted blue, green, orange, brown, white or red. Preserve every magenta grid line exactly as-is. Preserve all sixteen scenes and order, including the mathematically correct two apples plus one apple equals three apples in panel 13. Do not change layout or add text.",
+    "promptFile": "C:/Users/user/hiragana-ninshiki/data/image-coverage/2026-10-18-expansion1024h/sheet33-v2.prompt.txt",
+    "references": [
+      "C:/Users/user/hiragana-ninshiki/assets/shiritori/sheets/expansion1024h-sheet33.png"
+    ]
+  }
+]

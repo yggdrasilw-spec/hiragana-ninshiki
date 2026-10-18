@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "date": "2026-10-18",
+  "dictionaryRows": 13918,
+  "precedingRowsPreserved": 12894,
+  "addedWords": 1024,
+  "addedImages": 1024,
+  "validatedSourceSheets": 64,
+  "missingTargetAssets": 0,
+  "brokenAssetReferences": 0,
+  "r2VerifiedObjects": 1229,
+  "checks": [
+    "tests/shiritori-expansion1024h.cjs",
+    "tests/shiritori-data.cjs",
+    "tests/shiritori-import-history.cjs",
+    "tests/shiritori-import-quality.cjs",
+    "tests/shiritori-grade-policy.py",
+    "tests/shiritori-image-policy.cjs",
+    "scripts/audit-shiritori-image-coverage.py",
+    "tests/shiritori-r2.cjs",
+    "git diff --cached --check"
+  ],
+  "browser": {
+    "passed": true,
+    "appOrigin": "http://127.0.0.1:59843",
+    "imagesPerViewport": 140,
+    "viewports": 2,
+    "realR2": true,
+    "homonyms": true,
+    "reviewCatalog": true
+  }
+}

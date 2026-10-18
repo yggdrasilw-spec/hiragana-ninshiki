@@ -93,5 +93,8 @@ evalIn(`fetchPageImage = async () => { queries++; return null; }; fetchPageImage
   evalIn('fetchPageImage = async () => null;');
   const empty = await evalIn("fetchImg({ja:'画像なし',asset:'assets/shiritori/missing.png'})");
   assert.equal(empty.url, null); assert.equal(empty.credit, null);
+  available.add('https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/missing.png');
+  const recovered = await evalIn("fetchImg({ja:'画像なし',asset:'assets/shiritori/missing.png'})");
+  assert.equal(recovered.url, 'https://shiritori-images.yggdrasil-learning.workers.dev/assets/shiritori/missing.png', 'Reopening a word retries an image after a temporary failure');
   console.log(JSON.stringify({ passed: true, additions: additions.length, readings: rows.length, ha: rows.filter(r => r.reading.startsWith('は')).length }));
 })().catch(error => { console.error(error); process.exitCode = 1; });

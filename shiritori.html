@@ -3035,7 +3035,8 @@ function canLoadImage(url){
     };
     img.onload = ()=>finish(img.naturalWidth > 0);
     img.onerror = ()=>finish(false);
-    timer = setTimeout(()=>finish(false), 5000);
+    const storedImage = url.startsWith(ShiritoriAssets.origin + '/');
+    timer = setTimeout(()=>finish(false), storedImage ? 15000 : 5000);
     img.src = url;
   });
 }
@@ -3240,7 +3241,8 @@ async function fetchImg(query, enQueryArg=null){
     if(result.url && policy==='wikimedia')result={...result,credit:{...result.credit,text:`Wikimedia画像が見つからないため保存済み画像：${assetCredit}`}};
   }
 
-  IMG_CACHE.set(cacheKey, result);
+  // A temporary network failure must remain retryable when the word is reopened.
+  if(result.url) IMG_CACHE.set(cacheKey, result);
   return result;
 }
 

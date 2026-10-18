@@ -1,0 +1,826 @@
+{
+  "considered": 1188,
+  "selected": 1024,
+  "skipped": [
+    {
+      "reading": "あいでぃあ",
+      "word": "アイディア",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いいね",
+      "word": "いいね",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いきちがい",
+      "word": "行き違い",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "いじめ",
+      "word": "虐め",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "いちいん",
+      "word": "一員",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いちがつ",
+      "word": "１月",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いちじかん",
+      "word": "一時間",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いちにち",
+      "word": "一日",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いちねん",
+      "word": "一年",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いちねんせい",
+      "word": "１年生",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いちまい",
+      "word": "一枚",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いっかげつ",
+      "word": "一ヶ月",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いっさくねん",
+      "word": "一昨年",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いっさつ",
+      "word": "一冊",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いっしゅうかん",
+      "word": "一週間",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "いっぴき",
+      "word": "一匹",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "うぇでぃんぐどれす",
+      "word": "ウェディングドレス",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "うるしぬり",
+      "word": "漆塗り",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "うんちん",
+      "word": "運賃",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "おい",
+      "word": "甥",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おじ",
+      "word": "叔父",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おじょうさん",
+      "word": "お嬢さん",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おとうさん",
+      "word": "お父さん",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おにいさん",
+      "word": "お兄さん",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おば",
+      "word": "叔母",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おばあさん",
+      "word": "お祖母さん",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "おばあちゃん",
+      "word": "お婆ちゃん",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "かあさん",
+      "word": "母さん",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "がんま",
+      "word": "Γ",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "きょうざい",
+      "word": "教材",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "きんよう",
+      "word": "金曜",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ぎょーざ",
+      "word": "餃子",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "くがつ",
+      "word": "９月",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ぐりんぴーす",
+      "word": "グリンピース",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "けだもの",
+      "word": "獣",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "げつようび",
+      "word": "月曜日",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "こくぴっと",
+      "word": "コクピット",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ここのか",
+      "word": "９日",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ここのつ",
+      "word": "九つ",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "こめでぃ",
+      "word": "コメディ",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "こんじき",
+      "word": "金色",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "こんぴゅーた",
+      "word": "コンピュータ",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ごがつ",
+      "word": "５月",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "さがしもの",
+      "word": "探し物",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "さくねん",
+      "word": "昨年",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "さくばん",
+      "word": "昨晩",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "さっちゅうざい",
+      "word": "殺虫剤",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "さんじ",
+      "word": "３時",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "さんにん",
+      "word": "三人",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "しかえいせいし",
+      "word": "歯科衛生士",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "したくちびる",
+      "word": "下唇",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "しねま",
+      "word": "シネマ",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "しゃせい",
+      "word": "写生",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "しゃぶしゃぶ",
+      "word": "しゃぶしゃぶ",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "しやくしょ",
+      "word": "市役所",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ばれえ",
+      "word": "バレエ",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ひがしぐち",
+      "word": "東口",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "ひとばん",
+      "word": "一晩",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ひとびと",
+      "word": "人々",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ひとり",
+      "word": "一人",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ぴーなつ",
+      "word": "ピーナツ",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ふたり",
+      "word": "二人",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ふつか",
+      "word": "２日",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ふみ",
+      "word": "文",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ふりょうひん",
+      "word": "不良品",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "ぜんぽう",
+      "word": "前方",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ぜんめん",
+      "word": "前面",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "そうげん",
+      "word": "草原",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "そうざい",
+      "word": "惣菜",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "そうもく",
+      "word": "草木",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "たいちょうふりょう",
+      "word": "体調不良",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "たいまー",
+      "word": "タイマー",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "たんにん",
+      "word": "担任",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "だがし",
+      "word": "駄菓子",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "だがしや",
+      "word": "駄菓子屋",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "だんし",
+      "word": "男子",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "だんじ",
+      "word": "男児",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "だんじょ",
+      "word": "男女",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "ちょうほうけい",
+      "word": "長方形",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "ちょうみん",
+      "word": "町民",
+      "reason": "alternate-or-editorial-exclusion"
+    },
+    {
+      "reading": "つうしんはんばい",
+      "word": "通信販売",
+      "reason": "blacklist"
+    },
+    {
+      "reading": "くらいみんぐ",
+      "word": "クライミング",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くらくしょん",
+      "word": "クラクション",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くろすわーど",
+      "word": "クロスワード",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けいこうとう",
+      "word": "蛍光灯",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けっこんしき",
+      "word": "結婚式",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けつえきがた",
+      "word": "血液型",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けんぶつにん",
+      "word": "見物人",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "げいのうじん",
+      "word": "芸能人",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "げーむせっと",
+      "word": "ゲームセット",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうがくねん",
+      "word": "高学年",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうくうけん",
+      "word": "航空券",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうくうびん",
+      "word": "航空便",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうしきせん",
+      "word": "公式戦",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうせいせき",
+      "word": "好成績",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうつうじこ",
+      "word": "交通事故",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうはんせん",
+      "word": "後半戦",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうみんかん",
+      "word": "公民館",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうれいしゃ",
+      "word": "高齢者",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こくごじてん",
+      "word": "国語辞典",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こめでぃあん",
+      "word": "コメディアン",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "これくしょん",
+      "word": "コレクション",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こんとらばす",
+      "word": "コントラバス",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "ごじゅうおん",
+      "word": "五十音",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "ごーるらいん",
+      "word": "ゴールライン",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "さぎょういん",
+      "word": "作業員",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しけんじょう",
+      "word": "試験場",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しちふくじん",
+      "word": "七福神",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しちょうしゃ",
+      "word": "視聴者",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゃとるばす",
+      "word": "シャトルバス",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゃんでりあ",
+      "word": "シャンデリア",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゅうかんし",
+      "word": "週刊誌",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゅくしょう",
+      "word": "縮小",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゅじんこう",
+      "word": "主人公",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "あんだーらいん",
+      "word": "アンダーライン",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "いっちょくせん",
+      "word": "一直線",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "いんふるえんざ",
+      "word": "インフルエンザ",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "うんてんちゅう",
+      "word": "運転中",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "えっふぇるとう",
+      "word": "エッフェル塔",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "おーでぃしょん",
+      "word": "オーディション",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "かせっとてーぷ",
+      "word": "カセットテープ",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "かんせんしょう",
+      "word": "感染症",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "がっしょうだん",
+      "word": "合唱団",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "きしょうちょう",
+      "word": "気象庁",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "きぶんてんかん",
+      "word": "気分転換",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "きゅうりょうび",
+      "word": "給料日",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "きょうつうてん",
+      "word": "共通点",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "ぎゃくてんがち",
+      "word": "逆転勝ち",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くらいまっくす",
+      "word": "クライマックス",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くらぶかつどう",
+      "word": "クラブ活動",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くりすますいぶ",
+      "word": "クリスマスイブ",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "ぐらでーしょん",
+      "word": "グラデーション",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "ぐらんどぴあの",
+      "word": "グランドピアノ",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けいじどうしゃ",
+      "word": "軽自動車",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けっしょうせん",
+      "word": "決勝戦",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けつえきけんさ",
+      "word": "血液検査",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けんきゅういん",
+      "word": "研究員",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けんきゅうしつ",
+      "word": "研究室",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けんきゅうじょ",
+      "word": "研究所",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "げんじゅうしょ",
+      "word": "現住所",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうつうきかん",
+      "word": "交通機関",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こんしゅうまつ",
+      "word": "今週末",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "さまーすくーる",
+      "word": "サマースクール",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しぜんこうえん",
+      "word": "自然公園",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゃしんしゅう",
+      "word": "写真集",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "うちゅうくうかん",
+      "word": "宇宙空間",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "かんこうすぽっと",
+      "word": "観光スポット",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "きゃっしゅかーど",
+      "word": "キャッシュカード",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "きょうしょくいん",
+      "word": "教職員",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くりすますかーど",
+      "word": "クリスマスカード",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くれじっとかーど",
+      "word": "クレジットカード",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "けんこうしんだん",
+      "word": "健康診断",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こうとうがっこう",
+      "word": "高等学校",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こくないりょこう",
+      "word": "国内旅行",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こんたくとれんず",
+      "word": "コンタクトレンズ",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こーひーしょっぷ",
+      "word": "コーヒーショップ",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しぜんかんきょう",
+      "word": "自然環境",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゃしんさつえい",
+      "word": "写真撮影",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "いっしょうけんめい",
+      "word": "一生懸命",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "おりえんてーりんぐ",
+      "word": "オリエンテーリング",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "くらしっくおんがく",
+      "word": "クラシック音楽",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "こみゅにけーしょん",
+      "word": "コミュニケーション",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "ごーるでんうぃーく",
+      "word": "ゴールデンウィーク",
+      "reason": "reserve-for-next-batch"
+    },
+    {
+      "reading": "しゅうちゅうりょく",
+      "word": "集中力",
+      "reason": "reserve-for-next-batch"
+    }
+  ]
+}
