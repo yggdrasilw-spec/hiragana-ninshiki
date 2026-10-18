@@ -29,11 +29,9 @@ const WordHandwritingUI=(()=>{
       };
       // Layout changes include navigation and orientation, not just window resize.
       new ResizeObserver(()=>requestAnimationFrame(resizeCV)).observe($('drawCanvas'));
-      $('gameMenu').addEventListener('click',e=>{if(e.target.closest('button'))$('gameMenu').open=false;});
       document.addEventListener('keydown',e=>{
         if(e.key==='Escape'&&!document.querySelector('dialog[open]')){
-          if($('gameMenu').open)$('gameMenu').open=false;
-          else if(document.body.classList.contains('writing-focus'))$('btnWritingFocus').click();
+          if(document.body.classList.contains('writing-focus'))$('btnWritingFocus').click();
         }
       });
       $('btnWordSmall').onclick=()=>{

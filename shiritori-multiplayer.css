@@ -1,0 +1,42 @@
+#topbar{height:auto;min-height:56px;flex-wrap:wrap;flex-shrink:0}
+#topbar>.tb-btn{min-height:44px;flex-shrink:0;white-space:nowrap}
+#playerBar{display:flex;align-items:center;gap:8px;padding:5px 10px;border-bottom:1px solid var(--border);flex-shrink:0;min-width:0;background:#101626}
+#playerStrip{display:flex;gap:6px;overflow-x:auto;min-width:0;flex:1;padding:3px}
+.player-chip{flex-shrink:0;max-width:100%;padding:6px 9px;border:1px solid #526071;border-radius:9px;font-size:12px;color:var(--player-color);white-space:nowrap}
+.player-chip.turn{border:2px solid var(--player-color);background:#21384b;font-weight:800}
+.player-chip.eliminated{opacity:.55}
+#playerRuleLabel{font-size:12px;white-space:nowrap}
+#giveUp{min-height:44px;flex-shrink:0}
+.many-players .score-chip,.many-players .history-scores{display:none}
+.many-players #linkArena .link-who{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}
+.player-dialog{width:min(520px,calc(100vw - 24px));max-height:88dvh;overflow-y:auto;box-sizing:border-box;background:#101b2d;color:var(--text);border:2px solid var(--cyan);border-radius:16px;padding:20px}
+.player-dialog::backdrop{background:#030816ce}
+.player-dialog h2{font-size:21px;margin:0 0 12px;overflow-wrap:anywhere}
+.player-dialog p{font-size:14px;line-height:1.7}
+.player-dialog label{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:10px 0;font-size:14px}
+.player-dialog input:not([type=checkbox]),.player-dialog select{min-height:44px;min-width:0;max-width:65%;border:1px solid #7089a5;border-radius:7px;padding:6px;background:#1d2d46;color:white;font:inherit;box-sizing:border-box}
+.player-dialog input[type=checkbox]{width:24px;height:24px;accent-color:#1affa0}
+.player-dialog button{min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid #6689a3;background:#19354b;color:white;font:inherit;cursor:pointer}
+.player-dialog .primary{background:var(--cyan);color:#062029;font-weight:800}
+.dialog-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+#takeTurn{width:100%;min-height:60px;font-size:20px}
+#keyboardGuide{order:3;flex:1;min-height:200px;min-width:0;overflow-y:auto;padding:8px;border:1px solid var(--border);border-radius:12px;background:#101626}
+#keyboardGuide[hidden]{display:none}
+.keyboard-guide-tools{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px}
+.keyboard-guide-tools select{min-height:44px;background:#1d2d46;color:white;border:1px solid #7089a5;border-radius:8px;font:inherit}
+#typingSvg{display:block;width:100%;max-height:390px;margin:auto}
+.typing-key rect{fill:#1e3049;stroke:#7998b6;stroke-width:1.5}
+.typing-key.pressed rect{fill:#1affa0;stroke:white;stroke-width:3}
+.typing-key text{fill:#eef9ff;font:bold 18px sans-serif;text-anchor:middle;pointer-events:none}
+.typing-key.pressed text{fill:#052a22}
+.typing-labels text{fill:white;font:bold 18px sans-serif;text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:#102138;stroke-width:3px}
+.typing-hands{pointer-events:none;opacity:.78}
+.typing-hands .palm{fill:#b9a3ee;stroke:#e2d6ff;stroke-width:2}
+.typing-finger{fill:none;stroke:#baa5ef;stroke-width:22;stroke-linecap:round}
+.typing-finger.active{stroke:#ffe09a}
+#typingHelp{font-size:12px;line-height:1.6;color:#bed0e4;margin:4px 0}
+#typingAction{min-height:1.6em;font-size:14px;margin:3px 0;color:#ffe09a}
+body.keyboard-input #writingPanel{display:none!important}
+body.keyboard-input #colCenter{overflow-y:auto}
+@media(max-width:600px){#playerBar{padding:3px 6px;gap:4px}#playerRuleLabel{display:none}.player-chip{font-size:11px}#topbar>.tb-btn{font-size:11px;padding:4px 6px}#keyboardGuide{min-height:200px;flex:1 0 240px}}
+@media(max-height:500px) and (min-width:601px){body.keyboard-input #keyboardGuide{grid-column:1;grid-row:2;min-height:220px}}

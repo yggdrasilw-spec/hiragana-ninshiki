@@ -1185,7 +1185,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 </style>
 <link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
 <link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261018connect">
-<link rel="stylesheet" href="shiritori-writing-layout.css?v=20261018connect">
+<link rel="stylesheet" href="shiritori-writing-layout.css?v=20261018players">
+<link rel="stylesheet" href="shiritori-multiplayer.css?v=20261018players">
 </head>
 <body>
 
@@ -1211,11 +1212,11 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     つぎは「<span class="tc" id="tailChar">?</span>」
   </div>
   <button class="tb-btn" id="btnVoice">🔇 おと</button>
-  <details id="gameMenu"><summary>ほか</summary><div>
+  <button class="tb-btn" id="btnPlayers" type="button">👥 あそぶ人</button>
     <button class="tb-btn" id="btnCharMode" onclick="toggleCharModeFromTopbar()"></button>
     <button class="tb-btn" id="btnReset">🔄 リセット</button>
-  </div></details>
 </div>
+<div id="playerBar"><span id="playerRuleLabel"></span><div id="playerStrip" aria-label="参加する人と順番"></div><button id="giveUp" class="tb-btn" type="button" hidden>ギブアップ</button></div>
 
 <!-- GAME PAGE -->
 <div id="pageGame" class="page active">
@@ -1311,6 +1312,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
       </div>
 
     </section>
+    <section id="keyboardGuide" aria-label="キーボードのおてほん" hidden></section>
   </div>
 
   <!-- RIGHT: DETAIL -->
@@ -1588,6 +1590,22 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <div id="flyEl"></div>
 <div id="panicOverlay"></div>
 
+<dialog id="playerSetup" class="player-dialog" aria-labelledby="playerSetupTitle">
+<form id="playerSetupForm">
+<h2 id="playerSetupTitle">あそぶ人を えらぼう</h2>
+<label>人間の人数 <select id="playerCount"><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option><option value="6">6人</option></select></label>
+<label>CPUも さんかする <input id="includeCpu" type="checkbox" checked></label>
+<label>あそびかた <select id="playRule"><option value="versus">たいせん</option><option value="coop">みんなで つなぐ</option></select></label>
+<p>たいせん：「ん」・ギブアップで おやすみ。最後の１人が勝ち。<br>みんなで つなぐ：ミスは直せるよ。パスしてもOK。<br>人間１人・CPUなしでは「みんなで つなぐ」になります。</p>
+<div id="playerNames"></div><p>はじめると、今のゲームのきろくはリセットされます。</p>
+<div class="dialog-actions"><button type="submit" class="primary">このメンバーで はじめる</button><button type="button" id="cancelPlayers">もどる</button></div>
+</form></dialog>
+<dialog id="handoff" class="player-dialog" aria-labelledby="handoffTitle" aria-describedby="handoffMessage">
+<h2 id="handoffTitle"></h2><p id="handoffMessage"></p><p>つぎの人に たんまつを わたしてね。</p>
+<button id="takeTurn" class="primary" type="button">うけとったら はじめる</button>
+<div class="dialog-actions"><button id="restartPlayers" type="button">さいしょから</button></div></dialog>
+<script src="shiritori-players.js?v=20261018players"></script>
+<script src="shiritori-keyboard-guide.js?v=20261018players"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
 <script src="shiritori-vocabulary.js?v=20261016b"></script>
@@ -1597,7 +1615,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-robot-link.js?v=20261018connect"></script>
 <script src="shiritori-word-handwriting.js?v=20261017d"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
-<script src="shiritori-word-handwriting-ui.js?v=20261018connect"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261018players"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 
@@ -2201,7 +2219,7 @@ function triggerEmergencyFX(){
 
 function showReplayPopup(){
   document.getElementById('replayTitle').textContent=ST.history.length ? `${ST.history.length}語 つながった！` : 'もういっかい あそぼう！';
-  document.getElementById('replayText').textContent='つぎは CPUから はじめるよ。ちがうことばも さがしてみよう。';
+  document.getElementById('replayText').textContent=ShiritoriPlayers.enabled()?ShiritoriPlayers.replayText():'つぎは CPUから はじめるよ。ちがうことばも さがしてみよう。';
   const overlay=document.getElementById('replayOverlay');
   overlay.classList.add('show');
   overlay.setAttribute('aria-hidden','false');
@@ -2797,6 +2815,7 @@ function backspaceInput(){
 function switchIn(mode){
   if(mode!==ST.inputMode){WordHandwritingUI.keepDraft();invalidatePrediction();}
   ST.inputMode=mode;saveSettings();
+  ShiritoriPlayers.rememberInput(mode);ShiritoriKeyboardGuide.update();
   if(mode!=='btn'){ kbSmallNext=false; updateKbSmallModeUI(); }
   ['canvas','btn','kbd'].forEach(m=>{
     document.getElementById('mode'+m.charAt(0).toUpperCase()+m.slice(1)).classList.toggle('hidden',m!==mode);
@@ -3423,8 +3442,9 @@ function renderLinks(animate=false){
     if(i){const bridge=document.createElement('div');bridge.className='rl-bridge';track.appendChild(bridge);bridges.push({bridge,index:i});}
     const node=document.createElement('button');node.type='button';
     node.className='link-node'+(item.speaker==='CPU'?' cpu':'');
-    node.setAttribute('aria-label',displayStr(item.reading)+'、'+item.speaker+'、せつめいをみる');
-    node.innerHTML='<div class="link-who">'+escH(item.speaker)+'</div><div class="link-reading">'+[...displayStr(item.reading)].map((c,j,a)=>'<span class="link-char'+(j===0||j===a.length-1?' edge':'')+'">'+escH(c)+'</span>').join('')+'</div>';
+    node.setAttribute('aria-label',displayStr(item.reading)+'、'+(item.playerName||item.speaker)+'、せつめいをみる');
+    if(item.playerColor)node.style.borderColor=item.playerColor;
+    node.innerHTML='<div class="link-who">'+escH(item.playerName || item.speaker)+'</div><div class="link-reading">'+[...displayStr(item.reading)].map((c,j,a)=>'<span class="link-char'+(j===0||j===a.length-1?' edge':'')+'">'+escH(c)+'</span>').join('')+'</div>';
     node.onclick=()=>{showDetail(item.reading,item.row);if(isMobile())switchMobTab('right');};
     track.appendChild(node);nodes.push(node);
   });
@@ -3460,15 +3480,16 @@ function renderHistory(){
     const dispWord = displayStr(item.words[0]);
     const dispTailB = displayStr(item.tailBefore);
     const dispTailA = displayStr(item.tailAfter);
-    const dispSpeaker = displayStr(item.speaker);
+    const dispSpeaker = item.playerName || item.speaker;
     btn.innerHTML=`
       <div class="hi-em">${escH(item.emoji)}</div>
       <div class="hi-body">
         <div class="hi-word">${escH(dispWord)}</div>
         <div class="hi-meta">${escH(dispTailB)}→${escH(dispTailA)}</div>
       </div>
-      <span class="hi-bdg ${item.speaker==='あなた'?'you':'cpu'}">${escH(dispSpeaker)}</span>
+      <span class="hi-bdg ${item.speaker!=='CPU'?'you':'cpu'}">${escH(dispSpeaker)}</span>
     `;
+    if(item.playerColor){const badge=btn.querySelector('.hi-bdg');badge.style.color=item.playerColor;badge.style.borderColor=item.playerColor;}
     btn.addEventListener('click',()=>showDetail(item.words[0],item.row));
     list.appendChild(btn);
   });
@@ -3502,15 +3523,17 @@ async function commitWord(speaker, readingInput, row, isNew=false){
     tailBefore:tailB, tailAfter:tailA,
     row
   };
+  ShiritoriPlayers.committed(speaker,entry);
   ST.history.push(entry);
+  ShiritoriPlayers.render();
   ST.used.add(n);
   ST.tail=tailA;
 
-  if(speaker==='あなた'){
+  if(speaker!=='CPU'){
     ST.score.you++;
     ST.statsYouWords++;
     document.getElementById('scoreYou').textContent=ST.score.you;
-    setStatus('ok',`「${displayStr(row?row.words[0]:n)}」OK！ つぎは「${displayStr(tailA)}」`,'CPUがかんがえています…');
+    setStatus('ok',`「${displayStr(row?row.words[0]:n)}」OK！ つぎは「${displayStr(tailA)}」`,ShiritoriPlayers.enabled()?'つぎの人に つなごう。':'CPUがかんがえています…');
   } else {
     ST.score.cpu++;
     document.getElementById('scoreCpu').textContent=ST.score.cpu;
@@ -3529,7 +3552,7 @@ async function commitWord(speaker, readingInput, row, isNew=false){
   const round=ST.round;
   await showDetail(row?row.words[0]:n, row, isNew);
   if(round!==ST.round)return;
-  await speakDetail(row?row.words[0]:n, row, speaker, isNew);
+  await speakDetail(row?row.words[0]:n, row, ShiritoriPlayers.enabled()?entry.playerName:speaker, isNew);
   if(round!==ST.round)return;
   await connection;
   if(round!==ST.round)return;
@@ -3627,6 +3650,7 @@ async function submitWord(){
   const row=wlRow; // 上でホワイトリスト照合済みなのでそのまま再利用
   ST.suggestionBypass=null;clearWordSuggestions();
   if(isEndWord(n)){
+    if(ShiritoriPlayers.enabled()){await ShiritoriPlayers.ending();return;}
     await showEndGameByN(n, row);
     if(round!==ST.round)return; // 内部で ST.gameOver=true / ST.cpuBusy=false にする
     setCurrentInput('');
@@ -3691,6 +3715,8 @@ async function submitWord(){
   await commitWord('あなた', n, finalRow, isNew);
   if(round!==ST.round)return;
 
+  if(ShiritoriPlayers.enabled()){await ShiritoriPlayers.advance();return;}
+
   // ★ ロックを維持したままCPUの番を待つ（setTimeoutで投げっぱなしにしない）。
   //   cpuTurn() 側が処理の最後で ST.cpuBusy=false にする。
   await new Promise(r=>setTimeout(r, getCpuDelay(finalRow, isNew)));
@@ -3742,6 +3768,7 @@ function cpuChoose(){
   return chooseWeightedWord(poolSafe);
 }
 async function cpuTurn(){
+  if(ShiritoriPlayers.enabled())return ShiritoriPlayers.cpuTurn();
   const round=ST.round;
   if(!ST.tail){ST.cpuBusy=false;return;}
   setStatus('thinking','CPUがかんがえています…','もうすこしまってください。');
@@ -3811,7 +3838,8 @@ function resetGame(announce=true){
   renderHistory();renderCandidates();
   document.getElementById('detImgBox').innerHTML='<div class="img-ph">🖼️</div>';
   document.getElementById('detContent').innerHTML='<div class="det-empty">ことばをかくと、ここにせつめいがでます！</div>';
-  if(announce)setStatus('ready','さいしょのことばをかいてみよう！','「ん」でおわるとゲームしゅうりょうです。');
+  ShiritoriKeyboardGuide.clear();ShiritoriPlayers.reset();
+  if(announce)setStatus('ready','さいしょのことばをかいてみよう！',ShiritoriPlayers.enabled()?'上の順番で ことばを つなげよう。':'「ん」でおわるとゲームしゅうりょうです。');
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3830,6 +3858,7 @@ document.getElementById('btnBackspace').addEventListener('click',backspaceInput)
 document.getElementById('replayBtn').addEventListener('click',async ()=>{
   hideReplayPopup();
   resetGame(false);
+  if(ShiritoriPlayers.enabled()){setStatus('ready',`${ShiritoriPlayers.current().name}さんから はじめよう。`,'');return;}
   setStatus('thinking','CPUからはじめます…','あたらしいゲームを じゅんび中。');
   await new Promise(r=>setTimeout(r,300));
   await startCpuOpeningRound();
@@ -3998,12 +4027,12 @@ function showTitleScreen(){
     _titleReady = true;
     loadEl.classList.add('hide');
     tapEl.classList.add('show');     // 「タップしてスタート」を表示
-    if(_titleTapped) launchGame();   // タップが先に来ていたら今すぐ起動
+    if(_titleTapped) launchGame(true);   // タップが先に来ていたら今すぐ起動
   }).catch(()=>{
     _titleReady = true;
     loadEl.classList.add('hide');
     tapEl.classList.add('show');
-    if(_titleTapped) launchGame();
+    if(_titleTapped) launchGame(true);
   });
 
   // タップ / クリック
@@ -4014,11 +4043,11 @@ function showTitleScreen(){
       tapEl.textContent = 'よみこみちゅう… もうすこしまってね';
       return;
     }
-    launchGame();
+    launchGame(true);
   }, {once:true});
 }
 
-async function launchGame(){
+async function launchGame(choosePlayers=false){
   const titleEl = document.getElementById('titleScreen');
 
   // ① onsei001.wav 再生 → 再生終了を待ってからフェードアウト開始
@@ -4041,6 +4070,7 @@ async function launchGame(){
   // ③ ゲーム開始 → onsei002.wav 再生 → 再生終了 → onsei003.wav 再生
   await playSound('onsei002.wav');
   playSound('onsei003.wav');
+  if(choosePlayers)ShiritoriPlayers.open();
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -4048,6 +4078,7 @@ async function launchGame(){
 ═══════════════════════════════════════════════════════════ */
 async function boot(){
   loadSettings();
+  ShiritoriKeyboardGuide.init();ShiritoriPlayers.init();
   WordHandwritingUI.sync();
   LABELS = ST.charMode === 'katakana' ? LABELS_KATAKANA : LABELS_HIRAGANA;
   ST.gasUrl = GAS_WEB_APP_URL;

@@ -1,10 +1,6 @@
 /* The connection and editable next word share one stage, in every input mode. */
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 #pageGame{grid-template-columns:190px minmax(0,1fr) 220px}
-#gameMenu{position:relative;flex-shrink:0}
-#gameMenu summary{cursor:pointer;min-height:44px;min-width:48px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:9px;font-size:13px}
-#gameMenu>div{position:absolute;right:0;top:48px;padding:10px;display:flex;gap:8px;flex-direction:column;background:#10172a;border:2px solid var(--cyan);border-radius:12px;min-width:160px;box-shadow:0 4px 24px #0009}
-#gameMenu .tb-btn{min-height:44px}
 .main-tab{white-space:nowrap}
 #colLeft .pb{overflow-y:auto}
 .history-scores{flex-shrink:0;padding:8px;margin-bottom:8px;font-size:14px;color:#d3faff;border-bottom:1px solid var(--border)}
