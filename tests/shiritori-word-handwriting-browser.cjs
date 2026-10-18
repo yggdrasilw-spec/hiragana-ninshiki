@@ -142,7 +142,7 @@ const server=http.createServer((req,res)=>{
           return {first:document.querySelector('#wordResults button').textContent,known:document.querySelector('#wordResults button').dataset.known,answer:document.getElementById('btnSubmitWord').textContent};
         }finally{tf=saved.tf;tfModel=saved.model;ST.whitelist=saved.whitelist;ST.cpuGenres=saved.genres;clearCV();setCurrentInput('');}
       });
-      assert.deepEqual(dictionary,{first:'し',known:'true',answer:'「くし」で こたえる'});
+      assert.deepEqual(dictionary,{first:'し',known:'true',answer:'こたえる ➜'});
       const modelRace=await page.evaluate(async()=>{
         const originalTf=tf,originalModel=tfModel;let oldReady,newReady,oldDisposed=0;
         const newer={predict(){return {data:async()=>[],dispose(){}};},dispose(){}};
@@ -210,21 +210,25 @@ const server=http.createServer((req,res)=>{
       assert.equal(overflow,false,`no horizontal overflow at ${width}`);assert.deepEqual(errors,[]);
       await page.screenshot({path:path.join(out,`${width}.png`),fullPage:true});
       if(!real.skipped){
-        await page.locator('#wordCharacters button').first().click();await page.locator('#btnInspectCharacter').click();
+        await page.locator('#btnCorrectWord').click();await page.locator('#wordCharacters button').first().click();await page.locator('#btnInspectFromCorrection').click();
         await page.screenshot({path:path.join(out,`${width}-character-review.png`),fullPage:true});
         await page.locator('#btnReviewClose').click();
+        await page.locator('#btnCloseWordCorrection').click();
       }
       if(!real.skipped){
         await page.emulateMedia({reducedMotion:'reduce'});
         await page.evaluate(strokes=>{resetGame();ST.voice=false;ST.skipLinkAnimation=true;getCpuDelay=()=>80;HandwritingReview.setEnabled(false);switchIn('canvas');ST.strokes=strokes;clearCV(false);ST.strokes.forEach(paintStroke);},fixtures.sample('くし'));
         await page.evaluate(()=>runPredict());
         assert.equal(await page.locator('#wordResults button').first().innerText(),'くし');assert.equal(await page.locator('#wordResults button').first().getAttribute('data-known'),'true');
-        if(width<=390)assert.ok((await page.locator('#btnSubmitWord').boundingBox()).width>220,'wide answer button');
+        assert.ok((await page.locator('#btnSubmitWord').boundingBox()).width>=88,'answer button remains usable beside the selected word');
+        assert.equal(await page.locator('#btnOk').isVisible(),false,'one primary answer action');
+        assert.equal(await page.locator('#wordPreview').innerText(),'くし');
         assert.equal(await page.locator('#btnOk').evaluate(b=>b.scrollWidth<=b.clientWidth),true,'answer label fits');
         await page.locator('#btnSubmitWord').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,`${width}-answer-ready.png`),fullPage:true});
         await page.locator('#btnSubmitWord').click();await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy);
         const turn=await page.evaluate(()=>({first:ST.history[0].reading,speaker:ST.history[0].speaker,next:ST.history[1].speaker,used:ST.used.has('くし'),you:ST.score.you,cpu:ST.score.cpu,ink:ST.strokes.length,input:ST.currentInput}));
         assert.deepEqual(turn,{first:'くし',speaker:'あなた',next:'CPU',used:true,you:1,cpu:1,ink:0,input:''});
+        assert.equal(await page.locator('#historyScoreYou').innerText(),'1');assert.equal(await page.locator('#historyScoreCpu').innerText(),'1');
         // The direct answer still obeys the normal shiritori connection rule.
         await page.evaluate(strokes=>{resetGame();ST.tail='あ';ST.strokes=strokes;clearCV(false);ST.strokes.forEach(paintStroke);},fixtures.sample('くし'));await page.evaluate(()=>runPredict());
         await page.locator('#btnSubmitWord').click();await page.waitForFunction(()=>!ST.cpuBusy);

@@ -1,0 +1,133 @@
+/* The canvas keeps its space when candidates, corrections, and tools change. */
+#pageGame{grid-template-columns:190px minmax(0,1fr) 220px}
+#gameMenu{position:relative;flex-shrink:0}
+#gameMenu summary{cursor:pointer;min-height:44px;min-width:48px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:9px;font-size:13px}
+#gameMenu>div{position:absolute;right:0;top:48px;padding:10px;display:flex;gap:8px;flex-direction:column;background:#10172a;border:2px solid var(--cyan);border-radius:12px;min-width:160px;box-shadow:0 4px 24px #0009}
+#gameMenu .tb-btn{min-height:44px}
+.main-tab{white-space:nowrap}
+#colLeft .pb{overflow-y:auto}
+.history-scores{flex-shrink:0;padding:8px;margin-bottom:8px;font-size:14px;color:#d3faff;border-bottom:1px solid var(--border)}
+.history-scores strong{font-size:20px}
+#colLeft #linkArena{padding:10px;border-radius:12px;margin-bottom:8px;min-width:0}
+#colLeft #linkTrack{min-height:78px;padding:8px 0}
+#colLeft .link-top{flex-wrap:wrap;height:auto;gap:4px}
+#colLeft .link-title{font-size:11px}
+#colLeft #linkCount strong{font-size:20px}
+#colLeft #linkCue{font-size:11px}
+#colCenter{position:relative;gap:6px;overflow:hidden;min-width:0;min-height:0}
+#writingCue{order:0;flex-shrink:0;font-size:14px;font-weight:800;line-height:1.5;color:#d3faff;padding:4px 8px;max-height:50px;overflow-y:auto}
+#inTabs{order:1}
+#colCenter #writingPanel{order:2;min-height:0!important}
+#wordBox{order:3;min-height:64px;padding:6px 8px;flex-wrap:nowrap;gap:8px}
+#wordContent{flex:1;min-width:0;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start}
+#wordContent .k-tile{flex-shrink:0;width:40px;height:44px;font-size:23px}
+#wordActions{flex-shrink:0;display:flex;align-items:center;gap:6px}
+#btnOk,#btnSubmitWord{min-width:100px;min-height:48px;width:auto;padding:8px 12px;font:inherit;font-size:16px;font-weight:800;white-space:nowrap}
+.word-submit-actions #btnSubmitWord{color:#062029;background:var(--cyan);border:0;border-radius:10px;cursor:pointer;flex:none}
+#btnSubmitWord:disabled{opacity:.45;cursor:default}
+#btnOk[hidden]{display:none!important}
+.word-submit-actions{display:flex;padding:0}
+#inArea{border:0;border-radius:0;background:transparent;overflow:visible}
+#modeCanvas{position:relative;overflow:visible;padding:8px;gap:6px;min-height:0}
+.cv-top{gap:8px;min-height:44px}
+#tfBar{min-width:0;font-size:11px}
+.cv-btns{flex-shrink:0;gap:6px}
+.cv-btns .sm-btn{min-width:44px;min-height:44px;font-size:13px;padding:6px 10px}
+.draw-surface{position:relative;display:flex;flex-direction:column;flex:1 1 0;min-height:160px}
+#modeCanvas #drawCanvas{width:100%;height:100%;min-height:0;max-height:none;flex:1 1 0}
+#predRow{flex-wrap:nowrap;overflow-x:auto;min-height:44px;align-items:center}
+.pred-chip{flex-shrink:0;min-height:44px;box-sizing:border-box}
+.pred-none{font-size:13px}
+#canvasAux{flex-wrap:nowrap!important;overflow-x:auto;min-height:44px;align-items:center}
+#canvasAux .sm-btn{flex-shrink:0;min-height:44px;font-size:12px}
+#wordHandwriting{flex:0 0 52px;min-height:52px;position:relative;display:grid;grid-template-columns:1fr auto;grid-template-rows:48px;gap:6px;align-items:center;overflow:visible;padding:0}
+.word-toolbar{display:flex;margin:0 0 8px}
+#modeCanvas:not(.word-handwriting) .word-toolbar{display:none}
+#wordStatus{grid-row:1;grid-column:1;font-size:12px;line-height:1.5;color:var(--muted);margin:0;overflow-y:auto;max-height:44px}
+#wordHandwriting.has-results #wordStatus{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#wordHandwriting:not(.has-results) #wordResults{visibility:hidden}
+#wordResults{grid-row:1;grid-column:1;display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;min-width:0;align-items:center;height:48px;margin:0}
+#wordResults button{flex-shrink:0;white-space:nowrap;font-size:20px}
+#btnCorrectWord{grid-row:1;grid-column:2}
+#writingTools{flex-shrink:0;position:relative;font-size:12px}
+#writingTools summary{min-height:32px;line-height:32px;cursor:pointer;color:#cfdef5}
+#writingTools[open]{position:absolute;z-index:12;bottom:42px;left:8px;right:8px;padding:10px;border:2px solid var(--cyan);border-radius:12px;background:#10172a;box-shadow:0 4px 24px #0009;max-height:70%;overflow-y:auto}
+#writingTools button,#wordCorrectionDialog button{min-height:44px;min-width:44px;padding:7px 12px;border:1px solid var(--border);border-radius:9px;background:#172132;color:var(--text);font:inherit;cursor:pointer}
+#writingTools #btnAcceptWord{margin-top:8px}
+#modeCanvas:not(.word-handwriting) #btnAcceptWord{display:none}
+#writingTools button:disabled,#wordCorrectionDialog button:disabled{opacity:.45;cursor:default}
+#inputHint{font-size:10px;padding-bottom:3px!important}
+#wordCorrectionDialog{width:min(580px,calc(100vw - 24px));max-height:90dvh;box-sizing:border-box;overflow-y:auto;border:2px solid var(--cyan);border-radius:16px;background:#10172a;color:var(--text);padding:16px}
+#wordCorrectionDialog::backdrop{background:#000b}
+.correction-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;position:sticky;top:-16px;padding:8px 0;background:#10172a;z-index:1}
+#wordCorrectionDialog h2{font-size:20px;margin:0}
+#wordCorrectionDialog p{font-size:13px;line-height:1.6}
+#wordCharacters,#wordCharacterChoices{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+#wordCorrectionDialog button[aria-pressed="true"]{border-color:var(--cyan);background:#113849}
+#wordKanaPicker:not([hidden]){max-height:none;overflow:visible;gap:5px}
+#wordPreview{font-size:clamp(18px,3vw,26px);font-weight:800;overflow-wrap:anywhere;color:#e6f8ff}
+.correction-preview{position:relative;background:white;border-radius:10px;margin:8px 0}
+#correctionInk{display:block;width:100%;height:160px;object-fit:contain}
+#correctionBounds{position:absolute;inset:0;width:100%;height:160px;pointer-events:none}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+/* Match isMobile(): available width AND height, plus an explicit writing focus. */
+@media(max-width:1100px),(max-height:500px){
+  #pageGame.active{display:flex;flex-direction:column;padding:0;gap:0;min-height:0}
+  #colLeft,#colRight{display:none;flex:1;min-height:0;overflow:hidden}
+  #colLeft.mob-active,#colRight.mob-active{display:flex}
+  #colCenter{flex:1;min-height:0;padding:6px 8px;overflow-y:auto}
+  #colCenter.mob-hidden{display:none}
+  #colCenter #writingPanel{min-height:420px!important;flex:1 0 420px}
+  #mobileSubTabs{display:flex;flex-shrink:0;min-height:48px;padding-bottom:env(safe-area-inset-bottom)}
+  .mob-tab{min-height:48px}
+  #topbar{height:auto;min-height:48px;flex-wrap:wrap;padding:4px 8px;gap:5px}
+  .tb-logo{font-size:16px}
+  .main-tabs{order:0;width:auto;flex:1}
+  .main-tab{min-height:40px;font-size:12px}
+  .score-chip{font-size:11px;padding:3px 8px}
+  .score-chip .n{font-size:15px}
+  .tb-btn{min-height:40px;font-size:11px}
+  .tail-badge{display:none!important}
+}
+@media(max-width:600px){
+  #topbar .score-chip,#topbar .tb-logo{display:none}
+  #topbar .main-tabs{flex:none}
+  #topbar .main-tabs{margin-right:0;gap:3px}
+  #topbar{gap:4px}
+  #topbar .tb-btn{padding:4px 6px}
+  #topbar .main-tab{padding:5px 8px}
+  #btnCharMode{max-width:none;font-size:11px}
+  #colCenter #writingPanel{min-height:470px!important;flex-basis:470px}
+  #wordBox{min-height:60px;gap:4px;padding:5px}
+  #btnOk,#btnSubmitWord{min-width:88px;padding:8px;font-size:14px}
+  #wordActions{gap:4px}
+  .cv-btns .sm-btn{padding:5px 7px;font-size:12px}
+  #tfBar{font-size:10px}
+}
+@media(max-height:500px){
+  #topbar .score-chip,#topbar .tb-logo{display:none}
+  #colCenter:has(#modeCanvas:not(.hidden)) #writingCue,#colCenter:has(#modeCanvas:not(.hidden)) #inTabs{display:none}
+  #colCenter #writingPanel{min-height:220px!important;flex:1 0 220px}
+  #modeCanvas:not(.hidden){display:grid;grid-template-columns:minmax(0,1fr) 230px;grid-template-rows:44px minmax(160px,1fr);gap:6px}
+  #modeCanvas .cv-top{grid-column:1;grid-row:1}
+  #modeCanvas .draw-surface{grid-column:1;grid-row:2}
+  #modeCanvas #wordHandwriting{grid-column:2;grid-row:2;display:flex;flex-direction:column;align-items:stretch;min-height:0;gap:4px}
+  #modeCanvas #wordResults{flex:1;overflow-y:auto;flex-wrap:wrap;height:auto;min-height:44px}
+  #modeCanvas #writingTools{grid-column:2;grid-row:1;align-self:center}
+  #modeCanvas #writingTools[open]{position:absolute;left:auto;top:8px;right:8px;bottom:auto;width:230px;max-height:80%}
+  #modeCanvas #predRow{grid-column:2;grid-row:2;flex-wrap:wrap;align-content:flex-start;overflow:auto}
+  #modeCanvas #canvasAux{position:absolute;right:8px;bottom:8px;width:230px}
+  #wordBox{min-height:56px;padding:3px 6px}
+  #wordContent{min-height:44px}
+  #mobileSubTabs,.mob-tab{min-height:40px}
+  .mob-icon{display:none}
+}
+body.writing-focus #pageGame.active{display:flex;flex-direction:column}
+body.writing-focus #topbar{display:none}
+body.writing-focus #colLeft,body.writing-focus #colRight{display:none}
+body.writing-focus #colLeft.mob-active,body.writing-focus #colRight.mob-active{display:flex}
+body.writing-focus #colCenter{flex:1;padding:6px 8px;overflow-y:auto}
+body.writing-focus #colCenter.mob-hidden{display:none}
+body.writing-focus #mobileSubTabs{display:flex;flex-shrink:0}
+body.writing-focus #colCenter #writingPanel{min-height:420px!important;flex:1 0 420px}
+@media(max-height:500px){body.writing-focus #colCenter #writingPanel{min-height:220px!important;flex:1 0 220px}}

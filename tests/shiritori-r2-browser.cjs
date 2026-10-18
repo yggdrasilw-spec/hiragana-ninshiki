@@ -61,7 +61,7 @@ const server = http.createServer((req, res) => {
       await page.screenshot({ path: path.join(out, name + '-game.png'), fullPage: true });
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const history = await page.evaluate(() => ST.history.map(e => e.reading));
-      await page.locator('#btnReset').click();
+      await page.locator('#gameMenu summary').click();await page.locator('#btnReset').click();
       assert.equal(await page.evaluate(() => ST.history.length), 0);
       await page.goto(origin + '/shiritori-image-review.html');
       await page.locator('#message').filter({ hasText: '準備できました' }).waitFor();

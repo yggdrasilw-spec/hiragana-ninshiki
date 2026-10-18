@@ -10,6 +10,33 @@ const WordHandwritingUI=(()=>{
       $('btnReadWord').onclick=()=>runPredict();
       $('btnAcceptWord').onclick=()=>accept(false);
       $('btnSubmitWord').onclick=()=>accept(true);
+      $('btnCorrectWord').onclick=()=>{
+        editing=0;pickerOpen=false;render();$('wordCorrectionDialog').showModal();
+        $('wordCharacters').querySelector('button')?.focus();
+      };
+      $('btnCloseWordCorrection').onclick=()=>$('wordCorrectionDialog').close();
+      $('wordCorrectionDialog').addEventListener('close',()=>{
+        editing=-1;pickerOpen=false;render();$('btnCorrectWord').focus({preventScroll:true});
+      });
+      $('btnInspectFromCorrection').onclick=()=>{
+        HandwritingReview.setEnabled(true);
+        $('btnInspectCharacter').click();
+      };
+      $('btnWritingFocus').onclick=()=>{
+        const focus=document.body.classList.toggle('writing-focus');
+        $('btnWritingFocus').setAttribute('aria-pressed',String(focus));
+        $('btnWritingFocus').textContent=focus?'⛶ もとの 広さ':'⛶ 大きく かく';
+        applyMobileLayout();requestAnimationFrame(resizeCV);
+      };
+      // Layout changes include navigation and orientation, not just window resize.
+      new ResizeObserver(()=>requestAnimationFrame(resizeCV)).observe($('drawCanvas'));
+      $('gameMenu').addEventListener('click',e=>{if(e.target.closest('button'))$('gameMenu').open=false;});
+      document.addEventListener('keydown',e=>{
+        if(e.key==='Escape'&&!document.querySelector('dialog[open]')){
+          if($('gameMenu').open)$('gameMenu').open=false;
+          else if(document.body.classList.contains('writing-focus'))$('btnWritingFocus').click();
+        }
+      });
       $('btnWordSmall').onclick=()=>{
         const item=results[selected]?.chars[editing];if(!item)return;
         const e=engine();edit(e.smallMap[item.ch]||e.largeMap[item.ch]||item.ch);
@@ -17,8 +44,15 @@ const WordHandwritingUI=(()=>{
       $('btnWordOther').onclick=()=>{pickerOpen=!pickerOpen;render();};
       $('enableWordHandwriting').onchange=()=>setMode($('enableWordHandwriting').checked?'word':'single');
     }
+    if(ST.inputMode!=='canvas'&&document.body.classList.contains('writing-focus')){
+      document.body.classList.remove('writing-focus');
+      $('btnWritingFocus').setAttribute('aria-pressed','false');
+      $('btnWritingFocus').textContent='⛶ 大きく かく';applyMobileLayout();
+    }
     $('wordHandwriting').classList.toggle('hidden',!active());
-    $('wordSubmitActions').classList.toggle('hidden',!active());
+    const wordInput=active()&&ST.inputMode==='canvas';
+    $('wordSubmitActions').classList.toggle('hidden',!wordInput);
+    $('btnOk').hidden=wordInput;
     $('predRow').classList.toggle('hidden',active());
     $('canvasAux').classList.toggle('hidden',active());
     $('wordKatakanaNote').classList.toggle('hidden',ST.charMode==='hiragana');
@@ -31,21 +65,35 @@ const WordHandwritingUI=(()=>{
     ST.handwritingMode=mode;clearCV(true);saveSettings();sync();resizeCV();
   }
   function invalidate(){
+    if($('wordCorrectionDialog').open)$('wordCorrectionDialog').close();
     HandwritingReview.reset();
     results=[];selected=0;editing=-1;busy=false;pickerOpen=false;singleLabel=null;
     if(initialized)render();
   }
   function render(){
     if(!initialized)return;
+    const focused=document.activeElement,focusGroup=focused?.parentElement?.id;
+    const focusLabel=focused?.getAttribute('aria-label'),focusText=focused?.textContent;
+    const wordInput=active()&&ST.inputMode==='canvas';
+    $('wordSubmitActions').classList.toggle('hidden',!wordInput);
+    $('btnOk').hidden=wordInput;
     const holder=$('wordResults');holder.replaceChildren();
     const row=$('wordCharacters');row.replaceChildren();
     const choices=$('wordCharacterChoices');choices.replaceChildren();
     $('btnReadWord').disabled=busy||!tfModel||!ST.strokes.length;
+    $('wordHandwriting').classList.toggle('has-results',!!results.length&&!busy);
     $('btnAcceptWord').disabled=busy||!results.length;
-    $('btnSubmitWord').disabled=busy||!results.length||ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked;
+    updateSubmitState();
+    $('btnCorrectWord').disabled=busy||!results.length;
+    $('btnInspectFromCorrection').disabled=!results[selected]?.chars[editing];
     const chosen=results[selected]?.chars.map(c=>c.ch).join('');
-    $('btnSubmitWord').textContent=chosen?`「${ST.currentInput+chosen}」で こたえる`:'この ことばで こたえる';
-    $('wordStatus').textContent=busy?'よみとり中…':results.length?'ことばを えらんで、下の「こたえる」を おしてね。ちがう もじは １もじずつ なおせるよ。':'ひだりから ことばを かいてね。手を とめると 自動で よみとるよ。小さい字は 小さめに。';
+    $('btnSubmitWord').textContent='こたえる ➜';
+    $('btnSubmitWord').setAttribute('aria-label',`${ST.currentInput+(chosen||'')}で こたえる`);
+    const preview=$('wordContent');
+    if(active()&&ST.inputMode==='canvas'&&chosen){
+      const text=document.createElement('span');text.id='wordPreview';text.textContent=ST.currentInput+chosen;preview.replaceChildren(text);
+    }else if($('wordPreview'))updateWordBox(ST.currentInput);
+    $('wordStatus').textContent=busy?'よみとり中…':results.length?'ことばを えらぼう。ちがう字は「もじを なおす」。':'左から ことばを かこう。手を とめると よみとるよ。';
     results.forEach((r,i)=>{
       const b=document.createElement('button');b.type='button';b.className='word-candidate';
       b.textContent=r.chars.map(c=>c.ch).join('');b.dataset.known=String(inWhitelist(ST.currentInput+b.textContent));b.setAttribute('aria-label',b.textContent+(b.dataset.known==='true'?'、じしょに ある ことば':''));b.setAttribute('aria-pressed',String(i===selected));
@@ -78,7 +126,16 @@ const WordHandwritingUI=(()=>{
     }
     const chars=active()?results[selected]?.chars:singleLabel&&ST.strokes.length?[{ch:singleLabel,segment:{box:engine().bounds(ST.strokes),strokes:ST.strokes}}]:[];
     renderBounds(chars||[]);
+    if(editing>=0){
+      const ink=$('correctionInk');ink.width=cv.width;ink.height=cv.height;
+      ink.getContext('2d').drawImage(cv,0,0);
+      $('correctionBounds').setAttribute('viewBox',`0 0 ${cv.width} ${cv.height}`);
+      $('correctionBounds').innerHTML=$('handwritingBounds').innerHTML;
+    }
     HandwritingReview.update(chars||[],active()?editing:0);
+    if(focused&&!focused.isConnected&&focusGroup){
+      [...($(focusGroup)?.querySelectorAll('button')||[])].find(b=>focusLabel?b.getAttribute('aria-label')===focusLabel:b.textContent===focusText)?.focus({preventScroll:true});
+    }
   }
   const color=i=>['#1765cd','#7c3aed','#a64b00','#087c6c','#b82d70'][i%5];
   function renderBounds(chars){
@@ -112,6 +169,22 @@ const WordHandwritingUI=(()=>{
     const candidate=results[selected];if(!candidate||editing<0)return;
     // Beam paths share immutable prefixes; editing must affect only this candidate.
     candidate.chars=candidate.chars.map((c,i)=>i===editing?{...c,ch}:c);render();
+  }
+  function resized(){
+    busy=false;
+    for(const segment of new Set(results.flatMap(r=>r.chars.map(c=>c.segment))))segment.box=engine().bounds(segment.strokes);
+    render();
+    return results.length>0;
+  }
+  function updateSubmitState(){
+    $('btnSubmitWord').disabled=busy||(!results.length&&!ST.currentInput)||ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked;
+  }
+  function backspace(){
+    if(!active()||ST.inputMode!=='canvas'||!results[selected])return false;
+    const candidate=results[selected];
+    candidate.chars=candidate.chars.slice(0,-1);
+    if(!candidate.chars.length){results=[];selected=0;}
+    editing=-1;pickerOpen=false;render();return true;
   }
   function rasterize(segment){
     // Re-render from coordinates: display pen width and guides never enter recognition.
@@ -157,19 +230,21 @@ const WordHandwritingUI=(()=>{
       if(!results.length)$('wordStatus').textContent='よめなかったよ。もじの あいだを 少し あけてみてね。';
     }catch(error){
       if(!valid())return;
-      busy=false;render();
-      $('wordStatus').textContent=error.message==='too-many-strokes'?'１つの ことばずつ かいてね。けして、もういちど。':'よみとれませんでした。もういちど「よみとる」を おしてね。';
+      busy=false;results=[];render();
+      $('wordStatus').textContent=error.message==='too-many-strokes'?'１つの ことばずつ かいてね。けして、もういちど。':'よみとれなかったよ。かきなおすか、下の「かいた字を みる」から よみなおしてね。';
       console.warn('word handwriting',error);
     }
   }
   function accept(submit=false){
-    if(busy||!active()||!results[selected])return;
+    if(busy||!active())return;
     if(submit&&(ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked))return;
+    if(!results[selected]){if(submit&&ST.currentInput)return submitWord();return;}
     setCurrentInput(ST.currentInput+results[selected].chars.map(c=>c.ch).join(''));
     clearCV(true);
     if(submit)return submitWord();
-    setStatus('ready','ことばを いれたよ。','上の「こたえる」を おすと、しりとりが すすむよ。');
-    $('btnOk').focus({preventScroll:true});$('wordBox').scrollIntoView({block:'nearest'});
+    setStatus('ready','ことばを いれたよ。','下の「こたえる」を おすと、しりとりが すすむよ。');
+    $('writingTools').open=false;
+    $('drawCanvas').scrollIntoView({block:'nearest'});
   }
-  return {active,sync,invalidate,predict,rasterize,setMode,refresh:render,singleBounds};
+  return {active,sync,invalidate,predict,rasterize,setMode,refresh:render,singleBounds,resized,updateSubmitState,backspace};
 })();

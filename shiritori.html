@@ -1184,7 +1184,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 #wordSuggestions button{min-height:44px;margin:4px;white-space:normal}
 </style>
 <link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
-<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261017d">
+<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261018layout">
+<link rel="stylesheet" href="shiritori-writing-layout.css?v=20261018layout">
 </head>
 <body>
 
@@ -1210,8 +1211,10 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     つぎは「<span class="tc" id="tailChar">?</span>」
   </div>
   <button class="tb-btn" id="btnVoice">🔇 おと</button>
-  <button class="tb-btn" id="btnCharMode" onclick="toggleCharModeFromTopbar()"></button>
-  <button class="tb-btn" id="btnReset">🔄 リセット</button>
+  <details id="gameMenu"><summary>ほか</summary><div>
+    <button class="tb-btn" id="btnCharMode" onclick="toggleCharModeFromTopbar()"></button>
+    <button class="tb-btn" id="btnReset">🔄 リセット</button>
+  </div></details>
 </div>
 
 <!-- GAME PAGE -->
@@ -1221,6 +1224,13 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
   <section class="panel" id="colLeft">
     <div class="ph"><span class="ph-icon">📋</span><span class="ph-title">れきし</span></div>
     <div class="pb">
+      <div class="history-scores" aria-label="つかった ことばの 数">あなた <strong id="historyScoreYou">0</strong>　CPU <strong id="historyScoreCpu">0</strong></div>
+    <section id="linkArena" aria-label="ことばのつながり">
+      <div class="link-top"><span class="link-title">ことばを、つなごう。</span><span id="linkCount"><strong>0</strong>つながり</span></div>
+      <div id="linkTrack" aria-label="最近のことば"></div>
+      <div id="linkCue"><span id="linkNext">✦</span><span id="linkStatus" role="status" aria-live="polite">さいしょのことばをいれてね</span></div>
+      <div id="linkBurst" aria-hidden="true"></div>
+    </section>
       <div id="statusCard" class="ready">
         <div class="sc-icon" id="scIcon">🟦</div>
         <div>
@@ -1236,17 +1246,13 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 
   <!-- CENTER -->
   <div id="colCenter">
-    <section id="linkArena" aria-label="ことばのつながり">
-      <div class="link-top"><span class="link-title">ことばを、つなごう。</span><span id="linkCount"><strong>0</strong>つながり</span></div>
-      <div id="linkTrack" aria-label="最近のことば"></div>
-      <div id="linkCue"><span id="linkNext">✦</span><span id="linkStatus" role="status" aria-live="polite">さいしょのことばをいれてね</span></div>
-      <div id="linkBurst" aria-hidden="true"></div>
-    </section>
+    <div id="writingCue" role="status">さいしょの ことばを かこう</div>
     <!-- Word box -->
-    <div id="wordBox">
+    <div id="wordBox" aria-label="こたえる ことば">
       <div id="wordContent"><div class="wph" id="wph">ここに ことばが でるよ</div></div>
       <div id="wordActions">
         <button id="btnBackspace" class="wa-btn" type="button" aria-label="さいごのもじをけす">⌫</button>
+        <div id="wordSubmitActions" class="word-submit-actions hidden"><button type="button" id="btnSubmitWord" disabled>こたえる ➜</button></div>
         <button id="btnOk" class="wa-btn ok" type="button" aria-label="このことばで こたえる" disabled>こたえる ➜</button>
       </div>
     </div>
@@ -1259,7 +1265,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     </div>
 
     <!-- Input area -->
-    <section class="panel" style="flex:1;min-height:0;display:flex;flex-direction:column">
+    <section class="panel" id="writingPanel" style="flex:1;min-height:0;display:flex;flex-direction:column">
       <div id="inArea">
 
         <!-- CANVAS MODE -->
@@ -1272,8 +1278,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
             <div class="cv-btns">
               <button class="sm-btn" id="btnUndo">↩ もどす</button>
               <button class="sm-btn" id="btnClear">🗑 けす</button>
-              <label class="lbl-file" for="modelFiles">📂 モデル</label>
-              <input id="modelFiles" type="file" multiple accept=".json,.bin"/>
+              <button type="button" class="sm-btn" id="btnWritingFocus" aria-pressed="false">⛶ 大きく かく</button>
             </div>
           </div>
           <div class="draw-surface">
@@ -1281,22 +1286,22 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
             <svg id="handwritingBounds" aria-hidden="true" preserveAspectRatio="none"></svg>
             <svg id="handwritingProcess" aria-hidden="true" preserveAspectRatio="none"></svg>
           </div>
+          <div id="predRow"><div class="pred-none">１もじずつ かいて、こうほを えらんでね</div></div>
+          <div id="wordHandwriting" class="hidden">
+            <p id="wordStatus" role="status" aria-live="polite"></p>
+            <div id="wordResults" aria-label="ことばのこうほ"></div>
+            <button type="button" id="btnCorrectWord" disabled>もじを なおす</button>
+          </div>
+          <details id="writingTools"><summary>かいた字を みる・つづけて かく</summary>
+            <div class="word-toolbar"><button type="button" id="btnReadWord">もういちど よみとる</button></div>
           <div class="handwriting-review-tools">
             <button type="button" id="btnProcessToggle" aria-pressed="false">書いた順・向き OFF</button>
             <button type="button" id="btnStrokeReplay" hidden>▶ かいた順に みる</button>
             <button type="button" id="btnInspectCharacter" hidden disabled>🔍 １もじを 大きく</button>
             <span id="strokeReviewStatus" role="status" aria-live="polite"></span>
           </div>
-          <div id="predRow"><div class="pred-none">１もじずつ かいて、こうほを えらんでね</div></div>
-          <div id="wordHandwriting" class="hidden">
-            <div class="word-toolbar"><button type="button" id="btnReadWord">よみとる</button></div>
-            <p id="wordStatus" role="status" aria-live="polite"></p>
-            <p id="wordBoundsHint" hidden>わくの 数字は、下の もじと おなじだよ。１もじとして よんだ はんいを かこんでいるよ。</p>
-            <div id="wordResults" aria-label="ことばのこうほ"></div>
-            <div id="wordCharacters" aria-label="１もじずつ なおす"></div>
-            <div id="wordCorrection" class="hidden"><div id="wordCharacterChoices" aria-label="もじのこうほ"></div><button type="button" id="btnWordSmall">大きい字 ↔ 小さい字</button> <button type="button" id="btnWordOther" aria-expanded="false" aria-controls="wordKanaPicker">ほかの ひらがな</button><div id="wordKanaPicker" hidden aria-label="ひらがなから えらぶ"></div></div>
-          </div>
-          <div id="wordSubmitActions" class="word-submit-actions hidden"><button type="button" id="btnSubmitWord" disabled>この ことばで こたえる</button><button type="button" id="btnAcceptWord" disabled>にゅうりょく だけする</button></div>
+            <button type="button" id="btnAcceptWord" disabled>この ことばを 入れて、つづけて かく</button>
+          </details>
           <!-- ★ 手書きモード補助ボタン: ー・小文字・濁点・半濁点 -->
           <div id="canvasAux" style="display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0;margin-top:2px">
             <button class="sm-btn" id="auxLong"   onclick="appendCanvasAux('ー')">ー のばし棒</button>
@@ -1440,6 +1445,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
         <label class="handwriting-review-setting"><input type="checkbox" id="showHandwritingProcess">書いた順・向き・筆跡の再生を使う</label>
         <p class="image-policy-help">数字は実際に書いた順、矢印は線を書いた向きです。お手本の正しい書き順を判定する表示ではありません。</p>
         <p class="image-policy-help"><a href="kana-feedback-lab.html" target="_blank" rel="noopener">かなの かたち研究室を開く（助言の検証用）</a></p>
+        <details><summary>認識モデルを ファイルから よみこむ</summary><label class="lbl-file" for="modelFiles">📂 モデルを えらぶ</label><input id="modelFiles" type="file" multiple accept=".json,.bin"/></details>
         <p id="wordKatakanaNote" class="image-policy-help hidden">カタカナでは「１もじずつ」を使います。ひらがなに戻すと、選んだ設定で使えます。</p>
       </div>
     </div>
@@ -1585,6 +1591,16 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
   </div>
 </div>
 
+<dialog id="wordCorrectionDialog" aria-labelledby="wordCorrectionTitle">
+  <div class="correction-heading"><h2 id="wordCorrectionTitle">なおす もじを えらぼう</h2><button type="button" id="btnCloseWordCorrection">できた</button></div>
+  <p>数字は、かいた字の わくと おなじだよ。</p>
+  <div class="correction-preview"><canvas id="correctionInk"></canvas><svg id="correctionBounds" aria-hidden="true" preserveAspectRatio="xMidYMid meet"></svg></div>
+            <p id="wordBoundsHint" hidden>わくの 数字は、下の もじと おなじだよ。１もじとして よんだ はんいを かこんでいるよ。</p>
+            <div id="wordCharacters" aria-label="１もじずつ なおす"></div>
+            <div id="wordCorrection" class="hidden"><div id="wordCharacterChoices" aria-label="もじのこうほ"></div><button type="button" id="btnWordSmall">大きい字 ↔ 小さい字</button> <button type="button" id="btnWordOther" aria-expanded="false" aria-controls="wordKanaPicker">ほかの ひらがな</button><div id="wordKanaPicker" hidden aria-label="ひらがなから えらぶ"></div></div>
+  <button type="button" id="btnInspectFromCorrection">この字の かきかたを みる</button>
+</dialog>
+
 <!-- FLY ELEMENT -->
 <div id="flyEl"></div>
 <div id="panicOverlay"></div>
@@ -1598,7 +1614,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-robot-link.js?v=20261013"></script>
 <script src="shiritori-word-handwriting.js?v=20261017d"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
-<script src="shiritori-word-handwriting-ui.js?v=20261017d"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261018layout"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 
@@ -2279,12 +2295,14 @@ function setStatus(kind,main,sub=''){
   document.getElementById('scMain').textContent=main;
   document.getElementById('scSub').textContent=sub;
   document.getElementById('linkStatus').textContent=main;
+  document.getElementById('writingCue').textContent=(ST.tail?'「'+displayStr(ST.tail)+'」から ': '')+main;
 }
 
 /* ═══════════════════════════════════════════════════════════
    WORD BOX — NEON
 ═══════════════════════════════════════════════════════════ */
 function updateWordBox(input){
+  WordHandwritingUI.updateSubmitState();
   const wb=document.getElementById('wordContent');
   const n=norm(input);
   wb.innerHTML='';
@@ -2667,9 +2685,11 @@ function resizeCV(){
   }
   cv.width=newW;cv.height=newH;
   drawing=false;curStroke=null;
-  clearCV(false);
+  predRevision++;clearTimeout(predTimer);
+  drawCtx.fillStyle='#fff';drawCtx.fillRect(0,0,newW,newH);drawGuides();
   for(const st of ST.strokes)paintStroke(st);
-  if(ST.strokes.length)schedPred(200);
+  const hasCandidates=WordHandwritingUI.resized();
+  if(ST.strokes.length&&!hasCandidates)schedPred(200);
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2804,11 +2824,13 @@ function setCurrentInput(val){
     kbdInp.value = ST.currentInput;
   }
   updateWordBox(ST.currentInput);
+  WordHandwritingUI.refresh();
 }
 function syncInput(val){
   setCurrentInput(val);
 }
 function backspaceInput(){
+  if(WordHandwritingUI.backspace())return;
   setCurrentInput(ST.currentInput.slice(0,-1));
   kbSmallNext=false;
   updateKbSmallModeUI();
@@ -2837,6 +2859,8 @@ function switchIn(mode){
       kbdInp.removeEventListener('input',kbdHandler);
     }
   }
+  WordHandwritingUI.sync();
+  requestAnimationFrame(resizeCV);
 }
 function kbdHandler(e){
   setCurrentInput(norm(e.target.value));
@@ -3462,6 +3486,8 @@ function renderLinks(animate=false){
   return Promise.all(jobs);
 }
 function renderHistory(){
+  document.getElementById('historyScoreYou').textContent=ST.score.you;
+  document.getElementById('historyScoreCpu').textContent=ST.score.cpu;
   const list=document.getElementById('histList');
   list.innerHTML='';
   renderLinks();
@@ -3586,6 +3612,7 @@ async function submitWord(){
   //   AI判定中・確定アニメ中・CPUの番の間、Enter連打やOK連打による
   //   二重送信を防ぐ。各早期returnの直前で必ず解除すること。
   ST.cpuBusy = true;
+  WordHandwritingUI.updateSubmitState();
   const round=ST.round;
   document.getElementById('btnOk').disabled = true;
 
@@ -3877,7 +3904,7 @@ cv.addEventListener('pointerleave',endStroke);
 /* ═══════════════════════════════════════════════════════════
    MOBILE TAB SWITCH
 ═══════════════════════════════════════════════════════════ */
-function isMobile(){ return window.innerWidth <= 768; }
+function isMobile(){ return window.innerWidth <= 1100 || window.innerHeight <= 500 || document.body.classList.contains("writing-focus"); }
 
 function switchMobTab(tab){
   if(!isMobile()) return;
@@ -3935,8 +3962,8 @@ function applyMobileLayout(){
 
 // ウィンドウリサイズ時に再適用（横⇔縦の切り替え）
 window.addEventListener('resize', ()=>{
-  resizeCV();
   applyMobileLayout();
+  requestAnimationFrame(resizeCV);
 });
 
 /* ═══════════════════════════════════════════════════════════
