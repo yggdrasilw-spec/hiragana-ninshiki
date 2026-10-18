@@ -9,7 +9,7 @@ const server=http.createServer((req,res)=>{const relative=new URL(req.url,'http:
  await page.route('https://**/*',r=>r.abort());
  await require('./shiritori-r2-fixture.cjs')(page);await page.goto('http://127.0.0.1:'+server.address().port+'/shiritori.html');
  const result=await page.evaluate(async()=>{
- document.getElementById('titleScreen').remove();ST.voice=false;resizeCV();clearCV();
+ document.getElementById('titleScreen').remove();ST.voice=false;WordHandwritingUI.setMode('single');resizeCV();clearCV();
  const blank=preprocess();const cssLine=calcLineW()/(cv.width/cv.getBoundingClientRect().width);
  const event=(x,y,id=1)=>({clientX:cv.getBoundingClientRect().left+x,clientY:cv.getBoundingClientRect().top+y,pointerId:id,button:0,preventDefault(){}});
  // Call handlers without native capture for deterministic synthetic input.

@@ -21,8 +21,22 @@ const server=http.createServer((req,res)=>{
       });
       await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');
       await page.evaluate(()=>{document.getElementById('titleScreen').remove();document.querySelectorAll('dialog[open]').forEach(d=>d.close());ST.voice=false;resizeCV();});
-      assert.equal(await page.evaluate(()=>ST.handwritingMode),'single');
+      assert.equal(await page.evaluate(()=>ST.handwritingMode),'word');
+      assert.equal(await page.locator('#auxDak, #auxHdak, #katakanaModel').count(),0);
+      const migration=await page.evaluate(()=>{
+        const original=localStorage.getItem('shiri-settings');
+        const states=[];
+        for(const settings of [{handwritingMode:'single'},{}, {handwritingMode:'single',handwritingVersion:2}]){
+          localStorage.setItem('shiri-settings',JSON.stringify(settings));loadSettings();states.push(ST.handwritingMode);
+        }
+        localStorage.setItem('shiri-settings',original||'{}');loadSettings();return states;
+      });
+      assert.deepEqual(migration,['word','word','single']);
       await page.evaluate(()=>{document.querySelectorAll('dialog[open]').forEach(d=>d.close());showPage('settings');setSettingsTab('input');});
+      await page.locator('#enableWordHandwriting').uncheck();
+      await page.reload();
+      assert.equal(await page.evaluate(()=>ST.handwritingMode),'single','explicit single mode survives reload');
+      await page.evaluate(()=>{document.getElementById('titleScreen').remove();document.querySelectorAll('dialog[open]').forEach(d=>d.close());ST.voice=false;showPage('settings');setSettingsTab('input');});
       await page.locator('#enableWordHandwriting').check();
       assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('shiri-settings')).handwritingMode),'word');
       await page.reload();
@@ -58,6 +72,43 @@ const server=http.createServer((req,res)=>{
         fs.writeFileSync(path.join(out,'geometric-baseline.json'),JSON.stringify(baseline,null,2));
         console.log(JSON.stringify({geometricBaseline:baseline}));
       }
+      // Exercise the standard 72-class GraphModel through the word batch path.
+      const katakana=await page.evaluate(async()=>{
+        const checks=[];
+        localStorage.setItem('shiri-katakana-model','katakana'); // Retired preference is ignored.
+        for(const id of ['katakana-marks-20261018']){
+          await setCharMode('katakana');
+          await loadModelUrl(selectedModel().url);
+          if(!tfModel)throw Error('katakana model failed: '+id);
+          clearCV();setCurrentInput('');
+          // Two カ forms; add detached dakuten to the first for the 72-class model.
+          const paths=[[[20,50],[90,50],[80,110],[65,115]],[[65,20],[55,70],[20,115]],[[160,50],[230,50],[220,110],[205,115]],[[205,20],[195,70],[160,115]]];
+          if(id.includes('marks'))paths.push([[95,20],[102,30]],[[110,15],[117,25]]);
+          ST.strokes=paths.map(points=>({lineWidth:4,points:points.map(([x,y])=>({x,y}))}));
+          invalidatePrediction();await runPredict();
+          const candidates=[...document.querySelectorAll('#wordResults button')].map(b=>b.textContent);
+          if(!candidates.length)throw Error('no katakana word candidates: '+document.getElementById('wordStatus').textContent);
+          if(!candidates.some(text=>text.length>=2))throw Error('missing multi-character path');
+          if(candidates.some(text=>/[^ァ-ヺー]/.test(text)))throw Error('wrong script: '+candidates);
+          document.querySelector('#wordCharacters button').click();document.getElementById('btnWordOther').click();
+          const picker=[...document.querySelectorAll('#wordKanaPicker button')];
+          const onlyKatakana=picker.every(b=>/^[ァ-ヺー]$/.test(b.textContent));
+          picker.find(b=>b.textContent==='ヤ').click();document.getElementById('btnWordSmall').click();
+          const small=document.querySelector('#wordCharacters button').textContent;
+          document.getElementById('btnWordOther').click();
+          [...document.querySelectorAll('#wordKanaPicker button')].find(b=>b.textContent==='パ').click();
+          const text=[...document.querySelectorAll('#wordCharacters button')].map(b=>b.textContent).join('');
+          document.getElementById('btnAcceptWord').click();
+          checks.push({id,classes:LABELS.length,candidates,onlyKatakana,small,accepted:ST.currentInput===norm(text),cleared:ST.strokes.length===0});
+          WordHandwritingUI.setMode('single');
+          if(WordHandwritingUI.active()||document.getElementById('predRow').classList.contains('hidden'))throw Error('single mode unavailable');
+          WordHandwritingUI.setMode('word');
+        }
+        await setCharMode('hiragana');clearCV();setCurrentInput('');return checks;
+      });
+      assert.deepEqual(katakana.map(c=>c.classes),[72]);
+      for(const check of katakana){assert.equal(check.onlyKatakana,true);assert.equal(check.small,'ャ');assert.equal(check.accepted,true);assert.equal(check.cleared,true);}
+      console.log(JSON.stringify({width,katakana}));
       // Draw two letters with real pointer events; no recognition button is pressed.
       await page.evaluate(()=>{clearCV();showPage('game');resizeCV();});
       await page.locator('#drawCanvas').scrollIntoViewIfNeeded();const board=await page.locator('#drawCanvas').boundingBox();
@@ -119,15 +170,15 @@ const server=http.createServer((req,res)=>{
         const legacyVisible=!document.getElementById('predRow').classList.contains('hidden');
         const noStale=document.querySelectorAll('#wordResults button').length===0;
         WordHandwritingUI.setMode('word');ST.charMode='katakana';WordHandwritingUI.sync();
-        const katakanaFallback=!WordHandwritingUI.active()&&!document.getElementById('predRow').classList.contains('hidden');
+        const katakanaEnabled=WordHandwritingUI.active()&&document.getElementById('predRow').classList.contains('hidden');
         ST.charMode='hiragana';WordHandwritingUI.sync();
         const restored=WordHandwritingUI.active();
         cv.setPointerCapture=capture;tf=actualTf;tfModel=actualModel;ST.whitelist=actualWhitelist;invalidatePrediction();
-        return {chars,boxes,aligned,alternateBoxes,alternateText,overlayDoesNotChangeInk,highlighted,clearedBoxes,before,after,pickerWorked,otherBefore,otherAfter,accepted,strokesAfter,readEnabled,stale,readDisabled,legacyVisible,noStale,katakanaFallback,restored,disposed};
+        return {chars,boxes,aligned,alternateBoxes,alternateText,overlayDoesNotChangeInk,highlighted,clearedBoxes,before,after,pickerWorked,otherBefore,otherAfter,accepted,strokesAfter,readEnabled,stale,readDisabled,legacyVisible,noStale,katakanaEnabled,restored,disposed};
       });
       assert.notEqual(checks.before,checks.after);assert.match(checks.accepted,/^[つっ]{2}$/);assert.equal(checks.strokesAfter,0);
       assert.equal(checks.pickerWorked,true);assert.deepEqual(checks.otherBefore,checks.otherAfter,'editing a candidate must not change other candidates');
-      for(const key of ['readEnabled','readDisabled','legacyVisible','noStale','katakanaFallback','restored'])assert.equal(checks[key],true,key);
+      for(const key of ['readEnabled','readDisabled','legacyVisible','noStale','katakanaEnabled','restored'])assert.equal(checks[key],true,key);
       assert.equal(checks.stale,0);assert.ok(checks.disposed>=6);
       assert.deepEqual(checks.boxes,checks.chars.map((ch,i)=>({number:i+1,ch})));
       assert.equal(checks.alternateBoxes,checks.alternateText);
@@ -144,14 +195,15 @@ const server=http.createServer((req,res)=>{
       });
       assert.deepEqual(dictionary,{first:'し',known:'true',answer:'つなげる'});
       const modelRace=await page.evaluate(async()=>{
-        const originalTf=tf,originalModel=tfModel;let oldReady,newReady,oldDisposed=0;
+        const originalLoad=KanaModels.load,originalModel=tfModel;let oldReady,newReady,oldDisposed=0,calls=0;
+        tfModel=null; // Preserve the real model while exercising replacement/disposal.
         const newer={predict(){return {data:async()=>[],dispose(){}};},dispose(){}};
-        tf={zeros(){return {dispose(){}};},loadLayersModel(url){return new Promise(resolve=>{if(url==='old')oldReady=resolve;else newReady=resolve;});}};
+        KanaModels.load=()=>new Promise(resolve=>{if(calls++===0)oldReady=resolve;else newReady=resolve;});
         try{
           const old=loadModelUrl('old'),next=loadModelUrl('new');newReady(newer);await next;
           oldReady({dispose(){oldDisposed++;}});await old;
           return {latest:tfModel===newer,oldDisposed};
-        }finally{tf=originalTf;tfModel=originalModel;invalidatePrediction();WordHandwritingUI.sync();}
+        }finally{KanaModels.load=originalLoad;tfModel=originalModel;invalidatePrediction();WordHandwritingUI.sync();}
       });
       assert.deepEqual(modelRace,{latest:true,oldDisposed:1});
       const review=await page.evaluate(async()=>{

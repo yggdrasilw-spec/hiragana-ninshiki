@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>しりとり</title>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
-<script src="kana-models.js"></script>
+<script src="kana-models.js?v=20261019standard"></script>
 <style>
 /* ═══════════════════════════════════════
    TOKENS
@@ -1299,8 +1299,6 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
           <div id="canvasAux" style="display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0;margin-top:2px">
             <button class="sm-btn" id="auxLong"   onclick="appendCanvasAux('ー')">ー のばし棒</button>
             <button class="sm-btn" id="auxSmall"  onclick="toggleCanvasSmall()">こもじ</button>
-            <button class="sm-btn" id="auxDak"    onclick="appendCanvasDak()">゛ だくてん</button>
-            <button class="sm-btn" id="auxHdak"   onclick="appendCanvasHdak()">゜ はんだくてん</button>
           </div>
         </div>
 
@@ -1424,17 +1422,14 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     <div class="set-sec">
       <div class="set-hd">✏️ てがきの よみとりかた</div>
       <div class="set-bd">
-        <label class="handwriting-review-setting"><input type="checkbox" id="enableWordHandwriting" aria-describedby="wordHandwritingHelp">複数の もじを 自動で よみとる（暫定版）</label>
-        <p id="wordHandwritingHelp" class="image-policy-help">オンにすると、ひらがなを まとめて かけます。かく手を 少し とめると、自動で よみとるよ。左から右へ、もじの あいだを 少し あけてね。ちがう もじは １もじずつ なおせます。小さい「ゃ・ゅ・ょ・っ」などは 小さめに。オフにすると、これまでの「１もじずつ」に もどります。</p>
-        <p class="image-policy-help">現在は読み取りの試作です。字形の正誤判定はまだありません。候補を選べたことは「正しく書けた」という判定にはなりません。</p>
+        <label class="handwriting-review-setting"><input type="checkbox" id="enableWordHandwriting" aria-describedby="wordHandwritingHelp">複数の もじを 自動で よみとる</label>
+        <p id="wordHandwritingHelp" class="image-policy-help">オンにすると、ひらがな・カタカナを まとめて かけます。かく手を 少し とめると、自動で よみとるよ。左から右へ、もじの あいだを 少し あけてね。ちがう もじは １もじずつ なおせます。小さい「ゃ・ゅ・ょ・っ」「ャ・ュ・ョ・ッ」などは 小さめに。オフにすると、これまでの「１もじずつ」に もどります。</p>
+        <p class="image-policy-help">字形の正誤判定はありません。候補を選べたことは「正しく書けた」という判定にはなりません。</p>
         <label class="handwriting-review-setting"><input type="checkbox" id="showHandwritingProcess">書いた順・向き・筆跡の再生を使う</label>
         <p class="image-policy-help">数字は実際に書いた順、矢印は線を書いた向きです。お手本の正しい書き順を判定する表示ではありません。</p>
         <p class="image-policy-help"><a href="kana-feedback-lab.html" target="_blank" rel="noopener">かなの かたち研究室を開く（助言の検証用）</a></p>
-        <label for="katakanaModel">カタカナの認識モデル</label>
-        <select id="katakanaModel"><option value="katakana">既存の46文字</option><option value="katakana-marks-20261018">濁点・半濁点つき72文字（試用）</option></select>
         <p class="image-policy-help"><a href="handwriting-capture.html">手書きサンプル収集・モデル比較・追加学習</a></p>
         <details><summary>認識モデルを ファイルから よみこむ</summary><label class="lbl-file" for="modelFiles">📂 モデルを えらぶ</label><input id="modelFiles" type="file" multiple accept=".json,.bin"/><p>model.json・重み.bin・labels.jsonを一緒に選びます。試用はページを閉じるまでです。</p></details>
-        <p id="wordKatakanaNote" class="image-policy-help hidden">カタカナでは「１もじずつ」を使います。ひらがなに戻すと、選んだ設定で使えます。</p>
       </div>
     </div>
 
@@ -1617,9 +1612,9 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-feedback-config.js?v=20261014"></script>
 <script src="shiritori-feedback.js?v=20261014"></script>
 <script src="shiritori-robot-link.js?v=20261018connect"></script>
-<script src="shiritori-word-handwriting.js?v=20261017d"></script>
+<script src="shiritori-word-handwriting.js?v=20261019strokegroups"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
-<script src="shiritori-word-handwriting-ui.js?v=20261018players"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261019katakana"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 
@@ -1693,7 +1688,7 @@ const ST = {
   demoRunning: false,
   voice: false,
   inputMode: 'canvas',   // canvas | btn | kbd
-  handwritingMode: 'single', // single | word (hiragana only; experimental)
+  handwritingMode: 'word', // single | word
   showHandwritingProcess: false,
   charMode: 'hiragana',  // hiragana | katakana
   level: 1,
@@ -1767,7 +1762,8 @@ function loadSettings(){
     ST.skipLinkAnimation=s.skipLinkAnimation===true;
     if(s.charMode)   ST.charMode   = s.charMode;
     if(s.inputMode)  ST.inputMode  = s.inputMode;
-    ST.handwritingMode=s.handwritingMode==='word'?'word':'single';
+    // Adopt word input once for old settings, then honor explicit single input.
+    ST.handwritingMode=s.handwritingVersion===2&&s.handwritingMode==='single'?'single':'word';
     ST.showHandwritingProcess=s.showHandwritingProcess===true;
     if(s.voice!=null)ST.voice      = s.voice;
     if(s.statsYouWords!=null) ST.statsYouWords = s.statsYouWords;
@@ -1791,6 +1787,7 @@ function saveSettings(){
     charMode: ST.charMode,
     inputMode: ST.inputMode,
     handwritingMode: ST.handwritingMode,
+    handwritingVersion: 2,
     showHandwritingProcess: ST.showHandwritingProcess,
     voice: ST.voice,
     statsYouWords: ST.statsYouWords,
@@ -2322,10 +2319,9 @@ function updateWordBox(input){
    TF.JS
 ═══════════════════════════════════════════════════════════ */
 const LABELS_HIRAGANA=["あ","い","う","え","お","か","が","き","ぎ","く","ぐ","け","げ","こ","ご","さ","ざ","し","じ","す","ず","せ","ぜ","そ","ぞ","た","だ","ち","ぢ","つ","づ","て","で","と","ど","な","に","ぬ","ね","の","は","ば","ぱ","ひ","び","ぴ","ふ","ぶ","ぷ","へ","べ","ぺ","ほ","ぼ","ぽ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"];
-const LABELS_KATAKANA=["ヲ","ア","イ","ウ","エ","オ","カ","キ","ク","ケ","コ","サ","シ","ス","セ","ソ","タ","チ","ツ","テ","ト","ナ","ニ","ヌ","ネ","ノ","ハ","ヒ","フ","ヘ","ホ","マ","ミ","ム","メ","モ","ヤ","ユ","ヨ","ラ","リ","ル","レ","ロ","ワ","ン"];
-const MODEL_PATH={hiragana:'./tfjs_model/hiragana/model.json',katakana:'./tfjs_model/katakana/model.json'};
-let katakanaModelId=localStorage.getItem('shiri-katakana-model')==='katakana-marks-20261018'?'katakana-marks-20261018':'katakana';
-function selectedModel(){return KanaModels.models.find(s=>s.id===(ST.charMode==='hiragana'?'hiragana':katakanaModelId));}
+const LABELS_KATAKANA=KanaModels.models.find(s=>s.script==='katakana').labels;
+const MODEL_PATH={hiragana:'./tfjs_model/hiragana/model.json',katakana:'./tfjs_model/katakana-marks-20261018/model.json'};
+function selectedModel(){return KanaModels.models.find(s=>s.script===ST.charMode);}
 let LABELS=LABELS_HIRAGANA;
 const TF_SIZE=64,BG_TH=245,LINE_W=16;
 let tfModel=null,predTimer=null,predRevision=0,modelLoadRevision=0;
@@ -2402,7 +2398,7 @@ async function setCharMode(mode, btn){
   // topbar・タイトルのモードボタンラベルを更新
   updateCharModeBtnLabels();
   // モード切り替え時の音声再生（ひらがな→hiragana.wav／カタカナ→katakana.wav）
-  if(changed) playSound(mode === 'hiragana' ? 'hiragana.wav' : 'katakana.wav');
+  if(changed) playSound(mode === 'hiragana' ? 'hiragana.wav?v=20261019short' : 'katakana.wav?v=20261019short');
 }
 
 /** topbar・タイトル画面のモードボタンラベルを現在のST.charModeに合わせて更新 */
@@ -2510,18 +2506,6 @@ function toggleCanvasSmall(){
   }
   canvasSmallNext = !canvasSmallNext;
   updateCanvasSmallUI();
-}
-function appendCanvasDak(){
-  const l = ST.currentInput.slice(-1);
-  const m = DK_MAP[l];
-  if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
-  canvasSmallNext = false; updateCanvasSmallUI();
-}
-function appendCanvasHdak(){
-  const l = ST.currentInput.slice(-1);
-  const m = HK_MAP[l];
-  if(m) setCurrentInput(ST.currentInput.slice(0,-1)+m);
-  canvasSmallNext = false; updateCanvasSmallUI();
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3827,11 +3811,6 @@ document.getElementById('btnUndo').addEventListener('click',undoStroke);
 document.getElementById('btnClear').addEventListener('click',()=>clearCV(true));
 document.getElementById('btnVoice').addEventListener('click',toggleVoice);
 document.getElementById('modelFiles').addEventListener('change',e=>loadModelFiles(e.target.files));
-document.getElementById('katakanaModel').value=katakanaModelId;
-document.getElementById('katakanaModel').addEventListener('change',async e=>{
-  katakanaModelId=e.target.value;localStorage.setItem('shiri-katakana-model',katakanaModelId);
-  if(ST.charMode==='katakana'){clearCV(true);await loadModelUrl(selectedModel().url);}
-});
 document.getElementById('btnLoadWl').addEventListener('click',()=>{
   loadWhitelists();
 });

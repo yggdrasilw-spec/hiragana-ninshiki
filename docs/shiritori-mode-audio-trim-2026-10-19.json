@@ -1,0 +1,18 @@
+[
+  {
+    "file": "hiragana.wav",
+    "originalSha256": "93580f843c2b0ce0d176a58b78e2df1b26121a1ba01c5d0aee47287f10ce2a27",
+    "originalSeconds": 4.938666666666666,
+    "keepSeconds": 1.3,
+    "sha256": "36fa1f512ca892a63b930b31d985a7ddf0d149a6af1816bd8db0e3463b81c90c",
+    "cut": "First sentence gap: hiragana 1.11-1.49s; katakana 1.12-1.51s (RMS < 180). Retain leading mode announcement, omit following recognition explanation."
+  },
+  {
+    "file": "katakana.wav",
+    "originalSha256": "cdd81b83ec3e0368fd03464bdae31aa626cac9458c9fb1fcb3893540807b3fd1",
+    "originalSeconds": 5.0986666666666665,
+    "keepSeconds": 1.3,
+    "sha256": "ab00ab2fc5a12176b867a8a974dab298b19ace0405197dfe7ab7897855209d90",
+    "cut": "First sentence gap: hiragana 1.11-1.49s; katakana 1.12-1.51s (RMS < 180). Retain leading mode announcement, omit following recognition explanation."
+  }
+]

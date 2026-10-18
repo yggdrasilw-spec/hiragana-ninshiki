@@ -3,7 +3,7 @@ const WordHandwritingUI=(()=>{
   let results=[],selected=0,editing=-1,busy=false,initialized=false,pickerOpen=false,singleLabel=null;
   const $=id=>document.getElementById(id);
   const engine=()=>ShiritoriWordHandwriting;
-  const active=()=>ST.handwritingMode==='word'&&ST.charMode==='hiragana';
+  const active=()=>ST.handwritingMode==='word';
   function sync(){
     if(!initialized){
       initialized=true;
@@ -52,7 +52,6 @@ const WordHandwritingUI=(()=>{
     $('kbdInput').hidden=ST.inputMode!=='kbd';
     $('predRow').classList.toggle('hidden',active());
     $('canvasAux').classList.toggle('hidden',active());
-    $('wordKatakanaNote').classList.toggle('hidden',ST.charMode==='hiragana');
     $('modeCanvas').classList.toggle('word-handwriting',active());
     $('enableWordHandwriting').checked=ST.handwritingMode==='word';
     render();
@@ -109,7 +108,10 @@ const WordHandwritingUI=(()=>{
     $('wordKanaPicker').hidden=!item||!pickerOpen;
     $('btnWordOther').setAttribute('aria-expanded',String(!!item&&pickerOpen));
     $('wordKanaPicker').replaceChildren();
-    if(item&&pickerOpen)for(const ch of [...LABELS_HIRAGANA,...Object.values(engine().smallMap),'ー']){
+    const katakana=ST.charMode==='katakana';
+    const pickerLabels=KanaModels.models.find(m=>m.id===(katakana?'katakana-marks-20261018':'hiragana')).labels;
+    const smallLabels=Object.values(engine().smallMap).filter(ch=>katakana?/^[ァ-ヶ]$/.test(ch):/^[ぁ-ゖ]$/.test(ch));
+    if(item&&pickerOpen)for(const ch of [...pickerLabels,...smallLabels,'ー']){
       const b=document.createElement('button');b.type='button';b.textContent=ch;b.className='word-character';
       b.setAttribute('aria-label',`${editing+1}もじめを「${ch}」にする`);b.onclick=()=>{pickerOpen=false;edit(ch);};$('wordKanaPicker').appendChild(b);
     }

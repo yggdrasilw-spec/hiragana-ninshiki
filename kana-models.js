@@ -6,8 +6,7 @@
   const marks = [...kata,...'ガギグゲゴザジズゼゾダヂヅデドバビブベボヴパピプペポ'];
   const models = [
     {id:'hiragana',script:'hiragana',name:'ひらがな・既存71文字',format:'layers',labels:hira,url:'./tfjs_model/hiragana/model.json'},
-    {id:'katakana',script:'katakana',name:'カタカナ・既存46文字',format:'graph',labels:kata,url:'./tfjs_model/katakana/model.json'},
-    {id:'katakana-marks-20261018',script:'katakana',name:'カタカナ・濁点半濁点72文字（試用）',format:'graph',labels:marks,url:'./tfjs_model/katakana-marks-20261018/model.json'}
+    {id:'katakana-marks-20261018',script:'katakana',name:'カタカナ・濁点半濁点72文字',format:'graph',labels:marks,url:'./tfjs_model/katakana-marks-20261018/model.json'}
   ];
   function preprocess(source) {
     const mid=document.createElement('canvas');
@@ -53,7 +52,7 @@
     const model=await(json.format==='graph-model'?tf.loadGraphModel(io):tf.loadLayersModel(io));
     try{await predict(model,labels,new Float32Array(4096));return{model,labels};}catch(e){model.dispose();throw e;}
   }
-  // These three bundled models share the verified CNN architecture. Reconstruct a
+  // These bundled models share the verified CNN architecture. Reconstruct a
   // separate LayersModel from their weights; the source GraphModel stays intact.
   async function trainable(spec) {
     const response=await fetch(spec.url);if(!response.ok)throw Error('モデルを取得できません');const json=await response.json();
