@@ -58,6 +58,13 @@
 #typingCue[data-action=edit] #typingCueKey{background:#ffe166;box-shadow:0 0 15px #ffe16677}
 @media(max-width:600px){#typingCue[data-action=connect],#typingCue[data-action=edit]{font-size:15px;gap:8px}#typingCueKey{min-width:108px}#typingCueKey strong{font-size:15px}}
 @media(max-width:600px){#typingCue:is([data-action=connect],[data-action=edit])~#typingHelp{display:none}}
+@media(max-height:500px){
+ #typingCue:is([data-action=connect],[data-action=edit])~:is(#typingHelp,#typingAction){display:none}
+ #typingCue[data-action=connect],#typingCue[data-action=edit]{font-size:13px;gap:8px;padding:4px 6px;margin:4px 0}
+ #typingCueKey{min-width:104px;min-height:48px;padding:4px}
+ #typingCueKey strong{font-size:15px}
+ #typingCueKey small{font-size:11px}
+}
 body.keyboard-input #writingPanel{display:none!important}
 body.keyboard-input #colCenter{overflow-y:auto}
 @media(max-width:600px){#playerBar{padding:3px 6px;gap:4px}#playerRuleLabel{display:none}.player-chip{font-size:11px}#topbar>.tb-btn{font-size:11px;padding:4px 6px}#keyboardGuide{min-height:200px;flex:1 0 240px}}

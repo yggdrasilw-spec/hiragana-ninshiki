@@ -68,6 +68,7 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator('#typingKeySpotlight').getAttribute('data-key'),'Enter');
   assert.equal(await page.locator('#typingKeySpotlight rect').evaluate(e=>getComputedStyle(e).fill),'rgb(26, 255, 160)','Enter shines across its whole face');
   assert.ok(await page.locator('#typingKeySpotlight').evaluate(e=>e.parentNode.lastElementChild===e),'The bright key is drawn above the hands');
+  assert.ok(await page.locator('#typingKeySpotlight rect').evaluate(e=>{const r=e.getBoundingClientRect(),g=document.getElementById('keyboardGuide').getBoundingClientRect(),c=document.getElementById('colCenter').getBoundingClientRect();return r.top>=Math.max(0,g.top,c.top)&&r.bottom<=Math.min(innerHeight,g.bottom,c.bottom); }),'The glowing Enter key and instruction are visible together without scrolling');
   await page.screenshot({path:path.join(out,`${width}-enter-cue.png`),fullPage:true});
   await page.locator('#kbdInput').dispatchEvent('compositionstart');assert.equal(await page.locator('.hint-next').count(),0);assert.equal(await page.locator('#typingCue').getAttribute('data-action'),'compose');
   assert.equal(await page.locator('#typingKeySpotlight').isVisible(),false,'No connect spotlight during IME conversion');
