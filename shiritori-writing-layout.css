@@ -1,4 +1,5 @@
-/* The canvas keeps its space when candidates, corrections, and tools change. */
+/* The connection and editable next word share one stage, in every input mode. */
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 #pageGame{grid-template-columns:190px minmax(0,1fr) 220px}
 #gameMenu{position:relative;flex-shrink:0}
 #gameMenu summary{cursor:pointer;min-height:44px;min-width:48px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:9px;font-size:13px}
@@ -8,31 +9,38 @@
 #colLeft .pb{overflow-y:auto}
 .history-scores{flex-shrink:0;padding:8px;margin-bottom:8px;font-size:14px;color:#d3faff;border-bottom:1px solid var(--border)}
 .history-scores strong{font-size:20px}
-#colLeft #linkArena{padding:10px;border-radius:12px;margin-bottom:8px;min-width:0}
-#colLeft #linkTrack{min-height:78px;padding:8px 0}
-#colLeft .link-top{flex-wrap:wrap;height:auto;gap:4px}
-#colLeft .link-title{font-size:11px}
-#colLeft #linkCount strong{font-size:20px}
-#colLeft #linkCue{font-size:11px}
 #colCenter{position:relative;gap:6px;overflow:hidden;min-width:0;min-height:0}
-#writingCue{order:0;flex-shrink:0;font-size:14px;font-weight:800;line-height:1.5;color:#d3faff;padding:4px 8px;max-height:50px;overflow-y:auto}
-#inTabs{order:1}
+#colCenter #linkArena{order:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 10px;border-radius:14px;overflow:visible}
+#linkArena #linkTrack{flex:1 1 410px;min-width:0;min-height:90px;max-height:110px;align-items:center;padding:4px 0;gap:0;margin:0}
+#linkArena:not(.has-history) #linkTrack,#linkArena:not(.has-history) #draftArrow{display:none}
+#linkArena .link-node{padding:6px 8px;border-radius:10px;max-width:210px}
+#linkArena .link-reading{font-size:22px;white-space:nowrap}
+#linkArena .link-who{display:none}
+#linkComposer{flex:1 1 330px;display:flex;align-items:center;gap:6px;min-width:0}
+#draftArrow{color:var(--muted);font-size:25px;flex-shrink:0}
+#linkDraft{flex:1;min-width:0;border:2px dashed #5379a9;border-radius:10px;background:#10172a}
+#linkDraft.typing{border-color:var(--yellow)}
+#linkDraft.valid{border-color:var(--cyan)}
+#linkDraftInput,#linkDraft #kbdInput{display:block;box-sizing:border-box;width:100%;min-width:0;min-height:52px;padding:6px 8px;border:0;border-radius:8px;background:transparent;color:var(--text);font-size:24px;font-weight:800;text-align:left}
+#linkDraftInput[hidden],#linkDraft #kbdInput[hidden]{display:none}
+#linkDraftInput::placeholder,#linkDraft #kbdInput::placeholder{font-size:13px;font-weight:500;color:#a7bdd8}
+#linkArena #btnOk{width:auto;height:auto;min-width:90px;min-height:48px;padding:8px 12px;background:var(--cyan);color:#062029;font-size:16px;font-weight:800;white-space:nowrap}
+#linkArena #btnOk:disabled{opacity:.45}
+#linkArena #btnBackspace{min-width:44px;min-height:44px;flex-shrink:0}
+#linkMessage{flex-basis:100%;font-size:13px;line-height:1.6;color:#ffe08a;margin:0;max-height:64px;overflow-y:auto}
+#inputToolbar{order:1;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;flex-shrink:0;min-height:44px}
+#inputToolbar #inTabs{margin:0;gap:4px;min-width:0}
+#inputToolbar .in-tab{min-height:44px;font-size:12px;white-space:nowrap;padding:6px}
+#tfBar{min-width:0;font-size:11px;max-width:160px}
+.cv-btns{display:flex;flex-shrink:0;gap:6px;justify-content:flex-end}
+.cv-btns .sm-btn{min-width:44px;min-height:44px;font-size:12px;padding:6px 8px}
+#inputToolbar:not(.canvas-input) .cv-btns{visibility:hidden}
 #colCenter #writingPanel{order:2;min-height:0!important}
-#wordBox{order:3;min-height:64px;padding:6px 8px;flex-wrap:nowrap;gap:8px}
-#wordContent{flex:1;min-width:0;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start}
-#wordContent .k-tile{flex-shrink:0;width:40px;height:44px;font-size:23px}
-#wordActions{flex-shrink:0;display:flex;align-items:center;gap:6px}
-#btnOk,#btnSubmitWord{min-width:100px;min-height:48px;width:auto;padding:8px 12px;font:inherit;font-size:16px;font-weight:800;white-space:nowrap}
-.word-submit-actions #btnSubmitWord{color:#062029;background:var(--cyan);border:0;border-radius:10px;cursor:pointer;flex:none}
-#btnSubmitWord:disabled{opacity:.45;cursor:default}
-#btnOk[hidden]{display:none!important}
-.word-submit-actions{display:flex;padding:0}
+#colCenter #writingPanel:has(#modeKbd:not(.hidden)){display:none!important}
 #inArea{border:0;border-radius:0;background:transparent;overflow:visible}
 #modeCanvas{position:relative;overflow:visible;padding:8px;gap:6px;min-height:0}
-.cv-top{gap:8px;min-height:44px}
-#tfBar{min-width:0;font-size:11px}
-.cv-btns{flex-shrink:0;gap:6px}
-.cv-btns .sm-btn{min-width:44px;min-height:44px;font-size:13px;padding:6px 10px}
+#wordSuggestions{flex-basis:100%;margin:0;max-height:130px}
+#pageSettings #inputHint{font-size:14px}
 .draw-surface{position:relative;display:flex;flex-direction:column;flex:1 1 0;min-height:160px}
 #modeCanvas #drawCanvas{width:100%;height:100%;min-height:0;max-height:none;flex:1 1 0}
 #predRow{flex-wrap:nowrap;overflow-x:auto;min-height:44px;align-items:center}
@@ -56,7 +64,6 @@
 #writingTools #btnAcceptWord{margin-top:8px}
 #modeCanvas:not(.word-handwriting) #btnAcceptWord{display:none}
 #writingTools button:disabled,#wordCorrectionDialog button:disabled{opacity:.45;cursor:default}
-#inputHint{font-size:10px;padding-bottom:3px!important}
 #wordCorrectionDialog{width:min(580px,calc(100vw - 24px));max-height:90dvh;box-sizing:border-box;overflow-y:auto;border:2px solid var(--cyan);border-radius:16px;background:#10172a;color:var(--text);padding:16px}
 #wordCorrectionDialog::backdrop{background:#000b}
 .correction-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;position:sticky;top:-16px;padding:8px 0;background:#10172a;z-index:1}
@@ -65,62 +72,66 @@
 #wordCharacters,#wordCharacterChoices{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
 #wordCorrectionDialog button[aria-pressed="true"]{border-color:var(--cyan);background:#113849}
 #wordKanaPicker:not([hidden]){max-height:none;overflow:visible;gap:5px}
-#wordPreview{font-size:clamp(18px,3vw,26px);font-weight:800;overflow-wrap:anywhere;color:#e6f8ff}
 .correction-preview{position:relative;background:white;border-radius:10px;margin:8px 0}
 #correctionInk{display:block;width:100%;height:160px;object-fit:contain}
 #correctionBounds{position:absolute;inset:0;width:100%;height:160px;pointer-events:none}
 button:focus-visible,summary:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
-/* Match isMobile(): available width AND height, plus an explicit writing focus. */
+
+/* Same navigation rule as isMobile(). Input tabs always stay next to AI status. */
 @media(max-width:1100px),(max-height:500px){
-  #pageGame.active{display:flex;flex-direction:column;padding:0;gap:0;min-height:0}
-  #colLeft,#colRight{display:none;flex:1;min-height:0;overflow:hidden}
-  #colLeft.mob-active,#colRight.mob-active{display:flex}
-  #colCenter{flex:1;min-height:0;padding:6px 8px;overflow-y:auto}
-  #colCenter.mob-hidden{display:none}
-  #colCenter #writingPanel{min-height:420px!important;flex:1 0 420px}
-  #mobileSubTabs{display:flex;flex-shrink:0;min-height:48px;padding-bottom:env(safe-area-inset-bottom)}
-  .mob-tab{min-height:48px}
-  #topbar{height:auto;min-height:48px;flex-wrap:wrap;padding:4px 8px;gap:5px}
-  .tb-logo{font-size:16px}
-  .main-tabs{order:0;width:auto;flex:1}
-  .main-tab{min-height:40px;font-size:12px}
-  .score-chip{font-size:11px;padding:3px 8px}
-  .score-chip .n{font-size:15px}
-  .tb-btn{min-height:40px;font-size:11px}
-  .tail-badge{display:none!important}
+ #pageGame.active{display:flex;flex-direction:column;padding:0;gap:0;min-height:0}
+ #colLeft,#colRight{display:none;flex:1;min-height:0;overflow:hidden}
+ #colLeft.mob-active,#colRight.mob-active{display:flex}
+ #colCenter{flex:1;min-height:0;padding:6px 8px;overflow-y:auto}
+ #colCenter.mob-hidden{display:none}
+ #colCenter #writingPanel{min-height:320px!important;flex:1 0 320px}
+ #mobileSubTabs{display:flex;flex-shrink:0;min-height:48px;padding-bottom:env(safe-area-inset-bottom)}
+ .mob-tab{min-height:48px}
+ #topbar{height:auto;min-height:48px;flex-wrap:wrap;padding:4px 8px;gap:5px}
+ .tb-logo{font-size:16px}
+ .main-tabs{order:0;width:auto;flex:1}
+ .main-tab{min-height:40px;font-size:12px}
+ .score-chip{font-size:11px;padding:3px 8px}
+ .score-chip .n{font-size:15px}
+ .tb-btn{min-height:40px;font-size:11px}
+ .tail-badge{display:none!important}
+}
+@media(max-width:900px){
+ #inputToolbar{grid-template-columns:auto minmax(0,1fr);gap:4px}
+ #inputToolbar .cv-btns{grid-column:1/-1}
+ #inputToolbar:not(.canvas-input) .cv-btns{display:none}
 }
 @media(max-width:600px){
-  #topbar .score-chip,#topbar .tb-logo{display:none}
-  #topbar .main-tabs{flex:none}
-  #topbar .main-tabs{margin-right:0;gap:3px}
-  #topbar{gap:4px}
-  #topbar .tb-btn{padding:4px 6px}
-  #topbar .main-tab{padding:5px 8px}
-  #btnCharMode{max-width:none;font-size:11px}
-  #colCenter #writingPanel{min-height:470px!important;flex-basis:470px}
-  #wordBox{min-height:60px;gap:4px;padding:5px}
-  #btnOk,#btnSubmitWord{min-width:88px;padding:8px;font-size:14px}
-  #wordActions{gap:4px}
-  .cv-btns .sm-btn{padding:5px 7px;font-size:12px}
-  #tfBar{font-size:10px}
+ #topbar .score-chip,#topbar .tb-logo{display:none}
+ #topbar .main-tabs{flex:none;margin-right:0;gap:3px}
+ #topbar{gap:4px}
+ #topbar .tb-btn{padding:4px 6px}
+ #topbar .main-tab{padding:5px 8px}
+ #btnCharMode{max-width:none;font-size:11px}
+ #linkComposer{flex-basis:100%;gap:4px}
+ #linkArena #linkTrack{flex-basis:100%;min-height:88px;max-height:96px}
+ #linkArena .link-reading{font-size:20px}
+ #linkArena .link-node{padding:6px 4px}
+ #linkArena .link-char.edge{padding:2px}
+ #linkArena #btnOk{min-width:88px;padding:8px;font-size:14px}
+ #linkDraftInput,#linkDraft #kbdInput{font-size:22px}
+ #tfBar{font-size:10px;max-width:110px}
+ #inputToolbar .in-tab{font-size:11px;padding:5px 3px}
+ #inputToolbar .cv-btns{justify-content:space-between}
 }
-@media(max-height:500px){
-  #topbar .score-chip,#topbar .tb-logo{display:none}
-  #colCenter:has(#modeCanvas:not(.hidden)) #writingCue,#colCenter:has(#modeCanvas:not(.hidden)) #inTabs{display:none}
-  #colCenter #writingPanel{min-height:220px!important;flex:1 0 220px}
-  #modeCanvas:not(.hidden){display:grid;grid-template-columns:minmax(0,1fr) 230px;grid-template-rows:44px minmax(160px,1fr);gap:6px}
-  #modeCanvas .cv-top{grid-column:1;grid-row:1}
-  #modeCanvas .draw-surface{grid-column:1;grid-row:2}
-  #modeCanvas #wordHandwriting{grid-column:2;grid-row:2;display:flex;flex-direction:column;align-items:stretch;min-height:0;gap:4px}
-  #modeCanvas #wordResults{flex:1;overflow-y:auto;flex-wrap:wrap;height:auto;min-height:44px}
-  #modeCanvas #writingTools{grid-column:2;grid-row:1;align-self:center}
-  #modeCanvas #writingTools[open]{position:absolute;left:auto;top:8px;right:8px;bottom:auto;width:230px;max-height:80%}
-  #modeCanvas #predRow{grid-column:2;grid-row:2;flex-wrap:wrap;align-content:flex-start;overflow:auto}
-  #modeCanvas #canvasAux{position:absolute;right:8px;bottom:8px;width:230px}
-  #wordBox{min-height:56px;padding:3px 6px}
-  #wordContent{min-height:44px}
-  #mobileSubTabs,.mob-tab{min-height:40px}
-  .mob-icon{display:none}
+@media(max-height:500px) and (min-width:601px){
+ #topbar .score-chip,#topbar .tb-logo{display:none}
+ #colCenter:not(.mob-hidden){display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,1fr);grid-template-rows:auto minmax(244px,1fr);gap:6px}
+ #inputToolbar{grid-column:1/-1;grid-row:1;grid-template-columns:auto minmax(0,1fr) auto}
+ #inputToolbar .cv-btns{grid-column:auto}
+ #colCenter #linkArena{grid-column:2;grid-row:2;align-self:stretch;align-content:center;min-height:0}
+ #linkArena #linkTrack{flex-basis:100%}
+ #linkComposer{flex-basis:100%}
+ #colCenter #writingPanel{grid-column:1;grid-row:2;min-height:244px!important}
+ .draw-surface{min-height:160px}
+ #mobileSubTabs,.mob-tab{min-height:36px}
+ .mob-icon{display:none}
+ #writingTools summary{min-height:28px;line-height:28px}
 }
 body.writing-focus #pageGame.active{display:flex;flex-direction:column}
 body.writing-focus #topbar{display:none}
@@ -129,5 +140,5 @@ body.writing-focus #colLeft.mob-active,body.writing-focus #colRight.mob-active{d
 body.writing-focus #colCenter{flex:1;padding:6px 8px;overflow-y:auto}
 body.writing-focus #colCenter.mob-hidden{display:none}
 body.writing-focus #mobileSubTabs{display:flex;flex-shrink:0}
-body.writing-focus #colCenter #writingPanel{min-height:420px!important;flex:1 0 420px}
-@media(max-height:500px){body.writing-focus #colCenter #writingPanel{min-height:220px!important;flex:1 0 220px}}
+body.writing-focus #colCenter #writingPanel{min-height:320px!important;flex:1 0 320px}
+@media(max-height:500px) and (min-width:601px){body.writing-focus #colCenter #writingPanel{min-height:244px!important}}

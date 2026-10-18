@@ -45,6 +45,9 @@ const server=http.createServer((req,res)=>{
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.ok(await page.evaluate(()=>{const e=document.querySelector('.lv-grid');return e.scrollWidth<=e.clientWidth;}),'All five levels fit the settings panel');
   await page.locator('[data-settings-tab="effects"]').click();
+  assert.equal(await page.locator('#inputHint').isVisible(),true);
+  assert.match(await page.locator('#inputHint').innerText(),/VOICEVOX:ずんだもん/);
+  assert.equal(await page.locator('#pageGame #inputHint').count(),0);
   await page.locator('#togSkipLink').click();
   assert.equal(await page.evaluate(()=>ST.skipLinkAnimation),true);
   if(name==='desktop'){

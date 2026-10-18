@@ -139,10 +139,10 @@ const server=http.createServer((req,res)=>{
           ST.whitelist=[{reading:'くし',words:['くし'],meanings:['テスト'],imagequeries:[{ja:'くし'}],level:4}];
           tf={tensor4d(data,shape){return {shape,dispose(){}};}};tfModel={predict(input){return {data:async()=>Float32Array.from({length:input.shape[0]*71},(_,i)=>i%71===LABELS.indexOf('あ')?.8:i%71===LABELS.indexOf('し')?.2:.00001),dispose(){}};}};
           ST.strokes=[{points:[{x:20,y:20},{x:40,y:80}],lineWidth:4}];await runPredict();
-          return {first:document.querySelector('#wordResults button').textContent,known:document.querySelector('#wordResults button').dataset.known,answer:document.getElementById('btnSubmitWord').textContent};
+          return {first:document.querySelector('#wordResults button').textContent,known:document.querySelector('#wordResults button').dataset.known,answer:document.getElementById('btnOk').textContent};
         }finally{tf=saved.tf;tfModel=saved.model;ST.whitelist=saved.whitelist;ST.cpuGenres=saved.genres;clearCV();setCurrentInput('');}
       });
-      assert.deepEqual(dictionary,{first:'し',known:'true',answer:'こたえる ➜'});
+      assert.deepEqual(dictionary,{first:'し',known:'true',answer:'つなげる'});
       const modelRace=await page.evaluate(async()=>{
         const originalTf=tf,originalModel=tfModel;let oldReady,newReady,oldDisposed=0;
         const newer={predict(){return {data:async()=>[],dispose(){}};},dispose(){}};
@@ -220,18 +220,19 @@ const server=http.createServer((req,res)=>{
         await page.evaluate(strokes=>{resetGame();ST.voice=false;ST.skipLinkAnimation=true;getCpuDelay=()=>80;HandwritingReview.setEnabled(false);switchIn('canvas');ST.strokes=strokes;clearCV(false);ST.strokes.forEach(paintStroke);},fixtures.sample('くし'));
         await page.evaluate(()=>runPredict());
         assert.equal(await page.locator('#wordResults button').first().innerText(),'くし');assert.equal(await page.locator('#wordResults button').first().getAttribute('data-known'),'true');
-        assert.ok((await page.locator('#btnSubmitWord').boundingBox()).width>=88,'answer button remains usable beside the selected word');
-        assert.equal(await page.locator('#btnOk').isVisible(),false,'one primary answer action');
-        assert.equal(await page.locator('#wordPreview').innerText(),'くし');
+        assert.ok((await page.locator('#btnOk').boundingBox()).width>=88,'answer button remains usable beside the selected word');
+        assert.equal(await page.locator('#btnOk').isVisible(),true,'connection action is visible');
+        assert.equal(await page.locator('#linkDraftInput').inputValue(),'くし');
         assert.equal(await page.locator('#btnOk').evaluate(b=>b.scrollWidth<=b.clientWidth),true,'answer label fits');
-        await page.locator('#btnSubmitWord').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,`${width}-answer-ready.png`),fullPage:true});
-        await page.locator('#btnSubmitWord').click();await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy);
+        await page.locator('#btnOk').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,`${width}-answer-ready.png`),fullPage:true});
+        await page.locator('#btnOk').click();await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy);
         const turn=await page.evaluate(()=>({first:ST.history[0].reading,speaker:ST.history[0].speaker,next:ST.history[1].speaker,used:ST.used.has('くし'),you:ST.score.you,cpu:ST.score.cpu,ink:ST.strokes.length,input:ST.currentInput}));
         assert.deepEqual(turn,{first:'くし',speaker:'あなた',next:'CPU',used:true,you:1,cpu:1,ink:0,input:''});
         assert.equal(await page.locator('#historyScoreYou').innerText(),'1');assert.equal(await page.locator('#historyScoreCpu').innerText(),'1');
+        await page.screenshot({path:path.join(out,`${width}-connected.png`),fullPage:true});
         // The direct answer still obeys the normal shiritori connection rule.
         await page.evaluate(strokes=>{resetGame();ST.tail='あ';ST.strokes=strokes;clearCV(false);ST.strokes.forEach(paintStroke);},fixtures.sample('くし'));await page.evaluate(()=>runPredict());
-        await page.locator('#btnSubmitWord').click();await page.waitForFunction(()=>!ST.cpuBusy);
+        await page.locator('#btnOk').click();await page.waitForFunction(()=>!ST.cpuBusy);
         assert.equal(await page.evaluate(()=>ST.history.length),0);assert.equal(await page.evaluate(()=>ST.currentInput),'くし');
         console.log(JSON.stringify({width,dictionary,fullGameTurn:turn,normalValidation:true}));
         await page.evaluate(()=>HandwritingReview.setEnabled(true));

@@ -1184,8 +1184,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 #wordSuggestions button{min-height:44px;margin:4px;white-space:normal}
 </style>
 <link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
-<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261018layout">
-<link rel="stylesheet" href="shiritori-writing-layout.css?v=20261018layout">
+<link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261018connect">
+<link rel="stylesheet" href="shiritori-writing-layout.css?v=20261018connect">
 </head>
 <body>
 
@@ -1225,12 +1225,6 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     <div class="ph"><span class="ph-icon">📋</span><span class="ph-title">れきし</span></div>
     <div class="pb">
       <div class="history-scores" aria-label="つかった ことばの 数">あなた <strong id="historyScoreYou">0</strong>　CPU <strong id="historyScoreCpu">0</strong></div>
-    <section id="linkArena" aria-label="ことばのつながり">
-      <div class="link-top"><span class="link-title">ことばを、つなごう。</span><span id="linkCount"><strong>0</strong>つながり</span></div>
-      <div id="linkTrack" aria-label="最近のことば"></div>
-      <div id="linkCue"><span id="linkNext">✦</span><span id="linkStatus" role="status" aria-live="polite">さいしょのことばをいれてね</span></div>
-      <div id="linkBurst" aria-hidden="true"></div>
-    </section>
       <div id="statusCard" class="ready">
         <div class="sc-icon" id="scIcon">🟦</div>
         <div>
@@ -1246,22 +1240,30 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 
   <!-- CENTER -->
   <div id="colCenter">
-    <div id="writingCue" role="status">さいしょの ことばを かこう</div>
-    <!-- Word box -->
-    <div id="wordBox" aria-label="こたえる ことば">
-      <div id="wordContent"><div class="wph" id="wph">ここに ことばが でるよ</div></div>
-      <div id="wordActions">
+    <section id="linkArena" aria-label="ことばを つなげる">
+      <div id="linkTrack" aria-label="つながった ことば"></div>
+      <div id="linkComposer">
+        <span id="draftArrow" aria-hidden="true">⇢</span>
+        <div id="linkDraft"><input id="linkDraftInput" type="text" aria-label="つぎに つなげる ことば" placeholder="ことばを いれてね" autocomplete="off" lang="ja" inputmode="text"/><input id="kbdInput" type="text" aria-label="キーボードで つなげる ことば" placeholder="ことばを いれてね" autocomplete="off" lang="ja" inputmode="text" hidden/></div>
         <button id="btnBackspace" class="wa-btn" type="button" aria-label="さいごのもじをけす">⌫</button>
-        <div id="wordSubmitActions" class="word-submit-actions hidden"><button type="button" id="btnSubmitWord" disabled>こたえる ➜</button></div>
-        <button id="btnOk" class="wa-btn ok" type="button" aria-label="このことばで こたえる" disabled>こたえる ➜</button>
+        <button id="btnOk" class="wa-btn ok" type="button" aria-label="このことばを つなげる" disabled>つなげる</button>
       </div>
-    </div>
-
-    <!-- Input mode tabs -->
+      <p id="linkMessage" role="status" hidden></p>
+      <span id="linkStatus" class="sr-only" aria-live="polite"></span>
+      <div id="linkBurst" aria-hidden="true"></div>
+    </section>
+    <div id="inputToolbar" class="canvas-input">
+      <div id="tfBar" class="loading"><span class="tf-dot"></span><span id="tfText">モデルよみこみ中…</span></div>
     <div id="inTabs">
       <button class="in-tab active" id="tabCanvas"   onclick="switchIn('canvas')">✏️ てがき</button>
       <button class="in-tab"        id="tabBtn"      onclick="switchIn('btn')">🔤 ボタン</button>
       <button class="in-tab"        id="tabKbd"      onclick="switchIn('kbd')">⌨️ キーボード</button>
+    </div>
+      <div class="cv-btns">
+        <button class="sm-btn" id="btnUndo">↩ もどす</button>
+        <button class="sm-btn" id="btnClear">🗑 けす</button>
+        <button type="button" class="sm-btn" id="btnWritingFocus" aria-pressed="false">⛶ 大きく かく</button>
+      </div>
     </div>
 
     <!-- Input area -->
@@ -1270,17 +1272,6 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 
         <!-- CANVAS MODE -->
         <div class="in-mode" id="modeCanvas">
-          <div class="cv-top">
-            <div id="tfBar" class="loading">
-              <span class="tf-dot"></span>
-              <span id="tfText">モデルよみこみ中…</span>
-            </div>
-            <div class="cv-btns">
-              <button class="sm-btn" id="btnUndo">↩ もどす</button>
-              <button class="sm-btn" id="btnClear">🗑 けす</button>
-              <button type="button" class="sm-btn" id="btnWritingFocus" aria-pressed="false">⛶ 大きく かく</button>
-            </div>
-          </div>
           <div class="draw-surface">
             <canvas id="drawCanvas" width="900" height="240"></canvas>
             <svg id="handwritingBounds" aria-hidden="true" preserveAspectRatio="none"></svg>
@@ -1315,19 +1306,10 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
         <div class="in-mode hidden" id="modeBtn"></div>
 
         <!-- KEYBOARD MODE -->
-        <div class="in-mode hidden" id="modeKbd">
-          <div id="kbdWrap">
-            <div class="kbd-hint">キーボードでひらがなをうってください</div>
-            <input id="kbdInput" type="text" placeholder="ここにうってね…" autocomplete="off" lang="ja" inputmode="text"/>
-            <div class="kbd-hint" style="color:#5b8fff">Enterキーでもかくていできます</div>
-          </div>
-        </div>
+        <div class="in-mode hidden" id="modeKbd"></div>
 
       </div>
 
-      <div id="inputHint" class="kbd-hint" style="padding:0 9px 7px;color:var(--muted)">
-        VOICEVOX:ずんだもん
-      </div>
     </section>
   </div>
 
@@ -1465,6 +1447,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
     <div class="set-sec">
       <div class="set-hd">🔊 効果音の出典</div>
       <div class="set-bd sound-credit">
+        <p id="inputHint">VOICEVOX:ずんだもん</p>
         ことばをつなぐ効果音：<a href="https://on-jin.com/" target="_blank" rel="noopener noreferrer">On-Jin ～音人～</a>。<br>
         提供元の音源を、このアプリ用に切り出し・速度調整・音量調整しています。
         音源の二次配布・無断利用は禁止です。
@@ -1611,10 +1594,10 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-grade-policy.js?v=20261016b"></script>
 <script src="shiritori-feedback-config.js?v=20261014"></script>
 <script src="shiritori-feedback.js?v=20261014"></script>
-<script src="shiritori-robot-link.js?v=20261013"></script>
+<script src="shiritori-robot-link.js?v=20261018connect"></script>
 <script src="shiritori-word-handwriting.js?v=20261017d"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
-<script src="shiritori-word-handwriting-ui.js?v=20261018layout"></script>
+<script src="shiritori-word-handwriting-ui.js?v=20261018connect"></script>
 <script>
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzhozZM7-DWaoznKU-1FEneOFKbcejhET2SoIVmK50fyqvG-gwoBOaCbgNWLKUw_yze/exec';
 
@@ -2295,45 +2278,21 @@ function setStatus(kind,main,sub=''){
   document.getElementById('scMain').textContent=main;
   document.getElementById('scSub').textContent=sub;
   document.getElementById('linkStatus').textContent=main;
-  document.getElementById('writingCue').textContent=(ST.tail?'「'+displayStr(ST.tail)+'」から ': '')+main;
+  const message=document.getElementById('linkMessage');
+  message.textContent=main;message.hidden=!['error','thinking','win'].includes(kind);
 }
 
 /* ═══════════════════════════════════════════════════════════
    WORD BOX — NEON
 ═══════════════════════════════════════════════════════════ */
 function updateWordBox(input){
+  const n=norm(input),field=document.getElementById('linkDraftInput');
+  if(!draftComposing&&field.value!==displayStr(n))field.value=displayStr(n);
+  field.placeholder=ST.tail?`「${displayStr(ST.tail)}」から つなげよう`:'ことばを いれてね';
+  document.getElementById('kbdInput').placeholder=field.placeholder;
+  const valid=n&&inWhitelist(n)&&(!ST.tail||firstChar(n)===ST.tail)&&!isEndWord(n)&&!ST.used.has(n);
+  document.getElementById('linkDraft').className=n?(valid?'valid':'typing'):'';
   WordHandwritingUI.updateSubmitState();
-  const wb=document.getElementById('wordContent');
-  const n=norm(input);
-  wb.innerHTML='';
-
-  if(!n){
-    const ph=document.createElement('div');
-    ph.className='wph';ph.textContent=ST.tail ? `「${displayStr(ST.tail)}」から はじめよう` : 'さいしょの ことばを いれてね';
-    wb.appendChild(ph);
-    document.getElementById('wordBox').className='';
-    document.getElementById('btnOk').disabled=true;
-    return;
-  }
-
-  const disp = displayStr(n);
-  for(let i=0;i<disp.length;i++){
-    const t=document.createElement('div');
-    t.className='k-tile pop'+(i===0?' head':i===disp.length-1?' tail':'');
-    t.textContent=disp[i];
-    wb.appendChild(t);
-  }
-
-  const wl=inWhitelist(n);
-  const tailOk=!ST.tail||firstChar(n)===ST.tail;
-  const box=document.getElementById('wordBox');
-  const okBtn=document.getElementById('btnOk');
-  okBtn.disabled=ST.cpuBusy||ST.gameOver||ST.moderationLocked;
-  if(wl&&tailOk&&!isEndWord(n)&&!ST.used.has(n)){
-    box.className='valid';
-  } else {
-    box.className=wl?'nok':'typing';
-  }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -2836,7 +2795,7 @@ function backspaceInput(){
   updateKbSmallModeUI();
 }
 function switchIn(mode){
-  invalidatePrediction();
+  if(mode!==ST.inputMode){WordHandwritingUI.keepDraft();invalidatePrediction();}
   ST.inputMode=mode;saveSettings();
   if(mode!=='btn'){ kbSmallNext=false; updateKbSmallModeUI(); }
   ['canvas','btn','kbd'].forEach(m=>{
@@ -2860,6 +2819,7 @@ function switchIn(mode){
     }
   }
   WordHandwritingUI.sync();
+  if(mode==='kbd')kbdInp?.focus();
   requestAnimationFrame(resizeCV);
 }
 function kbdHandler(e){
@@ -3456,8 +3416,9 @@ function renderLinks(animate=false){
   robotLink.cancel();
   const track=document.getElementById('linkTrack');
   track.replaceChildren();track.style.paddingRight='0px';
-  const recent=ST.history.slice(-4),nodes=[],bridges=[];
-  if(!recent.length) track.innerHTML='<div class="link-empty">しりとり → りす → すいか<br><small>さいごのもじが、つぎのスタート。</small></div>';
+  document.getElementById('linkArena').classList.toggle('has-history',!!ST.history.length);
+  const recent=ST.history.slice(-2),nodes=[],bridges=[];
+
   recent.forEach((item,i)=>{
     if(i){const bridge=document.createElement('div');bridge.className='rl-bridge';track.appendChild(bridge);bridges.push({bridge,index:i});}
     const node=document.createElement('button');node.type='button';
@@ -3470,8 +3431,6 @@ function renderLinks(animate=false){
   const count=Math.max(0,ST.history.length-1),round=ST.round,key=round+':'+ST.history.length;
   const play=animate&&!ST.skipLinkAnimation&&count>0&&key!==lastLinkAnimationKey;
   if(play)lastLinkAnimationKey=key;
-  document.getElementById('linkCount').innerHTML='<strong>'+count+'</strong>つながり';
-  document.getElementById('linkNext').textContent=ST.tail?displayStr(ST.tail):'✦';
   document.getElementById('linkBurst').replaceChildren();
   const jobs=bridges.map(({bridge,index})=>robotLink.mount(bridge,{
     left:nodes[index-1],right:nodes[index],animate:!!(play&&index===recent.length-1),
@@ -3563,6 +3522,7 @@ async function commitWord(speaker, readingInput, row, isNew=false){
     document.getElementById('tailChar').textContent=displayStr(ST.tail);
   }
 
+  if(isMobile())switchMobTab('center');
   renderHistory();
   const connection=renderLinks(true);
   renderCandidates();
@@ -3603,7 +3563,7 @@ function showWordSuggestions(input,rows){
   });
   const keep=document.createElement('button');keep.type='button';keep.className='sm-btn';keep.textContent='いれた ことばを AIに かくにんする';
   keep.onclick=()=>{if(ST.cpuBusy)return;ST.suggestionBypass=input;clearWordSuggestions();submitWord();};wrap.appendChild(keep);
-  document.getElementById('wordBox').after(wrap);
+  document.getElementById('linkArena').append(wrap);
 }
 async function submitWord(){
   if(ST.cpuBusy||ST.demoRunning||ST.gameOver||ST.moderationLocked)return;
@@ -3722,24 +3682,14 @@ async function submitWord(){
 
   const finalRow=lookupRow(n);
 
-  const wb=document.getElementById('wordBox');
+  const wb=document.getElementById('linkDraft');
   wb.classList.remove('typing','valid','nok');
   wb.classList.add('valid');
 
-  // ★ suckInのアニメ完了を確実に待つ（以前はここがロック漏れの一因だった：
-  //   suckIn自体はコールバック方式で即座に関数を抜けてしまうため、
-  //   Promiseでラップして実際にcommitWordが終わるまでawaitする）
-  await new Promise(resolve=>{
-    suckIn(finalRow?finalRow.words[0]:n, async ()=>{
-      await commitWord('あなた', n, finalRow, isNew);
-      if(round!==ST.round){resolve();return;}
-      setCurrentInput('');
-      const kbdInp=document.getElementById('kbdInput'); if(kbdInp) kbdInp.value='';
-      clearCV(true);renderPreds(null);
-      wb.classList.remove('valid');
-      resolve();
-    });
-  });
+  // The draft becomes a committed node before the connection animation starts.
+  setCurrentInput('');clearCV(true);renderPreds(null);
+  await commitWord('あなた', n, finalRow, isNew);
+  if(round!==ST.round)return;
 
   // ★ ロックを維持したままCPUの番を待つ（setTimeoutで投げっぱなしにしない）。
   //   cpuTurn() 側が処理の最後で ST.cpuBusy=false にする。
@@ -3749,7 +3699,7 @@ async function submitWord(){
 }
 
 function shakeInput(){
-  const f=document.getElementById('wordBox');
+  const f=document.getElementById('linkDraft');
   f.classList.add('shake');setTimeout(()=>f.classList.remove('shake'),400);
   speak(document.getElementById('scMain').textContent);
 }
@@ -3868,7 +3818,14 @@ function resetGame(announce=true){
    EVENT BINDINGS
 ═══════════════════════════════════════════════════════════ */
 document.getElementById('btnReset').addEventListener('click',()=>resetGame(true));
-document.getElementById('btnOk').addEventListener('click',submitWord);
+document.getElementById('btnOk').addEventListener('click',()=>WordHandwritingUI.connect());
+let draftComposing=false;
+const draftField=document.getElementById('linkDraftInput');
+function editLinkDraft(){if(draftComposing)return;const value=draftField.value;clearCV(true);setCurrentInput(value);}
+draftField.addEventListener('compositionstart',()=>{draftComposing=true;});
+draftField.addEventListener('compositionend',()=>{draftComposing=false;editLinkDraft();});
+draftField.addEventListener('input',editLinkDraft);
+draftField.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing&&!draftComposing&&e.keyCode!==229){e.preventDefault();WordHandwritingUI.connect();}});
 document.getElementById('btnBackspace').addEventListener('click',backspaceInput);
 document.getElementById('replayBtn').addEventListener('click',async ()=>{
   hideReplayPopup();

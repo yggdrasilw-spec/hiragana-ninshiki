@@ -9,7 +9,6 @@ const WordHandwritingUI=(()=>{
       initialized=true;
       $('btnReadWord').onclick=()=>runPredict();
       $('btnAcceptWord').onclick=()=>accept(false);
-      $('btnSubmitWord').onclick=()=>accept(true);
       $('btnCorrectWord').onclick=()=>{
         editing=0;pickerOpen=false;render();$('wordCorrectionDialog').showModal();
         $('wordCharacters').querySelector('button')?.focus();
@@ -50,9 +49,9 @@ const WordHandwritingUI=(()=>{
       $('btnWritingFocus').textContent='⛶ 大きく かく';applyMobileLayout();
     }
     $('wordHandwriting').classList.toggle('hidden',!active());
-    const wordInput=active()&&ST.inputMode==='canvas';
-    $('wordSubmitActions').classList.toggle('hidden',!wordInput);
-    $('btnOk').hidden=wordInput;
+    $('inputToolbar').classList.toggle('canvas-input',ST.inputMode==='canvas');
+    $('linkDraftInput').hidden=ST.inputMode==='kbd';
+    $('kbdInput').hidden=ST.inputMode!=='kbd';
     $('predRow').classList.toggle('hidden',active());
     $('canvasAux').classList.toggle('hidden',active());
     $('wordKatakanaNote').classList.toggle('hidden',ST.charMode==='hiragana');
@@ -74,9 +73,6 @@ const WordHandwritingUI=(()=>{
     if(!initialized)return;
     const focused=document.activeElement,focusGroup=focused?.parentElement?.id;
     const focusLabel=focused?.getAttribute('aria-label'),focusText=focused?.textContent;
-    const wordInput=active()&&ST.inputMode==='canvas';
-    $('wordSubmitActions').classList.toggle('hidden',!wordInput);
-    $('btnOk').hidden=wordInput;
     const holder=$('wordResults');holder.replaceChildren();
     const row=$('wordCharacters');row.replaceChildren();
     const choices=$('wordCharacterChoices');choices.replaceChildren();
@@ -87,12 +83,7 @@ const WordHandwritingUI=(()=>{
     $('btnCorrectWord').disabled=busy||!results.length;
     $('btnInspectFromCorrection').disabled=!results[selected]?.chars[editing];
     const chosen=results[selected]?.chars.map(c=>c.ch).join('');
-    $('btnSubmitWord').textContent='こたえる ➜';
-    $('btnSubmitWord').setAttribute('aria-label',`${ST.currentInput+(chosen||'')}で こたえる`);
-    const preview=$('wordContent');
-    if(active()&&ST.inputMode==='canvas'&&chosen){
-      const text=document.createElement('span');text.id='wordPreview';text.textContent=ST.currentInput+chosen;preview.replaceChildren(text);
-    }else if($('wordPreview'))updateWordBox(ST.currentInput);
+    updateWordBox(ST.currentInput+(active()&&ST.inputMode==='canvas'?(chosen||''):''));
     $('wordStatus').textContent=busy?'よみとり中…':results.length?'ことばを えらぼう。ちがう字は「もじを なおす」。':'左から ことばを かこう。手を とめると よみとるよ。';
     results.forEach((r,i)=>{
       const b=document.createElement('button');b.type='button';b.className='word-candidate';
@@ -177,7 +168,16 @@ const WordHandwritingUI=(()=>{
     return results.length>0;
   }
   function updateSubmitState(){
-    $('btnSubmitWord').disabled=busy||(!results.length&&!ST.currentInput)||ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked;
+    const wordInput=active()&&ST.inputMode==='canvas';
+    const text=ST.currentInput+(wordInput?results[selected]?.chars.map(c=>c.ch).join('')||'':'');
+    $('btnOk').disabled=(wordInput&&busy)||!text||ST.cpuBusy||ST.gameOver||ST.demoRunning||ST.moderationLocked;
+    $('btnOk').setAttribute('aria-label',text?`「${displayStr(text)}」を つなげる`:'ことばを つなげる');
+  }
+  function connect(){return active()&&ST.inputMode==='canvas'?accept(true):submitWord();}
+  function keepDraft(){
+    if(!active()||ST.inputMode!=='canvas'||!results[selected])return;
+    const text=ST.currentInput+results[selected].chars.map(c=>c.ch).join('');
+    clearCV(true);setCurrentInput(text);
   }
   function backspace(){
     if(!active()||ST.inputMode!=='canvas'||!results[selected])return false;
@@ -242,9 +242,9 @@ const WordHandwritingUI=(()=>{
     setCurrentInput(ST.currentInput+results[selected].chars.map(c=>c.ch).join(''));
     clearCV(true);
     if(submit)return submitWord();
-    setStatus('ready','ことばを いれたよ。','下の「こたえる」を おすと、しりとりが すすむよ。');
+    setStatus('ready','つづけて かけるよ。','つながりの「つなげる」で きめよう。');
     $('writingTools').open=false;
     $('drawCanvas').scrollIntoView({block:'nearest'});
   }
-  return {active,sync,invalidate,predict,rasterize,setMode,refresh:render,singleBounds,resized,updateSubmitState,backspace};
+  return {active,sync,invalidate,predict,rasterize,setMode,refresh:render,singleBounds,resized,updateSubmitState,backspace,connect,keepDraft};
 })();

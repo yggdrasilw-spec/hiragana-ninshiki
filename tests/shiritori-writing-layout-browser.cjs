@@ -35,16 +35,21 @@ try{
   if(width===1280)assert.ok(word.height>=260,'laptop writing height');
   if(width===390)assert.ok(word.height>=240,'phone writing height');
   if(width===820)assert.ok(word.width>700,'tablet uses its width');
-  assert.equal(await page.locator('#btnOk').isVisible(),false);
-  assert.equal(await page.locator('#btnSubmitWord').isVisible(),true);
-  assert.equal(await page.locator('#wordPreview').innerText(),await page.locator('#wordResults button').first().innerText());
-  const answer=await page.locator('#btnSubmitWord').boundingBox();
+
+  assert.equal(await page.locator('#btnOk').isVisible(),true);
+  assert.equal(await page.locator('#linkDraftInput').inputValue(),await page.locator('#wordResults button').first().innerText());
+  const answer=await page.locator('#btnOk').boundingBox();
+  assert.equal(await page.locator('#wordBox').count(),0,'separate confirmation field is removed');
+  assert.equal(await page.locator('#btnOk').innerText(),'つなげる');
+  const statusBox=await page.locator('#tfBar').boundingBox(),tabs=await page.locator('#inTabs').boundingBox();
+  assert.ok(tabs.x>=statusBox.x+statusBox.width-1&&Math.abs(tabs.y-statusBox.y)<30,'input modes are beside AI status');
+  assert.equal(await page.locator('#pageGame #inputHint').count(),0,'voice credit is outside the game');
   await page.locator('#wordResults button').nth(1).focus();await page.keyboard.press('Enter');
   assert.equal(await page.locator('#wordResults button').nth(1).evaluate(b=>b===document.activeElement),true,'candidate selection keeps keyboard focus');
   await page.locator('#wordResults button').first().click();
   if(height>500)assert.ok(answer.y+answer.height<=height,`${width} answer stays on screen`);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-  await page.locator('#btnSubmitWord').scrollIntoViewIfNeeded();
+  await page.locator('#btnOk').scrollIntoViewIfNeeded();
   await page.screenshot({path:path.join(out,`${width}x${height}-word.png`)});
   const ink=await page.locator('#drawCanvas').evaluate(c=>c.toDataURL());
   await page.locator('#btnCorrectWord').click();assert.equal(await page.locator('#wordCorrectionDialog').evaluate(d=>d.open),true);
@@ -57,23 +62,29 @@ try{
   await page.locator('#btnInspectFromCorrection').click();assert.equal(await page.locator('#handwritingReviewDialog').evaluate(d=>d.open),true);
   await page.locator('#btnCharacterReplay').click();await page.locator('#btnReviewClose').click();
   await page.locator('#btnCloseWordCorrection').click();assert.equal(await page.locator('#writingTools').evaluate(d=>d.open),false,'character inspection leaves the canvas unobstructed');
-  const candidate=await page.locator('#wordPreview').innerText();
-  await page.locator('#btnBackspace').click();assert.equal(await page.locator('#wordPreview').innerText(),candidate.slice(0,-1));
+  const candidate=await page.locator('#linkDraftInput').inputValue();
+  await page.locator('#btnBackspace').click();assert.equal(await page.locator('#linkDraftInput').inputValue(),candidate.slice(0,-1));
   if(width===1366){
-    const before=await page.locator('#wordPreview').innerText();
+    const before=await page.locator('#linkDraftInput').inputValue();
     await page.locator('#btnWritingFocus').click();await page.waitForTimeout(150);
     assert.ok((await page.locator('#drawCanvas').boundingBox()).width>word.width);
-    assert.equal(await page.locator('#wordPreview').innerText(),before,'enlargement preserves corrected candidate');
+    assert.equal(await page.locator('#linkDraftInput').inputValue(),before,'enlargement preserves corrected candidate');
     await page.locator('#btnWritingFocus').click();await page.waitForTimeout(100);
-    assert.equal(await page.locator('#wordPreview').innerText(),before);
+    assert.equal(await page.locator('#linkDraftInput').inputValue(),before);
   }
   if(width===390){
-    const before=await page.locator('#wordPreview').innerText();await page.setViewportSize({width:844,height:390});await page.waitForTimeout(150);
-    assert.equal(await page.locator('#wordPreview').innerText(),before,'rotation preserves corrected candidate');
+    const before=await page.locator('#linkDraftInput').inputValue();await page.setViewportSize({width:844,height:390});await page.waitForTimeout(150);
+    assert.equal(await page.locator('#linkDraftInput').inputValue(),before,'rotation preserves corrected candidate');
     assert.ok((await page.locator('#drawCanvas').boundingBox()).height>=160);
     await page.setViewportSize({width,height});await page.waitForTimeout(100);
   }
-  await switchMode(page,'kbd',height);assert.equal(await page.locator('#btnOk').isVisible(),true);assert.equal(await page.locator('#btnSubmitWord').isVisible(),false);
+  await page.locator('#linkDraftInput').fill('くし');await page.locator('#linkDraftInput').press('Backspace');
+  assert.equal(await page.evaluate(()=>ST.currentInput),'く','direct editing replaces recognition candidates');
+  assert.equal(await page.locator('#wordResults button').count(),0,'old candidates cannot reappear in the draft');
+  await switchMode(page,'kbd',height);assert.equal(await page.locator('#btnOk').isVisible(),true);
+  assert.equal(await page.locator('#linkDraft #kbdInput').isVisible(),true,'keyboard edits inside the connection stage');
+  assert.equal(await page.locator('#linkDraftInput').isVisible(),false,'only one draft editor is displayed');
+  assert.equal(await page.locator('#writingPanel').isVisible(),false,'no duplicate keyboard confirmation panel');
   await page.locator('#kbdInput').fill('くし');assert.equal(await page.evaluate(()=>ST.currentInput),'くし');
   await switchMode(page,'btn',height);assert.equal(await page.locator('#modeBtn').isVisible(),true);
   await switchMode(page,'canvas',height);await page.waitForTimeout(100);

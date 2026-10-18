@@ -48,7 +48,10 @@
    let resolve,settled=false;const done=new Promise(r=>{resolve=r;});
    const record={frame:0,effects:[],bridge,finish:completed=>{if(settled)return;settled=true;this.records.delete(record);if(completed)onDone();resolve();}};
    const scene=bridge.querySelector('.rl-scene'),assemblies=[...bridge.querySelectorAll('.rl-assembly')],track=bridge.parentElement;
-   const gap=matchMedia('(max-width:768px)').matches?124:180;
+   // Keep both words in view while the hands approach, even on a narrow stage.
+   const preferredGap=matchMedia('(max-width:768px)').matches?124:180;
+   const available=track.clientWidth-left.getBoundingClientRect().width-right.getBoundingClientRect().width-8;
+   const gap=Math.max(104,Math.min(preferredGap,available));
    const align=()=>{
     const a=left.querySelector('.link-reading .link-char:last-child'),b=right.querySelector('.link-reading .link-char:first-child');
     if(!a||!b)return;const rect=bridge.getBoundingClientRect(),ar=a.getBoundingClientRect(),br=b.getBoundingClientRect();

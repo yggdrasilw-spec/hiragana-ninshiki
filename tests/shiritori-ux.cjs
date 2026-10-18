@@ -20,7 +20,7 @@ const server=http.createServer((req,res)=>{const file=path.join(root,decodeURICo
  await page.emulateMedia({reducedMotion:'no-preference'});
  await page.locator('#kbdInput').fill('りす');await page.locator('#btnOk').click();
  await page.waitForFunction(()=>ST.history.length===2&&!ST.cpuBusy);
- assert.equal(await page.locator('.link-node').count(),2);assert.match(await page.locator('#linkCount').innerText(),/1/);
+ assert.equal(await page.locator('.link-node').count(),2);assert.equal(await page.evaluate(()=>ST.history.length),2);
  if(width<=768)assert.ok(await page.locator('#colCenter').isVisible(),'Do not switch tabs after commit');
  assert.ok(await page.locator('#linkStatus').innerText(),'Status visible beside input');
  await page.screenshot({path:path.join(out,name+'.png'),fullPage:true});
