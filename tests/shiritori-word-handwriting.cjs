@@ -70,3 +70,33 @@ const ordinaryI=engine.plan([stroke([[0,0],[0,90],[60,90],[60,0]]),stroke([[100,
 const ordinaryPredictions=ordinaryI.segments.map(s=>[{ch:s.start===0?'か':'い',p:s.start===0&&s.end===1||s.start===1&&s.end===3?.99:.001}]);
 assert.equal(engine.decode(ordinaryI,ordinaryPredictions)[0].text,'かい','full-height following い stays separate');
 console.log('Hiragana-only thin し and upper-right dakuten ranking checks passed.');
+
+// Favor two close stroke pairs over confident but fragmented single strokes.
+// No dictionary is supplied: the spacing evidence must affect segmentation.
+function closePairs(scale=1,dx=0,dy=0,reverse=false){
+  const strokes=[0,20,90,110].map(x=>stroke([[x,0],[x+3,90]].map(([x,y])=>[x*scale+dx,y*scale+dy])));
+  return engine.plan(reverse?strokes.reverse():strokes);
+}
+for(const p of [closePairs(),closePairs(2,150,80,true),closePairs(.5,10,20)]){
+  assert.ok(p.boundaries[1].splitCost<p.boundaries[0].splitCost);
+  assert.ok(p.boundaries[1].mergeCost>p.boundaries[0].mergeCost);
+  const predictions=p.segments.map(s=>[{ch:s.strokes.length===2?'い':'し',p:s.strokes.length===2?.35:.97}]);
+  const candidates=engine.decode(p,predictions);
+  assert.equal(candidates[0].text,'いい');
+  assert.deepEqual(candidates[0].chars.map(c=>c.segment.strokes.length),[2,2]);
+  // Every stroke is used exactly once, including when drawn in reverse order.
+  assert.deepEqual(candidates[0].chars.flatMap(c=>c.segment.indices).sort((a,b)=>a-b),[0,1,2,3]);
+}
+// Equal gaps do not invent a preferred boundary; a lone detached pair is kept.
+const uniform=engine.plan([0,35,70,105].map(x=>stroke([[x,0],[x+3,90]])));
+assert.ok(uniform.boundaries.every(b=>b.relativeGap===0&&b.mergeCost===0));
+assert.equal(detached.boundaries[0].relativeGap,0);
+assert.equal(detached.boundaries[0].mergeCost,0);
+// A later, wider stroke can reach left across a proposed cut even if the
+// immediately following stroke appears well separated. Inspect all ink.
+const reaching=engine.plan([
+  stroke([[0,0],[0,90]]),stroke([[40,0],[40,90]]),stroke([[-5,40],[125,40]])
+]);
+assert.equal(reaching.boundaries[0].gap,-5);
+assert.ok(reaching.boundaries[0].splitCost>1);
+console.log('Relative horizontal spacing, grouping, overlap, scale and drawing-order checks passed.');

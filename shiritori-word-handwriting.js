@@ -17,6 +17,25 @@
     if(strokes.length>64||strokes.reduce((n,s)=>n+s.points.length,0)>24000)throw Error('too-many-strokes');
     const sorted=strokes.map((s,index)=>({s,index,box:bounds([s])})).sort((a,b)=>(a.box.l+a.box.r)-(b.box.l+b.box.r));
     const whole=bounds(strokes),height=Math.max(12,whole.h);
+    // At each possible cut, compare the nearest horizontal extents of ALL ink
+    // on either side. A later stroke can reach back across the next stroke.
+    const leftEdges=[],rightEdges=[];
+    for(let i=0;i<sorted.length;i++)leftEdges[i]=Math.max(i?leftEdges[i-1]:-Infinity,sorted[i].box.r);
+    for(let i=sorted.length-1;i>=0;i--)rightEdges[i]=Math.min(i+1<sorted.length?rightEdges[i+1]:Infinity,sorted[i].box.l);
+    const gaps=sorted.slice(1).map((_,i)=>rightEdges[i+1]-leftEdges[i]);
+    const boundaries=gaps.map((gap,i)=>{
+      // Relative spacing adapts to tightly or loosely written words. Compare
+      // with the smaller neighboring gap so a word space does not set the
+      // within-character spacing. A lone pair has no relative evidence.
+      const neighbors=[gaps[i-1],gaps[i+1]].filter(Number.isFinite).map(g=>Math.max(0,g));
+      const reference=neighbors.length?Math.min(...neighbors):Math.max(0,gap);
+      const relativeGap=(Math.max(0,gap)-reference)/height;
+      return {at:i+1,gap,relativeGap,
+        splitCost:Math.max(0,.26-gap/height)*4+Math.min(2,Math.max(0,-relativeGap-.08)*3),
+        mergeCost:Math.min(2,Math.max(0,relativeGap-.10)*4)};
+    });
+    const mergePrefix=[0];
+    for(const boundary of boundaries)mergePrefix.push(mergePrefix.at(-1)+boundary.mergeCost);
     const segments=[];
     for(let start=0;start<sorted.length;start++){
       for(let end=start+1;end<=Math.min(sorted.length,start+10);end++){
@@ -26,13 +45,14 @@
         let gap=0,right=members[0].box.r;
         for(const m of members.slice(1)){gap=Math.max(gap,m.box.l-right);right=Math.max(right,m.box.r);}
         const next=sorted[end],overlap=next?Math.max(0,box.r-next.box.l):0;
-        const cutCost=next?Math.max(0,.26-(next.box.l-box.r)/height)*4:0;
+        const cutCost=boundaries[end-1]?.splitCost||0;
+        const mergeCost=mergePrefix[end-1]-mergePrefix[start];
         const geometry=Math.max(0,box.w/height-1.12)*4+Math.max(0,gap/height-.20)*4+
-          Math.max(0,.32-box.h/height)*7+Math.min(2,overlap/height*3)+cutCost;
+          Math.max(0,.32-box.h/height)*7+Math.min(2,overlap/height*3)+cutCost+mergeCost;
         segments.push({start,end,box,geometry,nextBox:next?.box,indices:members.map(m=>m.index),strokes:members.map(m=>m.s)});
       }
     }
-    return {segments,count:sorted.length,height,whole};
+    return {segments,count:sorted.length,height,whole,boundaries};
   }
   function alternatives(segment,predictions,plan){
     const result=[];
