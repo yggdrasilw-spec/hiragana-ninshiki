@@ -63,6 +63,7 @@ const server=http.createServer((req,res)=>{
   await page.evaluate(()=>{ST.tail='す';setCurrentInput('');});
   assert.match(await page.locator('#typingCue').innerText(),/Backspace/);
   assert.equal(await page.locator('.hint-next').count(),0,'Empty input never asks to submit');
+  assert.equal(await page.locator('.hint-edit').count(),0,'Empty input never asks to erase');
   await page.locator('#kbdInput').fill('すいか');assert.equal(await page.locator('[data-code=Enter].hint-next').count(),1);assert.match(await page.locator('#typingCue').innerText(),/Enter.*すいか.*つなげ/);
   assert.ok(await page.locator('#typingCueKey').isVisible());assert.match(await page.locator('#typingCueKey').innerText(),/Enter.*\nここを おす/);
   assert.equal(await page.locator('#typingKeySpotlight').getAttribute('data-key'),'Enter');
@@ -87,6 +88,16 @@ const server=http.createServer((req,res)=>{
   await page.locator('#kbdInput').press('Enter');await page.waitForFunction(()=>ST.history.length===2&&!ST.cpuBusy);
   assert.equal(await page.evaluate(()=>ST.history.filter(e=>e.speaker==='あなた').length),1,'Suggested Enter submits exactly once');
   assert.match(await page.locator('#typingCue').innerText(),/Backspace/);assert.equal(await page.locator('.hint-next').count(),0,'Next word starts with editing guidance, not stale Enter guidance');
+  assert.equal(await page.locator('#kbdInput').inputValue(),'りす','Submitted text remains in the focused keyboard field');
+  assert.equal(await page.locator('[data-code=Backspace].hint-edit').count(),1,'Backspace is highlighted immediately after CPU finishes, before any keystroke');
+  assert.ok(await page.locator('#typingCueKey').isVisible());
+  assert.equal(await page.locator('#typingKeySpotlight').getAttribute('data-key'),'Backspace');
+  await page.screenshot({path:path.join(out,`${width}-cpu-backspace-cue.png`),fullPage:true});
+  await page.locator('#kbdInput').press('Backspace');
+  assert.equal(await page.locator('#kbdInput').inputValue(),'り');
+  await page.locator('#kbdInput').press('Backspace');
+  assert.equal(await page.locator('#kbdInput').inputValue(),'');
+  assert.equal(await page.locator('.hint-edit').count(),0,'Erasing the last character removes the Backspace highlight');
   assert.deepEqual(errors,[]);await page.close();
  }
  console.log(JSON.stringify({passed:true,viewports:4,out}));

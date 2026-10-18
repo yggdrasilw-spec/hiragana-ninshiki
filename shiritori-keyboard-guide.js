@@ -72,6 +72,12 @@ const ShiritoriKeyboardGuide=(()=>{
   function clear(){held.clear();composing=false;keys.forEach(k=>k.g.classList.remove('pressed'));if(fingers.length)animate();refresh();}
   function refresh(draft){
     if(draft){draftText=draft.text;draftValid=draft.valid;}
+    // A focused keyboard field keeps the submitted word for Backspace practice,
+    // even after the committed draft is cleared. Guide the text the child sees.
+    if(ST.inputMode==='kbd'){
+      draftText=norm(document.getElementById('kbdInput').value);
+      draftValid=!!(draftText&&inWhitelist(draftText)&&(!ST.tail||firstChar(draftText)===ST.tail)&&!isEndWord(draftText)&&!ST.used.has(draftText));
+    }
     const cue=document.getElementById('typingCue');if(!cue)return;
     keys.forEach(k=>k.g.classList.remove('hint-next','hint-edit'));
     let message='',key;

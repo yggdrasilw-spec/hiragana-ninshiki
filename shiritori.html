@@ -1604,7 +1604,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <button id="takeTurn" class="primary" type="button">うけとったら はじめる</button>
 <div class="dialog-actions"><button id="restartPlayers" type="button">さいしょから</button></div></dialog>
 <script src="shiritori-players.js?v=20261018players"></script>
-<script src="shiritori-keyboard-guide.js?v=20261019keylight"></script>
+<script src="shiritori-keyboard-guide.js?v=20261019cpu-backspace"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
 <script src="shiritori-vocabulary.js?v=20261016b"></script>
@@ -2777,6 +2777,7 @@ function switchIn(mode){
   }
   WordHandwritingUI.sync();
   if(mode==='kbd')kbdInp?.focus();
+  ShiritoriKeyboardGuide.refresh();
   requestAnimationFrame(resizeCV);
 }
 function kbdHandler(e){
