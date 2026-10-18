@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#101711">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+<script src="kana-models.js"></script>
 <title>手書きサンプル収集｜かな採集室</title>
 <style>
 :root{color-scheme:dark;--bg:#101711;--panel:#19221b;--line:#344538;--muted:#afc0b0;--ink:#edf6e9;--lime:#d3fb79;--accent:#b8ed60;font-family:"Yu Gothic",Meiryo,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button,select,input{border:1px solid var(--line);border-radius:9px;background:#202d23;color:var(--ink);min-height:46px;padding:9px 13px}button{cursor:pointer;font-weight:700}button:hover:not(:disabled){border-color:var(--lime)}button:disabled{opacity:.42;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}button.primary{background:var(--lime);color:#15200b;border-color:var(--lime)}button.secondary{background:transparent}header,.shell{max-width:1160px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--lime);font:12px ui-monospace,monospace;letter-spacing:.16em;margin:0 0 8px}h1{font-size:clamp(22px,3vw,30px);margin:0;letter-spacing:.05em}header .badge{font-size:12px;color:var(--muted);text-align:right;line-height:1.8}.intro{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:0 0 22px}.intro p{line-height:1.8;color:var(--muted);margin:0;font-size:14px}.export{min-width:200px}.layout{display:grid;grid-template-columns:minmax(330px,1.15fr) minmax(300px,.85fr);gap:25px;align-items:start}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.capture-card{border-color:#758f45;box-shadow:5px 5px 0 #354625}.target-row{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}.target{display:flex;align-items:center;gap:18px}.target-char{font-size:78px;line-height:1;font-weight:700;color:var(--lime);min-width:85px;text-align:center}.kicker{font-size:12px;color:var(--muted);margin:0 0 5px}.target strong{font-size:18px}.tiny-status{font-size:12px;color:var(--muted);text-align:right;line-height:1.7}.surface{position:relative;aspect-ratio:1;width:100%;max-width:470px;margin:auto;background:#fff;border-radius:11px;overflow:hidden}.surface:after{z-index:2;content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent calc(50% - .5px),#d7e0d6 50%,transparent calc(50% + .5px)),linear-gradient(0deg,transparent calc(50% - .5px),#d7e0d6 50%,transparent calc(50% + .5px))}.surface canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair;position:relative;z-index:1}.surface .corner{position:absolute;left:12px;bottom:10px;font-size:11px;color:#8a978b;pointer-events:none;z-index:3}.surface[data-guides="off"]:after{display:none}.tools{display:flex;gap:9px;margin:14px 0 10px}.tools button{flex:1}.save{width:100%;min-height:57px;font-size:18px;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}.hint{font-size:12px;color:var(--muted);line-height:1.8;margin:13px 0 0}.notice{min-height:28px;margin:12px 0 0;color:var(--lime);font-size:13px;line-height:1.6}.settings h2,.list-head h2{font-size:16px;margin:0}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.fields label{display:flex;flex-direction:column;gap:7px;color:var(--muted);font-size:12px}.fields select,.fields input{width:100%;color:var(--ink);font-size:14px}.fields .wide{grid-column:1/-1}.identity{display:flex;gap:7px}.identity input{min-width:0;flex:1}.identity button{white-space:nowrap}.check{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin:15px 0}.check input{min-height:22px;width:20px;margin:0}.progress-head{display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-top:22px}.progress-head strong{font-size:20px;color:var(--lime)}progress{width:100%;height:8px;appearance:none;margin:11px 0 14px;border:0;border-radius:10px;overflow:hidden}progress::-webkit-progress-bar{background:#2c3c2e}progress::-webkit-progress-value{background:var(--lime)}progress::-moz-progress-bar{background:var(--lime)}.char-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;max-height:318px;overflow:auto;padding:3px}.char-grid button{min-height:48px;padding:6px 1px;font-size:19px;position:relative}.char-grid button small{display:block;font-size:9px;color:var(--muted);font-weight:400;margin-top:2px}.char-grid button.current{outline:2px solid var(--lime);outline-offset:0;background:#384a27;color:var(--lime)}.char-grid button.complete:after{content:"";position:absolute;top:4px;right:4px;width:5px;height:5px;background:var(--lime);border-radius:50%}.session-count{font-size:12px;color:var(--muted);line-height:1.8;margin-top:14px}.gallery-card{margin-top:24px}.list-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.list-head span{font-size:12px;color:var(--muted)}.gallery{display:flex;gap:13px;overflow-x:auto;padding-top:17px;min-height:80px}.sample{flex:0 0 102px}.sample img{display:block;width:102px;height:102px;background:white;border-radius:8px}.sample button{display:block;width:100%;min-height:36px;padding:6px;font-size:11px;margin-top:7px;background:transparent}.empty{font-size:13px;color:var(--muted);line-height:1.8}.foot{font-size:12px;color:var(--muted);line-height:1.9;margin-top:22px}.foot summary{cursor:pointer;color:var(--ink)}.foot code{color:var(--lime)}[hidden]{display:none!important}#failure{max-width:1112px;margin:15px auto 0;padding:12px 16px;border:1px solid #e8b773;color:#ffe0a9;border-radius:8px;font-size:13px}.complete-message{background:#2b3d22;padding:10px;border-radius:7px;color:var(--lime);font-size:13px;margin-top:14px}.busy{cursor:wait}
@@ -30,7 +32,8 @@
    <div class="fields">
     <label>文字の種類<select id="script"><option value="katakana">カタカナ</option><option value="hiragana">ひらがな</option></select></label>
     <label>１文字あたり<select id="repeats"><option value="1">１枚ずつ</option><option value="3" selected>３枚ずつ</option><option value="5">５枚ずつ</option></select></label>
-    <label class="wide">文字のセット<select id="set"><option value="marks">濁音・半濁音を中心に</option><option value="all">すべての文字</option><option value="similar">まぎらわしい文字</option></select></label>
+    <label class="wide">文字のセット<select id="set"><option value="marks">濁音・半濁音を中心に</option><option value="all">すべての文字</option><option value="similar">まぎらわしい文字</option><option value="weak">評価で間違えた文字</option></select></label>
+    <label class="wide">保存するサンプルの用途<select id="sampleUse"><option value="evaluation">評価用（学習には使わない）</option><option value="train">追加学習用</option></select></label>
     <label class="wide">記録ID（名前の入力は不要）<span class="identity"><input id="writer" maxlength="48" autocomplete="off" spellcheck="false" aria-label="記録ID"><button id="newWriter" type="button">新しい人</button></span><select id="writerHistory" aria-label="保存した記録IDに切り替える" hidden></select></label>
    </div>
    <label class="check"><input id="guides" type="checkbox" checked>補助線を表示する</label>
@@ -40,6 +43,19 @@
    <p class="session-count" id="sessionCount">保存済み 0枚</p>
   </aside>
  </div>
+ <section class="card gallery-card" aria-label="モデルのテストと追加学習">
+  <h2>認識を試す・苦手文字を調べる</h2>
+  <div class="fields"><label class="wide">試すモデル<select id="testModel"></select></label></div>
+  <div class="tools"><button id="recognize">今の筆跡を認識</button><button id="evaluate">保存画像でモデルを比較</button></div>
+  <p id="prediction" role="status">認識結果は文字の形の正しさを採点するものではありません。</p>
+  <label class="hint">取り出したモデルを試す（ZIPを展開して model.json・重み.bin・labels.jsonを選択）<input id="importModel" type="file" multiple accept=".json,.bin" style="max-width:100%"></label>
+  <p id="evaluationStatus" role="status"></p><div id="evaluationResults" style="overflow:auto"></div><button id="downloadReport">比較結果JSONを保存</button>
+  <details><summary>追加学習して、別モデルとして取り出す</summary>
+   <p class="hint">用途を「追加学習用」にして集めた画像で、選択モデルの出力層を5回学習します。評価用画像は学習に使いません。別の記録IDでも評価し、清音も含めて比較してください。既存モデルは変更しません。</p>
+   <div class="tools"><button id="finetune">別モデルを追加学習</button><button id="downloadModel" disabled>学習モデルZIP</button></div>
+   <p id="trainingStatus" role="status"></p>
+  </details>
+ </section>
  <section class="card gallery-card"><div class="list-head"><h2 id="galleryTitle">「ガ」の保存画像</h2><span>書き間違えた画像は削除できます</span></div><div class="gallery" id="gallery"><p class="empty">ここに保存した画像が並びます。</p></div></section>
  <details class="foot"><summary>ZIPの使い方・保存について</summary><p>ZIPには、文字ごとのフォルダに入った256×256のPNGと、記録一覧・筆跡データが入ります。カタカナは72文字、ひらがなは71文字に対応しています。ZIPに入るのは、現在の記録ID・文字の種類で保存したすべての画像です。</p><p>Colabのファイル欄へZIPをアップロードし、学習ノートブックの⑧で <code>REAL_ZIP</code> にパスを指定すると実筆テストに使えます。今回のカタカナ用ノートブックはカタカナを評価します。</p><p>文字はこのブラウザ内に保存します。別の端末・ブラウザには自動で移りません。ZIPで取り出して保管してください。学習に使った画像とは別の画像で認識率を確認してください。</p></details>
 </main>
@@ -60,10 +76,10 @@ function draftKey(){return [settings.writer,settings.script,settings.current].jo
 function remember(){settings.drafts[draftKey()]=structuredClone(strokes);persist();}
 function persist(){if(!db)return;const snapshot=structuredClone(settings);writeQueue=writeQueue.catch(()=>{}).then(()=>transaction('settings','readwrite',s=>s.put(snapshot,'main'))).catch(()=>problem('途中の筆跡を端末へ保存できませんでした。保存済み画像はZIPで取り出せます。'));}
 function selectedRecords(){return records.filter(r=>r.writer===settings.writer&&r.script===settings.script);}
-function chars(){if(settings.set==='all')return settings.script==='katakana'?KATA:HIRA;if(settings.set==='similar')return settings.script==='katakana'?[...'シツソンウワクケ']:[...'あおぬめねれわり'];return settings.script==='katakana'?MARKS:MARKS.filter(c=>c!=='ヴ').map(hira);}
+function chars(){if(settings.set==='weak'){const weak=weakLabels();if(weak.length)return weak;}if(settings.set==='all')return settings.script==='katakana'?KATA:HIRA;if(settings.set==='similar')return settings.script==='katakana'?[...'シツソンウワクケ']:[...'あおぬめねれわり'];return settings.script==='katakana'?MARKS:MARKS.filter(c=>c!=='ヴ').map(hira);}
 function count(ch){return selectedRecords().filter(r=>r.label===ch).length;}
 function lock(value){busy=value;document.body.classList.toggle('busy',value);renderControls();}
-function renderControls(){const empty=!strokes.length;$('undo').disabled=busy||empty||!ready;$('clear').disabled=busy||empty||!ready;$('save').disabled=busy||empty||!!active||!ready;$('skip').disabled=busy||!!active||!ready;$('export').disabled=busy||!!active||!selectedRecords().length||!ready;for(const id of ['script','set','writer','repeats','newWriter','writerHistory'])$(id).disabled=busy||!!active||!ready;document.querySelectorAll('#characters button').forEach(b=>b.disabled=busy||!!active||!ready);}
+function renderControls(){const empty=!strokes.length;$('undo').disabled=busy||empty||!ready;$('clear').disabled=busy||empty||!ready;$('save').disabled=busy||empty||!!active||!ready;$('skip').disabled=busy||!!active||!ready;$('export').disabled=busy||!!active||!selectedRecords().length||!ready;for(const id of ['script','set','writer','repeats','newWriter','writerHistory','sampleUse','testModel','recognize','evaluate','finetune','importModel'])$(id).disabled=busy||!!active||!ready;document.querySelectorAll('#characters button').forEach(b=>b.disabled=busy||!!active||!ready);}
 function paint(context,list,size){context.fillStyle='#fff';context.fillRect(0,0,size,size);context.strokeStyle='#111';context.fillStyle='#111';context.lineCap='round';context.lineJoin='round';for(const stroke of list){context.lineWidth=stroke.width*size;const pts=stroke.points;if(!pts.length)continue;context.beginPath();context.arc(pts[0].x*size,pts[0].y*size,context.lineWidth/2,0,Math.PI*2);context.fill();if(pts.length>1){context.beginPath();context.moveTo(pts[0].x*size,pts[0].y*size);for(const p of pts.slice(1))context.lineTo(p.x*size,p.y*size);context.stroke();}}}
 function redraw(){const cv=$('pad'),rect=cv.getBoundingClientRect(),dpr=Math.min(3,devicePixelRatio||1),size=Math.round(rect.width*dpr);if(!size)return;if(cv.width!==size||cv.height!==size){cv.width=size;cv.height=size;}paint(ctx,strokes,size);}
 function renderGallery(){urls.forEach(URL.revokeObjectURL);urls=[];$('gallery').replaceChildren();$('galleryTitle').textContent=`「${settings.current}」の保存画像`;const list=selectedRecords().filter(r=>r.label===settings.current).slice().reverse();if(!list.length){const p=document.createElement('p');p.className='empty';p.textContent='保存すると、ここに画像が並びます。';$('gallery').append(p);return;}for(const record of list){const card=document.createElement('div');card.className='sample';const image=document.createElement('img');image.src=URL.createObjectURL(record.png);urls.push(image.src);image.alt=`${record.label}の手書き画像`;const button=document.createElement('button');button.textContent='この画像を削除';button.setAttribute('aria-label',`${record.label}の画像を削除`);button.disabled=busy;button.onclick=()=>removeRecord(record);card.append(image,button);$('gallery').append(card);}}
@@ -76,10 +92,10 @@ $('pad').addEventListener('pointermove',ev=>{if(!active||ev.pointerId!==active.i
 function end(ev,cancel=false){if(!active||active.id!==ev.pointerId)return;ev.preventDefault();if(cancel)strokes.pop();else active.stroke.points.push(point(ev));active=null;remember();redraw();renderControls();$('inputStatus').textContent='指・ペン・マウス対応';}
 $('pad').addEventListener('pointerup',ev=>end(ev));$('pad').addEventListener('pointercancel',ev=>end(ev,true));$('pad').addEventListener('lostpointercapture',ev=>{if(active?.id===ev.pointerId)end(ev,true);});
 $('undo').onclick=()=>{if(busy||active)return;strokes.pop();remember();redraw();renderControls();};$('clear').onclick=()=>{if(busy||active)return;strokes=[];remember();redraw();renderControls();tell('書き直せます。');};$('skip').onclick=()=>selectChar(nextChar(true));
-async function save(){if(busy||active||!strokes.length)return;lock(true);try{const canvas=document.createElement('canvas');canvas.width=canvas.height=256;paint(canvas.getContext('2d'),strokes,256);const png=await new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(Error('画像を作れませんでした')),'image/png'));const record={id:crypto.randomUUID(),label:settings.current,script:settings.script,writer:settings.writer,createdAt:new Date().toISOString(),width:256,height:256,strokes:structuredClone(strokes),png};if(db)await transaction('samples','readwrite',s=>s.put(record));records.push(record);strokes=[];delete settings.drafts[draftKey()];const label=record.label;settings.current=nextChar();strokes=structuredClone(settings.drafts[draftKey()]||[]);persist();tell(`「${label}」を保存しました。${persistence?'':'ZIPで取り出して保管してください。'}`);}catch(error){tell(`保存できませんでした：${error.message}`);}finally{lock(false);render();}}
+async function save(){if(busy||active||!strokes.length)return;lock(true);try{const canvas=document.createElement('canvas');canvas.width=canvas.height=256;paint(canvas.getContext('2d'),strokes,256);const png=await new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(Error('画像を作れませんでした')),'image/png'));const record={id:crypto.randomUUID(),label:settings.current,script:settings.script,writer:settings.writer,createdAt:new Date().toISOString(),use:$('sampleUse').value,width:256,height:256,strokes:structuredClone(strokes),png};if(db)await transaction('samples','readwrite',s=>s.put(record));records.push(record);strokes=[];delete settings.drafts[draftKey()];const label=record.label;settings.current=nextChar();strokes=structuredClone(settings.drafts[draftKey()]||[]);persist();tell(`「${label}」を保存しました。${persistence?'':'ZIPで取り出して保管してください。'}`);}catch(error){tell(`保存できませんでした：${error.message}`);}finally{lock(false);render();}}
 $('save').onclick=save;
 async function removeRecord(record){if(busy||active)return;lock(true);try{if(db)await transaction('samples','readwrite',s=>s.delete(record.id));records=records.filter(r=>r.id!==record.id);tell('画像を削除しました。');}catch(error){tell('削除できませんでした。');}finally{lock(false);render();}}
-function changeSetting(key,value){if(busy||active)return;remember();settings[key]=value;if(!chars().includes(settings.current))settings.current=chars()[0];strokes=structuredClone(settings.drafts[draftKey()]||[]);persist();render();}
+function changeSetting(key,value){if(busy||active)return;remember();settings[key]=value;if(key==='script')syncModelOptions();if(!chars().includes(settings.current))settings.current=chars()[0];strokes=structuredClone(settings.drafts[draftKey()]||[]);persist();render();}
 function renderHistory(){const select=$('writerHistory'),writers=[...new Set([settings.writer,...records.map(r=>r.writer)])];select.replaceChildren();const hint=document.createElement('option');hint.value='';hint.textContent='保存した記録に切り替える';select.append(hint);for(const writer of writers){const option=document.createElement('option');option.value=writer;option.textContent=writer;select.append(option);}select.hidden=writers.length<2;}
 $('writerHistory').onchange=()=>{const value=$('writerHistory').value;if(value){$('writer').value=value;changeSetting('writer',value);}};
 for(const id of ['script','set','repeats'])$(id).onchange=()=>changeSetting(id,id==='repeats'?Number($(id).value):$(id).value);
@@ -89,9 +105,112 @@ const table=Uint32Array.from({length:256},(_,n)=>{let c=n;for(let k=0;k<8;k++)c=
 function crc32(data){let c=0xffffffff;for(const byte of data)c=table[(c^byte)&255]^(c>>>8);return(c^0xffffffff)>>>0;}
 function header(size){const bytes=new Uint8Array(size);return[bytes,new DataView(bytes.buffer)];}
 function makeZip(files){const parts=[],central=[],encoder=new TextEncoder();let offset=0,centralSize=0;for(const file of files){const name=encoder.encode(file.name),data=file.data,crc=crc32(data);const[h,v]=header(30);v.setUint32(0,0x04034b50,true);v.setUint16(4,20,true);v.setUint16(6,0x800,true);v.setUint16(12,0x21,true);v.setUint32(14,crc,true);v.setUint32(18,data.length,true);v.setUint32(22,data.length,true);v.setUint16(26,name.length,true);parts.push(h,name,data);const[c,w]=header(46);w.setUint32(0,0x02014b50,true);w.setUint16(4,20,true);w.setUint16(6,20,true);w.setUint16(8,0x800,true);w.setUint16(14,0x21,true);w.setUint32(16,crc,true);w.setUint32(20,data.length,true);w.setUint32(24,data.length,true);w.setUint16(28,name.length,true);w.setUint32(42,offset,true);central.push(c,name);centralSize+=46+name.length;offset+=30+name.length+data.length;}const[end,e]=header(22);e.setUint32(0,0x06054b50,true);e.setUint16(8,files.length,true);e.setUint16(10,files.length,true);e.setUint32(12,centralSize,true);e.setUint32(16,offset,true);return new Blob([...parts,...central,end],{type:'application/zip'});}
-async function exportZip(){if(busy||active)return;const selected=selectedRecords();if(!selected.length)return;lock(true);tell('ZIPを作っています…');try{const encoder=new TextEncoder(),files=[],manifest={version:1,purpose:'real-handwriting-evaluation',script:settings.script,writer:settings.writer,createdAt:new Date().toISOString(),image:{size:256,background:'white',ink:'black',guides:false,normalization:'full square, no crop'},samples:[]};for(const record of selected){const{png,...meta}=record;const imagePath=`${record.label}/${record.id}.png`,strokePath=`strokes/${record.id}.json`;files.push({name:imagePath,data:new Uint8Array(await png.arrayBuffer())},{name:strokePath,data:encoder.encode(JSON.stringify(meta))});manifest.samples.push({id:record.id,label:record.label,path:imagePath,strokes:strokePath,writer:record.writer,createdAt:record.createdAt,pointerTypes:[...new Set(record.strokes.map(s=>s.pointerType))]});}files.push({name:'manifest.json',data:encoder.encode(JSON.stringify(manifest,null,2))},{name:'README.txt',data:encoder.encode('実筆テスト画像です。文字別フォルダのPNGを評価に使用してください。\n保存画像に補助線・お手本は入りません。筆跡の座標は0〜1です。\n学習に使った画像とは別の画像で認識率を評価してください。\n')});const blob=makeZip(files),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`real-${settings.script}-${new Date().toISOString().replace(/[:.]/g,'-')}.zip`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);tell(`${selected.length}枚のZIPを作りました。ダウンロード先を確認してください。`);}catch(error){tell(`ZIPを作れませんでした：${error.message}`);}finally{lock(false);render();}}
+async function exportZip(){if(busy||active)return;const selected=selectedRecords();if(!selected.length)return;lock(true);tell('ZIPを作っています…');try{const encoder=new TextEncoder(),files=[],manifest={version:1,purpose:'real-handwriting-evaluation',script:settings.script,writer:settings.writer,createdAt:new Date().toISOString(),image:{size:256,background:'white',ink:'black',guides:false,normalization:'full square, no crop'},samples:[]};for(const record of selected){const{png,...meta}=record;const imagePath=`${record.label}/${record.id}.png`,strokePath=`strokes/${record.id}.json`;files.push({name:imagePath,data:new Uint8Array(await png.arrayBuffer())},{name:strokePath,data:encoder.encode(JSON.stringify(meta))});manifest.samples.push({id:record.id,label:record.label,path:imagePath,strokes:strokePath,writer:record.writer,createdAt:record.createdAt,use:record.use||'evaluation',pointerTypes:[...new Set(record.strokes.map(s=>s.pointerType))]});}files.push({name:'manifest.json',data:encoder.encode(JSON.stringify(manifest,null,2))},{name:'README.txt',data:encoder.encode('実筆テスト画像です。文字別フォルダのPNGを評価に使用してください。\n保存画像に補助線・お手本は入りません。筆跡の座標は0〜1です。\n学習に使った画像とは別の画像で認識率を評価してください。\n')});const blob=makeZip(files),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`real-${settings.script}-${new Date().toISOString().replace(/[:.]/g,'-')}.zip`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);tell(`${selected.length}枚のZIPを作りました。ダウンロード先を確認してください。`);}catch(error){tell(`ZIPを作れませんでした：${error.message}`);}finally{lock(false);render();}}
 $('export').onclick=exportZip;
-async function init(){try{db=await new Promise((resolve,reject)=>{const req=indexedDB.open('kana-handwriting-capture-v1',1);req.onupgradeneeded=()=>{req.result.createObjectStore('samples',{keyPath:'id'});req.result.createObjectStore('settings');};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});const saved=await request(db.transaction('settings').objectStore('settings').get('main'));if(saved)settings={...settings,...saved};records=await request(db.transaction('samples').objectStore('samples').getAll());}catch(error){db?.close();db=null;persistence=false;problem('この環境では端末内の保存を利用できません。ページを閉じる前にZIPを保存してください。');}if(!chars().includes(settings.current))settings.current=chars()[0];strokes=structuredClone(settings.drafts[draftKey()]||[]);for(const id of ['script','set','writer','repeats'])$(id).value=settings[id];$('guides').checked=settings.guides;ready=true;render();tell(strokes.length?'書きかけの筆跡を復元しました。':'１文字を書いて「保存して、次へ」を押してください。');persist();}
+async function init(){try{db=await new Promise((resolve,reject)=>{const req=indexedDB.open('kana-handwriting-capture-v1',1);req.onupgradeneeded=()=>{req.result.createObjectStore('samples',{keyPath:'id'});req.result.createObjectStore('settings');};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});const saved=await request(db.transaction('settings').objectStore('settings').get('main'));if(saved)settings={...settings,...saved};records=await request(db.transaction('samples').objectStore('samples').getAll());}catch(error){db?.close();db=null;persistence=false;problem('この環境では端末内の保存を利用できません。ページを閉じる前にZIPを保存してください。');}if(!chars().includes(settings.current))settings.current=chars()[0];strokes=structuredClone(settings.drafts[draftKey()]||[]);for(const id of ['script','set','writer','repeats'])$(id).value=settings[id];$('guides').checked=settings.guides;ready=true;syncModelOptions();render();tell(strokes.length?'書きかけの筆跡を復元しました。':'１文字を書いて「保存して、次へ」を押してください。');persist();}
+let reports=[],trained=null,trainedSpec=null,trainingInfo=null;
+const modelCache=new Map();
+function syncModelOptions(){
+  $('testModel').replaceChildren();
+  for(const spec of KanaModels.models.filter(s=>s.script===settings.script)){
+    const option=document.createElement('option');option.value=spec.id;option.textContent=spec.name;$('testModel').append(option);
+  }
+  if(settings.script==='katakana')$('testModel').value='katakana-marks-20261018';
+  reports=[];$('evaluationResults').replaceChildren();$('evaluationStatus').textContent='';
+}
+function testSpec(){return KanaModels.models.find(s=>s.id===$('testModel').value);}
+function weakLabels(){return [...new Set(reports.filter(r=>r.modelId===$('testModel').value).flatMap(r=>r.samples.filter(s=>s.expected!==s.predicted).map(s=>s.expected)))];}
+async function cached(spec){if(!modelCache.has(spec.id))modelCache.set(spec.id,await KanaModels.load(spec));return modelCache.get(spec.id);}
+$('importModel').onchange=async e=>{
+  if(busy||active)return;lock(true);try{
+    const {model,labels}=await KanaModels.loadFiles(e.target.files,settings.script),id=`imported-${Date.now()}`;
+    const spec={id,script:settings.script,name:`取込モデル ${new Date().toLocaleTimeString()}`,labels,imported:true};KanaModels.models.push(spec);modelCache.set(id,model);
+    syncModelOptions();$('testModel').value=id;$('prediction').textContent='モデルを読み込みました。同じ評価画像で比較できます。';
+  }catch(error){$('prediction').textContent=`読込できませんでした：${error.message}`;}finally{lock(false);e.target.value='';}
+};
+async function pixelsFor(record){const image=await createImageBitmap(record.png);try{const c=document.createElement('canvas');c.width=c.height=256;c.getContext('2d').drawImage(image,0,0);return KanaModels.preprocess(c);}finally{image.close();}}
+function currentPixels(){const c=document.createElement('canvas');c.width=c.height=256;paint(c.getContext('2d'),strokes,256);return KanaModels.preprocess(c);}
+function displayReports(){
+  $('evaluationResults').replaceChildren();
+  for(const report of reports){
+    const p=document.createElement('p');p.textContent=`${report.name}：正解 ${report.correct}/${report.total}、上位3候補 ${report.top3}/${report.total}、対象外 ${report.unsupported}枚`;$('evaluationResults').append(p);
+    const table=document.createElement('table');table.style.cssText='width:100%;text-align:left;border-spacing:12px 6px';
+    const tr=document.createElement('tr');for(const text of ['文字','正解 / 枚数','間違えた候補']){const th=document.createElement('th');th.textContent=text;tr.append(th);}table.append(tr);
+    const labels=[...new Set(report.samples.map(s=>s.expected))];
+    labels.sort((a,b)=>{const err=c=>report.samples.filter(s=>s.expected===c&&s.predicted!==c).length;return err(b)-err(a);});
+    for(const label of labels){const rows=report.samples.filter(s=>s.expected===label),row=document.createElement('tr');
+      for(const text of [label,`${rows.filter(s=>s.expected===s.predicted).length} / ${rows.length}`,[...new Set(rows.filter(s=>s.expected!==s.predicted).map(s=>s.predicted))].join('、')||'—']){const td=document.createElement('td');td.textContent=text;row.append(td);}table.append(row);
+    }$('evaluationResults').append(table);
+  }
+}
+async function evaluateModel(model,spec,list){
+  const result={modelId:spec.id,name:spec.name,total:0,correct:0,top3:0,unsupported:0,samples:[]};
+  for(const record of list){
+    if(!spec.labels.includes(record.label)){result.unsupported++;continue;}
+    const pixels=await pixelsFor(record);if(!pixels)throw Error(`空白の保存画像があります：${record.id}`);
+    const ranks=await KanaModels.predict(model,spec.labels,pixels);
+    result.total++;result.correct+=Number(ranks[0].label===record.label);result.top3+=Number(ranks.slice(0,3).some(r=>r.label===record.label));
+    result.samples.push({id:record.id,writer:record.writer,expected:record.label,predicted:ranks[0].label,top3:ranks.slice(0,3)});
+    await tf.nextFrame();
+  }return result;
+}
+$('testModel').onchange=()=>{if(settings.set==='weak')selectChar(chars()[0]);};
+$('downloadReport').onclick=()=>{
+  if(busy||!reports.length)return;const url=URL.createObjectURL(new Blob([JSON.stringify({version:1,createdAt:new Date().toISOString(),script:settings.script,writer:settings.writer,reports},null,2)],{type:'application/json'}));
+  const link=document.createElement('a');link.href=url;link.download=`kana-evaluation-${Date.now()}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
+};
+$('recognize').onclick=async()=>{
+  if(busy||active)return;const pixels=currentPixels();if(!pixels){$('prediction').textContent='先に１文字を書いてください。';return;}
+  lock(true);try{const spec=testSpec(),ranks=await KanaModels.predict(await cached(spec),spec.labels,pixels);$('prediction').textContent=`${spec.name}：`+ranks.slice(0,5).map(r=>`${r.label} ${(r.score*100).toFixed(1)}%`).join(' / ');}catch(e){$('prediction').textContent=`認識できませんでした：${e.message}`;}finally{lock(false);}
+};
+$('evaluate').onclick=async()=>{
+  if(busy||active)return;const list=selectedRecords().filter(r=>r.use!=='train');
+  if(!list.length){$('evaluationStatus').textContent='評価用の画像を保存してください。';return;}
+  lock(true);reports=[];try{
+    for(const spec of KanaModels.models.filter(s=>s.script===settings.script)){
+      $('evaluationStatus').textContent=`${spec.name}を評価中…`;reports.push(await evaluateModel(await cached(spec),spec,list));displayReports();
+    }
+    $('evaluationStatus').textContent='比較できました。「評価で間違えた文字」を選ぶと、苦手文字を追加で収集できます。対象外は正解率の分母に入りません。';
+    if(settings.set==='weak'){settings.current=chars()[0];render();}
+  }catch(e){$('evaluationStatus').textContent=`評価できませんでした：${e.message}`;}finally{lock(false);}
+};
+$('finetune').onclick=async()=>{
+  if(busy||active)return;const spec=testSpec(),list=selectedRecords(),train=list.filter(r=>r.use==='train'&&spec.labels.includes(r.label)),evaluation=list.filter(r=>r.use!=='train'&&spec.labels.includes(r.label));
+  if(spec.imported){$('trainingStatus').textContent='追加学習は元の3モデルから開始してください。取込モデルは認識と比較に使えます。';return;}
+  if(train.length<2||!evaluation.length){$('trainingStatus').textContent='追加学習用を2枚以上、評価用を1枚以上保存してください。';return;}
+  lock(true);$('downloadModel').disabled=true;let candidate,x,y;
+  try{
+    $('trainingStatus').textContent='元の重みを別モデルへコピーしています…';candidate=await KanaModels.trainable(spec);
+    const arrays=[];for(const record of train)arrays.push(await pixelsFor(record));if(arrays.some(a=>!a))throw Error('空白の学習画像があります');
+    // Check copied weights against the source before allowing training.
+    const original=await cached(spec),a=await KanaModels.predict(original,spec.labels,arrays[0]),b=await KanaModels.predict(candidate,spec.labels,arrays[0]);
+    const byLabel=new Map(b.map(r=>[r.label,r.score]));if(a.some(r=>Math.abs(r.score-byLabel.get(r.label))>.0001))throw Error('複製モデルの推論が元モデルと一致しません');
+    const before=await evaluateModel(original,spec,evaluation);
+    x=tf.tensor4d(Float32Array.from(arrays.flatMap(a=>Array.from(a))),[train.length,64,64,1]);
+    y=tf.tidy(()=>tf.oneHot(tf.tensor1d(train.map(r=>spec.labels.indexOf(r.label)),'int32'),spec.labels.length));
+    await candidate.fit(x,y,{epochs:5,batchSize:Math.min(16,train.length),shuffle:true,callbacks:{onEpochEnd:async(epoch,logs)=>{$('trainingStatus').textContent=`追加学習 ${epoch+1}/5、損失 ${logs.loss.toFixed(4)}`;await tf.nextFrame();}}});
+    const after=await evaluateModel(candidate,{...spec,id:`${spec.id}-finetuned`,name:`${spec.name}・追加学習後`},evaluation);
+    trained?.dispose();trained=candidate;candidate=null;trainedSpec=structuredClone(spec);
+    trainingInfo={version:1,source:spec.id,createdAt:new Date().toISOString(),method:'classification-head-only',epochs:5,learningRate:.0001,trainIds:train.map(r=>r.id),evaluationIds:evaluation.map(r=>r.id),writers:[...new Set(list.map(r=>r.writer))],before,after};
+    reports=[before,after];displayReports();
+    $('trainingStatus').textContent=`完了。評価用 ${evaluation.length}枚：正解 ${before.correct} → ${after.correct}。この結果だけでは全体の改善は判断できません。ZIPは別名で保存してください。`;
+    $('downloadModel').disabled=false;
+  }catch(e){$('trainingStatus').textContent=`追加学習できませんでした：${e.message}`;$('downloadModel').disabled=!trained;}
+  finally{x?.dispose();y?.dispose();candidate?.dispose();lock(false);}
+};
+$('downloadModel').onclick=async()=>{
+  if(busy||active||!trained)return;lock(true);
+  try{
+    const encoder=new TextEncoder(),files=[];
+    await trained.save(tf.io.withSaveHandler(async artifacts=>{
+      const model={format:'layers-model',generatedBy:'kana-capture-head-finetune',modelTopology:artifacts.modelTopology,weightsManifest:[{paths:['weights.bin'],weights:artifacts.weightSpecs}]};
+      files.push({name:'model.json',data:encoder.encode(JSON.stringify(model))},{name:'weights.bin',data:new Uint8Array(artifacts.weightData)});
+      return {modelArtifactsInfo:{dateSaved:new Date(),modelTopologyType:'JSON'}};
+    }));
+    for(const [name,value] of Object.entries({'labels.json':trainedSpec.labels,'preprocessing.json':{size:64,channels:1,range:[0,1],ink:'white',background:'black',bbox_fit:.85},'training-report.json':trainingInfo}))files.push({name,data:encoder.encode(JSON.stringify(value,null,2))});
+    const url=URL.createObjectURL(makeZip(files)),link=document.createElement('a');link.href=url;link.download=`${trainedSpec.id}-finetuned-${Date.now()}.zip`;link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
+  }catch(e){$('trainingStatus').textContent=`ZIPを作れませんでした：${e.message}`;}finally{lock(false);}
+};
 new ResizeObserver(redraw).observe($('surface'));window.addEventListener('beforeunload',()=>remember());init();
 })();
 </script>

@@ -7,7 +7,11 @@ const root = path.resolve(__dirname, '..');
 const output = process.env.QA_OUTPUT || path.join(root, 'tmp-capture-qa');
 fs.mkdirSync(output, {recursive:true});
 const html = fs.readFileSync(path.join(root, 'handwriting-capture.html'));
-const server = http.createServer((req,res)=>{res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);});
+const server = http.createServer((req,res)=>{
+ const name=new URL(req.url,'http://localhost').pathname;
+ if(name==='/kana-models.js'){res.setHeader('Content-Type','text/javascript');return res.end(fs.readFileSync(path.join(root,'kana-models.js')));}
+ res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);
+});
 async function draw(page){
   const box = await page.locator('#pad').boundingBox();
   await page.mouse.move(box.x+box.width*.2,box.y+box.height*.3);
