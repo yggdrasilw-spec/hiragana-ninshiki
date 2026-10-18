@@ -29,13 +29,23 @@
 .typing-key.pressed rect{fill:#1affa0;stroke:white;stroke-width:3}
 .typing-key text{fill:#eef9ff;font:bold 18px sans-serif;text-anchor:middle;pointer-events:none}
 .typing-key.pressed text{fill:#052a22}
+.typing-key.hint-next:not(.pressed) rect{fill:#184334;stroke:#1affa0;stroke-width:3;animation:typing-cue 1.6s ease-in-out infinite}
+.typing-key.hint-edit:not(.pressed) rect{stroke:#ffd460;stroke-width:3}
+@keyframes typing-cue{50%{stroke-opacity:.45}}
+@media(prefers-reduced-motion:reduce){.typing-key.hint-next:not(.pressed) rect{animation:none}}
 .typing-labels text{fill:white;font:bold 18px sans-serif;text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:#102138;stroke-width:3px}
 .typing-hands{pointer-events:none;opacity:.78}
 .typing-hands .palm{fill:#b9a3ee;stroke:#e2d6ff;stroke-width:2}
-.typing-finger{fill:none;stroke:#baa5ef;stroke-width:22;stroke-linecap:round}
+.typing-wrist{fill:none;stroke:#e2d6ff;stroke-width:2;opacity:.65}
+.typing-finger{fill:none;stroke:url(#typingFingerShade);stroke-width:24;stroke-linecap:round}
+.typing-joint{fill:none;stroke:#766299;stroke-width:1.6;opacity:.75}
+.typing-nail{fill:#e9e0fb;stroke:#af9acc;stroke-width:1;opacity:.8}
 .typing-finger.active{stroke:#ffe09a}
 #typingHelp{font-size:12px;line-height:1.6;color:#bed0e4;margin:4px 0}
 #typingAction{min-height:1.6em;font-size:14px;margin:3px 0;color:#ffe09a}
+#typingCue{min-height:2.8em;display:flex;align-items:center;font-size:14px;line-height:1.5;margin:6px 0;padding:7px 10px;border:1px solid #42647c;border-radius:8px;background:#17283a;color:#d8edff}
+#typingCue[data-action=connect]{border-color:#1affa0;color:#a2ffcf}
+#typingCue[data-action=edit]{border-color:#ffd460;color:#ffe09a}
 body.keyboard-input #writingPanel{display:none!important}
 body.keyboard-input #colCenter{overflow-y:auto}
 @media(max-width:600px){#playerBar{padding:3px 6px;gap:4px}#playerRuleLabel{display:none}.player-chip{font-size:11px}#topbar>.tb-btn{font-size:11px;padding:4px 6px}#keyboardGuide{min-height:200px;flex:1 0 240px}}

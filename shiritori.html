@@ -1186,7 +1186,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <link rel="stylesheet" href="shiritori-feedback.css?v=20261014">
 <link rel="stylesheet" href="shiritori-word-handwriting.css?v=20261018connect">
 <link rel="stylesheet" href="shiritori-writing-layout.css?v=20261018players">
-<link rel="stylesheet" href="shiritori-multiplayer.css?v=20261018players2">
+<link rel="stylesheet" href="shiritori-multiplayer.css?v=20261019hands">
 </head>
 <body>
 
@@ -1605,7 +1605,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <button id="takeTurn" class="primary" type="button">うけとったら はじめる</button>
 <div class="dialog-actions"><button id="restartPlayers" type="button">さいしょから</button></div></dialog>
 <script src="shiritori-players.js?v=20261018players"></script>
-<script src="shiritori-keyboard-guide.js?v=20261018players"></script>
+<script src="shiritori-keyboard-guide.js?v=20261019hands"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
 <script src="shiritori-vocabulary.js?v=20261016b"></script>
@@ -2311,6 +2311,7 @@ function updateWordBox(input){
   const valid=n&&inWhitelist(n)&&(!ST.tail||firstChar(n)===ST.tail)&&!isEndWord(n)&&!ST.used.has(n);
   document.getElementById('linkDraft').className=n?(valid?'valid':'typing'):'';
   WordHandwritingUI.updateSubmitState();
+  ShiritoriKeyboardGuide.refresh({text:n,valid:!!valid});
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3596,6 +3597,7 @@ async function submitWord(){
   //   二重送信を防ぐ。各早期returnの直前で必ず解除すること。
   ST.cpuBusy = true;
   WordHandwritingUI.updateSubmitState();
+  ShiritoriKeyboardGuide.refresh();
   const round=ST.round;
   document.getElementById('btnOk').disabled = true;
 
