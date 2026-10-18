@@ -1,7 +1,7 @@
 /* Physical keystrokes drive an SVG demonstration, independently of Japanese IME text. */
 const ShiritoriKeyboardGuide=(()=>{
   const ns='http://www.w3.org/2000/svg';
-  let svg,hands,select,frame,visible='hands',composing=false,draftText='',draftValid=false;
+  let svg,hands,select,frame,keySpotlight,visible='hands',composing=false,draftText='',draftValid=false;
   const keys=new Map(),held=new Set(),fingers=[],rigs=[];
   const fingerNames=['左こゆび','左くすりゆび','左なかゆび','左ひとさしゆび','左おやゆび','右おやゆび','右ひとさしゆび','右なかゆび','右くすりゆび','右こゆび'];
   const mapping=['1QAZ`','2WSX','3EDC','4RFV5TGB','','','6YHN7UJM','8IK,','9OL.','0P;/-=[]\\'];
@@ -79,14 +79,29 @@ const ShiritoriKeyboardGuide=(()=>{
     if(ST.gameOver)message='もういちど あそぶときは「もういちど」を おしてね。';
     else if(ST.cpuBusy||ST.demoRunning||ST.moderationLocked)message='いまは まってね。';
     else if(composing)message='へんかん中だよ。Enterで よみを きめてから つなげよう。';
-    else if(draftValid){message=`Enterで「${displayStr(draftText)}」を つなげよう。`;key='Enter';}
+    else if(draftValid){message=`みどりに ひかる Enterキーを おして「${displayStr(draftText)}」を つなげよう。`;key='Enter';}
     else if(draftText&&(isEndWord(draftText)||ST.used.has(draftText)||(ST.tail&&firstChar(draftText)!==ST.tail))){
       const why=isEndWord(draftText)?'「ん」のつぎは つなげられないね。':ST.used.has(draftText)?'もう つかった ことばだよ。':`つぎは「${displayStr(ST.tail)}」からだよ。`;
-      message=why+' Backspaceで けして なおそう。';key='Backspace';
+      message=why+' きいろに ひかる Backspaceキーで １もじずつ けして なおそう。';key='Backspace';
     }else message=ST.tail?`つぎは「${displayStr(ST.tail)}」から。かきなおすときは Backspaceで けせるよ。`:'ことばを いれよう。かきなおすときは Backspaceで けせるよ。';
-    if(cue.textContent!==message)cue.textContent=message;
+    const text=document.getElementById('typingCueText');if(text.textContent!==message)text.textContent=message;
     cue.dataset.action=key==='Enter'?'connect':key==='Backspace'?'edit':composing?'compose':'input';
-    if(key)keys.get(key)?.g.classList.add(key==='Enter'?'hint-next':'hint-edit');
+    const cap=document.getElementById('typingCueKey');cap.hidden=!key;
+    if(key){
+      document.getElementById('typingCueKeyName').textContent=key==='Enter'?'Enter ↵':'Backspace ⌫';
+      keys.get(key)?.g.classList.add(key==='Enter'?'hint-next':'hint-edit');
+    }
+    if(!held.size)document.getElementById('typingAction').textContent=key?`${key} → ${fingerNames[keys.get(key).finger]}`:'FとJに ひとさしゆびを おこう。';
+    if(keySpotlight){
+      keySpotlight.style.display=key?'':'none';
+      if(key){
+        const k=keys.get(key),rect=k.g.querySelector('rect');
+        const box=keySpotlight.querySelector('rect');
+        for(const attr of ['x','y','width','height'])box.setAttribute(attr,Number(rect.getAttribute(attr))+(['x','y'].includes(attr)?-3:6));
+        const label=keySpotlight.querySelector('text');label.setAttribute('x',k.x);label.setAttribute('y',k.y+6);label.textContent=key==='Enter'?'Enter ↵':'⌫';
+        keySpotlight.setAttribute('data-key',key);
+      }
+    }
   }
   function update(){
     const kbd=ST.inputMode==='kbd';document.body.classList.toggle('keyboard-input',kbd);
@@ -99,7 +114,7 @@ const ShiritoriKeyboardGuide=(()=>{
   }
   function init(){
     const root=document.getElementById('keyboardGuide');
-    root.innerHTML='<div class="keyboard-guide-tools"><strong>⌨ キーボードのおてほん</strong><label>表示 <select id="typingDisplay"><option value="hands">キーと おてほんの手</option><option value="keys">キーだけ</option><option value="off">かくす</option></select></label></div><p id="typingCue" role="status" aria-live="polite"></p><p id="typingAction" aria-live="off">FとJに ひとさしゆびを おこう。</p><p id="typingHelp">パソコンのキーボードを押すと光るよ。手はおてほんの動きです。日本語キーボードの英字配列を表示しています。</p>';
+    root.innerHTML='<div class="keyboard-guide-tools"><strong>⌨ キーボードのおてほん</strong><label>表示 <select id="typingDisplay"><option value="hands">キーと おてほんの手</option><option value="keys">キーだけ</option><option value="off">かくす</option></select></label></div><p id="typingCue" role="status" aria-live="polite"><span id="typingCueKey" hidden><strong id="typingCueKeyName"></strong><small>ここを おす！</small></span><span id="typingCueText"></span></p><p id="typingAction" aria-live="off">FとJに ひとさしゆびを おこう。</p><p id="typingHelp">パソコンのキーボードを押すと光るよ。手はおてほんの動きです。日本語キーボードの英字配列を表示しています。</p>';
     select=document.getElementById('typingDisplay');
     try{const saved=localStorage.getItem('shiri-typing-guide');if(['hands','keys','off'].includes(saved))visible=saved;}catch{}
     select.value=visible;select.onchange=()=>{visible=select.value;try{localStorage.setItem('shiri-typing-guide',visible);}catch{}update();};
@@ -141,6 +156,9 @@ const ShiritoriKeyboardGuide=(()=>{
     // Keep legends readable through the translucent hands.
     const labels=node('g',{class:'typing-labels'},svg);
     keys.forEach(k=>{const t=node('text',{x:k.x,y:k.y+5},labels);t.textContent=k.label;});
+    // Draw the recommended key above the hands and legends so neither can hide it.
+    keySpotlight=node('g',{id:'typingKeySpotlight','aria-hidden':'true'},svg);
+    node('rect',{rx:9},keySpotlight);node('text',{},keySpotlight);keySpotlight.style.display='none';
     document.addEventListener('keydown',e=>{
       if(ST.inputMode!=='kbd'||e.target.id!=='kbdInput'||ST.cpuBusy||ST.gameOver)return;
       const code=eventCode(e);
@@ -148,7 +166,7 @@ const ShiritoriKeyboardGuide=(()=>{
       held.add(code);k.g.classList.add('pressed');animate();
       document.getElementById('typingAction').textContent=`${k.label} → ${fingerNames[k.finger]}`;
     },true);
-    document.addEventListener('keyup',e=>{const code=eventCode(e);held.delete(code);keys.get(code)?.g.classList.remove('pressed');animate();});
+    document.addEventListener('keyup',e=>{const code=eventCode(e);held.delete(code);keys.get(code)?.g.classList.remove('pressed');animate();refresh();});
     window.addEventListener('blur',clear);document.getElementById('kbdInput').addEventListener('blur',clear);
     document.getElementById('kbdInput').addEventListener('compositionstart',()=>{composing=true;refresh();});
     document.getElementById('kbdInput').addEventListener('compositionend',()=>{composing=false;refresh();});

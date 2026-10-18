@@ -64,11 +64,18 @@ const server=http.createServer((req,res)=>{
   assert.match(await page.locator('#typingCue').innerText(),/Backspace/);
   assert.equal(await page.locator('.hint-next').count(),0,'Empty input never asks to submit');
   await page.locator('#kbdInput').fill('すいか');assert.equal(await page.locator('[data-code=Enter].hint-next').count(),1);assert.match(await page.locator('#typingCue').innerText(),/Enter.*すいか.*つなげ/);
+  assert.ok(await page.locator('#typingCueKey').isVisible());assert.match(await page.locator('#typingCueKey').innerText(),/Enter.*\nここを おす/);
+  assert.equal(await page.locator('#typingKeySpotlight').getAttribute('data-key'),'Enter');
+  assert.equal(await page.locator('#typingKeySpotlight rect').evaluate(e=>getComputedStyle(e).fill),'rgb(26, 255, 160)','Enter shines across its whole face');
+  assert.ok(await page.locator('#typingKeySpotlight').evaluate(e=>e.parentNode.lastElementChild===e),'The bright key is drawn above the hands');
   await page.screenshot({path:path.join(out,`${width}-enter-cue.png`),fullPage:true});
   await page.locator('#kbdInput').dispatchEvent('compositionstart');assert.equal(await page.locator('.hint-next').count(),0);assert.equal(await page.locator('#typingCue').getAttribute('data-action'),'compose');
+  assert.equal(await page.locator('#typingKeySpotlight').isVisible(),false,'No connect spotlight during IME conversion');
   await page.locator('#kbdInput').dispatchEvent('keydown',{key:'Enter',code:'Enter',isComposing:true});assert.equal(await page.evaluate(()=>ST.history.length),0);await page.locator('#kbdInput').dispatchEvent('keyup',{code:'Enter'});
   await page.locator('#kbdInput').dispatchEvent('compositionend');assert.equal(await page.locator('.hint-next').count(),1);
   await page.locator('#kbdInput').fill('りんご');assert.equal(await page.locator('[data-code=Backspace].hint-edit').count(),1);assert.equal(await page.locator('.hint-next').count(),0);
+  assert.match(await page.locator('#typingCueKey').innerText(),/Backspace/);assert.equal(await page.locator('#typingKeySpotlight').getAttribute('data-key'),'Backspace');
+  assert.equal(await page.locator('#typingKeySpotlight rect').evaluate(e=>getComputedStyle(e).fill),'rgb(255, 225, 102)','Backspace shines across its whole face');
   await page.screenshot({path:path.join(out,`${width}-backspace-cue.png`),fullPage:true});
   await page.locator('#kbdInput').fill('すぷーん');assert.equal(await page.locator('#typingCue').getAttribute('data-action'),'edit');
   await page.evaluate(()=>{ST.used.add('すいか');setCurrentInput('すいか');});assert.equal(await page.locator('.hint-next').count(),0);

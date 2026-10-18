@@ -29,10 +29,14 @@
 .typing-key.pressed rect{fill:#1affa0;stroke:white;stroke-width:3}
 .typing-key text{fill:#eef9ff;font:bold 18px sans-serif;text-anchor:middle;pointer-events:none}
 .typing-key.pressed text{fill:#052a22}
-.typing-key.hint-next:not(.pressed) rect{fill:#184334;stroke:#1affa0;stroke-width:3;animation:typing-cue 1.6s ease-in-out infinite}
-.typing-key.hint-edit:not(.pressed) rect{stroke:#ffd460;stroke-width:3}
-@keyframes typing-cue{50%{stroke-opacity:.45}}
-@media(prefers-reduced-motion:reduce){.typing-key.hint-next:not(.pressed) rect{animation:none}}
+.typing-key.hint-next:not(.pressed) rect{fill:#1affa0;stroke:white;stroke-width:4}
+.typing-key.hint-edit:not(.pressed) rect{fill:#ffe166;stroke:white;stroke-width:4}
+#typingKeySpotlight{--key-light:#1affa0;pointer-events:none;filter:drop-shadow(0 0 9px var(--key-light));animation:typing-cue 1.6s ease-in-out infinite}
+#typingKeySpotlight[data-key=Backspace]{--key-light:#ffe166}
+#typingKeySpotlight rect{fill:var(--key-light);stroke:#fff;stroke-width:4}
+#typingKeySpotlight text{fill:#09251b;font:bold 22px sans-serif;text-anchor:middle}
+@keyframes typing-cue{50%{filter:drop-shadow(0 0 17px var(--key-light))}}
+@media(prefers-reduced-motion:reduce){#typingKeySpotlight{animation:none}}
 .typing-labels text{fill:white;font:bold 18px sans-serif;text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:#102138;stroke-width:3px}
 .typing-hands{pointer-events:none;opacity:.78}
 .typing-hands .palm{fill:#b9a3ee;stroke:#e2d6ff;stroke-width:2}
@@ -46,6 +50,14 @@
 #typingCue{min-height:2.8em;display:flex;align-items:center;font-size:14px;line-height:1.5;margin:6px 0;padding:7px 10px;border:1px solid #42647c;border-radius:8px;background:#17283a;color:#d8edff}
 #typingCue[data-action=connect]{border-color:#1affa0;color:#a2ffcf}
 #typingCue[data-action=edit]{border-color:#ffd460;color:#ffe09a}
+#typingCue[data-action=connect],#typingCue[data-action=edit]{gap:14px;border-width:2px;font-size:18px;font-weight:800}
+#typingCueKey{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;gap:3px;min-width:124px;min-height:64px;padding:8px;border:3px solid white;border-radius:10px;background:#1affa0;color:#09251b;box-shadow:0 0 15px #1affa077}
+#typingCueKey[hidden]{display:none}
+#typingCueKey strong{font-size:18px;white-space:nowrap}
+#typingCueKey small{font-size:14px;font-weight:900}
+#typingCue[data-action=edit] #typingCueKey{background:#ffe166;box-shadow:0 0 15px #ffe16677}
+@media(max-width:600px){#typingCue[data-action=connect],#typingCue[data-action=edit]{font-size:15px;gap:8px}#typingCueKey{min-width:108px}#typingCueKey strong{font-size:15px}}
+@media(max-width:600px){#typingCue:is([data-action=connect],[data-action=edit])~#typingHelp{display:none}}
 body.keyboard-input #writingPanel{display:none!important}
 body.keyboard-input #colCenter{overflow-y:auto}
 @media(max-width:600px){#playerBar{padding:3px 6px;gap:4px}#playerRuleLabel{display:none}.player-chip{font-size:11px}#topbar>.tb-btn{font-size:11px;padding:4px 6px}#keyboardGuide{min-height:200px;flex:1 0 240px}}
