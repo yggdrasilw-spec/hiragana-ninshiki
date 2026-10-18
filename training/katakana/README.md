@@ -101,6 +101,8 @@ SavedModelからGraphModelへ変換し、重みファイルの存在を検査し
 変換環境はTF 2.19.0／TF-DF 1.12.0／YDF 0.11.0／Protobuf 5.29.6に固定します。
 新しいYDFの生成コードがProtobuf 6系を要求して停止する問題を避け、変換前に `pip check` とprotoのimportを確認します。
 学習環境側のProtobufは変更しません。旧⑩の環境も再実行時にこの組み合わせへ揃えます。
+TensorFlow Hubが使う `pkg_resources` のため、変換環境のsetuptoolsは80.9.0に固定します。
+変換前に `pkg_resources`・YDFのproto・TensorFlow.js本体のimportまで確認します。
 変換時に `labels.json` と入力仕様も出力します。
 `model.json` と全重みファイルに加え、アプリのラベル順を72文字へ合わせる必要があります。
 旧アプリの46文字ラベルのままモデルだけを置き換えないでください。

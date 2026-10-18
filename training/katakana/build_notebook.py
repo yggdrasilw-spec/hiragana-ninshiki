@@ -280,15 +280,18 @@ subprocess.run([converter_python, '-c',
 converter_requirements = [
     'tensorflowjs==4.22.0', 'tensorflow==2.19.0', 'tf-keras==2.19.0',
     'tensorflow-decision-forests==1.12.0', 'ydf==0.11.0', 'protobuf==5.29.6',
+    'setuptools==80.9.0',  # TensorFlow Hubが使うpkg_resourcesを含む版
 ]
 run_conversion_command([converter_python, '-m', 'pip', 'install',
                         *converter_requirements], 'converter-install.log')
 run_conversion_command([converter_python, '-m', 'pip', 'check'], 'converter-dependencies.log')
 run_conversion_command([converter_python, '-c',
     'import sys, importlib.metadata as m; print(sys.version); '
-    'print({p: m.version(p) for p in ["tensorflowjs", "tensorflow", "tf-keras", "keras", "numpy", "tensorflow-decision-forests", "ydf", "protobuf"]}); '
+    'print({p: m.version(p) for p in ["tensorflowjs", "tensorflow", "tf-keras", "keras", "numpy", "tensorflow-decision-forests", "ydf", "protobuf", "setuptools"]}); '
+    'from pkg_resources import parse_version; '
     'from yggdrasil_decision_forests.dataset import data_spec_pb2; '
-    'print("YDF Protobuf import OK")'],
+    'import tensorflowjs; '
+    'print("pkg_resources / YDF Protobuf / TensorFlow.js import OK")'],
     'converter-versions.log')
 tfjs_out = Path(OUTPUT_DIR) / ('tfjs-' + stamp)
 run_conversion_command([str(converter_env / 'bin/tensorflowjs_converter'),
