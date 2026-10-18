@@ -98,6 +98,9 @@ Top1・Top5、文字別Top1と件数、混同行列、同じ清音入力での�
 SavedModelからGraphModelへ変換し、重みファイルの存在を検査します。
 ⑩は子プロセスの標準出力とエラーを画面に表示し、出力先へ `converter-install.log`、
 `converter-versions.log`、`converter-日時.log` を保存します。失敗時は変換ログ末尾で原因を確認します。
+変換環境はTF 2.19.0／TF-DF 1.12.0／YDF 0.11.0／Protobuf 5.29.6に固定します。
+新しいYDFの生成コードがProtobuf 6系を要求して停止する問題を避け、変換前に `pip check` とprotoのimportを確認します。
+学習環境側のProtobufは変更しません。旧⑩の環境も再実行時にこの組み合わせへ揃えます。
 変換時に `labels.json` と入力仕様も出力します。
 `model.json` と全重みファイルに加え、アプリのラベル順を72文字へ合わせる必要があります。
 旧アプリの46文字ラベルのままモデルだけを置き換えないでください。

@@ -275,11 +275,20 @@ if not (converter_env / 'bin/python').exists():
 converter_python = str(converter_env / 'bin/python')
 subprocess.run([converter_python, '-c',
                 'import sys; assert sys.version_info[:2] == (3, 12), "変換用環境を新しいパスで作り直してください"'], check=True)
+# TF 2.19はProtobuf<6。新しいYDFの生成済みprotoが6系を要求するため、
+# TF-DFだけでなくYDFも対応版に固定する（Protobufだけ6へ上げない）。
+converter_requirements = [
+    'tensorflowjs==4.22.0', 'tensorflow==2.19.0', 'tf-keras==2.19.0',
+    'tensorflow-decision-forests==1.12.0', 'ydf==0.11.0', 'protobuf==5.29.6',
+]
 run_conversion_command([converter_python, '-m', 'pip', 'install',
-                'tensorflowjs==4.22.0', 'tensorflow==2.19.0', 'tf-keras==2.19.0'], 'converter-install.log')
+                        *converter_requirements], 'converter-install.log')
+run_conversion_command([converter_python, '-m', 'pip', 'check'], 'converter-dependencies.log')
 run_conversion_command([converter_python, '-c',
     'import sys, importlib.metadata as m; print(sys.version); '
-    'print({p: m.version(p) for p in ["tensorflowjs", "tensorflow", "tf-keras", "keras", "numpy"]})'],
+    'print({p: m.version(p) for p in ["tensorflowjs", "tensorflow", "tf-keras", "keras", "numpy", "tensorflow-decision-forests", "ydf", "protobuf"]}); '
+    'from yggdrasil_decision_forests.dataset import data_spec_pb2; '
+    'print("YDF Protobuf import OK")'],
     'converter-versions.log')
 tfjs_out = Path(OUTPUT_DIR) / ('tfjs-' + stamp)
 run_conversion_command([str(converter_env / 'bin/tensorflowjs_converter'),
