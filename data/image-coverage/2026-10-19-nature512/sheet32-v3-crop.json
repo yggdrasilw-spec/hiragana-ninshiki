@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "34a64b34d66a2cb6606667738597009697f0b3e596fac9d410ebf6290660c1d3",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      308,
+      322
+    ],
+    [
+      620,
+      633
+    ],
+    [
+      932,
+      946
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      310,
+      320
+    ],
+    [
+      623,
+      629
+    ],
+    [
+      935,
+      941
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        6,
+        308,
+        310
+      ],
+      "edgeInkFraction": 0.06608391608391609,
+      "contentFraction": 0.34054883433415756,
+      "file": "nature512-slot-497.png",
+      "sha256": "69e63b31ff4e9bbf073570889af27f4b029dc0861c2c7b4570da1c1aee81db91"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        6,
+        620,
+        310
+      ],
+      "edgeInkFraction": 0.02768065268065268,
+      "contentFraction": 0.25263820204874604,
+      "file": "nature512-slot-498.png",
+      "sha256": "77c44143c132f8163b8bfcf8867d9c19970e5bc44fb4c7725c4028e8d3350693"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        633,
+        6,
+        932,
+        310
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9997139588100686,
+      "file": "nature512-slot-499.png",
+      "sha256": "ee145cdbcea795e578c52cbe05bc69f51738f8082177b81ce8e1417c65a5c6d7"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        946,
+        6,
+        1245,
+        310
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9999229889104031,
+      "file": "nature512-slot-500.png",
+      "sha256": "ad5daac3a285322d12ab5b318116eb2b376ea154b2808c1889b2a04acd164dd4"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        320,
+        308,
+        623
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9998117261390569,
+      "file": "nature512-slot-501.png",
+      "sha256": "cd734003ea21ee14ae5bb24da3fdc98b2729065f525d76b8fa99282a8ad60c12"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        320,
+        620,
+        623
+      ],
+      "edgeInkFraction": 0.06824284880326911,
+      "contentFraction": 0.45151394334064276,
+      "file": "nature512-slot-502.png",
+      "sha256": "dfe97de1b239ac17d8350d579e86b55c9030649b0aea3f5d9f1c0e5da7875943"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        633,
+        320,
+        932,
+        623
+      ],
+      "edgeInkFraction": 0.11841491841491841,
+      "contentFraction": 0.5193549455279977,
+      "file": "nature512-slot-503.png",
+      "sha256": "5eb29e1fdc412a44dc782cda9d73849ce69fabe05addfa71d5c31ac117f62ee5"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        946,
+        320,
+        1245,
+        623
+      ],
+      "edgeInkFraction": 0.09603729603729604,
+      "contentFraction": 0.5014845966201972,
+      "file": "nature512-slot-504.png",
+      "sha256": "986159003e862ea02e73a36b4afc8857ed61c279f32d8da57fe23e2ba8cac928"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        629,
+        308,
+        935
+      ],
+      "edgeInkFraction": 0.07032520325203252,
+      "contentFraction": 0.41473658814756326,
+      "file": "nature512-slot-505.png",
+      "sha256": "d565a6fb7bce7b4f63d21df1e39d8122c46744425fcb400a3d1bedc504c9b4e1"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        629,
+        620,
+        935
+      ],
+      "edgeInkFraction": 0.07015098722415795,
+      "contentFraction": 0.472518313813221,
+      "file": "nature512-slot-506.png",
+      "sha256": "2252848f8a6028e63e4260a77f35185bb008796f739048f93825f2750cefd9b3"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        633,
+        629,
+        932,
+        935
+      ],
+      "edgeInkFraction": 0.07060869565217391,
+      "contentFraction": 0.3427547161562507,
+      "file": "nature512-slot-507.png",
+      "sha256": "42b0f0ccb5d52d00b505b351c83def0685a4b9dc3ba241c4e93b627a54c67ec8"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        946,
+        629,
+        1245,
+        935
+      ],
+      "edgeInkFraction": 0.05402898550724638,
+      "contentFraction": 0.47168120313900364,
+      "file": "nature512-slot-508.png",
+      "sha256": "c45017f54be00ae2d0d55925e8abfb65ea391cfd007ee604ece0ce192339c7f6"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        941,
+        308,
+        1248
+      ],
+      "edgeInkFraction": 0.05397101449275362,
+      "contentFraction": 0.4764772752115078,
+      "file": "nature512-slot-509.png",
+      "sha256": "9a81cb074bd18e60bf46cb347a24ac740af75cbc7e0b952b90f7f280f0e2aa71"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        941,
+        620,
+        1248
+      ],
+      "edgeInkFraction": 0.05663768115942029,
+      "contentFraction": 0.42745338084515666,
+      "file": "nature512-slot-510.png",
+      "sha256": "c49fba823bc1d824353ec4b4264dc35d3c7435074d6badcbb9b052130ba40ccf"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        633,
+        941,
+        932,
+        1248
+      ],
+      "edgeInkFraction": 0.04716435185185185,
+      "contentFraction": 0.6657043565413485,
+      "file": "nature512-slot-511.png",
+      "sha256": "7876f785e5b6264d85be40a57db63706acbc2d3c62b924a000efdbb54424f5b0"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        946,
+        941,
+        1245,
+        1248
+      ],
+      "edgeInkFraction": 0.040393518518518516,
+      "contentFraction": 0.6536446134236815,
+      "file": "nature512-slot-512.png",
+      "sha256": "57aef9daa700ba5b5af5205d6ffe2cc9f1e083f9841e95e21944feee56fefa11"
+    }
+  ]
+}

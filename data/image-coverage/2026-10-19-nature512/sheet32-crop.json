@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "6f5fa7644c4b5aa50834ea0aca3a7436999a79c0f9adfeeed48b5670682ac711",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      9
+    ],
+    [
+      308,
+      322
+    ],
+    [
+      620,
+      634
+    ],
+    [
+      932,
+      947
+    ],
+    [
+      1244,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      310,
+      320
+    ],
+    [
+      621,
+      630
+    ],
+    [
+      935,
+      942
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        9,
+        5,
+        308,
+        310
+      ],
+      "edgeInkFraction": 0.06126596980255517,
+      "contentFraction": 0.3343056088601349,
+      "file": "nature512-slot-497.png",
+      "sha256": "6029f46b96f171021331d8aa3422be43c30c31f018bc3e8111e25fa9de644474"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        5,
+        620,
+        310
+      ],
+      "edgeInkFraction": 0.027399650959860383,
+      "contentFraction": 0.24730993508636814,
+      "file": "nature512-slot-498.png",
+      "sha256": "1a8c1cacef61d15370cc7a7de5d280a91f0250028605df8ace79d9b56afb2727"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        634,
+        5,
+        932,
+        310
+      ],
+      "edgeInkFraction": 0.02675974403723095,
+      "contentFraction": 0.2634833314996149,
+      "file": "nature512-slot-499.png",
+      "sha256": "7a7b4bf63ec8f6833c8771f8680c7685251c6854df47ad9983d04f04926b97ea"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        947,
+        5,
+        1244,
+        310
+      ],
+      "edgeInkFraction": 0.0175990675990676,
+      "contentFraction": 0.32354142518076945,
+      "file": "nature512-slot-500.png",
+      "sha256": "cdea94f6e021a587584e20461156b8fda07def5352f207cdf0c9f491c663b5a0"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        9,
+        320,
+        308,
+        621
+      ],
+      "edgeInkFraction": 0.0364327485380117,
+      "contentFraction": 0.317759086212069,
+      "file": "nature512-slot-501.png",
+      "sha256": "103fcc070fe7834c3f806227baa42dcc7934cccc190b54f751b837f17786f61b"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        320,
+        620,
+        621
+      ],
+      "edgeInkFraction": 0.06660808435852372,
+      "contentFraction": 0.4526410845280831,
+      "file": "nature512-slot-502.png",
+      "sha256": "c19278410f21ceb5993ec5da8dedc88dd39c5d8bbe5ffc5b969bdfee1a0ef564"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        634,
+        320,
+        932,
+        621
+      ],
+      "edgeInkFraction": 0.12729935559461042,
+      "contentFraction": 0.5217396151530692,
+      "file": "nature512-slot-503.png",
+      "sha256": "bd1c3b41153da22935a2669e81df6ac2935b8e51ef462c0694f7359ae952290e"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        947,
+        320,
+        1244,
+        621
+      ],
+      "edgeInkFraction": 0.10786384976525822,
+      "contentFraction": 0.5069297627437163,
+      "file": "nature512-slot-504.png",
+      "sha256": "b46ac81d97941c4d10237837b35f1320c2d79aa05ba0b9c1a1903b9d9a99d7f9"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        9,
+        630,
+        308,
+        935
+      ],
+      "edgeInkFraction": 0.07119628339140534,
+      "contentFraction": 0.4114041339985745,
+      "file": "nature512-slot-505.png",
+      "sha256": "abe72f0a5717193d7f28a79d7ce5035d017f26c2cdb5f5f607b13a77b71dc487"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        630,
+        620,
+        935
+      ],
+      "edgeInkFraction": 0.06881908086096568,
+      "contentFraction": 0.46720211244361315,
+      "file": "nature512-slot-506.png",
+      "sha256": "1389063010561fb5a03d16126d0dd931e6c8b06823d05beabdca4b9a879c8483"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        634,
+        630,
+        932,
+        935
+      ],
+      "edgeInkFraction": 0.07667248400232693,
+      "contentFraction": 0.3381670150731654,
+      "file": "nature512-slot-507.png",
+      "sha256": "edd7ff7533129c1ba9e769901faecdb480a0cd98d58d6e9e57378535ec326d79"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        947,
+        630,
+        1244,
+        935
+      ],
+      "edgeInkFraction": 0.054603729603729605,
+      "contentFraction": 0.4479549594303693,
+      "file": "nature512-slot-508.png",
+      "sha256": "c3b788c4b55fbb07ff4f1239c4b0d273e15fb1a79803b85cf5680717baac6927"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        9,
+        942,
+        308,
+        1248
+      ],
+      "edgeInkFraction": 0.05026086956521739,
+      "contentFraction": 0.4620193673902114,
+      "file": "nature512-slot-509.png",
+      "sha256": "cb6becf06e1e3ee0449c1b4d32e08ac61eb5a900a1ab56a6577a2238c42ca26e"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        942,
+        620,
+        1248
+      ],
+      "edgeInkFraction": 0.05679442508710801,
+      "contentFraction": 0.41596481993244727,
+      "file": "nature512-slot-510.png",
+      "sha256": "436706f08c803dc941d38b5d8f83b7ae64e922b484ff8e8b48cda86ac98d92b7"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        634,
+        942,
+        932,
+        1248
+      ],
+      "edgeInkFraction": 0.05481997677119629,
+      "contentFraction": 0.6680813264903277,
+      "file": "nature512-slot-511.png",
+      "sha256": "2feae1529ce532658e476eb645aaed1c40b4dea5de1259368dc14be41cb6265e"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        947,
+        942,
+        1244,
+        1248
+      ],
+      "edgeInkFraction": 0.05212332751599767,
+      "contentFraction": 0.6548161352082921,
+      "file": "nature512-slot-512.png",
+      "sha256": "f04b765a897aa2ef684af7c5ca5a32cc43d03277070a86f3eca8303b2c13e42b"
+    }
+  ]
+}

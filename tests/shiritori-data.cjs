@@ -46,9 +46,17 @@ const expected = fs.readdirSync(batchDir).filter(name => name.endsWith('.csv')).
 const { externalKeys, externalResolution } = require('../scripts/shiritori-vocabulary-lineage.cjs');
 const external = externalKeys();
 const currentKeys = new Set(csv.trim().split(/\r?\n/).slice(1).map(key));
+// Follow approved explanation edits, whose exact before/after states are
+// independently checked by historicalRows() above.
+const approvedEdits = JSON.parse(fs.readFileSync(path.join(root, 'data/dictionary-imports/history.json'), 'utf8'))
+  .filter(entry => entry.type === 'reviewed-corrections').flatMap(entry => entry.changes)
+  .filter(change => change.action === 'edit');
+const editedKey = sourceKey => approvedEdits.reduce((value, change) =>
+  value === [change.before.reading, change.before.word, change.before.meaning].join(',')
+    ? [change.after.reading, change.after.word, change.after.meaning].join(',') : value, sourceKey);
 assert.equal(additions.length, expected.filter(line => !external.has(key(line))).length);
 assert.equal(new Set(additions.map(key)).size, additions.length);
-for (const line of expected) assert.ok(external.has(key(line)) ? currentKeys.has(externalResolution(line).key) : vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported or explicitly unified: ' + line);
+for (const line of expected) assert.ok(external.has(key(line)) ? currentKeys.has(editedKey(externalResolution(line).key)) : vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported or explicitly unified: ' + line);
 for (const line of additions) { const cols = line.split(','); assert.match(cols[0], /^[ぁ-ゖー]+$/); assert.ok(cols.length >= 6 && cols.length <= 9); assert.match(cols[4], /^[123]$/); }
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/shiritori/manifest.json'), 'utf8'));
 for (const asset of manifest.assets) {

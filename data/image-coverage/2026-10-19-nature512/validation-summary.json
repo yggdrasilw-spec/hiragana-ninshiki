@@ -1,0 +1,16 @@
+{
+  "batch": "2026-10-19-nature512",
+  "natureBatchTests": "passed",
+  "generalDictionaryTests": "passed",
+  "importHistoryTests": "passed",
+  "cropUnitTests": {"passed": true, "tests": 11},
+  "desktopAndMobile": {"passed": true, "evidence": "browser-validation.json"},
+  "remoteImageIntegrity": {"passed": true, "evidence": "r2-validation.json"},
+  "visualScreenshotsInspected": ["qa-output/nature512/game-1280.png", "qa-output/nature512/catalog-1280.png", "qa-output/nature512/catalog-390.png"],
+  "wholeRepositoryImageCoverageAudit": {
+    "passed": false,
+    "reason": "The separate mythology batch still has 512 target rows without image assets.",
+    "missingIds": {"first": 13983, "last": 14494, "count": 512},
+    "natureBatchMissingImages": 0
+  }
+}
