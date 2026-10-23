@@ -13,8 +13,8 @@
  }
  function hand(){return `<div class="rl-tip">${box(0,0,12,36,16)}<i class="rl-rivet"></i><div class="rl-shoe">${box(12,10,14,16,16)}${box(12,10,4,16,16)}</div><div class="rl-digit upper">${box(0,0,30,10,16)}${box(24,10,6,7,16)}<i class="rl-knuckle"></i></div><div class="rl-digit lower">${box(0,0,30,10,16)}${box(24,-7,6,7,16)}<i class="rl-knuckle"></i></div></div>`;}
  class RobotLink {
-  constructor({enabled=()=>false}={}){
-   this.enabled=enabled;this.records=new Set();this.voices=new Set();this.clips={};this.audio=null;this.preparing=null;
+  constructor({enabled=()=>false,volume=()=>1}={}){
+   this.volume=volume;this.enabled=enabled;this.records=new Set();this.voices=new Set();this.clips={};this.audio=null;this.preparing=null;
    this.unlock=()=>{if(this.enabled())this.warmSound();};
    document.addEventListener('pointerdown',this.unlock,{capture:true});
    document.addEventListener('keydown',this.unlock,{capture:true});
@@ -24,7 +24,7 @@
    try{
     if(!this.audio){
      const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return Promise.resolve();
-     this.audio=new AC();this.mix=this.audio.createGain();this.mix.gain.value=.85;
+     this.audio=new AC();this.mix=this.audio.createGain();this.setVolume(this.volume());
      const limiter=this.audio.createDynamicsCompressor();limiter.threshold.value=-14;limiter.knee.value=12;limiter.ratio.value=4;limiter.attack.value=.003;limiter.release.value=.13;
      this.mix.connect(limiter);limiter.connect(this.audio.destination);
     }
@@ -33,8 +33,10 @@
     return this.preparing;
    }catch{return Promise.resolve();}
   }
+  setVolume(value){if(this.mix)this.mix.gain.value=.85*Math.max(0,Math.min(1,value));}
   sound(kind){
    if(!this.enabled()||!this.audio||this.audio.state!=='running'||!this.clips[kind])return;
+   this.setVolume(this.volume());
    const s=this.audio.createBufferSource(),g=this.audio.createGain(),now=this.audio.currentTime,b=this.clips[kind];s.buffer=b;s.connect(g);g.connect(this.mix);
    g.gain.setValueAtTime(0,now);g.gain.linearRampToValueAtTime(1,now+.008);g.gain.setValueAtTime(1,now+Math.max(.01,b.duration-.025));g.gain.linearRampToValueAtTime(0,now+b.duration);
    this.voices.add(s);s.onended=()=>{this.voices.delete(s);s.disconnect();g.disconnect();};s.start(now);s.stop(now+b.duration+.003);

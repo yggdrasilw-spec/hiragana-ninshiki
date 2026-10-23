@@ -678,6 +678,9 @@ button,input,select{font:inherit;color:inherit}
 
 /* toggle */
 .toggle-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.volume-setting{display:block;margin-top:16px}
+.volume-caption{display:flex;justify-content:space-between;gap:10px}
+.volume-setting input{display:block;width:100%;min-height:44px;margin:0;accent-color:var(--cyan)}
 .toggle-lbl{font-size:13px;font-weight:800}
 .toggle{
   width:46px;height:26px;border-radius:999px;
@@ -1441,6 +1444,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
           <span class="toggle-lbl">よみあげ・こうかおん</span>
           <button class="toggle" id="togVoice" onclick="toggleVoice()"></button>
         </div>
+        <label class="volume-setting" for="speechVolume"><span class="volume-caption"><span>よみあげの おんりょう</span><output id="speechVolumeValue" for="speechVolume">100%</output></span><input id="speechVolume" type="range" min="0" max="100" step="1" value="100" oninput="setAudioVolume('speechVolume',this.value)"></label>
+        <label class="volume-setting" for="effectsVolume"><span class="volume-caption"><span>こうかおんの おんりょう</span><output id="effectsVolumeValue" for="effectsVolume">100%</output></span><input id="effectsVolume" type="range" min="0" max="100" step="1" value="100" oninput="setAudioVolume('effectsVolume',this.value)"></label>
         <div class="toggle-row"><div><span class="toggle-lbl">コンテナ結合の演出を省略する</span><div class="image-policy-help">ロボットハンドの動きを待たずにつなぎます。</div></div><button type="button" class="toggle" id="togSkipLink" aria-label="コンテナ結合の演出を省略する" onclick="toggleSkipLink()"></button></div>
       </div>
     </div>
@@ -1611,7 +1616,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-grade-policy.js?v=20261016b"></script>
 <script src="shiritori-feedback-config.js?v=20261014"></script>
 <script src="shiritori-feedback.js?v=20261014"></script>
-<script src="shiritori-robot-link.js?v=20261018connect"></script>
+<script src="shiritori-robot-link.js?v=20261024volume"></script>
 <script src="shiritori-word-handwriting.js?v=20261019strokegroups"></script>
 <script src="shiritori-handwriting-review.js?v=20261017b"></script>
 <script src="shiritori-word-handwriting-ui.js?v=20261019katakana"></script>
@@ -1687,6 +1692,8 @@ const ST = {
   cpuBusy: false,
   demoRunning: false,
   voice: false,
+  speechVolume: 1,
+  effectsVolume: 1,
   inputMode: 'canvas',   // canvas | btn | kbd
   handwritingMode: 'word', // single | word
   showHandwritingProcess: false,
@@ -1766,6 +1773,9 @@ function loadSettings(){
     ST.handwritingMode=s.handwritingVersion===2&&s.handwritingMode==='single'?'single':'word';
     ST.showHandwritingProcess=s.showHandwritingProcess===true;
     if(s.voice!=null)ST.voice      = s.voice;
+    for(const key of ['speechVolume','effectsVolume']){
+      ST[key]=typeof s[key]==='number'&&Number.isFinite(s[key])?Math.max(0,Math.min(1,s[key])):1;
+    }
     if(s.statsYouWords!=null) ST.statsYouWords = s.statsYouWords;
     if(s.statsNewWords!=null) ST.statsNewWords = s.statsNewWords;
     if(s.currentInput!=null) ST.currentInput = s.currentInput;
@@ -1790,6 +1800,8 @@ function saveSettings(){
     handwritingVersion: 2,
     showHandwritingProcess: ST.showHandwritingProcess,
     voice: ST.voice,
+    speechVolume: ST.speechVolume,
+    effectsVolume: ST.effectsVolume,
     statsYouWords: ST.statsYouWords,
     statsNewWords: ST.statsNewWords,
     currentInput: ST.currentInput,
@@ -2126,9 +2138,10 @@ async function learnWord(reading, word, meaning, imagequeryEn, level){
 ═══════════════════════════════════════════════════════════ */
 function speak(text){
   if(finishSpeech)finishSpeech();
-  if(!ST.voice||!('speechSynthesis' in window))return;
+  if(!ST.voice||ST.speechVolume===0||!('speechSynthesis' in window))return;
   const u=new SpeechSynthesisUtterance(text);
   u.lang='ja-JP';
+  u.volume=ST.speechVolume;
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(u);
 }
@@ -2137,12 +2150,13 @@ let finishSpeech = null;
 function speakAsync(text, maxMs=15000){
   return new Promise(resolve=>{
     if(finishSpeech) finishSpeech();
-    if(!ST.voice||!('speechSynthesis' in window)||!text){
+    if(!ST.voice||ST.speechVolume===0||!('speechSynthesis' in window)||!text){
       resolve();
       return;
     }
     const u=new SpeechSynthesisUtterance(text);
     u.lang='ja-JP';
+    u.volume=ST.speechVolume;
     let done=false;
     const finish=()=>{if(done)return;done=true;clearTimeout(timer);if(finishSpeech===finish)finishSpeech=null;resolve();};
     const timer=setTimeout(()=>{window.speechSynthesis.cancel();finish();},maxMs);
@@ -2175,7 +2189,7 @@ async function speakDetail(word, row, speaker, isNew=false){
 
 let emergencyAudioCtx = null;
 function playEmergencyBuzzer(duration=1200){
-  if(!ST.voice)return;
+  if(!ST.voice||ST.effectsVolume===0)return;
   try{
     const AC = window.AudioContext || window.webkitAudioContext;
     if(!AC) return;
@@ -2194,7 +2208,7 @@ function playEmergencyBuzzer(duration=1200){
     osc.frequency.linearRampToValueAtTime(100, t + 0.72);
     osc.frequency.linearRampToValueAtTime(260, t + 0.98);
     gain.gain.setValueAtTime(0.0001, t);
-    gain.gain.exponentialRampToValueAtTime(0.18, t + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.18 * ST.effectsVolume, t + 0.03);
     gain.gain.exponentialRampToValueAtTime(0.0001, t + Math.max(0.45, duration / 1000));
     osc.connect(gain);
     gain.connect(ctx.destination);
@@ -2812,6 +2826,7 @@ function syncSettingsUI(){
   inputModeBtns.forEach((b,i)=>b.classList.toggle('active', i===modeMap[ST.inputMode]));
   // voice toggle
   document.getElementById('togVoice').classList.toggle('on',ST.voice);
+  syncAudioVolumeUI();
   // cpu-n toggle
   const togCpuN = document.getElementById('togCpuN');
   if(togCpuN) togCpuN.classList.toggle('on', ST.cpuAllowN);
@@ -2868,6 +2883,21 @@ function setInputMode(mode,btn){
   document.querySelectorAll('#pageSettings .im-btn:not(.cm-btn)').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   switchIn(mode);
+}
+function syncAudioVolumeUI(){
+  for(const key of ['speechVolume','effectsVolume']){
+    const percent=Math.round(ST[key]*100);
+    document.getElementById(key).value=percent;
+    document.getElementById(key+'Value').value=percent+'%';
+  }
+}
+function setAudioVolume(key,percent){
+  if(!['speechVolume','effectsVolume'].includes(key)||!Number.isFinite(Number(percent)))return;
+  ST[key]=Math.max(0,Math.min(100,Number(percent)))/100;
+  if(key==='effectsVolume')robotLink.setVolume(ST.effectsVolume);
+  for(const audio of activeVoiceAudio)audio.volume=ST.speechVolume;
+  if(key==='speechVolume'&&ST.speechVolume===0){window.speechSynthesis?.cancel();if(finishSpeech)finishSpeech();}
+  syncAudioVolumeUI();saveSettings();
 }
 function toggleVoice(){
   ST.voice=!ST.voice;saveSettings();
@@ -3368,7 +3398,7 @@ function renderCandidates(){
 /* ═══════════════════════════════════════════════════════════
    HISTORY
 ═══════════════════════════════════════════════════════════ */
-const robotLink=new window.ShiritoriRobotLink({enabled:()=>ST.voice});
+const robotLink=new window.ShiritoriRobotLink({enabled:()=>ST.voice,volume:()=>ST.effectsVolume});
 let lastLinkAnimationKey='';
 function renderLinks(animate=false){
   robotLink.cancel();
@@ -3897,15 +3927,19 @@ window.addEventListener('resize', ()=>{
 ═══════════════════════════════════════════════════════════ */
 // 同一フォルダ内の音声ファイルを再生し、再生終了 (or 読み込み失敗) で resolve する。
 // ファイルが見つからない／再生できない場合もゲーム進行を止めないよう、必ず resolve する。
+const activeVoiceAudio=new Set();
 function playSound(filename){
   return new Promise(resolve=>{
-    if(!ST.voice){ resolve(); return; } // 音声OFFのときはスキップして即 resolve
+    if(!ST.voice||ST.speechVolume===0){ resolve(); return; } // 音声OFFのときはスキップして即 resolve
     try{
       const audio = new Audio('./' + filename);
+      audio.volume=ST.speechVolume;
+      activeVoiceAudio.add(audio);
       let done = false;
       const finish = ()=>{
         if(done) return;
         done = true;
+        activeVoiceAudio.delete(audio);
         resolve();
       };
       audio.addEventListener('ended', finish, {once:true});

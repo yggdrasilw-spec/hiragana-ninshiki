@@ -45,11 +45,60 @@ const server=http.createServer((req,res)=>{
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   assert.ok(await page.evaluate(()=>{const e=document.querySelector('.lv-grid');return e.scrollWidth<=e.clientWidth;}),'All five levels fit the settings panel');
   await page.locator('[data-settings-tab="effects"]').click();
+  assert.equal(await page.locator('#speechVolume').inputValue(),'100');
+  assert.equal(await page.locator('#effectsVolume').inputValue(),'100');
+  await page.locator('#speechVolume').fill('35');
+  await page.locator('#effectsVolume').fill('65');
+  assert.equal(await page.locator('#speechVolumeValue').innerText(),'35%');
+  assert.equal(await page.locator('#effectsVolumeValue').innerText(),'65%');
+  assert.deepEqual(await page.evaluate(()=>{
+    const s=JSON.parse(localStorage.getItem('shiri-settings'));
+    return [s.speechVolume,s.effectsVolume,s.voice];
+  }),[.35,.65,false],'Volumes save independently without turning sound on');
+  await page.locator('#speechVolume').focus();await page.keyboard.press('ArrowRight');
+  assert.equal(await page.locator('#speechVolumeValue').innerText(),'36%','Keyboard adjusts the slider');
+  if(name==='desktop'){
+   const audioChecks=await page.evaluate(async()=>{
+    ST.voice=true;
+    const synth=window.speechSynthesis,originalSpeak=synth.speak,originalCancel=synth.cancel;
+    const volumes=[];
+    synth.speak=u=>{volumes.push(u.volume);queueMicrotask(()=>u.onend?.());};synth.cancel=()=>{};
+    try{
+     speak('ことば');await speakAsync('せつめい');
+     setAudioVolume('speechVolume',0);speak('むおん');await speakAsync('むおん');
+    }finally{synth.speak=originalSpeak;synth.cancel=originalCancel;}
+    setAudioVolume('speechVolume',36);
+    // Capture the actual media-element volume passed to recorded voice playback.
+    const OriginalAudio=window.Audio;let fileVolume;
+    window.Audio=class{addEventListener(){}play(){fileVolume=this.volume;return Promise.reject(new Error('fixture'));}};
+    try{await playSound('hiragana.wav');}finally{window.Audio=OriginalAudio;}
+    await robotLink.warmSound();robotLink.sound('lock');
+    const effectsGain=robotLink.mix.gain.value;
+    setAudioVolume('effectsVolume',0);const silentGain=robotLink.mix.gain.value;
+    setAudioVolume('effectsVolume',65);ST.voice=false;robotLink.mute();saveSettings();
+    return {volumes,fileVolume,effectsGain,silentGain};
+   });
+   assert.equal(audioChecks.volumes.length,2,'Zero skips speech');
+   assert.ok(audioChecks.volumes.every(v=>Math.abs(v-.36)<.00001),'Both speech paths use reading volume');
+   assert.equal(audioChecks.fileVolume,.36,'Recorded guidance uses reading volume');
+   assert.ok(Math.abs(audioChecks.effectsGain-.85*.65)<.00001,'Effects use independent gain');
+   assert.equal(audioChecks.silentGain,0,'Zero silences effects');
+  }
+  await page.screenshot({path:path.join(out,name+'-audio.png'),fullPage:true});
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Audio settings fit screen');
   assert.equal(await page.locator('#inputHint').isVisible(),true);
   assert.match(await page.locator('#inputHint').innerText(),/VOICEVOX:ずんだもん/);
   assert.equal(await page.locator('#pageGame #inputHint').count(),0);
   await page.locator('#togSkipLink').click();
   assert.equal(await page.evaluate(()=>ST.skipLinkAnimation),true);
+  if(name==='desktop'){
+   assert.deepEqual(await page.evaluate(()=>{
+    const saved=localStorage.getItem('shiri-settings');
+    const cases=[{}, {speechVolume:0,effectsVolume:0}, {speechVolume:-1,effectsVolume:4}, {speechVolume:null,effectsVolume:'bad'}];
+    const result=cases.map(s=>{localStorage.setItem('shiri-settings',JSON.stringify(s));loadSettings();return [ST.speechVolume,ST.effectsVolume];});
+    localStorage.setItem('shiri-settings',saved);loadSettings();return result;
+   }),[[1,1],[0,0],[0,1],[1,1]],'Old settings, zero and invalid volumes load safely');
+  }
   if(name==='desktop'){
    assert.deepEqual(await page.evaluate(()=>{
     const saved=localStorage.getItem('shiri-settings');
@@ -59,6 +108,9 @@ const server=http.createServer((req,res)=>{
   }
   await page.reload();await page.waitForFunction(()=>ST.wlLoaded);
   await page.locator('#noticeStart').click();
+  assert.deepEqual(await page.evaluate(()=>[ST.speechVolume,ST.effectsVolume,ST.voice]),[.36,.65,false],'Volumes persist on reload');
+  await page.evaluate(()=>{toggleVoice();toggleVoice();});
+  assert.deepEqual(await page.evaluate(()=>[ST.speechVolume,ST.effectsVolume,ST.voice]),[.36,.65,false],'Master sound switch preserves both volumes');
   assert.equal(await page.evaluate(()=>ST.skipLinkAnimation),true);
   await page.evaluate(async()=>{await launchGame();switchIn('kbd');resetGame(false);showPage('game');window.aiCalls=0;validateWithAI=async()=>{window.aiCalls++;return {ok:false,safe:false};};});
   await page.evaluate(async()=>{setCurrentInput('りんこ');await submitWord();});
