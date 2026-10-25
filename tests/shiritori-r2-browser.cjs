@@ -37,6 +37,7 @@ const server = http.createServer((req, res) => {
       await page.evaluate(() => { ST.voice = false; ST.skipLinkAnimation = true; ST.level = 5; });
       await page.locator('#titleScreen').click();
       await page.locator('#titleScreen').waitFor({ state: 'detached' });
+      if(await page.locator('#playerSetup').isVisible())await page.locator('#playerSetupForm button[type="submit"]').click();
       await page.locator('#tabKbd').click();
       for (let turn = 0; turn < 3; turn++) {
         const reading = await page.evaluate(turn => {
@@ -61,7 +62,7 @@ const server = http.createServer((req, res) => {
       await page.screenshot({ path: path.join(out, name + '-game.png'), fullPage: true });
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const history = await page.evaluate(() => ST.history.map(e => e.reading));
-      await page.locator('#gameMenu summary').click();await page.locator('#btnReset').click();
+      if(await page.locator('#gameMenu summary').count())await page.locator('#gameMenu summary').click();await page.locator('#btnReset').click();
       assert.equal(await page.evaluate(() => ST.history.length), 0);
       await page.goto(origin + '/shiritori-image-review.html');
       await page.locator('#message').filter({ hasText: '準備できました' }).waitFor();
