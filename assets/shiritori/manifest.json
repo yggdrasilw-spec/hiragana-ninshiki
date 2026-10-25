@@ -6976,12 +6976,12 @@
       "file": "common-word-432.png",
       "mode": "asset",
       "credit": "AI生成イラスト",
-      "prompt": "Create a square contact sheet with exactly SIXTEEN distinct equally sized illustrations in a precise uniform 4 by 4 grid. Reading order left to right top to bottom. All objects wholly inside their cell with ample margin, thin white gutters. Warm clean children's educational picture-book watercolor, gentle outlines, simple pale backgrounds, biologically accurate animals and plants, no human faces on animals, no text labels numbers logos watermarks. Scenes:\n1. A friendly domestic tabby cat sitting.\n2. Thin dark green rectangular sheets of dried edible nori seaweed stacked on plate.\n3. A brown wild boar with snout and short visible tusks.\n4. A bottlenose dolphin swimming in blue sea, blowhole and horizontal tail flukes.\n5. A white rabbit with long upright ears.\n6. A small brown Eurasian tree sparrow with chestnut head and black cheek spot perched.\n7. A whole yellow onion and cut half with concentric layers.\n8. Earth's moon as a detailed pale cratered sphere against dark sky, no face.\n9. A red crowned crane with long neck, long legs, white body and black flight feathers.\n10. Orange carrots with fresh green tops.\n11. A small natural gray mouse with round ears, pointed muzzle and long thin tail.\n12. A ripe red apple and cut half showing seed core.\n13. A bunch of yellow bananas with one partly peeled.\n14. A giant panda with natural black white fur eating bamboo.\n15. A tall sunflower with yellow petals and dark central disc.\n16. A natural penguin standing on rocky Antarctic shore, flippers and webbed feet.",
-      "review": "目視確認済み: A bottlenose dolphin swimming in blue sea, blowhole and horizontal tail flukes.",
+      "prompt": "Use case: scientific-educational. Edit target is the supplied 2048x2048 equal 4x4 grid template; preserve its exact dimensions, all five horizontal and five vertical pure magenta #ff00ff straight grid lines, their positions and widths. Fill each of the sixteen white cells with a clear, softly shaded Japanese children's picture-book illustration. No text, numbers, labels, watermarks. Keep every subject wholly inside its own cell: do not crop ears, tails, leaves, stems or roots. Make illustrations comfortably large without excessive empty space. White or very pale simple background. Four columns repeat the same subject order on ALL FOUR ROWS, providing four near-identical alternatives: Column 1: a human hand viewed from palm side with three fabric finger puppets (white rabbit, brown bear, grey cat) on three fingers; clear anatomically coherent hand with five fingers total; complete puppet ears visible. Column 2: one realistic bottlenose dolphin swimming horizontally to the right in clear blue water, entire body visible including snout, dorsal fin, paired pectoral fins and BOTH tail flukes; no cropped tail, no other animals. Column 3: three orange carrots with green leafy tops resting diagonally together, all tapered root tips and entire green foliage visible. Column 4: a small bunch of ripe yellow bananas plus one half-peeled banana, the entire brown joining stem of the bunch and every banana tip and peel flap visible. Each row repeats columns 1-4. These replace clipped vocabulary pictures of finger puppets, dolphin, carrots and bananas. Accuracy and complete silhouettes matter. Magenta only on grid lines. Do not create any new internal borders.\n",
+      "review": "目視確認済み: 海豚。イルカの尾びれの見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。",
       "status": "reviewed",
-      "generatedAt": "2026-10-11",
-      "sourceSheet": "sheets/2026-10-11-common-4.png",
-      "tileIndex": 4,
+      "generatedAt": "2026-10-25",
+      "sourceSheet": "sheets/clipping4-20261025-sheet01.png",
+      "tileIndex": 2,
       "aliases": [
         {
           "id": 429,
@@ -6989,15 +6989,36 @@
           "reading": "いるか",
           "word": "海豚",
           "meaning": "海にすむ哺乳類。",
-          "reuseReason": "語義に合わせて新規生成した専用画像。",
-          "sourceReview": "目視確認済み: A bottlenose dolphin swimming in blue sea, blowhole and horizontal tail flukes."
+          "reuseReason": "元の共有先全語義を維持し、再生成画像との対応を確認。",
+          "sourceReview": "目視確認済み: 海豚。イルカの尾びれの見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。"
         }
       ],
-      "integration": {
-        "sourceCommit": "a8605da",
-        "sourceRowId": 432,
-        "currentId": 432
-      }
+      "lastCorrectedAt": "2026-10-25",
+      "cropValidation": "data/image-coverage/2026-10-25-clipping4/sheet01-crop.json",
+      "cropBox": [
+        321,
+        5,
+        621,
+        311
+      ],
+      "cropChecks": {
+        "tileIndex": 2,
+        "cropBox": [
+          321,
+          5,
+          621,
+          311
+        ],
+        "edgeInkFraction": 0.7381365740740741,
+        "contentFraction": 0.934041394335512,
+        "file": "clipping4-20261025-word-429.png",
+        "sha256": "f847bc132ba8968cad386f4c452cee2b823c94679ee7ba1d37525aec7b1fdf77"
+      },
+      "cropMethod": "magenta-grid-lines-only-v4",
+      "sha256": "f847bc132ba8968cad386f4c452cee2b823c94679ee7ba1d37525aec7b1fdf77",
+      "validatedTile": "clipping4-20261025-word-429.png",
+      "replacesSha256": "dec87c7e79142d7b664917d41af79d16f1c0169e37f1b16f018702cd21e95665",
+      "correctionReason": "イルカの尾びれの見切れ"
     },
     {
       "file": "complete-0438.png",
@@ -53288,12 +53309,12 @@
       "file": "common-word-4214.png",
       "mode": "asset",
       "credit": "AI生成イラスト",
-      "prompt": "Create a square contact sheet with exactly SIXTEEN distinct equally sized illustrations in a precise uniform 4 by 4 grid. Reading order left to right top to bottom. All objects wholly inside their cell with ample margin, thin white gutters. Warm clean children's educational picture-book watercolor, gentle outlines, simple pale backgrounds, biologically accurate animals and plants, no human faces on animals, no text labels numbers logos watermarks. Scenes:\n1. A friendly domestic tabby cat sitting.\n2. Thin dark green rectangular sheets of dried edible nori seaweed stacked on plate.\n3. A brown wild boar with snout and short visible tusks.\n4. A bottlenose dolphin swimming in blue sea, blowhole and horizontal tail flukes.\n5. A white rabbit with long upright ears.\n6. A small brown Eurasian tree sparrow with chestnut head and black cheek spot perched.\n7. A whole yellow onion and cut half with concentric layers.\n8. Earth's moon as a detailed pale cratered sphere against dark sky, no face.\n9. A red crowned crane with long neck, long legs, white body and black flight feathers.\n10. Orange carrots with fresh green tops.\n11. A small natural gray mouse with round ears, pointed muzzle and long thin tail.\n12. A ripe red apple and cut half showing seed core.\n13. A bunch of yellow bananas with one partly peeled.\n14. A giant panda with natural black white fur eating bamboo.\n15. A tall sunflower with yellow petals and dark central disc.\n16. A natural penguin standing on rocky Antarctic shore, flippers and webbed feet.",
-      "review": "目視確認済み: 元シートのコマ内のみを抽出。必要な絵の欠けと隣コマ混入を修正。",
+      "prompt": "Use case: scientific-educational. Edit target is the supplied 2048x2048 equal 4x4 grid template; preserve its exact dimensions, all five horizontal and five vertical pure magenta #ff00ff straight grid lines, their positions and widths. Fill each of the sixteen white cells with a clear, softly shaded Japanese children's picture-book illustration. No text, numbers, labels, watermarks. Keep every subject wholly inside its own cell: do not crop ears, tails, leaves, stems or roots. Make illustrations comfortably large without excessive empty space. White or very pale simple background. Four columns repeat the same subject order on ALL FOUR ROWS, providing four near-identical alternatives: Column 1: a human hand viewed from palm side with three fabric finger puppets (white rabbit, brown bear, grey cat) on three fingers; clear anatomically coherent hand with five fingers total; complete puppet ears visible. Column 2: one realistic bottlenose dolphin swimming horizontally to the right in clear blue water, entire body visible including snout, dorsal fin, paired pectoral fins and BOTH tail flukes; no cropped tail, no other animals. Column 3: three orange carrots with green leafy tops resting diagonally together, all tapered root tips and entire green foliage visible. Column 4: a small bunch of ripe yellow bananas plus one half-peeled banana, the entire brown joining stem of the bunch and every banana tip and peel flap visible. Each row repeats columns 1-4. These replace clipped vocabulary pictures of finger puppets, dolphin, carrots and bananas. Accuracy and complete silhouettes matter. Magenta only on grid lines. Do not create any new internal borders.\n",
+      "review": "目視確認済み: ニンジン。ニンジンの葉と根の先端の見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。",
       "status": "reviewed",
-      "generatedAt": "2026-10-11",
-      "sourceSheet": "sheets/2026-10-11-common-4.png",
-      "tileIndex": 10,
+      "generatedAt": "2026-10-25",
+      "sourceSheet": "sheets/clipping4-20261025-sheet01.png",
+      "tileIndex": 3,
       "aliases": [
         {
           "id": 4185,
@@ -53301,24 +53322,36 @@
           "reading": "にんじん",
           "word": "ニンジン",
           "meaning": "根を食べる野菜。オレンジ色のものがよく知られる。",
-          "reuseReason": "今回の共有先全語義との対応を確認。",
-          "sourceReview": "目視確認済み: 元シートのコマ内のみを抽出。必要な絵の欠けと隣コマ混入を修正。"
+          "reuseReason": "元の共有先全語義を維持し、再生成画像との対応を確認。",
+          "sourceReview": "目視確認済み: ニンジン。ニンジンの葉と根の先端の見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。"
         }
       ],
-      "integration": {
-        "sourceCommit": "a8605da",
-        "sourceRowId": 4214,
-        "currentId": 4213
-      },
-      "sourceType": "recropped-generated-sheet",
+      "lastCorrectedAt": "2026-10-25",
+      "cropValidation": "data/image-coverage/2026-10-25-clipping4/sheet01-crop.json",
       "cropBox": [
-        319,
-        614,
-        623,
-        895
+        633,
+        5,
+        936,
+        311
       ],
-      "lastCorrectedAt": "2026-10-12",
-      "sha256": "ef56d2e89257504750045a42a8a15e163b45b9529f04ab68b6f618f4166a32e1"
+      "cropChecks": {
+        "tileIndex": 3,
+        "cropBox": [
+          633,
+          5,
+          936,
+          311
+        ],
+        "edgeInkFraction": 0.04294761082325849,
+        "contentFraction": 0.4927522163981104,
+        "file": "clipping4-20261025-word-4185.png",
+        "sha256": "d9700ce4c90077a982431ced19c18457e2cc4e8922115acbfd45798e80e30784"
+      },
+      "cropMethod": "magenta-grid-lines-only-v4",
+      "sha256": "d9700ce4c90077a982431ced19c18457e2cc4e8922115acbfd45798e80e30784",
+      "validatedTile": "clipping4-20261025-word-4185.png",
+      "replacesSha256": "ef56d2e89257504750045a42a8a15e163b45b9529f04ab68b6f618f4166a32e1",
+      "correctionReason": "ニンジンの葉と根の先端の見切れ"
     },
     {
       "reading": "にんめい",
@@ -55948,12 +55981,12 @@
       "file": "common-word-4591.png",
       "mode": "asset",
       "credit": "AI生成イラスト",
-      "prompt": "Create a square contact sheet with exactly SIXTEEN distinct equally sized illustrations in a precise uniform 4 by 4 grid. Reading order left to right top to bottom. All objects wholly inside their cell with ample margin, thin white gutters. Warm clean children's educational picture-book watercolor, gentle outlines, simple pale backgrounds, biologically accurate animals and plants, no human faces on animals, no text labels numbers logos watermarks. Scenes:\n1. A friendly domestic tabby cat sitting.\n2. Thin dark green rectangular sheets of dried edible nori seaweed stacked on plate.\n3. A brown wild boar with snout and short visible tusks.\n4. A bottlenose dolphin swimming in blue sea, blowhole and horizontal tail flukes.\n5. A white rabbit with long upright ears.\n6. A small brown Eurasian tree sparrow with chestnut head and black cheek spot perched.\n7. A whole yellow onion and cut half with concentric layers.\n8. Earth's moon as a detailed pale cratered sphere against dark sky, no face.\n9. A red crowned crane with long neck, long legs, white body and black flight feathers.\n10. Orange carrots with fresh green tops.\n11. A small natural gray mouse with round ears, pointed muzzle and long thin tail.\n12. A ripe red apple and cut half showing seed core.\n13. A bunch of yellow bananas with one partly peeled.\n14. A giant panda with natural black white fur eating bamboo.\n15. A tall sunflower with yellow petals and dark central disc.\n16. A natural penguin standing on rocky Antarctic shore, flippers and webbed feet.",
-      "review": "目視確認済み: A bunch of yellow bananas with one partly peeled.",
+      "prompt": "Use case: scientific-educational. Edit target is the supplied 2048x2048 equal 4x4 grid template; preserve its exact dimensions, all five horizontal and five vertical pure magenta #ff00ff straight grid lines, their positions and widths. Fill each of the sixteen white cells with a clear, softly shaded Japanese children's picture-book illustration. No text, numbers, labels, watermarks. Keep every subject wholly inside its own cell: do not crop ears, tails, leaves, stems or roots. Make illustrations comfortably large without excessive empty space. White or very pale simple background. Four columns repeat the same subject order on ALL FOUR ROWS, providing four near-identical alternatives: Column 1: a human hand viewed from palm side with three fabric finger puppets (white rabbit, brown bear, grey cat) on three fingers; clear anatomically coherent hand with five fingers total; complete puppet ears visible. Column 2: one realistic bottlenose dolphin swimming horizontally to the right in clear blue water, entire body visible including snout, dorsal fin, paired pectoral fins and BOTH tail flukes; no cropped tail, no other animals. Column 3: three orange carrots with green leafy tops resting diagonally together, all tapered root tips and entire green foliage visible. Column 4: a small bunch of ripe yellow bananas plus one half-peeled banana, the entire brown joining stem of the bunch and every banana tip and peel flap visible. Each row repeats columns 1-4. These replace clipped vocabulary pictures of finger puppets, dolphin, carrots and bananas. Accuracy and complete silhouettes matter. Magenta only on grid lines. Do not create any new internal borders.\n",
+      "review": "目視確認済み: バナナ。バナナの房の軸の見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。",
       "status": "reviewed",
-      "generatedAt": "2026-10-11",
-      "sourceSheet": "sheets/2026-10-11-common-4.png",
-      "tileIndex": 13,
+      "generatedAt": "2026-10-25",
+      "sourceSheet": "sheets/clipping4-20261025-sheet01.png",
+      "tileIndex": 4,
       "aliases": [
         {
           "id": 4562,
@@ -55961,15 +55994,36 @@
           "reading": "ばなな",
           "word": "バナナ",
           "meaning": "黄色い皮をむいて食べる、細長い果物。",
-          "reuseReason": "語義に合わせて新規生成した専用画像。",
-          "sourceReview": "目視確認済み: A bunch of yellow bananas with one partly peeled."
+          "reuseReason": "元の共有先全語義を維持し、再生成画像との対応を確認。",
+          "sourceReview": "目視確認済み: バナナ。バナナの房の軸の見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。"
         }
       ],
-      "integration": {
-        "sourceCommit": "a8605da",
-        "sourceRowId": 4591,
-        "currentId": 4590
-      }
+      "lastCorrectedAt": "2026-10-25",
+      "cropValidation": "data/image-coverage/2026-10-25-clipping4/sheet01-crop.json",
+      "cropBox": [
+        947,
+        5,
+        1245,
+        311
+      ],
+      "cropChecks": {
+        "tileIndex": 4,
+        "cropBox": [
+          947,
+          5,
+          1245,
+          311
+        ],
+        "edgeInkFraction": 0.04088269454123113,
+        "contentFraction": 0.5619489406500855,
+        "file": "clipping4-20261025-word-4562.png",
+        "sha256": "a1d7cf012288567c2c5f3a21b0ae81ae08b651ec37168c258471abb31c5b783a"
+      },
+      "cropMethod": "magenta-grid-lines-only-v4",
+      "sha256": "a1d7cf012288567c2c5f3a21b0ae81ae08b651ec37168c258471abb31c5b783a",
+      "validatedTile": "clipping4-20261025-word-4562.png",
+      "replacesSha256": "6c432c9d4b1faac81f96e10a60c1f031cece4e39cff74d3f32377dd3f33751a8",
+      "correctionReason": "バナナの房の軸の見切れ"
     },
     {
       "reading": "ばら",
@@ -62970,12 +63024,12 @@
       "file": "additional-yubiningyou.png",
       "mode": "asset",
       "credit": "AI生成イラスト",
-      "prompt": "Create one square 4 by 4 contact sheet containing exactly sixteen equally sized square illustrations. Precise regular grid, narrow white gutters, each scene entirely within its own cell. Row-major left-to-right top-to-bottom ordering below. Warm clean children's picture-book watercolor, soft colors, gentle outlines, simple off-white backgrounds, large clear subjects legible as 256px vocabulary cards. No text, letters, labels, numerals, captions, logos, watermarks or tile numbers anywhere. Anatomically plausible hands. Each cell illustrates exactly its own concept, no mixing between cells.\nCell 1: A child giving a wrapped farewell gift to a friend departing with a suitcase; both warmly smiling.\nCell 2: A bowl of transparent thin glass noodles, some held above the bowl with chopsticks. Clearly food.\nCell 3: Gentle spring rain falling onto cherry blossoms and fresh green buds outdoors; no food.\nCell 4: A baseball pitcher on the mound winding up to throw a baseball toward home plate; glove and ball visible.\nCell 5: A clear water pitcher with a prominent handle and pouring spout, pouring water into a glass; no baseball.\nCell 6: A seated adult ventriloquist holding a small wooden puppet on one knee; puppet mouth open as if speaking, adult lips closed.\nCell 7: A blindfolded child placing loose paper eyes and a nose onto a large outline of a smiling face on the floor for a Japanese New Year game.\nCell 8: Close-up of a green bamboo stalk showing several clearly swollen ring-shaped nodes dividing the stalk.\nCell 9: A bright orange marine buoy floating upright in water near a small boat; clearly an anchored floating marker.\nCell 10: Close-up of a red tomato with its green star-shaped calyx prominently emphasized; the leafy attachment visible.\nCell 11: An elementary clepsydra water clock: upper transparent vessel dripping water slowly into a lower measuring vessel with evenly spaced tick marks but no digits, on a wooden frame. Not an hourglass.\nCell 12: At a fork in a forest path, a wooden signpost with two blank arrow-shaped boards indicating the two paths.\nCell 13: A person wearing a traditional Japanese straw rain cape made of overlapping long straw hanging from shoulders, broad straw hat, gentle rain.\nCell 14: Close-up of a child's hand with three tiny cloth animal finger puppets fitted over fingertips, clear fingers and miniature puppets.\nCell 15: A traditional Japanese ramune glass soda bottle with marble trapped in pinched neck, filled with pale blue fizz, alongside a glass. No labels.\nCell 16: A small dish of pastel round pressed-sugar ramune candies with powdery texture, several scattered beside it; no bottle.",
-      "review": "目視確認済み: Close-up of a child's hand with three tiny cloth animal finger puppets fitted over fingertips, clear fingers and miniature puppets.",
+      "prompt": "Use case: scientific-educational. Edit target is the supplied 2048x2048 equal 4x4 grid template; preserve its exact dimensions, all five horizontal and five vertical pure magenta #ff00ff straight grid lines, their positions and widths. Fill each of the sixteen white cells with a clear, softly shaded Japanese children's picture-book illustration. No text, numbers, labels, watermarks. Keep every subject wholly inside its own cell: do not crop ears, tails, leaves, stems or roots. Make illustrations comfortably large without excessive empty space. White or very pale simple background. Four columns repeat the same subject order on ALL FOUR ROWS, providing four near-identical alternatives: Column 1: a human hand viewed from palm side with three fabric finger puppets (white rabbit, brown bear, grey cat) on three fingers; clear anatomically coherent hand with five fingers total; complete puppet ears visible. Column 2: one realistic bottlenose dolphin swimming horizontally to the right in clear blue water, entire body visible including snout, dorsal fin, paired pectoral fins and BOTH tail flukes; no cropped tail, no other animals. Column 3: three orange carrots with green leafy tops resting diagonally together, all tapered root tips and entire green foliage visible. Column 4: a small bunch of ripe yellow bananas plus one half-peeled banana, the entire brown joining stem of the bunch and every banana tip and peel flap visible. Each row repeats columns 1-4. These replace clipped vocabulary pictures of finger puppets, dolphin, carrots and bananas. Accuracy and complete silhouettes matter. Magenta only on grid lines. Do not create any new internal borders.\n",
+      "review": "目視確認済み: 指人形。指人形の耳の見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。",
       "status": "reviewed",
-      "generatedAt": "2026-10-11",
-      "sourceSheet": "sheets/2026-10-11-additional-1.png",
-      "tileIndex": 14,
+      "generatedAt": "2026-10-25",
+      "sourceSheet": "sheets/clipping4-20261025-sheet01.png",
+      "tileIndex": 1,
       "aliases": [
         {
           "id": 5718,
@@ -62983,10 +63037,36 @@
           "reading": "ゆびにんぎょう",
           "word": "指人形",
           "meaning": "指にはめて動かして遊ぶ小さな人形。",
-          "reuseReason": "語義に合わせて新規生成した専用画像。",
-          "sourceReview": "目視確認済み: Close-up of a child's hand with three tiny cloth animal finger puppets fitted over fingertips, clear fingers and miniature puppets."
+          "reuseReason": "元の共有先全語義を維持し、再生成画像との対応を確認。",
+          "sourceReview": "目視確認済み: 指人形。指人形の耳の見切れを修正。対象の輪郭全体・語義・共有先を確認。罫線実測により切り出し。"
         }
-      ]
+      ],
+      "lastCorrectedAt": "2026-10-25",
+      "cropValidation": "data/image-coverage/2026-10-25-clipping4/sheet01-crop.json",
+      "cropBox": [
+        5,
+        5,
+        309,
+        311
+      ],
+      "cropChecks": {
+        "tileIndex": 1,
+        "cropBox": [
+          5,
+          5,
+          309,
+          311
+        ],
+        "edgeInkFraction": 0.0953448275862069,
+        "contentFraction": 0.4934640522875817,
+        "file": "clipping4-20261025-word-5718.png",
+        "sha256": "c1238a1b7d3b0103516450068d8f7a47194fc99f4e0b471080491155cb733290"
+      },
+      "cropMethod": "magenta-grid-lines-only-v4",
+      "sha256": "c1238a1b7d3b0103516450068d8f7a47194fc99f4e0b471080491155cb733290",
+      "validatedTile": "clipping4-20261025-word-5718.png",
+      "replacesSha256": "f8b2e5249c89811ed6abc11d84a4f5d0c5f7a0fbd8f8edcb94a50f974c97fb06",
+      "correctionReason": "指人形の耳の見切れ"
     },
     {
       "reading": "ゆびわ",
