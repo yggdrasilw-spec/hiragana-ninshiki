@@ -4,7 +4,8 @@ const base='data/dictionary-imports/2026-10-25-seven-categories1024',initial='da
 const first=json(initial+'.review.json'),next=json(base+'.review.json'),all=[...first,...next],summary=json(base+'.summary.json');
 assert.equal(first.length,149);assert.equal(next.length,875);assert.equal(all.length,1024);assert.equal(summary.registered,true);
 const csv=read('whitelist.csv'),lines=csv.trimEnd().split(/\r?\n/),header=lines[0].split(','),rows=lines.slice(1).map(l=>Object.fromEntries(l.split(',').map((v,i)=>[header[i],v])));
-assert.equal(rows.length,16574);assert.equal(sha(csv),summary.afterSha256);
+assert.equal(rows.length,16574);const history=json('data/dictionary-imports/history.json');assert.equal(sha(csv),history.at(-1).afterSha256);assert.ok(history.some(x=>x.afterSha256===summary.afterSha256&&x.addedLines?.length===875));
+const illustrated=new Map(json('data/image-coverage/2026-10-25-seven512-images/plan.json').items.map(x=>[x.id,'assets/shiritori/'+x.filename]));assert.equal(illustrated.size,512);
 // The entire dictionary before this user's addition remains byte-identical.
 const baseline=lines.slice(0,15551).join('\n')+'\n';assert.equal(sha(baseline),json(initial+'.summary.json').beforeSha256);
 assert.equal(new Set(all.map(x=>[x.reading,x.word,x.meaning].join('\t'))).size,1024);
@@ -12,11 +13,11 @@ const grades=json('data/shiritori-grade-review.json'),coverage=json('data/image-
 assert.equal(grades.length,rows.length);assert.equal(coverage.length,rows.length);assert.equal(updates.entries.length,rows.length);assert.equal(updates.csvSha256,sha(csv));
 for(const x of all){
  const row=rows[x.id-1];for(const k of ['reading','word','meaning'])assert.equal(row[k],x[k]);
- assert.equal(row.image_mode,'none');assert.equal(row.image_asset,'');assert.equal(grades[x.id-1].level,x.grade);
- assert.deepEqual(updates.entries[x.id-1].text,[x.reading,x.word,x.meaning]);assert.equal(coverage[x.id-1].status,'explanation-only');
+ assert.equal(row.image_mode,illustrated.has(x.id)?'asset':'none');assert.equal(row.image_asset,illustrated.get(x.id)||'');assert.equal(grades[x.id-1].level,x.grade);
+ assert.deepEqual(updates.entries[x.id-1].text,[x.reading,x.word,x.meaning]);assert.equal(coverage[x.id-1].status,illustrated.has(x.id)?'covered':'explanation-only');
  assert.ok(x.lexicalSource&&x.meaningReason&&x.ageReason);
 }
-const history=json('data/dictionary-imports/history.json');assert.equal(history.at(-1).afterSha256,sha(csv));assert.equal(history.at(-1).addedLines.length,875);
+assert.equal(history.at(-1).afterSha256,sha(csv));assert.equal(history.find(x=>x.afterSha256===summary.afterSha256).addedLines.length,875);
 assert.deepEqual(all.reduce((out,x)=>(out[x.category]=(out[x.category]||0)+1,out),{}),{sumo:82,judo:100,karate:53,pokemon:366,koji:89,proverb:130,compound:204});
 const lexical=json(base+'.lexical-checks.json');assert.equal(lexical.officialSumoCount,82);assert.equal(lexical.martial.filter(x=>x.category==='judo'&&x.verified).length,100);
 const get=r=>all.find(x=>x.reading===r&&x.category==='pokemon');

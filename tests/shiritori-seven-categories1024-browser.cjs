@@ -4,6 +4,7 @@ const root=path.resolve(__dirname,'..');
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
 const items=[...read('data/dictionary-imports/2026-10-25-seven-categories.review.json'),...read('data/dictionary-imports/2026-10-25-seven-categories1024.review.json')];
 assert.equal(items.length,1024);
+const pictureMap=new Map(JSON.parse(fs.readFileSync(path.join(root,'data/image-coverage/2026-10-25-seven512-images/plan.json'),'utf8')).items.map(x=>[x.id,'assets/shiritori/'+x.filename]));for(const x of items)x.expectedImage=pictureMap.get(x.id)||null;
 const out=path.join(root,'qa-output/seven-categories1024');fs.mkdirSync(out,{recursive:true});
 const server=http.createServer((req,res)=>{
  const file=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);
@@ -16,7 +17,7 @@ try{for(const width of [1280,390]){
  const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'}),errors=[];
  page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,contentType:'application/json',body:'{}'}));
- await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
+ await require('./shiritori-r2-fixture.cjs')(page);await page.goto(origin+'/shiritori.html');await page.waitForFunction(()=>ST.wlLoaded);
  if(await page.locator('#noticeStart').isVisible())await page.locator('#noticeStart').click();
  await page.evaluate(()=>{ST.voice=false;ST.level=5;document.getElementById('titleScreen')?.remove();switchIn('kbd');});
  if(width<769)await page.locator('#mobTabRight').click();
@@ -31,7 +32,7 @@ try{for(const width of [1280,390]){
    await showDetail(x.reading,selected);await new Promise(r=>setTimeout(r,0));clearInterval(ST.homoTimer);clearTimeout(ST.homoTimeout);
    const text=Array.from(document.querySelectorAll('.det-summary,.det-details')).map(e=>e.textContent).join('');
    if(document.querySelector('.det-word')?.textContent!==x.word||text!==x.meaning)throw Error('Wrong detail: '+x.word);
-   if(document.querySelector('#detImgBox .img-main')||!document.querySelector('#detImgBox')?.textContent.includes('せつめいだけ'))throw Error('Wrong image mode: '+x.word);
+   if(x.expectedImage){const deadline=Date.now()+15000;for(;;){const picture=document.querySelector('#detImgBox .img-main');if(picture?.src.endsWith(x.expectedImage)&&picture.complete&&picture.naturalWidth===256)break;if(Date.now()>deadline)throw Error('Missing assigned image: '+x.word);await new Promise(r=>setTimeout(r,20));}}else if(document.querySelector('#detImgBox .img-main')||!document.querySelector('#detImgBox')?.textContent.includes('せつめいだけ'))throw Error('Wrong image mode: '+x.word);
    if(document.documentElement.scrollWidth>innerWidth)throw Error('Horizontal overflow: '+x.word);
   }return items.length;},items.slice(offset,offset+64));assert.equal(count,64);
  }

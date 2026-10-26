@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-lines-only-v4",
+  "sourceSha256": "7d16ac87604e59d75a639c91b1c4f86c4ac5db5da93db5e832c97689e1add9cf",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      10
+    ],
+    [
+      311,
+      322
+    ],
+    [
+      624,
+      630
+    ],
+    [
+      936,
+      947
+    ],
+    [
+      1244,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      321
+    ],
+    [
+      624,
+      631
+    ],
+    [
+      936,
+      943
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        10,
+        6,
+        311,
+        311
+      ],
+      "edgeInkFraction": 0.8988425925925926,
+      "contentFraction": 0.9136648330700943,
+      "file": "seven512-word-15652.png",
+      "sha256": "dc582d1b54f32678c2e9c4ddbcb5ed72a0670665f2424ab0389baecba130b622"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        322,
+        6,
+        624,
+        311
+      ],
+      "edgeInkFraction": 0.9320623916811092,
+      "contentFraction": 0.973010530886983,
+      "file": "seven512-word-15653.png",
+      "sha256": "5551157a62a67733e7623460adc84c5d12ec14ba81a9363cd97ad97429ff809c"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        630,
+        6,
+        936,
+        311
+      ],
+      "edgeInkFraction": 0.7967871485943775,
+      "contentFraction": 0.9327547412407586,
+      "file": "seven512-word-15654.png",
+      "sha256": "860a585b156d7c26741f5b9591e9a2e93ab5264deac6b2dcbf881d201108ebc6"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        947,
+        6,
+        1244,
+        311
+      ],
+      "edgeInkFraction": 0.8628787878787879,
+      "contentFraction": 0.8479439200750676,
+      "file": "seven512-word-15655.png",
+      "sha256": "93f162703b6429146bc823d1745acae5371eba3e2789599b1689395aafd58a79"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        10,
+        321,
+        311,
+        624
+      ],
+      "edgeInkFraction": 0.8659698025551684,
+      "contentFraction": 0.8277030360843394,
+      "file": "seven512-word-15656.png",
+      "sha256": "a5492bf35bbfb7ef9393e6e9ccd6de77f740144058becff002fd2354f25f47fc"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        322,
+        321,
+        624,
+        624
+      ],
+      "edgeInkFraction": 0.9398840579710145,
+      "contentFraction": 0.9512053854392062,
+      "file": "seven512-word-15657.png",
+      "sha256": "43b380ef4f0544cd4902a952e9ce3785bb2a4cb20a59a1453a8a449cbdfac963"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        630,
+        321,
+        936,
+        624
+      ],
+      "edgeInkFraction": 0.9237190558434082,
+      "contentFraction": 0.8057011583511292,
+      "file": "seven512-word-15658.png",
+      "sha256": "8138bce8bb983e85e19a5164c1fba8c8e6e0d09a8464f10bd40f95aa00b45c23"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        947,
+        321,
+        1244,
+        624
+      ],
+      "edgeInkFraction": 0.3827485380116959,
+      "contentFraction": 0.6612994632796613,
+      "file": "seven512-word-15659.png",
+      "sha256": "8f1683e48fd6a1ac854d7473ff2723568b7747b75cd82d6b145ab6caaa8955a4"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        10,
+        631,
+        311,
+        936
+      ],
+      "edgeInkFraction": 0.06099537037037037,
+      "contentFraction": 0.47161919285441967,
+      "file": "seven512-word-15660.png",
+      "sha256": "aa1ebe08f515e9e94826ff97e862a141794ac801c757903b3cb998799e1c6c86"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        322,
+        631,
+        624,
+        936
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9108240147649549,
+      "file": "seven512-word-15661.png",
+      "sha256": "169b58a7547032f6b6de219820d056468534e440244ba4e13e87eb8fc97d4313"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        630,
+        631,
+        936,
+        936
+      ],
+      "edgeInkFraction": 0.9677567412507172,
+      "contentFraction": 0.9700310725383049,
+      "file": "seven512-word-15662.png",
+      "sha256": "4d38b66ecf5f1d682da7238223b6c7c4243da894dbcde64c53bdd35155ce3d58"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        947,
+        631,
+        1244,
+        936
+      ],
+      "edgeInkFraction": 0.787004662004662,
+      "contentFraction": 0.8731026108075288,
+      "file": "seven512-word-15663.png",
+      "sha256": "0b566778dd189b23b6a589300b44f9508ad44758bf07c84faac6826c3c7749d6"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        10,
+        943,
+        311,
+        1248
+      ],
+      "edgeInkFraction": 0.8965277777777778,
+      "contentFraction": 0.8719024018299657,
+      "file": "seven512-word-15664.png",
+      "sha256": "96604497f3d9e284af8118b6188bf70ec73e4d0c121ac24c6fd44e9ad368d9a2"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        322,
+        943,
+        624,
+        1248
+      ],
+      "edgeInkFraction": 0.9991334488734835,
+      "contentFraction": 0.9935837585495603,
+      "file": "seven512-word-15665.png",
+      "sha256": "cf8c4aae4878befeb6bbfc9f9ec826d6d34f3e55d20c3413a632cc7ddb932074"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        630,
+        943,
+        936,
+        1248
+      ],
+      "edgeInkFraction": 0.9335054503729202,
+      "contentFraction": 0.9709953926925962,
+      "file": "seven512-word-15666.png",
+      "sha256": "78400a8737399c988adaec94c7f13df298b6127f91e1b11cad995e716d6c3fde"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        947,
+        943,
+        1244,
+        1248
+      ],
+      "edgeInkFraction": 0.9831585081585081,
+      "contentFraction": 0.9484241320306894,
+      "file": "seven512-word-15667.png",
+      "sha256": "47e0bec221e8eff542fbe3aa9b175c7004bfb21cc193918d7bf7af70eb9babd2"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "date": "2026-10-27",
+  "checks": [
+    {
+      "test": "tests/shiritori-seven512-images.py",
+      "passed": true,
+      "assignedImages": 512,
+      "unchangedVocabularyRows": 16574,
+      "unchangedEarlierAssets": 12027,
+      "sourceAndTileHashesMatched": true,
+      "gradeLevelsPreserved": true
+    },
+    {
+      "test": "scripts/audit-shiritori-image-coverage.py",
+      "passed": true,
+      "assets": 12539,
+      "explicitExplanationOnlyTargets": 1024,
+      "missingRequiredImages": 0,
+      "brokenAssetReferences": 0
+    },
+    {
+      "test": "tests/shiritori-data.cjs",
+      "passed": true
+    },
+    {
+      "test": "tests/shiritori-import-history.cjs",
+      "passed": true
+    },
+    {
+      "test": "tests/shiritori-import-quality.cjs",
+      "passed": true
+    },
+    {
+      "test": "tests/shiritori-seven1024.cjs",
+      "passed": true,
+      "priorVocabularyEntries": 1024
+    },
+    {
+      "test": "tests/shiritori-grade-policy.py",
+      "passed": true,
+      "assigned": 16574
+    },
+    {
+      "test": "scripts/verify-shiritori-seven512-r2.cjs",
+      "passed": true,
+      "publicImagesDownloadedAndSha256Matched": 512
+    }
+  ]
+}

@@ -11,14 +11,18 @@ manifest=json.loads((root/'assets/shiritori/manifest.json').read_text(encoding='
 assert len(rows)==len(report),'Vocabulary changed: refresh the coverage review.'
 assets={a['file']:a for a in manifest['assets']}
 assert len(assets)==len(manifest['assets']),'Duplicate manifest asset names.'
-targets=0;broken=[];missing=[];stale=[];referenced=set()
+targets=0;explanation_only=0;broken=[];missing=[];stale=[];referenced=set()
 for i,(row,entry) in enumerate(zip(rows,report),1):
     assert entry['id']==i
     if any(row[k]!=entry[k] for k in ['reading','word','meaning','level','image_asset']):stale.append(i)
     asset=row['image_asset']
     if entry['target']:
         targets+=1
-        if not asset:missing.append({'id':i,'word':row['word']})
+        explicit_none = row['image_mode']=='none' and entry.get('status')=='explanation-only'
+        if explicit_none:
+            assert not asset, 'Explanation-only row unexpectedly has an image: '+str(i)
+            explanation_only+=1
+        elif not asset:missing.append({'id':i,'word':row['word']})
         assert entry['category'] and entry['scopeReason']
     if asset:
         assert re.fullmatch(r'assets/shiritori/[A-Za-z0-9_-]+\.(png|jpe?g|webp)',asset,re.I)
@@ -37,4 +41,4 @@ for file,entry in assets.items():
 assert not stale,f'Coverage metadata needs re-review at rows: {stale[:20]}'
 assert not missing,f'Missing action/concept assets: {missing[:20]}'
 assert not broken,f'Broken asset references: {broken[:20]}'
-print(json.dumps({'passed':True,'vocabularyRows':len(rows),'reviewedTargetRows':targets,'assets':len(assets),'missingTargetAssets':len(missing),'brokenAssetReferences':len(broken)},ensure_ascii=False))
+print(json.dumps({'passed':True,'vocabularyRows':len(rows),'reviewedTargetRows':targets,'explanationOnlyTargets':explanation_only,'assets':len(assets),'missingTargetAssets':len(missing),'brokenAssetReferences':len(broken)},ensure_ascii=False))

@@ -1,0 +1,4090 @@
+{
+  "complete": true,
+  "verificationMethod": "R2 server GET readback SHA256 and byte length",
+  "objects": 583,
+  "publicImages": 512,
+  "privateSourceSheets": 71,
+  "checks": [
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15551.png",
+      "sha256": "30c00377c1863a44d5766461cdd7192e03e7820a039ac83d96791ac457d7e119",
+      "bytes": 111465,
+      "verifiedAt": "2026-10-26T21:14:10.755Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15552.png",
+      "sha256": "2bd568bd75dea83bacc76c668372cd2024d802f7b92da91f11bef4ea1d28b49f",
+      "bytes": 104877,
+      "verifiedAt": "2026-10-26T21:14:11.570Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15553.png",
+      "sha256": "a4ee7af54f2b297bf823abe511d67a67786bad945902cd375d798c71efa153ab",
+      "bytes": 108782,
+      "verifiedAt": "2026-10-26T21:14:11.095Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15554.png",
+      "sha256": "d6f06e0d83fcf075d8687710f4264285eb0e9fd9610a67df08e8a514cb067c5a",
+      "bytes": 101606,
+      "verifiedAt": "2026-10-26T21:14:11.302Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15555.png",
+      "sha256": "e4f7bb6f3105cde77181c60588c777132a925569b1d6a62b2c08a2899b39ab8c",
+      "bytes": 109666,
+      "verifiedAt": "2026-10-26T21:14:13.083Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15556.png",
+      "sha256": "dd476c8dca8deab952e5a57e36fd9cf46e98ca5ffb659f22e00d4df18e93faaf",
+      "bytes": 107921,
+      "verifiedAt": "2026-10-26T21:14:13.417Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15557.png",
+      "sha256": "cf44af6984fc9640cca140cffefc809b690bd6e5bb8ef16eb0739f5d8df70f50",
+      "bytes": 100463,
+      "verifiedAt": "2026-10-26T21:14:13.741Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15558.png",
+      "sha256": "31bc9d6ab21e973c53a0d710690e58bfeba6d3a85235328aa0a2242e4defd863",
+      "bytes": 111114,
+      "verifiedAt": "2026-10-26T21:14:14.071Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15559.png",
+      "sha256": "f5d74d1b38213fab2162001106f71c64d5adb9896a062eeb3288458c2356dc08",
+      "bytes": 109167,
+      "verifiedAt": "2026-10-26T21:14:15.337Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15560.png",
+      "sha256": "42daf5dd4b543fe0a857b11ca02b6bf9a1183d6cea18e2ad38982d590e03321b",
+      "bytes": 111082,
+      "verifiedAt": "2026-10-26T21:14:15.639Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15561.png",
+      "sha256": "8c2616fcbe64a02c5b6708fa8d981b4880d23aabef9151a9a16ed4239b530e2d",
+      "bytes": 104358,
+      "verifiedAt": "2026-10-26T21:14:16.054Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15562.png",
+      "sha256": "c72c5bf3708a7d2acc8352fc595e3c73dd32c620e8a6c83e908f17f36de7259c",
+      "bytes": 110376,
+      "verifiedAt": "2026-10-26T21:14:16.417Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15563.png",
+      "sha256": "5f69fd03be4b8e92d70fe19888cd2922948f195af817fd1f4e0859da01f8423e",
+      "bytes": 111844,
+      "verifiedAt": "2026-10-26T21:14:17.927Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15564.png",
+      "sha256": "dbdc49e11ec598ab4077d6d020a39d78fc30de503fc2ba55063958576cd48044",
+      "bytes": 116213,
+      "verifiedAt": "2026-10-26T21:14:18.088Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15565.png",
+      "sha256": "13b034ac3e7b3a8a20c9fb523a7899a7942bc334589b7cf48368f6f02fa43935",
+      "bytes": 113738,
+      "verifiedAt": "2026-10-26T21:14:18.414Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15566.png",
+      "sha256": "5493c0d8d16193f1ec9efc3750c6298229671de052445a7f6304aac17c0bd08d",
+      "bytes": 116632,
+      "verifiedAt": "2026-10-26T21:14:18.727Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15567.png",
+      "sha256": "87b5fba5896c0a389650313fae4fddc18fb0be863f4f6f79ca09bd9476eebc0e",
+      "bytes": 111837,
+      "verifiedAt": "2026-10-26T21:14:20.359Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15568.png",
+      "sha256": "e5e7476d30c190117068cf8c8fbdd4fd832e23087e4973b27697025362f5a5b5",
+      "bytes": 109433,
+      "verifiedAt": "2026-10-26T21:14:20.533Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15569.png",
+      "sha256": "1c978bf66f3b21058198d456043ed8fc9fbb384528dc9a0484ac9908896bdb60",
+      "bytes": 110297,
+      "verifiedAt": "2026-10-26T21:14:20.814Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15570.png",
+      "sha256": "1bf16a2692a19e562897c63c2d20ea0c5defb70aeea00165bc6fbef966d8e26d",
+      "bytes": 102676,
+      "verifiedAt": "2026-10-26T21:14:21.458Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15571.png",
+      "sha256": "6a389b06cbe9361db59ee5dc8d5a17e343f12d06d5875a5592328621869e8d1b",
+      "bytes": 109272,
+      "verifiedAt": "2026-10-26T21:14:22.298Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15572.png",
+      "sha256": "ac583dbf496a3de6c90ac85151719a2d03164ffdd5125b173018fe86a10b8a1d",
+      "bytes": 107482,
+      "verifiedAt": "2026-10-26T21:14:22.888Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15573.png",
+      "sha256": "45452f9bdb591882424b8630158c36a31efe89375c31dee1321d32e1b74208c8",
+      "bytes": 104658,
+      "verifiedAt": "2026-10-26T21:14:23.149Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15574.png",
+      "sha256": "f3a6ab70863c8662c1a08980217896316d5905b98212feb9a716eccd4adbe545",
+      "bytes": 107493,
+      "verifiedAt": "2026-10-26T21:14:24.089Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15575.png",
+      "sha256": "f1a379e49dbd201427eca92b7c562a6a6a9e37bd9b3434c5c3d0918060224599",
+      "bytes": 106732,
+      "verifiedAt": "2026-10-26T21:14:24.744Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15576.png",
+      "sha256": "47b4673b1211f8e3cab815fb5cde00701ecce1bec5adb8e3f709614567b730ab",
+      "bytes": 109493,
+      "verifiedAt": "2026-10-26T21:14:24.919Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15577.png",
+      "sha256": "0fef4b4e3d1291e68b2043aff6e50cf888140d7f1f53b35cf96e9ec2867901e6",
+      "bytes": 114402,
+      "verifiedAt": "2026-10-26T21:14:25.531Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15578.png",
+      "sha256": "12ef7460e61bdb1310277bb14bfa1879534d77305ade0a481e0316db0e97e689",
+      "bytes": 107139,
+      "verifiedAt": "2026-10-26T21:14:26.377Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15579.png",
+      "sha256": "e7e68c1510296b3af55e2ad034ad229735599865bd9ac63bf5477ffa06c8a50b",
+      "bytes": 102973,
+      "verifiedAt": "2026-10-26T21:14:27.074Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15580.png",
+      "sha256": "84c094fa139b0e216e5ee6f0655277f8f7c8ace616e32aaa170d7c5ab604458d",
+      "bytes": 111108,
+      "verifiedAt": "2026-10-26T21:14:27.666Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15581.png",
+      "sha256": "5747655e4e2e3cc179476539ed8007ae2facc72f0c20a8b94fd05c49f32ae3cd",
+      "bytes": 109962,
+      "verifiedAt": "2026-10-26T21:14:28.232Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15582.png",
+      "sha256": "22ddcd91a5fa69434d53e7c32f9000206342f42df2b60ee8823947fb0671b917",
+      "bytes": 106010,
+      "verifiedAt": "2026-10-26T21:14:28.701Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15583.png",
+      "sha256": "fe774e5d036eae9f12c221fc3576a4a32481eb953344affcb71dccdcf0b8951c",
+      "bytes": 114585,
+      "verifiedAt": "2026-10-26T21:14:29.832Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15584.png",
+      "sha256": "aebc032b60df24541bd99436a7d5ff5b43044c7e8f1c944269310d43af8d7707",
+      "bytes": 110882,
+      "verifiedAt": "2026-10-26T21:14:30.052Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15585.png",
+      "sha256": "4a634b957f6cf7690ed3edd178da6333d682c05e30f0a4893e9351efe296695a",
+      "bytes": 111186,
+      "verifiedAt": "2026-10-26T21:14:30.344Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15586.png",
+      "sha256": "22bcf961f99d4221c4895dc870dcc548c4c6f5a45d53c55cc4e07a457d7494c8",
+      "bytes": 107952,
+      "verifiedAt": "2026-10-26T21:14:30.985Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15587.png",
+      "sha256": "f3f1068aae9a98311ed1b3f9e69fe45beaca0db538dabc51e920173c6e94121e",
+      "bytes": 111860,
+      "verifiedAt": "2026-10-26T21:14:31.859Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15588.png",
+      "sha256": "9fde171be40027dcf3f7f031af059755eb5b8c921c16b265876997bcf9390d4b",
+      "bytes": 111240,
+      "verifiedAt": "2026-10-26T21:14:32.503Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15589.png",
+      "sha256": "5c160d82a854470d573fe5fc4f986a0aa876b7699caae462866317f899caba89",
+      "bytes": 110374,
+      "verifiedAt": "2026-10-26T21:14:32.953Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15590.png",
+      "sha256": "c298063ecebe6ee95910de45a72c871e1dc6ace2e45e3710e0bdc9b2eeaa8cba",
+      "bytes": 110992,
+      "verifiedAt": "2026-10-26T21:14:33.657Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15599.png",
+      "sha256": "ef39e730d2948ef0d35f8226f4abae489eb0ac6247aec4a789dc9aab3e8abe3d",
+      "bytes": 83386,
+      "verifiedAt": "2026-10-26T21:14:34.463Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15600.png",
+      "sha256": "44c318b08f35fcd5aed867091f27e472675fa42c5cdabd8c22bec1b5ddb98edc",
+      "bytes": 84541,
+      "verifiedAt": "2026-10-26T21:14:35.175Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15601.png",
+      "sha256": "1059872d65bdd463b8dc70665c3a1b8c568c1c7a66508496b07aad454bada95e",
+      "bytes": 85957,
+      "verifiedAt": "2026-10-26T21:14:35.401Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15602.png",
+      "sha256": "d613cb805925e30e2c8cbf0d44a67f657cb182e661dc102dc255068bda00d271",
+      "bytes": 80928,
+      "verifiedAt": "2026-10-26T21:14:36.030Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15603.png",
+      "sha256": "e1e16c2fee0f7a2a28c32950401794ef4915278d0796f261f63050593c6056b6",
+      "bytes": 81982,
+      "verifiedAt": "2026-10-26T21:14:36.823Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15604.png",
+      "sha256": "9472023d7504d4ef2ce7e535a4b4ffd7e1a5c64c858fc21dbb96e670e930db92",
+      "bytes": 80818,
+      "verifiedAt": "2026-10-26T21:14:42.547Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15605.png",
+      "sha256": "4b9cea58b92f399d63adf66c2427a4de7fb47365fc2cd4cdda9eb75ae91d6969",
+      "bytes": 72258,
+      "verifiedAt": "2026-10-26T21:14:42.523Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15606.png",
+      "sha256": "f67e473965fbbbd4d1a02ec9c3c21bc4f990c62b9b151c614064cd28ee9cb03e",
+      "bytes": 78204,
+      "verifiedAt": "2026-10-26T21:14:43.208Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15607.png",
+      "sha256": "c766af48504d62955b24309c985e7ae09ade9a88d40c11e1bd533506eb37df7e",
+      "bytes": 77896,
+      "verifiedAt": "2026-10-26T21:14:44.699Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15608.png",
+      "sha256": "f7e28be54ee31372656f6ece155c9e728ab495cbf8c23a269179e08ef23c3a40",
+      "bytes": 74241,
+      "verifiedAt": "2026-10-26T21:14:44.621Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15609.png",
+      "sha256": "fcd3d6ae5dc420aec5adb38466f880ec9933d863c852602e03c40a68fe52225a",
+      "bytes": 83678,
+      "verifiedAt": "2026-10-26T21:14:44.920Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15610.png",
+      "sha256": "a9247395280bab0482ca0af8612b9c765ae6e8e9a915a107528b7ffbb6750b67",
+      "bytes": 87489,
+      "verifiedAt": "2026-10-26T21:14:46.310Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15611.png",
+      "sha256": "91b6ac0ed26f9372f677f783cf8f699056ec68024299f8d9f45e095a66d67034",
+      "bytes": 85938,
+      "verifiedAt": "2026-10-26T21:14:46.513Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15612.png",
+      "sha256": "d3e56d1bf2fa3516c2d0500be74d1dad0239b0b96a4c72c49707de622202671e",
+      "bytes": 87622,
+      "verifiedAt": "2026-10-26T21:14:46.824Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15613.png",
+      "sha256": "9c9c8135b7ba456c1e8f947d71565eab103b102b920cfe4cf5dc77d60aaf051c",
+      "bytes": 84272,
+      "verifiedAt": "2026-10-26T21:14:48.088Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15614.png",
+      "sha256": "0023d0099c5ddaea707b857b45f70bbc800ffca45d5fe4fb77af7324d1dc4703",
+      "bytes": 84464,
+      "verifiedAt": "2026-10-26T21:14:48.369Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15615.png",
+      "sha256": "36835f2b94010db2bf0bc2c8586d161617b35cc2c95cefce0a349c07d55afd85",
+      "bytes": 137618,
+      "verifiedAt": "2026-10-26T21:14:48.699Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15616.png",
+      "sha256": "d62bc62a3deb5864d0c6bee429118d73479cbfcfe947d47ed1d46a2c02039865",
+      "bytes": 125556,
+      "verifiedAt": "2026-10-26T21:14:49.404Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15617.png",
+      "sha256": "2403c880568a90c93099e28dffa95c13255df40599326eeb4c033db529f26be3",
+      "bytes": 135032,
+      "verifiedAt": "2026-10-26T21:14:51.327Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15618.png",
+      "sha256": "3fdf857df92761aaaf2ce49059dd05fea692385652e57f6a3a9a185792cbe6f6",
+      "bytes": 133469,
+      "verifiedAt": "2026-10-26T21:14:50.452Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15619.png",
+      "sha256": "b46dfdd162bbbc5f301bfc3d98842d89849937eb4d7217c56881c7cc7aaf619d",
+      "bytes": 133126,
+      "verifiedAt": "2026-10-26T21:14:51.284Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15620.png",
+      "sha256": "6a2e0955df248b0b530ed8cbf791181a10d6831df8d1b9be742177617e3b3d8e",
+      "bytes": 135945,
+      "verifiedAt": "2026-10-26T21:14:51.822Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15621.png",
+      "sha256": "ce8aa90c4255bac5fa3636a60f5864a51324f6f3bb309a255588160645cc3812",
+      "bytes": 145687,
+      "verifiedAt": "2026-10-26T21:14:53.887Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15622.png",
+      "sha256": "30fae4536a8a03f71387990fff76499901218eff36c3060821d44cd85f10d7f6",
+      "bytes": 123424,
+      "verifiedAt": "2026-10-26T21:14:53.103Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15623.png",
+      "sha256": "ec0d2516cc436a1c100c81a31882d6a68d9c329923fbd0654424af30939b6dbf",
+      "bytes": 130274,
+      "verifiedAt": "2026-10-26T21:14:53.491Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15624.png",
+      "sha256": "6e7d843b93192620b5ef00db9ed77e0de4215a3fbaa09ce0ba380c8526c4254e",
+      "bytes": 130504,
+      "verifiedAt": "2026-10-26T21:14:54.046Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15625.png",
+      "sha256": "a38272ca6e9f894d695e160695cac80b0654a3e2805f6699013d8f6b88b8c5a1",
+      "bytes": 128764,
+      "verifiedAt": "2026-10-26T21:14:56.047Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15626.png",
+      "sha256": "f02a82e1d5673c5bd131fed8c2558388321f4c2f73480c1ab2c383ac4157aecc",
+      "bytes": 118151,
+      "verifiedAt": "2026-10-26T21:14:55.496Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15627.png",
+      "sha256": "a3f22c257970b63991f71660921d527c190ecf6a876bec810804b4647b93f7d9",
+      "bytes": 132788,
+      "verifiedAt": "2026-10-26T21:14:56.098Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15628.png",
+      "sha256": "08d7a9f2d96a437b0305ff6da98bdb9787ac560a09a963b79a2b362ae895bf9b",
+      "bytes": 120012,
+      "verifiedAt": "2026-10-26T21:14:56.457Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15629.png",
+      "sha256": "4ddafa5236e4b6b691972deb86cce709271802d3565ae5bfde50ca21a8cfc009",
+      "bytes": 126214,
+      "verifiedAt": "2026-10-26T21:14:58.134Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15630.png",
+      "sha256": "374c275ccb9b647be9799b0002758200fa82eb7df9de54c4e0547d978208ea70",
+      "bytes": 107689,
+      "verifiedAt": "2026-10-26T21:14:58.869Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15631.png",
+      "sha256": "a45759740cc4651bcfac4163f90fb2cc499ce2c37d7d2cf8e6632113ca7715a7",
+      "bytes": 116343,
+      "verifiedAt": "2026-10-26T21:14:58.487Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15632.png",
+      "sha256": "0a0eaf883f281366acf0231db53905ba7c3e6896bf19e634e0785274fe9eb2ad",
+      "bytes": 107960,
+      "verifiedAt": "2026-10-26T21:14:59.739Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15633.png",
+      "sha256": "2fb29b58cd797b9febb6b87fd47f676149bd5702023588c749302b6601013125",
+      "bytes": 114479,
+      "verifiedAt": "2026-10-26T21:15:00.267Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15634.png",
+      "sha256": "cb8b5f9e7a0d26f2d94d48e5624f62481769db6b1f1286dda328cb95ea630786",
+      "bytes": 134808,
+      "verifiedAt": "2026-10-26T21:15:00.481Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15635.png",
+      "sha256": "1bcf6d097237ac5067bee0efa6c1be6542d951739a0298c27e895d0c5f2fbcd0",
+      "bytes": 100291,
+      "verifiedAt": "2026-10-26T21:15:01.558Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15636.png",
+      "sha256": "66cfc6978efb2e66aa61f9059d5f3b627c72a1883e56b47be9cfec6b418ef264",
+      "bytes": 148484,
+      "verifiedAt": "2026-10-26T21:15:02.630Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15637.png",
+      "sha256": "acf483ea4a8d3132f328e5ccc19c56628f6a5fc02748e71583527bbf16635bc6",
+      "bytes": 114326,
+      "verifiedAt": "2026-10-26T21:15:04.620Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15638.png",
+      "sha256": "5b363620bc5cb76787d98c2217229a3451c4d839b673377051b557a862eeb233",
+      "bytes": 109370,
+      "verifiedAt": "2026-10-26T21:15:05.505Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15639.png",
+      "sha256": "fec9f4ab811d390c381332d287e18dd19406984a3de9106e0cc694c80009068a",
+      "bytes": 139000,
+      "verifiedAt": "2026-10-26T21:15:04.452Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15640.png",
+      "sha256": "0fe44bf075e73cad4cc3690901fdb627508ae1e7a080ff88e811ddfe78247f49",
+      "bytes": 134860,
+      "verifiedAt": "2026-10-26T21:15:05.905Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15641.png",
+      "sha256": "8e8d665f8985c63f7c15b0496ef6ff61251f628f5ff453a8db40fc6f243aa910",
+      "bytes": 130046,
+      "verifiedAt": "2026-10-26T21:15:09.073Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15642.png",
+      "sha256": "d16c03e4aad292d4f2dfb5c09472be78b29a3a174981c0e9177d4462a731acba",
+      "bytes": 134116,
+      "verifiedAt": "2026-10-26T21:15:06.835Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15643.png",
+      "sha256": "ee68e4d56a600bb48cdc4baa718f768f1414159b3a1986a1c52e86e0d243e392",
+      "bytes": 148156,
+      "verifiedAt": "2026-10-26T21:15:08.615Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15644.png",
+      "sha256": "378e2b78515f531fee84594a733ceb2c9ad49b4bf11a4c9d045c6bd573b22dda",
+      "bytes": 128580,
+      "verifiedAt": "2026-10-26T21:15:09.411Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15645.png",
+      "sha256": "b2130aa512cdfa012325b4ccc5802aabd9536fb644a701325a9fa00e0963c848",
+      "bytes": 130533,
+      "verifiedAt": "2026-10-26T21:15:11.929Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15646.png",
+      "sha256": "3a80fab5471fea0635f3c56871b4848f950afa0cddf26c842dd0684e41cbabb3",
+      "bytes": 137609,
+      "verifiedAt": "2026-10-26T21:15:10.668Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15647.png",
+      "sha256": "3f0aab742bd86f3d178658e5feb2c2430fe7bf330be9eaad7f0f6385095c9549",
+      "bytes": 146249,
+      "verifiedAt": "2026-10-26T21:15:11.380Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15648.png",
+      "sha256": "06e2c7ccb2e40cbe685d55e119a75939ef02d14affcfd875e204964760f41070",
+      "bytes": 139410,
+      "verifiedAt": "2026-10-26T21:15:11.618Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15649.png",
+      "sha256": "01b0f7fe164f190a008de26e03f201450cbc02c8338c616107e4476484044846",
+      "bytes": 144430,
+      "verifiedAt": "2026-10-26T21:15:18.650Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15650.png",
+      "sha256": "d93244f572a6261bb4f856d394a70b626eb69cebd7aa2e3d67e9ae5d58f8b127",
+      "bytes": 131262,
+      "verifiedAt": "2026-10-26T21:15:18.666Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15651.png",
+      "sha256": "d392c1004c0cce7ad3383e31bc212a278dbd2f953aabcf18557db61d1601680a",
+      "bytes": 145148,
+      "verifiedAt": "2026-10-26T21:15:18.654Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15652.png",
+      "sha256": "dc582d1b54f32678c2e9c4ddbcb5ed72a0670665f2424ab0389baecba130b622",
+      "bytes": 127319,
+      "verifiedAt": "2026-10-26T21:15:18.658Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15653.png",
+      "sha256": "5551157a62a67733e7623460adc84c5d12ec14ba81a9363cd97ad97429ff809c",
+      "bytes": 139192,
+      "verifiedAt": "2026-10-26T21:15:20.581Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15654.png",
+      "sha256": "860a585b156d7c26741f5b9591e9a2e93ab5264deac6b2dcbf881d201108ebc6",
+      "bytes": 125051,
+      "verifiedAt": "2026-10-26T21:15:21.077Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15655.png",
+      "sha256": "93f162703b6429146bc823d1745acae5371eba3e2789599b1689395aafd58a79",
+      "bytes": 138048,
+      "verifiedAt": "2026-10-26T21:15:21.523Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15656.png",
+      "sha256": "a5492bf35bbfb7ef9393e6e9ccd6de77f740144058becff002fd2354f25f47fc",
+      "bytes": 112458,
+      "verifiedAt": "2026-10-26T21:15:21.454Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15657.png",
+      "sha256": "43b380ef4f0544cd4902a952e9ce3785bb2a4cb20a59a1453a8a449cbdfac963",
+      "bytes": 135326,
+      "verifiedAt": "2026-10-26T21:15:23.090Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15658.png",
+      "sha256": "8138bce8bb983e85e19a5164c1fba8c8e6e0d09a8464f10bd40f95aa00b45c23",
+      "bytes": 110814,
+      "verifiedAt": "2026-10-26T21:15:23.374Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15659.png",
+      "sha256": "8f1683e48fd6a1ac854d7473ff2723568b7747b75cd82d6b145ab6caaa8955a4",
+      "bytes": 108488,
+      "verifiedAt": "2026-10-26T21:15:24.153Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15660.png",
+      "sha256": "aa1ebe08f515e9e94826ff97e862a141794ac801c757903b3cb998799e1c6c86",
+      "bytes": 102455,
+      "verifiedAt": "2026-10-26T21:15:24.232Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15661.png",
+      "sha256": "169b58a7547032f6b6de219820d056468534e440244ba4e13e87eb8fc97d4313",
+      "bytes": 109247,
+      "verifiedAt": "2026-10-26T21:15:25.096Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15662.png",
+      "sha256": "4d38b66ecf5f1d682da7238223b6c7c4243da894dbcde64c53bdd35155ce3d58",
+      "bytes": 125143,
+      "verifiedAt": "2026-10-26T21:15:25.946Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15663.png",
+      "sha256": "0b566778dd189b23b6a589300b44f9508ad44758bf07c84faac6826c3c7749d6",
+      "bytes": 127543,
+      "verifiedAt": "2026-10-26T21:15:26.514Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15664.png",
+      "sha256": "96604497f3d9e284af8118b6188bf70ec73e4d0c121ac24c6fd44e9ad368d9a2",
+      "bytes": 126265,
+      "verifiedAt": "2026-10-26T21:15:26.828Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15665.png",
+      "sha256": "cf8c4aae4878befeb6bbfc9f9ec826d6d34f3e55d20c3413a632cc7ddb932074",
+      "bytes": 119216,
+      "verifiedAt": "2026-10-26T21:15:28.833Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15666.png",
+      "sha256": "78400a8737399c988adaec94c7f13df298b6127f91e1b11cad995e716d6c3fde",
+      "bytes": 118904,
+      "verifiedAt": "2026-10-26T21:15:28.028Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15667.png",
+      "sha256": "47e0bec221e8eff542fbe3aa9b175c7004bfb21cc193918d7bf7af70eb9babd2",
+      "bytes": 119872,
+      "verifiedAt": "2026-10-26T21:15:28.107Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15668.png",
+      "sha256": "78626e75c3d036bf36401799f66f8951c3ca4a34d925665d0d0def9dbad2ab86",
+      "bytes": 102337,
+      "verifiedAt": "2026-10-26T21:15:28.587Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15669.png",
+      "sha256": "458c3d7bf0d8dc4908fe922fe797406626cd9f257c9fb9ba9c692c358b22bdf8",
+      "bytes": 131649,
+      "verifiedAt": "2026-10-26T21:15:30.782Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15670.png",
+      "sha256": "2578c48cbe0057c41cfd4d5b4349efe1ed5fce0cb6e2b8e528f2c0a981666016",
+      "bytes": 105592,
+      "verifiedAt": "2026-10-26T21:15:30.676Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15671.png",
+      "sha256": "578017f9208247de1617d74e50756133b1640de64d88871452611beacc9ea1dd",
+      "bytes": 115606,
+      "verifiedAt": "2026-10-26T21:15:30.929Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15672.png",
+      "sha256": "208db4c77caaada3aa56a87ef4d73cf2b23ac25a2179c2d64253623aae26ff9d",
+      "bytes": 106912,
+      "verifiedAt": "2026-10-26T21:15:32.002Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15673.png",
+      "sha256": "869d4744ba6e25380c652a793a62c7296251803d0e15717dd17f9e0e4f69f033",
+      "bytes": 120567,
+      "verifiedAt": "2026-10-26T21:15:33.228Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15674.png",
+      "sha256": "eb33801c6df21b046babdb39ec3e10d7be57795a4b17e0a6b0fc7103c777980d",
+      "bytes": 95468,
+      "verifiedAt": "2026-10-26T21:15:32.644Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15675.png",
+      "sha256": "fd37fcd4d77a360ca83e976cd62008618ef31ac9d7048f4dccb1e0cb60ae7ad5",
+      "bytes": 105315,
+      "verifiedAt": "2026-10-26T21:15:33.394Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15676.png",
+      "sha256": "32bccfaecc903a8b77c9189594fb8687254eca9cd6b786d77d879fdd8ea42b39",
+      "bytes": 84956,
+      "verifiedAt": "2026-10-26T21:15:34.089Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15677.png",
+      "sha256": "4d8ebb7487d7117922e7750caf33c5a87157eee813b10db6f4ddfb343c2daca9",
+      "bytes": 96964,
+      "verifiedAt": "2026-10-26T21:15:35.021Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15678.png",
+      "sha256": "66f74fcdc0e2e697c9631f0ab4070801dc077b0727efc335e67afbf8709d55ca",
+      "bytes": 97624,
+      "verifiedAt": "2026-10-26T21:15:36.114Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15679.png",
+      "sha256": "da41084b6b13318742e26775bd2669d6dbf90dbe801da47ed1d818f48f10e596",
+      "bytes": 108958,
+      "verifiedAt": "2026-10-26T21:15:35.898Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15680.png",
+      "sha256": "38c586a0f327486f2b2af119390e1235479f920fcfebd137f89dc58b37dfbbff",
+      "bytes": 110464,
+      "verifiedAt": "2026-10-26T21:15:36.463Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15681.png",
+      "sha256": "f1ead7dc47c1e96c9ec195cf10bf83e419841dc3152bb7907787ade033489ba9",
+      "bytes": 110886,
+      "verifiedAt": "2026-10-26T21:15:37.669Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15682.png",
+      "sha256": "0d031e64b9fb6f37cd712a2182591d30a05a9a2d2aa1d6c75296f7244c53bec9",
+      "bytes": 108895,
+      "verifiedAt": "2026-10-26T21:15:37.910Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15683.png",
+      "sha256": "29707bd7333815fc117b0e659545692b5e9af2bfe3dacfed5f62e26ab378b18b",
+      "bytes": 113702,
+      "verifiedAt": "2026-10-26T21:15:39.371Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15684.png",
+      "sha256": "d386825055ed47f1bb897737905bc504b8eada5a852f3510eda8ca84efe56060",
+      "bytes": 103408,
+      "verifiedAt": "2026-10-26T21:15:38.371Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15685.png",
+      "sha256": "9f786bb70d9cf24a523ede80ed5d7bcab6f297bc3ba4222e61a65ddc6e6e3234",
+      "bytes": 96607,
+      "verifiedAt": "2026-10-26T21:15:39.636Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15686.png",
+      "sha256": "e82ba5ed0bf7f2e55813fd5f647d3b84a23535dcb94ffa0fe00facd601bf7e80",
+      "bytes": 102784,
+      "verifiedAt": "2026-10-26T21:15:40.099Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15687.png",
+      "sha256": "fd879dae31b95fef2a53ec797be7c9b2e9ffc5f1384a9decaecfb81e0ff30d89",
+      "bytes": 95008,
+      "verifiedAt": "2026-10-26T21:15:40.980Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15688.png",
+      "sha256": "4d69ccee27e8a26df76293ebd0d7602cd97274a8d80e8d9f106a964d9342bbda",
+      "bytes": 99996,
+      "verifiedAt": "2026-10-26T21:15:41.556Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15689.png",
+      "sha256": "6fa01dd1a7cbff7e54c10390a6e76bdd1509b7cac1ecab00e13a75e730ae55eb",
+      "bytes": 73837,
+      "verifiedAt": "2026-10-26T21:15:41.976Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15690.png",
+      "sha256": "8206d115c803a78578a41b4a2753bb457f8a984626fd94579749859bfff2102b",
+      "bytes": 98161,
+      "verifiedAt": "2026-10-26T21:15:43.323Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15691.png",
+      "sha256": "e9daf3a55ec7cb4b2e563b88d01a87e3306305c074704e3f3a2c911124941853",
+      "bytes": 76138,
+      "verifiedAt": "2026-10-26T21:15:43.469Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15692.png",
+      "sha256": "22f1ba7586bb947a2262ea428103fd23a4a52e6241ac282c1b9a8cd92a470a8e",
+      "bytes": 86729,
+      "verifiedAt": "2026-10-26T21:15:43.748Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15693.png",
+      "sha256": "fa4edd996468b759e1f6d6656d0b2f2101ab76e80ba075852079df68a424f5a7",
+      "bytes": 93522,
+      "verifiedAt": "2026-10-26T21:15:46.168Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15694.png",
+      "sha256": "c07a3b7983ddabdee93d3b1adca305b66c5edf4fb89c868edabbfc61eb9274d9",
+      "bytes": 86556,
+      "verifiedAt": "2026-10-26T21:15:44.893Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15695.png",
+      "sha256": "eb6866149dda27beec242370cb59b2b7c29bf0990c1ecac4d3886ceb83d94c3f",
+      "bytes": 92735,
+      "verifiedAt": "2026-10-26T21:15:46.981Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15696.png",
+      "sha256": "0bbc16a1a0f86dd5c213eabe9b70a33b7dc2ada3959a9a7c4ed91bbdbcc6b22d",
+      "bytes": 84192,
+      "verifiedAt": "2026-10-26T21:15:45.695Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15697.png",
+      "sha256": "4a4b22f50d8b5ad7132feb275d3986c7fc03988204bfd463366291d11b4d47c7",
+      "bytes": 113469,
+      "verifiedAt": "2026-10-26T21:15:47.432Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15698.png",
+      "sha256": "9a3a6c35d5a94ba6ed0671677ee22259afc6d429d045aef9c18c8f40f0354265",
+      "bytes": 133656,
+      "verifiedAt": "2026-10-26T21:15:47.547Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15699.png",
+      "sha256": "4d229d3ad0d70d0b1043d6337d7120e5080691367b0b3f1b6f31952de8a8e9c2",
+      "bytes": 126870,
+      "verifiedAt": "2026-10-26T21:15:48.271Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15700.png",
+      "sha256": "a2969eb5407891a94e7ce2118636fbb4e303f868e7c7a15293c80ce59d5634ec",
+      "bytes": 104425,
+      "verifiedAt": "2026-10-26T21:15:48.906Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15701.png",
+      "sha256": "63a82134b882f725fd0ae099a28746ecb1bbfc3dda5065851b27e2252e78dea0",
+      "bytes": 107812,
+      "verifiedAt": "2026-10-26T21:15:54.778Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15702.png",
+      "sha256": "674146198f2697374ef9ea8287f4c5c4002d8cad0447f2ef87da57d51ccddaf9",
+      "bytes": 108652,
+      "verifiedAt": "2026-10-26T21:15:54.786Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15703.png",
+      "sha256": "e2b3d152ba7a86169ef79017510732a96d18436d48dd8d8f0ec6e5927e5ada68",
+      "bytes": 109833,
+      "verifiedAt": "2026-10-26T21:15:55.390Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15704.png",
+      "sha256": "e58cfcc1b63b526100ed659088c506e6ef5c1250f5132d146dbae34f58bacdb0",
+      "bytes": 108135,
+      "verifiedAt": "2026-10-26T21:15:56.457Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15705.png",
+      "sha256": "a320e22ac19434be97f4b7e07d2a6e995d6ca71e2dd2465cc6da3018447a1f5c",
+      "bytes": 108074,
+      "verifiedAt": "2026-10-26T21:15:56.776Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15706.png",
+      "sha256": "73366bec53980e2cd7986db744ecd8d6d1b34edd192c8e95cd3b8ae6d6a74466",
+      "bytes": 112361,
+      "verifiedAt": "2026-10-26T21:15:56.861Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15707.png",
+      "sha256": "fedcd3e7d7738ec536cd378ad73738f6d2b14c0fa421bb3fa1c5fc508c2c5014",
+      "bytes": 109190,
+      "verifiedAt": "2026-10-26T21:15:57.640Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15834.png",
+      "sha256": "4bd8ec6a470009a04c21ce69fd112a9fad98067670e5ae762347109b2ac8700a",
+      "bytes": 85793,
+      "verifiedAt": "2026-10-26T21:15:58.492Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15835.png",
+      "sha256": "03ec1d51f54e726aaad569a10570f6be4643928e655412606af336f9de176a4e",
+      "bytes": 85373,
+      "verifiedAt": "2026-10-26T21:15:59.261Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15836.png",
+      "sha256": "1ac609f4bd8a9a3a269430b7f5a998392b834d53bf322af7e0f15ae5f62fc9fc",
+      "bytes": 84070,
+      "verifiedAt": "2026-10-26T21:15:59.649Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15837.png",
+      "sha256": "53ee1db6a4580150dd925557c858ac533139b9293c19e0a73de98e3a0d77e301",
+      "bytes": 87927,
+      "verifiedAt": "2026-10-26T21:16:00.457Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15838.png",
+      "sha256": "11607e254a9cba06825fdde6970fd76e51e2afd70a434366c5a0e94936566bfb",
+      "bytes": 91833,
+      "verifiedAt": "2026-10-26T21:16:01.255Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15839.png",
+      "sha256": "defca2678a50d7e77b49004b15c24bd70d0f1239d0c942145b187b2c610533c9",
+      "bytes": 96391,
+      "verifiedAt": "2026-10-26T21:16:01.827Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15840.png",
+      "sha256": "cdab41b3df4a67fde5c5540ee837c1e29b49fe2d7eb98835d7517052ebf78961",
+      "bytes": 96502,
+      "verifiedAt": "2026-10-26T21:16:02.084Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15841.png",
+      "sha256": "3726ed90c171e4d14088acfe1bc9f1bcb76bca602535839e94947960108e569f",
+      "bytes": 90840,
+      "verifiedAt": "2026-10-26T21:16:02.949Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15842.png",
+      "sha256": "5880a1338f44da1404c779149d82890f81c14cbfeb6a4e290bb892641b8c4c5e",
+      "bytes": 87704,
+      "verifiedAt": "2026-10-26T21:16:03.825Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15843.png",
+      "sha256": "0abd45bcb936e6bd367afc2527f5cdde0e740801db31d4c4c992ff55b10e7233",
+      "bytes": 89962,
+      "verifiedAt": "2026-10-26T21:16:04.476Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15844.png",
+      "sha256": "566d541bbb8c2111838acc05c7d2ee0f2f7f8637cdb714f450185607f760b00a",
+      "bytes": 93538,
+      "verifiedAt": "2026-10-26T21:16:04.611Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15845.png",
+      "sha256": "f9dc9be7baabb08e1d8c939f6a592e2444c3d437b1bc2e3a904498a265b90b67",
+      "bytes": 101552,
+      "verifiedAt": "2026-10-26T21:16:05.868Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15846.png",
+      "sha256": "57ae9ad5d5ffce520a8875f09a706d90bc677819739f7d72f98f3c6b51e27a07",
+      "bytes": 96973,
+      "verifiedAt": "2026-10-26T21:16:06.123Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15847.png",
+      "sha256": "e7e9e77ef4688eccea2aa1972e26c25834ffc47f5b35805ca96afd7c03a84704",
+      "bytes": 102761,
+      "verifiedAt": "2026-10-26T21:16:06.724Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15848.png",
+      "sha256": "6107d88e51e2863bb5d98e9da4c34f62b11334258e1e527790f8128950568cd6",
+      "bytes": 98092,
+      "verifiedAt": "2026-10-26T21:16:17.779Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15849.png",
+      "sha256": "f31272644c8a702c6a1e0677164243aa07384ba381c4e9224a0ab1730e63deb0",
+      "bytes": 100246,
+      "verifiedAt": "2026-10-26T21:16:08.003Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15871.png",
+      "sha256": "de86b6ebc1614150c0b15a084caed385bebfcb42cb1c8d86a8a8f152b95599dc",
+      "bytes": 132839,
+      "verifiedAt": "2026-10-26T21:16:08.938Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15872.png",
+      "sha256": "0d68e726cff837defc928a885c813dec8555a618cad2110464913615f635d137",
+      "bytes": 106513,
+      "verifiedAt": "2026-10-26T21:16:09.323Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15873.png",
+      "sha256": "dddbb0b6e0187147495a7bb2ee65349bedd5f47701b7f8127795256ca23ec8ec",
+      "bytes": 117974,
+      "verifiedAt": "2026-10-26T21:16:10.475Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15874.png",
+      "sha256": "d3c646801dbbdb483ff839081c0fb831f27b317a081d01c89d838d591176826d",
+      "bytes": 147490,
+      "verifiedAt": "2026-10-26T21:16:10.680Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15875.png",
+      "sha256": "e83f8f61a1782ffbf87e8b7ae0047845a3b7b84ff7912662b0cb76bae501d74c",
+      "bytes": 122101,
+      "verifiedAt": "2026-10-26T21:16:11.374Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15876.png",
+      "sha256": "3e2fbb08c2bffe8ab13a7f5169984d8841b741de162a132b680654f08b57a65f",
+      "bytes": 129719,
+      "verifiedAt": "2026-10-26T21:16:12.421Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15877.png",
+      "sha256": "33b0a5585f9219c645ae4f39b8eca5301f98b668e842692db1356d9560fe3d01",
+      "bytes": 148054,
+      "verifiedAt": "2026-10-26T21:16:12.787Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15878.png",
+      "sha256": "4f7f89daa783e4b0b4dbc695cbd3739fe9367686cfae72a88dab41d47144815f",
+      "bytes": 109243,
+      "verifiedAt": "2026-10-26T21:16:12.943Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15879.png",
+      "sha256": "920ed1b5d996f09558fa280ac7878297ea001a124194a64db0464108d95776e2",
+      "bytes": 146617,
+      "verifiedAt": "2026-10-26T21:16:14.509Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15880.png",
+      "sha256": "d46b2b5672d401ed04125e9727025081848cf2df54fb48900a8c13312ad4563a",
+      "bytes": 143204,
+      "verifiedAt": "2026-10-26T21:16:14.993Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15881.png",
+      "sha256": "4c45866aa6acd1ea332ea140bd024cab7397b5d524070d21b4e680615a72b173",
+      "bytes": 120844,
+      "verifiedAt": "2026-10-26T21:16:14.991Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15882.png",
+      "sha256": "625c4a51b25582032ca499c51b7a78fddc776dda75411947c0a7bfa9d65a0768",
+      "bytes": 127158,
+      "verifiedAt": "2026-10-26T21:16:16.626Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15883.png",
+      "sha256": "69593d3428d34f2319106bb3d7302c860c11f05bb1563253c51ffb41ed83f42d",
+      "bytes": 128771,
+      "verifiedAt": "2026-10-26T21:16:16.976Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15884.png",
+      "sha256": "326b13bbcc0b8ff25aa58f1f37e24e8aa243202354e59c090c03780d4327a3b3",
+      "bytes": 145694,
+      "verifiedAt": "2026-10-26T21:16:18.137Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15885.png",
+      "sha256": "d043e0c5b24947378073a96e23f19be0bd34ccf3e6187b0eb867d64d9a23573f",
+      "bytes": 113370,
+      "verifiedAt": "2026-10-26T21:16:18.734Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15886.png",
+      "sha256": "9597dde46dbddb1a3e39a10bf04298eeb2a828a66cd7e233a21684cd6ba4a222",
+      "bytes": 129762,
+      "verifiedAt": "2026-10-26T21:16:19.498Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15887.png",
+      "sha256": "7d1516181bcfbfe8f3f42cd34677d1853122021b1b793ddc2492bc4bae5e43fa",
+      "bytes": 156323,
+      "verifiedAt": "2026-10-26T21:16:20.303Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15888.png",
+      "sha256": "09575781aef0e2b36852b7abb5f03a9761113f5d79ce045aa862e98ee0b4ee97",
+      "bytes": 149122,
+      "verifiedAt": "2026-10-26T21:16:20.797Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15889.png",
+      "sha256": "c961c4128ea0171f420271dd65cb65aa081a280dde22966060f2358ace7c0ab2",
+      "bytes": 144254,
+      "verifiedAt": "2026-10-26T21:16:21.013Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15890.png",
+      "sha256": "1b07b2d04c0c6bc96256bc185ac4ac754ef10b82fea4baac8fe76eb0ddcdf7ee",
+      "bytes": 138484,
+      "verifiedAt": "2026-10-26T21:16:21.842Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15891.png",
+      "sha256": "e7ec4950133edf94e941e592830d930828ec3eabb054af725f9bd95a6a9655be",
+      "bytes": 131636,
+      "verifiedAt": "2026-10-26T21:16:22.327Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15892.png",
+      "sha256": "19c71f06c1b0c6aebfcbdfe332eac32119d648f92fd728c781741f06ef466421",
+      "bytes": 135787,
+      "verifiedAt": "2026-10-26T21:16:23.079Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15893.png",
+      "sha256": "9533bcfe427ad72185cc287fde3d4c212f31d1c3aabc179d9b387f1363becbd5",
+      "bytes": 141890,
+      "verifiedAt": "2026-10-26T21:16:23.359Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15894.png",
+      "sha256": "010ca0ba6275a30f4ee68edbeaec598c6d8d7f1c3662c4247af4659c63b3bb31",
+      "bytes": 127634,
+      "verifiedAt": "2026-10-26T21:16:23.847Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15895.png",
+      "sha256": "f39fb90a24b14629dd0f76c2e385cc9ce62f13c154ea119f42c6cad0078a6bed",
+      "bytes": 139139,
+      "verifiedAt": "2026-10-26T21:16:25.175Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15896.png",
+      "sha256": "7074353341d29f06d2bd13b6e7d9bae13a8bf43587b64bce53aa80a58c1db536",
+      "bytes": 116085,
+      "verifiedAt": "2026-10-26T21:16:25.462Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15897.png",
+      "sha256": "d56141af20d83416abce5a9a996c71275bafcce70f4a0bd0ea372ab50783e14a",
+      "bytes": 159704,
+      "verifiedAt": "2026-10-26T21:16:30.982Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15898.png",
+      "sha256": "41b4fb46b4ed42615ce49163bac41f360e72de8931c4fe7c6969eccf3cb9a001",
+      "bytes": 133373,
+      "verifiedAt": "2026-10-26T21:16:30.971Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15899.png",
+      "sha256": "87092205528fbd86b7a47d4b2f13fb9156276d387aa942ed024485e1a9273be9",
+      "bytes": 149359,
+      "verifiedAt": "2026-10-26T21:16:33.188Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15900.png",
+      "sha256": "da389f3d43359eab201ecdc30ed7f38d5309e7a09c9bee994bdb340c56d434fc",
+      "bytes": 148117,
+      "verifiedAt": "2026-10-26T21:16:33.412Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15901.png",
+      "sha256": "cb935b3004529793e85ed43d2930bc79b9720fb129e5845b7867b36a072cd455",
+      "bytes": 151980,
+      "verifiedAt": "2026-10-26T21:16:32.874Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15902.png",
+      "sha256": "38635039a057d904768810f2dc60a6a979260545aed0e1ee7cbfcec98715cec5",
+      "bytes": 142073,
+      "verifiedAt": "2026-10-26T21:16:34.576Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15903.png",
+      "sha256": "d3fb0c6e298b31eaf2a40e4e7e4c1aa09b0b3c569204d5569bfe76dd6a45614f",
+      "bytes": 139179,
+      "verifiedAt": "2026-10-26T21:16:34.790Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15904.png",
+      "sha256": "55f8b77d6aa163ce5bf0f0c0871d5890bfc7b9313e6507fbf1c0ae6b41badfdf",
+      "bytes": 122780,
+      "verifiedAt": "2026-10-26T21:16:35.049Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15905.png",
+      "sha256": "bc0b3bb87661f5802c114c426791fc05b9ac0a39b792a6e20dd16df050e13475",
+      "bytes": 130242,
+      "verifiedAt": "2026-10-26T21:16:36.093Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15906.png",
+      "sha256": "b65f91963567018f35d747ec83227736451fa512a240b9084b42fbd287a39b7f",
+      "bytes": 127985,
+      "verifiedAt": "2026-10-26T21:16:36.721Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15907.png",
+      "sha256": "0c576a899e7f4c0de1d11135c1a3f5de16e4422c721364ff6279369850bc11aa",
+      "bytes": 132907,
+      "verifiedAt": "2026-10-26T21:16:36.817Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15908.png",
+      "sha256": "066a1c5b7c229582fdc5b6a25a470ca5394249c8e6699bce066f5dbc571fa3bc",
+      "bytes": 123113,
+      "verifiedAt": "2026-10-26T21:16:37.561Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15909.png",
+      "sha256": "4a54560e01c4f2559130072eb583056bcf4f39540283ff6e79f4ccbfd55286de",
+      "bytes": 148783,
+      "verifiedAt": "2026-10-26T21:16:38.310Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15910.png",
+      "sha256": "837e779c97773db02048082f6bb3c80733b762e638736f966e56c5b59502eb81",
+      "bytes": 136847,
+      "verifiedAt": "2026-10-26T21:16:38.909Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15911.png",
+      "sha256": "e99ed220b830aefe4b92a312404d58742ea3813958f4710f8248e3344b637c09",
+      "bytes": 135830,
+      "verifiedAt": "2026-10-26T21:16:39.521Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15912.png",
+      "sha256": "c1c9a0b3566f287af91c34605055bf5bc09ed5306bbe00dcf20425bb096328e8",
+      "bytes": 128838,
+      "verifiedAt": "2026-10-26T21:16:41.018Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15913.png",
+      "sha256": "fee72daf6dc026e6486c1be2697acffc696fe5a8f7b8cf0d664e94554de0ac05",
+      "bytes": 118865,
+      "verifiedAt": "2026-10-26T21:16:40.509Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15914.png",
+      "sha256": "78a929da99cedcf2f17038e85132637c5eee151e0424d36076a0db707a05f059",
+      "bytes": 122643,
+      "verifiedAt": "2026-10-26T21:16:41.465Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15915.png",
+      "sha256": "50f19e179ee4c1acfd695f6fb1cdecbcf8068713c9a9265b208f2dbe80630867",
+      "bytes": 132708,
+      "verifiedAt": "2026-10-26T21:16:41.604Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15916.png",
+      "sha256": "ea8b7707be1ebd3148b1f58c593852034311704f278d8af59fe9d1ece8ce7f06",
+      "bytes": 144118,
+      "verifiedAt": "2026-10-26T21:16:42.723Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15917.png",
+      "sha256": "a48f4fcb9b48c399148aaf6c15c685245de9247888c52ade07be082a98d7dc08",
+      "bytes": 137643,
+      "verifiedAt": "2026-10-26T21:16:43.341Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15918.png",
+      "sha256": "151b26321f25a9d21ac947cd3f56e32bb9805b388a5d3f06bf7ffdf35ae508a2",
+      "bytes": 119197,
+      "verifiedAt": "2026-10-26T21:16:43.667Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15944.png",
+      "sha256": "2b214608aa5c97cdfb107353d37a379f3f149da9afd8165172288dc23390769f",
+      "bytes": 108515,
+      "verifiedAt": "2026-10-26T21:16:43.999Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15945.png",
+      "sha256": "030d130e4a857b4c72fd3b416cede1de8428194a14b9de9934690c4f6182018f",
+      "bytes": 100954,
+      "verifiedAt": "2026-10-26T21:16:45.065Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15946.png",
+      "sha256": "6f5b52cc7ac7c66a9159a649a4d325529cbd48c3c2d3f4308fa899cd9a589699",
+      "bytes": 129832,
+      "verifiedAt": "2026-10-26T21:16:45.681Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15947.png",
+      "sha256": "01554623764fb3906615f19099e73d92c04a2c0ec92e6c3a224659900e712874",
+      "bytes": 124768,
+      "verifiedAt": "2026-10-26T21:16:45.852Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15948.png",
+      "sha256": "e1c9f35f7bc8181042bba8b89a3dabc4811f74fa8d0891d3448252e1bc05b954",
+      "bytes": 107963,
+      "verifiedAt": "2026-10-26T21:16:46.384Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15949.png",
+      "sha256": "ad3f58f31aff2c9af9dab1b790170e780b08ea857b8eaf2625a77ccaf9554e34",
+      "bytes": 131179,
+      "verifiedAt": "2026-10-26T21:16:47.743Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15950.png",
+      "sha256": "a2437753794d3adf4bce486b3cd39c578149517531f5d4e273771ad45626b3db",
+      "bytes": 105392,
+      "verifiedAt": "2026-10-26T21:16:48.018Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15951.png",
+      "sha256": "c9e48d486b8929a37ef500f6af52fb2ea3c11bf5d3bb397ba8caf40dded3a4b6",
+      "bytes": 148263,
+      "verifiedAt": "2026-10-26T21:16:48.223Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15952.png",
+      "sha256": "06e3e69d84f74cdfd59331c854ea349592c3414807c6c7e9a417cc146b641ff7",
+      "bytes": 124369,
+      "verifiedAt": "2026-10-26T21:16:48.915Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15953.png",
+      "sha256": "b153de51338c56279bf987bc0694b803064e3a0542ea26f29a2f181d295fced1",
+      "bytes": 151447,
+      "verifiedAt": "2026-10-26T21:16:50.300Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15954.png",
+      "sha256": "89a58164e7996b5c6e50b01f675eb4a5dae0fdf1966d76fd269ecc0b5b663d47",
+      "bytes": 130118,
+      "verifiedAt": "2026-10-26T21:16:50.508Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15955.png",
+      "sha256": "310dd630a3cc35c073b0c71c0368d28cc4395797a9f7ca707cf28ceb82fdbcd1",
+      "bytes": 122366,
+      "verifiedAt": "2026-10-26T21:16:50.598Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15956.png",
+      "sha256": "b50a5eb5bd4d236d9643b01390de43ad6aef8f463b541ca8a42109642575f21c",
+      "bytes": 140375,
+      "verifiedAt": "2026-10-26T21:16:50.974Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15957.png",
+      "sha256": "a19cdf09e457e30984c52eb779318f4383efca27c48112bcbd641d04de2f724b",
+      "bytes": 138746,
+      "verifiedAt": "2026-10-26T21:16:52.419Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15958.png",
+      "sha256": "e0ec7fa6b66879a68763486e0af3481104d18d10575cd822587a284fa0a5272f",
+      "bytes": 124934,
+      "verifiedAt": "2026-10-26T21:16:52.798Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15959.png",
+      "sha256": "f69664b7802da246adc3850dd560f35c012cb85fa2632f19a8581d7827ee6d9c",
+      "bytes": 131936,
+      "verifiedAt": "2026-10-26T21:16:53.060Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15960.png",
+      "sha256": "2ae77c07fc02a3ea521dab00355e2b75b00ba0e7e859bf4ca76d9b981d809da9",
+      "bytes": 117197,
+      "verifiedAt": "2026-10-26T21:16:53.405Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15961.png",
+      "sha256": "e588e6639a85bc4f94cdabf345d3812c54677d46bdd7daa7ef36f4cc4a509c71",
+      "bytes": 124069,
+      "verifiedAt": "2026-10-26T21:16:54.833Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15962.png",
+      "sha256": "1bdc539a15d39a3a33a796559bd6a1696a071902508f52eefc9145a7a754dd21",
+      "bytes": 115111,
+      "verifiedAt": "2026-10-26T21:16:55.223Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15963.png",
+      "sha256": "83cfed466e7fe40b83f827f40debf3d88ae599421bf4b3c12fdbb7e05713e7d3",
+      "bytes": 113948,
+      "verifiedAt": "2026-10-26T21:16:55.673Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15964.png",
+      "sha256": "1219df13fb59c0ada422da63c62a27fc97c09608bd2c79f8bd00aca75c2460ae",
+      "bytes": 127664,
+      "verifiedAt": "2026-10-26T21:16:55.386Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15965.png",
+      "sha256": "b5490b7b2a38cc1c08daa9ed671d28317c22a090e22f8388f3ec23b8fa06d8bc",
+      "bytes": 127406,
+      "verifiedAt": "2026-10-26T21:16:57.260Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15966.png",
+      "sha256": "38e4b5a029b32ee897fde5c1ecdb4acbb410fcccc830c83abba972f221fb684d",
+      "bytes": 132105,
+      "verifiedAt": "2026-10-26T21:16:57.626Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15967.png",
+      "sha256": "8569e718eaf4cd851f09c3562c7e0b74801da143e3e2de30b43461c1b1cf30c1",
+      "bytes": 128100,
+      "verifiedAt": "2026-10-26T21:16:58.104Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15968.png",
+      "sha256": "f6c2dc1c7c296834abf7ee45b2b78edfe0684c1c7a32ddb9f0f2c3d4d7755729",
+      "bytes": 109346,
+      "verifiedAt": "2026-10-26T21:16:58.144Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15969.png",
+      "sha256": "64477c324f83bca25a1fa61a826cda539f790a49041784e31d13086d82121b63",
+      "bytes": 141419,
+      "verifiedAt": "2026-10-26T21:16:59.853Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15970.png",
+      "sha256": "8d58d32bf4b8c37986f10228835c00dd8de8ae7235ccca55372fa9ff001aa011",
+      "bytes": 132136,
+      "verifiedAt": "2026-10-26T21:16:59.998Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15971.png",
+      "sha256": "9f89f597328b763110af69bd1c912cb00910ac0d2b88d8745b097e15f3435755",
+      "bytes": 128270,
+      "verifiedAt": "2026-10-26T21:17:00.486Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15972.png",
+      "sha256": "922cdab73e9649d50f974067e3ad79c2c91abc91e614b2a5b21c96b2a66af48d",
+      "bytes": 125706,
+      "verifiedAt": "2026-10-26T21:17:00.650Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15973.png",
+      "sha256": "c9eecd89aee30f5062bbade2e378b3a59f24b8c5548e4964ebd2d503ffc9a78b",
+      "bytes": 134786,
+      "verifiedAt": "2026-10-26T21:17:07.150Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15974.png",
+      "sha256": "d81e1f800fffecc9aca5cedc7816ecedbd24448e36f5c12f7c2c64c36e8058c3",
+      "bytes": 135074,
+      "verifiedAt": "2026-10-26T21:17:07.156Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15975.png",
+      "sha256": "941749f8bd8883c357bb6f495ace2c76a8257aaa7dfd9265c1344e8e94c859dd",
+      "bytes": 123463,
+      "verifiedAt": "2026-10-26T21:17:07.801Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15976.png",
+      "sha256": "1cfbfdf1ee2c47126c26f906adb4f9f4883991aea767d99546578112d138c211",
+      "bytes": 143682,
+      "verifiedAt": "2026-10-26T21:17:08.675Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15977.png",
+      "sha256": "5c8f3ef5253cbf1d99a938092741e7a349c79f7b99544a1dc3d98c7eec368c9b",
+      "bytes": 130018,
+      "verifiedAt": "2026-10-26T21:17:09.357Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15978.png",
+      "sha256": "334aed6cef00b224c9d0c3e56677d0ca6ba0d718da289947ac714f8340be9d7a",
+      "bytes": 119302,
+      "verifiedAt": "2026-10-26T21:17:10.082Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15979.png",
+      "sha256": "16f51ab45da72a1fef02814469125552f754296507bcea177a49edc51432cf11",
+      "bytes": 140746,
+      "verifiedAt": "2026-10-26T21:17:10.295Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15980.png",
+      "sha256": "37125d3f63fb2b7eee53df8f93468fd03ce612fe6e2b5a7abe47243f6c0bbaa0",
+      "bytes": 119384,
+      "verifiedAt": "2026-10-26T21:17:11.575Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15981.png",
+      "sha256": "251ad246e265c25fabc5bf0156840b7759f92b2ce9198d9f8dadbd5073b6fb0f",
+      "bytes": 136237,
+      "verifiedAt": "2026-10-26T21:17:11.761Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15982.png",
+      "sha256": "62f00abb316bebcee711c022a0d6bf672f72d03d9d4e8818a3f3d2319237de8c",
+      "bytes": 144593,
+      "verifiedAt": "2026-10-26T21:17:12.150Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15983.png",
+      "sha256": "2ee283d94bbe054947df82457022bbdd43accd1b62e02d211da9e5e1aa9c34e0",
+      "bytes": 118181,
+      "verifiedAt": "2026-10-26T21:17:12.795Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15984.png",
+      "sha256": "4706246429b0985aae644034fd40937aabe7cbe246545ca09f36d6afce1b188e",
+      "bytes": 129977,
+      "verifiedAt": "2026-10-26T21:17:13.660Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-15985.png",
+      "sha256": "22c1f79800bd792551fdf77692e13bacfc53a91434aac68c3dafdc3f52d0b6fa",
+      "bytes": 125196,
+      "verifiedAt": "2026-10-26T21:17:14.412Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16052.png",
+      "sha256": "231c9bd5bf19d85ed0ed92f356a6b6f0499169fdc300f1e3a23456e922a57e72",
+      "bytes": 98482,
+      "verifiedAt": "2026-10-26T21:17:14.366Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16053.png",
+      "sha256": "fb280534a123115fcdaddc45d402a4da53307791bd8d17050183d46bf3ec8ee8",
+      "bytes": 85159,
+      "verifiedAt": "2026-10-26T21:17:15.122Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16054.png",
+      "sha256": "8957a42836ac5e31fb7206a772580c6da75b75928ac9e069e8078f65777d75f3",
+      "bytes": 89466,
+      "verifiedAt": "2026-10-26T21:17:15.951Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16055.png",
+      "sha256": "79aee25da0f0955fa17a9cb134942f2297ac91999b50f79e67815afbfc54f05c",
+      "bytes": 90819,
+      "verifiedAt": "2026-10-26T21:17:17.421Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16056.png",
+      "sha256": "8172668c9e361ebef0d1897fca42f3334dcc9bf8dd304068b5204652eecf9566",
+      "bytes": 103694,
+      "verifiedAt": "2026-10-26T21:17:16.937Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16057.png",
+      "sha256": "9a9c95890228799b0b7495a603a938bf1c9d517c45d1b5a0092cd7a728455c38",
+      "bytes": 102019,
+      "verifiedAt": "2026-10-26T21:17:17.485Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16058.png",
+      "sha256": "d5a2a33d87bcc42acd5f477b47dcefc80c5da06b906096a51b325549158d7e8b",
+      "bytes": 83687,
+      "verifiedAt": "2026-10-26T21:17:17.829Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16059.png",
+      "sha256": "6ce3b3196f138a4922d2bfdbaec5e1a954d48234013e1e49f848c7088a00c9c9",
+      "bytes": 90297,
+      "verifiedAt": "2026-10-26T21:17:19.644Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16060.png",
+      "sha256": "4ff64cdd192affb7c759f090ca64f3b8c055766033963a534970e493f8cbedcc",
+      "bytes": 92789,
+      "verifiedAt": "2026-10-26T21:17:19.327Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16061.png",
+      "sha256": "80289692d6f334de07b804c2312b3b153e4f54f7d86c7c08765541b6dabb2dc0",
+      "bytes": 94879,
+      "verifiedAt": "2026-10-26T21:17:20.059Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16062.png",
+      "sha256": "ad41f48f50c7c3cb68369603ce5292a9b4756e850ebd61ad42caa653eeb5f29a",
+      "bytes": 94740,
+      "verifiedAt": "2026-10-26T21:17:20.354Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16063.png",
+      "sha256": "9b50f05696a055e785360b6801e0987d2c46d498e351e07026d9c9f9e2875f9b",
+      "bytes": 100916,
+      "verifiedAt": "2026-10-26T21:17:21.957Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16064.png",
+      "sha256": "d69d35bd2e3c72085faa4cc6cad4641fc81d759d25f22d2d6505bcdfa6352b66",
+      "bytes": 109300,
+      "verifiedAt": "2026-10-26T21:17:22.137Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16065.png",
+      "sha256": "9dab73a2c140fc2a63c7d9a9b80dcf0a9ee639de437fbd6947d941fa4d0db6dc",
+      "bytes": 115897,
+      "verifiedAt": "2026-10-26T21:17:22.345Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16066.png",
+      "sha256": "ade6ad7a43051095d0df7ce08ae9f98e41caddf5d7601fa6813a5ac5187aa89b",
+      "bytes": 97018,
+      "verifiedAt": "2026-10-26T21:17:22.902Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16067.png",
+      "sha256": "b791f46d076af83e8254293d91d0ab70f02252221451341bd8e8cf341f1f549f",
+      "bytes": 108199,
+      "verifiedAt": "2026-10-26T21:17:24.227Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16068.png",
+      "sha256": "ea6d1ccc6c4a84704ea3cf9f7b1839509b525266ab9c81e00c091fbe1fdf332f",
+      "bytes": 98210,
+      "verifiedAt": "2026-10-26T21:17:24.415Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16069.png",
+      "sha256": "f4e57016ff88bd328894ba5dcf1d578d89f6b30c0dab7d66e1f27caebe983234",
+      "bytes": 108012,
+      "verifiedAt": "2026-10-26T21:17:25.012Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16070.png",
+      "sha256": "55efd7782806142ca970c58aa73057b6dde6a63deef9c775ad45759684dcb52e",
+      "bytes": 91197,
+      "verifiedAt": "2026-10-26T21:17:25.231Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16071.png",
+      "sha256": "e950afcbe23bc9f8dfcc1da537a34fc65f26c9eb37e9f32d8750a88e1c89d08b",
+      "bytes": 98929,
+      "verifiedAt": "2026-10-26T21:17:26.972Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16072.png",
+      "sha256": "3d2f9d4e04f681ec402d9132f078a488cbbce86b81ad0671e59a1270f2f53f4f",
+      "bytes": 79095,
+      "verifiedAt": "2026-10-26T21:17:26.904Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16073.png",
+      "sha256": "4008ef4fb13f2948b155d8aa1c9b07a86fa91552f8e51dfcc482927851020d40",
+      "bytes": 115443,
+      "verifiedAt": "2026-10-26T21:17:27.209Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16074.png",
+      "sha256": "ac0e1bfc4b26b3a8fbfad57ca3b369dd79be47939942b5d67a6f0f5c65126569",
+      "bytes": 70780,
+      "verifiedAt": "2026-10-26T21:17:28.299Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16075.png",
+      "sha256": "59dfc30adc5e6586b57a40335b050acf37a4587cf98ea4df6543dba60278d68e",
+      "bytes": 109339,
+      "verifiedAt": "2026-10-26T21:17:28.849Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16076.png",
+      "sha256": "fc9e0f580f40a0c0603c6990bff62ae4689a27cfb279c3e975014e1192561df6",
+      "bytes": 108238,
+      "verifiedAt": "2026-10-26T21:17:29.394Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16077.png",
+      "sha256": "253f3ff14fcf787c60ec4cb9524f3c34e27bd3c1f9680e6a54a645b6b03670be",
+      "bytes": 87694,
+      "verifiedAt": "2026-10-26T21:17:29.665Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16078.png",
+      "sha256": "a4521fe2aa096606097d5572ce5bff8f28258360445c80cd6de46d419a1f853b",
+      "bytes": 99695,
+      "verifiedAt": "2026-10-26T21:17:30.536Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16079.png",
+      "sha256": "3bd3765fe8a1155d1fba96dd58c1150d418c4852f1b5f36cacfe0f5f164c3ed8",
+      "bytes": 67499,
+      "verifiedAt": "2026-10-26T21:17:31.401Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16080.png",
+      "sha256": "2b8b8c92d4ab805204979e18049c5b2736c035d9e1605cd81b3f32e93dcc740b",
+      "bytes": 57008,
+      "verifiedAt": "2026-10-26T21:17:31.393Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16081.png",
+      "sha256": "1cc3aa3b992b7760d193f5789e99ab4827ebd56e45a499309758c934c62070f4",
+      "bytes": 67529,
+      "verifiedAt": "2026-10-26T21:17:32.104Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16082.png",
+      "sha256": "75113509a0e63ff8c3e233d872226a82d6af290c514faad640e90dbef3bc7b17",
+      "bytes": 104512,
+      "verifiedAt": "2026-10-26T21:17:34.640Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16083.png",
+      "sha256": "e9555be25e606171fb1b74e6b2cb3ec437ef70220b996ba10989290326df519c",
+      "bytes": 112957,
+      "verifiedAt": "2026-10-26T21:17:33.639Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16084.png",
+      "sha256": "71f40f9e3861f7771df0d220125b2469f7dce70f647d4dbedbc8e562d4a17b6a",
+      "bytes": 122541,
+      "verifiedAt": "2026-10-26T21:17:34.480Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16085.png",
+      "sha256": "51bccbe3efc4c97824cce6c8855fde8253380bdd185f8b0e109060a2587553eb",
+      "bytes": 114731,
+      "verifiedAt": "2026-10-26T21:17:34.165Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16086.png",
+      "sha256": "9a83cf15fc0fa4c2a24e21ca8bd8b2c1b32180aa049998291429078510cc71df",
+      "bytes": 94060,
+      "verifiedAt": "2026-10-26T21:17:35.977Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16087.png",
+      "sha256": "82a6633a0c0435d1c5a1756a0497e000aa955dd8f9a70708a3d536c440ce8aef",
+      "bytes": 92999,
+      "verifiedAt": "2026-10-26T21:17:36.765Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16088.png",
+      "sha256": "e066eaea9a9246450c9c00b3114eb7f368d3b673bbc90df53f94f216051434c6",
+      "bytes": 83104,
+      "verifiedAt": "2026-10-26T21:17:36.338Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16089.png",
+      "sha256": "293f30cf815ff09f835dcde2df9569a94709eaf421cd02060d02fb0251271ff5",
+      "bytes": 83743,
+      "verifiedAt": "2026-10-26T21:17:36.826Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16090.png",
+      "sha256": "5f4baf529ca132579be3eec39ecfb0df8f69bd87f4052fc3058ad451abda59c7",
+      "bytes": 82762,
+      "verifiedAt": "2026-10-26T21:17:43.316Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16091.png",
+      "sha256": "237ec5a481856bc1ba1e6f869b1a0d1a36da0e612282400ca81bfc3e0ff06711",
+      "bytes": 79808,
+      "verifiedAt": "2026-10-26T21:17:43.951Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16092.png",
+      "sha256": "47450b91d997c030a0988fcfab521b97be372419bcb21701b32568720034ddfd",
+      "bytes": 88782,
+      "verifiedAt": "2026-10-26T21:17:43.974Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16093.png",
+      "sha256": "72150640fd1b0b9d4b48fb6e6625f14a8a25b66fbf9b9c2862d896cf92423a73",
+      "bytes": 113811,
+      "verifiedAt": "2026-10-26T21:17:44.341Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16094.png",
+      "sha256": "0e022cf7e98dc50ff0c070fa834cf1778777ba84ef08debb917b9a9331e33dca",
+      "bytes": 111322,
+      "verifiedAt": "2026-10-26T21:17:45.840Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16095.png",
+      "sha256": "6583b5cfc266dcdabe27cd808ac4eace54c4902d01481aa4a47da2070b75dff6",
+      "bytes": 106681,
+      "verifiedAt": "2026-10-26T21:17:46.078Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16096.png",
+      "sha256": "78ee4b70711a6aebdaa43b29354eb3eb2df718f105a1eb59a314e26d56bb84e1",
+      "bytes": 88602,
+      "verifiedAt": "2026-10-26T21:17:46.350Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16097.png",
+      "sha256": "0f00ca118766b095ae84c0ba8543380e995b0197e9fb1474a4a61b940a8bb22d",
+      "bytes": 91464,
+      "verifiedAt": "2026-10-26T21:17:46.976Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16098.png",
+      "sha256": "1ebcadcf4b7fc00256fe098a7155bff364ec3f623d5ef83930485f4c99e17a6e",
+      "bytes": 99620,
+      "verifiedAt": "2026-10-26T21:17:48.538Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16099.png",
+      "sha256": "74f26140648f3aee57e9bcf4117cb4c9772dcbb7c4aff1754f113db5a7705da4",
+      "bytes": 120642,
+      "verifiedAt": "2026-10-26T21:17:48.322Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16100.png",
+      "sha256": "0aa45b858f959dd64fd71a84359ca41e96b97445e9e8f97d81b0c233efac35e5",
+      "bytes": 121946,
+      "verifiedAt": "2026-10-26T21:17:49.096Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16101.png",
+      "sha256": "490b11b1d9392dc588d4406b59c439d266388f7cb2291a21fc027eb21504b7b8",
+      "bytes": 112195,
+      "verifiedAt": "2026-10-26T21:17:49.489Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16102.png",
+      "sha256": "9a9dd6fa5c975de2f0e9fb7d63d114fe72674ed494fef98fc941ff8742cef490",
+      "bytes": 128403,
+      "verifiedAt": "2026-10-26T21:17:50.528Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16103.png",
+      "sha256": "a724773f70f56c9ad439cd5f3055f9669f3a97ab3c604e925ad4d95be8b35eea",
+      "bytes": 104606,
+      "verifiedAt": "2026-10-26T21:17:51.127Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16104.png",
+      "sha256": "1d37a38d1c58e7c50e6b7522ba4cdb966d7eeeac83602541efcdb876ee67dcaa",
+      "bytes": 77958,
+      "verifiedAt": "2026-10-26T21:17:51.186Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16105.png",
+      "sha256": "3e7a7d0914fbc125cc5d934b6d4aaca46f039965d95ae10e0692ac0ac4c1c0c9",
+      "bytes": 126677,
+      "verifiedAt": "2026-10-26T21:17:51.911Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16106.png",
+      "sha256": "9ae4a6adfc4a251d890cca260db816ce46a2daa6f87d30e5c447d8250ddacfdb",
+      "bytes": 116951,
+      "verifiedAt": "2026-10-26T21:17:53.081Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16107.png",
+      "sha256": "4e93393541cb43238605d57171fb56e14fb3dd667b202dd3eede669662897aec",
+      "bytes": 126233,
+      "verifiedAt": "2026-10-26T21:17:53.203Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16108.png",
+      "sha256": "73abd1c9bc0fa7c288a573ffca5f7bf7ba83f0a37dc4aa8951b0b0544740ab9e",
+      "bytes": 123849,
+      "verifiedAt": "2026-10-26T21:17:53.817Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16109.png",
+      "sha256": "30b2bcd3d29bf1104048050e5015b3cc819d32bd8b415e1dfadae268adb9535c",
+      "bytes": 80144,
+      "verifiedAt": "2026-10-26T21:17:53.976Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16110.png",
+      "sha256": "9081a86ae8d9f24fdfa8670728b0eb99d1a8afd73867aa818bc481fe81cd196e",
+      "bytes": 110562,
+      "verifiedAt": "2026-10-26T21:17:55.918Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16111.png",
+      "sha256": "2e6b2a413b82b37025dddc1645a3d87a18552f6271a4373555d71aa8e44672fa",
+      "bytes": 96711,
+      "verifiedAt": "2026-10-26T21:17:55.391Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16112.png",
+      "sha256": "6712c86089e00b1403356980dd58a4ec1996c193a2e531b199f89d9af0e91de9",
+      "bytes": 111529,
+      "verifiedAt": "2026-10-26T21:17:56.021Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16113.png",
+      "sha256": "997c733a33acbab6830d7a6c2513af0a3e77a48b5f6a1449b0bc2e285416cc0f",
+      "bytes": 101103,
+      "verifiedAt": "2026-10-26T21:17:56.219Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16114.png",
+      "sha256": "3b9b57e6b7e0b8d5745e612bce0db2f591f1c71912e2fd01be347fdc4135b3c5",
+      "bytes": 102908,
+      "verifiedAt": "2026-10-26T21:17:58.049Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16115.png",
+      "sha256": "9fa27cdbccd90811ff4a9ed8803b13d67b5cf83a683898cc1512da7437aa0b8b",
+      "bytes": 105269,
+      "verifiedAt": "2026-10-26T21:17:58.107Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16116.png",
+      "sha256": "8b3fe590a9a6d09cf5891e406e3cb1b160f61a549ffcfe8d182f8d0d9e91d1bf",
+      "bytes": 114352,
+      "verifiedAt": "2026-10-26T21:17:58.456Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16117.png",
+      "sha256": "9af2676bcc9e0cb23a1251f0d41494e65ef07ee93f3ae7d07a03db7ba77c3a31",
+      "bytes": 86372,
+      "verifiedAt": "2026-10-26T21:17:58.667Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16118.png",
+      "sha256": "66fa7ba8e05e36f42d2b18063bece58c560cf667bb6be44c63a529d370863dc9",
+      "bytes": 101521,
+      "verifiedAt": "2026-10-26T21:18:00.256Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16119.png",
+      "sha256": "67ae0b33ea60d005fead99d64b4887b7fd67a5f2b344f2340538bff42253609c",
+      "bytes": 103317,
+      "verifiedAt": "2026-10-26T21:18:00.515Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16120.png",
+      "sha256": "b5df1919f674384bf4ba07adc93301113f56076cfa648d2babac37c2542408ca",
+      "bytes": 103802,
+      "verifiedAt": "2026-10-26T21:18:00.852Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16121.png",
+      "sha256": "401a20470465c20c1f65e30b9d3281f3916409c9d07261e912ab229d2ce4becd",
+      "bytes": 102961,
+      "verifiedAt": "2026-10-26T21:18:01.893Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16122.png",
+      "sha256": "7296a1812e304295e2b46f0653b39da7d87c7d687a2581de00c391562f316098",
+      "bytes": 102977,
+      "verifiedAt": "2026-10-26T21:18:03.816Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16123.png",
+      "sha256": "864a0ad6c1961d9b4b82512fe40246474db5f52766863db58a45471e7541201e",
+      "bytes": 92143,
+      "verifiedAt": "2026-10-26T21:18:02.394Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16124.png",
+      "sha256": "39e2a7cb40aa1245e40b3f9b5d916dd11e7af158a5ba88db6b68cc641d652346",
+      "bytes": 98067,
+      "verifiedAt": "2026-10-26T21:18:03.735Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16125.png",
+      "sha256": "517277fad7fe4e9065e8a162010d0a5bd2e0eedbe78c27bf89fb382fcba0af7f",
+      "bytes": 92482,
+      "verifiedAt": "2026-10-26T21:18:04.283Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16126.png",
+      "sha256": "9afabbe03aaa330f92f84b8ac4d05497c7cb347cd556a0d2c1b239a42c8ac072",
+      "bytes": 112287,
+      "verifiedAt": "2026-10-26T21:18:04.111Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16127.png",
+      "sha256": "652dc30f88605c95c5d8373014b8db786e642efed06497b5b97a18702b0383cc",
+      "bytes": 94054,
+      "verifiedAt": "2026-10-26T21:18:05.772Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16128.png",
+      "sha256": "94085db7937e1827e837f1693937867cf45333e83a8f3c7f8f681e26af0edc2a",
+      "bytes": 77133,
+      "verifiedAt": "2026-10-26T21:18:05.876Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16129.png",
+      "sha256": "863cf8f4f23df17671768fc7c61ce25ca09c6fc5ca91b352975a5c8999d2807a",
+      "bytes": 114025,
+      "verifiedAt": "2026-10-26T21:18:06.183Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16130.png",
+      "sha256": "cf1928101f0bcd75791e4e3a19a010919c984cefab914d88493242d0d155db2d",
+      "bytes": 75343,
+      "verifiedAt": "2026-10-26T21:18:06.507Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16131.png",
+      "sha256": "fee3b2a7a8eac2ddc3772ff7f5d6982a87f85aa0ea0588d5cccfb08af6262f01",
+      "bytes": 77002,
+      "verifiedAt": "2026-10-26T21:18:08.278Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16132.png",
+      "sha256": "bf091f5568634fec83a8c57e00ebd421c9b8b696c4ba96f093f05fa9a2ad2507",
+      "bytes": 81863,
+      "verifiedAt": "2026-10-26T21:18:08.625Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16133.png",
+      "sha256": "695327b694ca1ac71b13e30cac1b909eb2b618c0d543be8ca3abd7e5b2aec0c9",
+      "bytes": 76915,
+      "verifiedAt": "2026-10-26T21:18:08.599Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16134.png",
+      "sha256": "49c519f873ca1a89220606aac182c4d547ba65d51f3741f6b2c109af54636bad",
+      "bytes": 101009,
+      "verifiedAt": "2026-10-26T21:18:08.875Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16135.png",
+      "sha256": "2b6b9a1050b3a0c8fd1e2859523f4df872d6121a20a9a84dd34a505709bef4f3",
+      "bytes": 78764,
+      "verifiedAt": "2026-10-26T21:18:10.625Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16136.png",
+      "sha256": "052ce244a030cb3beb74dd5a7689f8d59b211ee507db5d4123b2fa9e39f6221c",
+      "bytes": 87592,
+      "verifiedAt": "2026-10-26T21:18:11.684Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16137.png",
+      "sha256": "c09a0e46a30b8787664018a2dab0aefa1aff97a4fe39d6bf8b87c31e4d66d5f3",
+      "bytes": 108249,
+      "verifiedAt": "2026-10-26T21:18:10.775Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16138.png",
+      "sha256": "1f364aae29ba943cafc5408f6f20d9463dc1cb869b11988ce98eb52b040d0af7",
+      "bytes": 113744,
+      "verifiedAt": "2026-10-26T21:18:11.074Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16139.png",
+      "sha256": "d9f777ea5eb628f3b94ae37fb7483336cc7643759c5d3c710fa35cf5d6a64a4a",
+      "bytes": 109800,
+      "verifiedAt": "2026-10-26T21:18:13.019Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16140.png",
+      "sha256": "65fde19f2fea0aed8ecdc3f9c95ea15bbf213daeb6007f52237595ee72b9f261",
+      "bytes": 101178,
+      "verifiedAt": "2026-10-26T21:18:19.397Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16141.png",
+      "sha256": "61a2383451aa68065f28ce7b8724e0a84ec0825aa6f81470ef5791690e755033",
+      "bytes": 110548,
+      "verifiedAt": "2026-10-26T21:18:13.664Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16142.png",
+      "sha256": "ee263b912d1e128ff0af15f6358d857a1c33a5f15e939568f4a7279c3cdbd0ca",
+      "bytes": 115735,
+      "verifiedAt": "2026-10-26T21:18:13.785Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16143.png",
+      "sha256": "59dce6ca083823c5fc7385736d2402159b1b25705afbc51e38cab4700b17094b",
+      "bytes": 77723,
+      "verifiedAt": "2026-10-26T21:18:20.317Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16144.png",
+      "sha256": "9fd836c4d6cd85574db9961e9826f6f9510633e921fa389efbca00d1c26af4da",
+      "bytes": 74783,
+      "verifiedAt": "2026-10-26T21:18:20.672Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16145.png",
+      "sha256": "f3b5f15145996b883e4e6d649d37b5026fa30f9aa68aae6fdd9359fe77d9e82f",
+      "bytes": 96704,
+      "verifiedAt": "2026-10-26T21:18:21.311Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16146.png",
+      "sha256": "7a0d8837419501ecdee81863796f10ef433fed343ac1090f3035cd50be9696a7",
+      "bytes": 119208,
+      "verifiedAt": "2026-10-26T21:18:22.013Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16147.png",
+      "sha256": "b23ae2f32803fd70bbe1e6ecb580559393625ad32bbc4a807526cc401fb86d56",
+      "bytes": 78595,
+      "verifiedAt": "2026-10-26T21:18:22.272Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16148.png",
+      "sha256": "72ece6a3684ad29397fcbd653a0be577d5dbd90181acf7a60ca05ecffe69ad79",
+      "bytes": 74769,
+      "verifiedAt": "2026-10-26T21:18:22.976Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16149.png",
+      "sha256": "fed01923a08eb535971306bdba754f10d8a7d16b6aecb907109a7ed82909adb3",
+      "bytes": 83368,
+      "verifiedAt": "2026-10-26T21:18:24.250Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16150.png",
+      "sha256": "c77f119e9dab3ac2d3f503391885681e687048d76ceeeb03b6294d23e9d0a3a4",
+      "bytes": 98630,
+      "verifiedAt": "2026-10-26T21:18:24.468Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16151.png",
+      "sha256": "bd998eb5c90d40c4d1b3cfd8a3e9c3fbd72f0766842b57d259412c35bb538f89",
+      "bytes": 103570,
+      "verifiedAt": "2026-10-26T21:18:24.666Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16152.png",
+      "sha256": "d133a928bbeab1ec8d01b2b4ce4332869915ec91cba550f843f948bf76f9e95e",
+      "bytes": 95193,
+      "verifiedAt": "2026-10-26T21:18:25.165Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16153.png",
+      "sha256": "5de960757f7870e4c422f69c5da6de559bf0da73ffd16f11fa0025eb803df379",
+      "bytes": 114386,
+      "verifiedAt": "2026-10-26T21:18:26.982Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16154.png",
+      "sha256": "e86170869d4e91e030dafdfbbb8c48a1f70d848fe0daa403dd4c6ffb6844b515",
+      "bytes": 113699,
+      "verifiedAt": "2026-10-26T21:18:26.464Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16155.png",
+      "sha256": "33e93177c9b8c761cb357b2244a17003aefa7c5e24ad8d6fe8b992c669e28d2e",
+      "bytes": 96448,
+      "verifiedAt": "2026-10-26T21:18:27.449Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16156.png",
+      "sha256": "2932343be8bd67886e24a2ae35cfdacc4da6bcfc6207e05780acffdb4e7b5418",
+      "bytes": 98654,
+      "verifiedAt": "2026-10-26T21:18:28.432Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16157.png",
+      "sha256": "a11d3914be96b98c18106a9c42e7d4066c589256781a306bc877ea81e8dac5d3",
+      "bytes": 110525,
+      "verifiedAt": "2026-10-26T21:18:28.843Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16158.png",
+      "sha256": "514a40461e2678471a7d4f9b163f7c72ca872c84b1cf910fdd938d2df36cd62d",
+      "bytes": 115045,
+      "verifiedAt": "2026-10-26T21:18:29.028Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16159.png",
+      "sha256": "351240361d377eeb5006cae41f0c131d76c90ca517f3b10840b7fc313505afe2",
+      "bytes": 124780,
+      "verifiedAt": "2026-10-26T21:18:29.300Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16160.png",
+      "sha256": "845574074d75a67836e413779a7d77182526800febf8d47d80e1562b71ead903",
+      "bytes": 96260,
+      "verifiedAt": "2026-10-26T21:18:31.471Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16161.png",
+      "sha256": "814a03504351abf3595835f220af8406f3069027600817951770f311d2b0794c",
+      "bytes": 74485,
+      "verifiedAt": "2026-10-26T21:18:31.179Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16162.png",
+      "sha256": "f9331d5d79c52a26e07e04590236131445e0f39eac05f5ae0a6e850cca31e1c2",
+      "bytes": 105409,
+      "verifiedAt": "2026-10-26T21:18:31.047Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16163.png",
+      "sha256": "de1df5e0ae17761cae015aaab7d14f437f901489261be0ed7c165d602a774574",
+      "bytes": 111441,
+      "verifiedAt": "2026-10-26T21:18:31.736Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16164.png",
+      "sha256": "9ba2f10a176654b749a3b7cdc0b06351203f8f355d558a7cba2860d065fa4e98",
+      "bytes": 111363,
+      "verifiedAt": "2026-10-26T21:18:33.376Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16165.png",
+      "sha256": "63d9dd43260311ea834714892d5aa44e04254455fdb3fd0e775f60e808dcb387",
+      "bytes": 104192,
+      "verifiedAt": "2026-10-26T21:18:33.698Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16166.png",
+      "sha256": "930877f58a19ba7ff3e4eb9bdf1e2b07ce60ba868be174caac7ffbf05e3f94e4",
+      "bytes": 105493,
+      "verifiedAt": "2026-10-26T21:18:34.104Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16167.png",
+      "sha256": "85bab65b59885e5e47f759f2dd01b90983d44408963564c542ab407f2de09e89",
+      "bytes": 108335,
+      "verifiedAt": "2026-10-26T21:18:34.660Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16168.png",
+      "sha256": "a7c14887f5b8cec51265a76fb8c47278192a495ec3b94dbad32d6868be3acf33",
+      "bytes": 111960,
+      "verifiedAt": "2026-10-26T21:18:35.642Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16169.png",
+      "sha256": "01fff0f4a479b0835024b48e8512619ae51d74b09c04d5d3cacc0b4997055f93",
+      "bytes": 105683,
+      "verifiedAt": "2026-10-26T21:18:37.839Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16170.png",
+      "sha256": "92b5d59694f9966bc15e89223542c674519250894c67581cddfe5a1a95b3fdd5",
+      "bytes": 113708,
+      "verifiedAt": "2026-10-26T21:18:36.561Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16171.png",
+      "sha256": "b289f4e26e744adf5911c40e421c855da3231ad623295b7370f424351c411d88",
+      "bytes": 119940,
+      "verifiedAt": "2026-10-26T21:18:37.213Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16172.png",
+      "sha256": "25395d83061706d6b8806ad983c233e4fdc28f485880975478add4af372201a8",
+      "bytes": 100914,
+      "verifiedAt": "2026-10-26T21:18:38.210Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16173.png",
+      "sha256": "fcdf52895c6827f0fd78a74ac839cb36ca26e7d3d75260ca52eb486737f0f8a6",
+      "bytes": 131531,
+      "verifiedAt": "2026-10-26T21:18:38.943Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16174.png",
+      "sha256": "0f90a982ded3eec3d721126debbfcb4ccee529e61bb23dd461b3f6a9d75a934a",
+      "bytes": 113742,
+      "verifiedAt": "2026-10-26T21:18:39.407Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16175.png",
+      "sha256": "258bbd54819c726d002e871c6fbd0aad32296e7db71c605d9fd9b83bde7b996a",
+      "bytes": 122009,
+      "verifiedAt": "2026-10-26T21:18:39.770Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16176.png",
+      "sha256": "8db8130eac898e4835f0d3df719004364f7114dac241e26b6f5515c0249d4629",
+      "bytes": 97233,
+      "verifiedAt": "2026-10-26T21:18:40.541Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16177.png",
+      "sha256": "e4d277e175b77101ab26e64347be476567d40d93fa4f30cdd8796cdeac187bcd",
+      "bytes": 88023,
+      "verifiedAt": "2026-10-26T21:18:41.156Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16178.png",
+      "sha256": "25f2637c27df5ed83ca0cca283d13c485516cb8228517cc8a12a45e27d4ae543",
+      "bytes": 98130,
+      "verifiedAt": "2026-10-26T21:18:41.862Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16179.png",
+      "sha256": "033327666f3b42be36c964fc31e4084b1d022d8fd08956cb832b0cdb8f880444",
+      "bytes": 122311,
+      "verifiedAt": "2026-10-26T21:18:42.040Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16180.png",
+      "sha256": "9cb8a5c49d1603988aaa8c5eabb8be1b1e0d07c00012ffac13b94f785b5963b4",
+      "bytes": 89229,
+      "verifiedAt": "2026-10-26T21:18:43.352Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16181.png",
+      "sha256": "c69bfeb668368976825762a5c7aab5164ef519e8b5ef8b727aa40d144c03cc09",
+      "bytes": 74981,
+      "verifiedAt": "2026-10-26T21:18:43.597Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16182.png",
+      "sha256": "219e29449d7ca2be3916a012b34b299afa1e86c3cbed89eb55c843d45ccef015",
+      "bytes": 101653,
+      "verifiedAt": "2026-10-26T21:18:43.900Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16183.png",
+      "sha256": "1fa655530d23f9da258cbefae76f9c0857e9c9a01eae7a49145e444736715b4c",
+      "bytes": 114522,
+      "verifiedAt": "2026-10-26T21:18:44.225Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16184.png",
+      "sha256": "44014c1e69dabd1e0c82649e812fb95dc5f0a1a30abccc6e85007a96fcdd3a8f",
+      "bytes": 140999,
+      "verifiedAt": "2026-10-26T21:18:46.003Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16185.png",
+      "sha256": "fe61b4c32fa75a5f434ac4cb50c4418949f27bbe1031a462eeb73ec34bc38035",
+      "bytes": 91854,
+      "verifiedAt": "2026-10-26T21:18:46.107Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16186.png",
+      "sha256": "7342168bb84a96bdf14e826779c6e372e06e0582227975d6be82933ec014bbe6",
+      "bytes": 99396,
+      "verifiedAt": "2026-10-26T21:18:46.236Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16187.png",
+      "sha256": "278a32be7725eddcce51830b02f45c533e9d984166c276d4128b05b989d4df85",
+      "bytes": 92777,
+      "verifiedAt": "2026-10-26T21:18:46.683Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16188.png",
+      "sha256": "8f99beb95167b018a426ec51cf4ed158cbeaa419b670b547a2a7e8fb78c234fd",
+      "bytes": 119327,
+      "verifiedAt": "2026-10-26T21:18:48.645Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16189.png",
+      "sha256": "32544c8e93a76d2331cfd14431e369d8a48f4a48ead74a888a496fd757d6ceab",
+      "bytes": 115746,
+      "verifiedAt": "2026-10-26T21:18:48.473Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16190.png",
+      "sha256": "ae9f6a14a374a86057747eb049369b23f70179288df487cb6b4058a13fea846c",
+      "bytes": 120417,
+      "verifiedAt": "2026-10-26T21:18:48.595Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16191.png",
+      "sha256": "af6b7bff2b1ea4e2e3c05577334c8f384015f7159706840b8f1369b36b23c7c9",
+      "bytes": 113160,
+      "verifiedAt": "2026-10-26T21:18:49.049Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16192.png",
+      "sha256": "076f69c20c049742e72ad3d9f285cd760c1ade768d564b43bdf455ca37247f0c",
+      "bytes": 117718,
+      "verifiedAt": "2026-10-26T21:18:55.581Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16193.png",
+      "sha256": "3457bd1a2cd8ff2fcb6cd2a3fc2962d7e1190a1cf7f0379ac14c770a6dca5169",
+      "bytes": 92596,
+      "verifiedAt": "2026-10-26T21:18:55.585Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16194.png",
+      "sha256": "8d26127e22ecddab61bc0ae154aa179c0bc60ac0be62127cb0191bf23a79f18b",
+      "bytes": 132739,
+      "verifiedAt": "2026-10-26T21:18:56.354Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16195.png",
+      "sha256": "114b559f3c3beefc1bb5f5085b161b19066e755f78af0c9fa2056b0bbd691705",
+      "bytes": 121101,
+      "verifiedAt": "2026-10-26T21:18:56.546Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16196.png",
+      "sha256": "02ad6daa31500fe74612d6a6a50e32068e5fc194db3616863c74073949dea028",
+      "bytes": 130127,
+      "verifiedAt": "2026-10-26T21:18:57.506Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16197.png",
+      "sha256": "58d27d791856c6a2dae4c7fb6d0a7bf638e6baccd099fa256c80f4401cced7cf",
+      "bytes": 99892,
+      "verifiedAt": "2026-10-26T21:18:58.278Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16198.png",
+      "sha256": "fe4c65062ad3f0ab3ba481233b8e21b256e0373a9d6d13be5491c888d13159c4",
+      "bytes": 105049,
+      "verifiedAt": "2026-10-26T21:18:58.480Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16199.png",
+      "sha256": "797a85159dbaf62e78c15e3902d002ad7169a66860134f976148f559cf9260b4",
+      "bytes": 76832,
+      "verifiedAt": "2026-10-26T21:18:58.942Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16200.png",
+      "sha256": "bc2aad8ca88f41725634552a537aa3c01920cc0a0c545babce08672c029bb514",
+      "bytes": 101044,
+      "verifiedAt": "2026-10-26T21:18:59.915Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16201.png",
+      "sha256": "0eb169ddde1722251e1d72c1efc521882d83567edce562198f1a6e8ea5e98a81",
+      "bytes": 94867,
+      "verifiedAt": "2026-10-26T21:19:00.567Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16230.png",
+      "sha256": "cd3d4f573a9ebb60dcd4d8e958fa4fc8d09b66d02249ffa1dbb3ea6afde78f80",
+      "bytes": 111707,
+      "verifiedAt": "2026-10-26T21:19:00.778Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16231.png",
+      "sha256": "cf84858c6b391e796879864f1762d176ed16cc47f9356c6a9a6c413998abc4aa",
+      "bytes": 112309,
+      "verifiedAt": "2026-10-26T21:19:02.050Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16232.png",
+      "sha256": "e78e53a601ab8d0036333ac28e9d5719229afcb99049514ef6119e589f14dac2",
+      "bytes": 121959,
+      "verifiedAt": "2026-10-26T21:19:02.383Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16233.png",
+      "sha256": "c6ded74da27bd683da316c83924d1ff66aee0b03e1edee54cc2e38e159b77e3b",
+      "bytes": 109068,
+      "verifiedAt": "2026-10-26T21:19:02.674Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16234.png",
+      "sha256": "22ecf0dcbeb7fe5f7d82d338c00a37304df08acd0a96cedd1f126fefb6f2de30",
+      "bytes": 128259,
+      "verifiedAt": "2026-10-26T21:19:03.252Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16235.png",
+      "sha256": "f4b2967a5059b9ef58e85b2f809781f2e16ccecad63fdde11dd35872224271b0",
+      "bytes": 102307,
+      "verifiedAt": "2026-10-26T21:19:04.724Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16236.png",
+      "sha256": "3d0249a6883239100c513e80b1b0d015a22ea3ea3fbf648b18ca680554186fa0",
+      "bytes": 120539,
+      "verifiedAt": "2026-10-26T21:19:04.672Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16237.png",
+      "sha256": "32cc989465249866fe28e16d679fdb42ee77ef6a607b5975bd44f0f4c7c620f4",
+      "bytes": 114862,
+      "verifiedAt": "2026-10-26T21:19:04.935Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16238.png",
+      "sha256": "3148fc5054ac4670b574eb808a87701d827c5c5ea70798c57644dffb5117287f",
+      "bytes": 106351,
+      "verifiedAt": "2026-10-26T21:19:05.186Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16239.png",
+      "sha256": "4a45ccfb19c4612337e854fcb3d9f5fad88c93c3b04c6285c5e0ac429dfebc72",
+      "bytes": 113891,
+      "verifiedAt": "2026-10-26T21:19:06.802Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16240.png",
+      "sha256": "7c7b8ab63b2c791b378b22fdf1ed87bdaf722e7d4233ceadc3a6500deb0a8ca7",
+      "bytes": 105907,
+      "verifiedAt": "2026-10-26T21:19:07.309Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16241.png",
+      "sha256": "ae7197872d94c05ccc98b8592ef5e87f992c8842a305db4791b77fe4e562a1bd",
+      "bytes": 105818,
+      "verifiedAt": "2026-10-26T21:19:07.658Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16242.png",
+      "sha256": "2c04304637cb1278819b1434c3253d92f902fd7a4ef2f151ee652b19d9fb4e2b",
+      "bytes": 110943,
+      "verifiedAt": "2026-10-26T21:19:07.719Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16243.png",
+      "sha256": "fb36e7babebc096f18e7cfb5da2310bbfc65d9767d187f51f37ba0fa362a2172",
+      "bytes": 100441,
+      "verifiedAt": "2026-10-26T21:19:09.194Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16244.png",
+      "sha256": "39f4ba3190979268ba1a4fb7dbd76e48e7adcbe927ec744b8e5f1ebdca68325f",
+      "bytes": 99168,
+      "verifiedAt": "2026-10-26T21:19:09.661Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16245.png",
+      "sha256": "c003eb05fca848537b843e42f5f88f12460d9a0a980898ce2397437542ecba4e",
+      "bytes": 107463,
+      "verifiedAt": "2026-10-26T21:19:09.836Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16246.png",
+      "sha256": "87a886d31fb0c0193b24d4029a112db7afaf9e2e7831ef304c8118e28ba5d159",
+      "bytes": 97349,
+      "verifiedAt": "2026-10-26T21:19:10.427Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16247.png",
+      "sha256": "ce6cad7df43f0ab93e757d2cedb0a6fee9422d8d2d378c14b9f8e7cff0b0525d",
+      "bytes": 117259,
+      "verifiedAt": "2026-10-26T21:19:11.538Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16248.png",
+      "sha256": "b586cc7389531898b37cfda27affe5381932a821ec525607e5121750b1fc970e",
+      "bytes": 109312,
+      "verifiedAt": "2026-10-26T21:19:11.892Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16249.png",
+      "sha256": "9fca09348748ff45e4422436c54688b37a8bd7c5ccd48ec50b658289d6d051e9",
+      "bytes": 114458,
+      "verifiedAt": "2026-10-26T21:19:12.007Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16250.png",
+      "sha256": "dc01f4a31161e324e7c3dc10c28a175507e9736ec7ffd00cfeafaa973073ab92",
+      "bytes": 104483,
+      "verifiedAt": "2026-10-26T21:19:12.975Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16251.png",
+      "sha256": "9bc66d0f7cd5629c096610c94f91be92658596c2264d6895fdde9ad9a5b75f3b",
+      "bytes": 111299,
+      "verifiedAt": "2026-10-26T21:19:14.101Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16252.png",
+      "sha256": "c476aa0a3c2f6ad99618932fd0da905703f7f14181d2d0eddafb8916f936792b",
+      "bytes": 108999,
+      "verifiedAt": "2026-10-26T21:19:14.257Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16253.png",
+      "sha256": "0ac2ea91314af8dd1ca30cbda49e63ca9a8b46ac6352bd26f3522699f92795a7",
+      "bytes": 115390,
+      "verifiedAt": "2026-10-26T21:19:14.562Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16254.png",
+      "sha256": "87b167acd4d032b457ef03528ed0b5f210edbb1d4bf55946a49b5545bfe07ae3",
+      "bytes": 118823,
+      "verifiedAt": "2026-10-26T21:19:15.428Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16255.png",
+      "sha256": "d920484d972d6950ad7f80d18beddfe834b303b208929b5c2d009278c92616d5",
+      "bytes": 113777,
+      "verifiedAt": "2026-10-26T21:19:16.337Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16256.png",
+      "sha256": "50ebba24785459d0778dca4870277be4c37c0d238f98b4e91927bb473c10440c",
+      "bytes": 107716,
+      "verifiedAt": "2026-10-26T21:19:16.605Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16257.png",
+      "sha256": "b3cc4c918a4cfbd495c24e4ceb0a4d869787dc72e74e792f03dad427275e413e",
+      "bytes": 104424,
+      "verifiedAt": "2026-10-26T21:19:17.273Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16258.png",
+      "sha256": "3811268384fbdde068b4b53280a7cf96e5874a9e5ebda3fee4eaf46f4b1e92c0",
+      "bytes": 105517,
+      "verifiedAt": "2026-10-26T21:19:18.536Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16259.png",
+      "sha256": "a3d516cc9105779a569125aba2ac97b82d65841f69248bd89e2bd58cd90b24ea",
+      "bytes": 95417,
+      "verifiedAt": "2026-10-26T21:19:18.206Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16260.png",
+      "sha256": "db4d5023bb9dc69c2e863d8e5d13adfbb09f3c61398e96aa7a65ec7abcae8f1e",
+      "bytes": 109941,
+      "verifiedAt": "2026-10-26T21:19:18.874Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16261.png",
+      "sha256": "b95fe27384f8532d9f55fd731b325ed607549fbad95a12c0e56e2e49c22418e5",
+      "bytes": 106224,
+      "verifiedAt": "2026-10-26T21:19:19.409Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16262.png",
+      "sha256": "100de733342a5b2df895f1c514f6f22a31b9b427e23bc961dbd69ddecc4be877",
+      "bytes": 114598,
+      "verifiedAt": "2026-10-26T21:19:20.947Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16263.png",
+      "sha256": "fdedf28a153ff7e75956368a71f783985e7fbebf9405b7aceab2290340595359",
+      "bytes": 103994,
+      "verifiedAt": "2026-10-26T21:19:21.141Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16264.png",
+      "sha256": "ca29afcdfb3d0d5fa5cd6bcc3779265bada4941a2e6396508560baadde2bac0b",
+      "bytes": 93029,
+      "verifiedAt": "2026-10-26T21:19:21.626Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16265.png",
+      "sha256": "44cb985746baf1fd83b0fbd960685132244799ea479fbd06c3d418b1ca2719ec",
+      "bytes": 106776,
+      "verifiedAt": "2026-10-26T21:19:22.335Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16266.png",
+      "sha256": "fc4f5dbf411ce297f903fcc698621b9fb89685fd6635e5c38e09644f55b9be0f",
+      "bytes": 99287,
+      "verifiedAt": "2026-10-26T21:19:22.790Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16267.png",
+      "sha256": "3742b34d9ca377b418ec080729c8983bc7ac9c1cdc6b053b6cefa4adc1c7c391",
+      "bytes": 102436,
+      "verifiedAt": "2026-10-26T21:19:23.504Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16268.png",
+      "sha256": "5b1ff7dd9a804b50c2335e546c5248053380fe003b38fe7aa973c52984de4c8c",
+      "bytes": 92218,
+      "verifiedAt": "2026-10-26T21:19:24.296Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16269.png",
+      "sha256": "7b2a8302beaf38ebe36524858d837130583121fcd494903a40a00bc4e8a384c3",
+      "bytes": 92468,
+      "verifiedAt": "2026-10-26T21:19:24.292Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16270.png",
+      "sha256": "002166d5f60e0b4706197d66f5f937aee16975da89c8604012248436db4365dd",
+      "bytes": 88587,
+      "verifiedAt": "2026-10-26T21:19:24.897Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16271.png",
+      "sha256": "742d8f5481f5249f8cfe639cb882c1b36a9ab8fe07164a8660910f84a68df8df",
+      "bytes": 96728,
+      "verifiedAt": "2026-10-26T21:19:25.835Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16272.png",
+      "sha256": "3948a63a89b696ed649fd8c7e642da721a708417b12944e13c74e582807f5757",
+      "bytes": 99266,
+      "verifiedAt": "2026-10-26T21:19:31.732Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16273.png",
+      "sha256": "277725ee8ffa808b696cd779db9bde53bf799adf58b45138012cd78e80d38fbd",
+      "bytes": 96440,
+      "verifiedAt": "2026-10-26T21:19:31.737Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16274.png",
+      "sha256": "01fc75fde349c4540efbcba2f5a2df55b9fb0b767ac2ff3d6ca2e365460c171e",
+      "bytes": 88083,
+      "verifiedAt": "2026-10-26T21:19:32.386Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16275.png",
+      "sha256": "2fb7d30c51b41f41ef585b06eec2ffbc974bd3f41cd9fc923321017d69a83620",
+      "bytes": 101990,
+      "verifiedAt": "2026-10-26T21:19:33.195Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16276.png",
+      "sha256": "22880a78e16db815f284ca8bd32cabe6ca90c1f2e0c3685469fe7e961d599817",
+      "bytes": 88479,
+      "verifiedAt": "2026-10-26T21:19:33.807Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16277.png",
+      "sha256": "b6873ae0a36e8102a9020e63aeafa48346fad4e3032f1ebcec0d3efed32f3a91",
+      "bytes": 107581,
+      "verifiedAt": "2026-10-26T21:19:34.190Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16278.png",
+      "sha256": "87951ead428208180d2dc52d49def0c46c3aa4373232f958c3a12cb8eb29bcab",
+      "bytes": 92955,
+      "verifiedAt": "2026-10-26T21:19:34.875Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16279.png",
+      "sha256": "7a1b62b0d2af8e760bb040aae8a494f4074528f12dabb4743b90aed0c95c37a2",
+      "bytes": 114384,
+      "verifiedAt": "2026-10-26T21:19:35.800Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16280.png",
+      "sha256": "84f8d54d1dab5b422d0d3bb0f5c3a1d3c215bfbde9994a245afbe4912f54e957",
+      "bytes": 122889,
+      "verifiedAt": "2026-10-26T21:19:36.325Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16281.png",
+      "sha256": "1b0b923ce8606013ef11e7a93307c20a54ed6aa6189243c9f5540bdaa99d1ed2",
+      "bytes": 131356,
+      "verifiedAt": "2026-10-26T21:19:36.625Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16282.png",
+      "sha256": "6077e28cc1c75fbec0c18a47e30c282d875316f49c68363a29c13e927a19ec66",
+      "bytes": 99993,
+      "verifiedAt": "2026-10-26T21:19:37.297Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16283.png",
+      "sha256": "ca96baeea86ebfb82c9fd61672ee10a3d37cae0d827a10a2cacae5d46ea42df8",
+      "bytes": 96626,
+      "verifiedAt": "2026-10-26T21:19:39.055Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16284.png",
+      "sha256": "1654a3e6c49d6d941c85e7d48c2cf2d7369d45c9010562c56474bab3b5a99c79",
+      "bytes": 111640,
+      "verifiedAt": "2026-10-26T21:19:38.661Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16285.png",
+      "sha256": "0769cd87c11baee9baa9df4690e345e5404a6bef362c844fe84117e6c9f987ef",
+      "bytes": 130393,
+      "verifiedAt": "2026-10-26T21:19:39.041Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16286.png",
+      "sha256": "fe4630a2bc8e09da886d0fe286256f083868d298885bd6d1aa9cdd16974fc7d4",
+      "bytes": 95996,
+      "verifiedAt": "2026-10-26T21:19:39.500Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16287.png",
+      "sha256": "22ddf8cb9aadaee4a8bc0dceeb4d98509b71a0f34f8348994be1522b60624a74",
+      "bytes": 115544,
+      "verifiedAt": "2026-10-26T21:19:40.847Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16288.png",
+      "sha256": "967994a32615189cee3420b4416a4263929726da5d40150a6c6a966c298b0179",
+      "bytes": 127587,
+      "verifiedAt": "2026-10-26T21:19:41.200Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16289.png",
+      "sha256": "fede585394e257c302f987e9c2b83e66d1581e1d887fecb431136ab82b2b7c04",
+      "bytes": 94641,
+      "verifiedAt": "2026-10-26T21:19:41.569Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16290.png",
+      "sha256": "562b1157bfcee8b7a7b7fc5be5e16fc2839f50f2a63e6085d959d20e1967d6f2",
+      "bytes": 94547,
+      "verifiedAt": "2026-10-26T21:19:41.859Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16291.png",
+      "sha256": "b1d51e7e6f96661b9e25c6aac4147b0c40b1c2188dbbda395adfd7ae05c9ca08",
+      "bytes": 95028,
+      "verifiedAt": "2026-10-26T21:19:43.312Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16292.png",
+      "sha256": "b91b2c038c4c9f1ad9e0424c4924a5cf8510933c2756b036ad14b7a75e5c0168",
+      "bytes": 108199,
+      "verifiedAt": "2026-10-26T21:19:43.946Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16293.png",
+      "sha256": "f6fb4f60c750907d653d45e45e98238e0c5a15e44e32e9fc01251891fba1e7fa",
+      "bytes": 112387,
+      "verifiedAt": "2026-10-26T21:19:43.956Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16294.png",
+      "sha256": "7537d93e928cf366ece45276ad509124bb0c63d4eea823bce6539adef52c9d1f",
+      "bytes": 118477,
+      "verifiedAt": "2026-10-26T21:19:44.260Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16295.png",
+      "sha256": "8df18a11d25074f540c6500945ee3a05b7e6ec35b3f96cd7a84a17a074ee4a7c",
+      "bytes": 103256,
+      "verifiedAt": "2026-10-26T21:19:45.603Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16296.png",
+      "sha256": "94e5fa531bb7311e48ded66a8c15104a714d05e0bfb0eba15852ca6b0c3a456a",
+      "bytes": 98706,
+      "verifiedAt": "2026-10-26T21:19:46.203Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16297.png",
+      "sha256": "625342e7f80f001f51b33ed57b8e27fe13c926af0e169ce63858c9c1d25b6408",
+      "bytes": 99192,
+      "verifiedAt": "2026-10-26T21:19:47.251Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16298.png",
+      "sha256": "1d9327b15c497b15f19005b3a9fb6448844fa916d358de4364b9d13c19f8086b",
+      "bytes": 106733,
+      "verifiedAt": "2026-10-26T21:19:46.760Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16299.png",
+      "sha256": "400303b9eddc441ecad55185eab0ef8e2e48872ebe61311d8c766795b007a82c",
+      "bytes": 97635,
+      "verifiedAt": "2026-10-26T21:19:47.562Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16300.png",
+      "sha256": "d1515a835f6aae8395e8ae6b2557927cd9bd19778d2ad02e588bd3dcd2d3d803",
+      "bytes": 90104,
+      "verifiedAt": "2026-10-26T21:19:48.289Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16301.png",
+      "sha256": "76336f66d7733d50c94159e39ebddc3cbc18f38d7b215cc24e54f20d585b1d97",
+      "bytes": 106961,
+      "verifiedAt": "2026-10-26T21:19:49.200Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16302.png",
+      "sha256": "5d32101e03795598a256616405aaba7b62d1944f121f960fb1e84a465ad95177",
+      "bytes": 104244,
+      "verifiedAt": "2026-10-26T21:19:49.790Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16303.png",
+      "sha256": "9e70d60122df7e6beaaeda2e15894a20637e27195ea2f4bdeed38f4bd5fb8a4e",
+      "bytes": 112970,
+      "verifiedAt": "2026-10-26T21:19:50.643Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16304.png",
+      "sha256": "71718b6e8230109b48a940be2dedae9ac62be5d87c1cb927fc30305026dd8c37",
+      "bytes": 128694,
+      "verifiedAt": "2026-10-26T21:19:51.248Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16305.png",
+      "sha256": "fa8c60b4072d0dd36ba96459ea0ad972e7cf4d230f1be2f43d9d4b57d4d69b2f",
+      "bytes": 95870,
+      "verifiedAt": "2026-10-26T21:19:51.406Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16306.png",
+      "sha256": "85729e54734feda57ad998395e28d4c864bb84def2a46a739300e0540c50abe3",
+      "bytes": 99158,
+      "verifiedAt": "2026-10-26T21:19:51.907Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16307.png",
+      "sha256": "5be4ccd874cde5ff4453085425933f1d503b78e7a09459ea9402c413f37e1928",
+      "bytes": 136006,
+      "verifiedAt": "2026-10-26T21:19:53.552Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16308.png",
+      "sha256": "3485f64da1979b0833ff7f767f6aa3eb4000fdb43e02595ae7baf6c4462ba0d8",
+      "bytes": 123390,
+      "verifiedAt": "2026-10-26T21:19:53.628Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16309.png",
+      "sha256": "0a5e70e512424d9c6ad62e14120040ac761b313774fb9f674ba30f41d894affa",
+      "bytes": 131434,
+      "verifiedAt": "2026-10-26T21:19:53.919Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16310.png",
+      "sha256": "5e71326fc4ff902e28b609ed73f5d7186e79fc5cea32d462e2a1715848c3b4c4",
+      "bytes": 130189,
+      "verifiedAt": "2026-10-26T21:19:54.218Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16311.png",
+      "sha256": "d5244bec2949af3e109e4036327da96b1ffe53594e9bc0daa6fffff4abe14be5",
+      "bytes": 126819,
+      "verifiedAt": "2026-10-26T21:19:56.499Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16312.png",
+      "sha256": "2ef82f1a724b4e884d1be1a00ddaeb2a2895e9e852b3070ba32359b32c77d212",
+      "bytes": 120592,
+      "verifiedAt": "2026-10-26T21:19:55.816Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16313.png",
+      "sha256": "fa2988ce160c55cf496ab30b14d68722c8e8c5569a9643ae4262b7d7c087a4fe",
+      "bytes": 117231,
+      "verifiedAt": "2026-10-26T21:19:56.149Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16314.png",
+      "sha256": "37e71797f8767283bd94a8836383a05d173b11027b8082eed9363c1bccc84e24",
+      "bytes": 102663,
+      "verifiedAt": "2026-10-26T21:19:56.528Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16315.png",
+      "sha256": "97f6b114a7fdd51d127616df1f327e492796e16e65828e9d3fdec7bae1cf0a20",
+      "bytes": 101719,
+      "verifiedAt": "2026-10-26T21:19:57.960Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16316.png",
+      "sha256": "224c5bb3991d75c4c2523b8a3a1537ea5ce5d2d5562d0e0cb58ef33fd957fdee",
+      "bytes": 103764,
+      "verifiedAt": "2026-10-26T21:19:58.261Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16317.png",
+      "sha256": "806691091948d392d96ee86f709bc0014ddfaf056d0528e2e6c4170a0532b8c0",
+      "bytes": 103315,
+      "verifiedAt": "2026-10-26T21:19:58.652Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16318.png",
+      "sha256": "dda2a9f9bd76b1f8ca551dd92d07d53f4feff1cca63b74c4d9764ed18b71a063",
+      "bytes": 128351,
+      "verifiedAt": "2026-10-26T21:20:00.009Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16319.png",
+      "sha256": "a947cd48b78a29b651f8e1f8e73e36174612d2e84f425e4d4890890e0eaa110d",
+      "bytes": 97949,
+      "verifiedAt": "2026-10-26T21:19:59.995Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16320.png",
+      "sha256": "0646293a017499fbb0ef592acf92cb79675de081d2bb8be10d8438dc878c0f47",
+      "bytes": 125155,
+      "verifiedAt": "2026-10-26T21:20:00.336Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16321.png",
+      "sha256": "5337b19091494ce1491c76e7e5949a9cd7130c091953c30ece88297150b2f6f1",
+      "bytes": 95384,
+      "verifiedAt": "2026-10-26T21:20:01.103Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16322.png",
+      "sha256": "f8b29cb4dbbe12b520bce6e6521bc2bd96c559411590b0b74774527ba078597a",
+      "bytes": 99718,
+      "verifiedAt": "2026-10-26T21:20:07.923Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16323.png",
+      "sha256": "4ea971e374ec53ddb810812baba4d5d72d9f262bf98fe861f00292cc8cc1837c",
+      "bytes": 101530,
+      "verifiedAt": "2026-10-26T21:20:07.925Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16324.png",
+      "sha256": "348bf52848622806570efc502bb53843494cc119709c17f87549ea80f3d01829",
+      "bytes": 111719,
+      "verifiedAt": "2026-10-26T21:20:09.994Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16325.png",
+      "sha256": "6af94c37ead66514f7b2e62d85c759803f54511bc761f12609ae3e022bed31bf",
+      "bytes": 104034,
+      "verifiedAt": "2026-10-26T21:20:09.748Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16326.png",
+      "sha256": "1db53d2d189f6c239441654355edc4e47a145f05749b50c410eef9b839b222b1",
+      "bytes": 78771,
+      "verifiedAt": "2026-10-26T21:20:10.080Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16327.png",
+      "sha256": "87a24774b426c9a185d1ad6a0ba4dc34b5938256621c98260d6f98eb638cf0ab",
+      "bytes": 110253,
+      "verifiedAt": "2026-10-26T21:20:15.648Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16328.png",
+      "sha256": "f4655f091701ee01c2c7cfe0146e8ee6c28d2760081da937aa5e60e7469c5015",
+      "bytes": 124256,
+      "verifiedAt": "2026-10-26T21:20:11.866Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16329.png",
+      "sha256": "ecc2b15e0161720c30ce75ba4f37634cdad0881940c0f15ca8e7eb9807ca17ad",
+      "bytes": 108370,
+      "verifiedAt": "2026-10-26T21:20:11.996Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16330.png",
+      "sha256": "a99459be025e3dea432ff686da9be94b95cccc8bd8f8e8c787b7e53f2eea6235",
+      "bytes": 97369,
+      "verifiedAt": "2026-10-26T21:20:14.024Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16331.png",
+      "sha256": "adc9e47172675f6a5cf641b748b9c4f7c6a49caf11e3f6fa6a352d53b5fed25c",
+      "bytes": 103621,
+      "verifiedAt": "2026-10-26T21:20:13.783Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16332.png",
+      "sha256": "007a53b90bd56c1771c66b77a22166e7a3e2ffc63becfa9f4364bc1fada3b329",
+      "bytes": 104589,
+      "verifiedAt": "2026-10-26T21:20:15.163Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16333.png",
+      "sha256": "8e8fe51bee894bb70923ee70ae2819ff88c3c938037871a9cbe185b04fa85ecd",
+      "bytes": 105985,
+      "verifiedAt": "2026-10-26T21:20:15.810Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16334.png",
+      "sha256": "24134f2dc76d77965c4ff91f5a62dbeca379f9f5252d595ee3d81da0c1972bfe",
+      "bytes": 101896,
+      "verifiedAt": "2026-10-26T21:20:15.943Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16335.png",
+      "sha256": "0c235d54b18d07c58bd06def638d02b9922e4598652fbf77edf853e855ff2364",
+      "bytes": 127718,
+      "verifiedAt": "2026-10-26T21:20:17.934Z"
+    },
+    {
+      "bucket": "shiritori-images",
+      "key": "assets/shiritori/seven512-word-16336.png",
+      "sha256": "5fcc35b528d5308654abd80a2a4c91d8cfde3172d689c6d3c875ea63fef35ad4",
+      "bytes": 94693,
+      "verifiedAt": "2026-10-26T21:20:17.443Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet01-v1.png",
+      "sha256": "2a2d474955057b14e5a2b5ba27aa0fa91e0eb83e74d2ff5ce6026cac43f9472d",
+      "bytes": 2477446,
+      "verifiedAt": "2026-10-26T21:20:18.813Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet02-v1.png",
+      "sha256": "c2b23dd45c29c59c3a96a84b94a1cd90c500622c27b4bf1f7fbdfd4f83852959",
+      "bytes": 2347630,
+      "verifiedAt": "2026-10-26T21:20:19.564Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet02-v2.png",
+      "sha256": "c750ed4c2577ec6bc27729b4c09cbe08ced0a830caf9f046495c73810280f739",
+      "bytes": 2376968,
+      "verifiedAt": "2026-10-26T21:20:21.228Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet03-v1.png",
+      "sha256": "32c3162cbf000da43f5950f0dc0767235f683be1d1b5cad99066eb1738f4e1d3",
+      "bytes": 2514781,
+      "verifiedAt": "2026-10-26T21:20:21.284Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet03-v2.png",
+      "sha256": "02356cad3e1c75266f200edacbd3e6aa5415eb35838a1474484bf28778e0204a",
+      "bytes": 2366509,
+      "verifiedAt": "2026-10-26T21:20:21.625Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet04-v1.png",
+      "sha256": "1ad2ee5d1a6e6645f0e34111231e9cc7b2ff77b00ed4c2d710b227d841244b42",
+      "bytes": 2423746,
+      "verifiedAt": "2026-10-26T21:20:22.247Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet04-v2.png",
+      "sha256": "a9de698e1383408db2b2fd9ef905955b2de82ac9e48c28d4fa9c34b1e6981324",
+      "bytes": 2429140,
+      "verifiedAt": "2026-10-26T21:20:23.607Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet04-v3.png",
+      "sha256": "20170fad57d6920e11f2812bf24e888d6e90005d16fc1a0e13a9eca65c824e9c",
+      "bytes": 2309115,
+      "verifiedAt": "2026-10-26T21:20:24.068Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet05-v1.png",
+      "sha256": "33cdcb34f5195e4026e9f95bb7fbbaa6df5ef6671269d9c019c77b801bcc74fb",
+      "bytes": 2545086,
+      "verifiedAt": "2026-10-26T21:20:25.051Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet06-v1.png",
+      "sha256": "4337e90b7ef7802d9ad3e421e564308e251ed87cd1caad9ae632830d92a1ebe6",
+      "bytes": 2588096,
+      "verifiedAt": "2026-10-26T21:20:24.815Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet07-v1.png",
+      "sha256": "2ee91336371ff83c6037141e9c03abe12bf6862ed74db6967741161223d076ce",
+      "bytes": 2833204,
+      "verifiedAt": "2026-10-26T21:20:26.496Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet07-v2.png",
+      "sha256": "f569f85ea4729b0194ed48c891f8aef4c83d59dcb33aa185cd8901d77b52c0d3",
+      "bytes": 3158259,
+      "verifiedAt": "2026-10-26T21:20:27.144Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet08-v1.png",
+      "sha256": "f174ab911657de9f353768842be27ce31c13af2039e2f61dfe7192395a9db015",
+      "bytes": 2774822,
+      "verifiedAt": "2026-10-26T21:20:27.208Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet08-v2.png",
+      "sha256": "450178850bb4d09ff55dc4fe0907e1df7feb943bd852aa284688e66506b51ca5",
+      "bytes": 2677836,
+      "verifiedAt": "2026-10-26T21:20:27.824Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet09-v1.png",
+      "sha256": "251ba8fca7f8cd5bb42b1253f9e5f8df99c0ff9e737fe957397c7f5e55d0756b",
+      "bytes": 2630653,
+      "verifiedAt": "2026-10-26T21:20:28.838Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet10-v1.png",
+      "sha256": "c1ba04774bbdc51ec1d68dbf878bd9e8315f9b9aac119c1384d087dfa8077a8f",
+      "bytes": 2415632,
+      "verifiedAt": "2026-10-26T21:20:31.083Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet10-v2.png",
+      "sha256": "331b3d0de4229481edd6f1159a3745ef628ca4f34f3983264e029a13226dfac5",
+      "bytes": 2381609,
+      "verifiedAt": "2026-10-26T21:20:29.667Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet10-v3.png",
+      "sha256": "ff2f5779b263147a4aa66bfb7bc5ca58a2d85056f3244747e8e4d54d545224aa",
+      "bytes": 2352824,
+      "verifiedAt": "2026-10-26T21:20:30.404Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet11-v1.png",
+      "sha256": "7896a5e7ac6a9b4af31a35b7afc400708155802a9cd3524eb6e423a0b09cbbad",
+      "bytes": 2615430,
+      "verifiedAt": "2026-10-26T21:20:31.435Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet11-v2.png",
+      "sha256": "2c5b41ffde3de8c772bc4a6ecfeff33d71fe9dd4b2d716f3dc4d8793e929a59f",
+      "bytes": 2540057,
+      "verifiedAt": "2026-10-26T21:20:31.980Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet11-v3.png",
+      "sha256": "e6bc1192c34cb85ab3b2c3515dc0fa251af5a25182803fd1041b9a0bbf223254",
+      "bytes": 2536556,
+      "verifiedAt": "2026-10-26T21:20:33.592Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet12-v1.png",
+      "sha256": "cd736d8384c8bdf1f9efa0cab9746bac7a8406cd1ce7e88844a848c4ecb0c56f",
+      "bytes": 2498986,
+      "verifiedAt": "2026-10-26T21:20:33.736Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet12-v2.png",
+      "sha256": "28155c5b308a0fda227c713f4a4132c7a78a0e01ba7d19c60ba362f4f25a15ed",
+      "bytes": 2462703,
+      "verifiedAt": "2026-10-26T21:20:33.985Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet12-v3.png",
+      "sha256": "9c5816bd300620092cfce3d8ca941c0fce04535de9b391b78016dad38800624a",
+      "bytes": 2448835,
+      "verifiedAt": "2026-10-26T21:20:35.646Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet13-v1.png",
+      "sha256": "d3fc0e3e24063f867c53820d264500d5128aad042d8a57e5bc37e2de6a1bbd8f",
+      "bytes": 2776373,
+      "verifiedAt": "2026-10-26T21:20:36.422Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet13-v2.png",
+      "sha256": "3b8b978e8e54962281c3ffa69b31c13261af08d0043da041dd11cf7d1fc2eb3c",
+      "bytes": 2728583,
+      "verifiedAt": "2026-10-26T21:20:36.537Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet14-v1.png",
+      "sha256": "7c50f832cdce9ded34ac844c7fe33a8f9a77395ee42064caad70bd5c43ed1f75",
+      "bytes": 2562679,
+      "verifiedAt": "2026-10-26T21:20:37.163Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet14-v2.png",
+      "sha256": "0ba132c68a2ae7eacea6d521cec9e40e9cbeb3cf7b3791d21db21eb4acc9fd7d",
+      "bytes": 2516232,
+      "verifiedAt": "2026-10-26T21:20:38.172Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet14-v3.png",
+      "sha256": "3cfd15783c84c9d47df2fa44391c2cfb3a084030218139ed1f5f9c6abb28d87d",
+      "bytes": 2441851,
+      "verifiedAt": "2026-10-26T21:20:44.143Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet15-v1.png",
+      "sha256": "e8124b6b98382ae6e9720fb1454c5a72ae8ede30fb27ee4f19bca423803249a5",
+      "bytes": 2656294,
+      "verifiedAt": "2026-10-26T21:20:44.161Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet16-v1.png",
+      "sha256": "abd0341d32fbc9e95390a01b1c0790bda67988e8b0cd6c8d5a78526c55a2f131",
+      "bytes": 2683963,
+      "verifiedAt": "2026-10-26T21:20:44.352Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet16-v2.png",
+      "sha256": "3f93659df0af64d0f1e5743e51a9906f74b4356ab6348c2c63a6dfb6d6f1c92f",
+      "bytes": 2596195,
+      "verifiedAt": "2026-10-26T21:20:45.489Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet17-v1.png",
+      "sha256": "ef6d732039a983d5d3de62e44b0eb670e22fa6c493f627da9383c2a934c935ae",
+      "bytes": 2708388,
+      "verifiedAt": "2026-10-26T21:20:47.491Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet17-v2.png",
+      "sha256": "d8810473e59cb49df96505631fa88f9b164878c4a560c801707fdee428002fdb",
+      "bytes": 2546850,
+      "verifiedAt": "2026-10-26T21:20:59.916Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet17-v3.png",
+      "sha256": "42d7a0583e167e2d9728dde05940d70c37ed574f651569157ad1cbbdd116eba1",
+      "bytes": 2315490,
+      "verifiedAt": "2026-10-26T21:20:47.924Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet17-v4.png",
+      "sha256": "62eba4bceb42fcccb19955afadb3ac5237ff6b6ab32b60e6e90477dbfb4f917f",
+      "bytes": 2219557,
+      "verifiedAt": "2026-10-26T21:20:47.639Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet18-v1.png",
+      "sha256": "6ce3b3f46e491588ad7a193dade7cd38b39a32bf7eca74e7c418c8d91ed220c4",
+      "bytes": 2715934,
+      "verifiedAt": "2026-10-26T21:20:49.798Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet18-v2.png",
+      "sha256": "f59c9d7a437ca062280fa09f1145df0b1b289a33ef5139cae07bd63117b8fcff",
+      "bytes": 2577895,
+      "verifiedAt": "2026-10-26T21:20:50.644Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet18-v3.png",
+      "sha256": "c32c3c8ee9b17a1fe4a7244758a4ce8c9bc689b6fba46fe8d984cd79620da2cb",
+      "bytes": 2429837,
+      "verifiedAt": "2026-10-26T21:20:50.230Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet18-v4.png",
+      "sha256": "54047d1db8974ff82503406dc20112b3a6e596191d8dcb06a7bb251912abac95",
+      "bytes": 2310459,
+      "verifiedAt": "2026-10-26T21:20:52.265Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet19-v1.png",
+      "sha256": "783b97a409aac6865df902607e154de7610efdc19db57a472c72d5424d131aa3",
+      "bytes": 2440470,
+      "verifiedAt": "2026-10-26T21:20:52.660Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet19-v2.png",
+      "sha256": "960f52d656a48d516cf2f125a3215b9810255855ea4ab7d77c3a701d528c5bd2",
+      "bytes": 2645651,
+      "verifiedAt": "2026-10-26T21:20:53.000Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet20-v1.png",
+      "sha256": "9c4fc7a7e8d631174250f91ad8fbc0af08ea860e5f9545fbebfefbf5538d4efd",
+      "bytes": 2478635,
+      "verifiedAt": "2026-10-26T21:20:55.659Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet20-v2.png",
+      "sha256": "832e92d0a9fc440517b21d1ef2939eb12e247f18ab95ce7f1daaa12f9148839d",
+      "bytes": 2374721,
+      "verifiedAt": "2026-10-26T21:20:55.263Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet20-v3.png",
+      "sha256": "eb03737f9117868bcfede6870f56da8f5c595aee579411a3d0583a9e8302aa6c",
+      "bytes": 2599890,
+      "verifiedAt": "2026-10-26T21:20:56.625Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet21-v1.png",
+      "sha256": "e478a774dc70fc11ef1ef64ee15f15f7bd4d82dac6c967ceff9b39bb67a83b2e",
+      "bytes": 2463852,
+      "verifiedAt": "2026-10-26T21:20:57.767Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet21-v2.png",
+      "sha256": "9c958aa2bfb22964f7d04ee7b22c3e3d971977cb79ee1900dbfe179b15c6e96a",
+      "bytes": 2381564,
+      "verifiedAt": "2026-10-26T21:20:58.280Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet21-v3.png",
+      "sha256": "b3dd56b4fba68ad79eee1e1b251e83e00402693b1a0800da5e091e3d2189a505",
+      "bytes": 2625897,
+      "verifiedAt": "2026-10-26T21:20:59.141Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet22-v1.png",
+      "sha256": "39378b779f2893937ecd6aefbc5b60e92d4116b0406d453c16d3f759e2bdc70a",
+      "bytes": 2636615,
+      "verifiedAt": "2026-10-26T21:21:00.706Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet22-v2.png",
+      "sha256": "a722c0735ec3b6067ac80ea6fdebce8e763c6718f4707414fe19a3fdbebc2a1c",
+      "bytes": 2428050,
+      "verifiedAt": "2026-10-26T21:21:00.938Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet22-v3.png",
+      "sha256": "d3375623d9568fa0b828589351ce34af4a94ff6480469366f2173509eaab5c2b",
+      "bytes": 2659267,
+      "verifiedAt": "2026-10-26T21:21:02.207Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet22-v4.png",
+      "sha256": "e9a51abb3ab6d5114288200f96cc2b78b4a5e7a34ca570889b0764ed85ec9d13",
+      "bytes": 2567877,
+      "verifiedAt": "2026-10-26T21:21:02.460Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet23-v1.png",
+      "sha256": "bda788bc7151c7c99e932442ffca3705b0f5e5db3faf214a77b85d5684b5f821",
+      "bytes": 1950960,
+      "verifiedAt": "2026-10-26T21:21:02.648Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet23-v2.png",
+      "sha256": "149b7863518ce5d82c05d4a030b040b4ef04b22d7a47b43fd12bbd5eab73d1ae",
+      "bytes": 2057110,
+      "verifiedAt": "2026-10-26T21:21:04.861Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet23-v3.png",
+      "sha256": "6b143e86dc2e2d2c1524e7861f3f42eb8ab27792b525696bee62c137edad7793",
+      "bytes": 1968237,
+      "verifiedAt": "2026-10-26T21:21:04.879Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet24-v1.png",
+      "sha256": "cbf75142c71adce671baed7fdb9fda4f88659a5ea8ec8994f567e19e0fa28896",
+      "bytes": 2236509,
+      "verifiedAt": "2026-10-26T21:21:04.595Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet24-v2.png",
+      "sha256": "9aa0528e42487c5b85a0d021e0e253e6c32f27c11cae436f6316f0a4574b8a15",
+      "bytes": 2237292,
+      "verifiedAt": "2026-10-26T21:21:04.899Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet24-v3.png",
+      "sha256": "e2661ce048228a7506c6a76a4a3b982893f142ddc7569b70b3cd5b2286cd461f",
+      "bytes": 2199869,
+      "verifiedAt": "2026-10-26T21:21:07.013Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet25-v1.png",
+      "sha256": "6e46c7efa9c8fd1757ad5df8f382c08051fdcc40405d4bf985e260745dd7c3cf",
+      "bytes": 3496785,
+      "verifiedAt": "2026-10-26T21:21:07.785Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet25-v2.png",
+      "sha256": "6166a4b2cdb2b2208d6bb6242da9da8120f4192a3855de515260a403d930c43f",
+      "bytes": 3297120,
+      "verifiedAt": "2026-10-26T21:21:06.885Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet26-v1.png",
+      "sha256": "e996e81585b09cdc27eb41e90dc9c67450cc0df5ea5b4aee436ba59be14dcbb4",
+      "bytes": 3471766,
+      "verifiedAt": "2026-10-26T21:21:08.976Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet26-v2.png",
+      "sha256": "0875d577744f7590d274a19d1dc0800983909bd2ae0c0bbd142d89b3df4f6511",
+      "bytes": 3190412,
+      "verifiedAt": "2026-10-26T21:21:09.561Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet27-v1.png",
+      "sha256": "62cf9d513230b1622f5f99faa4de6b6c765b46e2487b9cf2d392138fbcf87eab",
+      "bytes": 3610617,
+      "verifiedAt": "2026-10-26T21:21:10.088Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet28-v1.png",
+      "sha256": "79337af81f625d12cedae55acf103f31494c776e1ef3c9bc004bcefa2c25d96d",
+      "bytes": 3262707,
+      "verifiedAt": "2026-10-26T21:21:10.726Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet29-v1.png",
+      "sha256": "af73199bc3f1611a8fb7b427cf56b6bc4c7756b4c808c182ca549f6fad14a00b",
+      "bytes": 3212091,
+      "verifiedAt": "2026-10-26T21:21:11.260Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet29-v2.png",
+      "sha256": "17703bcbba86374bb9d6b44286c29646080db1187021dffcb12a50dbe7f340d6",
+      "bytes": 3113893,
+      "verifiedAt": "2026-10-26T21:21:12.550Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet29-v3.png",
+      "sha256": "7d16ac87604e59d75a639c91b1c4f86c4ac5db5da93db5e832c97689e1add9cf",
+      "bytes": 2868635,
+      "verifiedAt": "2026-10-26T21:21:12.453Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet30-v1.png",
+      "sha256": "7b5a95b60d1a55ac18c059ae6a4b6d56ca3beb3336a3e410e028b3728b0b0142",
+      "bytes": 3048765,
+      "verifiedAt": "2026-10-26T21:21:13.252Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet30-v2.png",
+      "sha256": "760563fa23266cbfbdc6c2a4abba9db37ab3e183c9689bbbb1fdb35a4b681d94",
+      "bytes": 2886337,
+      "verifiedAt": "2026-10-26T21:21:14.323Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet31-v1.png",
+      "sha256": "27203634c305758bb47c897c757b0dddc3d60a9247498b4c12e13b2aaa5db0f8",
+      "bytes": 3075110,
+      "verifiedAt": "2026-10-26T21:21:20.522Z"
+    },
+    {
+      "bucket": "shiritori-image-archive",
+      "key": "assets/shiritori/sheets/seven512-sheet32-v1.png",
+      "sha256": "74e34d73e749a8bd6ca1d09fecfdf497d8f4894724a999b734b7486811b03635",
+      "bytes": 3191250,
+      "verifiedAt": "2026-10-26T21:21:14.713Z"
+    }
+  ]
+}
