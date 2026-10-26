@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,'..');
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
 const items=[...read('data/dictionary-imports/2026-10-25-seven-categories.review.json'),...read('data/dictionary-imports/2026-10-25-seven-categories1024.review.json')];
 assert.equal(items.length,1024);
-const pictureMap=new Map(JSON.parse(fs.readFileSync(path.join(root,'data/image-coverage/2026-10-25-seven512-images/plan.json'),'utf8')).items.map(x=>[x.id,'assets/shiritori/'+x.filename]));for(const x of items)x.expectedImage=pictureMap.get(x.id)||null;
+const pictureMap=new Map(['seven512','seven512b'].flatMap(batch=>JSON.parse(fs.readFileSync(path.join(root,'data/image-coverage/2026-10-25-'+batch+'-images/plan.json'),'utf8')).items.map(x=>[x.id,'assets/shiritori/'+x.filename])));assert.equal(pictureMap.size,1024);for(const x of items)x.expectedImage=pictureMap.get(x.id)||null;
 const out=path.join(root,'qa-output/seven-categories1024');fs.mkdirSync(out,{recursive:true});
 const server=http.createServer((req,res)=>{
  const file=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);

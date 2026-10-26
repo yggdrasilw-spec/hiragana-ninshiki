@@ -13,15 +13,15 @@ assert dict(collections.Counter(x['category'] for x in items))==p['categoryCount
 assert len(reviews)==32 and {x['sheet'] for x in reviews}==set(range(1,33))
 before=list(csv.DictReader((O/'registration-baseline.csv').open(encoding='utf-8-sig')));current=list(csv.DictReader((R/'whitelist.csv').open(encoding='utf-8-sig')))
 assert len(before)==len(current)==16574
-index={x['id']:x for x in items};changed=[]
+index={x['id']:x for x in items};later=read(R/'data/image-coverage/2026-10-25-seven512b-images/plan.json')['items'];later_ids={x['id'] for x in later};assert len(later_ids)==512 and not later_ids&set(index);changed=[]
 for ident,(old,new) in enumerate(zip(before,current),1):
  if old!=new:changed.append(ident)
  for k in old:
-  if ident not in index or k not in ['image_asset','image_mode','image_credit']:assert old[k]==new[k],(ident,k)
+  if ident not in set(index)|later_ids or k not in ['image_asset','image_mode','image_credit']:assert old[k]==new[k],(ident,k)
  if ident in index:
   x=index[ident];assert new['image_asset']=='assets/shiritori/'+x['filename'];assert new['image_mode']=='asset' and new['image_credit']=='AI生成イラスト'
-assert set(changed)==set(index)
-manifest=read(R/'assets/shiritori/manifest.json');assets=manifest['assets'];assert len(assets)==baseline['manifestAssets']+512
+assert set(changed)==set(index)|later_ids
+manifest=read(R/'assets/shiritori/manifest.json');assets=manifest['assets'];assert len(assets)==baseline['manifestAssets']+1024
 assert sha(json.dumps(assets[:baseline['manifestAssets']],ensure_ascii=False,sort_keys=True).encode())==baseline['manifestPrefixSha256']
 byfile={x['file']:x for x in assets};assert len(byfile)==len(assets)
 coverage=read(R/'data/image-coverage/review-2026-10-10.json');grades=read(R/'data/shiritori-grade-review.json');decisions=read(R/'data/shiritori-grade-decisions.json')

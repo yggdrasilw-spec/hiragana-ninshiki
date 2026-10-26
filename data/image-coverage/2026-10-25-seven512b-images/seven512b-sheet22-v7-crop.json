@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v6",
+  "sourceSha256": "bd346293c24706a430a5a20eb6377eb3800a69aa9a697a811db6793babb8fe7c",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      6
+    ],
+    [
+      300,
+      318
+    ],
+    [
+      623,
+      631
+    ],
+    [
+      936,
+      943
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      312,
+      318
+    ],
+    [
+      623,
+      635
+    ],
+    [
+      935,
+      942
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        6,
+        6,
+        300,
+        312
+      ],
+      "edgeInkFraction": 0.1984795321637427,
+      "contentFraction": 0.4837935174069628,
+      "file": "seven512b-word-16483.png",
+      "sha256": "ef39424d1c7cd5c321150c581b93f4d94507e8e5905ccde08c64e4ad0d1202af"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        318,
+        6,
+        623,
+        312
+      ],
+      "edgeInkFraction": 0.5285714285714286,
+      "contentFraction": 0.7186328083145826,
+      "file": "seven512b-word-16484.png",
+      "sha256": "f8c740790f96906a9e7bf4ee702bd763ffb625c7f789ac60a5561d4b352bad7d"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        631,
+        6,
+        936,
+        312
+      ],
+      "edgeInkFraction": 0.2883534136546185,
+      "contentFraction": 0.42080788599592844,
+      "file": "seven512b-word-16485.png",
+      "sha256": "e716c42baf78a48e328da8a0829c8980d552f201333fb938a0c3270c4574f1b0"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        943,
+        6,
+        1246,
+        312
+      ],
+      "edgeInkFraction": 0.473517559009787,
+      "contentFraction": 0.6924221833948101,
+      "file": "seven512b-word-16486.png",
+      "sha256": "a90e490cea6d0884dcaace8f963b37847d1cde7fbb4c504ab4972a265edd6a76"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        6,
+        318,
+        300,
+        623
+      ],
+      "edgeInkFraction": 0.442530755711775,
+      "contentFraction": 0.6119326419092227,
+      "file": "seven512b-word-16487.png",
+      "sha256": "e846bf8cb8b4c2320e7a38ad132aca549588c4f611d876b0e463688a0b4f8d8f"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        318,
+        318,
+        623,
+        623
+      ],
+      "edgeInkFraction": 0.1703448275862069,
+      "contentFraction": 0.4556194571351787,
+      "file": "seven512b-word-16488.png",
+      "sha256": "a46c4416c291dde10618499feb6e4ad6db4c0ceeaf51e6d416e7cc86c1152665"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        631,
+        318,
+        936,
+        623
+      ],
+      "edgeInkFraction": 0.12454022988505747,
+      "contentFraction": 0.44897608169846814,
+      "file": "seven512b-word-16489.png",
+      "sha256": "4f4be97c3d6a43b07c2773a6e126a8ef30dce35f20dc98e74cdce97d5841489a"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        943,
+        318,
+        1246,
+        623
+      ],
+      "edgeInkFraction": 0.29619377162629756,
+      "contentFraction": 0.5396742952983823,
+      "file": "seven512b-word-16490.png",
+      "sha256": "2a9da2c0a45c6e847a046ab8efd8c10b4d79500aab7191d5019ade743245d15a"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        6,
+        635,
+        300,
+        935
+      ],
+      "edgeInkFraction": 0.5619385342789598,
+      "contentFraction": 0.8264172335600907,
+      "file": "seven512b-word-16491.png",
+      "sha256": "ccf9f2df971f7fdac717888c5b88ea76d5fcadc907681905674130e152b2f35e"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        318,
+        635,
+        623,
+        935
+      ],
+      "edgeInkFraction": 0.4771014492753623,
+      "contentFraction": 0.6444918032786885,
+      "file": "seven512b-word-16492.png",
+      "sha256": "c5e896ac0cd855fb634a4a42447439a2d96f37b08aa3975f73c5b8c02f926422"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        631,
+        635,
+        936,
+        935
+      ],
+      "edgeInkFraction": 0.19333333333333333,
+      "contentFraction": 0.504896174863388,
+      "file": "seven512b-word-16493.png",
+      "sha256": "380810d067672e104c8a74fa69b5af148092ed1f6e7798625c5451aaba297365"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        943,
+        635,
+        1246,
+        935
+      ],
+      "edgeInkFraction": 0.3022687609075044,
+      "contentFraction": 0.6027942794279428,
+      "file": "seven512b-word-16494.png",
+      "sha256": "c48345daaa2d5f60a0e509376b85ac9286d97f3b76264510247b7f84b0cbb3ef"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        6,
+        942,
+        300,
+        1246
+      ],
+      "edgeInkFraction": 0.24753521126760564,
+      "contentFraction": 0.49913847117794485,
+      "file": "seven512b-word-16495.png",
+      "sha256": "a2eb78b7a0e6e993745092099c518c0868b2c83639fee2a9dd8bdf62f2c9ec4e"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        318,
+        942,
+        623,
+        1246
+      ],
+      "edgeInkFraction": 0.33448474381116866,
+      "contentFraction": 0.45282571182053494,
+      "file": "seven512b-word-16496.png",
+      "sha256": "dd94e5b9a9a2143ac49a8bae5eeea5f4cc2465e71cdb6b02fbfd4b70de2b39dc"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        631,
+        942,
+        936,
+        1246
+      ],
+      "edgeInkFraction": 0.6010938399539436,
+      "contentFraction": 0.8026100086281277,
+      "file": "seven512b-word-16497.png",
+      "sha256": "073e5882e0c3a90d929286ad29b85fb0baf46aa0f0c9be9792803264a98c2711"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        943,
+        942,
+        1246,
+        1246
+      ],
+      "edgeInkFraction": 0.4152512998266898,
+      "contentFraction": 0.6411759597012333,
+      "file": "seven512b-word-16498.png",
+      "sha256": "41fe98e223f5bcb31c4c55a730bc77eae4999a8b094aacbef0807b2ff2f96c21"
+    }
+  ]
+}

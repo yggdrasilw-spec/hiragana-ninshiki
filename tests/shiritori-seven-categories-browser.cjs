@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,'..'),base='data/dictionary-imports/2026-10-25
 const items=JSON.parse(fs.readFileSync(path.join(root,base+'.review.json'),'utf8'));
 const summary=JSON.parse(fs.readFileSync(path.join(root,base+'.summary.json'),'utf8'));
 const out=path.join(root,'qa-output/seven-categories');fs.mkdirSync(out,{recursive:true});
-const pictureMap=new Map(JSON.parse(fs.readFileSync(path.join(root,'data/image-coverage/2026-10-25-seven512-images/plan.json'),'utf8')).items.map(x=>[x.id,'assets/shiritori/'+x.filename]));for(const x of items)x.expectedImage=pictureMap.get(x.id)||null;
+const pictureMap=new Map(['seven512','seven512b'].flatMap(batch=>JSON.parse(fs.readFileSync(path.join(root,'data/image-coverage/2026-10-25-'+batch+'-images/plan.json'),'utf8')).items.map(x=>[x.id,'assets/shiritori/'+x.filename])));assert.equal(pictureMap.size,1024);for(const x of items)x.expectedImage=pictureMap.get(x.id)||null;
 const server=http.createServer((req,res)=>{const file=path.resolve(root,'.'+new URL(req.url,'http://localhost').pathname);if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404).end();return;}res.setHeader('Content-Type',({'.html':'text/html;charset=utf-8','.csv':'text/csv;charset=utf-8','.js':'text/javascript','.css':'text/css','.json':'application/json','.txt':'text/plain;charset=utf-8'})[path.extname(file)]||'application/octet-stream');fs.createReadStream(file).pipe(res);});
 (async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port;const browser=await chromium.launch({headless:true,channel:'msedge'}),results=[];
 try{for(const width of [1280,390]){

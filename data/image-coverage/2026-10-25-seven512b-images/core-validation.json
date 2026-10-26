@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "measured source crops and PNG hashes for all 512 words",
+    "disjoint exhaustive 1024-word image plans",
+    "dictionary data",
+    "import history",
+    "import quality",
+    "grade policy",
+    "image coverage",
+    "preservation of earlier 12539 assets and 16574 vocabulary rows",
+    "R2 reference policy",
+    "14 existing crop regressions",
+    "8 full-color regressions",
+    "19 skill crop regressions",
+    "real Worker SHA256 readback of all 512 images",
+    "real-R2 game and catalog 512 images at 1280 and 390 widths"
+  ],
+  "dictionarySha256": "3e8b1e52c3f36ff2574ca4922912d264cd45429082231061101ea9d6249de9a3",
+  "sourceSheets": 32,
+  "cropMethods": [
+    "magenta-grid-full-color-v3",
+    "magenta-grid-full-color-v4",
+    "magenta-grid-full-color-v6",
+    "magenta-grid-full-color-v7",
+    "magenta-grid-lines-only-v2"
+  ]
+}

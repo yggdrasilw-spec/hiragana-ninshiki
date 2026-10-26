@@ -5,6 +5,7 @@ borders. Remove only measured divider lines and their fringes. No equal-quarter
 fallback, manual crop override, or output is allowed when validation fails.
 """
 import argparse
+import importlib.util
 import hashlib
 import io
 import json
@@ -15,28 +16,36 @@ import numpy as np
 from PIL import Image, ImageOps
 
 
-class GridError(ValueError):
-    pass
+_previous_spec = importlib.util.spec_from_file_location('grid_crop_v6', Path(__file__).with_name('crop-shiritori-grid-v6.py'))
+previous = importlib.util.module_from_spec(_previous_spec)
+_previous_spec.loader.exec_module(previous)
+legacy = previous.legacy
+
+
+GridError = legacy.GridError
 
 
 def marker_mask(rgb):
     r, g, b = [rgb[:, :, i].astype(int) for i in range(3)]
-    return (r >= 190) & (b >= 190) & (g <= 110) & (abs(r - b) <= 70)
+    # Identify actual magenta ink, rather than ordinary violet/pink artwork.
+    return (r >= 225) & (b >= 225) & (g <= 70) & (abs(r - b) <= 35)
 
 
 def divider_fringe_mask(rgb):
     r, g, b = [rgb[:, :, i].astype(int) for i in range(3)]
-    return (r >= 220) & (b >= 220) & (r - g >= 8) & (b - g >= 8)
+    # Magenta blended with white has almost equal, almost-maximal R and B.
+    # Ordinary purple/pink watercolor must not inflate measured divider bands.
+    return (r >= 245) & (b >= 245) & (g <= 240) & (abs(r - b) <= 3)
 
 
-def line_bands(mask, axis, count, fringe=None, minimum_fringe_support=0):
+def line_bands(mask, axis, count, fringe=None):
     support = mask.mean(axis=axis)
     indices = np.flatnonzero(support >= 0.94)
     groups = np.split(indices, np.flatnonzero(np.diff(indices) > 1) + 1)
     groups = [g for g in groups if len(g)]
     length = len(support)
     fringe_support = (fringe if fringe is not None else mask).mean(axis=axis)
-    fringe_threshold = max(minimum_fringe_support, float(np.median(fringe_support)) + 0.003)
+    fringe_threshold = 0.90  # Full-length faint lines, not isolated colored artwork.
     if len(groups) != count + 1:
         raise GridError(f'Expected {count + 1} continuous grid lines; found {len(groups)}')
     bands = []
@@ -59,11 +68,9 @@ def line_bands(mask, axis, count, fringe=None, minimum_fringe_support=0):
     return bands
 
 
-def refine_tinted_edges(rgb, bands, perpendicular, axis, include_core=False):
+def refine_tinted_edges(rgb, bands, perpendicular, axis):
     r, g, b = [rgb[:, :, i].astype(int) for i in range(3)]
     tint = (r >= 245) & (b >= 245) & (g <= 240) & (abs(r - b) <= 3)
-    if include_core:
-        tint |= marker_mask(rgb)
     if axis == 0:
         for lo, hi in perpendicular:
             tint[lo:hi, :] = False
@@ -80,46 +87,103 @@ def refine_tinted_edges(rgb, bands, perpendicular, axis, include_core=False):
     return refined
 
 
-def extract(image, columns=4, rows=4, method='magenta-grid-lines-only-v4'):
+def connected_divider_geometry(rgb, xs, ys, isolate_junctions=False):
+    """Flood only ink connected in TWO dimensions to a measured divider.
+
+    A pink flower or glow elsewhere in the same column is not a divider.
+    Broad or bridged components still fail closed rather than trimming art.
+    """
+    eligible = divider_fringe_mask(rgb) | marker_mask(rgb)
+    ink = np.zeros(eligible.shape, dtype=bool)
+    results = []
+    for axis, cores, perpendicular in ((0, xs, ys), (1, ys, xs)):
+        plane = eligible if axis == 0 else eligible.T
+        length = plane.shape[1]
+        maximum = length * 0.025
+        search = int(np.ceil(maximum)) + 2
+        bands = []
+        for index, (lo, hi) in enumerate(cores):
+            begin, end = max(0, lo - search), min(length, hi + search)
+            allowed = plane[:, begin:end].copy()
+            # At junctions, attribute candidate ink to the nearest measured line.
+            # A horizontal halo must not flood sideways as a vertical divider.
+            local = np.arange(begin, end)
+            across = np.maximum(np.maximum(lo-local, local-(hi-1)), 0)
+            along = np.full(plane.shape[0], np.inf)
+            positions = np.arange(plane.shape[0])
+            for lower, upper in perpendicular:
+                along = np.minimum(along, np.maximum(np.maximum(lower-positions, positions-(upper-1)), 0))
+            allowed &= across[None, :] <= along[:, None]
+            reached = np.zeros(allowed.shape, dtype=bool)
+            reached[:, lo-begin:hi-begin] = True
+            for lower, upper in perpendicular:
+                junction = int(np.ceil(maximum)) + 2 if isolate_junctions else 0
+                lower, upper = max(0, lower-junction), min(allowed.shape[0], upper+junction)
+                allowed[lower:upper, :] = False
+                reached[lower:upper, :] = False
+            for iteration in range(256):
+                expanded = reached.copy()
+                expanded[1:, :] |= reached[:-1, :]
+                expanded[:-1, :] |= reached[1:, :]
+                expanded[:, 1:] |= reached[:, :-1]
+                expanded[:, :-1] |= reached[:, 1:]
+                expanded[1:, 1:] |= reached[:-1, :-1]
+                expanded[:-1, :-1] |= reached[1:, 1:]
+                expanded[1:, :-1] |= reached[:-1, 1:]
+                expanded[:-1, 1:] |= reached[1:, :-1]
+                updated = reached | (expanded & allowed)
+                occupied = np.flatnonzero(updated.any(axis=0))
+                first, last = begin + int(occupied[0]), begin + int(occupied[-1]) + 1
+                if last - first > maximum:
+                    raise GridError('Wide connected divider component; preserving artwork requires a repaired sheet')
+                if np.array_equal(updated, reached):
+                    reached = updated
+                    break
+                reached = updated
+            else:
+                raise GridError('Connected divider measurement did not converge')
+            if abs((first + last - 1) / 2 - index * (length - 1) / 4) > maximum:
+                raise GridError('Connected divider is displaced beyond layout tolerance')
+            bands.append([first, last])
+            if axis == 0:
+                ink[:, begin:end] |= reached
+            else:
+                ink[begin:end, :] |= reached.T
+        results.append(bands)
+    return results[0], results[1], ink
+
+
+def extract(image, columns=4, rows=4, method='magenta-grid-full-color-v7'):
+    if method in ('magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4'):
+        spec = importlib.util.spec_from_file_location('grid_lines_legacy', Path(__file__).with_name('crop-shiritori-grid-lines-legacy.py'))
+        saved = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(saved)
+        saved.GridError = GridError
+        return saved.extract(image, columns, rows, method=method)
+    if method not in ('magenta-grid-white-guard-v1', 'magenta-grid-lines-only-v2', 'magenta-grid-full-color-v3', 'magenta-grid-full-color-v4', 'magenta-grid-full-color-v5', 'magenta-grid-full-color-v6', 'magenta-grid-full-color-v7'):
+        raise GridError('Unrecognized extraction method')
+    if method == 'magenta-grid-full-color-v6':
+        return previous.extract(image, columns, rows, method=method)
+    if method == 'magenta-grid-full-color-v5':
+        return previous.extract(image, columns, rows, method=method)
+    if method == 'magenta-grid-full-color-v4':
+        return previous.extract(image, columns, rows, method=method)
+    if method == 'magenta-grid-full-color-v3':
+        return previous.extract(image, columns, rows, method=method)
+    if method in ('magenta-grid-white-guard-v1', 'magenta-grid-lines-only-v2'):
+        return legacy.extract(image, columns, rows, method=method)
     image = image.convert('RGB')
     rgb = np.asarray(image)
     if min(image.size) < max(columns, rows) * 96:
         raise GridError('Source resolution is too small')
-    mask = marker_mask(rgb)
+    # Broad candidate mask retains the original 94% continuity requirement.
+    mask = legacy.marker_mask(rgb)
     fringe = divider_fringe_mask(rgb)
-    if method in ('magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4'):
-        # Broad pastel/sepia pixels are artwork, not a divider fringe. Exclude
-        # perpendicular core lines from fringe support so their constant ~3%
-        # contribution cannot make isolated art pixels expand an entire band.
-        r, g, b = [rgb[:, :, i].astype(int) for i in range(3)]
-        tint = mask | ((r >= 190) & (b >= 190) & (abs(r - b) <= 20) & (r - g >= 8) & (b - g >= 8))
-        vertical_fringe = tint.copy()
-        horizontal_fringe = tint.copy()
-        vertical_fringe[mask.mean(axis=1) >= 0.94, :] = False
-        horizontal_fringe[:, mask.mean(axis=0) >= 0.94] = False
-        xs = line_bands(mask, 0, columns, vertical_fringe, 0.20)
-        ys = line_bands(mask, 1, rows, horizontal_fringe, 0.20)
-    else:
-        xs = line_bands(mask, 0, columns, fringe)
-        ys = line_bands(mask, 1, rows, fringe)
-    if method in ('magenta-grid-lines-only-v2', 'magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4'):
-        xs = refine_tinted_edges(rgb, xs, ys, 0, include_core=method in ("magenta-grid-lines-only-v3", "magenta-grid-lines-only-v4"))
-        ys = refine_tinted_edges(rgb, ys, xs, 1, include_core=method in ("magenta-grid-lines-only-v3", "magenta-grid-lines-only-v4"))
-    if method == 'magenta-grid-lines-only-v4':
-        # Refining one axis can reveal a sparse antialiased fringe on the other.
-        # Iterate measured tint bounds to stability; never substitute a fixed crop.
-        for _ in range(5):
-            next_xs = refine_tinted_edges(rgb, xs, ys, 0, include_core=True)
-            next_ys = refine_tinted_edges(rgb, ys, next_xs, 1, include_core=True)
-            if next_xs == xs and next_ys == ys:
-                break
-            xs, ys = next_xs, next_ys
-        else:
-            raise GridError('Divider fringe measurements did not stabilize')
-        for bands, length, count in ((xs, image.width, columns), (ys, image.height, rows)):
-            for i, (lo, hi) in enumerate(bands):
-                if hi - lo > length * 0.025 or abs((lo + hi - 1) / 2 - i * (length - 1) / count) > length * 0.025:
-                    raise GridError('Refined divider exceeds agreed geometry')
+    xs = line_bands(mask, 0, columns, fringe)
+    ys = line_bands(mask, 1, rows, fringe)
+    if method == 'magenta-grid-full-color-v7':
+        xs, ys, _ = connected_divider_geometry(rgb, xs, ys, isolate_junctions=True)
+        xs, ys, frame_ink = connected_divider_geometry(rgb, xs, ys)
     widths = [xs[i + 1][0] - xs[i][1] for i in range(columns)]
     heights = [ys[i + 1][0] - ys[i][1] for i in range(rows)]
     if max(widths) / min(widths) > 1.10 or max(heights) / min(heights) > 1.10:
@@ -143,16 +207,9 @@ def extract(image, columns=4, rows=4, method='magenta-grid-lines-only-v4'):
         content_fraction = float(ink.mean())
         if content_fraction < 0.01 or (method == 'magenta-grid-white-guard-v1' and content_fraction > 0.70):
             raise GridError(f'Tile {index + 1}: empty or overfilled cell')
-        if method in ('magenta-grid-lines-only-v2', 'magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4'):
-            # A divider fringe has nearly equal, almost-maximal R and B.
-            # Pale blue/grey objects near an edge must not be mistaken for it.
-            residue = (divider_fringe_mask(tile) & (tile[:, :, 0] >= 245)
-                       & (tile[:, :, 2] >= 245)
-                       & (tile[:, :, 1] <= 240)
-                       & (abs(tile[:, :, 0].astype(int) - tile[:, :, 2].astype(int)) <= 3))
-            if (residue[:2].any() or residue[-2:].any()
-                    or residue[:, :2].any() or residue[:, -2:].any()):
-                raise GridError(f'Tile {index + 1}: divider fringe remains at the crop edge')
+        if method == 'magenta-grid-full-color-v7':
+            if frame_ink[box[1]:box[3], box[0]:box[2]].any():
+                raise GridError(f'Tile {index + 1}: connected divider ink remains inside the crop')
         result = ImageOps.pad(image.crop(box), (256, 256),
                               method=Image.Resampling.LANCZOS, color='white')
         prepared.append((result, {'tileIndex': index + 1, 'cropBox': box,
@@ -164,8 +221,24 @@ def extract(image, columns=4, rows=4, method='magenta-grid-lines-only-v4'):
 def verify_report(report_path, source_path, output_directory):
     """Recompute geometry and every PNG before trusting registration evidence."""
     report = json.loads(Path(report_path).read_text(encoding='utf-8'))
+    if report.get('method') in ('magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4'):
+        spec = importlib.util.spec_from_file_location('grid_lines_legacy', Path(__file__).with_name('crop-shiritori-grid-lines-legacy.py'))
+        saved = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(saved)
+        saved.GridError = GridError
+        return saved.verify_report(report_path, source_path, output_directory)
+    if report.get('method') == 'magenta-grid-full-color-v6':
+        return previous.verify_report(report_path, source_path, output_directory)
+    if report.get('method') == 'magenta-grid-full-color-v5':
+        return previous.verify_report(report_path, source_path, output_directory)
+    if report.get('method') == 'magenta-grid-full-color-v4':
+        return previous.verify_report(report_path, source_path, output_directory)
+    if report.get('method') == 'magenta-grid-full-color-v3':
+        return previous.verify_report(report_path, source_path, output_directory)
+    if report.get('method') in ('magenta-grid-white-guard-v1', 'magenta-grid-lines-only-v2'):
+        return legacy.verify_report(report_path, source_path, output_directory)
     if (report.get('version') != 1 or report.get('passed') is not True
-            or report.get('method') not in ('magenta-grid-white-guard-v1', 'magenta-grid-lines-only-v2', 'magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4')
+            or report.get('method') not in ('magenta-grid-white-guard-v1', 'magenta-grid-full-color-v7')
             or report.get('columns') != 4 or report.get('rows') != 4):
         raise GridError('Unrecognized or failed extraction report')
     if hashlib.sha256(Path(source_path).read_bytes()).hexdigest() != report['sourceSha256']:
@@ -200,8 +273,8 @@ def main():
     parser.add_argument('image', type=Path)
     parser.add_argument('--columns', type=int, default=4)
     parser.add_argument('--rows', type=int, default=4)
-    parser.add_argument('--method', choices=['magenta-grid-white-guard-v1', 'magenta-grid-lines-only-v2', 'magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4'], default='magenta-grid-lines-only-v4')
     parser.add_argument('--names', required=True)
+    parser.add_argument('--method', choices=['magenta-grid-white-guard-v1', 'magenta-grid-lines-only-v2', 'magenta-grid-lines-only-v3', 'magenta-grid-lines-only-v4', 'magenta-grid-full-color-v3', 'magenta-grid-full-color-v4', 'magenta-grid-full-color-v5', 'magenta-grid-full-color-v6', 'magenta-grid-full-color-v7'], default='magenta-grid-full-color-v7')
     parser.add_argument('--output', type=Path, default=Path('assets/shiritori'))
     parser.add_argument('--report', type=Path, required=True)
     parser.add_argument('--verify-existing', action='store_true', help='Recompute and verify an existing report and all 16 PNGs without writing')

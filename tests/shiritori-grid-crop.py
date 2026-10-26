@@ -64,7 +64,7 @@ class CropTests(unittest.TestCase):
                            capture_output=True, check=True)
             self.assertEqual(len(module.verify_report(root / 'report.json', source, root / 'out')), 16)
 
-    def test_sparse_fringe_requires_stable_measured_bounds(self):
+    def test_legacy_v4_sparse_fringe_requires_stable_measured_bounds(self):
         image = sheet()
         draw = ImageDraw.Draw(image)
         draw.rectangle((80, 190, 82, 190), fill=(255, 235, 255))
@@ -72,7 +72,7 @@ class CropTests(unittest.TestCase):
         draw.rectangle((100, 182, 120, 187), fill=(20, 40, 80))
         with self.assertRaises(module.GridError):
             module.extract(image, method='magenta-grid-lines-only-v3')
-        outputs, _ = module.extract(image)
+        outputs, _ = module.extract(image, method='magenta-grid-lines-only-v4')
         self.assertEqual(outputs[0][1]['cropBox'][3], 188)
         self.assertGreater(outputs[0][1]['edgeInkFraction'], 0)
 
