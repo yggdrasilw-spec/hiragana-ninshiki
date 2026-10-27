@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "added": 1648,
+  "newReadings": 1557,
+  "sharedAliases": 576,
+  "newNameCards": 1072,
+  "existingImagesReused": 36,
+  "baselineRows": 19707,
+  "rows": 21355,
+  "csvSha256": "0ee65c764ee4f8ecac3d7f593ee42abb1f2321ee927f7003d8cbc2186394321f",
+  "r2Readback": 1072,
+  "desktopMobile": {
+    "passed": true,
+    "results": [
+      {
+        "width": 1280,
+        "meanings": 1648,
+        "pools": [
+          0,
+          169,
+          226,
+          250,
+          1648
+        ],
+        "keyboardInputs": 9,
+        "endingN": true,
+        "catalog": 15,
+        "errors": [],
+        "realR2": false
+      },
+      {
+        "width": 390,
+        "meanings": 1648,
+        "pools": [
+          0,
+          169,
+          226,
+          250,
+          1648
+        ],
+        "keyboardInputs": 9,
+        "endingN": true,
+        "catalog": 15,
+        "errors": [],
+        "realR2": false
+      }
+    ]
+  },
+  "realR2": {
+    "passed": true,
+    "results": [
+      {
+        "width": 1280,
+        "meanings": 15,
+        "pools": [
+          0,
+          169,
+          226,
+          250,
+          1648
+        ],
+        "keyboardInputs": 9,
+        "endingN": true,
+        "catalog": 15,
+        "errors": [],
+        "realR2": true
+      },
+      {
+        "width": 390,
+        "meanings": 15,
+        "pools": [
+          0,
+          169,
+          226,
+          250,
+          1648
+        ],
+        "keyboardInputs": 9,
+        "endingN": true,
+        "catalog": 15,
+        "errors": [],
+        "realR2": true
+      }
+    ]
+  },
+  "scope": "データ・画像参照・全追加語のPCスマホ表示・代表語の入力と末尾ん判定・確認カタログ。説明の全件一次資料検証を意味しない。"
+}

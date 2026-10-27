@@ -276,3 +276,8 @@ python scripts/import-shiritori-assets.py data/batches/agent-physical-verbs.csv 
 `whitelist.csv` の単語・意味、または `assets/shiritori/` の画像を変更したら、`python scripts/build-shiritori-review-updates.py` を実行し、生成される `data/image-coverage/review-updates.json` もコミットしてください。確認アプリはこの更新日時で優先順を作り、画像のSHA-256指紋で同じファイル名の差し替えを検出します。
 
 物語・酒・武器兵器・文化芸術512項目（画像480枚＋正式名の共有32件）は [追加記録](docs/shiritori-culture512-2026-10-19.md) を参照。
+
+
+## 遊び・カード・作品名1,648項目（2026-10-28）
+
+氷鬼などの日常の遊び、カード・ボードゲーム、トレカの代表カード、ライダー・戦隊、漫画の略称を追加。576項目の略称は正式名と画像・説明を共有する。独自文字カード1,072枚と既存画像36枚を使用。既存19,707行を保持し合計21,355項目。PC・スマホで全1,648項目を確認し、R2画像を全件読み戻して照合した。詳細は[追加記録](docs/shiritori-play1024-2026-10-28.md)。
