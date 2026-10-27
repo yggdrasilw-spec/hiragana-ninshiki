@@ -1,0 +1,1864 @@
+{
+  "checkedAt": "2026-10-27",
+  "method": "取得した索引や公式ジョブガイドの文字列照合。名称の存在のみを確認し効果や子どもへの適切さは編集確認。ゲーム全タイトルと略称の個別ページ取得は未実施。",
+  "sources": [
+    {
+      "url": "https://wikiwiki.jp/dqdic3rd/呪文",
+      "status": 200,
+      "sha256": "d73d69800d252fe8074e5e3f5cdebc7d2796bcd5c0c38bd5bc26698781b07ac9",
+      "bytes": 170390
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/あ行",
+      "status": 200,
+      "sha256": "806764cad62f9ce742c5f97d306cd0a01fd596a47f3cee5f039bc1a774be5285",
+      "bytes": 121120
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/か行",
+      "status": 200,
+      "sha256": "eb1093bf54a7416ae77cbf2d125c4309e7724baea5bbf6373c972cfc85c027a6",
+      "bytes": 115768
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/さ行",
+      "status": 200,
+      "sha256": "ede97adc92b55e036b2cedf6234fb088e774785107a6019a0b0c3889548a43b9",
+      "bytes": 121406
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/た行",
+      "status": 200,
+      "sha256": "ca08b91a446f1e770c6d92750f523e55f20c0e2aaa0ba1842d77fd2597114ff2",
+      "bytes": 118763
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/な行",
+      "status": 200,
+      "sha256": "c42cf54245da3fbc2289b5b0d21658be6a7259e8717b65ec2ee7a443d94f8fac",
+      "bytes": 98754
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/は行",
+      "status": 200,
+      "sha256": "6cd22c75dedf9aa6a99ff7c1864e3d40211f4ca06fdd9ea0a763d3a2814f8a2c",
+      "bytes": 133551
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/ま行",
+      "status": 200,
+      "sha256": "42067a0fdd72cfd075219832130510f0e4db20ad2eef92efc69ade87e385797f",
+      "bytes": 108385
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/や行",
+      "status": 200,
+      "sha256": "aa8c7170a10b739ab5ebd0b49b726ac9b9239a54f47b990f1199b6e53e6308bc",
+      "bytes": 102709
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/ら行",
+      "status": 200,
+      "sha256": "3d45c9156f567fe063a184932b4770a45b84a829474ab8cc4145fe2128e2c4cc",
+      "bytes": 112097
+    },
+    {
+      "url": "https://wikiwiki.jp/ffdic/魔法/わ行",
+      "status": 200,
+      "sha256": "2a67436b2f4068e903066b698e9fcf7f3800339771b6bdefc2ce69421d4eafd3",
+      "bytes": 98008
+    },
+    {
+      "url": "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+      "status": 200,
+      "sha256": "87ccf6bfce04f5a9a07948930829d3fe23494668b37edf5024cd5bae90578624",
+      "bytes": 245207
+    },
+    {
+      "url": "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+      "status": 200,
+      "sha256": "771c3df9ffcc4757ea35c1f14e5c6c28642d306d9d3f38272dc79a7a968d083e",
+      "bytes": 206481
+    },
+    {
+      "url": "https://jp.finalfantasyxiv.com/jobguide/redmage/",
+      "status": 200,
+      "sha256": "da80ca2e89301c477982b424dd5e36886cc8f087f4c1c58cf225bc4525d50876",
+      "bytes": 234587
+    },
+    {
+      "url": "https://www.nintendo.com/jp/games/feature/nintendo-classics/index.html",
+      "status": 200,
+      "sha256": "15de9b7a0a77e80b699b44cdf0953c9b675b13f348a2f34879902affc333db6d",
+      "bytes": 19645
+    },
+    {
+      "url": "https://www.dragonquest.jp/products/",
+      "status": 200,
+      "sha256": "407043eca88097f1f275656e3b0b8f07a6cbd644c9276500b16307248603f9e6",
+      "bytes": 35784
+    },
+    {
+      "url": "https://www.jp.square-enix.com/game/",
+      "status": 200,
+      "sha256": "3642b9e046926221211085c60fe14419c782f53e8818dcbb65bbf02a3d3ced55",
+      "bytes": 39526
+    }
+  ],
+  "spellChecks": [
+    {
+      "word": "ホイミ",
+      "reading": "ほいみ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベホイミ",
+      "reading": "べほいみ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベホイム",
+      "reading": "べほいむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベホマ",
+      "reading": "べほま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベホマラー",
+      "reading": "べほまらー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベホマズン",
+      "reading": "べほまずん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メラ",
+      "reading": "めら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メラミ",
+      "reading": "めらみ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メラゾーマ",
+      "reading": "めらぞーま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メラガイアー",
+      "reading": "めらがいあー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ギラ",
+      "reading": "ぎら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベギラマ",
+      "reading": "べぎらま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ベギラゴン",
+      "reading": "べぎらごん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ギラグレイド",
+      "reading": "ぎらぐれいど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ヒャド",
+      "reading": "ひゃど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ヒャダルコ",
+      "reading": "ひゃだるこ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ヒャダイン",
+      "reading": "ひゃだいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マヒャド",
+      "reading": "まひゃど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マヒャデドス",
+      "reading": "まひゃでどす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バギ",
+      "reading": "ばぎ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バギマ",
+      "reading": "ばぎま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バギクロス",
+      "reading": "ばぎくろす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バギムーチョ",
+      "reading": "ばぎむーちょ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "イオ",
+      "reading": "いお",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "イオラ",
+      "reading": "いおら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "イオナズン",
+      "reading": "いおなずん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "イオグランデ",
+      "reading": "いおぐらんで",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "デイン",
+      "reading": "でいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ライデイン",
+      "reading": "らいでいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ギガデイン",
+      "reading": "ぎがでいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ミナデイン",
+      "reading": "みなでいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ドルマ",
+      "reading": "どるま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ドルクマ",
+      "reading": "どるくま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ドルモーア",
+      "reading": "どるもーあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ドルマドン",
+      "reading": "どるまどん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザキ",
+      "reading": "ざき",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザラキ",
+      "reading": "ざらき",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザラキーマ",
+      "reading": "ざらきーま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザオ",
+      "reading": "ざお",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザオラル",
+      "reading": "ざおらる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザオリク",
+      "reading": "ざおりく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メガザル",
+      "reading": "めがざる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "キアリー",
+      "reading": "きありー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "キアリク",
+      "reading": "きありく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "キアラル",
+      "reading": "きあらる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "シャナク",
+      "reading": "しゃなく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "スカラ",
+      "reading": "すから",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "スクルト",
+      "reading": "すくると",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ルカニ",
+      "reading": "るかに",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ルカナン",
+      "reading": "るかなん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ピオラ",
+      "reading": "ぴおら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ピオリム",
+      "reading": "ぴおりむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ボミエ",
+      "reading": "ぼみえ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ボミオス",
+      "reading": "ぼみおす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バイキルト",
+      "reading": "ばいきると",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バイシオン",
+      "reading": "ばいしおん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ヘナトス",
+      "reading": "へなとす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マヌーサ",
+      "reading": "まぬーさ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホトーン",
+      "reading": "まほとーん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ラリホー",
+      "reading": "らりほー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ラリホーマ",
+      "reading": "らりほーま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メダパニ",
+      "reading": "めだぱに",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メダパニーマ",
+      "reading": "めだぱにーま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホトラ",
+      "reading": "まほとら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホキテ",
+      "reading": "まほきて",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホカンタ",
+      "reading": "まほかんた",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホターン",
+      "reading": "まほたーん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホステ",
+      "reading": "まほすて",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マジックバリア",
+      "reading": "まじっくばりあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "フバーハ",
+      "reading": "ふばーは",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バーハ",
+      "reading": "ばーは",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ルーラ",
+      "reading": "るーら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "リレミト",
+      "reading": "りれみと",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "トヘロス",
+      "reading": "とへろす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "トラマナ",
+      "reading": "とらまな",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "インパス",
+      "reading": "いんぱす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "レミラーマ",
+      "reading": "れみらーま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "レミーラ",
+      "reading": "れみーら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ラナルータ",
+      "reading": "らなるーた",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "アバカム",
+      "reading": "あばかむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "アストロン",
+      "reading": "あすとろん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ドラゴラム",
+      "reading": "どらごらむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "モシャス",
+      "reading": "もしゃす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "パルプンテ",
+      "reading": "ぱるぷんて",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "メガンテ",
+      "reading": "めがんて",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マダンテ",
+      "reading": "まだんて",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ミナカトール",
+      "reading": "みなかとーる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ニフラム",
+      "reading": "にふらむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "バシルーラ",
+      "reading": "ばしるーら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ザメハ",
+      "reading": "ざめは",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ディバインスペル",
+      "reading": "でぃばいんすぺる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホアゲル",
+      "reading": "まほあげる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "リホイミ",
+      "reading": "りほいみ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "リベホイミ",
+      "reading": "りべほいみ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "リベホイム",
+      "reading": "りべほいむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マホリー",
+      "reading": "まほりー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "マジャスティス",
+      "reading": "まじゃすてぃす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ギガジャティス",
+      "reading": "ぎがじゃてぃす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/dqdic3rd/呪文"
+      ]
+    },
+    {
+      "word": "ファイア",
+      "reading": "ふぁいあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ファイラ",
+      "reading": "ふぁいら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ファイガ",
+      "reading": "ふぁいが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ファイジャ",
+      "reading": "ふぁいじゃ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ブリザド",
+      "reading": "ぶりざど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ブリザラ",
+      "reading": "ぶりざら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ブリザガ",
+      "reading": "ぶりざが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ブリザジャ",
+      "reading": "ぶりざじゃ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "サンダー",
+      "reading": "さんだー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "サンダラ",
+      "reading": "さんだら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "サンダガ",
+      "reading": "さんだが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ま行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "サンダジャ",
+      "reading": "さんだじゃ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ウォータ",
+      "reading": "うぉーた",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行"
+      ]
+    },
+    {
+      "word": "ウォタラ",
+      "reading": "うぉたら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "ウォタガ",
+      "reading": "うぉたが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行"
+      ]
+    },
+    {
+      "word": "エアロ",
+      "reading": "えあろ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "エアロラ",
+      "reading": "えあろら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "エアロガ",
+      "reading": "えあろが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "クエイク",
+      "reading": "くえいく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "ストーン",
+      "reading": "すとーん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ストンラ",
+      "reading": "すとんら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ストンガ",
+      "reading": "すとんが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ストンジャ",
+      "reading": "すとんじゃ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ケアル",
+      "reading": "けある",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ケアルラ",
+      "reading": "けあるら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ケアルガ",
+      "reading": "けあるが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ケアルダ",
+      "reading": "けあるだ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "ケアルジャ",
+      "reading": "けあるじゃ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "リジェネ",
+      "reading": "りじぇね",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "レイズ",
+      "reading": "れいず",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/ま行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "アレイズ",
+      "reading": "あれいず",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "リレイズ",
+      "reading": "りれいず",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "エスナ",
+      "reading": "えすな",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ポイゾナ",
+      "reading": "ぽいぞな",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "ブラナ",
+      "reading": "ぶらな",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "ブライナ",
+      "reading": "ぶらいな",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "ストナ",
+      "reading": "すとな",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "ボキャル",
+      "reading": "ぼきゃる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "プロテス",
+      "reading": "ぷろてす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "プロテガ",
+      "reading": "ぷろてが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "シェル",
+      "reading": "しぇる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "シェルガ",
+      "reading": "しぇるが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "リフレク",
+      "reading": "りふれく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "ヘイスト",
+      "reading": "へいすと",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "ヘイスガ",
+      "reading": "へいすが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "スロウ",
+      "reading": "すろう",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "スロウガ",
+      "reading": "すろうが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "ストップ",
+      "reading": "すとっぷ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "スリプル",
+      "reading": "すりぷる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "スリプガ",
+      "reading": "すりぷが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "サイレス",
+      "reading": "さいれす",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "サイレガ",
+      "reading": "さいれが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "ブライン",
+      "reading": "ぶらいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "ポイズン",
+      "reading": "ぽいずん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "ポイゾガ",
+      "reading": "ぽいぞが",
+      "nameFound": true,
+      "sources": [
+        "https://wiki.ffo.jp/html/24125.html"
+      ],
+      "method": "索引未掲載のためFF11用語辞典で補完照合。"
+    },
+    {
+      "word": "バイオ",
+      "reading": "ばいお",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "バイオラ",
+      "reading": "ばいおら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "バイオガ",
+      "reading": "ばいおが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "コンフュ",
+      "reading": "こんふゅ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "バーサク",
+      "reading": "ばーさく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "ブレイク",
+      "reading": "ぶれいく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ブレクガ",
+      "reading": "ぶれくが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "デス",
+      "reading": "です",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "デジョン",
+      "reading": "でじょん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "テレポ",
+      "reading": "てれぽ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "レビテト",
+      "reading": "れびてと",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "ミニマム",
+      "reading": "みにまむ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ま行"
+      ]
+    },
+    {
+      "word": "トード",
+      "reading": "とーど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "カッパー",
+      "reading": "かっぱー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "ライブラ",
+      "reading": "らいぶら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ら行"
+      ]
+    },
+    {
+      "word": "ディスペル",
+      "reading": "でぃすぺる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "デスペル",
+      "reading": "ですぺる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "ドレイン",
+      "reading": "どれいん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "アスピル",
+      "reading": "あすぴる",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行"
+      ]
+    },
+    {
+      "word": "グラビデ",
+      "reading": "ぐらびで",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "グラビガ",
+      "reading": "ぐらびが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "フレア",
+      "reading": "ふれあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/な行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ホーリー",
+      "reading": "ほーりー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "メテオ",
+      "reading": "めてお",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/さ行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/な行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://wikiwiki.jp/ffdic/魔法/ま行",
+        "https://wikiwiki.jp/ffdic/魔法/や行",
+        "https://wikiwiki.jp/ffdic/魔法/ら行",
+        "https://wikiwiki.jp/ffdic/魔法/わ行"
+      ]
+    },
+    {
+      "word": "アルテマ",
+      "reading": "あるてま",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "コメット",
+      "reading": "こめっと",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "トルネド",
+      "reading": "とるねど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "フラッド",
+      "reading": "ふらっど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "フリーズ",
+      "reading": "ふりーず",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "バースト",
+      "reading": "ばーすと",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/は行",
+        "https://jp.finalfantasyxiv.com/jobguide/blackmage/"
+      ]
+    },
+    {
+      "word": "ブリンク",
+      "reading": "ぶりんく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "インビジ",
+      "reading": "いんびじ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行"
+      ]
+    },
+    {
+      "word": "インビガ",
+      "reading": "いんびが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行"
+      ]
+    },
+    {
+      "word": "クイック",
+      "reading": "くいっく",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行"
+      ]
+    },
+    {
+      "word": "バニシュ",
+      "reading": "ばにしゅ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/は行"
+      ]
+    },
+    {
+      "word": "メルトン",
+      "reading": "めるとん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/ま行"
+      ]
+    },
+    {
+      "word": "ジハード",
+      "reading": "じはーど",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/さ行"
+      ]
+    },
+    {
+      "word": "グレア",
+      "reading": "ぐれあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "グレアガ",
+      "reading": "ぐれあが",
+      "nameFound": true,
+      "sources": [
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ディア",
+      "reading": "でぃあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://wikiwiki.jp/ffdic/魔法/か行",
+        "https://wikiwiki.jp/ffdic/魔法/た行",
+        "https://jp.finalfantasyxiv.com/jobguide/whitemage/"
+      ]
+    },
+    {
+      "word": "ディアラ",
+      "reading": "でぃあら",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "ディアガ",
+      "reading": "でぃあが",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/た行"
+      ]
+    },
+    {
+      "word": "ヴァルケアル",
+      "reading": "ゔぁるけある",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルレイズ",
+      "reading": "ゔぁるれいず",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルファイア",
+      "reading": "ゔぁるふぁいあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルストーン",
+      "reading": "ゔぁるすとーん",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルサンダー",
+      "reading": "ゔぁるさんだー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルエアロ",
+      "reading": "ゔぁるえあろ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルホーリー",
+      "reading": "ゔぁるほーりー",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    },
+    {
+      "word": "ヴァルフレア",
+      "reading": "ゔぁるふれあ",
+      "nameFound": true,
+      "sources": [
+        "https://wikiwiki.jp/ffdic/魔法/あ行",
+        "https://jp.finalfantasyxiv.com/jobguide/redmage/"
+      ]
+    }
+  ],
+  "additionalSources": [
+    "https://wiki.ffo.jp/html/24125.html",
+    "https://www.konami.com/amusement/products/am_ddr/",
+    "https://www.nintendo.co.jp/data/software/manual/manual_TDPJ_00.pdf"
+  ]
+}
