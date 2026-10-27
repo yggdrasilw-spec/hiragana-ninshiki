@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-10-28",
+  "dictionarySha256": "1d3b9b9553b1965681c8666c8e2e44cdbb7ad2b32937408a4870d6a199122045",
+  "added": 2000,
+  "totalRows": 19707,
+  "baselineBytePreserved": true,
+  "states": 50,
+  "stateCapitals": 50,
+  "staticChecks": [
+    "shiritori-geohistory2000.py",
+    "shiritori-grade-policy.py",
+    "shiritori-import-history.cjs",
+    "shiritori-data.cjs",
+    "shiritori-image-policy.cjs"
+  ],
+  "browser": {
+    "passed": true,
+    "results": [
+      {
+        "width": 1280,
+        "meanings": 2000,
+        "pools": [
+          0,
+          0,
+          0,
+          0,
+          2000
+        ],
+        "homonyms": [
+          {
+            "reading": "きん",
+            "senses": 3
+          },
+          {
+            "reading": "ろっく",
+            "senses": 2
+          },
+          {
+            "reading": "ころんびあ",
+            "senses": 2
+          },
+          {
+            "reading": "ふらんくりん",
+            "senses": 2
+          },
+          {
+            "reading": "ぴさろ",
+            "senses": 2
+          },
+          {
+            "reading": "ふぇにっくす",
+            "senses": 2
+          },
+          {
+            "reading": "ばれった",
+            "senses": 2
+          }
+        ],
+        "keyboardInputs": 10,
+        "endingN": true,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "meanings": 2000,
+        "pools": [
+          0,
+          0,
+          0,
+          0,
+          2000
+        ],
+        "homonyms": [
+          {
+            "reading": "きん",
+            "senses": 3
+          },
+          {
+            "reading": "ろっく",
+            "senses": 2
+          },
+          {
+            "reading": "ころんびあ",
+            "senses": 2
+          },
+          {
+            "reading": "ふらんくりん",
+            "senses": 2
+          },
+          {
+            "reading": "ぴさろ",
+            "senses": 2
+          },
+          {
+            "reading": "ふぇにっくす",
+            "senses": 2
+          },
+          {
+            "reading": "ばれった",
+            "senses": 2
+          }
+        ],
+        "keyboardInputs": 10,
+        "endingN": true,
+        "errors": []
+      }
+    ]
+  },
+  "network": "外部通信をモックしたローカル検証。公開サイトへの反映は行っていない。"
+}
