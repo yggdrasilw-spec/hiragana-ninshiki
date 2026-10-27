@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1280,
+      "meanings": 228,
+      "pools": [
+        0,
+        0,
+        0,
+        0,
+        228
+      ],
+      "homonyms": [
+        {
+          "reading": "げんざい",
+          "senses": 2
+        },
+        {
+          "reading": "じん",
+          "senses": 2
+        },
+        {
+          "reading": "おかし",
+          "senses": 2
+        },
+        {
+          "reading": "いと",
+          "senses": 3
+        },
+        {
+          "reading": "おどろく",
+          "senses": 2
+        },
+        {
+          "reading": "ののしる",
+          "senses": 2
+        }
+      ],
+      "keyboardInputs": 10,
+      "endingN": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "meanings": 228,
+      "pools": [
+        0,
+        0,
+        0,
+        0,
+        228
+      ],
+      "homonyms": [
+        {
+          "reading": "げんざい",
+          "senses": 2
+        },
+        {
+          "reading": "じん",
+          "senses": 2
+        },
+        {
+          "reading": "おかし",
+          "senses": 2
+        },
+        {
+          "reading": "いと",
+          "senses": 3
+        },
+        {
+          "reading": "おどろく",
+          "senses": 2
+        },
+        {
+          "reading": "ののしる",
+          "senses": 2
+        }
+      ],
+      "keyboardInputs": 10,
+      "endingN": true,
+      "errors": []
+    }
+  ],
+  "regressions": [
+    "shiritori-data.cjs",
+    "shiritori-import-history.cjs",
+    "shiritori-import-quality.cjs",
+    "shiritori-grade-policy.py",
+    "shiritori-highschool.py"
+  ],
+  "preservedRows": 21355,
+  "added": 228
+}
