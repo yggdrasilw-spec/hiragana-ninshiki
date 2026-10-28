@@ -11,6 +11,8 @@ if (!batchPath) throw new Error('Specify a reviewed batch CSV file.');
 const original = fs.readFileSync(target, 'utf8').trim().split(/\r?\n/);
 const rows = original.slice(1);
 const keys = new Set(rows.map(line => line.split(',').slice(0, 3).join(',')));
+// Review checks only need membership in the unchanged baseline readings.
+const existingReadings = new Set(rows.map(line => line.split(',')[0]));
 const batchLines = fs.readFileSync(batchPath, 'utf8').trim().split(/\r?\n/);
 if (batchLines[0] !== header) throw new Error('Use the documented nine-column batch header.');
 const batch = batchLines.slice(1);
@@ -44,7 +46,7 @@ for (const line of batch) {
     const review=reviews.get(key);
     if(!review?.lexicalSource||!review?.meaningReason||!review?.ageReason)throw new Error('New vocabulary needs lexical evidence, meaning and age review in '+reviewFile+': '+cols[1]);
     if(cols[6]&&!review.imageReason)throw new Error('Explain the image for this specific sense and every shared word: '+cols[1]);
-    if(rows.some(r=>r.split(',')[0]===cols[0])&&!review.distinctSenseReason)throw new Error('Explain why this is a separate sense rather than a spelling variant: '+cols[1]);
+    if(existingReadings.has(cols[0])&&!review.distinctSenseReason)throw new Error('Explain why this is a separate sense rather than a spelling variant: '+cols[1]);
   }
 }
 if(validateOnly){console.log(JSON.stringify({validated:true,rows:batch.length}));process.exit(0);}

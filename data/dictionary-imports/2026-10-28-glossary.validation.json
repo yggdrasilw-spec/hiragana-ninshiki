@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1280,
+      "meanings": 2992,
+      "levels": [
+        0,
+        0,
+        0,
+        0,
+        2992
+      ],
+      "homonyms": [
+        {
+          "reading": "ぱーす",
+          "senses": 3
+        },
+        {
+          "reading": "ぶーばー",
+          "senses": 2
+        },
+        {
+          "reading": "あっしゅ",
+          "senses": 2
+        },
+        {
+          "reading": "こすもす",
+          "senses": 2
+        },
+        {
+          "reading": "かおす",
+          "senses": 2
+        },
+        {
+          "reading": "こっか",
+          "senses": 3
+        }
+      ],
+      "keyboardInputs": 11,
+      "endingN": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "meanings": 2992,
+      "levels": [
+        0,
+        0,
+        0,
+        0,
+        2992
+      ],
+      "homonyms": [
+        {
+          "reading": "ぱーす",
+          "senses": 3
+        },
+        {
+          "reading": "ぶーばー",
+          "senses": 2
+        },
+        {
+          "reading": "あっしゅ",
+          "senses": 2
+        },
+        {
+          "reading": "こすもす",
+          "senses": 2
+        },
+        {
+          "reading": "かおす",
+          "senses": 2
+        },
+        {
+          "reading": "こっか",
+          "senses": 3
+        }
+      ],
+      "keyboardInputs": 11,
+      "endingN": true,
+      "errors": []
+    }
+  ],
+  "added": 2992,
+  "areas": {
+    "倫理": 1431,
+    "情報": 1272,
+    "古典": 289
+  },
+  "previousRows": 21583,
+  "totalRows": 24575,
+  "sourceSha256": "d2c7f167e7a6600b0ab6818a29ecf6c2a226226d15ecebd6bc44e0227a0ae998",
+  "regressions": {
+    "shiritori-glossary.py": true,
+    "shiritori-data.cjs": true,
+    "shiritori-import-history.cjs": true,
+    "shiritori-import-quality.cjs": true,
+    "shiritori-grade-policy.py": true,
+    "build-shiritori-delivery.cjs --check": true,
+    "shiritori-delivery.cjs": true,
+    "shiritori-delivery-browser.cjs": true,
+    "shiritori-geography.cjs": true
+  },
+  "deliveryBrowser": [
+    {
+      "name": "desktop",
+      "startupBytes": 769759,
+      "baselineBytes": 6746977,
+      "reductionPercent": 89,
+      "startupChunks": 0,
+      "passed": true
+    },
+    {
+      "name": "mobile",
+      "startupBytes": 769759,
+      "baselineBytes": 6746977,
+      "reductionPercent": 89,
+      "startupChunks": 0,
+      "passed": true
+    }
+  ]
+}

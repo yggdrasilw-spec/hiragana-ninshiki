@@ -1,0 +1,38 @@
+{
+  "retrievedOn": "2026-10-28",
+  "references": {
+    "倫理": [
+      "https://www.shimizushoin.co.jp/books/view/727",
+      "https://www.yozemi.ac.jp/course/kouza/pdf/eth_2025.pdf",
+      "https://plato.stanford.edu/contents.html"
+    ],
+    "情報": [
+      "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/1416756.htm",
+      "https://sites.google.com/a.ipsj.or.jp/ipsjjn/resources/wordlist-v2",
+      "https://www.ipa.go.jp/shiken/asia/qv6pgp0000002s9q-att/000027072.pdf"
+    ],
+    "古典": [
+      "https://www.mext.go.jp/content/20250410-mxt_kyoiku01-100002620_02.pdf",
+      "https://tbqr.sanseido-publ.co.jp/09-seisenkoten/contents/koten-bunpo-list/"
+    ]
+  },
+  "ipsj": {
+    "url": "https://sites.google.com/a.ipsj.or.jp/ipsjjn/resources/wordlist-v2",
+    "exportUrl": "https://docs.google.com/spreadsheets/d/1FYsq1-ZmwrovR1j8_Q_M5QmSlj6NIZdy/export?format=csv",
+    "file": "data/dictionary-imports/glossary-sources/ipsj-wordlist.csv",
+    "sha256": "992e1821706f5181f9a3129dd55b9f6daf7b115c3d635c0ed26844da0789accc",
+    "rows": 6219,
+    "describedRows": 1964,
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "jmdict": {
+    "date": "2026-10-05",
+    "version": "3.6.2",
+    "sha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+    "attribution": "James William BREEN / Electronic Dictionary Research and Development Group",
+    "license": "CC BY-SA 4.0",
+    "url": "https://www.edrdg.org/edrdg/licence.html"
+  },
+  "policy": "人名の姓名・通称・漢訳名、概念の同義名や異なる表記も保持。完全に同じ入力・表示・語義の再追加はしない。高校用語の分野別選定であり市販用語集の全索引の照合や全語義の網羅ではない。"
+}
