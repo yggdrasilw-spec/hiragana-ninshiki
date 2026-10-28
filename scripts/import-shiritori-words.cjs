@@ -10,8 +10,9 @@ const append=process.argv.includes('--append');
 if (!batchPath) throw new Error('Specify a reviewed batch CSV file.');
 const original = fs.readFileSync(target, 'utf8').trim().split(/\r?\n/);
 const rows = original.slice(1);
-const existingReadings = new Set(rows.map(line => line.slice(0, line.indexOf(','))));
 const keys = new Set(rows.map(line => line.split(',').slice(0, 3).join(',')));
+// Review checks only need membership in the unchanged baseline readings.
+const existingReadings = new Set(rows.map(line => line.slice(0, line.indexOf(','))));
 const batchLines = fs.readFileSync(batchPath, 'utf8').trim().split(/\r?\n/);
 if (batchLines[0] !== header) throw new Error('Use the documented nine-column batch header.');
 const batch = batchLines.slice(1);
