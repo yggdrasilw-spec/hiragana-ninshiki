@@ -1,7 +1,7 @@
 /* CPU vocabulary policy. Grade bands are conservative editorial selections,
    independent of the legacy CSV levels. Unreviewed meanings stay at level 4. */
 (function(root){
-  const categories={animal:'動物・虫・魚',plant:'植物',food:'食べ物・料理',daily:'くらし・道具',body:'体・健康',school:'学校・学習',nature:'自然・宇宙',place:'地名・国',sport:'スポーツ・遊び',arts:'芸術・音楽',society:'社会・仕事',technology:'科学・技術',fiction:'物語・キャラクター',brand:'商品・ブランド',other:'その他'};
+  const categories={animal:'動物・虫・魚',plant:'植物',food:'食べ物・料理',daily:'くらし・道具',body:'体・健康',school:'学校・学習',nature:'自然・宇宙',place:'地名・国',japanPlace:'日本の地名・駅名',sport:'スポーツ・遊び',arts:'芸術・音楽',society:'社会・仕事',technology:'科学・技術',fiction:'物語・キャラクター',brand:'商品・ブランド',other:'その他'};
   function category(word,meaning,query=''){
     const t=word+' '+meaning+' '+query;
     if(/商品名|ブランド|商標|メーカー|製品名|チェーン店/.test(t))return 'brand';

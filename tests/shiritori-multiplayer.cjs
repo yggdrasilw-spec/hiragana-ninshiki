@@ -53,7 +53,7 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.evaluate(()=>ST.tail),'か','Ending N does not overwrite valid tail');
   await page.locator('#replayBtn').click();assert.equal(await page.evaluate(()=>ST.history.length),0);assert.equal(await page.evaluate(()=>ST.cpuBusy),false);
   await setup(2,true,'versus');
-  await page.evaluate(()=>{window.savedCpuChoose=cpuChoose;cpuChoose=()=>lookupRow('かめ');});
+  await page.evaluate(()=>{window.savedCpuChoose=cpuChoose;cpuChoose=async()=>rowForLevel(await dictionary.reading('かめ'));});
   await word('りす');await ready();await page.evaluate(()=>switchIn('kbd'));await word('すいか');await ready();
   assert.deepEqual(await page.evaluate(()=>ST.history.map(e=>e.playerId)),['human0','human1','cpu']);
   assert.equal(await page.evaluate(()=>ShiritoriPlayers.current().id),'human0');

@@ -22,24 +22,24 @@ const server=http.createServer((req,res)=>{
   await page.emulateMedia({reducedMotion:'reduce'});
   await page.evaluate(async()=>{ST.voice=false;await launchGame();showPage('settings');});
   assert.equal(await page.locator('.lv-btn').count(),5);
-  assert.equal(await page.locator('[data-genre]').count(),15);
+  assert.equal(await page.locator('[data-genre]').count(),16);
   assert.equal(await page.locator('[data-settings-group="input"]').first().isVisible(),false);
-  const counts=await page.evaluate(()=>[1,2,3,4,5].map(level=>{ST.level=level;return getPool().length;}));
+  const counts=await page.evaluate(()=>[1,2,3,4,5].map(level=>{ST.level=level;return dictionary.count(ST.level,ST.cpuGenres);}));
   assert.ok(counts.every((v,i)=>!i||v>counts[i-1]));
   assert.equal(counts[4],await page.evaluate(()=>ST.whitelist.length));
   assert.equal(await page.evaluate(()=>{ST.level=1;return getPool().some(r=>['あいち','あきおおたちょう','あきたかたし'].includes(r.reading));}),false);
-  assert.deepEqual(await page.evaluate(()=>lookupRow('いし').words),['石']);
-  assert.ok(await page.evaluate(()=>{ST.level=3;return lookupRow('いし').words.includes('意志');}));
+  assert.deepEqual(await page.evaluate(async()=>rowForLevel(await dictionary.reading('いし')).words),['石']);
+  assert.ok(await page.evaluate(async()=>{ST.level=3;return rowForLevel(await dictionary.reading('いし')).words.includes('意志');}));
   // Every CPU meaning must obey both the grade and genre filters, with aligned images.
-  const genreAudit=await page.evaluate(()=>{
+  const genreAudit=await page.evaluate(async()=>{
    ST.level=5;ST.cpuGenres=['animal'];
-   const pool=getPool();
+   const pool=getPool(await dictionary.prepare(poolHead(),ST.level,ST.cpuGenres));
    return {count:pool.length,valid:pool.every(r=>r.words.every((w,i)=>ShiritoriVocabulary.category(w,r.meanings[i],r.imagequeries[i]?.ja)==='animal')),invariant:pool.every(r=>r.words.length===r.meanings.length&&r.words.length===r.imagequeries.length)};
   });
   assert.ok(genreAudit.count>0&&genreAudit.valid&&genreAudit.invariant);
-  assert.ok(await page.evaluate(()=>{ST.tail='';ST.used.clear();return Array.from({length:10},()=>cpuChoose()).every(r=>r&&r.words.every((w,i)=>ShiritoriVocabulary.category(w,r.meanings[i],r.imagequeries[i]?.ja)==='animal'));}));
+  assert.ok(await page.evaluate(async()=>{ST.tail='';ST.used.clear();const picks=[];for(let i=0;i<10;i++)picks.push(await cpuChoose());return picks.every(r=>r&&r.words.every((w,i)=>ShiritoriVocabulary.category(w,r.meanings[i],r.imagequeries[i]?.ja)==='animal'));}));
   assert.ok(await page.evaluate(()=>!!lookupRow('りんご')),'Player may use excluded genre');
-  assert.equal(await page.evaluate(()=>{ST.cpuGenres=[];return cpuChoose();}),null);
+  assert.equal(await page.evaluate(async()=>{ST.cpuGenres=[];return await cpuChoose();}),null);
   await page.evaluate(()=>{ST.level=1;ST.cpuGenres=Object.keys(ShiritoriVocabulary.categories);syncSettingsUI();});
   await page.screenshot({path:path.join(out,name+'-words.png'),fullPage:true});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

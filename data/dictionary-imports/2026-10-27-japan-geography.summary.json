@@ -1,0 +1,24 @@
+{
+  "baselineRows": 17086,
+  "beforeSha256": "e44413ae0b3a13409455f7623b10ba17eb6706fcaa1ee5b58a4acece73686973",
+  "added": 95520,
+  "categories": {
+    "city-short": 743,
+    "municipality": 2780,
+    "prefecture": 46,
+    "station": 8499,
+    "town": 83452
+  },
+  "excluded": {
+    "postal-placeholder": 1910,
+    "annotated-or-multiple-town": 6500,
+    "numeric-address-reading-not-inferred": 2510,
+    "unsupported-reading-or-punctuation": 77,
+    "closed-station": 385,
+    "station-disambiguator": 21
+  },
+  "existingGroups": 389,
+  "postalMunicipalityCodes": 1892,
+  "prefectures": 47,
+  "registered": false
+}

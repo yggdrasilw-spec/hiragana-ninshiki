@@ -1,0 +1,6 @@
+# Preserve exact bytes used by dictionary source and delivery hashes.
+/whitelist.csv text eol=lf
+/data/japan-places/** text eol=lf
+/data/shiritori-delivery/** text eol=lf
+/data/dictionary-imports/2026-10-27-japan-geography.* text eol=lf
+/data/dictionary-imports/japan-geography-sources/** text eol=lf

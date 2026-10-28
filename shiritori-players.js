@@ -121,7 +121,8 @@ const ShiritoriPlayers = (()=>{
   async function cpuTurn(){
     const round=ST.round;ST.cpuBusy=true;render();setStatus('thinking','CPUが かんがえています…','');
     await new Promise(r=>setTimeout(r,getCpuDelay()));if(round!==ST.round)return;
-    const pick=cpuChoose();
+    const pick=await cpuChoose();
+    if(round!==ST.round||pick===undefined)return;
     if(!pick||isEndWord(pick.reading)){
       if(config.mode==='coop'){
         // Keep the last valid tail and let humans continue after the CPU passes.

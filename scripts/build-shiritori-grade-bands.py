@@ -7,6 +7,7 @@ The CSV, asset manifest and dictionary import history are never rewritten here.
 import csv
 import hashlib
 import json
+import subprocess
 from collections import Counter
 from pathlib import Path
 
@@ -64,6 +65,7 @@ def main():
         + json.dumps(runtime, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8')
     (ROOT / 'data/shiritori-grade-review.json').write_text(
         json.dumps(review, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    subprocess.run(['node', str(ROOT / 'scripts/build-shiritori-delivery.cjs')], cwd=ROOT, check=True)
     print(json.dumps(dict(Counter(row['level'] for row in review))))
 
 

@@ -1,0 +1,49 @@
+/* Compile CSV/editorial decisions into a reading index and bounded payloads. */
+const fs=require('node:fs'), path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
+const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+function build(root){
+  const read=f=>fs.readFileSync(path.join(root,f),'utf8');
+  const csv=read('whitelist.csv'),html=read('shiritori.html');
+  const context=vm.createContext({});context.window=context;
+  for(const file of ['shiritori-image-policy.js','shiritori-vocabulary.js','shiritori-grade-policy.js'])vm.runInContext(read(file),context);
+  if(context.ShiritoriGradePolicy.sourceSha256!==hash(csv))throw Error('Grade policy is stale: rebuild grade bands before delivery');
+  const parser=html.match(/function parseCSV\([\s\S]*?return Array.from\(map.values\(\)\);\s*}/)?.[0];
+  if(!parser)throw Error('CSV parser not found');
+  vm.runInContext(parser,context);
+  const rows=context.parseCSV(csv,true);
+  for(const row of rows)row.genres=row.words.map((w,i)=>context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja));
+  return compileRows(rows,hash(csv));
+}
+function profiles(list){
+  const counts=new Map();
+  for(const r of list){const p={};r.genres.forEach((g,i)=>p[g]=Math.min(p[g]||6,r.meaningLevels[i]));
+    const key=JSON.stringify(Object.entries(p).sort());counts.set(key,(counts.get(key)||0)+1);}
+  return [...counts].map(([p,count])=>[JSON.parse(p),count]);
+}
+function compileRows(rows,sourceSha256){
+  const small={'ぁ':'あ','ぃ':'い','ぅ':'う','ぇ':'え','ぉ':'お','ゃ':'や','ゅ':'ゆ','ょ':'よ','っ':'つ','ゎ':'わ','ゕ':'か','ゖ':'け'};
+  const head=s=>small[s[0]]||s[0],groups=new Map(),index=[],chunks=[],files=new Map();
+  for(const row of rows){const h=head(row.reading);if(!groups.has(h))groups.set(h,[]);groups.get(h).push(row);}
+  for(const [h,list] of groups){
+    for(let start=0;start<list.length;start+=128){
+      const batch=list.slice(start,start+128),body=JSON.stringify(batch)+'\n',id=chunks.length;
+      const file=`chunks/${h.codePointAt(0).toString(16)}-${hash(body).slice(0,20)}.json`;
+      files.set(file,body);chunks.push({head:h,file,bytes:Buffer.byteLength(body),count:batch.length,profiles:profiles(batch)});
+      batch.forEach(r=>index.push([r.reading,r.level,id]));
+    }
+  }
+  const manifest={schema:1,sourceSha256,readings:index,chunks};
+  files.set('index.json',JSON.stringify(manifest)+'\n');
+  return {files,rows,manifest};
+}
+function run(root,check=false){
+  const result=build(root),out=path.join(root,'data/shiritori-delivery');
+  for(const [name,body] of result.files){const dest=path.join(out,name);
+    if(check){if(!fs.existsSync(dest)||fs.readFileSync(dest,'utf8')!==body)throw Error(`Stale delivery file: ${name}`);}
+    else {fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,body);}}
+  console.log(JSON.stringify({check,readings:result.rows.length,chunks:result.manifest.chunks.length,indexBytes:Buffer.byteLength(result.files.get('index.json')),maxChunkBytes:Math.max(...result.manifest.chunks.map(c=>c.bytes)),sourceBytes:fs.statSync(path.join(root,'whitelist.csv')).size}));
+  if(fs.existsSync(path.join(root,'data/japan-places/metadata.json')))require('./build-shiritori-geography.cjs').run(root,result,check);
+  return result;
+}
+module.exports={build,run,compileRows,profiles};
+if(require.main===module)run(path.resolve(__dirname,'..'),process.argv.includes('--check'));

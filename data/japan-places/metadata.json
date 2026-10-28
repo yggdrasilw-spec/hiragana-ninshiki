@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "name": "日本の地名・駅名",
+  "genre": "japanPlace",
+  "level": 5,
+  "entries": 95520,
+  "readings": 85326,
+  "categories": {
+    "city-short": 743,
+    "municipality": 2780,
+    "prefecture": 46,
+    "station": 8499,
+    "town": 83452
+  },
+  "entriesSha256": "9d08a97ae575df773055d3116c954b78c201252d39d0dcc5382bed34c543c913",
+  "sourceEvidence": {
+    "retrievedAt": "2026-10-27T14:27:40.049220+00:00",
+    "postal": {
+      "url": "https://www.post.japanpost.jp/service/search/zipcode/download/utf/zip/utf_ken_all.zip",
+      "sha256": "444881769a631d2c36c644fc041e5ce62fe65d204ff498a601641ba1e66b5955",
+      "records": 124526,
+      "version": "2026-09-30",
+      "license": "Japan Post does not assert copyright on postal data"
+    },
+    "stations": {
+      "url": "https://raw.githubusercontent.com/Seo-4d696b75/station_database/main/out/main/station.json",
+      "sha256": "9e2437ccb8dbc30221100718e2b5f19d2f50907880d32ae92d131ef3ae2abd01",
+      "version": {
+        "version": 20260930,
+        "size": 5561574
+      },
+      "records": 9372,
+      "license": "CC BY 4.0",
+      "author": "Seo-4d696b75"
+    },
+    "snapshots": {
+      "postal-records.csv": "266809f3742039a5d8a42e8d9c3742baf3b1bb2f67ed658551393a5493334cc5",
+      "stations.json": "9326bc9e196dbbebbbddfbfa95f07ae04f2e5042ee30f902aec96419c53b91d3"
+    }
+  },
+  "stagedReviewSha256": "8c3ed6ea56287a40025980b4237ad5edc99d13b3cf58f6521fdf9101d6ca51da",
+  "excluded": {
+    "postal-placeholder": 1910,
+    "annotated-or-multiple-town": 6500,
+    "numeric-address-reading-not-inferred": 2510,
+    "unsupported-reading-or-punctuation": 77,
+    "closed-station": 385,
+    "station-disambiguator": 21
+  }
+}
