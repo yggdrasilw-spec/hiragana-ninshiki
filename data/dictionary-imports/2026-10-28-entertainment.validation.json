@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "dictionarySha256": "8f05047c899e40e0cfa1f4d549a48adcff5d23dfafaa4027be716534acada68c",
+  "added": 7540,
+  "total": 33655,
+  "browser": {
+    "passed": true,
+    "reports": [
+      {
+        "viewport": "desktop",
+        "registered": 7540,
+        "noImageResults": 7540,
+        "detailSamples": 12,
+        "homophones": 2,
+        "genreCounts": [
+          0,
+          0,
+          0,
+          0,
+          7341
+        ],
+        "keyboardInputAtLevel1": true,
+        "endingN": true,
+        "noExternalDetailRequests": true,
+        "passed": true
+      },
+      {
+        "viewport": "mobile",
+        "registered": 7540,
+        "noImageResults": 7540,
+        "detailSamples": 12,
+        "homophones": 2,
+        "genreCounts": [
+          0,
+          0,
+          0,
+          0,
+          7341
+        ],
+        "keyboardInputAtLevel1": true,
+        "endingN": true,
+        "noExternalDetailRequests": true,
+        "passed": true
+      }
+    ]
+  },
+  "additionContentSha256": "94c005bc255ec74a3c00e60a7b77aa75c981564124727b9ac0f0b982a22f9a8b",
+  "browserRebaseCheck": "Exact reading/word/meaning triples unchanged after rebasing over 17 unrelated new meanings; final structural and delivery tests rerun.",
+  "checks": [
+    "all additions and catalogs",
+    "stable baseline bytes",
+    "all level 5",
+    "all entertainment genre",
+    "all explanation-only",
+    "duplicate identities and senses",
+    "browser desktop/mobile",
+    "review gate",
+    "import history",
+    "delivery and counts",
+    "image policy"
+  ]
+}

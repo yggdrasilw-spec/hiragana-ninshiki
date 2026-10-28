@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "sourceSha256": "9ee5c06f2889653860cab72d67e4f68fb8f97bdbe35689a6b4789ee2c3557016",
+  "baselineBytePreserved": true,
+  "added": 6211,
+  "coreRegistrationChecks": 958,
+  "coreMissing": 0,
+  "views": [
+    {
+      "width": 1280,
+      "meanings": 6211,
+      "genres": [
+        {
+          "genre": "chemistry",
+          "elementary": 0,
+          "advanced": 1507
+        },
+        {
+          "genre": "physics",
+          "elementary": 0,
+          "advanced": 1071
+        },
+        {
+          "genre": "biology",
+          "elementary": 0,
+          "advanced": 2252
+        },
+        {
+          "genre": "earthScience",
+          "elementary": 0,
+          "advanced": 1304
+        }
+      ],
+      "inputs": 4,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "meanings": 6211,
+      "genres": [
+        {
+          "genre": "chemistry",
+          "elementary": 0,
+          "advanced": 1507
+        },
+        {
+          "genre": "physics",
+          "elementary": 0,
+          "advanced": 1071
+        },
+        {
+          "genre": "biology",
+          "elementary": 0,
+          "advanced": 2252
+        },
+        {
+          "genre": "earthScience",
+          "elementary": 0,
+          "advanced": 1304
+        }
+      ],
+      "inputs": 4,
+      "errors": []
+    }
+  ],
+  "deliveryChecks": 120,
+  "maxChunkReadings": 128,
+  "semanticReviewScope": "Selected editorial corrections and source joins; not full expert proofreading or a proof of exhaustive university-entrance coverage."
+}

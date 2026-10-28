@@ -1171,6 +1171,8 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 @media(max-width:768px){#pageGame{flex:1;min-height:0}#colCenter{flex:1;min-height:0;overflow-y:auto}#colCenter .panel{min-height:160px}#linkArena{padding:9px 12px;border-radius:15px}#linkTrack{min-height:73px;padding:8px 0}.link-reading{font-size:18px}.link-node{padding:6px 8px}.link-top{height:24px}#linkCount strong{font-size:22px}#linkCue{padding-top:6px}#linkNext{font-size:22px}#mobileSubTabs{flex-shrink:0;padding-bottom:env(safe-area-inset-bottom)}.wa-btn{min-width:44px;min-height:44px}.main-tab,.tb-btn{min-height:34px}}
 @media(max-width:768px){#topbar{gap:5px}#btnCharMode{max-width:104px;overflow:hidden;font-size:10px}#colCenter .panel:has(#modeCanvas:not(.hidden)){min-height:300px!important}#drawCanvas{min-height:110px}#colCenter .panel:has(#modeKbd:not(.hidden)){min-height:205px!important}#modeKbd{overflow-y:auto;flex-shrink:0;min-height:180px}#kbdWrap{min-height:155px;padding:12px 6px}#modeKbd .kbd-hint{flex-shrink:0}#inArea:has(#modeKbd:not(.hidden)){overflow-y:auto}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.link-spark{display:none}body.panic #panicOverlay{display:none}}
+.det-source a{color:#76d9ff;text-underline-offset:2px}
+.det-source a:focus-visible{outline:2px solid #76d9ff;outline-offset:2px}
 </style>
 <link rel="stylesheet" href="shiritori-robot-link.css?v=20261013">
 <style>
@@ -1612,7 +1614,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <script src="shiritori-keyboard-guide.js?v=20261019cpu-backspace"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
-<script src="shiritori-vocabulary.js?v=20261028japanpack"></script>
+<script src="shiritori-vocabulary.js?v=20261029-science"></script>
 <script src="shiritori-dictionary.js?v=20261028japanpack"></script>
 <script src="shiritori-feedback-config.js?v=20261014"></script>
 <script src="shiritori-feedback.js?v=20261014"></script>
@@ -2893,6 +2895,7 @@ function syncCpuGenreUI(){
   const packNote=document.createElement('p');packNote.id='japanPlaceStatus';packNote.setAttribute('aria-live','polite');
   packNote.textContent=ST.packBusy?'地名の辞書を よみこんでいます…':ST.packError||(ST.japanPlaces?'地名の辞書を使用中。子どもはどのレベルでも入力でき、CPUはレベル5で使います。':'使うときだけ追加の辞書を読み込みます。');root.appendChild(packNote);
   const credit=document.createElement('details');credit.innerHTML='<summary>地名・駅名データの出典</summary><p><a href="https://www.post.japanpost.jp/service/search/zipcode/download/utf-zip.html" target="_blank" rel="noopener">日本郵便 郵便番号データ</a>／<a href="https://github.com/Seo-4d696b75/station_database" target="_blank" rel="noopener">station_database（Seo-4d696b75）</a> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。2026年9月30日版から地名・読みを抽出し、所在地の説明を作成。</p>';root.appendChild(credit);
+  const scienceCredit=document.createElement('details');scienceCredit.innerHTML='<summary>理科用語データの出典</summary><p>読み・見出し：<a href="https://www.edrdg.org/jmdict/j_jmdict.html" target="_blank" rel="noopener">JMdict（EDRDG）</a>。説明：<a href="https://ja.wiktionary.org/" target="_blank" rel="noopener">Wiktionary執筆者</a>、<a href="https://huggingface.co/datasets/yuany1z/tomoshi-dict-data" target="_blank" rel="noopener">Tomoshi（Y1Z）</a>のAI補助語義、および編集作成文。説明は短縮・修正しています。資料由来の語義は<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>。各語の出典は説明欄に表示します。</p>';root.appendChild(scienceCredit);
   const label=document.createElement('p');label.textContent='CPUが使うジャンル（複数選択）';root.appendChild(label);
   for(const [key,text] of Object.entries(ShiritoriVocabulary.categories)){
     const l=document.createElement('label'),box=document.createElement('input');box.type='checkbox';box.checked=ST.cpuGenres.includes(key);box.dataset.genre=key;box.disabled=key==='japanPlace'&&!ST.japanPlaces;
@@ -3377,7 +3380,7 @@ function splitMora(text){
 function meaningSourceHtml(source){
   if(!source||!/^https:\/\//.test(source.url))return '';
   const license=source.licenseUrl&&/^https:\/\//.test(source.licenseUrl)?` / <a href="${escH(source.licenseUrl)}" target="_blank" rel="noopener">${escH(source.license)}</a>`:'';
-  return `<div class="det-text" style="font-size:11px">出典：<a href="${escH(source.url)}" target="_blank" rel="noopener">${escH(source.title)}</a>${license}</div>`;
+  return `<div class="det-text det-source" style="font-size:12px">出典：<a href="${escH(source.url)}" target="_blank" rel="noopener">${escH(source.title)}</a>${license}</div>`;
 }
 function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
   const w=words[idx]||'';

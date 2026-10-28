@@ -1,11 +1,14 @@
 /* CPU vocabulary policy. Grade bands are conservative editorial selections,
    independent of the legacy CSV levels. Unreviewed meanings stay at level 4. */
 (function(root){
-  const categories={animal:'動物・虫・魚',plant:'植物',food:'食べ物・料理',daily:'くらし・道具',body:'体・健康',school:'学校・学習',nature:'自然・宇宙',place:'地名・国',japanPlace:'日本の地名・駅名',sport:'スポーツ・遊び',arts:'芸術・音楽',society:'社会・仕事',technology:'科学・技術',fiction:'物語・キャラクター',brand:'商品・ブランド',other:'その他'};
+  const categories={chemistry:'化学',physics:'物理',biology:'生物',earthScience:'地学',animal:'動物・虫・魚',plant:'植物',food:'食べ物・料理',daily:'くらし・道具',body:'体・健康',school:'学校・学習',nature:'自然・宇宙',place:'地名・国',japanPlace:'日本の地名・駅名',sport:'スポーツ・遊び',arts:'芸術・音楽',entertainment:'芸能・映画・番組',society:'社会・仕事',technology:'科学・技術',fiction:'物語・キャラクター',brand:'商品・ブランド',other:'その他'};
   function category(word,meaning,query=''){
     const t=word+' '+meaning+' '+query;
+    // Classify the sense before looking at words inside stage names or titles.
+    if(/^(?:音楽作品|音楽バンド|音楽家|映画作品|テレビ番組|ライブ公演|お笑い芸人|お笑いグループ|芸能グループ|タレント|俳優|声優|落語家)[。：]/.test(meaning))return 'entertainment';
+    if(/キャラクター/.test(meaning))return 'fiction';
     if(/商品名|ブランド|商標|メーカー|製品名|チェーン店/.test(t))return 'brand';
-    if(/ポケモン|ガンダム|プリキュア|アニメ|キャラクター|妖怪|神話|物語|昔話|童話/.test(t))return 'fiction';
+    if(/ポケモン|ガンダム|プリキュア|アニメ|漫画|まんが|キャラクター|妖怪|神話|物語|昔話|童話/.test(t))return 'fiction';
     if(/料理|食べ物|食べもの|食品|お菓子|おかし|飲み物|のみもの|パン|スープ|調味料|食材|果物|くだもの|野菜|やさい/.test(t))return 'food';
     const bio=root.ShiritoriImagePolicy?.category(word,meaning,query);
     if(bio==='animal')return 'animal';

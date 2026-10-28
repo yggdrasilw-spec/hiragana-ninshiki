@@ -11,7 +11,18 @@ function build(root){
   if(!parser)throw Error('CSV parser not found');
   vm.runInContext(parser,context);
   const rows=context.parseCSV(csv,true);
-  for(const row of rows)row.genres=row.words.map((w,i)=>context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja));
+  const scienceFile=path.join(root,'data/science/entries.jsonl');
+  const science=new Map(fs.existsSync(scienceFile)?fs.readFileSync(scienceFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const matched=new Set();
+  for(const row of rows)row.genres=row.words.map((w,i)=>{
+    const key=[row.reading,w,row.meanings[i]].join('\t'),entry=science.get(key);
+    if(entry){
+      if(!context.ShiritoriVocabulary.categories[entry.genre]||!entry.source?.url?.startsWith('https://'))throw Error('Invalid science metadata: '+w);
+      row.imagequeries[i].source=entry.source;matched.add(key);return entry.genre;
+    }
+    return context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja);
+  });
+  if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
   return compileRows(rows,hash(csv));
 }
 function profiles(list){

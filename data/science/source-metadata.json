@@ -1,0 +1,23 @@
+{
+  "license": "CC BY-SA 4.0 for the JMdict/Wiktionary/Tomoshi-derived data",
+  "jmdict": {
+    "url": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    "sha256": "739ce5a15038e063f6db819fe61a70c0f60c2039569b651f0a0f5601fdbc0b39",
+    "license": "https://www.edrdg.org/edrdg/licence.html"
+  },
+  "tomoshi": {
+    "url": "https://huggingface.co/datasets/yuany1z/tomoshi-dict-data",
+    "version": "2026-09-02",
+    "sha256": "51581856d3e563b32b05738efd67c38ed9946c013555fd3c0870e24d194c2048",
+    "notice": "tomoshi-NOTICE.md",
+    "license": "tomoshi-LICENSE.md",
+    "generatedDefinitions": true
+  },
+  "wiktionary": {
+    "url": "https://kaikki.org/jawiktionary/raw-wiktextract-data.jsonl.gz",
+    "sha256": "8eaf06a35c4a1402e7d3392b46d1f029b4f3a58b5b8e56741bce65bc93feaedb",
+    "rightsHolder": "Wiktionary contributors",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "review": "Lexical joins, selected editorial corrections and automated validation; not a complete human review of all definitions."
+}

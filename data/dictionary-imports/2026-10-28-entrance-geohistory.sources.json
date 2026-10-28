@@ -1,0 +1,111 @@
+{
+  "checkedOn": "2026-10-28",
+  "scopeReferences": {
+    "日本史": [
+      "https://ten.tokyo-shoseki.co.jp/ten_download/2022/2022068530.pdf"
+    ],
+    "世界史": [
+      "https://ten.tokyo-shoseki.co.jp/ten_download/2022/2022068534.pdf",
+      "https://www.y-history.net/"
+    ],
+    "地理": [
+      "https://ten.tokyo-shoseki.co.jp/ten_download/2021/2021108350/shakai_16695_syllabus.pdf"
+    ]
+  },
+  "method": "高校教科の範囲を参照し標準用語を編集選定。説明は独自の短文。科目資料へのリンクは全語の語形・定義を個別照合した証拠ではない。",
+  "specificChecks": [
+    {
+      "words": [
+        "裾礁",
+        "堡礁",
+        "環礁"
+      ],
+      "url": "https://kyushu.env.go.jp/okinawa/coremoc/sango.html",
+      "purpose": "サンゴ礁の区分と裾礁の読み"
+    },
+    {
+      "words": [
+        "ハドレー循環",
+        "偏西風"
+      ],
+      "url": "https://www.jma.go.jp/jma/kishou/know/yougo_hp/haichi4.html",
+      "purpose": "大気循環の用語"
+    },
+    {
+      "words": [
+        "リキニウス・セクスティウス法",
+        "ホルテンシウス法"
+      ],
+      "url": "https://www.y-history.net/appendix/wh0103-015.html",
+      "purpose": "ローマ身分闘争の制度"
+    },
+    {
+      "words": [
+        "九品中正法"
+      ],
+      "url": "https://www.y-history.net/appendix/wh0301-052.html",
+      "purpose": "魏の官吏登用制度"
+    },
+    {
+      "words": [
+        "資治通鑑"
+      ],
+      "url": "https://dc.lib.kagoshima-u.ac.jp/item/0110650061",
+      "purpose": "読みと著者"
+    },
+    {
+      "words": [
+        "賀茂真淵"
+      ],
+      "url": "https://www.city.hamamatsu.shizuoka.jp/bunkazai/culture_art/mabuchi/mabuchijinbutu.html",
+      "purpose": "かものまぶちの読み。既存読みに統一"
+    },
+    {
+      "words": [
+        "正長の土一揆"
+      ],
+      "url": "https://www.meihaku.jp/japanese-history-category/shocho-no-tsuchiikki/",
+      "purpose": "既存のつちいっきの読みを保持"
+    },
+    {
+      "words": [
+        "雑徭"
+      ],
+      "url": "https://kotobank.jp/word/雑徭-69266",
+      "purpose": "ざつよう・ぞうようの両読みを確認。既存読みに統一"
+    },
+    {
+      "words": [
+        "受領"
+      ],
+      "url": "https://kotobank.jp/word/受領-85239",
+      "purpose": "歴史語義のずりょうを確認"
+    },
+    {
+      "words": [
+        "郷挙里選"
+      ],
+      "url": "https://www.niigata-u.ac.jp/wp-content/uploads/2023/10/2_r5kakomon.pdf",
+      "purpose": "大学入試での用語と制度の文脈"
+    },
+    {
+      "words": [
+        "成帯土壌"
+      ],
+      "url": "https://www.jseg.or.jp/wp-content/uploads/2025/01/JSEG_yougo.pdf",
+      "purpose": "読みの確認"
+    }
+  ],
+  "dictionary": {
+    "name": "JMdict common local index",
+    "path": "data/external-dictionaries/jmdict/candidate-inventory.jsonl",
+    "version": "3.6.2 / 2026-10-05",
+    "use": "候補898語中22語の読み・表記一致。英語定義は転載しない。専門語の大半はこの一般語索引の対象外。"
+  },
+  "limitations": [
+    "全語の外部辞書個別照合・専門家校閲は未実施。",
+    "出版社のシラバスは到達範囲の参考であり入試に出る全見出しの一覧ではない。",
+    "年度で変わる国別順位や統計数値は収録しない。",
+    "大学受験完全網羅とは称さない。文化史・地域史の細目や資料読解は追加確認が必要。"
+  ]
+}
