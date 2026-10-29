@@ -3,7 +3,7 @@ const ShiritoriSpeech = (()=>{
   const $=id=>document.getElementById(id);
   const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
   let epoch=0,recognizer=null,utterance=null,timer=null,running=false,paused=false;
-  let candidate='',options=[],phase='word',misses=0,lexicon=null,lexiconTask=null,lastRound=-1,submitting=null;
+  let candidate='',phase='word',misses=0,lexicon=null,lexiconTask=null,lastRound=-1,submitting=null;
   const clean=s=>String(s).normalize('NFKC').replace(/[\s。、，,.！？!?「」『』]/g,'').toLowerCase();
   const kana=s=>clean(s).replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60));
   function status(text){$('speechStatus').textContent=text;}
@@ -53,24 +53,35 @@ const ShiritoriSpeech = (()=>{
       })().finally(()=>{lexiconTask=null;});
       lexicon=await lexiconTask;
     }
-    // Ambiguous spellings are never disambiguated using the required shiritori tail.
-    return (lexicon[value]||[]).filter(n=>dictionary.lookup(n));
+    // Prefer the whole spelling, including its ambiguous readings.
+    if(lexicon[value])return lexicon[value].filter(n=>dictionary.lookup(n));
+    // Recognition can mix kanji and kana within a compound. Join partial readings,
+    // but accept only complete dictionary words, never a guessed shiritori tail.
+    const paths=Array.from({length:value.length+1},()=>new Set());
+    paths[0].add('');let states=1;
+    for(let start=0;start<value.length;start++){
+      if(!paths[start].size)continue;
+      const parts=[];
+      if(/^[ぁ-ゖー]$/.test(value[start]))parts.push([start+1,[value[start]]]);
+      for(let end=start+1;end<=value.length;end++){
+        const part=value.slice(start,end);
+        if(!/^[ぁ-ゖー]+$/.test(part)&&lexicon[part])parts.push([end,lexicon[part]]);
+      }
+      for(const [end,readings] of parts)for(const prefix of paths[start])for(const reading of readings){
+        const joined=prefix+reading;
+        if(joined.length>80||paths[end].has(joined))continue;
+        // Do not truncate alternatives and silently choose a reading on overflow.
+        if(++states>2048)return [];
+        paths[end].add(joined);
+      }
+    }
+    return [...paths[value.length]].filter(n=>dictionary.lookup(n)).sort();
   }
-  async function received(text,id){
+  async function received(texts,id){
+    const text=texts[0];
     if(!valid(id))return;
     const command=kana(text);
     if(command==='おやすみ'||command==='すとっぷ'){pause();return;}
-    if(phase==='reading'){
-      if(/^(ちがうよ|違うよ|ちがう|違う|いいえ|やりなおし)$/.test(command)){
-        options=[];phase='word';$('speechReading').textContent='';
-        await prompt('もういちど、しゃべってください。',id);return;
-      }
-      const patterns=[/^(1|一|いち)(番|ばん)?$/,/^(2|二|に)(番|ばん)?$/,/^(3|三|さん)(番|ばん)?$/,/^(4|四|よん|し)(番|ばん)?$/,/^(5|五|ご)(番|ばん)?$/];
-      const selected=patterns.findIndex(p=>p.test(command));
-      const reading=selected>=0?options[selected]:options.includes(command)?command:null;
-      if(!reading){await prompt(readingPrompt(),id);return;}
-      options=[];await acceptReading(reading,id);return;
-    }
     if(phase==='replay'){
       if(/^(もういっかい|もう一回|もういちど)$/.test(command)){
         invalidate();resetGame(false);
@@ -91,22 +102,23 @@ const ShiritoriSpeech = (()=>{
     }
     status('ひらがなの よみを たしかめています…');
     let choices;
-    try{choices=await readings(text);}catch{choices=[];}
+    try{choices=[...new Set((await Promise.all(texts.map(readings))).flat())];}catch{choices=[];}
     if(!valid(id))return;
-    if(choices.length>1&&choices.length<=5&&choices.join('').length<=40){
-      options=choices;phase='reading';
-      $('speechReading').textContent=choices.map((n,i)=>`${i+1}：${displayStr(n)}`).join('　');
-      await prompt(readingPrompt(),id);return;
+    if(choices.length>1){
+      // Preserve recognition order when multiple legal readings share the head.
+      const next=choices.find(n=>dictionary.lookup(n)&&!ST.used.has(norm(n))&&(!ST.tail||firstChar(n)===ST.tail));
+      if(next){await acceptReading(next,id,true);return;}
+      await prompt(ST.tail?'「'+displayStr(ST.tail)+'」から はじまる、まだ つかっていない ことばを しゃべってね。':'まだ つかっていない ことばを しゃべってね。',id);return;
     }
     if(choices.length!==1){
       await prompt('よみかたを ひとつに できませんでした。もういちど、ひらがなを いちもじずつ つなげて、しゃべってください。',id);return;
     }
     await acceptReading(choices[0],id);
   }
-  async function acceptReading(reading,id){
+  async function acceptReading(reading,id,automatic=false){
     if(!valid(id))return;
     candidate=reading;setCurrentInput(candidate);$('speechReading').textContent=displayStr(candidate);
-    if(!ST.speechConfirm){await connectCandidate(id);return;}
+    if(automatic||!ST.speechConfirm){await connectCandidate(id);return;}
     phase='confirm';
     await prompt(candidate+' と認識。よければ オーケー、ちがえば ちがうよ、と いってね。',id);
   }
@@ -136,17 +148,22 @@ const ShiritoriSpeech = (()=>{
     if(ST.inputMode==='speech')setCurrentInput('');
     saveSettings();syncOptionsUI();
   }
-  function readingPrompt(){return 'よみかたを えらんでね。'+options.map((n,i)=>`${i+1}ばん、${n}`).join('。')+'。ばんごうを いってね。ちがうよ、で いいなおせるよ。';}
   function listen(id){
     if(!valid(id))return;
     const r=new Recognition();recognizer=r;
-    r.lang='ja-JP';r.continuous=false;r.interimResults=false;r.maxAlternatives=1;
-    let text='',failure='';
-    r.onstart=()=>{if(valid(id))status(phase==='confirm'?'🎤「オーケー」か「ちがうよ」を どうぞ':phase==='reading'?'🎤 よみかたの ばんごうを どうぞ':phase==='replay'?'🎤「もういっかい」で あそぶよ':'🎤 きいているよ。ことばを ひとつ どうぞ');};
+    r.lang='ja-JP';r.continuous=false;r.interimResults=false;r.maxAlternatives=5;
+    let texts=[''],failure='';const finalResults=new Map();
+    r.onstart=()=>{if(valid(id))status(phase==='confirm'?'🎤「オーケー」か「ちがうよ」を どうぞ':phase==='replay'?'🎤「もういっかい」で あそぶよ':'🎤 きいているよ。ことばを ひとつ どうぞ');};
     r.onresult=e=>{
       if(!valid(id)||recognizer!==r)return;
       if(window.speechSynthesis.speaking||activeVoiceAudio.size){invalidate();return;}
-      for(let i=e.resultIndex||0;i<e.results.length;i++)if(e.results[i].isFinal)text+=e.results[i][0].transcript;
+      for(let i=e.resultIndex||0;i<e.results.length;i++)if(e.results[i].isFinal){
+        finalResults.set(i,Array.from(e.results[i]).slice(0,5).map(a=>a.transcript).filter(Boolean));
+      }
+      texts=[''];
+      for(const [,parts] of [...finalResults].sort((a,b)=>a[0]-b[0])){
+        texts=[...new Set(texts.flatMap(prefix=>parts.map(part=>prefix+part)))].slice(0,5);
+      }
     };
     r.onerror=e=>{
       failure=e.error||'unknown';
@@ -158,12 +175,12 @@ const ShiritoriSpeech = (()=>{
       if(failure&&!['no-speech','aborted'].includes(failure)){
         pause(failure==='not-allowed'||failure==='service-not-allowed'?'マイクを つかえません。ブラウザの マイク許可を たしかめてね。':'音声入力に つながりません。通信や マイクを たしかめて「きくのを さいかい」を おしてね。');return;
       }
-      if(!text){
+      if(!texts[0]){
         if(++misses>=3){pause('声が きこえなかったので おやすみ中。「きくのを さいかい」で つづけるよ。');return;}
-        await prompt(phase==='confirm'?'オーケー か、ちがうよ、と いってね。':phase==='reading'?readingPrompt():'もういちど、しゃべってください。',id);return;
+        await prompt(phase==='confirm'?'オーケー か、ちがうよ、と いってね。':'もういちど、しゃべってください。',id);return;
       }
       misses=0;
-      try{await received(text,id);}catch{if(valid(id))pause('うまく つづけられませんでした。「きくのを さいかい」で ためしてね。');}
+      try{await received(texts,id);}catch{if(valid(id))pause('うまく つづけられませんでした。「きくのを さいかい」で ためしてね。');}
     };
     // Covers browsers that never dispatch onend after a device disconnect.
     timer=setTimeout(()=>{if(valid(id))pause('マイクが とまりました。「きくのを さいかい」で つづけるよ。');},20000);

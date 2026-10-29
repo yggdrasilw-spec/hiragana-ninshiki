@@ -1,7 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=process.env.SHIRITORI_ROOT||path.resolve(__dirname,'..');
-const ambiguous=Object.entries(JSON.parse(fs.readFileSync(path.join(root,'data/shiritori-speech-readings.json'),'utf8'))).find(([k,v])=>v.length>1&&v.length<=5&&v.join('').length<=40&&/[一-龥]/.test(k));
 const server=http.createServer((req,res)=>{
   const file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
   if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);return res.end();}
@@ -65,6 +64,15 @@ function mocks(){
       assert.ok(await page.evaluate(()=>voiceLog.includes('もういちど、しゃべってください。')));
       blockReadings=true;await word('車');assert.equal(await page.evaluate(()=>ST.currentInput),'');blockReadings=false;
       await word('車');assert.equal(await page.evaluate(()=>ST.currentInput),'くるま');
+      await word('ちがうよ');
+      // Spaces, mixed kanji/kana, and partial ambiguous readings in a long word.
+      for(const text of ['コクサイ　レンゴウ','国際 れんごう','日本 こく 憲法']){
+        await word(text);
+        assert.equal(await page.evaluate(()=>ST.currentInput),text.includes('日本')?'にほんこくけんぽう':'こくさいれんごう');
+        assert.equal(await page.evaluate(()=>ST.history.length),0);
+        await word('ちがうよ');
+      }
+      await word('車');
       await page.screenshot({path:path.join(process.env.SPEECH_SCREENSHOTS||root,`speech-${width}.png`)});
       await word('オーケー');
       await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});await listening();
@@ -81,15 +89,33 @@ function mocks(){
       assert.equal(await page.evaluate(()=>window.mic),null);
       assert.equal(await page.evaluate(()=>ST.history.length),0);
       await page.evaluate(()=>resetGame(false));await enter();
-      // Ambiguous / unknown kanji may never become a guessed reading.
+      // Unknown kanji still retries. Ambiguous readings now connect by the tail.
       await word('未登録超難解語');assert.equal(await page.evaluate(()=>ST.currentInput),'');
       assert.ok(await page.evaluate(()=>voiceLog.some(t=>t.includes('ひとつに できませんでした'))));
-      assert.ok(ambiguous);await word(ambiguous[0]);assert.equal(await page.evaluate(()=>ST.currentInput),'');
-      assert.ok(await page.evaluate(()=>voiceLog.some(t=>t.includes('ばんごうを いってね'))));
-      await word('6番');assert.equal(await page.evaluate(()=>ST.currentInput),'');
-      await word('1番');assert.equal(await page.evaluate(()=>ST.currentInput),ambiguous[1][0]);
+      await page.evaluate(()=>{resetGame(false);ST.tail='か';});await listening();
+      const automaticStart=await page.evaluate(()=>voiceLog.length);
+      await word('金');
+      await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});await listening();
+      assert.equal(await page.evaluate(()=>ST.history[0].reading),'かね');
+      assert.equal(await page.evaluate(start=>voiceLog.slice(start).some(t=>t.includes('ばんごう')||t.includes('と認識')),automaticStart),false);
+      // No matching candidate: retry without committing or asking for a number.
+      await page.evaluate(()=>{resetGame(false);ST.tail='ぬ';});await listening();
+      await word('金');
       assert.equal(await page.evaluate(()=>ST.history.length),0);
-      await word('ちがうよ');assert.equal(await page.evaluate(()=>ST.currentInput),'');
+      assert.ok(await page.evaluate(()=>voiceLog.some(t=>t.includes('「ぬ」から はじまる'))));
+      await page.evaluate(()=>{resetGame(false);ST.tail='か';ST.used.add('かね');});await listening();
+      await word('金');assert.equal(await page.evaluate(()=>ST.history.length),0);
+      // Short-word fallback: the primary recognition is wrong, but an alternative connects.
+      await page.evaluate(()=>{resetGame(false);ST.tail='え';});await listening();
+      assert.equal(await page.evaluate(()=>window.mic.maxAlternatives),5);
+      await page.evaluate(()=>{
+        const mic=window.mic;window.mic=null;
+        const result=[{transcript:'キ'},{transcript:'絵'}];result.isFinal=true;
+        mic.onresult({resultIndex:0,results:[result]});mic.onend();
+      });await listening();
+      await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});await listening();
+      assert.equal(await page.evaluate(()=>ST.history[0].reading),'え');
+      await page.evaluate(()=>resetGame(false));await listening();
       // Unknown confirmations cannot commit, and stop works without a tap.
       await word('りんご');await word('えっと');assert.equal(await page.evaluate(()=>ST.history.length),0);
       await page.evaluate(()=>window.mic.finish('ストップ'));
@@ -145,8 +171,7 @@ function mocks(){
       await page.evaluate(()=>{resetGame(false);ST.tail='い';});await listening();
       await word('りんご');assert.equal(await page.evaluate(()=>ST.history.length),0);
       await page.evaluate(()=>resetGame(false));await listening();
-      await word('金');assert.equal(await page.evaluate(()=>ST.history.length),0);
-      await word('1番');
+      await word('金');
       await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});
       assert.equal(await page.evaluate(()=>ST.history[0].reading),'かね');
       assert.equal(await page.evaluate(()=>echoStarts),0);
