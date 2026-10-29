@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "sourceSha256": "1a5f11e4c4022bfaba81a7996d0d4d132be77675154bc2192f24211cf4df0424",
+  "added": 554,
+  "totalMeanings": 49000,
+  "totalReadings": 45900,
+  "chunks": 399,
+  "countChecks": 120,
+  "stableBaseline": true,
+  "allNewMeaningsValidated": true,
+  "importQuality": true,
+  "importHistory": true,
+  "deliveryBuildCheck": true,
+  "browser": {
+    "passed": true,
+    "reports": [
+      {
+        "viewport": "desktop",
+        "detailSamples": 23,
+        "homonyms": [
+          {
+            "reading": "らむね",
+            "senses": 4
+          },
+          {
+            "reading": "ちか",
+            "senses": 2
+          },
+          {
+            "reading": "しるし",
+            "senses": 4
+          }
+        ],
+        "keyboardInputs": 5,
+        "endingN": true,
+        "noExternalDetailRequests": true,
+        "passed": true
+      },
+      {
+        "viewport": "mobile",
+        "detailSamples": 23,
+        "homonyms": [
+          {
+            "reading": "らむね",
+            "senses": 4
+          },
+          {
+            "reading": "ちか",
+            "senses": 2
+          },
+          {
+            "reading": "しるし",
+            "senses": 4
+          }
+        ],
+        "keyboardInputs": 5,
+        "endingN": true,
+        "noExternalDetailRequests": true,
+        "passed": true
+      }
+    ]
+  },
+  "scope": "Public-source selection. Monthly top100 coverage is incomplete and explicitly recorded."
+}
