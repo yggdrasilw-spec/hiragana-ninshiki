@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "added": 5588,
+  "beforeSha256": "2ba0d7a6bb775db9a09a8d6a957519f441a0df1109f9059c8385a9cee2edb8ae",
+  "afterSha256": "05d077b281038ac3d4b1ee86a7f0b4a0a82f8513b1d258176f2be5b321ab67b8",
+  "preservedRows": 42858,
+  "totalRows": 48446,
+  "dataChecks": [
+    "全5588意味のCSV・学年・ジャンル・画像なし設定・分割配信への登録",
+    "既存42858行の完全なバイト保持",
+    "36年各100枠と登録IDの対応",
+    "永遠にの歌手別の異なる読み・RYO/HIDE/hide/NAOTOの人物の区別",
+    "インポート品質ゲートと追記履歴の改変検出",
+    "配信の全48446意味と120集計条件"
+  ],
+  "browser": {
+    "passed": true,
+    "reports": [
+      {
+        "viewport": "desktop",
+        "detailSamples": 24,
+        "homonyms": [
+          {
+            "reading": "はな",
+            "senses": 5
+          },
+          {
+            "reading": "あらし",
+            "senses": 6
+          },
+          {
+            "reading": "りょう",
+            "senses": 9
+          },
+          {
+            "reading": "ひで",
+            "senses": 4
+          }
+        ],
+        "keyboardInputs": 5,
+        "endingN": true,
+        "noExternalDetailRequests": true,
+        "passed": true
+      },
+      {
+        "viewport": "mobile",
+        "detailSamples": 24,
+        "homonyms": [
+          {
+            "reading": "はな",
+            "senses": 5
+          },
+          {
+            "reading": "あらし",
+            "senses": 6
+          },
+          {
+            "reading": "りょう",
+            "senses": 9
+          },
+          {
+            "reading": "ひで",
+            "senses": 4
+          }
+        ],
+        "keyboardInputs": 5,
+        "endingN": true,
+        "noExternalDetailRequests": true,
+        "passed": true
+      }
+    ]
+  },
+  "rankingScope": "2024〜2025年の公式100位を照合。1990〜2023年の二次資料100曲は公式順位の完全照合ではない。"
+}
