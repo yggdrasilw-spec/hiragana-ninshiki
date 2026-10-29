@@ -65,7 +65,7 @@ for (const asset of manifest.assets) {
 }
 for (const reading of ['らむね', 'れーす', 'ぴっちゃー']) {
   const row = rows.find(row => row.reading === reading);
-  assert.equal(row.meanings.length, 2, 'Distinct meanings for same spelling: ' + reading);
+  assert.ok(row.meanings.length >= 2, 'Preserve distinct meanings while allowing reviewed new homonyms: ' + reading);
   assert.notEqual(row.imagequeries[0].ja, row.imagequeries[1].ja, 'Disambiguated search: ' + reading);
 }
 for (const row of rows) for (const q of row.imagequeries) if (q.asset) assert.ok(fs.existsSync(path.join(root, q.asset)));

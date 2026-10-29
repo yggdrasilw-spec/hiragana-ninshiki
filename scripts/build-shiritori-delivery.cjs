@@ -13,6 +13,9 @@ function build(root){
   const rows=context.parseCSV(csv,true);
   const scienceFile=path.join(root,'data/science/entries.jsonl');
   const science=new Map(fs.existsSync(scienceFile)?fs.readFileSync(scienceFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const mangaFile=path.join(root,'data/manga/entries.jsonl');
+  const manga=new Map(fs.existsSync(mangaFile)?fs.readFileSync(mangaFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const mangaMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{
     const key=[row.reading,w,row.meanings[i]].join('\t'),entry=science.get(key);
@@ -20,9 +23,15 @@ function build(root){
       if(!context.ShiritoriVocabulary.categories[entry.genre]||!entry.source?.url?.startsWith('https://'))throw Error('Invalid science metadata: '+w);
       row.imagequeries[i].source=entry.source;matched.add(key);return entry.genre;
     }
+    const comic=manga.get(key);
+    if(comic){
+      if(comic.genre!=='fiction'||!comic.source?.url?.startsWith('https://ndlsearch.ndl.go.jp/books/R100000002-'))throw Error('Invalid manga metadata: '+w);
+      row.imagequeries[i].source=comic.source;mangaMatched.add(key);return comic.genre;
+    }
     return context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja);
   });
   if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
+  if(mangaMatched.size!==manga.size)throw Error('Manga metadata is stale: unmatched exact meanings');
   return compileRows(rows,hash(csv));
 }
 function profiles(list){
