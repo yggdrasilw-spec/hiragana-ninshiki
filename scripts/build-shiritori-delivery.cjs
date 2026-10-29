@@ -15,6 +15,9 @@ function build(root){
   const science=new Map(fs.existsSync(scienceFile)?fs.readFileSync(scienceFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const mangaFile=path.join(root,'data/manga/entries.jsonl');
   const manga=new Map(fs.existsSync(mangaFile)?fs.readFileSync(mangaFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const companyFile=path.join(root,'data/companies-brands/entries.jsonl');
+  const companies=new Map(fs.existsSync(companyFile)?fs.readFileSync(companyFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const companyMatched=new Set();
   const mangaMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{
@@ -22,6 +25,11 @@ function build(root){
     if(entry){
       if(!context.ShiritoriVocabulary.categories[entry.genre]||!entry.source?.url?.startsWith('https://'))throw Error('Invalid science metadata: '+w);
       row.imagequeries[i].source=entry.source;matched.add(key);return entry.genre;
+    }
+    const company=companies.get(key);
+    if(company){
+      if(!['company','brand'].includes(company.genre)||!company.source?.url?.startsWith('https://'))throw Error('Invalid company/brand source: '+w);
+      row.imagequeries[i].source=company.source;companyMatched.add(key);return company.genre;
     }
     const comic=manga.get(key);
     if(comic){
@@ -32,6 +40,7 @@ function build(root){
   });
   if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
   if(mangaMatched.size!==manga.size)throw Error('Manga metadata is stale: unmatched exact meanings');
+  if(companyMatched.size!==companies.size)throw Error('Company/brand metadata is stale: unmatched exact meanings');
   return compileRows(rows,hash(csv));
 }
 function profiles(list){
