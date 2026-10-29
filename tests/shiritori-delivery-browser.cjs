@@ -71,7 +71,22 @@ const server=http.createServer((req,res)=>{
       assert.equal(await page.evaluate(()=>ST.gameOver),false);assert.equal(await page.evaluate(()=>ST.score.you),0);
       assert.equal(await page.evaluate(()=>ST.cpuBusy),true);assert.equal(await page.locator('#linkMessage button').count(),1);
       blockedChunk='';await page.locator('#linkMessage button').click();await page.waitForFunction(()=>ST.history.length===1&&!ST.cpuBusy,{},{timeout:20000});
+      // Ordinary senses coexist with names and alternative spellings, including on mobile.
+      const ordinary=await page.evaluate(async()=>{
+        resetGame();ST.voice=false;ST.level=1;
+        await showDetail('ちから',lookupRow('ちから'));
+        return {word:detailView.words[0],meaning:detailView.meanings[0],text:document.getElementById('detContent').textContent,source:document.querySelector('.det-source a')?.href};
+      });
+      assert.equal(ordinary.word,'力');assert.match(ordinary.meaning,/ものを うごかしたり/);assert.match(ordinary.source,/edrdg/);
+      await page.evaluate(async()=>{resetGame();ST.voice=false;ST.skipLinkAnimation=true;ST.level=1;syncInput('ちから');await submitWord();});
+      await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:20000});
+      assert.equal(await page.evaluate(()=>ST.history[0].reading),'ちから');
+      const wide=await page.evaluate(async()=>{ST.level=4;const row=await dictionary.reading('せいとう');await showDetail(row.reading,row);const v=detailView,idx=v.words.indexOf('政党');ST.homoIdx=idx;renderDetailSlide(v.words,v.meanings,v.imgs,idx,false,v.reading);return {words:row.words,text:document.getElementById('detContent').textContent,source:document.querySelector('.det-source a')?.href};});
+      assert.ok(wide.words.includes('政党'));assert.match(wide.source,/bond-lab|edrdg/);
+      await page.evaluate(()=>syncCpuGenreUI());
+      assert.equal(await page.locator('#generalVocabularyCredit a[href="data/general10000/wordnet-LICENSE.txt"]').count(),1);
       assert.deepEqual(errors,[]);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+      fs.mkdirSync(path.join(root,'qa-output/general10000'),{recursive:true});await page.screenshot({path:path.join(root,'qa-output/general10000',name+'.png')});
       reports.push({name,startupBytes,baselineBytes,reductionPercent:Math.round(100*(1-startupBytes/baselineBytes)),startupChunks:startup.length-1,passed:true});await page.close();
     }
     console.log(JSON.stringify(reports));

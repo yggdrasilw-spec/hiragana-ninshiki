@@ -27,3 +27,8 @@
 **/node_modules/
 **/.wrangler/
 /cloudflare/images/.dev.vars*
+
+# Reproducible upstream dictionary downloads; retain notices and selected evidence.
+/data/general10000/sources/
+/data/general10000/candidates.jsonl
+/data/general10000/registration-baseline.csv

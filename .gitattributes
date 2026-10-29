@@ -18,3 +18,11 @@
 # Source snapshots and intake hashes require stable LF bytes.
 /data/geohistory5000/** text eol=lf
 /data/dictionary-imports/2026-10-29-geohistory5000.* text eol=lf
+
+/data/general10000/*.jsonl text eol=lf
+/data/general10000/*.tsv text eol=lf
+/data/general10000/*.sqlite -text
+/data/dictionary-imports/2026-10-29-general10000.* text eol=lf
+
+# Preserve upstream license texts verbatim, including their original spaces.
+/data/general10000/*LICENSE.txt -text whitespace=-blank-at-eol

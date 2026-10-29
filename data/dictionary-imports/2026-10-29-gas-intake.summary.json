@@ -1,0 +1,51 @@
+{
+  "batch": "2026-10-29-gas-intake",
+  "registered": true,
+  "beforeSha256": "99fc669c233a45f6e067eaffd876215657d3f5adc1d91b54219984567111fa2b",
+  "baselineRows": 87523,
+  "added": 106,
+  "inputReadings": 842,
+  "selectedReadings": 105,
+  "decisions": {
+    "existing": 586,
+    "held_unconfirmed": 90,
+    "added": 105,
+    "excluded_inappropriate": 13,
+    "excluded_mistyped": 42,
+    "existing_form": 5,
+    "existing_optional": 1
+  },
+  "gradeCounts": {
+    "3": 31,
+    "5": 57,
+    "2": 11,
+    "1": 7
+  },
+  "explanationOnly": 106,
+  "afterSha256": "15c2ad50dd04fb201747577b56fc27bc847e3b8950e8c01121599361d8c3a53f",
+  "totalRows": 87629,
+  "validation": {
+    "dataAndImportHistory": true,
+    "reviewGate": true,
+    "gradePolicy": true,
+    "deliveryConsistency": true,
+    "deliveryReadings": 79906,
+    "deliveryMeanings": 87629,
+    "browserWidths": [
+      1280,
+      390
+    ],
+    "browserCheckedMeaningsPerViewport": 106,
+    "browserInputChecksPerViewport": 6,
+    "missingImages": 0,
+    "brokenImageReferences": 0
+  },
+  "logCleanup": {
+    "processedUnknownRowsCleared": 978,
+    "processedLearnedRowsCleared": 218,
+    "headersPreserved": true,
+    "readbackDataRows": 0,
+    "backup": "qa-output/2026-10-29-gas-intake/",
+    "deploymentVerified": false
+  }
+}
