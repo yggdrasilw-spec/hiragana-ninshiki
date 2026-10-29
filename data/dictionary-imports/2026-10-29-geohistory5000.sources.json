@@ -1,0 +1,71 @@
+{
+  "retrievedOn": "2026-10-29",
+  "files": [
+    {
+      "file": "japan-persons.json",
+      "sha256": "2db6fea423188ff5d0576a53d382d135f43f739b4bdfacc60ce75cf5c5a4f492",
+      "partialResponse": false,
+      "bindings": 6376
+    },
+    {
+      "file": "geo-desert-fast.json",
+      "sha256": "b84c500b4eab9592fea928a70d773fd503a569908e4b724d6eb472c1f953927a",
+      "partialResponse": false,
+      "bindings": 28
+    },
+    {
+      "file": "geo-lake-fast.json",
+      "sha256": "f4d4e23d1b567ca470b16918e5b270f42d025a57568e8ea611879189e229dd42",
+      "partialResponse": false,
+      "bindings": 470
+    },
+    {
+      "file": "geo-range-fast.json",
+      "sha256": "c749629c47197ddcf87dedcc6929040226697d12832b6a249e2ca9d56307b7ce",
+      "partialResponse": false,
+      "bindings": 283
+    },
+    {
+      "file": "geo-sea-fast.json",
+      "sha256": "108503cbbe751a71e524e90ad66eb3f067a11dd7b4b55cd56d55ebe0cf6c446c",
+      "partialResponse": false,
+      "bindings": 93
+    },
+    {
+      "file": "world-history-fast.json",
+      "sha256": "40aab444a14ef05e1859378d78eaf7722cd706b97bebed4a6aaa4fdb1423f729",
+      "partialResponse": true,
+      "bindings": 2879
+    },
+    {
+      "file": "world-philosophy-correct.json",
+      "sha256": "3e354491ead61aadd3b83e2a85b8f75de7b849b33762b2a0b3a12a5670b6a099",
+      "partialResponse": true,
+      "bindings": 1950
+    },
+    {
+      "file": "world-royal-fast.json",
+      "sha256": "c357a2138ae3f0bff136894523549129bca37965ec1b6369ade80a59ddca27ff",
+      "partialResponse": true,
+      "bindings": 592
+    }
+  ],
+  "license": "CC0",
+  "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+  "queries": [
+    "japan-persons.rq",
+    "geo-desert-fast.rq",
+    "geo-lake-fast.rq",
+    "geo-range-fast.rq",
+    "geo-sea-fast.rq",
+    "world-history-fast.rq",
+    "world-philosophy-correct.rq",
+    "world-royal-fast.rq"
+  ],
+  "limits": [
+    "人名と自然地理の固有名を中心とした拡充。制度・事件・概念を含む教科書索引全体の網羅ではない。",
+    "出典の仮名・説明の誤りが残る可能性があり、独立した全件専門家校閲ではない。",
+    "同じ読みの候補は別表記による増量を避けるため保留した。"
+  ],
+  "snapshotSerialization": "取得したJSONをUTF-8・LFに統一。完全なレコードのみを保持。"
+}

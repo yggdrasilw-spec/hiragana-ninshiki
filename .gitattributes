@@ -14,3 +14,7 @@
 /data/science/*.jsonl text eol=lf
 /data/science/*.tsv text eol=lf
 /data/entrance-geohistory/*.jsonl text eol=lf
+
+# Source snapshots and intake hashes require stable LF bytes.
+/data/geohistory5000/** text eol=lf
+/data/dictionary-imports/2026-10-29-geohistory5000.* text eol=lf

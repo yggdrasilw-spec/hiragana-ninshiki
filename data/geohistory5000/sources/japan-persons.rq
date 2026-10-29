@@ -1,0 +1,6 @@
+SELECT DISTINCT ?item ?label ?description ?reading ?birth ?death WHERE {
+ ?item wdt:P31 wd:Q5; wdt:P570 ?death; wdt:P1814 ?reading; rdfs:label ?label; schema:description ?description.
+ OPTIONAL { ?item wdt:P569 ?birth. }
+ FILTER(LANG(?label)="ja" && LANG(?description)="ja") FILTER(?death<"1920-01-01T00:00:00Z"^^xsd:dateTime)
+ FILTER(REGEX(?description,"武将|大名|公卿|天皇|皇族|将軍|幕臣|藩士|藩主|政治家|国学者|儒学者|蘭学者|僧|神職|志士|探検家|歴史家|学者|歌人|浮世絵|剣客|軍人"))
+} LIMIT 18000

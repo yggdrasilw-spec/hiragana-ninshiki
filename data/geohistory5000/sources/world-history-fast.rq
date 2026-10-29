@@ -1,0 +1,1 @@
+SELECT ?item ?label ?description ?death WHERE { hint:Query hint:optimizer "None". ?item wdt:P106 wd:Q201788. ?item rdfs:label ?label. FILTER(LANG(?label)="ja") ?item schema:description ?description. FILTER(LANG(?description)="ja") ?item wdt:P570 ?death. } LIMIT 12000

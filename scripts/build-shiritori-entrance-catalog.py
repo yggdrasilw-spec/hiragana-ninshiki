@@ -23,6 +23,13 @@ def main():
    if i in entries:continue
    cat=x['category'];subject='日本史' if '日本史' in cat else '世界史' if any(t in cat for t in ['世界史','中国史']) else '地理'
    entries[i]=dict(csvId=i,**r,topics=[subject+'/先行収録：'+cat],catalogId='prior-'+str(i),origin='geohistory2000',lexicalEvidence='prior-editorial',senseChecked=False)
+ additions=ROOT/'data/geohistory5000/entries.jsonl'
+ if additions.exists():
+  for line in additions.read_text(encoding='utf-8').splitlines():
+   x=json.loads(line);matches=[(i,r) for i,r in lookup[(x['reading'],x['word'])] if r['meaning']==x['meaning']]
+   assert len(matches)==1,x['word']
+   i,r=matches[0];topic='自然地理の名称（出典付き）' if x['subject']=='地理' else '歴史人物（出典付き）'
+   entries[i]=dict(csvId=i,**r,topics=[x['subject']+'/'+topic],catalogId='wikidata-'+x['source']['id'],origin='geohistory5000',lexicalEvidence='Wikidata-source-record',senseChecked=False)
  # Rebuild only the generated destination. Leave unrelated files untouched.
  args.output.parent.mkdir(parents=True,exist_ok=True)
  if args.output.exists():args.output.unlink()

@@ -18,6 +18,9 @@ function build(root){
   const companyFile=path.join(root,'data/companies-brands/entries.jsonl');
   const companies=new Map(fs.existsSync(companyFile)?fs.readFileSync(companyFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const companyMatched=new Set();
+  const geoFile=path.join(root,'data/geohistory5000/entries.jsonl');
+  const geo=new Map(fs.existsSync(geoFile)?fs.readFileSync(geoFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const geoMatched=new Set();
   const mangaMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{
@@ -36,8 +39,14 @@ function build(root){
       if(comic.genre!=='fiction'||!comic.source?.url?.startsWith('https://ndlsearch.ndl.go.jp/books/R100000002-'))throw Error('Invalid manga metadata: '+w);
       row.imagequeries[i].source=comic.source;mangaMatched.add(key);return comic.genre;
     }
+    const historical=geo.get(key);
+    if(historical){
+      if(!['society','place'].includes(historical.genre)||!/^https:\/\/www\.wikidata\.org\/wiki\/Q[0-9]+$/.test(historical.source?.url||''))throw Error('Invalid geography/history metadata: '+w);
+      row.imagequeries[i].source=historical.source;geoMatched.add(key);return historical.genre;
+    }
     return context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja);
   });
+  if(geoMatched.size!==geo.size)throw Error('Geography/history metadata is stale: unmatched exact meanings');
   if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
   if(mangaMatched.size!==manga.size)throw Error('Manga metadata is stale: unmatched exact meanings');
   if(companyMatched.size!==companies.size)throw Error('Company/brand metadata is stale: unmatched exact meanings');
