@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const root=path.resolve(__dirname,'..');
 const realMap=JSON.parse(fs.readFileSync(path.join(root,'data/shiritori-speech-readings.json'),'utf8'));
 const known=new Set(JSON.parse(fs.readFileSync(path.join(root,'data/shiritori-delivery/index.json'),'utf8')).readings.map(r=>r[0]));
-const source=fs.readFileSync(path.join(root,'shiritori-speech.js'),'utf8').replace('return {init,enter,invalidate,tick,syncOptionsUI};','return {readings};');
+const source=fs.readFileSync(path.join(root,'shiritori-speech.js'),'utf8').replace('return {init,enter,invalidate,tick,syncOptionsUI,supported};','return {readings};');
 function converter(map=realMap,words=known){
   const ctx=vm.createContext({window:{},dictionary:{lookup:n=>words.has(n)},AbortController,setTimeout,clearTimeout,
     fetch:async()=>({ok:true,json:async()=>map})});

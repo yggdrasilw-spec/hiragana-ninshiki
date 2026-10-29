@@ -13,7 +13,7 @@ const ShiritoriPlayers = (()=>{
       const c=JSON.parse(localStorage.getItem('shiri-players-v1')||'null');
       if(c){config.count=Math.max(1,Math.min(6,Math.trunc(Number(c.count))||1));config.cpu=c.cpu!==false;config.mode=c.mode==='coop'?'coop':'versus';
         config.names=Array.isArray(c.names)?c.names.slice(0,6).map(n=>String(n).slice(0,16)):[];
-        config.inputs=Array.isArray(c.inputs)?c.inputs.slice(0,6).map(m=>['canvas','btn','kbd'].includes(m)?m:'canvas'):[];}
+        config.inputs=Array.isArray(c.inputs)?c.inputs.slice(0,6).map(m=>['canvas','btn','kbd','speech'].includes(m)?m:'canvas'):[];}
     }catch{}
     if(config.count===1&&!config.cpu)config.mode='coop';
     $('btnPlayers').onclick=open;
@@ -72,7 +72,7 @@ const ShiritoriPlayers = (()=>{
     $('playerRuleLabel').textContent=config.mode==='coop'?`みんなで ${ST.history.length}語`:'たいせん';
   }
   function rememberInput(mode){
-    const p=current();if(!p||p.cpu||waiting)return;
+    const p=current();if(!p||p.cpu||waiting||(mode==='speech'&&!enabled()))return;
     p.input=mode;const i=Number(p.id.slice(5));config.inputs[i]=mode;persist();
   }
   function committed(speaker,entry){
@@ -99,7 +99,15 @@ const ShiritoriPlayers = (()=>{
     do{index=(index+1)%players.length;}while(current().out);
     ST.cpuBusy=true;render();
     if(current().cpu){await cpuTurn();return;}
+    // Unconfigured players inherit the live voice mode; explicit personal choices win.
+    const next=current();
+    if(ST.inputMode==='speech'&&!config.inputs[index])next.input='speech';
     waiting=true;setCurrentInput('');clearCV(true);renderPreds(null);
+    if(next.input==='speech'&&ShiritoriSpeech.supported()){
+      await speakAsync([message,'つぎは '+next.name+'さんです。'].filter(Boolean).join(' '));
+      if(round!==ST.round||current()!==next||!waiting||ST.gameOver)return;
+      ready();return;
+    }
     $('handoffTitle').textContent=`つぎは ${current().name}さん`;
     $('handoffMessage').textContent=[message,ST.tail?`「${displayStr(ST.tail)}」から つづけてね。`:'すきな ことばから はじめよう。'].filter(Boolean).join(' ');
     if(round!==ST.round)return;

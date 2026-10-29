@@ -1,4 +1,4 @@
-/* Optional, settings-only speech input. No audio is stored by this app. */
+/* Optional speech input, selected in settings and remembered for shared-device players. No audio is stored by this app. */
 const ShiritoriSpeech = (()=>{
   const $=id=>document.getElementById(id);
   const Recognition=window.SpeechRecognition||window.webkitSpeechRecognition;
@@ -6,6 +6,7 @@ const ShiritoriSpeech = (()=>{
   let candidate='',phase='word',misses=0,lexicon=null,lexiconTask=null,lastRound=-1,submitting=null;
   const clean=s=>String(s).normalize('NFKC').replace(/[\s。、，,.！？!?「」『』]/g,'').toLowerCase();
   const kana=s=>clean(s).replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60));
+  const supported=()=>!!(Recognition&&window.speechSynthesis&&window.SpeechSynthesisUtterance);
   function status(text){$('speechStatus').textContent=text;}
   function available(){
     return ST.inputMode==='speech'&&!document.hidden&&$('pageGame').classList.contains('active')&&
@@ -215,17 +216,17 @@ const ShiritoriSpeech = (()=>{
     $('speechResume').hidden=true;$('speechPause').hidden=false;tick();
   }
   function enter(){
-    if(!Recognition||!window.speechSynthesis||!window.SpeechSynthesisUtterance){$('speechHelp').textContent='このブラウザでは 音声入力を つかえません。てがき・ボタン・キーボードを つかってね。';return;}
+    if(!supported()){$('speechHelp').textContent='このブラウザでは 音声入力を つかえません。てがき・ボタン・キーボードを つかってね。';return;}
     switchIn('speech');showPage('game');if(isMobile())switchMobTab('center');resume();
   }
   function init(){
     $('speechConfirm').onchange=e=>setOption('speechConfirm',e.target.checked);
     $('speechPrompt').onchange=e=>setOption('speechPrompt',e.target.checked);syncOptionsUI();
     $('speechEnter').onclick=enter;$('speechPause').onclick=()=>pause();$('speechResume').onclick=resume;
-    if(!Recognition||!window.speechSynthesis||!window.SpeechSynthesisUtterance){$('speechEnter').disabled=true;$('speechHelp').textContent='このブラウザは 音声入力に 対応していません。';}
+    if(!supported()){$('speechEnter').disabled=true;$('speechHelp').textContent='このブラウザは 音声入力に 対応していません。';}
     document.addEventListener('visibilitychange',()=>{if(document.hidden&&ST.inputMode==='speech')pause('画面を はなれたので おやすみ中。「きくのを さいかい」で つづけるよ。');});
     window.addEventListener('pagehide',()=>cancel());
     setInterval(tick,250);
   }
-  return {init,enter,invalidate,tick,syncOptionsUI};
+  return {init,enter,invalidate,tick,syncOptionsUI,supported};
 })();

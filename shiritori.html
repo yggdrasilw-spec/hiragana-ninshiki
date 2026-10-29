@@ -1443,7 +1443,7 @@ body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #bt
           </button>
         </div>
         <label class="handwriting-review-setting"><input type="checkbox" id="speechConfirm" checked aria-describedby="speechConfirmHelp"><span id="speechConfirmLabel">聞き返し：オン</span></label>
-        <p id="speechConfirmHelp" class="image-policy-help">オン：聞き取ったことばを読み上げ、「オーケー」を待ってからつなぎます。オフ：聞き取ったことばをそのまま確定してつなぎます。読みが複数あるときは、どちらの設定でも番号で選びます。</p>
+        <p id="speechConfirmHelp" class="image-policy-help">オン：聞き取ったことばを読み上げ、「オーケー」を待ってからつなぎます。オフ：聞き取ったことばをそのまま確定してつなぎます。読みが複数あるときは、つながる未使用のことばを自動で選び、確認を省いてつなぎます。</p>
         <label class="handwriting-review-setting"><input type="checkbox" id="speechPrompt" checked aria-describedby="speechPromptHelp"><span id="speechPromptLabel">入力を うながす 音声案内：オン</span></label>
         <p id="speechPromptHelp" class="image-policy-help">「〜から はじまることばを しゃべってください」など、毎回の入力案内を読み上げます。オフでも画面の案内と自動の聞き取りは続きます。聞き返しの設定とは別に切り替えられます。</p>
         <p id="speechHelp" class="image-policy-help">声を ひらがなに して、もじと 読み上げで たしかめます。手で かく・かなを えらぶ 練習と あわせて つかってください。選ぶと音をオンにして、ゲーム画面で自動的に聞きはじめます。最初にブラウザのマイク許可が必要です。音声認識はブラウザのサービスを使用し、音声が提供元へ送られる場合があります。このアプリで録音は保存しません。対応するブラウザ・通信環境で使ってください。読みを変換できない語は、かなをつなげて言いなおします。</p>
@@ -1726,7 +1726,7 @@ const ST = {
   speechConfirm: true,
   speechPrompt: true,
   effectsVolume: 1,
-  inputMode: 'canvas',   // canvas | btn | kbd
+  inputMode: 'canvas',   // canvas | btn | kbd | speech
   handwritingMode: 'word', // single | word
   showHandwritingProcess: false,
   charMode: 'hiragana',  // hiragana | katakana
@@ -2812,12 +2812,13 @@ function backspaceInput(){
   updateKbSmallModeUI();
 }
 function switchIn(mode){
+  if(mode==='speech'&&!ShiritoriSpeech.supported())mode='canvas';
   ShiritoriSpeech.invalidate();
   document.body.classList.toggle('speech-input',mode==='speech');
   document.getElementById('modeSpeech').hidden=mode!=='speech';
   if(mode!==ST.inputMode){WordHandwritingUI.keepDraft();invalidatePrediction();}
   ST.inputMode=mode;saveSettings();
-  if(mode!=='speech')ShiritoriPlayers.rememberInput(mode);ShiritoriKeyboardGuide.update();
+  ShiritoriPlayers.rememberInput(mode);ShiritoriKeyboardGuide.update();
   if(mode!=='btn'){ kbSmallNext=false; updateKbSmallModeUI(); }
   ['canvas','btn','kbd'].forEach(m=>{
     document.getElementById('mode'+m.charAt(0).toUpperCase()+m.slice(1)).classList.toggle('hidden',m!==mode);
