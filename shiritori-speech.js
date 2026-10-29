@@ -69,8 +69,7 @@ const ShiritoriSpeech = (()=>{
       const selected=patterns.findIndex(p=>p.test(command));
       const reading=selected>=0?options[selected]:options.includes(command)?command:null;
       if(!reading){await prompt(readingPrompt(),id);return;}
-      candidate=reading;options=[];phase='confirm';setCurrentInput(candidate);$('speechReading').textContent=displayStr(candidate);
-      await prompt(candidate+' と認識。よければ オーケー、ちがえば ちがうよ、と いってね。',id);return;
+      options=[];await acceptReading(reading,id);return;
     }
     if(phase==='replay'){
       if(/^(もういっかい|もう一回|もういちど)$/.test(command)){
@@ -81,17 +80,7 @@ const ShiritoriSpeech = (()=>{
     }
     if(phase==='confirm'){
       if(/^(ok|okay|おーけー|おおけえ|おっけー|おっけい|おーけい|はい)$/.test(command)){
-        const word=candidate;candidate='';phase='word';status('ことばを つないでいます。');
-        setCurrentInput(word);
-        // Bypass the tap-only suggestion panel; the spoken reading was explicitly confirmed.
-        ST.suggestionBypass=word;
-        const before=ST.history.length;
-        submitting=id;
-        try{await submitWord();}finally{if(submitting===id)submitting=null;}
-        if(!valid(id))return;
-        if(ST.history.length===before&&!ST.gameOver){
-          await prompt(($('scMain').textContent||'この ことばは つかえません。')+'。もういちど、しゃべってください。',id);
-        }else{running=false;tick();}
+        await connectCandidate(id);
         return;
       }
       if(/^(ちがうよ|違うよ|ちがう|違う|いいえ|やりなおし)$/.test(command)){
@@ -112,9 +101,40 @@ const ShiritoriSpeech = (()=>{
     if(choices.length!==1){
       await prompt('よみかたを ひとつに できませんでした。もういちど、ひらがなを いちもじずつ つなげて、しゃべってください。',id);return;
     }
-    candidate=choices[0];phase='confirm';setCurrentInput(candidate);
-    $('speechReading').textContent=displayStr(candidate);
+    await acceptReading(choices[0],id);
+  }
+  async function acceptReading(reading,id){
+    if(!valid(id))return;
+    candidate=reading;setCurrentInput(candidate);$('speechReading').textContent=displayStr(candidate);
+    if(!ST.speechConfirm){await connectCandidate(id);return;}
+    phase='confirm';
     await prompt(candidate+' と認識。よければ オーケー、ちがえば ちがうよ、と いってね。',id);
+  }
+  async function connectCandidate(id){
+    if(!valid(id)||!candidate)return;
+    const word=candidate;candidate='';phase='word';status('ことばを つないでいます。');
+    setCurrentInput(word);
+    // Submit the spoken reading through the existing game rules without a tap-only suggestion panel.
+    ST.suggestionBypass=word;
+    const before=ST.history.length;
+    submitting=id;
+    try{await submitWord();}finally{if(submitting===id)submitting=null;}
+    if(!valid(id))return;
+    if(ST.history.length===before&&!ST.gameOver){
+      await prompt(($('scMain').textContent||'この ことばは つかえません。')+'。もういちど、しゃべってください。',id);
+    }else{running=false;tick();}
+  }
+  function syncOptionsUI(){
+    $('speechPrompt').checked=ST.speechPrompt;
+    $('speechPromptLabel').textContent='入力を うながす 音声案内：'+(ST.speechPrompt?'オン':'オフ');
+    $('speechConfirm').checked=ST.speechConfirm;
+    $('speechConfirmLabel').textContent='聞き返し：'+(ST.speechConfirm?'オン':'オフ');
+    $('speechInstructions').textContent=ST.speechConfirm?'「オーケー」で つなぐ ／「ちがうよ」で いいなおす':'ききとった ことばを、そのまま つなぐよ。';
+  }
+  function setOption(key,enabled){
+    ST[key]=enabled;invalidate();
+    if(ST.inputMode==='speech')setCurrentInput('');
+    saveSettings();syncOptionsUI();
   }
   function readingPrompt(){return 'よみかたを えらんでね。'+options.map((n,i)=>`${i+1}ばん、${n}`).join('。')+'。ばんごうを いってね。ちがうよ、で いいなおせるよ。';}
   function listen(id){
@@ -162,7 +182,12 @@ const ShiritoriSpeech = (()=>{
     if(ST.gameOver)hideReplayPopup();
     if(isMobile())switchMobTab('center');
     running=true;const id=++epoch;phase=ST.gameOver?'replay':'word';
-    prompt(ST.gameOver?'おしまい。もういっかい、と いうと、さいしょから あそべるよ。':ST.tail?`「${ST.tail}」から はじまる ことばを しゃべってください。`:'ことばを ひとつ、しゃべってください。',id);
+    if(ST.gameOver||ST.speechPrompt){
+      prompt(ST.gameOver?'おしまい。もういっかい、と いうと、さいしょから あそべるよ。':ST.tail?`「${ST.tail}」から はじまる ことばを しゃべってください。`:'ことばを ひとつ、しゃべってください。',id);
+    }else{
+      status(ST.tail?`「${displayStr(ST.tail)}」から はじまる ことばを どうぞ。`:'ことばを ひとつ どうぞ。');
+      timer=setTimeout(()=>{if(valid(id))listen(id);},450);
+    }
   }
   function resume(){
     if(ST.inputMode!=='speech')return;
@@ -177,11 +202,13 @@ const ShiritoriSpeech = (()=>{
     switchIn('speech');showPage('game');if(isMobile())switchMobTab('center');resume();
   }
   function init(){
+    $('speechConfirm').onchange=e=>setOption('speechConfirm',e.target.checked);
+    $('speechPrompt').onchange=e=>setOption('speechPrompt',e.target.checked);syncOptionsUI();
     $('speechEnter').onclick=enter;$('speechPause').onclick=()=>pause();$('speechResume').onclick=resume;
     if(!Recognition||!window.speechSynthesis||!window.SpeechSynthesisUtterance){$('speechEnter').disabled=true;$('speechHelp').textContent='このブラウザは 音声入力に 対応していません。';}
     document.addEventListener('visibilitychange',()=>{if(document.hidden&&ST.inputMode==='speech')pause('画面を はなれたので おやすみ中。「きくのを さいかい」で つづけるよ。');});
     window.addEventListener('pagehide',()=>cancel());
     setInterval(tick,250);
   }
-  return {init,enter,invalidate,tick};
+  return {init,enter,invalidate,tick,syncOptionsUI};
 })();

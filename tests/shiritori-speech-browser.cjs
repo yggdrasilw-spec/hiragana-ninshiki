@@ -46,6 +46,10 @@ function mocks(){
       async function listening(){await page.waitForFunction(()=>!!window.mic,{},{timeout:12000});}
       async function word(text){await listening();await page.evaluate(t=>window.mic.finish(t),text);await listening();}
       await enter();assert.equal(await page.evaluate(()=>ST.inputMode),'speech');
+      assert.equal(await page.evaluate(()=>ST.speechConfirm),true);
+      assert.equal(await page.locator('#speechConfirm').isChecked(),true);
+      assert.equal(await page.evaluate(()=>ST.speechPrompt),true);
+      assert.equal(await page.locator('#speechPrompt').isChecked(),true);
       assert.equal(await page.locator('#speechResume').isVisible(),false);
       await page.evaluate(()=>{const r=[{transcript:'りんご'}];r.isFinal=false;window.mic.onresult({resultIndex:0,results:[r]});window.mic.finish('');});
       await listening();assert.equal(await page.evaluate(()=>ST.currentInput),'');
@@ -116,9 +120,61 @@ function mocks(){
       assert.equal(await page.evaluate(()=>ST.gameOver),false);assert.equal(await page.evaluate(()=>ST.history.length),0);
       assert.equal(await page.evaluate(()=>echoStarts),0);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+      // Confirmation OFF submits directly, including after selecting an ambiguous reading.
+      await page.evaluate(()=>{showPage('settings');setSettingsTab('input');});
+      await page.locator('#speechConfirm').uncheck();
+      assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('shiri-settings')).speechConfirm),false);
+      await page.evaluate(()=>resetGame(false));await enter();
+      assert.match(await page.locator('#speechInstructions').innerText(),/そのまま/);
+      const offStart=await page.evaluate(()=>voiceLog.length);
+      await word('車');
+      await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});
+      assert.equal(await page.evaluate(()=>ST.history[0].reading),'くるま');
+      assert.equal(await page.evaluate(start=>voiceLog.slice(start).some(t=>t.includes('と認識')||t.includes('オーケー')),offStart),false);
+      // Disable the independent turn prompt: initial and next turns still listen automatically.
+      await page.evaluate(()=>{showPage('settings');setSettingsTab('input');});
+      await page.locator('#speechPrompt').uncheck();
+      assert.equal(await page.evaluate(()=>ST.speechConfirm),false);
+      assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('shiri-settings')).speechPrompt),false);
+      await page.evaluate(()=>resetGame(false));
+      const quietStart=await page.evaluate(()=>voiceLog.length);await enter();
+      await word('りんご');
+      await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});
+      assert.equal(await page.evaluate(()=>ST.history[0].reading),'りんご');
+      assert.equal(await page.evaluate(start=>voiceLog.slice(start).some(t=>t.includes('しゃべってください')||t.includes('と認識')),quietStart),false);
+      await page.evaluate(()=>{resetGame(false);ST.tail='い';});await listening();
+      await word('りんご');assert.equal(await page.evaluate(()=>ST.history.length),0);
+      await page.evaluate(()=>resetGame(false));await listening();
+      await word('金');assert.equal(await page.evaluate(()=>ST.history.length),0);
+      await word('1番');
+      await page.waitForFunction(()=>ST.history.length>=2&&!ST.cpuBusy,{},{timeout:25000});
+      assert.equal(await page.evaluate(()=>ST.history[0].reading),'かね');
+      assert.equal(await page.evaluate(()=>echoStarts),0);
       // Reload always returns to a literacy input; settings is the sole mic entrance.
       await page.reload();await page.waitForFunction(()=>ST.wlLoaded);
       assert.equal(await page.evaluate(()=>ST.inputMode),'canvas');assert.equal(await page.evaluate(()=>mics.length),0);
+      assert.equal(await page.evaluate(()=>ST.speechConfirm),false);
+      assert.equal(await page.evaluate(()=>ST.speechPrompt),false);
+      await page.evaluate(()=>{document.getElementById('titleScreen')?.remove();document.getElementById('shiriNotice').close();showPage('settings');setSettingsTab('input');ST.skipLinkAnimation=true;});
+      assert.equal(await page.locator('#speechConfirm').isChecked(),false);
+      assert.equal(await page.locator('#speechPrompt').isChecked(),false);
+      await page.locator('#speechConfirm').check();await enter();
+      assert.equal(await page.evaluate(()=>ST.speechPrompt),false);
+      assert.equal(await page.evaluate(()=>voiceLog.some(t=>t.includes('しゃべってください'))),false);
+      await word('りんご');assert.equal(await page.evaluate(()=>ST.history.length),0);
+      assert.ok(await page.evaluate(()=>voiceLog.some(t=>t.includes('りんご と認識'))));
+      // Changing the setting cancels a pending confirmation without committing it.
+      await page.evaluate(()=>{showPage('settings');setSettingsTab('input');});
+      await page.locator('#speechConfirm').uncheck();
+      assert.equal(await page.evaluate(()=>ST.currentInput),'');
+      await page.evaluate(()=>showPage('game'));await listening();
+      assert.equal(await page.evaluate(()=>ST.history.length),0);
+      await page.evaluate(()=>{showPage('settings');setSettingsTab('input');ST.tail='い';});
+      await page.locator('#speechPrompt').check();
+      assert.equal(await page.evaluate(()=>ST.speechConfirm),false);
+      const enabledStart=await page.evaluate(()=>voiceLog.length);
+      await page.evaluate(()=>showPage('game'));await listening();
+      assert.ok(await page.evaluate(start=>voiceLog.slice(start).some(t=>t.includes('「い」から はじまる')),enabledStart));
       assert.deepEqual(errors,[]);
       await page.close();console.log(`speech ${width}px passed`);
     }

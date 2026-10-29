@@ -1273,7 +1273,7 @@ body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #bt
       <strong>🎤 おんせいで しりとり</strong>
       <div id="speechReading" aria-label="ききとった ことば"></div>
       <p id="speechStatus" role="status" aria-live="polite">じゅんびしています…</p>
-      <p>もじを みて、こえを きいて たしかめよう。<br>「オーケー」で つなぐ ／「ちがうよ」で いいなおす<br>「おやすみ」か「ストップ」で きくのを とめるよ。</p>
+      <p>もじを みて、こえを きいて たしかめよう。<br><span id="speechInstructions">「オーケー」で つなぐ ／「ちがうよ」で いいなおす</span><br>「おやすみ」か「ストップ」で きくのを とめるよ。</p>
       <button type="button" class="set-act" id="speechPause">きくのを とめる</button>
       <button type="button" class="set-act" id="speechResume" hidden>きくのを さいかい</button>
     </section>
@@ -1442,6 +1442,10 @@ body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #bt
             🎤<div class="im-name">おんせい（補助）</div>
           </button>
         </div>
+        <label class="handwriting-review-setting"><input type="checkbox" id="speechConfirm" checked aria-describedby="speechConfirmHelp"><span id="speechConfirmLabel">聞き返し：オン</span></label>
+        <p id="speechConfirmHelp" class="image-policy-help">オン：聞き取ったことばを読み上げ、「オーケー」を待ってからつなぎます。オフ：聞き取ったことばをそのまま確定してつなぎます。読みが複数あるときは、どちらの設定でも番号で選びます。</p>
+        <label class="handwriting-review-setting"><input type="checkbox" id="speechPrompt" checked aria-describedby="speechPromptHelp"><span id="speechPromptLabel">入力を うながす 音声案内：オン</span></label>
+        <p id="speechPromptHelp" class="image-policy-help">「〜から はじまることばを しゃべってください」など、毎回の入力案内を読み上げます。オフでも画面の案内と自動の聞き取りは続きます。聞き返しの設定とは別に切り替えられます。</p>
         <p id="speechHelp" class="image-policy-help">声を ひらがなに して、もじと 読み上げで たしかめます。手で かく・かなを えらぶ 練習と あわせて つかってください。選ぶと音をオンにして、ゲーム画面で自動的に聞きはじめます。最初にブラウザのマイク許可が必要です。音声認識はブラウザのサービスを使用し、音声が提供元へ送られる場合があります。このアプリで録音は保存しません。対応するブラウザ・通信環境で使ってください。読みを変換できない語は、かなをつなげて言いなおします。</p>
         <details class="image-policy-help"><summary>音声入力の読みデータの出典</summary><p>漢字表記と読みの補完に <a href="https://www.edrdg.org/jmdict/j_jmdict.html" target="_blank" rel="noopener">JMdict（James William BREEN / EDRDG）</a> を使用。2026年10月5日版から、登録語の読み・表記制約に合う情報を抽出し、よく使う読みを優先しています。語義は使用しません。派生した読みデータは <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>。<a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener">出典の利用条件</a>。</p></details>
       </div>
@@ -1633,7 +1637,7 @@ body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #bt
 <h2 id="handoffTitle"></h2><p id="handoffMessage"></p><p>つぎの人に たんまつを わたしてね。</p>
 <button id="takeTurn" class="primary" type="button">うけとったら はじめる</button>
 <div class="dialog-actions"><button id="restartPlayers" type="button">さいしょから</button></div></dialog>
-<script src="shiritori-speech.js?v=20261029voice"></script>
+<script src="shiritori-speech.js?v=20261029voice-options"></script>
 <script src="shiritori-players.js?v=20261028delivery"></script>
 <script src="shiritori-keyboard-guide.js?v=20261019cpu-backspace"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
@@ -1719,6 +1723,8 @@ const ST = {
   demoRunning: false,
   voice: false,
   speechVolume: 1,
+  speechConfirm: true,
+  speechPrompt: true,
   effectsVolume: 1,
   inputMode: 'canvas',   // canvas | btn | kbd
   handwritingMode: 'word', // single | word
@@ -1798,6 +1804,8 @@ function loadSettings(){
     ST.japanPlaces=s.japanPlaces===true;
     if(!ST.japanPlaces)ST.cpuGenres=ST.cpuGenres.filter(k=>k!=='japanPlace');
     ST.skipLinkAnimation=s.skipLinkAnimation===true;
+    ST.speechConfirm=s.speechConfirm!==false;
+    ST.speechPrompt=s.speechPrompt!==false;
     if(s.charMode)   ST.charMode   = s.charMode;
     if(['canvas','btn','kbd'].includes(s.inputMode)) ST.inputMode=s.inputMode;
     // Adopt word input once for old settings, then honor explicit single input.
@@ -1833,6 +1841,8 @@ function saveSettings(){
     showHandwritingProcess: ST.showHandwritingProcess,
     voice: ST.voice,
     speechVolume: ST.speechVolume,
+    speechConfirm: ST.speechConfirm,
+    speechPrompt: ST.speechPrompt,
     effectsVolume: ST.effectsVolume,
     statsYouWords: ST.statsYouWords,
     statsNewWords: ST.statsNewWords,
@@ -2850,6 +2860,7 @@ function showPage(name){
   if(name==='settings') syncSettingsUI();
 }
 function syncSettingsUI(){
+  ShiritoriSpeech.syncOptionsUI();
   WordHandwritingUI.sync();
   initSettingsTabs();syncCpuGenreUI();
   document.getElementById('togSkipLink').classList.toggle('on',ST.skipLinkAnimation);
