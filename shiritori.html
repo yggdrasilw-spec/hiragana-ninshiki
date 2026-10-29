@@ -1173,6 +1173,16 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.link-spark{display:none}body.panic #panicOverlay{display:none}}
 .det-source a{color:#76d9ff;text-underline-offset:2px}
 .det-source a:focus-visible{outline:2px solid #76d9ff;outline-offset:2px}
+
+/* Speech remains a settings-only entrance; the game panel is visible only in this mode. */
+body.speech-input #inputToolbar,body.speech-input #writingPanel,body.speech-input #linkComposer{display:none!important}
+body.speech-input #colCenter{overflow-y:auto}
+body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #btnBackspace{display:none!important}
+#modeSpeech{flex-shrink:0;border:2px solid var(--you);border-radius:16px;padding:16px;margin:12px 0;line-height:1.8;overflow-wrap:anywhere}
+#speechReading{font-size:clamp(28px,6vw,48px);font-weight:900;letter-spacing:.12em;color:var(--text);min-height:1.5em}
+#modeSpeech [hidden]{display:none!important}
+#modeSpeech button{min-height:48px;white-space:normal;margin:8px 4px 0 0}
+#speechEnter:disabled{opacity:.5}
 </style>
 <link rel="stylesheet" href="shiritori-robot-link.css?v=20261013">
 <style>
@@ -1258,6 +1268,14 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
       <p id="linkMessage" role="status" hidden></p>
       <span id="linkStatus" class="sr-only" aria-live="polite"></span>
       <div id="linkBurst" aria-hidden="true"></div>
+    </section>
+    <section id="modeSpeech" aria-label="音声入力" hidden>
+      <strong>🎤 おんせいで しりとり</strong>
+      <div id="speechReading" aria-label="ききとった ことば"></div>
+      <p id="speechStatus" role="status" aria-live="polite">じゅんびしています…</p>
+      <p>もじを みて、こえを きいて たしかめよう。<br>「オーケー」で つなぐ ／「ちがうよ」で いいなおす<br>「おやすみ」か「ストップ」で きくのを とめるよ。</p>
+      <button type="button" class="set-act" id="speechPause">きくのを とめる</button>
+      <button type="button" class="set-act" id="speechResume" hidden>きくのを さいかい</button>
     </section>
     <div id="inputToolbar" class="canvas-input">
       <div id="tfBar" class="loading"><span class="tf-dot"></span><span id="tfText">モデルよみこみ中…</span></div>
@@ -1420,7 +1438,12 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
           <button class="im-btn" onclick="setInputMode('kbd',this)">
             ⌨️<div class="im-name">キーボード</div>
           </button>
+          <button type="button" class="im-btn" id="speechEnter">
+            🎤<div class="im-name">おんせい（補助）</div>
+          </button>
         </div>
+        <p id="speechHelp" class="image-policy-help">声を ひらがなに して、もじと 読み上げで たしかめます。手で かく・かなを えらぶ 練習と あわせて つかってください。選ぶと音をオンにして、ゲーム画面で自動的に聞きはじめます。最初にブラウザのマイク許可が必要です。音声認識はブラウザのサービスを使用し、音声が提供元へ送られる場合があります。このアプリで録音は保存しません。対応するブラウザ・通信環境で使ってください。読みを変換できない語は、かなをつなげて言いなおします。</p>
+        <details class="image-policy-help"><summary>音声入力の読みデータの出典</summary><p>漢字表記と読みの補完に <a href="https://www.edrdg.org/jmdict/j_jmdict.html" target="_blank" rel="noopener">JMdict（James William BREEN / EDRDG）</a> を使用。2026年10月5日版から、登録語の読み・表記制約に合う情報を抽出し、よく使う読みを優先しています。語義は使用しません。派生した読みデータは <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>。<a href="https://www.edrdg.org/edrdg/licence.html" target="_blank" rel="noopener">出典の利用条件</a>。</p></details>
       </div>
     </div>
 
@@ -1610,6 +1633,7 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 <h2 id="handoffTitle"></h2><p id="handoffMessage"></p><p>つぎの人に たんまつを わたしてね。</p>
 <button id="takeTurn" class="primary" type="button">うけとったら はじめる</button>
 <div class="dialog-actions"><button id="restartPlayers" type="button">さいしょから</button></div></dialog>
+<script src="shiritori-speech.js?v=20261029voice"></script>
 <script src="shiritori-players.js?v=20261028delivery"></script>
 <script src="shiritori-keyboard-guide.js?v=20261019cpu-backspace"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
@@ -1775,7 +1799,7 @@ function loadSettings(){
     if(!ST.japanPlaces)ST.cpuGenres=ST.cpuGenres.filter(k=>k!=='japanPlace');
     ST.skipLinkAnimation=s.skipLinkAnimation===true;
     if(s.charMode)   ST.charMode   = s.charMode;
-    if(s.inputMode)  ST.inputMode  = s.inputMode;
+    if(['canvas','btn','kbd'].includes(s.inputMode)) ST.inputMode=s.inputMode;
     // Adopt word input once for old settings, then honor explicit single input.
     ST.handwritingMode=s.handwritingVersion===2&&s.handwritingMode==='single'?'single':'word';
     ST.showHandwritingProcess=s.showHandwritingProcess===true;
@@ -1803,7 +1827,7 @@ function saveSettings(){
     japanPlaces:ST.japanPlaces,
     skipLinkAnimation: ST.skipLinkAnimation,
     charMode: ST.charMode,
-    inputMode: ST.inputMode,
+    inputMode: ST.inputMode==='speech'?'canvas':ST.inputMode,
     handwritingMode: ST.handwritingMode,
     handwritingVersion: 2,
     showHandwritingProcess: ST.showHandwritingProcess,
@@ -2778,16 +2802,19 @@ function backspaceInput(){
   updateKbSmallModeUI();
 }
 function switchIn(mode){
+  ShiritoriSpeech.invalidate();
+  document.body.classList.toggle('speech-input',mode==='speech');
+  document.getElementById('modeSpeech').hidden=mode!=='speech';
   if(mode!==ST.inputMode){WordHandwritingUI.keepDraft();invalidatePrediction();}
   ST.inputMode=mode;saveSettings();
-  ShiritoriPlayers.rememberInput(mode);ShiritoriKeyboardGuide.update();
+  if(mode!=='speech')ShiritoriPlayers.rememberInput(mode);ShiritoriKeyboardGuide.update();
   if(mode!=='btn'){ kbSmallNext=false; updateKbSmallModeUI(); }
   ['canvas','btn','kbd'].forEach(m=>{
     document.getElementById('mode'+m.charAt(0).toUpperCase()+m.slice(1)).classList.toggle('hidden',m!==mode);
     document.getElementById('tab'+m.charAt(0).toUpperCase()+m.slice(1)).classList.toggle('active',m===mode);
   });
   // 設定ページの「にゅうりょくのしかた」ボタンのみ更新（charModeボタンと混在するため専用セレクタを使う）
-  const modeMap={'canvas':0,'btn':1,'kbd':2};
+  const modeMap={'canvas':0,'btn':1,'kbd':2,'speech':3};
   const inputModeBtns = document.querySelectorAll('#pageSettings .im-btn:not(.cm-btn)');
   inputModeBtns.forEach((b,i)=>b.classList.toggle('active', i===modeMap[mode]));
   const kbdInp=document.getElementById('kbdInput');
@@ -2815,6 +2842,7 @@ function kbdHandler(e){
    PAGES
 ═══════════════════════════════════════════════════════════ */
 function showPage(name){
+  ShiritoriSpeech.invalidate();
   HandwritingReview.cancel();
   document.getElementById('pageGame').classList.toggle('active',name==='game');
   document.getElementById('pageSettings').classList.toggle('active',name==='settings');
@@ -2834,7 +2862,7 @@ function syncSettingsUI(){
   // level btns
   document.querySelectorAll('.lv-btn').forEach((b,i)=>b.classList.toggle('active',i+1===ST.level));
   // input mode btns（charModeボタンと混在しているため専用セレクタを使う）
-  const modeMap={'canvas':0,'btn':1,'kbd':2};
+  const modeMap={'canvas':0,'btn':1,'kbd':2,'speech':3};
   const inputModeBtns = document.querySelectorAll('#pageSettings .im-btn:not(.cm-btn)');
   inputModeBtns.forEach((b,i)=>b.classList.toggle('active', i===modeMap[ST.inputMode]));
   // voice toggle
@@ -3867,6 +3895,7 @@ async function cpuTurn(){
    RESET
 ═══════════════════════════════════════════════════════════ */
 function resetGame(announce=true){
+  ShiritoriSpeech.invalidate();
   clearWordSuggestions();ST.suggestionBypass=null;
   robotLink.cancel();lastLinkAnimationKey='';
   ST.round++;
@@ -4165,6 +4194,7 @@ async function boot(){
   // タイトル画面表示（モデル読込・音声ウォームアップはここで実行）
   showTitleScreen();
   ShiritoriFeedback.init();
+  ShiritoriSpeech.init();
 }
 boot();
 </script>
