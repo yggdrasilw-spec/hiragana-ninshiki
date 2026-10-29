@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "asOf": "2026-10-29",
+  "sourceSha256": "8fd366bfdd46256b37d8d737a0975882b2ea06a0db83ee7b9332027ea32cf54d",
+  "added": 2612,
+  "categories": {
+    "洋画タイトル": 1232,
+    "海外俳優": 1380
+  },
+  "newReadings": 2446,
+  "checks": [
+    {
+      "command": "node tests/shiritori-foreign-cinema.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-delivery.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-import-quality.cjs",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-import-history.cjs",
+      "passed": true
+    },
+    {
+      "command": "python -B -X utf8 tests/shiritori-grade-policy.py",
+      "passed": true
+    },
+    {
+      "command": "node scripts/build-shiritori-delivery.cjs --check",
+      "passed": true
+    },
+    {
+      "command": "node tests/shiritori-foreign-cinema-browser.cjs",
+      "passed": true
+    }
+  ],
+  "browser": [
+    {
+      "viewport": "desktop",
+      "registered": 2612,
+      "noImageResults": 2612,
+      "detailSamples": 6,
+      "genreCounts": [
+        0,
+        0,
+        0,
+        0,
+        15524
+      ],
+      "keyboardInputAtLevel1": true,
+      "endingN": true,
+      "noExternalDetailRequests": true,
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "registered": 2612,
+      "noImageResults": 2612,
+      "detailSamples": 6,
+      "genreCounts": [
+        0,
+        0,
+        0,
+        0,
+        15524
+      ],
+      "keyboardInputAtLevel1": true,
+      "endingN": true,
+      "noExternalDetailRequests": true,
+      "passed": true
+    }
+  ]
+}
