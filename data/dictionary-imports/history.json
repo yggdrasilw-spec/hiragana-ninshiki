@@ -247883,5 +247883,20 @@
       }
     ],
     "serializationReview": "Preserved all original vocabulary/search prefixes including embedded quotation marks."
+  },
+  {
+    "type": "image-assets",
+    "batches": [
+      "data\\batches\\eiken-print-20261101.csv"
+    ],
+    "beforeSha256": "4bac492f80d60d834098114ffca26adc9f5fc93f65cd4ef7273fbb22a0a83528",
+    "afterSha256": "59d622705d48862fa2745da0ab832830f8267aa7ea3e32d49e4c0c45a6d7bd99",
+    "modifiedLines": [
+      {
+        "id": 76173,
+        "before": "いぬごや,犬小屋,犬のシェルターの役割を持つ小屋。,,3,,,none,",
+        "after": "いぬごや,犬小屋,犬のシェルターの役割を持つ小屋。,,3,,assets/shiritori/eiken-20261101-doghouse-word-76173.png,asset,AI生成イラスト"
+      }
+    ]
   }
 ]

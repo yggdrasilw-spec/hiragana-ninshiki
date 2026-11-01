@@ -609533,6 +609533,33 @@
       ],
       "sha256": "066e919dac050912df76267ca3816632fba0bf3b73573edb7c7cadb6bc6b7dde",
       "diagramValidation": "data/integrations/english-stage-20261101/diagram-validation.json"
+    },
+    {
+      "reading": "いぬごや",
+      "word": "犬小屋",
+      "meaning": "犬のシェルターの役割を持つ小屋。",
+      "file": "eiken-20261101-doghouse-word-76173.png",
+      "mode": "asset",
+      "credit": "AI生成イラスト",
+      "prompt": "Use case: scientific-educational. Create one square children's English vocabulary flashcard illustration for the word doghouse (犬小屋). Subject: a complete small wooden outdoor dog kennel with a pitched red roof, an arched front doorway and a friendly dog resting with its front paws just outside the doorway. Make it unmistakable that this is a house sized for one dog, show the full kennel and dog within the frame. Clean full-color watercolor picture-book illustration with gentle outlines on a pale simple grassy background, clear at 200px. No letters, words, captions, border, logo or watermark. Asset for an educational vocabulary app.",
+      "review": "目視確認済み: 小さな木造犬小屋と入口の犬。建物全体・犬・屋根が収まり、語義に一致。",
+      "status": "reviewed",
+      "generatedAt": "2026-11-01",
+      "sourceSheet": "sheets/single-eiken-20261101-doghouse.png",
+      "tileIndex": 1,
+      "aliases": [
+        {
+          "id": 76173,
+          "originalId": null,
+          "reading": "いぬごや",
+          "word": "犬小屋",
+          "meaning": "犬のシェルターの役割を持つ小屋。",
+          "reuseReason": "語義に合わせて新規生成した専用画像。",
+          "sourceReview": "目視確認済み: 小さな木造犬小屋と入口の犬。建物全体・犬・屋根が収まり、語義に一致。"
+        }
+      ],
+      "sha256": "d0acbfc9e10d5625b658706b1ec9166136288cb082ac1a7f0073a450031741dc",
+      "sourceType": "single-generated-image"
     }
   ],
   "lastCorrectedAt": "2026-10-25",
