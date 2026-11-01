@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "d105b25c05ec7ee6c73ccba54f3c721ef0faa402ade13fa4a645dbddc8f90c0b",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      7
+    ],
+    [
+      311,
+      323
+    ],
+    [
+      624,
+      632
+    ],
+    [
+      936,
+      943
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      623,
+      630
+    ],
+    [
+      935,
+      943
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        7,
+        6,
+        311,
+        311
+      ],
+      "edgeInkFraction": 0.134657455382844,
+      "contentFraction": 0.7117989646246764,
+      "file": "eiken-20261101-orange-word-87630.png",
+      "sha256": "d8cb09d3ae89d27008e50df53006453ba7ced5591789e68e5c6bcbc937a22e07"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        323,
+        6,
+        624,
+        311
+      ],
+      "edgeInkFraction": 0.9706018518518519,
+      "contentFraction": 0.9878764773160503,
+      "file": "eiken-20261101-sister-word-12134.png",
+      "sha256": "4df164068f2181db42b9b2bc74027671d301ecd6529e1d09e855440f2a5114a5"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        632,
+        6,
+        936,
+        311
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9984253666954271,
+      "file": "eiken-20261101-brother-word-1563.png",
+      "sha256": "c190144bb7d753c601080625893a296ab0ba1f2327df5ccec195a6e6ededa691"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        943,
+        6,
+        1248,
+        311
+      ],
+      "edgeInkFraction": 5.747126436781609e-05,
+      "contentFraction": 0.46404729911314163,
+      "file": "eiken-20261101-grape-word-87663.png",
+      "sha256": "8ac79afef110084ab5f8bd8f24de831f9aa0ffeb90336e2ee9aef76e59644eaa"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        7,
+        318,
+        311,
+        623
+      ],
+      "edgeInkFraction": 0.9834772596430628,
+      "contentFraction": 0.9862704918032786,
+      "file": "eiken-20261101-juice-word-87664.png",
+      "sha256": "1168b4fd7d8d3af499fd332a1c85b0163e16485dbdecdf54fb3d0fc0b14ec402"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        323,
+        318,
+        624,
+        623
+      ],
+      "edgeInkFraction": 0.955324074074074,
+      "contentFraction": 0.9552203039050161,
+      "file": "eiken-20261101-soup-word-67600.png",
+      "sha256": "ceb7b4b786822f05fe53338bee3b609d20603aaf6bdf853b708d1a27b7d5c965"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        632,
+        318,
+        936,
+        623
+      ],
+      "edgeInkFraction": 0.9286125503742084,
+      "contentFraction": 0.9145383951682485,
+      "file": "eiken-20261101-chicken-word-87665.png",
+      "sha256": "4399ebfdaad7daf4bf55fd5d6680423bdf4bc194ffa3e9aa66d6824ef35bc7c2"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        943,
+        318,
+        1248,
+        623
+      ],
+      "edgeInkFraction": 0.9799425287356321,
+      "contentFraction": 0.9618382155334587,
+      "file": "eiken-20261101-sport-word-3011.png",
+      "sha256": "2324018e3ecf8d1802ef574bdcdca88b02ec3216569234afb859d5fe72bf862f"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        7,
+        630,
+        311,
+        935
+      ],
+      "edgeInkFraction": 0.9987334484743812,
+      "contentFraction": 0.9474439171699741,
+      "file": "eiken-20261101-restaurant-word-67237.png",
+      "sha256": "2cf80838e141697740281600155b5b672814c09ef64cb57347710c9c5027527c"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        323,
+        630,
+        624,
+        935
+      ],
+      "edgeInkFraction": 0.9197916666666667,
+      "contentFraction": 0.8796252927400469,
+      "file": "eiken-20261101-bathroom-word-17654.png",
+      "sha256": "56d9003a051184a3c4d97bd2cd01f450f681031c8a0d8b47e51852434b45132b"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        632,
+        630,
+        936,
+        935
+      ],
+      "edgeInkFraction": 0.9580886586067934,
+      "contentFraction": 0.8978968938740294,
+      "file": "eiken-20261101-beach-word-87666.png",
+      "sha256": "664bf08d37dda93d3b99f4014102f93621ea80b11b12ca927eef9fc6fcc98608"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        943,
+        630,
+        1248,
+        935
+      ],
+      "edgeInkFraction": 0.980287356321839,
+      "contentFraction": 0.9924858908895459,
+      "file": "eiken-20261101-old-word-87667.png",
+      "sha256": "932b20c816cb08b165bb1c1bf303468c89da37b243d250cf33c96e52a129717f"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        7,
+        943,
+        311,
+        1247
+      ],
+      "edgeInkFraction": 0.9646482122260669,
+      "contentFraction": 0.9857384002770083,
+      "file": "eiken-20261101-good-word-87668.png",
+      "sha256": "f05ccf9c4a62efbafe0409f3d969f19a3fb0e25f32ca1e68177886efda0ace08"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        323,
+        943,
+        624,
+        1247
+      ],
+      "edgeInkFraction": 0.9758840579710145,
+      "contentFraction": 0.7917905228186746,
+      "file": "eiken-20261101-class-word-87669.png",
+      "sha256": "67ff79d57e624850dd7d7762d379e2367104f4a0d49ef6a9b71ad742a74a3873"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        632,
+        943,
+        936,
+        1247
+      ],
+      "edgeInkFraction": 0.03483275663206459,
+      "contentFraction": 0.21600155817174516,
+      "file": "eiken-20261101-fork-word-68318.png",
+      "sha256": "1889409b19b7b1c3fa72d6b825350390daf6dd6b3f13a972f8531aa8f64decad"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        943,
+        943,
+        1248,
+        1247
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9516285591026747,
+      "file": "eiken-20261101-menu-word-68366.png",
+      "sha256": "59f580b790b9c8a308c4d0e491ac39825edab17a29c65e9fd362d84b7eff1c82"
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+id,reading,word,meaning,filename,scene,sourceSheet,tileIndex,generatedAt,prompt,cropValidation,credit
+87630,おれんじ,オレンジ,オレンジ類の果物。丸い実をむいて食べたり果汁を飲んだりする。,eiken-20261101-orange-word-87630.png,"A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.",sheets/eiken-20261101-sheet01.png,1,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87631,いち,1,ものの個数や順序などを表す数の1。,eiken-20261101-diagram-g5-w-one.png,one：1（ひとつ）。用例：I have one book.／わたしは本を1冊持っています。,sheets/diagram-eiken-20261101-g5-w-one.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87632,に,2,ものの個数や順序などを表す数の2。,eiken-20261101-diagram-g5-w-two.png,two：2（ふたつ）。用例：I have two pens.／わたしはペンを2本持っています。,sheets/diagram-eiken-20261101-g5-w-two.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87633,さん,3,ものの個数や順序などを表す数の3。,eiken-20261101-diagram-g5-w-three.png,three：3（みっつ）。用例：I have three pencils.／わたしは鉛筆を3本持っています。,sheets/diagram-eiken-20261101-g5-w-three.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87634,よん,4,ものの個数や順序などを表す数の4。,eiken-20261101-diagram-g5-w-four.png,four：4（よっつ）。用例：I see four birds.／わたしには鳥が4羽見えます。,sheets/diagram-eiken-20261101-g5-w-four.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87635,ご,5,ものの個数や順序などを表す数の5。,eiken-20261101-diagram-g5-w-five.png,five：5（いつつ）。用例：I have five books.／わたしは本を5冊持っています。,sheets/diagram-eiken-20261101-g5-w-five.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87636,ろく,6,ものの個数や順序などを表す数の6。,eiken-20261101-diagram-g5-w-six.png,six：6（むっつ）。用例：I see six cats.／わたしには猫が6匹見えます。,sheets/diagram-eiken-20261101-g5-w-six.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87637,なな,7,ものの個数や順序などを表す数の7。,eiken-20261101-diagram-g5-w-seven.png,seven：7（ななつ）。用例：I have seven pens.／わたしはペンを7本持っています。,sheets/diagram-eiken-20261101-g5-w-seven.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87638,はち,8,ものの個数や順序などを表す数の8。,eiken-20261101-diagram-g5-w-eight.png,eight：8（やっつ）。用例：I see eight dogs.／わたしには犬が8匹見えます。,sheets/diagram-eiken-20261101-g5-w-eight.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87639,きゅう,9,ものの個数や順序などを表す数の9。,eiken-20261101-diagram-g5-w-nine.png,nine：9（ここのつ）。用例：I have nine books.／わたしは本を9冊持っています。,sheets/diagram-eiken-20261101-g5-w-nine.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87640,じゅう,10,ものの個数や順序などを表す数の10。,eiken-20261101-diagram-g5-w-ten.png,ten：10（とお）。用例：I have ten pencils.／わたしは鉛筆を10本持っています。,sheets/diagram-eiken-20261101-g5-w-ten.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+66953,げつようび,月曜日,にちようびの つぎで、かようびの まえの ようび。,eiken-20261101-diagram-g5-w-monday.png,Monday：月曜日。用例：I play tennis on Monday.／わたしは月曜日にテニスをします。,sheets/diagram-eiken-20261101-g5-w-monday.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+66977,どようび,土曜日,きんようびの つぎで、にちようびの まえの ようび。,eiken-20261101-diagram-g5-w-saturday.png,Saturday：土曜日。用例：I read on Saturday.／わたしは土曜日に本を読みます。,sheets/diagram-eiken-20261101-g5-w-saturday.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87641,いちがつ,1月,一年のうち1番目の月。,eiken-20261101-diagram-g5-w-january.png,January：1月。用例：My birthday is in January.／わたしの誕生日は1月です。,sheets/diagram-eiken-20261101-g5-w-january.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87642,にがつ,2月,一年のうち2番目の月。,eiken-20261101-diagram-g5-w-february.png,February：2月。用例：My birthday is in February.／わたしの誕生日は2月です。,sheets/diagram-eiken-20261101-g5-w-february.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87643,さんがつ,3月,一年のうち3番目の月。,eiken-20261101-diagram-g5-w-march.png,March：3月。用例：My birthday is in March.／わたしの誕生日は3月です。,sheets/diagram-eiken-20261101-g5-w-march.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87644,しがつ,4月,一年のうち4番目の月。,eiken-20261101-diagram-g5-w-april.png,April：4月。用例：School starts in April.／学校は4月に始まります。,sheets/diagram-eiken-20261101-g5-w-april.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87645,ごがつ,5月,一年のうち5番目の月。,eiken-20261101-diagram-g5-w-may.png,May：5月。用例：My birthday is in May.／わたしの誕生日は5月です。,sheets/diagram-eiken-20261101-g5-w-may.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87646,ろくがつ,6月,一年のうち6番目の月。,eiken-20261101-diagram-g5-w-june.png,June：6月。用例：My birthday is in June.／わたしの誕生日は6月です。,sheets/diagram-eiken-20261101-g5-w-june.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87647,しちがつ,7月,一年のうち7番目の月。,eiken-20261101-diagram-g5-w-july.png,July：7月。用例：My birthday is in July.／わたしの誕生日は7月です。,sheets/diagram-eiken-20261101-g5-w-july.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87648,はちがつ,8月,一年のうち8番目の月。,eiken-20261101-diagram-g5-w-august.png,August：8月。用例：My birthday is in August.／わたしの誕生日は8月です。,sheets/diagram-eiken-20261101-g5-w-august.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87649,くがつ,9月,一年のうち9番目の月。,eiken-20261101-diagram-g5-w-september.png,September：9月。用例：My birthday is in September.／わたしの誕生日は9月です。,sheets/diagram-eiken-20261101-g5-w-september.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87650,じゅうがつ,10月,一年のうち10番目の月。,eiken-20261101-diagram-g5-w-october.png,October：10月。用例：My birthday is in October.／わたしの誕生日は10月です。,sheets/diagram-eiken-20261101-g5-w-october.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87651,じゅういちがつ,11月,一年のうち11番目の月。,eiken-20261101-diagram-g5-w-november.png,November：11月。用例：My birthday is in November.／わたしの誕生日は11月です。,sheets/diagram-eiken-20261101-g5-w-november.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87652,じゅうにがつ,12月,一年のうち12番目の月。,eiken-20261101-diagram-g5-w-december.png,December：12月。用例：My birthday is in December.／わたしの誕生日は12月です。,sheets/diagram-eiken-20261101-g5-w-december.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87653,じゅういち,11,ものの個数や順序などを表す数の11。,eiken-20261101-diagram-g5-w-eleven.png,eleven：11。用例：I have eleven pencils.／わたしは鉛筆を11本持っています。,sheets/diagram-eiken-20261101-g5-w-eleven.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87654,じゅうに,12,ものの個数や順序などを表す数の12。,eiken-20261101-diagram-g5-w-twelve.png,twelve：12。用例：I have twelve pencils.／わたしは鉛筆を12本持っています。,sheets/diagram-eiken-20261101-g5-w-twelve.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87655,じゅうさん,13,ものの個数や順序などを表す数の13。,eiken-20261101-diagram-g5-w-thirteen.png,thirteen：13。用例：I have thirteen pencils.／わたしは鉛筆を13本持っています。,sheets/diagram-eiken-20261101-g5-w-thirteen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87656,じゅうよん,14,ものの個数や順序などを表す数の14。,eiken-20261101-diagram-g5-w-fourteen.png,fourteen：14。用例：I have fourteen pencils.／わたしは鉛筆を14本持っています。,sheets/diagram-eiken-20261101-g5-w-fourteen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87657,じゅうご,15,ものの個数や順序などを表す数の15。,eiken-20261101-diagram-g5-w-fifteen.png,fifteen：15。用例：I have fifteen pencils.／わたしは鉛筆を15本持っています。,sheets/diagram-eiken-20261101-g5-w-fifteen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87658,じゅうろく,16,ものの個数や順序などを表す数の16。,eiken-20261101-diagram-g5-w-sixteen.png,sixteen：16。用例：I have sixteen pencils.／わたしは鉛筆を16本持っています。,sheets/diagram-eiken-20261101-g5-w-sixteen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87659,じゅうなな,17,ものの個数や順序などを表す数の17。,eiken-20261101-diagram-g5-w-seventeen.png,seventeen：17。用例：I have seventeen pencils.／わたしは鉛筆を17本持っています。,sheets/diagram-eiken-20261101-g5-w-seventeen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87660,じゅうはち,18,ものの個数や順序などを表す数の18。,eiken-20261101-diagram-g5-w-eighteen.png,eighteen：18。用例：I have eighteen pencils.／わたしは鉛筆を18本持っています。,sheets/diagram-eiken-20261101-g5-w-eighteen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87661,じゅうきゅう,19,ものの個数や順序などを表す数の19。,eiken-20261101-diagram-g5-w-nineteen.png,nineteen：19。用例：I have nineteen pencils.／わたしは鉛筆を19本持っています。,sheets/diagram-eiken-20261101-g5-w-nineteen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87662,にじゅう,20,ものの個数や順序などを表す数の20。,eiken-20261101-diagram-g5-w-twenty.png,twenty：20。用例：I have twenty pencils.／わたしは鉛筆を20本持っています。,sheets/diagram-eiken-20261101-g5-w-twenty.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87663,ぶどうのつぶ,ぶどうの粒,ぶどうの房を作る一つ一つの丸い実。,eiken-20261101-grape-word-87663.png,"EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.",sheets/eiken-20261101-sheet01.png,4,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87664,じゅーす,ジュース,果物や野菜をしぼった汁。またそれを使った飲み物。,eiken-20261101-juice-word-87664.png,"A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.",sheets/eiken-20261101-sheet01.png,5,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+67600,すーぷ,スープ,固形食物を入れた肉、魚、または野菜の煮出し汁からなる液状の食物。,eiken-20261101-soup-word-67600.png,"A bowl of warm vegetable soup with broth, carrots and peas and a spoon.",sheets/eiken-20261101-sheet01.png,6,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87665,とりにく,鶏肉,食べ物としてのニワトリの肉。,eiken-20261101-chicken-word-87665.png,"Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.",sheets/eiken-20261101-sheet01.png,7,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+67237,れすとらん,レストラン,食べに人々が行く建物。,eiken-20261101-restaurant-word-67237.png,"A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.",sheets/eiken-20261101-sheet01.png,9,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87666,すなはま,砂浜,海辺などに砂が広がっている場所。,eiken-20261101-beach-word-87666.png,"A sandy beach beside the sea with gentle waves and a few shells, no people.",sheets/eiken-20261101-sheet01.png,11,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87667,ふるい,古い,作られたり使い始めたりしてから長い時間がたっているようす。,eiken-20261101-old-word-87667.png,"A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.",sheets/eiken-20261101-sheet01.png,12,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87668,よい,良い,物事の状態や行いが好ましいこと。,eiken-20261101-good-word-87668.png,"A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.",sheets/eiken-20261101-sheet01.png,13,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87669,じゅぎょう,授業,先生と児童や生徒が教科などを学ぶ時間や活動。,eiken-20261101-class-word-87669.png,"A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.",sheets/eiken-20261101-sheet01.png,14,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+68318,ふぉーく,フォーク,食べ物を出して食べるのに使用する食卓用刃物類。,eiken-20261101-fork-word-68318.png,"A single clearly recognizable four-tined table fork on a pale background, no other cutlery.",sheets/eiken-20261101-sheet01.png,15,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+68366,めにゅー,メニュー,レストランで食べられる料理のリスト。,eiken-20261101-menu-word-68366.png,"A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",sheets/eiken-20261101-sheet01.png,16,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A whole orange FRUIT, a peeled orange and one juicy cut half; no color swatch.
+2. A brother and his sister together at home; the sister is in the foreground holding a family photo, sibling relationship, not a mother.
+3. A girl with her brother together at home; the brother is in the foreground holding a family photo, sibling relationship, not a father.
+4. EXACTLY ONE detached purple grape berry, a tiny stem scar visible, no bunch and no additional fruit.
+5. A transparent glass of fresh orange fruit juice beside a cut orange, no soda or bottle label.
+6. A bowl of warm vegetable soup with broth, carrots and peas and a spoon.
+7. Cooked chicken meat on a plain plate, a browned boneless chicken breast sliced open, no living chicken.
+8. A child kicking a soccer ball and another playing tennis, clearly sports rather than a school sports festival.
+9. A small restaurant interior, a waiter serves a meal to a seated family, no signs or lettering.
+10. A clean modern bathroom containing a bathtub, washbasin and toilet in the same room; nobody bathing.
+11. A sandy beach beside the sea with gentle waves and a few shells, no people.
+12. A visibly old wooden chair with worn finish and small repaired scratches beside a faint new chair for comparison, no person.
+13. A child carefully returns a dropped wallet to its owner, the owner smiles and gives a thumbs-up.
+14. A teacher explaining a geometric shape to a small class of attentive students, blank board except shapes.
+15. A single clearly recognizable four-tined table fork on a pale background, no other cutlery.
+16. A restaurant menu booklet displaying only small pictures of soup, salad and drinks, no words or prices.",data/integrations/english-stage-20261101/sheet01-crop.json,AI生成イラスト
+87670,どる,ドル,アメリカなどで使われる通貨の単位。,eiken-20261101-diagram-g5-w-dollar.png,dollar：ドル（通貨単位）。用例：Look at the dollar.／そのドルを見て。,sheets/diagram-eiken-20261101-g5-w-dollar.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87671,らんぷ,ランプ,周りや手元を明るくする照明器具。,eiken-20261101-lamp-word-87671.png,"A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.",sheets/eiken-20261101-sheet02.png,1,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+68816,とし,都市,大きくて人口密度が高い都市部; いくつかの独立した行政区画を含む場合がある。,eiken-20261101-city-word-68816.png,"A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.",sheets/eiken-20261101-sheet02.png,2,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+66922,だんせい,男性,男の人。,eiken-20261101-man-word-66922.png,"A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.",sheets/eiken-20261101-sheet02.png,3,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+66921,じょせい,女性,女の人。,eiken-20261101-woman-word-66921.png,"A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.",sheets/eiken-20261101-sheet02.png,4,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87672,おば,おば,父や母の姉または妹。伯母や叔母と書く。,eiken-20261101-aunt-word-87672.png,"A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.",sheets/eiken-20261101-sheet02.png,5,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87673,いとこ,いとこ,おじやおばの子ども。,eiken-20261101-cousin-word-87673.png,"Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.",sheets/eiken-20261101-sheet02.png,6,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87674,あし,脚,人の体で太ももから足首までを含み体を支え歩く部分。,eiken-20261101-leg-word-87674.png,"An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.",sheets/eiken-20261101-sheet02.png,7,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87675,あしくびからさき,足首から先,足のうち足首より先のかかとやつま先がある部分。,eiken-20261101-foot-word-87675.png,"EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.",sheets/eiken-20261101-sheet02.png,8,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+68230,せーたー,セーター,上体を覆うかぎ針編みあるいはメリヤスの衣服。,eiken-20261101-sweater-word-68230.png,"A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.",sheets/eiken-20261101-sheet02.png,9,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87676,じゃけっと,ジャケット,上半身に羽織る短い丈の上着。,eiken-20261101-jacket-word-87676.png,"A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.",sheets/eiken-20261101-sheet02.png,10,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+68527,わんぴーす,ワンピース,婦人用の上下ひと続きになった衣服; スカートと胴着の部分がある。,eiken-20261101-dress-word-68527.png,"A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.",sheets/eiken-20261101-sheet02.png,11,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87677,にんしょうだいめいし,人称代名詞,話し手や聞き手や話題の人や物を指す代名詞。,eiken-20261101-diagram-g5-w-i.png,I：わたしは。用例：I am Yui.／わたしはユイです。,sheets/diagram-eiken-20261101-g5-w-i.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87678,しょゆうかく,所有格,英語で誰や何のものかを名詞の前などで示す形。,eiken-20261101-diagram-g5-w-my.png,my：わたしの。用例：This is my bag.／これはわたしのかばんです。,sheets/diagram-eiken-20261101-g5-w-my.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87679,しょゆうだいめいし,所有代名詞,名詞を続けずに誰のものかを表す代名詞。,eiken-20261101-diagram-g5-w-mine.png,mine：わたしのもの。用例：This pen is mine.／このペンはわたしのものです。,sheets/diagram-eiken-20261101-g5-w-mine.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87680,しじご,指示語,これやそれなど人や物や場所を指し示す言葉。,eiken-20261101-diagram-g5-w-this.png,this：これ・この。用例：This is a cat.／これは猫です。,sheets/diagram-eiken-20261101-g5-w-this.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87681,ぎもんし,疑問詞,誰や何やいつなど分からない内容をたずねるための言葉。,eiken-20261101-diagram-g5-w-who.png,who：だれ。用例：Who is she?／彼女はだれですか。,sheets/diagram-eiken-20261101-g5-w-who.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87682,かんし,冠詞,英語などで名詞の前に置き特定の物かどうかなどを示す言葉。,eiken-20261101-diagram-g5-w-a.png,a：ひとつの（子音の音の前）。用例：I have a pen.／わたしはペンを1本持っています。,sheets/diagram-eiken-20261101-g5-w-a.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87683,びーどうし,be動詞,英語で人や物の状態や存在などを表し主語や時制で形が変わる動詞。,eiken-20261101-diagram-g5-w-am.png,am：〜です（Iと使う）。用例：I am happy.／わたしはうれしいです。,sheets/diagram-eiken-20261101-g5-w-am.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+21524,じょどうし,助動詞,動詞などに付いて過去・推量・打消などの意味を加え活用する語。,eiken-20261101-diagram-g5-w-do.png,do：〜する・疑問文などを作る。用例：Do you like cats?／猫は好きですか。,sheets/diagram-eiken-20261101-g5-w-do.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+69538,ひてい,否定,否定の言語行為。,eiken-20261101-diagram-g5-w-not.png,not：〜でない。用例：I am not tired.／わたしは疲れていません。,sheets/diagram-eiken-20261101-g5-w-not.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+67184,いらい,依頼,言葉による依頼。,eiken-20261101-diagram-g5-w-please.png,please：どうぞ・〜してください。用例：Please sit down.／座ってください。,sheets/diagram-eiken-20261101-g5-w-please.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87684,せつぞくし,接続詞,語や文などをつなぎ関係を示す言葉。,eiken-20261101-diagram-g5-w-and.png,and：〜と・そして。用例：I like cats and dogs.／わたしは猫と犬が好きです。,sheets/diagram-eiken-20261101-g5-w-and.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87685,ぜんちし,前置詞,英語などで名詞の前に置き場所や時や関係などを表す言葉。,eiken-20261101-diagram-g5-w-in.png,in：〜の中に。用例：The pen is in the box.／ペンは箱の中です。,sheets/diagram-eiken-20261101-g5-w-in.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87686,わたす,渡す,持っている物を相手に手渡すこと。,eiken-20261101-diagram-g5-w-give.png,"give：あげる。用例：Give me the ball, please.／ボールをください。",sheets/diagram-eiken-20261101-g5-w-give.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87687,もってくる,持って来る,物を持ってこちらへ来ること。,eiken-20261101-bring-word-87687.png,"A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.",sheets/eiken-20261101-sheet02.png,12,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87688,まつ,待つ,人や物事が来たり起きたりするまで過ごすこと。,eiken-20261101-wait-word-87688.png,"A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.",sheets/eiken-20261101-sheet02.png,13,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+78696,びょうが,描画,絵の具で絵を作成すること。,eiken-20261101-draw-word-78696.png,"A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.",sheets/eiken-20261101-sheet02.png,14,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+67078,とうちゃく,到着,ある場所に到達する行為。,eiken-20261101-arrive-word-67078.png,"A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.",sheets/eiken-20261101-sheet02.png,15,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87689,でんわをかける,電話をかける,電話を使って相手を呼び出し話すこと。,eiken-20261101-call-word-87689.png,"A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",sheets/eiken-20261101-sheet02.png,16,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A table lamp with a fabric shade glowing warmly and casting light onto a bedside table, no people.
+2. A lively city with tall buildings, buses, apartment blocks and a few pedestrians, no text.
+3. A friendly adult man wearing ordinary everyday clothes, full body, neutral pale background.
+4. A friendly adult woman wearing ordinary everyday clothes, full body, neutral pale background.
+5. A child visits their aunt at home with the child's mother; aunt and mother are clearly adult sisters, welcoming family scene.
+6. Two cousins playing a board game, their two mothers who are sisters greet in the background, extended family setting.
+7. An anatomical educational view of one human leg from upper thigh through knee to ankle; emphasize the long leg, neutral shorts, no injury.
+8. EXACTLY ONE bare human foot shown in side three-quarter view from the ankle down, heel arch and five toes clearly visible; no whole leg.
+9. A knitted wool pullover sweater, visible knit texture, long sleeves and round neck, no jacket opening.
+10. A simple hip-length casual jacket with front opening, collar and sleeves, no packaging or book cover.
+11. A single modest knee-length one-piece dress hanging on a hanger, bodice and skirt joined; no manga or characters.
+12. A child walks toward a waiting friend while carrying the friend's notebook, clear movement toward the friend.
+13. A person patiently waiting at a bus stop, looking toward the approaching bus in the distance, no lettering.
+14. A child drawing a flower on paper with colored pencils, drawing hand and picture visible, no writing.
+15. A traveler with a small suitcase reaches a hotel entrance and is welcomed by staff, clearly arriving rather than leaving.
+16. A child speaking into a telephone handset, a distant friend listens on another telephone, connected conversation.",data/integrations/english-stage-20261101/sheet02-crop.json,AI生成イラスト
+87690,すてき,素敵,見たり感じたりして好ましく思うようす。,eiken-20261101-nice-word-87690.png,"A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.",sheets/eiken-20261101-sheet03.png,15,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87691,わるい,悪い,状態や行いが好ましくないこと。,eiken-20261101-diagram-g5-w-bad.png,bad：悪い。用例：That is a bad idea.／それはよくない考えです。,sheets/diagram-eiken-20261101-g5-w-bad.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87692,わかい,若い,生まれてからの年数が少ないようす。,eiken-20261101-young-word-87692.png,"A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.",sheets/eiken-20261101-sheet03.png,1,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87693,せがたかい,背が高い,体の縦の長さが大きいこと。,eiken-20261101-tall-word-87693.png,"Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.",sheets/eiken-20261101-sheet03.png,2,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87694,かんたん,簡単,手間や難しさが少なく取り組みやすいこと。,eiken-20261101-diagram-g5-w-easy.png,easy：簡単な。用例：This question is easy.／この問題は簡単です。,sheets/diagram-eiken-20261101-g5-w-easy.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87695,たのしみ,楽しみ,楽しく感じることやこれから楽しいと思うこと。,eiken-20261101-fun-word-87695.png,"Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.",sheets/eiken-20261101-sheet03.png,3,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87696,はやいじかん,早い時間,決まった時刻やふつうの時刻より前の時間。,eiken-20261101-diagram-g5-w-early.png,early：早い時間に。用例：I get up early.／早く起きます。,sheets/diagram-eiken-20261101-g5-w-early.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+68860,ひま,暇,労働を要求されない時間。,eiken-20261101-diagram-g5-w-free.png,free：暇な・無料の。用例：Are you free today?／今日は暇ですか。,sheets/diagram-eiken-20261101-g5-w-free.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87697,まんぱい,満杯,入れ物の中がいっぱいでこれ以上入らないこと。,eiken-20261101-full-word-87697.png,"A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.",sheets/eiken-20261101-sheet03.png,10,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+23257,はいいろ,灰色,物を燃やした際に出る灰のような色。,eiken-20261101-diagram-g5-w-gray.png,gray：灰色の。用例：The cat is gray.／猫は灰色です。,sheets/diagram-eiken-20261101-g5-w-gray.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87698,とても,とても,程度が大きいことを表す言葉。,eiken-20261101-diagram-g5-w-very.png,very：とても。用例：It is very hot.／とても暑いです。,sheets/diagram-eiken-20261101-g5-w-very.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+70942,ほんとう,本当,その実際の出来事または起きたことであることについての確認された情報の発表または主張。,eiken-20261101-diagram-g5-w-really.png,really：本当に。用例：I really like music.／音楽が本当に好きです。,sheets/diagram-eiken-20261101-g5-w-really.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+59188,いつも,いつも,企業名。金融庁の企業一覧で「サービス業」に分類される会社。さまざまなサービスを提供する業種。,eiken-20261101-diagram-g5-w-always.png,always：いつも。用例：I always eat breakfast.／いつも朝食を食べます。,sheets/diagram-eiken-20261101-g5-w-always.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87699,たいてい,たいてい,多くの場合に当てはまるようす。,eiken-20261101-diagram-g5-w-usually.png,usually：たいてい。用例：I usually walk to school.／たいてい歩いて学校に行きます。,sheets/diagram-eiken-20261101-g5-w-usually.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87700,しばしば,しばしば,同じことが何度も起こるようす。,eiken-20261101-diagram-g5-w-often.png,often：よく・しばしば。用例：I often read books.／よく本を読みます。,sheets/diagram-eiken-20261101-g5-w-often.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87701,いちどもない,一度もない,これまでやある期間に一回も起きていないこと。,eiken-20261101-diagram-g5-w-never.png,never：一度も〜ない。用例：I never drink coffee.／コーヒーは全く飲みません。,sheets/diagram-eiken-20261101-g5-w-never.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+67249,いま,今,瞬間的な現在。,eiken-20261101-diagram-g5-w-now.png,now：今。用例：I am studying now.／今、勉強しています。,sheets/diagram-eiken-20261101-g5-w-now.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87702,さいど,再度,同じことをもう一度行うこと。,eiken-20261101-diagram-g5-w-again.png,again：もう一度。用例：Please say it again.／もう一度言ってください。,sheets/diagram-eiken-20261101-g5-w-again.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87703,ただひとつ,ただ一つ,ほかにはなくそれだけであること。,eiken-20261101-diagram-g5-w-only.png,only：〜だけ。用例：I have only one pen.／ペンを1本だけ持っています。,sheets/diagram-eiken-20261101-g5-w-only.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87704,まもなく,間もなく,これから少し時間がたつと起きるようす。,eiken-20261101-diagram-g5-w-soon.png,soon：まもなく。用例：See you soon.／また近いうちに会いましょう。,sheets/diagram-eiken-20261101-g5-w-soon.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87705,はなれる,離れる,人や物との間に距離ができること。,eiken-20261101-diagram-g5-w-away.png,away：離れて。用例：The station is far away.／駅は遠く離れています。,sheets/diagram-eiken-20261101-g5-w-away.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+67367,そと,外,何かの外側の部分。,eiken-20261101-diagram-g5-w-outside.png,outside：外に。用例：Let's play outside.／外で遊びましょう。,sheets/diagram-eiken-20261101-g5-w-outside.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+67136,しゅう,週,連続した7日間。,eiken-20261101-diagram-g5-w-week.png,week：週。用例：I play tennis every week.／毎週テニスをします。,sheets/diagram-eiken-20261101-g5-w-week.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87706,つき,月,暦で一年を十二に分けた期間の一つ。天体の月とは区別する。,eiken-20261101-diagram-g5-w-month.png,month：月（期間）。用例：My birthday is next month.／誕生日は来月です。,sheets/diagram-eiken-20261101-g5-w-month.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87707,いちじかん,一時間,六十分に当たる時間。,eiken-20261101-diagram-g5-w-hour.png,hour：1時間。用例：I study for an hour.／1時間勉強します。,sheets/diagram-eiken-20261101-g5-w-hour.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+67904,ふん,分,一度の60分の1と同等の角距離の単位。,eiken-20261101-diagram-g5-w-minute.png,minute：分。用例：Please wait ten minutes.／10分待ってください。,sheets/diagram-eiken-20261101-g5-w-minute.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+28743,しゅうまつ,週末,お笑い芸人：吉本興業の公式プロフィールに掲載されている。「シスター」のメンバーとしても活動。,eiken-20261101-diagram-g5-w-weekend.png,weekend：週末。用例：I play soccer on weekends.／週末にサッカーをします。,sheets/diagram-eiken-20261101-g5-w-weekend.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+79637,いちばんめ,一番目,数えられる一連の最初の要素。,eiken-20261101-diagram-g5-w-first.png,first：1番目の。用例：This is my first book.／これはわたしの最初の本です。,sheets/diagram-eiken-20261101-g5-w-first.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87708,さんばんめ,三番目,順番で二番目の次。,eiken-20261101-diagram-g5-w-third.png,third：3番目の。用例：This is my third book.／これはわたしの3冊目の本です。,sheets/diagram-eiken-20261101-g5-w-third.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87709,さんじゅう,30,ものの個数や順序などを表す数の30。,eiken-20261101-diagram-g5-w-thirty.png,thirty：30。用例：I have thirty books.／本を30冊持っています。,sheets/diagram-eiken-20261101-g5-w-thirty.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87710,よんじゅう,40,ものの個数や順序などを表す数の40。,eiken-20261101-diagram-g5-w-forty.png,forty：40。用例：My father is forty.／父は40歳です。,sheets/diagram-eiken-20261101-g5-w-forty.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87711,ごじゅう,50,ものの個数や順序などを表す数の50。,eiken-20261101-diagram-g5-w-fifty.png,fifty：50。用例：I have fifty cards.／カードを50枚持っています。,sheets/diagram-eiken-20261101-g5-w-fifty.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87712,ろくじゅう,60,ものの個数や順序などを表す数の60。,eiken-20261101-diagram-g5-w-sixty.png,sixty：60。用例：An hour has sixty minutes.／1時間は60分です。,sheets/diagram-eiken-20261101-g5-w-sixty.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87713,ななじゅう,70,ものの個数や順序などを表す数の70。,eiken-20261101-diagram-g5-w-seventy.png,seventy：70。用例：My grandmother is seventy.／祖母は70歳です。,sheets/diagram-eiken-20261101-g5-w-seventy.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87714,はちじゅう,80,ものの個数や順序などを表す数の80。,eiken-20261101-diagram-g5-w-eighty.png,eighty：80。用例：This pen is eighty yen.／このペンは80円です。,sheets/diagram-eiken-20261101-g5-w-eighty.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87715,きゅうじゅう,90,ものの個数や順序などを表す数の90。,eiken-20261101-diagram-g5-w-ninety.png,ninety：90。用例：This book has ninety pages.／この本は90ページあります。,sheets/diagram-eiken-20261101-g5-w-ninety.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87716,ひゃく,100,ものの個数や順序などを表す数の100。,eiken-20261101-diagram-g5-w-hundred.png,hundred：100。用例：This pen is one hundred yen.／このペンは100円です。,sheets/diagram-eiken-20261101-g5-w-hundred.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87717,せん,1000,ものの個数や順序などを表す数の1000。,eiken-20261101-diagram-g5-w-thousand.png,thousand：1000。用例：This bag is one thousand yen.／このかばんは1000円です。,sheets/diagram-eiken-20261101-g5-w-thousand.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87718,れい,0,ものの個数や順序などを表す数の0。,eiken-20261101-diagram-g5-w-zero.png,zero：0。用例：The number is zero.／その数は0です。,sheets/diagram-eiken-20261101-g5-w-zero.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87719,えん,円,日本のお金の単位。丸い図形の円とは区別する。,eiken-20261101-diagram-g5-w-yen.png,yen：円。用例：This is one hundred yen.／これは100円です。,sheets/diagram-eiken-20261101-g5-w-yen.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+68283,にほんご,日本語,日本人が話す言語（一般的にはアルタイ語族に属するとされている）。,eiken-20261101-diagram-g5-w-japanese.png,Japanese：日本語・日本の。用例：I speak Japanese.／日本語を話します。,sheets/diagram-eiken-20261101-g5-w-japanese.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87720,あめりかじん,アメリカ人,アメリカ合衆国の人。,eiken-20261101-diagram-g5-w-american.png,American：アメリカの・アメリカ人。用例：He is American.／彼はアメリカ人です。,sheets/diagram-eiken-20261101-g5-w-american.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+71975,ちゅうごくご,中国語,シナ・チベット語族の言語の総称で、中国で話される; それらは表意文字体系を共有しているので1言語の方言としてみなされる（それらはお互いに理解しにくいが）。,eiken-20261101-diagram-g5-w-chinese.png,Chinese：中国語・中国の。用例：She speaks Chinese.／彼女は中国語を話します。,sheets/diagram-eiken-20261101-g5-w-chinese.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87721,かんこく,韓国,朝鮮半島の南部に位置する国。正式な国名は大韓民国。,eiken-20261101-diagram-g5-w-korea.png,Korea：韓国・朝鮮。用例：My friend is from Korea.／友達は韓国出身です。,sheets/diagram-eiken-20261101-g5-w-korea.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87722,ふらんすご,フランス語,フランスなどで使われる言語。,eiken-20261101-diagram-g5-w-french.png,French：フランス語・フランスの。用例：I study French.／フランス語を勉強します。,sheets/diagram-eiken-20261101-g5-w-french.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+68314,びじゅつ,美術,視覚芸術品の研究と創造。,eiken-20261101-diagram-g5-w-art.png,art：美術・芸術。用例：I like art.／美術が好きです。,sheets/diagram-eiken-20261101-g5-w-art.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87723,きょうか,教科,学校で学ぶ内容を国語や算数などに分けたまとまり。,eiken-20261101-diagram-g5-w-subject.png,subject：教科。用例：What subject do you like?／どの教科が好きですか。,sheets/diagram-eiken-20261101-g5-w-subject.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87724,くらぶかつどう,クラブ活動,共通の関心をもつ人たちが集まって行う活動。,eiken-20261101-diagram-g5-w-club.png,club：クラブ。用例：I am in the tennis club.／テニスクラブに入っています。,sheets/diagram-eiken-20261101-g5-w-club.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87725,くだもの,果物,木などになる実でそのまま食べることの多いものの総称。,eiken-20261101-fruit-word-87725.png,"A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.",sheets/eiken-20261101-sheet03.png,4,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+72712,はんずぼん,半ズボン,膝丈のズボン。,eiken-20261101-shorts-word-72712.png,"A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.",sheets/eiken-20261101-sheet03.png,5,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87518,ひとびと,人々,たくさんの ひとたち。,eiken-20261101-people-word-87518.png,"A friendly group of six people of different ages standing together, no individual singled out.",sheets/eiken-20261101-sheet03.png,6,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87726,こどもたち,子どもたち,複数の子ども。,eiken-20261101-children-word-87726.png,"EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.",sheets/eiken-20261101-sheet03.png,7,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87727,りょうあしさき,両足先,右足と左足の足首から先の部分。,eiken-20261101-feet-word-87727.png,"EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.",sheets/eiken-20261101-sheet03.png,8,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+87728,はならび,歯並び,口の中に複数の歯が並んでいるようす。,eiken-20261101-teeth-word-87728.png,"A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.",sheets/eiken-20261101-sheet03.png,9,2026-11-01,"Edit the attached equal-size 4 by 4 template. Paint EXACTLY sixteen separate vocabulary illustrations in the sixteen white cells, read left-to-right then top-to-bottom. Preserve the 2048x2048 canvas and ALL FIVE horizontal and FIVE vertical continuous pure MAGENTA (#ff00ff) lines, INCLUDING THE OUTER FRAME. Keep exact line positions, straightness, thickness and color. Do not move, bend, erase, cover or resize the grid. Magenta is ONLY for divider lines. Use each cell generously; no large blank margins. Each complete scene and its shadow remain in its own cell, nothing crosses any line. Do not shrink artwork to the central half. No captions, labels, letters, numerals, logos or watermarks. Warm natural full-color children's picture-book watercolor, clear recognizable shapes and normal anatomy. Ordinary pink and purple subjects allowed, pure magenta reserved for grid. Each scene must match its assigned meaning. EXACT cell order:
+1. A young adult stands beside an older adult, highlight the young adult naturally with brighter color; respectful age comparison.
+2. Two children stand on the SAME ground line, one clearly taller, both full body; vertical height guides but no numbers.
+3. Children laughing with delight while playing a cooperative board game, focus on joyful enjoyment.
+4. A mixed fruit bowl with an apple, banana, orange and grapes, clearly a variety of fruits.
+5. A pair of knee-length shorts laid flat, two short leg openings clearly visible, no person.
+6. A friendly group of six people of different ages standing together, no individual singled out.
+7. EXACTLY THREE children playing together outdoors, no adults, clearly multiple children.
+8. EXACTLY TWO bare human feet, a matching left and right foot from ankles down, ten toes total, no whole legs.
+9. A smiling open mouth showing a row of several clean human teeth, plural teeth clearly visible, natural mouth anatomy.
+10. A clear drinking glass filled exactly to its brim with water, no overflow, distinctly full rather than empty.
+11. A child holds their own backpack close to their chest, a small house and their own belongings behind them, ownership rather than eating.
+12. A child hugs a beloved pet dog gently, both relaxed and happy, small heart shapes show affection.
+13. A child confidently points to the correct piece of a simple shape puzzle, a thought bubble shows the matching completed shape, knowledge.
+14. A child looks through a window and clearly sees a bird on a branch outside, natural line of sight.
+15. A person admires a lovely colorful flower bouquet held by a friend, appreciative smiling expression.
+16. Children applaud a friend's impressive finished model bridge, admiration and achievement clearly shown, no written signs.",data/integrations/english-stage-20261101/sheet03-crop.json,AI生成イラスト
+66937,もの,物,かたちがあって、みたり さわったり できるもの。,eiken-20261101-diagram-g5-w-thing.png,thing：もの・こと。用例：What is that thing?／あのものは何ですか。,sheets/diagram-eiken-20261101-g5-w-thing.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87729,しゅっしん,出身,生まれ育った土地や以前所属していた所。,eiken-20261101-diagram-g5-w-be-from.png,be from：〜の出身である。用例：I am from Japan.／日本出身です。,sheets/diagram-eiken-20261101-g5-w-be-from.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+68359,まよなか,真夜中,夜の12時; 夜中。,eiken-20261101-diagram-g5-w-rj-midnight.png,midnight：夜の12時・真夜中。用例：We got home at midnight.／わたしたちは夜の12時に家に着きました。,sheets/diagram-eiken-20261101-g5-w-rj-midnight.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+71358,しやくしょ,市役所,市政府の行政局を入れた建物。,eiken-20261101-diagram-g5-w-rj-city-hall.png,city hall：市役所。用例：The bus stops near city hall.／そのバスは市役所の近くに止まります。,sheets/diagram-eiken-20261101-g5-w-rj-city-hall.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87730,にっこう,日光,太陽から届く光。,eiken-20261101-diagram-g5-w-rj-sunshine.png,sunshine：日光・日ざし。用例：The cat is sleeping in the sunshine.／その猫は日ざしの中で眠っています。,sheets/diagram-eiken-20261101-g5-w-rj-sunshine.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87731,はれる,晴れる,雲が少なくなり空が明るくなること。,eiken-20261101-diagram-g5-w-rj-clear-up.png,clear up：天気がよくなる・晴れる。用例：It will clear up this afternoon.／今日の午後には晴れるでしょう。,sheets/diagram-eiken-20261101-g5-w-rj-clear-up.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87732,やくにん,役人,国や地方の役所などで公の仕事をする人。,eiken-20261101-diagram-g5-w-rj-officer.png,officer：役人・警察官など。用例：The police officer is helping a child.／その警察官は子どもを助けています。,sheets/diagram-eiken-20261101-g5-w-rj-officer.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87733,そうじゅうし,操縦士,飛行機などを操縦する仕事をする人。,eiken-20261101-diagram-g5-w-rj-pilot.png,pilot：飛行機を操縦する人。用例：The pilot is on the plane.／そのパイロットは飛行機に乗っています。,sheets/diagram-eiken-20261101-g5-w-rj-pilot.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+76796,きゅうじ,給仕,使い走りをするために雇われている少年。,eiken-20261101-diagram-g5-w-rj-waiter.png,waiter：レストランなどの男性の給仕。用例：The waiter brings us some water.／その給仕の男性はわたしたちに水を持ってきます。,sheets/diagram-eiken-20261101-g5-w-rj-waiter.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87734,はたらくひと,働く人,仕事に取り組む人。,eiken-20261101-diagram-g5-w-rj-worker.png,worker：働く人。用例：The worker opens the shop at nine.／その働く人は9時に店を開けます。,sheets/diagram-eiken-20261101-g5-w-rj-worker.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+69279,すきー,スキー,雪の上に滑るためにペアで使用される狭い木製、鉄製またはプラスチックセの滑る道具。,eiken-20261101-diagram-g5-w-rj-ski.png,ski：スキーをする。用例：We ski in the mountains in winter.／わたしたちは冬に山でスキーをします。,sheets/diagram-eiken-20261101-g5-w-rj-ski.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87735,いちじ,1時,時計の短い針が1を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-one-o-clock.png,one o'clock：1時。用例：The clock says one o'clock.／時計は1時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-one-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87736,にじ,2時,時計の短い針が2を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-two-o-clock.png,two o'clock：2時。用例：The clock says two o'clock.／時計は2時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-two-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87737,さんじ,3時,時計の短い針が3を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-three-o-clock.png,three o'clock：3時。用例：The clock says three o'clock.／時計は3時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-three-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87738,よじ,4時,時計の短い針が4を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-four-o-clock.png,four o'clock：4時。用例：The clock says four o'clock.／時計は4時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-four-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87739,ごじ,5時,時計の短い針が5を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-five-o-clock.png,five o'clock：5時。用例：The clock says five o'clock.／時計は5時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-five-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87740,ろくじ,6時,時計の短い針が6を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-six-o-clock.png,six o'clock：6時。用例：The clock says six o'clock.／時計は6時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-six-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87741,しちじ,7時,時計の短い針が7を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-seven-o-clock.png,seven o'clock：7時。用例：The clock says seven o'clock.／時計は7時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-seven-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87742,はちじ,8時,時計の短い針が8を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-eight-o-clock.png,eight o'clock：8時。用例：The clock says eight o'clock.／時計は8時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-eight-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87743,くじ,9時,時計の短い針が9を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-nine-o-clock.png,nine o'clock：9時。用例：The clock says nine o'clock.／時計は9時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-nine-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87744,じゅうじ,10時,時計の短い針が10を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-ten-o-clock.png,ten o'clock：10時。用例：The clock says ten o'clock.／時計は10時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-ten-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87745,じゅういちじ,11時,時計の短い針が11を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-eleven-o-clock.png,eleven o'clock：11時。用例：The clock says eleven o'clock.／時計は11時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-eleven-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図
+87746,じゅうにじ,12時,時計の短い針が12を指し長い針が十二を指す時刻。,eiken-20261101-diagram-g5-w-rj-twelve-o-clock.png,twelve o'clock：12時。用例：The clock says twelve o'clock.／時計は12時を指しています。,sheets/diagram-eiken-20261101-g5-w-rj-twelve-o-clock.png,1,2026-11-01,独自のコード生成教材図。英語・日本語の語義と例文、数・時計・位置・文法上の関係を配置。renderer: data/integrations/english-stage-20261101/render-diagrams.py,,プログラム生成図

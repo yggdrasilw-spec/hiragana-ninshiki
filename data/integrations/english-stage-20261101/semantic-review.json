@@ -1,0 +1,59 @@
+{
+  "reviewed": true,
+  "reviewDate": "2026-11-01",
+  "rasterSheets": [
+    {
+      "sheet": 1,
+      "tiles": 16,
+      "orderChecked": true,
+      "subjectsChecked": true,
+      "notes": "果物と色・衣服と作品・足と脚・単数と複数を区別。原画像と切り出し後のコマ順を照合。"
+    },
+    {
+      "sheet": 2,
+      "tiles": 16,
+      "orderChecked": true,
+      "subjectsChecked": true,
+      "notes": "果物と色・衣服と作品・足と脚・単数と複数を区別。原画像と切り出し後のコマ順を照合。"
+    },
+    {
+      "sheet": 3,
+      "tiles": 16,
+      "orderChecked": true,
+      "subjectsChecked": true,
+      "notes": "果物と色・衣服と作品・足と脚・単数と複数を区別。原画像と切り出し後のコマ順を照合。"
+    }
+  ],
+  "diagrams": {
+    "count": 204,
+    "reviewSheets": 7,
+    "checked": [
+      "数字と個数",
+      "月と曜日の順序",
+      "時計の長針と短針",
+      "代名詞の主格・目的格・所有形",
+      "冠詞の発音条件",
+      "前置詞の位置と向き",
+      "例文と日本語の対応"
+    ],
+    "corrections": [
+      "atを移動矢印から地点表示に修正",
+      "butとbecauseの関係を実際の例文の文脈へ修正",
+      "hourとminuteを時刻から時間の換算図へ修正",
+      "抽象語を文の複製だけの図から対比図・時間線・位置図へ修正",
+      "skiは既存のアルペンスキー画像を再利用"
+    ]
+  },
+  "reuseReview": {
+    "cards": 94,
+    "method": "しりとりCSVの対象語義・読みとマニフェストの画像・確認記録を照合。",
+    "corrections": [
+      "cornerは同表記の角（つの）を除外し角（かど）の画像へ接続。"
+    ]
+  },
+  "grammarReferences": [
+    "https://dictionary.cambridge.org/us/grammar/british-grammar/pronouns-personal-i-me-you-he-it-they-etc",
+    "https://dictionary.cambridge.org/grammar/british-grammar/a-an",
+    "https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/personal-pronouns"
+  ]
+}

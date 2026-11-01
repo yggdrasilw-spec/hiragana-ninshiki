@@ -143,10 +143,18 @@ if pending:
         expected_hash = history[-1]["afterSha256"] if history else json.loads(ledger_path.read_text(encoding="utf-8"))["afterSha256"]
         if hashlib.sha256(before_text.encode()).hexdigest() != expected_hash:
             raise ValueError("Dictionary changed outside recorded imports.")
-    with csv_path.open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
-        writer.writeheader()
-        writer.writerows(rows)
+    # The delivery parser uses the established unquoted nine-column format.
+    # Preserve every original vocabulary/search byte, including embedded quotes;
+    # only the final three image columns belong to this importer.
+    source_lines = before_text.splitlines()
+    if len(source_lines) != len(rows) + 1:
+        raise ValueError('Expected one vocabulary entry per source line')
+    rewritten = [source_lines[0]]
+    for source_line, row in zip(source_lines[1:], rows):
+        prefix = source_line.rsplit(',', 3)[0]
+        rewritten.append(prefix + ',' + ','.join(row[k] for k in
+                         ('image_asset', 'image_mode', 'image_credit')))
+    csv_path.write_text('\n'.join(rewritten) + '\n', encoding='utf-8', newline='\n')
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if history is not None:
         after_text = csv_path.read_text(encoding="utf-8")
