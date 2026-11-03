@@ -1642,6 +1642,7 @@ body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #bt
 <script src="shiritori-keyboard-guide.js?v=20261019cpu-backspace"></script>
 <script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
+<script src="shiritori-mrs-details.js?v=fb073b6bfce570b2"></script>
 <script src="shiritori-vocabulary.js?v=20261029-science"></script>
 <script src="shiritori-dictionary.js?v=20261028japanpack"></script>
 <script src="shiritori-feedback-config.js?v=20261014"></script>
@@ -1704,6 +1705,8 @@ function parseCSV(csvText, useGradePolicy=false){
     grp.meanings.push(r.meaning);
     grp.meaningLevels.push(r.level);
     grp.imagequeries.push({ ja:r.imagequery, en:r.imagequeryEn, asset:r.imageAsset, mode:r.imageMode, credit:r.imageCredit, category:typeof ShiritoriImagePolicy==='undefined'?'other':ShiritoriImagePolicy.category(r.word,r.meaning,r.imagequery) });
+    const supplement=typeof ShiritoriMrsDetails==='undefined'?null:ShiritoriMrsDetails.get(r.reading,r.word,r.meaning);
+    if(supplement)grp.imagequeries[grp.imagequeries.length-1].source=supplement;
     // levelは最小値（一番やさしい方）を採用
     grp.level = Math.min(grp.level, r.level);
   }
@@ -3329,6 +3332,9 @@ function splitMeaning(text){
   }
   return {summary:value,details:''};
 }
+function detailMeaningParts(meaning,source){
+  return splitMeaning([meaning,source?.details].filter(Boolean).join(' '));
+}
 function changeDetailMeaning(delta){
   const view=detailView;
   if(!view || view.token!==ST.detailToken)return;
@@ -3339,7 +3345,7 @@ function changeDetailMeaning(delta){
 function readCurrentMeaning(details=false){
   const view=detailView;
   if(!view || view.token!==ST.detailToken)return;
-  const parts=splitMeaning(view.meanings[ST.homoIdx]);
+  const parts=detailMeaningParts(view.meanings[ST.homoIdx],view.sources?.[ST.homoIdx]);
   const text=details ? parts.details : `${view.reading}。${parts.summary}`;
   speakAsync(text,meaningSpeechBudget(text));
 }
@@ -3422,12 +3428,13 @@ function splitMora(text){
 function meaningSourceHtml(source){
   if(!source||!/^https:\/\//.test(source.url))return '';
   const license=source.licenseUrl&&/^https:\/\//.test(source.licenseUrl)?` / <a href="${escH(source.licenseUrl)}" target="_blank" rel="noopener">${escH(source.license)}</a>`:'';
-  return `<div class="det-text det-source" style="font-size:12px">出典：<a href="${escH(source.url)}" target="_blank" rel="noopener">${escH(source.title)}</a>${license}</div>`;
+  const links=[source,...(source.references||[])].filter(s=>/^https:\/\//.test(s.url)).map(s=>`<a href="${escH(s.url)}" target="_blank" rel="noopener">${escH(s.title)}</a>`).join(' / ');
+  return `<div class="det-text det-source" style="font-size:12px">出典：${links}${license}</div>`;
 }
 function renderDetailSlide(words,meanings,imgs,idx,isNew,readingText){
   const w=words[idx]||'';
   const m=meanings[idx]||'';
-  const explanation=splitMeaning(m);
+  const explanation=detailMeaningParts(m,detailView?.sources?.[idx]);
   const isMulti=words.length>1;
   const reading=norm(readingText || w || words[0]);
   const mora=splitMora(reading);

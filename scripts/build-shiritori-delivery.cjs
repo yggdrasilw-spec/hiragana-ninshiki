@@ -5,12 +5,14 @@ function build(root){
   const read=f=>fs.readFileSync(path.join(root,f),'utf8');
   const csv=read('whitelist.csv'),html=read('shiritori.html');
   const context=vm.createContext({});context.window=context;
-  for(const file of ['shiritori-image-policy.js','shiritori-vocabulary.js','shiritori-grade-policy.js'])vm.runInContext(read(file),context);
+  for(const file of ['shiritori-image-policy.js','shiritori-vocabulary.js','shiritori-grade-policy.js','shiritori-mrs-details.js'])vm.runInContext(read(file),context);
   if(context.ShiritoriGradePolicy.sourceSha256!==hash(csv))throw Error('Grade policy is stale: rebuild grade bands before delivery');
   const parser=html.match(/function parseCSV\([\s\S]*?return Array.from\(map.values\(\)\);\s*}/)?.[0];
   if(!parser)throw Error('CSV parser not found');
   vm.runInContext(parser,context);
   const rows=context.parseCSV(csv,true);
+  const attached=rows.reduce((n,r)=>n+r.imagequeries.filter(q=>q.source?.details).length,0);
+  if(attached!==context.ShiritoriMrsDetails.entries.length)throw Error('Mrs. GREEN APPLE details are stale: unmatched exact meanings');
   const scienceFile=path.join(root,'data/science/entries.jsonl');
   const science=new Map(fs.existsSync(scienceFile)?fs.readFileSync(scienceFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const mangaFile=path.join(root,'data/manga/entries.jsonl');
