@@ -1,0 +1,26 @@
+{
+  "local": true,
+  "publicDeployment": false,
+  "sourceSha256": "a0b912fccaa39540e7a86dbeed06572059e148683d4d52dc33c1821afe2eee0f",
+  "newReadings": 2001,
+  "checks": [
+    "node tests/shiritori-onomatopoeia.cjs",
+    "node tests/shiritori-import-history.cjs",
+    "node tests/shiritori-import-quality.cjs",
+    "node tests/shiritori-data.cjs",
+    "python -B -X utf8 tests/shiritori-grade-policy.py",
+    "node scripts/build-shiritori-delivery.cjs --check",
+    "node tests/shiritori-delivery.cjs",
+    "node tests/shiritori-delivery-browser.cjs",
+    "node tests/shiritori-onomatopoeia-browser.cjs",
+    "node tests/shiritori-mrs-details.cjs"
+  ],
+  "baselinePreserved": true,
+  "notes": [
+    "Original PDF spellings checked; three snippet mismatches replaced.",
+    "Rebased on the concurrently published music details commit, preserving its 207 meanings.",
+    "Combined delivery and the onomatopoeia browser checks passed after regeneration."
+  ],
+  "releaseIsolationVerified": true,
+  "rebasedOn": "2cc20d380bd4b529b96cccfd0235b2dfb982b7c9"
+}

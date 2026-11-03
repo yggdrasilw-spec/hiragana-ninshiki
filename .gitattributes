@@ -26,3 +26,6 @@
 
 # Preserve upstream license texts verbatim, including their original spaces.
 /data/general10000/*LICENSE.txt -text whitespace=-blank-at-eol
+
+/data/onomatopoeia/** text eol=lf
+/data/dictionary-imports/2026-11-03-onomatopoeia2000.* text eol=lf

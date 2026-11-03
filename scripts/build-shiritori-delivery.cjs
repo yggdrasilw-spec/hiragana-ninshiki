@@ -27,6 +27,9 @@ function build(root){
   const generalFile=path.join(root,'data/general10000/entries.jsonl');
   const general=new Map(fs.existsSync(generalFile)?fs.readFileSync(generalFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const generalMatched=new Set();
+  const onomatopoeiaFile=path.join(root,'data/onomatopoeia/entries.jsonl');
+  const onomatopoeia=new Map(fs.existsSync(onomatopoeiaFile)?fs.readFileSync(onomatopoeiaFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
+  const onomatopoeiaMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{
     const key=[row.reading,w,row.meanings[i]].join('\t'),entry=science.get(key);
@@ -49,6 +52,11 @@ function build(root){
       if(!['society','place'].includes(historical.genre)||!/^https:\/\/www\.wikidata\.org\/wiki\/Q[0-9]+$/.test(historical.source?.url||''))throw Error('Invalid geography/history metadata: '+w);
       row.imagequeries[i].source=historical.source;geoMatched.add(key);return historical.genre;
     }
+    const mimetic=onomatopoeia.get(key);
+    if(mimetic){
+      if(mimetic.genre!=='onomatopoeia'||!mimetic.source?.url?.startsWith('https://'))throw Error('Invalid onomatopoeia source: '+w);
+      row.imagequeries[i].source=mimetic.source;onomatopoeiaMatched.add(key);return mimetic.genre;
+    }
     const ordinary=general.get(key);
     if(ordinary){
       if(!ordinary.source?.url?.startsWith('https://')||!ordinary.source.jmdictIds?.length)throw Error('Invalid general vocabulary source: '+w);
@@ -56,6 +64,7 @@ function build(root){
     }
     return context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja);
   });
+  if(onomatopoeiaMatched.size!==onomatopoeia.size)throw Error('Onomatopoeia metadata is stale: unmatched exact meanings');
   if(generalMatched.size!==general.size)throw Error('General vocabulary metadata is stale: unmatched exact meanings');
   if(geoMatched.size!==geo.size)throw Error('Geography/history metadata is stale: unmatched exact meanings');
   if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
