@@ -1,0 +1,5282 @@
+{
+  "targetCount": 512,
+  "firstId": 66913,
+  "lastId": 67435,
+  "newAssets": 438,
+  "existingReuse": 41,
+  "newImageAliases": 33,
+  "beforeSha256": "b63a9edf8a2ca85ed329db0f2770860a912445fc660c538917c2e0a6c9344b77",
+  "sheets": {
+    "sheet01-v1": {
+      "sha256": "dacff6a031a3d246b118e8c73d2905343fd871bfa8eaa8f3a3d96ec57d126690",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet01-v1-crop.json"
+    },
+    "sheet02-v1": {
+      "sha256": "aff47d9e3f3cd842ebf9e23fc0ae7b1e60d087d28298d7e95fbbc8f64f8c5b24",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet02-v1-crop.json"
+    },
+    "sheet03-v1": {
+      "sha256": "1c267d3f2edcc39fd9598a596a9358de83cc2f9fec14e1dd6a5b35f04b864562",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet03-v1-crop.json"
+    },
+    "sheet04-v1": {
+      "sha256": "f4d40cff83b9444604f6ec9959f7c0c07b78c6b9fbf59291f9dd1bb133b34245",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet04-v1-crop.json"
+    },
+    "sheet05-v1": {
+      "sha256": "5594f1762c6b5996662b1a8ac44e0f50af2cb3b047d05c924d5e8165f43af4a3",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet05-v1-crop.json"
+    },
+    "sheet06-v1": {
+      "sha256": "6f54285559310343775e61d39fcd8890465eac831b673e51b7879ef0c6bc1af6",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet06-v1-crop.json"
+    },
+    "sheet07-v1": {
+      "sha256": "d3f896ff0ccd07baffe4872386bfb1123795fef2460f4f5ae56d44563aa33ad8",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet07-v1-crop.json"
+    },
+    "sheet08-v1": {
+      "sha256": "205bdffad08885f5020681bd4379527590611e5e86cbf2959be2ed01ba88b42e",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet08-v1-crop.json"
+    },
+    "sheet09-v1": {
+      "sha256": "f05a9d23ac3b39e364e7a1a19f22667be6838cd4db74a55d25f881225408ee60",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet09-v1-crop.json"
+    },
+    "sheet10-v1": {
+      "sha256": "00710b105f5bf1e6e448c917da9012e601ebc800514dbab299f5922a01aa573a",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet10-v1-crop.json"
+    },
+    "sheet11-v1": {
+      "sha256": "92dff56ca0e93995d718f1b3569eccafbb7258d0d3994c43e733aa22a32d8574",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet11-v1-crop.json"
+    },
+    "sheet12-v2": {
+      "sha256": "33fa72aaad79013ed82ba94e32f9c9b649091b055dbf5d1422227db7042c47d6",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet12-v2-crop.json"
+    },
+    "sheet13-v1": {
+      "sha256": "00fcbdaa20f8688e25bc29f8ca1f9e4544bc3d5234ca7785fd7366ab04b439de",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet13-v1-crop.json"
+    },
+    "sheet14-v1": {
+      "sha256": "685c82791bc4348d4f5ff4c7d25125852420127a3de46de6c545056460b80c5f",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet14-v1-crop.json"
+    },
+    "sheet15-v1": {
+      "sha256": "3a04343b1c1fa0a5c3e3169c15ea6980df11ddb65c09c5002de1a000b25146f0",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet15-v1-crop.json"
+    },
+    "sheet16-v1": {
+      "sha256": "207fdecd3d6211a932955e935d5c7826c47913e85c9d5b63f72eff499614221a",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet16-v1-crop.json"
+    },
+    "sheet17-v1": {
+      "sha256": "e11427eba9dc2c753d45dca0f1cf86c97badc88017ca3d1bb310d2ef1ff1684b",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet17-v1-crop.json"
+    },
+    "sheet18-v8": {
+      "sha256": "f3174fa5c8e306c8eb037b6b2318c0ad9be9ed30b88d8559e4a52bc3060a7674",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet18-v8-crop.json"
+    },
+    "sheet19-v1": {
+      "sha256": "13730896bfc030d033ddd699a719c147be6e03b2f8d26f0f199c082f32f945d4",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet19-v1-crop.json"
+    },
+    "sheet20-v1": {
+      "sha256": "348dd7ad7093f69bfcc605ff6eb7e566a6f381d0759bbccf1467e7f3056cc655",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet20-v1-crop.json"
+    },
+    "sheet21-v1": {
+      "sha256": "0eaa6193b6aa8246ae6059e0ec60a31a7db6f95b53e34c7bdda9fb5c05e21e73",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet21-v1-crop.json"
+    },
+    "sheet22-v1": {
+      "sha256": "ceaff81993897708aaa956d72311ceb765e9f2b2779a2ee289a1d9a1e7b166ce",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet22-v1-crop.json"
+    },
+    "sheet23-v3": {
+      "sha256": "38dd3384189acb510cbc2617c4e996b591716ff080442c66756d9dffc71644c6",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet23-v3-crop.json"
+    },
+    "sheet24-v1": {
+      "sha256": "d133a29d4101051434a8c9f514cd80d5c9d438cf265eaf2c9b82f697a378e1f1",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet24-v1-crop.json"
+    },
+    "sheet25-v1": {
+      "sha256": "85e06a762517edb296b3ec1fb021e8ae2af703cf8a634d91b659ff1afb623b7c",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet25-v1-crop.json"
+    },
+    "sheet26-v1": {
+      "sha256": "75c625b5aa766304a0d976085847f04bcfa5f64aabfa059e5de0d10949bbfbb3",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet26-v1-crop.json"
+    },
+    "sheet27-v1": {
+      "sha256": "6b4965461e57111b249cf024fdf1f8522df095fee415be03fae91f2c62d653b8",
+      "tiles": 16,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet27-v1-crop.json"
+    },
+    "sheet28-v1": {
+      "sha256": "fdfa395ca10dd4b8594f1569b79fdf9b389f33a9977de77572e1959ef1d1d2f7",
+      "tiles": 14,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-sheet28-v1-crop.json"
+    },
+    "repair": {
+      "sha256": "eb72a3fa31edce0678bd82ec0181b906f79a84e9583049ffd4c5e8616d69e6ac",
+      "tiles": 9,
+      "validation": "data/image-coverage/2026-11-04-general01-512-images/general01-repair-crop.json"
+    }
+  },
+  "assignedIds": [
+    66913,
+    66914,
+    66915,
+    66916,
+    66917,
+    66918,
+    66919,
+    66920,
+    66923,
+    66924,
+    66925,
+    66926,
+    66927,
+    66928,
+    66929,
+    66930,
+    66931,
+    66932,
+    66933,
+    66934,
+    66935,
+    66936,
+    66938,
+    66939,
+    66940,
+    66941,
+    66942,
+    66943,
+    66944,
+    66945,
+    66946,
+    66947,
+    66948,
+    66949,
+    66950,
+    66951,
+    66952,
+    66954,
+    66955,
+    66956,
+    66957,
+    66958,
+    66959,
+    66960,
+    66961,
+    66962,
+    66963,
+    66964,
+    66965,
+    66966,
+    66967,
+    66968,
+    66969,
+    66970,
+    66971,
+    66972,
+    66973,
+    66974,
+    66975,
+    66976,
+    66978,
+    66979,
+    66980,
+    66981,
+    66982,
+    66983,
+    66984,
+    66985,
+    66986,
+    66987,
+    66988,
+    66989,
+    66990,
+    66991,
+    66992,
+    66993,
+    66994,
+    66995,
+    66996,
+    66997,
+    66998,
+    66999,
+    67000,
+    67001,
+    67002,
+    67003,
+    67004,
+    67005,
+    67006,
+    67007,
+    67008,
+    67009,
+    67010,
+    67011,
+    67012,
+    67013,
+    67014,
+    67015,
+    67016,
+    67017,
+    67018,
+    67019,
+    67020,
+    67021,
+    67022,
+    67023,
+    67024,
+    67025,
+    67026,
+    67027,
+    67028,
+    67029,
+    67030,
+    67031,
+    67032,
+    67033,
+    67034,
+    67035,
+    67036,
+    67037,
+    67038,
+    67039,
+    67040,
+    67041,
+    67042,
+    67043,
+    67044,
+    67045,
+    67046,
+    67047,
+    67048,
+    67049,
+    67050,
+    67051,
+    67052,
+    67053,
+    67054,
+    67055,
+    67056,
+    67057,
+    67058,
+    67059,
+    67060,
+    67061,
+    67062,
+    67063,
+    67064,
+    67065,
+    67066,
+    67067,
+    67068,
+    67069,
+    67070,
+    67071,
+    67072,
+    67073,
+    67074,
+    67075,
+    67076,
+    67077,
+    67079,
+    67080,
+    67081,
+    67082,
+    67083,
+    67084,
+    67085,
+    67086,
+    67087,
+    67088,
+    67089,
+    67090,
+    67091,
+    67092,
+    67093,
+    67094,
+    67095,
+    67096,
+    67097,
+    67098,
+    67099,
+    67100,
+    67101,
+    67102,
+    67103,
+    67104,
+    67105,
+    67106,
+    67107,
+    67108,
+    67109,
+    67110,
+    67111,
+    67112,
+    67113,
+    67114,
+    67115,
+    67116,
+    67117,
+    67118,
+    67119,
+    67120,
+    67121,
+    67122,
+    67123,
+    67124,
+    67125,
+    67126,
+    67127,
+    67128,
+    67129,
+    67130,
+    67131,
+    67132,
+    67133,
+    67134,
+    67135,
+    67137,
+    67138,
+    67139,
+    67140,
+    67141,
+    67142,
+    67143,
+    67144,
+    67145,
+    67146,
+    67147,
+    67148,
+    67149,
+    67150,
+    67151,
+    67152,
+    67153,
+    67154,
+    67155,
+    67156,
+    67157,
+    67158,
+    67159,
+    67160,
+    67161,
+    67162,
+    67163,
+    67164,
+    67165,
+    67166,
+    67167,
+    67168,
+    67169,
+    67170,
+    67171,
+    67172,
+    67173,
+    67174,
+    67175,
+    67176,
+    67177,
+    67178,
+    67179,
+    67180,
+    67181,
+    67182,
+    67183,
+    67185,
+    67186,
+    67187,
+    67188,
+    67189,
+    67190,
+    67191,
+    67192,
+    67193,
+    67194,
+    67195,
+    67196,
+    67197,
+    67198,
+    67199,
+    67200,
+    67201,
+    67202,
+    67203,
+    67204,
+    67205,
+    67206,
+    67207,
+    67208,
+    67209,
+    67210,
+    67211,
+    67212,
+    67213,
+    67214,
+    67215,
+    67216,
+    67217,
+    67218,
+    67219,
+    67220,
+    67221,
+    67222,
+    67223,
+    67224,
+    67225,
+    67226,
+    67227,
+    67228,
+    67229,
+    67230,
+    67231,
+    67232,
+    67233,
+    67234,
+    67235,
+    67236,
+    67238,
+    67239,
+    67240,
+    67241,
+    67242,
+    67243,
+    67244,
+    67245,
+    67246,
+    67247,
+    67248,
+    67250,
+    67251,
+    67252,
+    67253,
+    67254,
+    67255,
+    67256,
+    67257,
+    67258,
+    67259,
+    67260,
+    67261,
+    67262,
+    67263,
+    67264,
+    67265,
+    67266,
+    67267,
+    67268,
+    67269,
+    67270,
+    67271,
+    67272,
+    67273,
+    67274,
+    67275,
+    67276,
+    67277,
+    67278,
+    67279,
+    67280,
+    67281,
+    67282,
+    67283,
+    67284,
+    67285,
+    67286,
+    67287,
+    67288,
+    67289,
+    67290,
+    67291,
+    67292,
+    67293,
+    67294,
+    67295,
+    67296,
+    67297,
+    67298,
+    67299,
+    67300,
+    67301,
+    67302,
+    67303,
+    67304,
+    67305,
+    67306,
+    67307,
+    67308,
+    67309,
+    67310,
+    67311,
+    67312,
+    67313,
+    67314,
+    67315,
+    67316,
+    67317,
+    67318,
+    67319,
+    67320,
+    67321,
+    67322,
+    67323,
+    67324,
+    67325,
+    67326,
+    67327,
+    67328,
+    67329,
+    67330,
+    67331,
+    67332,
+    67333,
+    67334,
+    67335,
+    67336,
+    67337,
+    67338,
+    67339,
+    67340,
+    67341,
+    67342,
+    67343,
+    67344,
+    67345,
+    67346,
+    67347,
+    67348,
+    67349,
+    67350,
+    67351,
+    67352,
+    67353,
+    67354,
+    67355,
+    67356,
+    67357,
+    67358,
+    67359,
+    67360,
+    67361,
+    67362,
+    67363,
+    67364,
+    67365,
+    67366,
+    67368,
+    67369,
+    67370,
+    67371,
+    67372,
+    67373,
+    67374,
+    67375,
+    67376,
+    67377,
+    67378,
+    67379,
+    67380,
+    67381,
+    67382,
+    67383,
+    67384,
+    67385,
+    67386,
+    67387,
+    67388,
+    67389,
+    67390,
+    67391,
+    67392,
+    67393,
+    67394,
+    67395,
+    67396,
+    67397,
+    67398,
+    67399,
+    67400,
+    67401,
+    67402,
+    67403,
+    67404,
+    67405,
+    67406,
+    67407,
+    67408,
+    67409,
+    67410,
+    67411,
+    67412,
+    67413,
+    67414,
+    67415,
+    67416,
+    67417,
+    67418,
+    67419,
+    67420,
+    67421,
+    67422,
+    67423,
+    67424,
+    67425,
+    67426,
+    67427,
+    67428,
+    67429,
+    67430,
+    67431,
+    67432,
+    67433,
+    67434,
+    67435
+  ],
+  "assignments": [
+    {
+      "id": 66913,
+      "word": "政府",
+      "reading": "せいふ",
+      "meaning": "国の 政治を 進めるための 組織。",
+      "sourceId": 66913,
+      "image_asset": "assets/shiritori/general01-word-66913.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66914,
+      "word": "自身",
+      "reading": "じしん",
+      "meaning": "ほかの人ではなく、その人 自分。",
+      "sourceId": 66914,
+      "image_asset": "assets/shiritori/general01-word-66914.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66915,
+      "word": "一般",
+      "reading": "いっぱん",
+      "meaning": "特別な 場合に かぎらず、広く あてはまること。",
+      "sourceId": 66915,
+      "image_asset": "assets/shiritori/general01-word-66915.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66916,
+      "word": "子供",
+      "reading": "こども",
+      "meaning": "まだ おとなに なっていない、わかい ひと。",
+      "sourceId": 2285,
+      "image_asset": "assets/shiritori/wave7-word-2285.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66917,
+      "word": "州",
+      "reading": "しゅう",
+      "meaning": "国の 中を 分けた、地方の 行政区画。",
+      "sourceId": 66917,
+      "image_asset": "assets/shiritori/general01-repair-word-66917.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66918,
+      "word": "通常",
+      "reading": "つうじょう",
+      "meaning": "特別なことが ないときの、ふつうの 状態。",
+      "sourceId": 66918,
+      "image_asset": "assets/shiritori/general01-word-66918.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66919,
+      "word": "宗教",
+      "reading": "しゅうきょう",
+      "meaning": "神や 仏などを 信じ、教えに したがって 生きようとする いとなみ。",
+      "sourceId": 66919,
+      "image_asset": "assets/shiritori/general01-word-66919.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66920,
+      "word": "夫人",
+      "reading": "ふじん",
+      "meaning": "ほかの人の 妻を、うやまって よぶ ことば。",
+      "sourceId": 66920,
+      "image_asset": "assets/shiritori/general01-word-66920.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66923,
+      "word": "配当",
+      "reading": "はいとう",
+      "meaning": "会社などの 利益を、株主などに 分けて わたすことや、その お金。",
+      "sourceId": 66923,
+      "image_asset": "assets/shiritori/general01-word-66923.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66924,
+      "word": "従業員",
+      "reading": "じゅうぎょういん",
+      "meaning": "会社や 店などに 雇われて、仕事をする人。",
+      "sourceId": 66924,
+      "image_asset": "assets/shiritori/general01-word-66924.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66925,
+      "word": "公判",
+      "reading": "こうはん",
+      "meaning": "刑事事件について、裁判所が 公開の 場で 審理する 手続き。",
+      "sourceId": 66925,
+      "image_asset": "assets/shiritori/general01-word-66925.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66926,
+      "word": "製品",
+      "reading": "せいひん",
+      "meaning": "工場などで、材料を 加工して 作った 品物。",
+      "sourceId": 66926,
+      "image_asset": "assets/shiritori/general01-word-66926.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66927,
+      "word": "理論",
+      "reading": "りろん",
+      "meaning": "ものごとの しくみを、すじ道を 立てて 説明した 考え。",
+      "sourceId": 66927,
+      "image_asset": "assets/shiritori/general01-word-66927.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66928,
+      "word": "要素",
+      "reading": "ようそ",
+      "meaning": "あるものを つくり上げている、一つ一つの もと。",
+      "sourceId": 66928,
+      "image_asset": "assets/shiritori/general01-word-66928.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66929,
+      "word": "上記",
+      "reading": "じょうき",
+      "meaning": "文章の 中で、それより 前に 書いてあること。",
+      "sourceId": 66929,
+      "image_asset": "assets/shiritori/general01-word-66929.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66930,
+      "word": "発言",
+      "reading": "はつげん",
+      "meaning": "自分の 考えや 意見を、ことばにして 言うこと。",
+      "sourceId": 66930,
+      "image_asset": "assets/shiritori/general01-word-66930.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66931,
+      "word": "分析",
+      "reading": "ぶんせき",
+      "meaning": "ものごとを 細かく 分けて、しくみや 性質を 調べること。",
+      "sourceId": 66931,
+      "image_asset": "assets/shiritori/general01-word-66931.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66932,
+      "word": "週間",
+      "reading": "しゅうかん",
+      "meaning": "七日間を 一まとまりとして 数えるときの ことば。",
+      "sourceId": 67136,
+      "image_asset": "assets/shiritori/eiken-20261101-diagram-g5-w-week.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66933,
+      "word": "パーセント",
+      "reading": "ぱーせんと",
+      "meaning": "全体を 百としたとき、どれだけに あたるかを 示す 単位。",
+      "sourceId": 4637,
+      "image_asset": "assets/shiritori/wave10-word-4637.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66934,
+      "word": "状況",
+      "reading": "じょうきょう",
+      "meaning": "その場の できごとや、まわりの ようす。",
+      "sourceId": 66934,
+      "image_asset": "assets/shiritori/general01-word-66934.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66935,
+      "word": "日",
+      "reading": "ひ",
+      "meaning": "そらに でて、まわりを あかるく あたためる たいよう。",
+      "sourceId": 3261,
+      "image_asset": "assets/shiritori/wave7-word-3261.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66936,
+      "word": "文学",
+      "reading": "ぶんがく",
+      "meaning": "詩や 小説など、ことばで 気持ちや 世界を 表す 芸術。",
+      "sourceId": 66936,
+      "image_asset": "assets/shiritori/general01-word-66936.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66938,
+      "word": "蜂",
+      "reading": "はち",
+      "meaning": "六本の 足と 羽を 持つ 昆虫の 仲間。蜜を 集めるものや、針を 持つものがいる。",
+      "sourceId": 4422,
+      "image_asset": "assets/shiritori/wave9-word-4422.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66939,
+      "word": "晩",
+      "reading": "ばん",
+      "meaning": "ゆうがたの あとに くる、くらい じかん。",
+      "sourceId": 5767,
+      "image_asset": "assets/shiritori/complete-5866.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66940,
+      "word": "費用",
+      "reading": "ひよう",
+      "meaning": "何かを するために 必要な お金。",
+      "sourceId": 66940,
+      "image_asset": "assets/shiritori/general01-word-66940.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66941,
+      "word": "コミュニティ",
+      "reading": "こみゅにてぃ",
+      "meaning": "同じ 地域や 関心などで つながっている 人々の 集まり。",
+      "sourceId": 66941,
+      "image_asset": "assets/shiritori/general01-word-66941.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66942,
+      "word": "報告書",
+      "reading": "ほうこくしょ",
+      "meaning": "調べたことや、行ったことの 結果を まとめた 書類。",
+      "sourceId": 66942,
+      "image_asset": "assets/shiritori/general01-word-66942.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66943,
+      "word": "段階",
+      "reading": "だんかい",
+      "meaning": "ものごとが 進む 道すじの、一つ一つの 区切り。",
+      "sourceId": 66943,
+      "image_asset": "assets/shiritori/general01-word-66943.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66944,
+      "word": "法律",
+      "reading": "ほうりつ",
+      "meaning": "国会で 決める、社会の きまり。",
+      "sourceId": 66944,
+      "image_asset": "assets/shiritori/general01-word-66944.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66945,
+      "word": "今後",
+      "reading": "こんご",
+      "meaning": "今から あとのこと。",
+      "sourceId": 66945,
+      "image_asset": "assets/shiritori/general01-word-66945.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66946,
+      "word": "政策",
+      "reading": "せいさく",
+      "meaning": "国や 地方公共団体などが、目標を 実現するための 方針や 取り組み。",
+      "sourceId": 66946,
+      "image_asset": "assets/shiritori/general01-word-66946.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66947,
+      "word": "陸軍",
+      "reading": "りくぐん",
+      "meaning": "陸上の軍隊組織。",
+      "sourceId": 66947,
+      "image_asset": "assets/shiritori/general01-word-66947.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66948,
+      "word": "状態",
+      "reading": "じょうたい",
+      "meaning": "人や 物が、そのとき どうなっているかという ようす。",
+      "sourceId": 66948,
+      "image_asset": "assets/shiritori/general01-word-66948.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66949,
+      "word": "全部",
+      "reading": "ぜんぶ",
+      "meaning": "ひとつも のこさず、すべてを あわせたもの。",
+      "sourceId": 66949,
+      "image_asset": "assets/shiritori/general01-word-66949.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66950,
+      "word": "用意",
+      "reading": "ようい",
+      "meaning": "あとで つかうものを、さきに そろえておくこと。",
+      "sourceId": 66950,
+      "image_asset": "assets/shiritori/general01-word-66950.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66951,
+      "word": "階段",
+      "reading": "かいだん",
+      "meaning": "たかいところへ のぼりおりするための、だんだんに なった みち。",
+      "sourceId": 66951,
+      "image_asset": "assets/shiritori/general01-word-66951.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66952,
+      "word": "洗剤",
+      "reading": "せんざい",
+      "meaning": "服や 食器などの よごれを 落とすために 使うもの。",
+      "sourceId": 66952,
+      "image_asset": "assets/shiritori/general01-word-66952.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66954,
+      "word": "労働組合",
+      "reading": "ろうどうくみあい",
+      "meaning": "雇い主と交渉するために作られる従業員の組織。",
+      "sourceId": 66954,
+      "image_asset": "assets/shiritori/general01-word-66954.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66955,
+      "word": "定義",
+      "reading": "ていぎ",
+      "meaning": "ことばや 記号の 意味を、はっきり 決めて 説明すること。",
+      "sourceId": 66955,
+      "image_asset": "assets/shiritori/general01-word-66955.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66956,
+      "word": "貢献",
+      "reading": "こうけん",
+      "meaning": "みんなのためや、ある 目的のために 力を 尽くし、役に立つこと。",
+      "sourceId": 66956,
+      "image_asset": "assets/shiritori/general01-word-66956.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66957,
+      "word": "側",
+      "reading": "がわ",
+      "meaning": "ある範囲で中心あるいは基準の位置と相対する場所。",
+      "sourceId": 66957,
+      "image_asset": "assets/shiritori/general01-word-66957.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66958,
+      "word": "兵士",
+      "reading": "へいし",
+      "meaning": "軍に勤める男性または女性の下士官兵。",
+      "sourceId": 66958,
+      "image_asset": "assets/shiritori/general01-word-66958.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66959,
+      "word": "用語",
+      "reading": "ようご",
+      "meaning": "ある 分野や 場面で 使われる ことば。",
+      "sourceId": 66959,
+      "image_asset": "assets/shiritori/general01-word-66959.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66960,
+      "word": "思想",
+      "reading": "しそう",
+      "meaning": "人や 社会、世界についての、まとまった 考え。",
+      "sourceId": 66960,
+      "image_asset": "assets/shiritori/general01-word-66960.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66961,
+      "word": "力",
+      "reading": "ちから",
+      "meaning": "ものを うごかしたり、からだを ささえたりする はたらき。",
+      "sourceId": 66961,
+      "image_asset": "assets/shiritori/general01-word-66961.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66962,
+      "word": "放射",
+      "reading": "ほうしゃ",
+      "meaning": "中心源から外側へ広がる行為。",
+      "sourceId": 66962,
+      "image_asset": "assets/shiritori/general01-word-66962.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66963,
+      "word": "ビジネス",
+      "reading": "びじねす",
+      "meaning": "商品や サービスを 提供して、利益を 得る 仕事。",
+      "sourceId": 66963,
+      "image_asset": "assets/shiritori/general01-word-66963.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66964,
+      "word": "トレーニング",
+      "reading": "とれーにんぐ",
+      "meaning": "体力や 技能を 高めるために、くり返して 練習すること。",
+      "sourceId": 66964,
+      "image_asset": "assets/shiritori/general01-word-66964.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66965,
+      "word": "機関",
+      "reading": "きかん",
+      "meaning": "特定の目的のために設立され、統一された組織。",
+      "sourceId": 66965,
+      "image_asset": "assets/shiritori/general01-word-66965.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66966,
+      "word": "埃",
+      "reading": "ほこり",
+      "meaning": "空気中を ただよったり、物の 上に たまったりする、細かい ちり。",
+      "sourceId": 5075,
+      "image_asset": "assets/shiritori/wave7r1-word-5075.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66967,
+      "word": "シーズン",
+      "reading": "しーずん",
+      "meaning": "ある分野で特別の行事または活動が行われる1年の1時期。",
+      "sourceId": 66967,
+      "image_asset": "assets/shiritori/general01-word-66967.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66968,
+      "word": "訴訟",
+      "reading": "そしょう",
+      "meaning": "個人が法的救済を求める裁判手続きを総括的に指す言葉。",
+      "sourceId": 66968,
+      "image_asset": "assets/shiritori/general01-word-66968.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66969,
+      "word": "重要性",
+      "reading": "じゅうようせい",
+      "meaning": "どれほど 大切であるかという こと。",
+      "sourceId": 66969,
+      "image_asset": "assets/shiritori/general01-word-66969.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66970,
+      "word": "部門",
+      "reading": "ぶもん",
+      "meaning": "大きな 組織や 仕事を、役割によって 分けた 部分。",
+      "sourceId": 66970,
+      "image_asset": "assets/shiritori/general01-word-66970.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66971,
+      "word": "対応",
+      "reading": "たいおう",
+      "meaning": "相手や 状況に 合わせて、行動や 返事をすること。",
+      "sourceId": 66971,
+      "image_asset": "assets/shiritori/general01-word-66971.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66972,
+      "word": "連隊",
+      "reading": "れんたい",
+      "meaning": "師団より小さな陸軍部隊。",
+      "sourceId": 66972,
+      "image_asset": "assets/shiritori/general01-word-66972.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66973,
+      "word": "録音",
+      "reading": "ろくおん",
+      "meaning": "声や 音を、あとで 聞けるように 記録すること。",
+      "sourceId": 66973,
+      "image_asset": "assets/shiritori/general01-word-66973.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66974,
+      "word": "死",
+      "reading": "し",
+      "meaning": "死ぬことやこの世から旅立つこと。",
+      "sourceId": 66974,
+      "image_asset": "assets/shiritori/general01-word-66974.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66975,
+      "word": "党",
+      "reading": "とう",
+      "meaning": "政権を獲得する組織。",
+      "sourceId": 66975,
+      "image_asset": "assets/shiritori/general01-word-66975.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66976,
+      "word": "登録",
+      "reading": "とうろく",
+      "meaning": "名前などの 情報を、名簿や 仕組みに 書き入れて 記録すること。",
+      "sourceId": 66976,
+      "image_asset": "assets/shiritori/general01-word-66976.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66978,
+      "word": "将校",
+      "reading": "しょうこう",
+      "meaning": "軍で権力があり命令を下せる立場にある者。",
+      "sourceId": 66978,
+      "image_asset": "assets/shiritori/general01-word-66978.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66979,
+      "word": "刺激",
+      "reading": "しげき",
+      "meaning": "どんな刺激的な情報または出来事でも; 行動を起こす作用。",
+      "sourceId": 66979,
+      "image_asset": "assets/shiritori/general01-word-66979.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66980,
+      "word": "殺人",
+      "reading": "さつじん",
+      "meaning": "人間による不法な計画殺人。",
+      "sourceId": 66980,
+      "image_asset": "assets/shiritori/general01-word-66980.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66981,
+      "word": "政党",
+      "reading": "せいとう",
+      "meaning": "政権を獲得する組織。",
+      "sourceId": 66975,
+      "image_asset": "assets/shiritori/general01-word-66975.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 66982,
+      "word": "登場",
+      "reading": "とうじょう",
+      "meaning": "人が その場に 現れたり、物語に 出てきたりすること。",
+      "sourceId": 66982,
+      "image_asset": "assets/shiritori/general01-word-66982.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66983,
+      "word": "収入",
+      "reading": "しゅうにゅう",
+      "meaning": "仕事の 給料など、入ってくる お金。",
+      "sourceId": 66983,
+      "image_asset": "assets/shiritori/general01-word-66983.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66984,
+      "word": "影響力",
+      "reading": "えいきょうりょく",
+      "meaning": "特に力が名声その他に基づく人または出来事に影響を及ぼす力。",
+      "sourceId": 66984,
+      "image_asset": "assets/shiritori/general01-word-66984.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66985,
+      "word": "階",
+      "reading": "かい",
+      "meaning": "縦方向の1か所に、部屋が一つあるいは一組ある建造物。",
+      "sourceId": 66985,
+      "image_asset": "assets/shiritori/general01-word-66985.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66986,
+      "word": "苦痛",
+      "reading": "くつう",
+      "meaning": "肉体的な傷か疾患の症状。",
+      "sourceId": 66986,
+      "image_asset": "assets/shiritori/general01-word-66986.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66987,
+      "word": "比率",
+      "reading": "ひりつ",
+      "meaning": "2つの量の相対的な大きさ（通常、割合として表される）。",
+      "sourceId": 66987,
+      "image_asset": "assets/shiritori/general01-word-66987.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66988,
+      "word": "ロビー",
+      "reading": "ろびー",
+      "meaning": "大きい入り口、応接室または地域。",
+      "sourceId": 66988,
+      "image_asset": "assets/shiritori/general01-word-66988.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66989,
+      "word": "国際法",
+      "reading": "こくさいほう",
+      "meaning": "国家間の関係を支配する法典。",
+      "sourceId": 66989,
+      "image_asset": "assets/shiritori/general01-repair-word-66989.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66990,
+      "word": "乗組員",
+      "reading": "のりくみいん",
+      "meaning": "乗り物（船、飛行機など）に勤務する男と女。",
+      "sourceId": 66990,
+      "image_asset": "assets/shiritori/general01-word-66990.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66991,
+      "word": "議論",
+      "reading": "ぎろん",
+      "meaning": "ある議題を巡っての広範にわたる（しばしば相互的な）コミュニケーション。",
+      "sourceId": 66991,
+      "image_asset": "assets/shiritori/general01-word-66991.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66992,
+      "word": "動機",
+      "reading": "どうき",
+      "meaning": "有機体が望む目的に向かって行動を起こすように仕向ける心理学的特性; 行動の理由; 行動に目的と方向性を与える。",
+      "sourceId": 66992,
+      "image_asset": "assets/shiritori/general01-word-66992.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66993,
+      "word": "運用",
+      "reading": "うんよう",
+      "meaning": "何かを引き受ける行為; 何かをある目的で使うこと。",
+      "sourceId": 66993,
+      "image_asset": "assets/shiritori/general01-word-66993.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66994,
+      "word": "脅威",
+      "reading": "きょうい",
+      "meaning": "危険の源であるもの。",
+      "sourceId": 66994,
+      "image_asset": "assets/shiritori/general01-word-66994.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66995,
+      "word": "強度",
+      "reading": "きょうど",
+      "meaning": "（音響的放射または電磁放射などによる）伝達されるエネルギー量。",
+      "sourceId": 66995,
+      "image_asset": "assets/shiritori/general01-word-66995.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66996,
+      "word": "経済",
+      "reading": "けいざい",
+      "meaning": "ものや サービスを 作り、売り買いし、使う 社会の いとなみ。",
+      "sourceId": 66996,
+      "image_asset": "assets/shiritori/general01-word-66996.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 66997,
+      "word": "電話機",
+      "reading": "でんわき",
+      "meaning": "長い距離を転送されることができる音を電子信号に変換し、その後受信信号を音に再度変換する電子機器。",
+      "sourceId": 3814,
+      "image_asset": "assets/shiritori/wave2-d-word-3841.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 66998,
+      "word": "法",
+      "reading": "ほう",
+      "meaning": "行政当局によって課された規則の集まり。",
+      "sourceId": 66944,
+      "image_asset": "assets/shiritori/general01-word-66944.png",
+      "reason": "社会の公的な規則としての法律を表す。"
+    },
+    {
+      "id": 66999,
+      "word": "墓地",
+      "reading": "ぼち",
+      "meaning": "埋葬に使用される一区画の土地。",
+      "sourceId": 66999,
+      "image_asset": "assets/shiritori/general01-word-66999.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67000,
+      "word": "封鎖",
+      "reading": "ふうさ",
+      "meaning": "敵に対する重要性の若干の地域を孤立させる戦時措置。",
+      "sourceId": 67000,
+      "image_asset": "assets/shiritori/general01-word-67000.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67001,
+      "word": "工程",
+      "reading": "こうてい",
+      "meaning": "結果を達成しようと試みた、ある特定の行動の過程。",
+      "sourceId": 67001,
+      "image_asset": "assets/shiritori/general01-word-67001.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67002,
+      "word": "評価",
+      "reading": "ひょうか",
+      "meaning": "ものごとの よさや 価値を 調べて 判断すること。",
+      "sourceId": 67002,
+      "image_asset": "assets/shiritori/general01-word-67002.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67003,
+      "word": "医薬品",
+      "reading": "いやくひん",
+      "meaning": "病気の症状を治療する、予防する、または緩和する物。",
+      "sourceId": 1700,
+      "image_asset": "assets/shiritori/wave8-word-1700.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67004,
+      "word": "算出",
+      "reading": "さんしゅつ",
+      "meaning": "計算の手順; 数学的、論理的な方法で何かを決定すること。",
+      "sourceId": 67004,
+      "image_asset": "assets/shiritori/general01-word-67004.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67005,
+      "word": "職員",
+      "reading": "しょくいん",
+      "meaning": "会社や 役所、学校などの 組織で 働く人。",
+      "sourceId": 67005,
+      "image_asset": "assets/shiritori/general01-word-67005.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67006,
+      "word": "専門家",
+      "reading": "せんもんか",
+      "meaning": "ある 分野について、くわしい 知識や 技術を 持つ人。",
+      "sourceId": 67006,
+      "image_asset": "assets/shiritori/general01-word-67006.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67007,
+      "word": "対照",
+      "reading": "たいしょう",
+      "meaning": "比較された物事の対立点または相違点。",
+      "sourceId": 67007,
+      "image_asset": "assets/shiritori/general01-word-67007.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67008,
+      "word": "当局",
+      "reading": "とうきょく",
+      "meaning": "政治体の行政部門である組織。",
+      "sourceId": 67008,
+      "image_asset": "assets/shiritori/general01-word-67008.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67009,
+      "word": "マネージャー",
+      "reading": "まねーじゃー",
+      "meaning": "資産と支出を管理する人。",
+      "sourceId": 67009,
+      "image_asset": "assets/shiritori/general01-word-67009.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67010,
+      "word": "民主主義",
+      "reading": "みんしゅしゅぎ",
+      "meaning": "人々によって、または、彼らの選択代表によって政府を支持する人々の政治的な方向性。",
+      "sourceId": 67010,
+      "image_asset": "assets/shiritori/general01-word-67010.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67011,
+      "word": "装置",
+      "reading": "そうち",
+      "meaning": "特定の目的のために発明された道具。",
+      "sourceId": 67011,
+      "image_asset": "assets/shiritori/general01-word-67011.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67012,
+      "word": "製造",
+      "reading": "せいぞう",
+      "meaning": "何かを生み出す行為や過程。",
+      "sourceId": 67012,
+      "image_asset": "assets/shiritori/general01-word-67012.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67013,
+      "word": "伝説",
+      "reading": "でんせつ",
+      "meaning": "神話上のまたは超自然の存在または出来事についての物語。",
+      "sourceId": 67013,
+      "image_asset": "assets/shiritori/general01-word-67013.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67014,
+      "word": "方向",
+      "reading": "ほうこう",
+      "meaning": "人や 物が 向いている 方や、進んでいく 方。",
+      "sourceId": 67014,
+      "image_asset": "assets/shiritori/general01-word-67014.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67015,
+      "word": "アプローチ",
+      "reading": "あぷろーち",
+      "meaning": "問題または状況に対処することを目的とする考えまたは行動。",
+      "sourceId": 67015,
+      "image_asset": "assets/shiritori/general01-word-67015.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67016,
+      "word": "触覚",
+      "reading": "しょっかく",
+      "meaning": "外の物体または力が体との接触を通じて知覚される能力（特に手）。",
+      "sourceId": 67016,
+      "image_asset": "assets/shiritori/general01-word-67016.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67017,
+      "word": "銃弾",
+      "reading": "じゅうだん",
+      "meaning": "銃から発射される発射体。",
+      "sourceId": 67017,
+      "image_asset": "assets/shiritori/general01-repair-word-67017.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67018,
+      "word": "抽象",
+      "reading": "ちゅうしょう",
+      "meaning": "事例における共通の特性を抽象化することで一般概念を定型化する過程。",
+      "sourceId": 67018,
+      "image_asset": "assets/shiritori/general01-word-67018.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67019,
+      "word": "癌",
+      "reading": "がん",
+      "meaning": "異常な、またはコントロール不良の細胞分裂によって引き起こされる悪性の腫瘍や腫れ; リンパ系や血流を通して身体の他の部位に広がる。",
+      "sourceId": 67019,
+      "image_asset": "assets/shiritori/general01-word-67019.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67020,
+      "word": "質",
+      "reading": "しつ",
+      "meaning": "優秀さまたは価値の度合いまたは等級。",
+      "sourceId": 67020,
+      "image_asset": "assets/shiritori/general01-word-67020.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67021,
+      "word": "度",
+      "reading": "たび",
+      "meaning": "何かの出来事のための場合や1つの機会。",
+      "sourceId": 67021,
+      "image_asset": "assets/shiritori/general01-word-67021.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67022,
+      "word": "基金",
+      "reading": "ききん",
+      "meaning": "何かの目的のために取っておかれる資金。",
+      "sourceId": 67022,
+      "image_asset": "assets/shiritori/general01-word-67022.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67023,
+      "word": "具体",
+      "reading": "ぐたい",
+      "meaning": "そうでなければはっきりしない概念の具体的な表現。",
+      "sourceId": 67023,
+      "image_asset": "assets/shiritori/general01-word-67023.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67024,
+      "word": "滴",
+      "reading": "しずく",
+      "meaning": "水などが 小さな つぶに なって、したたり 落ちるもの。",
+      "sourceId": 2760,
+      "image_asset": "assets/shiritori/drop.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67025,
+      "word": "スーツ",
+      "reading": "すーつ",
+      "meaning": "すべてが同じ繊維と色の外着のための1セットの衣類（通常ジャケットとズボンまたはスカート）。",
+      "sourceId": 67025,
+      "image_asset": "assets/shiritori/general01-word-67025.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67026,
+      "word": "武装",
+      "reading": "ぶそう",
+      "meaning": "戦争に備えて武器を装備すること。",
+      "sourceId": 67026,
+      "image_asset": "assets/shiritori/general01-word-67026.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67027,
+      "word": "融資",
+      "reading": "ゆうし",
+      "meaning": "一時的な金銭の支給（一般に金利付きで）。",
+      "sourceId": 67027,
+      "image_asset": "assets/shiritori/general01-word-67027.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67028,
+      "word": "高校",
+      "reading": "こうこう",
+      "meaning": "中学校の あとに 学ぶ 学校。高等学校の 略。",
+      "sourceId": 67028,
+      "image_asset": "assets/shiritori/general01-word-67028.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67029,
+      "word": "診断",
+      "reading": "しんだん",
+      "meaning": "ある現象の性質や原因を特定すること。",
+      "sourceId": 67029,
+      "image_asset": "assets/shiritori/general01-word-67029.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67030,
+      "word": "宣告",
+      "reading": "せんこく",
+      "meaning": "権威ある宣言。",
+      "sourceId": 67030,
+      "image_asset": "assets/shiritori/general01-word-67030.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67031,
+      "word": "発展",
+      "reading": "はってん",
+      "meaning": "ある物が異なる段階（特により発達した、または成熟した段階）に次第に移行する過程。",
+      "sourceId": 67031,
+      "image_asset": "assets/shiritori/general01-word-67031.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67032,
+      "word": "プラント",
+      "reading": "ぷらんと",
+      "meaning": "工業の労働を行うための建物。",
+      "sourceId": 67032,
+      "image_asset": "assets/shiritori/general01-word-67032.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67033,
+      "word": "弁護士",
+      "reading": "べんごし",
+      "meaning": "弁護士の権限を与えられた専門家; 訴訟を行ったり法律上の助言を与えたりする。",
+      "sourceId": 67033,
+      "image_asset": "assets/shiritori/general01-word-67033.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67034,
+      "word": "民族",
+      "reading": "みんぞく",
+      "meaning": "ことばや 文化、歴史などの つながりを 共有する 人々の 集団。",
+      "sourceId": 67034,
+      "image_asset": "assets/shiritori/general01-word-67034.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67035,
+      "word": "洗浄",
+      "reading": "せんじょう",
+      "meaning": "何かをきれいにする行為。",
+      "sourceId": 67035,
+      "image_asset": "assets/shiritori/general01-word-67035.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67036,
+      "word": "戦力",
+      "reading": "せんりょく",
+      "meaning": "戦争で戦う能力に影響する人員と物的材料に関する能力。",
+      "sourceId": 67036,
+      "image_asset": "assets/shiritori/general01-word-67036.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67037,
+      "word": "文脈",
+      "reading": "ぶんみゃく",
+      "meaning": "言語の単位を取り囲み、解釈の決定を助ける会話。",
+      "sourceId": 67037,
+      "image_asset": "assets/shiritori/general01-word-67037.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67038,
+      "word": "オブザーバー",
+      "reading": "おぶざーばー",
+      "meaning": "何かに対して観察し意見を述べる専門家。",
+      "sourceId": 67038,
+      "image_asset": "assets/shiritori/general01-word-67038.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67039,
+      "word": "プロジェクト",
+      "reading": "ぷろじぇくと",
+      "meaning": "引き受けられたまたは試みられた1つの仕事。",
+      "sourceId": 67039,
+      "image_asset": "assets/shiritori/general01-word-67039.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67040,
+      "word": "学位",
+      "reading": "がくい",
+      "meaning": "受賞者が十分に教科課程を完了したことを表明する、単科大学または総合大学が授与する賞。",
+      "sourceId": 67040,
+      "image_asset": "assets/shiritori/general01-word-67040.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67041,
+      "word": "記念",
+      "reading": "きねん",
+      "meaning": "大切な できごとを 忘れないように、思い出として のこすこと。",
+      "sourceId": 67041,
+      "image_asset": "assets/shiritori/general01-word-67041.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67042,
+      "word": "資産",
+      "reading": "しさん",
+      "meaning": "所有されるもの; ある人物が所有する有形の所有物。",
+      "sourceId": 67042,
+      "image_asset": "assets/shiritori/general01-word-67042.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67043,
+      "word": "戸口",
+      "reading": "とぐち",
+      "meaning": "部屋や建物に入ったり出たりするときに通る壁の中の空間; ドアで閉めることのできる空間。",
+      "sourceId": 67043,
+      "image_asset": "assets/shiritori/general01-word-67043.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67044,
+      "word": "夏場",
+      "reading": "なつば",
+      "meaning": "1年で最も温暖な季節; 北半球では夏至から秋分にそれが広がる。",
+      "sourceId": 67044,
+      "image_asset": "assets/shiritori/general01-word-67044.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67045,
+      "word": "裸",
+      "reading": "はだか",
+      "meaning": "いかなる衣服または覆いも着けていない状態。",
+      "sourceId": 67045,
+      "image_asset": "assets/shiritori/general01-word-67045.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67046,
+      "word": "羊",
+      "reading": "ひつじ",
+      "meaning": "ヤギの同類で、羊毛で覆われたたいてい角を持つ反芻哺乳動物。",
+      "sourceId": 4670,
+      "image_asset": "assets/shiritori/wave2-e-word-4699.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67047,
+      "word": "夫妻",
+      "reading": "ふさい",
+      "meaning": "互いに結婚している2人。",
+      "sourceId": 67047,
+      "image_asset": "assets/shiritori/general01-word-67047.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67048,
+      "word": "離脱",
+      "reading": "りだつ",
+      "meaning": "離脱または脱退する行為。",
+      "sourceId": 67048,
+      "image_asset": "assets/shiritori/general01-word-67048.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67049,
+      "word": "一連",
+      "reading": "いちれん",
+      "meaning": "類似した事柄が、順番に置かれる、または、次々と起こること。",
+      "sourceId": 67049,
+      "image_asset": "assets/shiritori/general01-word-67049.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67050,
+      "word": "主権",
+      "reading": "しゅけん",
+      "meaning": "外部からのコントロールから自由な統治権。",
+      "sourceId": 67050,
+      "image_asset": "assets/shiritori/general01-word-67050.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67051,
+      "word": "審問",
+      "reading": "しんもん",
+      "meaning": "その証拠に基づいて事実に関する争点を決定し、結論に至る目的で、証拠が採用される（通常、裁判所によって行われる）手続き。",
+      "sourceId": 67051,
+      "image_asset": "assets/shiritori/general01-word-67051.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67052,
+      "word": "需要",
+      "reading": "じゅよう",
+      "meaning": "商品とサービスを購入する能力と願望。",
+      "sourceId": 67052,
+      "image_asset": "assets/shiritori/general01-word-67052.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67053,
+      "word": "生産",
+      "reading": "せいさん",
+      "meaning": "何かを生み出す行為や過程。",
+      "sourceId": 67012,
+      "image_asset": "assets/shiritori/general01-word-67012.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67054,
+      "word": "体系",
+      "reading": "たいけい",
+      "meaning": "統一された全体を構成する、個々に独立しているが互いに関係を持っている要素のグループ。",
+      "sourceId": 67054,
+      "image_asset": "assets/shiritori/general01-word-67054.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67055,
+      "word": "発達",
+      "reading": "はったつ",
+      "meaning": "ある物が異なる段階（特により発達した、または成熟した段階）に次第に移行する過程。",
+      "sourceId": 67031,
+      "image_asset": "assets/shiritori/general01-word-67031.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67056,
+      "word": "法廷",
+      "reading": "ほうてい",
+      "meaning": "司法業務を行うための集まり（1人以上の裁判官を含む）。",
+      "sourceId": 67056,
+      "image_asset": "assets/shiritori/general01-word-67056.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67057,
+      "word": "小説",
+      "reading": "しょうせつ",
+      "meaning": "散文で書かれた長い虚構の作品; 普通物語の形である。",
+      "sourceId": 67057,
+      "image_asset": "assets/shiritori/general01-word-67057.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67058,
+      "word": "接触",
+      "reading": "せっしょく",
+      "meaning": "密接な相互作用。",
+      "sourceId": 67058,
+      "image_asset": "assets/shiritori/general01-word-67058.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67059,
+      "word": "戦略",
+      "reading": "せんりゃく",
+      "meaning": "入念で体系的な行動計画。",
+      "sourceId": 67059,
+      "image_asset": "assets/shiritori/general01-word-67059.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67060,
+      "word": "対称",
+      "reading": "たいしょう",
+      "meaning": "形か関係の属性; 分割する線または面の反対側で、形が正確に対応していること。",
+      "sourceId": 67060,
+      "image_asset": "assets/shiritori/general01-word-67060.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67061,
+      "word": "大部分",
+      "reading": "だいぶぶん",
+      "meaning": "2より大きい部分によって生じる、あるいは、に関連した特性; 主要部。",
+      "sourceId": 67061,
+      "image_asset": "assets/shiritori/general01-word-67061.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67062,
+      "word": "同僚",
+      "reading": "どうりょう",
+      "meaning": "一緒に仕事をする仲間。",
+      "sourceId": 67062,
+      "image_asset": "assets/shiritori/general01-word-67062.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67063,
+      "word": "表現",
+      "reading": "ひょうげん",
+      "meaning": "言葉のない表現。",
+      "sourceId": 67063,
+      "image_asset": "assets/shiritori/general01-word-67063.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67064,
+      "word": "フィクション",
+      "reading": "ふぃくしょん",
+      "meaning": "想像に基づき、必ずしも事実に基づいていない文学作品。",
+      "sourceId": 67064,
+      "image_asset": "assets/shiritori/general01-word-67064.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67065,
+      "word": "世論",
+      "reading": "せろん",
+      "meaning": "大部分の人々によって共有される信念または感情; 人民の声。",
+      "sourceId": 67065,
+      "image_asset": "assets/shiritori/general01-word-67065.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67066,
+      "word": "秘書",
+      "reading": "ひしょ",
+      "meaning": "上司や組織のために通信・文書事務を処理する補佐役。",
+      "sourceId": 67066,
+      "image_asset": "assets/shiritori/general01-word-67066.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67067,
+      "word": "ポーチ",
+      "reading": "ぽーち",
+      "meaning": "建物の外にしばしばひさしのある玄関を作っている建築物。",
+      "sourceId": 67067,
+      "image_asset": "assets/shiritori/general01-word-67067.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67068,
+      "word": "無実",
+      "reading": "むじつ",
+      "meaning": "特定の犯罪や違反に対して無実なこと。",
+      "sourceId": 67068,
+      "image_asset": "assets/shiritori/general01-word-67068.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67069,
+      "word": "野外",
+      "reading": "やがい",
+      "meaning": "空気が閉ざされていない所。",
+      "sourceId": 67069,
+      "image_asset": "assets/shiritori/general01-word-67069.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67070,
+      "word": "海軍",
+      "reading": "かいぐん",
+      "meaning": "国に属し、海戦のためにある軍艦の編成。",
+      "sourceId": 67070,
+      "image_asset": "assets/shiritori/general01-word-67070.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67071,
+      "word": "カレッジ",
+      "reading": "かれっじ",
+      "meaning": "教育と学位授与のために創設された高等教育機関; しばしば総合大学の一部。",
+      "sourceId": 67071,
+      "image_asset": "assets/shiritori/general01-word-67071.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67072,
+      "word": "爆弾",
+      "reading": "ばくだん",
+      "meaning": "導火線をつけて特定の条件下で爆発するようにしてある爆発装置。",
+      "sourceId": 67072,
+      "image_asset": "assets/shiritori/general01-word-67072.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67073,
+      "word": "変動",
+      "reading": "へんどう",
+      "meaning": "変化する例; 変化する為替レートやマグニチュード。",
+      "sourceId": 67073,
+      "image_asset": "assets/shiritori/general01-word-67073.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67074,
+      "word": "魅力",
+      "reading": "みりょく",
+      "meaning": "興味を持たせ、喜ばせ、刺激を与える魅力。",
+      "sourceId": 67074,
+      "image_asset": "assets/shiritori/general01-word-67074.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67075,
+      "word": "候補者",
+      "reading": "こうほしゃ",
+      "meaning": "公職に立候補する政治家。",
+      "sourceId": 67075,
+      "image_asset": "assets/shiritori/general01-word-67075.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67076,
+      "word": "指導者",
+      "reading": "しどうしゃ",
+      "meaning": "人を支配したり、指導したり、人に影響を与えたりする人。",
+      "sourceId": 67076,
+      "image_asset": "assets/shiritori/general01-word-67076.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67077,
+      "word": "囚人",
+      "reading": "しゅうじん",
+      "meaning": "閉じこめられた人; 特に戦争捕虜。",
+      "sourceId": 67077,
+      "image_asset": "assets/shiritori/general01-word-67077.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67079,
+      "word": "暴力",
+      "reading": "ぼうりょく",
+      "meaning": "攻撃的行為（抵抗する人物に対して行うような）。",
+      "sourceId": 67079,
+      "image_asset": "assets/shiritori/general01-word-67079.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67080,
+      "word": "緑色",
+      "reading": "みどりいろ",
+      "meaning": "緑色の色または顔料; 生い茂る草の色に似ている。",
+      "sourceId": 5343,
+      "image_asset": "assets/shiritori/wave7r3-word-5343.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67081,
+      "word": "資本主義",
+      "reading": "しほんしゅぎ",
+      "meaning": "資本の個人所有に基づく経済制度。",
+      "sourceId": 67081,
+      "image_asset": "assets/shiritori/general01-repair-word-67081.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67082,
+      "word": "ミュージカル",
+      "reading": "みゅーじかる",
+      "meaning": "歌と踊りを交えた動作や会話が特徴の演劇あるいは映画作品。",
+      "sourceId": 67082,
+      "image_asset": "assets/shiritori/general01-word-67082.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67083,
+      "word": "家族計画",
+      "reading": "かぞくけいかく",
+      "meaning": "生まれる子供の数を制限すること。",
+      "sourceId": 67083,
+      "image_asset": "assets/shiritori/general01-word-67083.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67084,
+      "word": "想像力",
+      "reading": "そうぞうりょく",
+      "meaning": "物や出来事の心的イメージを形成する能力。",
+      "sourceId": 67084,
+      "image_asset": "assets/shiritori/general01-word-67084.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67085,
+      "word": "下痢",
+      "reading": "げり",
+      "meaning": "頻繁で水っぽい排便; 感染症、食中毒、大腸炎、あるいは胃腸腫瘍の症状かもしれない。",
+      "sourceId": 67085,
+      "image_asset": "assets/shiritori/general01-word-67085.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67086,
+      "word": "懸念",
+      "reading": "けねん",
+      "meaning": "不安を起こす物、あるいは人; 不幸の源。",
+      "sourceId": 67086,
+      "image_asset": "assets/shiritori/general01-word-67086.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67087,
+      "word": "視覚",
+      "reading": "しかく",
+      "meaning": "見る能力; 視覚の機能。",
+      "sourceId": 67087,
+      "image_asset": "assets/shiritori/general01-word-67087.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67088,
+      "word": "試験",
+      "reading": "しけん",
+      "meaning": "何かを試みて、そのことに関する情報を得る。",
+      "sourceId": 67088,
+      "image_asset": "assets/shiritori/general01-word-67088.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67089,
+      "word": "賞",
+      "reading": "しょう",
+      "meaning": "コンテストまたは競争の勝利または優勢のために、または、宝くじに勝つと与えられる何か。",
+      "sourceId": 67089,
+      "image_asset": "assets/shiritori/general01-word-67089.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67090,
+      "word": "紳士",
+      "reading": "しんし",
+      "meaning": "洗練された男。",
+      "sourceId": 67090,
+      "image_asset": "assets/shiritori/general01-word-67090.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67091,
+      "word": "大使",
+      "reading": "たいし",
+      "meaning": "最高位の外交官; ある国から別の国への代表として信任される。",
+      "sourceId": 67091,
+      "image_asset": "assets/shiritori/general01-word-67091.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67092,
+      "word": "バレエ",
+      "reading": "ばれえ",
+      "meaning": "訓練されたダンサーによって音楽に合わせて演じられた演劇上演。",
+      "sourceId": 67092,
+      "image_asset": "assets/shiritori/general01-word-67092.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67093,
+      "word": "分布",
+      "reading": "ぶんぷ",
+      "meaning": "ある変数の値の出現に関する観測度数または理論度数を示す、これらの値の配列。",
+      "sourceId": 67093,
+      "image_asset": "assets/shiritori/general01-word-67093.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67094,
+      "word": "保険",
+      "reading": "ほけん",
+      "meaning": "損失の場合に償還する契約; 危険を心配して保険会社に前納した人々または会社に支払われる。",
+      "sourceId": 67094,
+      "image_asset": "assets/shiritori/general01-word-67094.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67095,
+      "word": "牧師",
+      "reading": "ぼくし",
+      "meaning": "宗教的礼拝を行う権威を有する人。",
+      "sourceId": 67095,
+      "image_asset": "assets/shiritori/general01-word-67095.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67096,
+      "word": "観点",
+      "reading": "かんてん",
+      "meaning": "物を見る精神的な立場。",
+      "sourceId": 67096,
+      "image_asset": "assets/shiritori/general01-word-67096.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67097,
+      "word": "欠如",
+      "reading": "けつじょ",
+      "meaning": "欠けているか入手できないものを必要とする状態。",
+      "sourceId": 67097,
+      "image_asset": "assets/shiritori/general01-word-67097.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67098,
+      "word": "決断",
+      "reading": "けつだん",
+      "meaning": "何かについて心を決める行為。",
+      "sourceId": 67098,
+      "image_asset": "assets/shiritori/general01-word-67098.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67099,
+      "word": "殺害",
+      "reading": "さつがい",
+      "meaning": "人間による不法な計画殺人。",
+      "sourceId": 66980,
+      "image_asset": "assets/shiritori/general01-word-66980.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67100,
+      "word": "手法",
+      "reading": "しゅほう",
+      "meaning": "何かを行う方法、特に体系的なもの; 秩序だって理論的な（通常、段階を進んでいく）方法を意味する。",
+      "sourceId": 67100,
+      "image_asset": "assets/shiritori/general01-word-67100.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67101,
+      "word": "所得",
+      "reading": "しょとく",
+      "meaning": "特定の期間に生じる（労働による、または労働によらない）財務利益。",
+      "sourceId": 66983,
+      "image_asset": "assets/shiritori/general01-word-66983.png",
+      "reason": "入ってくる金銭という意味を共有。"
+    },
+    {
+      "id": 67102,
+      "word": "人種",
+      "reading": "じんしゅ",
+      "meaning": "同じ遺伝的系統に属すると信じられる人々。",
+      "sourceId": 67102,
+      "image_asset": "assets/shiritori/general01-word-67102.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67103,
+      "word": "センター",
+      "reading": "せんたー",
+      "meaning": "キャッチャーの真っ直ぐ前の外野部分。",
+      "sourceId": 67103,
+      "image_asset": "assets/shiritori/general01-word-67103.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67104,
+      "word": "戦闘",
+      "reading": "せんとう",
+      "meaning": "2つの軍隊間で戦われる戦闘。",
+      "sourceId": 67104,
+      "image_asset": "assets/shiritori/general01-word-67104.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67105,
+      "word": "犯罪",
+      "reading": "はんざい",
+      "meaning": "法律で罰せられる行為; 通常悪い行為と見なされる。",
+      "sourceId": 67105,
+      "image_asset": "assets/shiritori/general01-word-67105.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67106,
+      "word": "雰囲気",
+      "reading": "ふんいき",
+      "meaning": "特定の環境または周囲の影響。",
+      "sourceId": 67106,
+      "image_asset": "assets/shiritori/general01-word-67106.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67107,
+      "word": "平均",
+      "reading": "へいきん",
+      "meaning": "分布の位置を表す統計値。",
+      "sourceId": 67107,
+      "image_asset": "assets/shiritori/general01-word-67107.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67108,
+      "word": "方針",
+      "reading": "ほうしん",
+      "meaning": "個人あるいは社会的グループによって採用されている計画あるいは活動。",
+      "sourceId": 67108,
+      "image_asset": "assets/shiritori/general01-word-67108.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67109,
+      "word": "訪問",
+      "reading": "ほうもん",
+      "meaning": "人や場所、物などを見るためにちょっと行く行為。",
+      "sourceId": 67109,
+      "image_asset": "assets/shiritori/general01-word-67109.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67110,
+      "word": "ボックス",
+      "reading": "ぼっくす",
+      "meaning": "劇場の個人席や特別席で少人数のグループが演技を観られるようにしたもの。",
+      "sourceId": 67110,
+      "image_asset": "assets/shiritori/general01-word-67110.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67111,
+      "word": "迷信",
+      "reading": "めいしん",
+      "meaning": "無知や恐怖から生まれた不合理な信仰。",
+      "sourceId": 67111,
+      "image_asset": "assets/shiritori/general01-word-67111.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67112,
+      "word": "盲目",
+      "reading": "もうもく",
+      "meaning": "視覚がないこと。",
+      "sourceId": 67112,
+      "image_asset": "assets/shiritori/general01-word-67112.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67113,
+      "word": "様式",
+      "reading": "ようしき",
+      "meaning": "何かがされる方法またはそれが起こる方法。",
+      "sourceId": 67113,
+      "image_asset": "assets/shiritori/general01-word-67113.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67114,
+      "word": "リーダー",
+      "reading": "りーだー",
+      "meaning": "人を支配したり、指導したり、人に影響を与えたりする人。",
+      "sourceId": 67076,
+      "image_asset": "assets/shiritori/general01-word-67076.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67115,
+      "word": "学長",
+      "reading": "がくちょう",
+      "meaning": "大学の最高管理責任者。",
+      "sourceId": 67115,
+      "image_asset": "assets/shiritori/general01-word-67115.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67116,
+      "word": "狂乱",
+      "reading": "きょうらん",
+      "meaning": "暴力的な精神的動揺状態。",
+      "sourceId": 67116,
+      "image_asset": "assets/shiritori/general01-word-67116.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67117,
+      "word": "少女",
+      "reading": "しょうじょ",
+      "meaning": "若々しい女の人。",
+      "sourceId": 67117,
+      "image_asset": "assets/shiritori/general01-word-67117.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67118,
+      "word": "推奨",
+      "reading": "すいしょう",
+      "meaning": "望ましいものとして推薦される（行動方針としての）もの。",
+      "sourceId": 67118,
+      "image_asset": "assets/shiritori/general01-word-67118.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67119,
+      "word": "正当化",
+      "reading": "せいとうか",
+      "meaning": "理論で弁護し、説明し、または言い分を述べる行為。",
+      "sourceId": 67119,
+      "image_asset": "assets/shiritori/general01-word-67119.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67120,
+      "word": "物語",
+      "reading": "ものがたり",
+      "meaning": "ひとや どうぶつなどが でてくる、できごとを つづった おはなし。",
+      "sourceId": 67120,
+      "image_asset": "assets/shiritori/general01-word-67120.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67121,
+      "word": "要求",
+      "reading": "ようきゅう",
+      "meaning": "緊急の、または、威圧的な要求。",
+      "sourceId": 67121,
+      "image_asset": "assets/shiritori/general01-word-67121.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67122,
+      "word": "療法",
+      "reading": "りょうほう",
+      "meaning": "病気を治療したり痛みを和らげる薬または治療。",
+      "sourceId": 67122,
+      "image_asset": "assets/shiritori/general01-word-67122.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67123,
+      "word": "経営者",
+      "reading": "けいえいしゃ",
+      "meaning": "（法的占有者である）企業を所有する人。",
+      "sourceId": 67123,
+      "image_asset": "assets/shiritori/general01-word-67123.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67124,
+      "word": "重量",
+      "reading": "じゅうりょう",
+      "meaning": "重力による質量によってはたらきかけられた垂直の力。",
+      "sourceId": 67124,
+      "image_asset": "assets/shiritori/general01-word-67124.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67125,
+      "word": "登録者",
+      "reading": "とうろくしゃ",
+      "meaning": "以前に（他者と共に）登録を済ませている人（そしてそのある権利を得ている人）。",
+      "sourceId": 67125,
+      "image_asset": "assets/shiritori/general01-word-67125.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67126,
+      "word": "有権者",
+      "reading": "ゆうけんしゃ",
+      "meaning": "法的に選挙権がある住民。",
+      "sourceId": 67126,
+      "image_asset": "assets/shiritori/general01-word-67126.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67127,
+      "word": "会計年度",
+      "reading": "かいけいねんど",
+      "meaning": "12カ月の会計年度。",
+      "sourceId": 67127,
+      "image_asset": "assets/shiritori/general01-word-67127.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67128,
+      "word": "最小限",
+      "reading": "さいしょうげん",
+      "meaning": "可能な限り最も小さい量。",
+      "sourceId": 67128,
+      "image_asset": "assets/shiritori/general01-word-67128.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67129,
+      "word": "イントネーション",
+      "reading": "いんとねーしょん",
+      "meaning": "声の高さの高低。",
+      "sourceId": 67129,
+      "image_asset": "assets/shiritori/general01-word-67129.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67130,
+      "word": "感",
+      "reading": "かん",
+      "meaning": "感動の、感情的な状態を経験すること。",
+      "sourceId": 67130,
+      "image_asset": "assets/shiritori/general01-word-67130.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67131,
+      "word": "キス",
+      "reading": "きす",
+      "meaning": "唇で愛撫することの行為（またはその例）。",
+      "sourceId": 67131,
+      "image_asset": "assets/shiritori/general01-word-67131.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67132,
+      "word": "僧",
+      "reading": "そう",
+      "meaning": "非キリスト教の宗教で宗教的義務と式典を行う人。",
+      "sourceId": 930,
+      "image_asset": "assets/shiritori/wave7-word-930.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67133,
+      "word": "端",
+      "reading": "はし",
+      "meaning": "長さのある何かのどちらかの先端。",
+      "sourceId": 67133,
+      "image_asset": "assets/shiritori/general01-word-67133.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67134,
+      "word": "九月",
+      "reading": "くがつ",
+      "meaning": "8月の後、10月の前の月。",
+      "sourceId": 87649,
+      "image_asset": "assets/shiritori/eiken-20261101-diagram-g5-w-september.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67135,
+      "word": "資金",
+      "reading": "しきん",
+      "meaning": "これからの資産形成に役立てられる資産。",
+      "sourceId": 67135,
+      "image_asset": "assets/shiritori/general01-word-67135.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67137,
+      "word": "主婦",
+      "reading": "しゅふ",
+      "meaning": "夫が家庭の生計を稼ぐ間家事をする妻。",
+      "sourceId": 67137,
+      "image_asset": "assets/shiritori/general01-word-67137.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67138,
+      "word": "事態",
+      "reading": "じたい",
+      "meaning": "一般的な状態; 与えられた時における様々な状況の複合したもの。",
+      "sourceId": 67138,
+      "image_asset": "assets/shiritori/general01-word-67138.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67139,
+      "word": "大尉",
+      "reading": "たいい",
+      "meaning": "少佐より下で、中尉より上のランクを持つ将校。",
+      "sourceId": 67139,
+      "image_asset": "assets/shiritori/general01-word-67139.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67140,
+      "word": "強さ",
+      "reading": "つよさ",
+      "meaning": "ちからや おとなどが、どれくらい つよいかという こと。",
+      "sourceId": 67140,
+      "image_asset": "assets/shiritori/general01-word-67140.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67141,
+      "word": "同意",
+      "reading": "どうい",
+      "meaning": "何かをする許可。",
+      "sourceId": 67141,
+      "image_asset": "assets/shiritori/general01-word-67141.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67142,
+      "word": "兵器",
+      "reading": "へいき",
+      "meaning": "戦いまたは狩猟に使われる機材または道具。",
+      "sourceId": 67142,
+      "image_asset": "assets/shiritori/general01-word-67142.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67143,
+      "word": "無限",
+      "reading": "むげん",
+      "meaning": "無限である性質; 限度や限界のない。",
+      "sourceId": 67143,
+      "image_asset": "assets/shiritori/general01-word-67143.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67144,
+      "word": "イニング",
+      "reading": "いにんぐ",
+      "meaning": "それぞれのチームが打撃の順番を持つ9つにわかれた区分の1つ。",
+      "sourceId": 67144,
+      "image_asset": "assets/shiritori/general01-word-67144.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67145,
+      "word": "回答",
+      "reading": "かいとう",
+      "meaning": "質問、要求、批判または告発に返答するために作成される（話されるまたは書かれる）声明。",
+      "sourceId": 67145,
+      "image_asset": "assets/shiritori/general01-word-67145.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67146,
+      "word": "戯曲",
+      "reading": "ぎきょく",
+      "meaning": "ステージでの俳優による演技を目的とする劇の仕事。",
+      "sourceId": 67146,
+      "image_asset": "assets/shiritori/general01-word-67146.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67147,
+      "word": "軍隊",
+      "reading": "ぐんたい",
+      "meaning": "国家の軍事部隊。",
+      "sourceId": 67147,
+      "image_asset": "assets/shiritori/general01-word-67147.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67148,
+      "word": "警告",
+      "reading": "けいこく",
+      "meaning": "差し迫ったものについての警告的なアドバイス（特に差し迫った危険または他の不愉快さ）。",
+      "sourceId": 67148,
+      "image_asset": "assets/shiritori/general01-word-67148.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67149,
+      "word": "進展",
+      "reading": "しんてん",
+      "meaning": "漸進的な改善または成長または発展。",
+      "sourceId": 67149,
+      "image_asset": "assets/shiritori/general01-word-67149.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67150,
+      "word": "スタイル",
+      "reading": "すたいる",
+      "meaning": "何かがされる方法またはそれが起こる方法。",
+      "sourceId": 67113,
+      "image_asset": "assets/shiritori/general01-word-67113.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67151,
+      "word": "損失",
+      "reading": "そんしつ",
+      "meaning": "紛失したもの。",
+      "sourceId": 67151,
+      "image_asset": "assets/shiritori/general01-word-67151.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67152,
+      "word": "増額",
+      "reading": "ぞうがく",
+      "meaning": "増加を生じている変化。",
+      "sourceId": 67152,
+      "image_asset": "assets/shiritori/general01-word-67152.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67153,
+      "word": "束の間",
+      "reading": "つかのま",
+      "meaning": "不確定の短時間。",
+      "sourceId": 67153,
+      "image_asset": "assets/shiritori/general01-word-67153.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67154,
+      "word": "討論",
+      "reading": "とうろん",
+      "meaning": "試案あるいは提案に対して賛否の理由を述べる議論。",
+      "sourceId": 67154,
+      "image_asset": "assets/shiritori/general01-word-67154.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67155,
+      "word": "判断",
+      "reading": "はんだん",
+      "meaning": "何かを判断することによって形成された意見。",
+      "sourceId": 67155,
+      "image_asset": "assets/shiritori/general01-word-67155.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67156,
+      "word": "バイブル",
+      "reading": "ばいぶる",
+      "meaning": "キリスト教の聖典。",
+      "sourceId": 67156,
+      "image_asset": "assets/shiritori/general01-word-67156.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67157,
+      "word": "負傷",
+      "reading": "ふしょう",
+      "meaning": "暴行、事故または骨折などによって引き起こされる体への肉体的ダメージ。",
+      "sourceId": 67157,
+      "image_asset": "assets/shiritori/general01-word-67157.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67158,
+      "word": "返答",
+      "reading": "へんとう",
+      "meaning": "質問、要求、批判または告発に返答するために作成される（話されるまたは書かれる）声明。",
+      "sourceId": 67145,
+      "image_asset": "assets/shiritori/general01-word-67145.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67159,
+      "word": "報道",
+      "reading": "ほうどう",
+      "meaning": "ニュースの短い説明。",
+      "sourceId": 67159,
+      "image_asset": "assets/shiritori/general01-word-67159.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67160,
+      "word": "命令",
+      "reading": "めいれい",
+      "meaning": "（例えば、軍隊または法執行官など）上司に与えられたの命令で、従わなければならないもの。",
+      "sourceId": 67160,
+      "image_asset": "assets/shiritori/general01-word-67160.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67161,
+      "word": "役員",
+      "reading": "やくいん",
+      "meaning": "任命される、任務に選出され、また信頼を受ける地位を占める誰か。",
+      "sourceId": 67161,
+      "image_asset": "assets/shiritori/general01-word-67161.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67162,
+      "word": "役柄",
+      "reading": "やくがら",
+      "meaning": "ある特定の社会の場である人の正常または一般の行為。",
+      "sourceId": 67162,
+      "image_asset": "assets/shiritori/general01-word-67162.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67163,
+      "word": "優先",
+      "reading": "ゆうせん",
+      "meaning": "重要性もしくは緊急性の順番に基づいて確立された地位。",
+      "sourceId": 67163,
+      "image_asset": "assets/shiritori/general01-word-67163.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67164,
+      "word": "ユーモア",
+      "reading": "ゆーもあ",
+      "meaning": "巧妙さ、話術または不合理さが笑いを引き起こすメッセージ。",
+      "sourceId": 67164,
+      "image_asset": "assets/shiritori/general01-word-67164.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67165,
+      "word": "論争",
+      "reading": "ろんそう",
+      "meaning": "議論のある言語行為; 強い意見の相違がある論争。",
+      "sourceId": 67165,
+      "image_asset": "assets/shiritori/general01-word-67165.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67166,
+      "word": "応募者",
+      "reading": "おうぼしゃ",
+      "meaning": "援助や雇用や許可を求める人。",
+      "sourceId": 67166,
+      "image_asset": "assets/shiritori/general01-word-67166.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67167,
+      "word": "核兵器",
+      "reading": "かくへいき",
+      "meaning": "兵器の爆発力は核反応から引き出される。",
+      "sourceId": 67167,
+      "image_asset": "assets/shiritori/general01-word-67167.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67168,
+      "word": "水準",
+      "reading": "すいじゅん",
+      "meaning": "強さまたは量または品質の階級の位置。",
+      "sourceId": 67168,
+      "image_asset": "assets/shiritori/general01-word-67168.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67169,
+      "word": "ストライキ",
+      "reading": "すとらいき",
+      "meaning": "低賃金や労働条件の悪さに抗議して作業員が集団で労働を拒否すること。",
+      "sourceId": 67169,
+      "image_asset": "assets/shiritori/general01-word-67169.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67170,
+      "word": "説教",
+      "reading": "せっきょう",
+      "meaning": "宗教的本質の演説（通常、礼拝中に行われる）。",
+      "sourceId": 67170,
+      "image_asset": "assets/shiritori/general01-word-67170.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67171,
+      "word": "中隊",
+      "reading": "ちゅうたい",
+      "meaning": "小さな軍事部隊; 普通は2、3個の小隊から成る。",
+      "sourceId": 67171,
+      "image_asset": "assets/shiritori/general01-word-67171.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67172,
+      "word": "調達",
+      "reading": "ちょうたつ",
+      "meaning": "何かを手に入れる行為。",
+      "sourceId": 67172,
+      "image_asset": "assets/shiritori/general01-word-67172.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67173,
+      "word": "不動産",
+      "reading": "ふどうさん",
+      "meaning": "家や土地から成る財産。",
+      "sourceId": 67173,
+      "image_asset": "assets/shiritori/general01-word-67173.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67174,
+      "word": "領域",
+      "reading": "りょういき",
+      "meaning": "境界が不確かな特定の地理的地域（通常いくつかの特別な目的にかなうか、その住民、文化または地理学によって特徴付けられる）。",
+      "sourceId": 67174,
+      "image_asset": "assets/shiritori/general01-word-67174.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67175,
+      "word": "良識",
+      "reading": "りょうしき",
+      "meaning": "健全で実用的な判断。",
+      "sourceId": 67175,
+      "image_asset": "assets/shiritori/general01-word-67175.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67176,
+      "word": "オリンピック",
+      "reading": "おりんぴっく",
+      "meaning": "選ばれた国で4年に1度開催される、古代のゲームを現代に復活させたもの。",
+      "sourceId": 67176,
+      "image_asset": "assets/shiritori/general01-repair-word-67176.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67177,
+      "word": "主人公",
+      "reading": "しゅじんこう",
+      "meaning": "劇、映画、小説、詩の主要な登場人物。",
+      "sourceId": 67177,
+      "image_asset": "assets/shiritori/general01-word-67177.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67178,
+      "word": "ミーティング",
+      "reading": "みーてぃんぐ",
+      "meaning": "公式に準備された集まり。",
+      "sourceId": 67178,
+      "image_asset": "assets/shiritori/general01-word-67178.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67179,
+      "word": "協同組合",
+      "reading": "きょうどうくみあい",
+      "meaning": "商品や事業を作り出して流通させ、所有者の利益のために経営する、共同で所有された営利企業（通常、農民または消費者によって組織される）。",
+      "sourceId": 67179,
+      "image_asset": "assets/shiritori/general01-word-67179.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67180,
+      "word": "市",
+      "reading": "し",
+      "meaning": "州の認可によって設立された法人組織の行政区域。",
+      "sourceId": 67180,
+      "image_asset": "assets/shiritori/general01-repair-word-67180.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67181,
+      "word": "鬱",
+      "reading": "うつ",
+      "meaning": "力量不足であるという悲観的な感情と、非活動的な意気消沈が特徴の精神状態。",
+      "sourceId": 67181,
+      "image_asset": "assets/shiritori/general01-word-67181.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67182,
+      "word": "自己",
+      "reading": "じこ",
+      "meaning": "あなた自身のアイデンティティの意識。",
+      "sourceId": 66914,
+      "image_asset": "assets/shiritori/general01-word-66914.png",
+      "reason": "自分自身を指す語義を共有。"
+    },
+    {
+      "id": 67183,
+      "word": "スト",
+      "reading": "すと",
+      "meaning": "低賃金や労働条件の悪さに抗議して作業員が集団で労働を拒否すること。",
+      "sourceId": 67169,
+      "image_asset": "assets/shiritori/general01-word-67169.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67185,
+      "word": "家庭",
+      "reading": "かてい",
+      "meaning": "ともに生活する社会的構成単位。",
+      "sourceId": 67185,
+      "image_asset": "assets/shiritori/general01-word-67185.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67186,
+      "word": "固執",
+      "reading": "こしつ",
+      "meaning": "宗教や主義、政党への心からの支持。",
+      "sourceId": 67186,
+      "image_asset": "assets/shiritori/general01-word-67186.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67187,
+      "word": "資本",
+      "reading": "しほん",
+      "meaning": "これからの資産形成に役立てられる資産。",
+      "sourceId": 67135,
+      "image_asset": "assets/shiritori/general01-word-67135.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67188,
+      "word": "事件",
+      "reading": "じけん",
+      "meaning": "単一の顕著な出来事。",
+      "sourceId": 67188,
+      "image_asset": "assets/shiritori/general01-word-67188.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67189,
+      "word": "錠",
+      "reading": "じょう",
+      "meaning": "ドアや引き出しにぴったりついて、しっかりと閉めたままにしておく留め具。",
+      "sourceId": 67189,
+      "image_asset": "assets/shiritori/general01-word-67189.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67190,
+      "word": "投資",
+      "reading": "とうし",
+      "meaning": "投資する行為; 利益を期待して、事業に金銭や資本を投資すること。",
+      "sourceId": 67190,
+      "image_asset": "assets/shiritori/general01-word-67190.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67191,
+      "word": "トライ",
+      "reading": "とらい",
+      "meaning": "何かをしよう、または達成しようとするまじめで良心的な行動。",
+      "sourceId": 67191,
+      "image_asset": "assets/shiritori/general01-word-67191.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67192,
+      "word": "動詞",
+      "reading": "どうし",
+      "meaning": "動作、発生、または存在の状態を示す内容語。",
+      "sourceId": 67192,
+      "image_asset": "assets/shiritori/general01-word-67192.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67193,
+      "word": "ハウス",
+      "reading": "はうす",
+      "meaning": "1家族以上のための居住棟として機能する住居。",
+      "sourceId": 199,
+      "image_asset": "assets/shiritori/common-word-200.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67194,
+      "word": "判事",
+      "reading": "はんじ",
+      "meaning": "裁判所の前にもたらされた問題を決定する権限を与えられた公務員。",
+      "sourceId": 67194,
+      "image_asset": "assets/shiritori/general01-word-67194.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67195,
+      "word": "悲劇",
+      "reading": "ひげき",
+      "meaning": "大損害や不幸をもたらす出来事。",
+      "sourceId": 67195,
+      "image_asset": "assets/shiritori/general01-word-67195.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67196,
+      "word": "飛行",
+      "reading": "ひこう",
+      "meaning": "飛行機で旅をすること。",
+      "sourceId": 67196,
+      "image_asset": "assets/shiritori/general01-word-67196.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67197,
+      "word": "物理",
+      "reading": "ぶつり",
+      "meaning": "物質とエネルギーとその相互作用の科学。",
+      "sourceId": 67197,
+      "image_asset": "assets/shiritori/general01-word-67197.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67198,
+      "word": "メイド",
+      "reading": "めいど",
+      "meaning": "女性の召使い。",
+      "sourceId": 67198,
+      "image_asset": "assets/shiritori/general01-word-67198.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67199,
+      "word": "野心",
+      "reading": "やしん",
+      "meaning": "大事にしている願望。",
+      "sourceId": 67199,
+      "image_asset": "assets/shiritori/general01-word-67199.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67200,
+      "word": "離婚",
+      "reading": "りこん",
+      "meaning": "結婚の法的解消。",
+      "sourceId": 67200,
+      "image_asset": "assets/shiritori/general01-word-67200.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67201,
+      "word": "利用",
+      "reading": "りよう",
+      "meaning": "何かを引き受ける行為; 何かをある目的で使うこと。",
+      "sourceId": 66993,
+      "image_asset": "assets/shiritori/general01-word-66993.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67202,
+      "word": "愛国",
+      "reading": "あいこく",
+      "meaning": "国を愛すること、またそのために進んで犠牲になること。",
+      "sourceId": 67202,
+      "image_asset": "assets/shiritori/general01-word-67202.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67203,
+      "word": "改善",
+      "reading": "かいぜん",
+      "meaning": "何かを改善する行為。",
+      "sourceId": 67203,
+      "image_asset": "assets/shiritori/general01-word-67203.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67204,
+      "word": "革命",
+      "reading": "かくめい",
+      "meaning": "統治されている者達によって政府を打倒すること。",
+      "sourceId": 67204,
+      "image_asset": "assets/shiritori/general01-word-67204.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67205,
+      "word": "給付",
+      "reading": "きゅうふ",
+      "meaning": "必要時に出される財政援助。",
+      "sourceId": 67205,
+      "image_asset": "assets/shiritori/general01-word-67205.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67206,
+      "word": "議長",
+      "reading": "ぎちょう",
+      "meaning": "一組織内の会議の主宰者。",
+      "sourceId": 67206,
+      "image_asset": "assets/shiritori/general01-word-67206.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67207,
+      "word": "港湾",
+      "reading": "こうわん",
+      "meaning": "船が貨物を積み込んだり、荷揚げしたり保護港。",
+      "sourceId": 5346,
+      "image_asset": "assets/shiritori/wave4-word-5347.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67208,
+      "word": "黒人",
+      "reading": "こくじん",
+      "meaning": "アフリカ出身の（あるいは祖先がアフリカ出身の）肌の黒い人。",
+      "sourceId": 67208,
+      "image_asset": "assets/shiritori/general01-word-67208.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67209,
+      "word": "強盗",
+      "reading": "ごうとう",
+      "meaning": "人から暴力で脅して奪う泥棒。",
+      "sourceId": 67209,
+      "image_asset": "assets/shiritori/general01-word-67209.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67210,
+      "word": "採決",
+      "reading": "さいけつ",
+      "meaning": "各選択肢に賛成している人々の数を数えることによってなされる選択。",
+      "sourceId": 67210,
+      "image_asset": "assets/shiritori/general01-word-67210.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67211,
+      "word": "新人",
+      "reading": "しんじん",
+      "meaning": "何らかの活動における新しい参加者。",
+      "sourceId": 67211,
+      "image_asset": "assets/shiritori/general01-word-67211.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67212,
+      "word": "信念",
+      "reading": "しんねん",
+      "meaning": "証明や証拠を必要としない、揺るぎない信条。",
+      "sourceId": 67212,
+      "image_asset": "assets/shiritori/general01-word-67212.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67213,
+      "word": "事業",
+      "reading": "じぎょう",
+      "meaning": "財政、商業、産業の面を含む、財貨とサービスを供給する活動。",
+      "sourceId": 67213,
+      "image_asset": "assets/shiritori/general01-word-67213.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67214,
+      "word": "大都市",
+      "reading": "だいとし",
+      "meaning": "大きくて人口の密集した自治体に住む人々。",
+      "sourceId": 67214,
+      "image_asset": "assets/shiritori/general01-word-67214.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67215,
+      "word": "年上",
+      "reading": "としうえ",
+      "meaning": "自分より年上の人。",
+      "sourceId": 67215,
+      "image_asset": "assets/shiritori/general01-word-67215.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67216,
+      "word": "度胸",
+      "reading": "どきょう",
+      "meaning": "続行する勇気。",
+      "sourceId": 67216,
+      "image_asset": "assets/shiritori/general01-word-67216.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67217,
+      "word": "独立",
+      "reading": "どくりつ",
+      "meaning": "相手あるいは他人の管理や影響から自由になること。",
+      "sourceId": 67217,
+      "image_asset": "assets/shiritori/general01-word-67217.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67218,
+      "word": "二塁打",
+      "reading": "にるいだ",
+      "meaning": "打者が2塁に無事に止まるような安打。",
+      "sourceId": 67218,
+      "image_asset": "assets/shiritori/general01-word-67218.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67219,
+      "word": "認識",
+      "reading": "にんしき",
+      "meaning": "知識を持つこと。",
+      "sourceId": 67219,
+      "image_asset": "assets/shiritori/general01-word-67219.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67220,
+      "word": "八月",
+      "reading": "はちがつ",
+      "meaning": "7月の後、9月の前の月。",
+      "sourceId": 87648,
+      "image_asset": "assets/shiritori/eiken-20261101-diagram-g5-w-august.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67221,
+      "word": "針金",
+      "reading": "はりがね",
+      "meaning": "金属で作られており、ものを固定するか、おりまたはフェンスその他を作るのに用いられる靭帯。",
+      "sourceId": 4489,
+      "image_asset": "assets/shiritori/wave8-word-4489.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67222,
+      "word": "報復",
+      "reading": "ほうふく",
+      "meaning": "被害や犯罪の報いとして取る行動。",
+      "sourceId": 67222,
+      "image_asset": "assets/shiritori/general01-word-67222.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67223,
+      "word": "埋葬",
+      "reading": "まいそう",
+      "meaning": "死体を墓に入れる儀式。",
+      "sourceId": 67223,
+      "image_asset": "assets/shiritori/general01-word-67223.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67224,
+      "word": "魅了",
+      "reading": "みりょう",
+      "meaning": "強い興味を引き付ける能力。",
+      "sourceId": 67224,
+      "image_asset": "assets/shiritori/general01-word-67224.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67225,
+      "word": "夕飯",
+      "reading": "ゆうはん",
+      "meaning": "夕方、または正午にとる1日の主要な食事。",
+      "sourceId": 5679,
+      "image_asset": "assets/shiritori/wave7r1-word-5679.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67226,
+      "word": "六月",
+      "reading": "ろくがつ",
+      "meaning": "5月の後、7月の前の月。",
+      "sourceId": 87646,
+      "image_asset": "assets/shiritori/eiken-20261101-diagram-g5-w-june.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67227,
+      "word": "言及",
+      "reading": "げんきゅう",
+      "meaning": "物や人に注意を促す発言。",
+      "sourceId": 67227,
+      "image_asset": "assets/shiritori/general01-word-67227.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67228,
+      "word": "信条",
+      "reading": "しんじょう",
+      "meaning": "原則、信仰の体系。",
+      "sourceId": 67228,
+      "image_asset": "assets/shiritori/general01-word-67228.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67229,
+      "word": "新聞紙",
+      "reading": "しんぶんし",
+      "meaning": "折り畳まれた紙に書かれた日刊または週刊の出版物; ニュース、記事、広告を含む。",
+      "sourceId": 2848,
+      "image_asset": "assets/shiritori/wave7r1-word-2848.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67230,
+      "word": "住民",
+      "reading": "じゅうみん",
+      "meaning": "ある領土や国家に住む人々。",
+      "sourceId": 67230,
+      "image_asset": "assets/shiritori/general01-word-67230.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67231,
+      "word": "重役",
+      "reading": "じゅうやく",
+      "meaning": "理事会の一員。",
+      "sourceId": 67231,
+      "image_asset": "assets/shiritori/general01-word-67231.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67232,
+      "word": "情勢",
+      "reading": "じょうせい",
+      "meaning": "一般的な状態; 与えられた時における様々な状況の複合したもの。",
+      "sourceId": 67138,
+      "image_asset": "assets/shiritori/general01-word-67138.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67233,
+      "word": "スタジアム",
+      "reading": "すたじあむ",
+      "meaning": "野外で行うスポーツや催し物のための大きな建造物。",
+      "sourceId": 11818,
+      "image_asset": "assets/shiritori/expansion1024g-word-11818.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67234,
+      "word": "物理学",
+      "reading": "ぶつりがく",
+      "meaning": "物質とエネルギーとその相互作用の科学。",
+      "sourceId": 67197,
+      "image_asset": "assets/shiritori/general01-word-67197.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67235,
+      "word": "未亡人",
+      "reading": "みぼうじん",
+      "meaning": "夫に死なれた女性、特に再婚しない人。",
+      "sourceId": 67235,
+      "image_asset": "assets/shiritori/general01-word-67235.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67236,
+      "word": "欲求",
+      "reading": "よっきゅう",
+      "meaning": "満たされていない状態を伴う気持ち。",
+      "sourceId": 67236,
+      "image_asset": "assets/shiritori/general01-word-67236.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67238,
+      "word": "赤外線",
+      "reading": "せきがいせん",
+      "meaning": "可視光線より長く、電波より短い波長の電磁放射。",
+      "sourceId": 67238,
+      "image_asset": "assets/shiritori/general01-word-67238.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67239,
+      "word": "治療法",
+      "reading": "ちりょうほう",
+      "meaning": "病気を治療したり痛みを和らげる薬または治療。",
+      "sourceId": 67122,
+      "image_asset": "assets/shiritori/general01-word-67122.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67240,
+      "word": "ナイトクラブ",
+      "reading": "ないとくらぶ",
+      "meaning": "夜に遅くにあいていて、ダンスと飲食物だけでなくエンターテイメント（歌手またはダンサーのような）を提供するスポット。",
+      "sourceId": 67240,
+      "image_asset": "assets/shiritori/general01-word-67240.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67241,
+      "word": "プロパガンダ",
+      "reading": "ぷろぱがんだ",
+      "meaning": "ある主張を推進する目的で流布される情報。",
+      "sourceId": 67241,
+      "image_asset": "assets/shiritori/general01-word-67241.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67242,
+      "word": "臆病者",
+      "reading": "おくびょうもの",
+      "meaning": "恐れや不安を表に出す人。",
+      "sourceId": 67242,
+      "image_asset": "assets/shiritori/general01-word-67242.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67243,
+      "word": "世界大戦",
+      "reading": "せかいたいせん",
+      "meaning": "世界の主要な国々が巻き込まれるような戦争。",
+      "sourceId": 67243,
+      "image_asset": "assets/shiritori/general01-word-67243.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67244,
+      "word": "レコーディング",
+      "reading": "れこーでぃんぐ",
+      "meaning": "記録（特に音声記録）をする行為。",
+      "sourceId": 66973,
+      "image_asset": "assets/shiritori/general01-word-66973.png",
+      "reason": "声や音を記録する語義を共有。"
+    },
+    {
+      "id": 67245,
+      "word": "ワールドシリーズ",
+      "reading": "わーるどしりーず",
+      "meaning": "野球の優勝のプレイオフ。",
+      "sourceId": 67245,
+      "image_asset": "assets/shiritori/general01-repair-word-67245.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67246,
+      "word": "名",
+      "reading": "な",
+      "meaning": "ある人または物が認識される、言語の最小構成単位。",
+      "sourceId": 67246,
+      "image_asset": "assets/shiritori/general01-word-67246.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67247,
+      "word": "部",
+      "reading": "ぶ",
+      "meaning": "大きな組織の専門化された部門。",
+      "sourceId": 66970,
+      "image_asset": "assets/shiritori/general01-word-66970.png",
+      "reason": "大きな組織を役割で分けた部門。"
+    },
+    {
+      "id": 67248,
+      "word": "泡",
+      "reading": "あわ",
+      "meaning": "みずなどの なかに くうきが はいって できる、まるい つぶ。",
+      "sourceId": 182,
+      "image_asset": "assets/shiritori/wave8-word-182.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67250,
+      "word": "尾根",
+      "reading": "おね",
+      "meaning": "丘の細長い連なり。",
+      "sourceId": 67250,
+      "image_asset": "assets/shiritori/general01-word-67250.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67251,
+      "word": "差異",
+      "reading": "さい",
+      "meaning": "似ていない性質。",
+      "sourceId": 67251,
+      "image_asset": "assets/shiritori/general01-word-67251.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67252,
+      "word": "岬",
+      "reading": "さき",
+      "meaning": "水域に突出する細長い土地。",
+      "sourceId": 67252,
+      "image_asset": "assets/shiritori/general01-word-67252.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67253,
+      "word": "策",
+      "reading": "さく",
+      "meaning": "目的への過程の一部としてなされる措置。",
+      "sourceId": 67253,
+      "image_asset": "assets/shiritori/general01-word-67253.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67254,
+      "word": "支持",
+      "reading": "しじ",
+      "meaning": "賛同や支持を与える行為。",
+      "sourceId": 67254,
+      "image_asset": "assets/shiritori/general01-word-67254.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67255,
+      "word": "バー",
+      "reading": "ばー",
+      "meaning": "金属または木材の断片; 通常、留め具、障害物または武器として使われる。",
+      "sourceId": 67255,
+      "image_asset": "assets/shiritori/general01-word-67255.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67256,
+      "word": "面",
+      "reading": "めん",
+      "meaning": "はっきりとした特徴あるいは問題の要素。",
+      "sourceId": 67256,
+      "image_asset": "assets/shiritori/general01-word-67256.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67257,
+      "word": "罠",
+      "reading": "わな",
+      "meaning": "何か（通常動物）を捕らえて閉じこめる装置。",
+      "sourceId": 6064,
+      "image_asset": "assets/shiritori/wave9-word-6064.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67258,
+      "word": "哀れ",
+      "reading": "あわれ",
+      "meaning": "人の苦しみへの深い理解と同情。",
+      "sourceId": 67258,
+      "image_asset": "assets/shiritori/general01-word-67258.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67259,
+      "word": "遺産",
+      "reading": "いさん",
+      "meaning": "受け継がれるそれ; 所有者の死に際して相続人に法律を見過ごすタイトルまたは資産または地所。",
+      "sourceId": 67259,
+      "image_asset": "assets/shiritori/general01-word-67259.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67260,
+      "word": "従兄弟",
+      "reading": "いとこ",
+      "meaning": "おじやおばの子供。",
+      "sourceId": 87673,
+      "image_asset": "assets/shiritori/eiken-20261101-cousin-word-87673.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67261,
+      "word": "移民",
+      "reading": "いみん",
+      "meaning": "彼らがそこで定住するために生まていない国に来る人。",
+      "sourceId": 67261,
+      "image_asset": "assets/shiritori/general01-word-67261.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67262,
+      "word": "課税",
+      "reading": "かぜい",
+      "meaning": "政府の財源のために市民自体・財産・活動に対して課されて徴収される金銭。",
+      "sourceId": 67262,
+      "image_asset": "assets/shiritori/general01-word-67262.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67263,
+      "word": "見地",
+      "reading": "けんち",
+      "meaning": "物を見る精神的な立場。",
+      "sourceId": 67096,
+      "image_asset": "assets/shiritori/general01-word-67096.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67264,
+      "word": "士官",
+      "reading": "しかん",
+      "meaning": "軍で権力があり命令を下せる立場にある者。",
+      "sourceId": 66978,
+      "image_asset": "assets/shiritori/general01-word-66978.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67265,
+      "word": "嫉妬",
+      "reading": "しっと",
+      "meaning": "（特に競争相手に対する）嫉妬深いねたみの感情。",
+      "sourceId": 67265,
+      "image_asset": "assets/shiritori/general01-word-67265.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67266,
+      "word": "章",
+      "reading": "しょう",
+      "meaning": "書物の一部分; 普通番号とタイトルがつけられる。",
+      "sourceId": 67266,
+      "image_asset": "assets/shiritori/general01-repair-word-67266.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67267,
+      "word": "シーン",
+      "reading": "しーん",
+      "meaning": "映画で1コマのアクションを構成する連続した画像。",
+      "sourceId": 67267,
+      "image_asset": "assets/shiritori/general01-word-67267.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67268,
+      "word": "自信",
+      "reading": "じしん",
+      "meaning": "疑いがないこと; 自分と自分の能力への信頼。",
+      "sourceId": 67268,
+      "image_asset": "assets/shiritori/general01-word-67268.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67269,
+      "word": "世代",
+      "reading": "せだい",
+      "meaning": "子孫における単一のステップからなる遺伝子に関連した有機体のグループ。",
+      "sourceId": 67269,
+      "image_asset": "assets/shiritori/general01-word-67269.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67270,
+      "word": "セット",
+      "reading": "せっと",
+      "meaning": "連続して行うことになっている幾つかの運動。",
+      "sourceId": 67270,
+      "image_asset": "assets/shiritori/general01-word-67270.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67271,
+      "word": "強み",
+      "reading": "つよみ",
+      "meaning": "特別な有用性の利点。",
+      "sourceId": 67271,
+      "image_asset": "assets/shiritori/general01-word-67271.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67272,
+      "word": "店舗",
+      "reading": "てんぽ",
+      "meaning": "商品またはサービスの小売販売のための商業の施設。",
+      "sourceId": 67272,
+      "image_asset": "assets/shiritori/general01-word-67272.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67273,
+      "word": "デッキ",
+      "reading": "でっき",
+      "meaning": "船に装備される様々な平甲板。",
+      "sourceId": 67273,
+      "image_asset": "assets/shiritori/general01-word-67273.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67274,
+      "word": "投与",
+      "reading": "とうよ",
+      "meaning": "薬物を投与する行為。",
+      "sourceId": 67274,
+      "image_asset": "assets/shiritori/general01-word-67274.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67275,
+      "word": "梯子",
+      "reading": "はしご",
+      "meaning": "横桟で繋がった2本の部材; 上ったり降りたりするためのもの。",
+      "sourceId": 4409,
+      "image_asset": "assets/shiritori/wave4-word-4410.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67276,
+      "word": "品詞",
+      "reading": "ひんし",
+      "meaning": "文法的な文脈にその機能を反映させることを目的とする、単語の伝統的な種類のひとつ。",
+      "sourceId": 67276,
+      "image_asset": "assets/shiritori/general01-word-67276.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67277,
+      "word": "部隊",
+      "reading": "ぶたい",
+      "meaning": "集合的に兵士。",
+      "sourceId": 67277,
+      "image_asset": "assets/shiritori/general01-word-67277.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67278,
+      "word": "葡萄",
+      "reading": "ぶどう",
+      "meaning": "緑または紫の表皮を持つブドウ属の様々な果汁のある果物のどれか; 房で育つ。",
+      "sourceId": 4903,
+      "image_asset": "assets/shiritori/wave2-e-word-4932.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67279,
+      "word": "ボード",
+      "reading": "ぼーど",
+      "meaning": "のこぎりで切られた木の丈夫な一片; 幅広いサイズで作成され多くの目的のために使用される。",
+      "sourceId": 67279,
+      "image_asset": "assets/shiritori/general01-word-67279.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67280,
+      "word": "マスト",
+      "reading": "ますと",
+      "meaning": "帆を支えるための垂直な円材。",
+      "sourceId": 67280,
+      "image_asset": "assets/shiritori/general01-word-67280.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67281,
+      "word": "見方",
+      "reading": "みかた",
+      "meaning": "状況や話題などを評価する方法。",
+      "sourceId": 67096,
+      "image_asset": "assets/shiritori/general01-word-67096.png",
+      "reason": "物事を見る観点という意味を共有。"
+    },
+    {
+      "id": 67282,
+      "word": "身振り",
+      "reading": "みぶり",
+      "meaning": "考えや感情を強調したり、表現の助けとなる、手や体の動き。",
+      "sourceId": 67282,
+      "image_asset": "assets/shiritori/general01-word-67282.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67283,
+      "word": "夜間",
+      "reading": "やかん",
+      "meaning": "外が暗い、日没の後から日の出の前までの時間。",
+      "sourceId": 5767,
+      "image_asset": "assets/shiritori/complete-5866.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67284,
+      "word": "用途",
+      "reading": "ようと",
+      "meaning": "何かがそのために使われる。",
+      "sourceId": 67284,
+      "image_asset": "assets/shiritori/general01-word-67284.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67285,
+      "word": "理想",
+      "reading": "りそう",
+      "meaning": "あることについての完璧な考え; 人が達成したいと思うもの。",
+      "sourceId": 67285,
+      "image_asset": "assets/shiritori/general01-word-67285.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67286,
+      "word": "リーグ",
+      "reading": "りーぐ",
+      "meaning": "加盟チームのために試合を組織するスポーツチームの協会。",
+      "sourceId": 67286,
+      "image_asset": "assets/shiritori/general01-word-67286.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67287,
+      "word": "老婦",
+      "reading": "ろうふ",
+      "meaning": "歳を取った女性。",
+      "sourceId": 67287,
+      "image_asset": "assets/shiritori/general01-word-67287.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67288,
+      "word": "関連",
+      "reading": "かんれん",
+      "meaning": "物事または出来事の関連（例えば1つがもう一方を引き起こす、あるいは1つがもう一方と共通点を持つ）。",
+      "sourceId": 67288,
+      "image_asset": "assets/shiritori/general01-word-67288.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67289,
+      "word": "記述",
+      "reading": "きじゅつ",
+      "meaning": "言葉で何かを表す言明。",
+      "sourceId": 67289,
+      "image_asset": "assets/shiritori/general01-word-67289.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67290,
+      "word": "見解",
+      "reading": "けんかい",
+      "meaning": "証拠または確証の基づかない個人的信条または判断。",
+      "sourceId": 67290,
+      "image_asset": "assets/shiritori/general01-word-67290.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67291,
+      "word": "限界",
+      "reading": "げんかい",
+      "meaning": "何かの可能な最大の程度。",
+      "sourceId": 67291,
+      "image_asset": "assets/shiritori/general01-word-67291.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67292,
+      "word": "原則",
+      "reading": "げんそく",
+      "meaning": "基本的な真理、原則、または仮定。",
+      "sourceId": 67292,
+      "image_asset": "assets/shiritori/general01-word-67292.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67293,
+      "word": "財団",
+      "reading": "ざいだん",
+      "meaning": "寄付金に支えられた機関。",
+      "sourceId": 67293,
+      "image_asset": "assets/shiritori/general01-word-67293.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67294,
+      "word": "社説",
+      "reading": "しゃせつ",
+      "meaning": "意見または展望が書かれた記事。",
+      "sourceId": 67294,
+      "image_asset": "assets/shiritori/general01-word-67294.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67295,
+      "word": "手段",
+      "reading": "しゅだん",
+      "meaning": "何かを行う方法、特に体系的なもの; 秩序だって理論的な（通常、段階を進んでいく）方法を意味する。",
+      "sourceId": 67100,
+      "image_asset": "assets/shiritori/general01-word-67100.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67296,
+      "word": "事務員",
+      "reading": "じむいん",
+      "meaning": "書記の仕事（記録や会計の管理など）をする従業員。",
+      "sourceId": 67296,
+      "image_asset": "assets/shiritori/general01-word-67296.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67297,
+      "word": "ストレス",
+      "reading": "すとれす",
+      "meaning": "精神的または感情的な緊張または不安の状態。",
+      "sourceId": 67297,
+      "image_asset": "assets/shiritori/general01-word-67297.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67298,
+      "word": "摂取",
+      "reading": "せっしゅ",
+      "meaning": "食物を（食べることにより）口から身体に取り入れる過程。",
+      "sourceId": 67298,
+      "image_asset": "assets/shiritori/general01-word-67298.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67299,
+      "word": "セラピー",
+      "reading": "せらぴー",
+      "meaning": "（内科学）（薬物療法や治療上のトレーニングなどで）ある人を手当てする行為。",
+      "sourceId": 67122,
+      "image_asset": "assets/shiritori/general01-word-67122.png",
+      "reason": "治療を施すという意味を共有。"
+    },
+    {
+      "id": 67300,
+      "word": "潜伏",
+      "reading": "せんぷく",
+      "meaning": "まだ明白でないか活発でない状態。",
+      "sourceId": 67300,
+      "image_asset": "assets/shiritori/general01-word-67300.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67301,
+      "word": "旋律",
+      "reading": "せんりつ",
+      "meaning": "特徴的な配列を形成する音符の継承。",
+      "sourceId": 67301,
+      "image_asset": "assets/shiritori/general01-word-67301.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67302,
+      "word": "全般",
+      "reading": "ぜんぱん",
+      "meaning": "1つのものとしてとらえらえる、部分の集合。",
+      "sourceId": 67302,
+      "image_asset": "assets/shiritori/general01-word-67302.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67303,
+      "word": "葬式",
+      "reading": "そうしき",
+      "meaning": "死者が埋められたり火葬にされる儀式。",
+      "sourceId": 67303,
+      "image_asset": "assets/shiritori/general01-word-67303.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67304,
+      "word": "訴状",
+      "reading": "そじょう",
+      "meaning": "当局に提出された何かを要求する公式のメッセージ。",
+      "sourceId": 67304,
+      "image_asset": "assets/shiritori/general01-word-67304.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67305,
+      "word": "大国",
+      "reading": "たいこく",
+      "meaning": "世界中の物事に影響を与えるほど強力な国家。",
+      "sourceId": 67305,
+      "image_asset": "assets/shiritori/general01-word-67305.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67306,
+      "word": "妥協",
+      "reading": "だきょう",
+      "meaning": "2つの極端の中間。",
+      "sourceId": 67306,
+      "image_asset": "assets/shiritori/general01-word-67306.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67307,
+      "word": "ディスク",
+      "reading": "でぃすく",
+      "meaning": "連続した溝の付いた円盤から成る録音媒体; レコード針でレコードの溝を走らせながら、回転すことによって音楽を再生するのに使用される。",
+      "sourceId": 5958,
+      "image_asset": "assets/shiritori/wave9-word-5958.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67308,
+      "word": "特権",
+      "reading": "とっけん",
+      "meaning": "みんなが享受できない、特別な有利さ、特典、利益。",
+      "sourceId": 67308,
+      "image_asset": "assets/shiritori/general01-word-67308.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67309,
+      "word": "内容",
+      "reading": "ないよう",
+      "meaning": "コミュニケーションが伝えるもの。",
+      "sourceId": 67309,
+      "image_asset": "assets/shiritori/general01-word-67309.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67310,
+      "word": "敗北",
+      "reading": "はいぼく",
+      "meaning": "争い、またはか競争の不成功の結末。",
+      "sourceId": 67310,
+      "image_asset": "assets/shiritori/general01-word-67310.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67311,
+      "word": "迫害",
+      "reading": "はくがい",
+      "meaning": "（特に人種や宗教に基づいて）虐げる行為。",
+      "sourceId": 67311,
+      "image_asset": "assets/shiritori/general01-word-67311.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67312,
+      "word": "判決",
+      "reading": "はんけつ",
+      "meaning": "法定に提出された事柄について司法権の法廷による決定。",
+      "sourceId": 67312,
+      "image_asset": "assets/shiritori/general01-word-67312.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67313,
+      "word": "反乱",
+      "reading": "はんらん",
+      "meaning": "権威への組織化された抵抗; 1つの派閥が別の派閥から支配権をもぎ取ろうとする闘争。",
+      "sourceId": 67313,
+      "image_asset": "assets/shiritori/general01-word-67313.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67314,
+      "word": "昼過ぎ",
+      "reading": "ひるすぎ",
+      "meaning": "正午から夜までの1日の一部。",
+      "sourceId": 7533,
+      "image_asset": "assets/shiritori/expansion512-oct14-v2-word-7533.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67315,
+      "word": "プッシュ",
+      "reading": "ぷっしゅ",
+      "meaning": "何かを遠ざけるために力を加える行為。",
+      "sourceId": 67315,
+      "image_asset": "assets/shiritori/general01-word-67315.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67316,
+      "word": "ベテラン",
+      "reading": "べてらん",
+      "meaning": "多くの戦いを経験してきた人; 長く仕事をしてきた人。",
+      "sourceId": 67316,
+      "image_asset": "assets/shiritori/general01-word-67316.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67317,
+      "word": "マウンド",
+      "reading": "まうんど",
+      "meaning": "ピッチャーがその上に立つわずかな盛り上がり。",
+      "sourceId": 67317,
+      "image_asset": "assets/shiritori/general01-word-67317.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67318,
+      "word": "街角",
+      "reading": "まちかど",
+      "meaning": "2つの通りの交差点。",
+      "sourceId": 67318,
+      "image_asset": "assets/shiritori/general01-word-67318.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67319,
+      "word": "ミネラル",
+      "reading": "みねらる",
+      "meaning": "個々の化学組成を持つ、自然界において見出される固体で均質な無機物。",
+      "sourceId": 2154,
+      "image_asset": "assets/shiritori/wave8-word-2154.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67320,
+      "word": "憂鬱",
+      "reading": "ゆううつ",
+      "meaning": "もの思いに沈んだ悲しみの気持ち。",
+      "sourceId": 67320,
+      "image_asset": "assets/shiritori/general01-word-67320.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67321,
+      "word": "養成",
+      "reading": "ようせい",
+      "meaning": "熟練した行動につながる活動。",
+      "sourceId": 67321,
+      "image_asset": "assets/shiritori/general01-word-67321.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67322,
+      "word": "浴槽",
+      "reading": "よくそう",
+      "meaning": "比較的大きな蓋のない容器で、湯水を浸し体を洗えるようにしたもの。",
+      "sourceId": 67322,
+      "image_asset": "assets/shiritori/general01-word-67322.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67323,
+      "word": "礼拝",
+      "reading": "れいはい",
+      "meaning": "定められた規則に従う教会礼拝式の行為。",
+      "sourceId": 67323,
+      "image_asset": "assets/shiritori/general01-word-67323.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67324,
+      "word": "オペレッタ",
+      "reading": "おぺれった",
+      "meaning": "短くおもしろいオペラ。",
+      "sourceId": 67324,
+      "image_asset": "assets/shiritori/general01-word-67324.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67325,
+      "word": "共存",
+      "reading": "きょうぞん",
+      "meaning": "平和的に共存すること。",
+      "sourceId": 67325,
+      "image_asset": "assets/shiritori/general01-word-67325.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67326,
+      "word": "刑務所",
+      "reading": "けいむしょ",
+      "meaning": "政府の法的な監護下にある人を拘束するために使用される矯正施設（裁判を待っている被告人か服役している有罪となった人）。",
+      "sourceId": 67326,
+      "image_asset": "assets/shiritori/general01-word-67326.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67327,
+      "word": "交渉",
+      "reading": "こうしょう",
+      "meaning": "合意を目指した議論。",
+      "sourceId": 67327,
+      "image_asset": "assets/shiritori/general01-word-67327.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67328,
+      "word": "失業",
+      "reading": "しつぎょう",
+      "meaning": "失業、あるいは仕事をしていないこと。",
+      "sourceId": 67328,
+      "image_asset": "assets/shiritori/general01-word-67328.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67329,
+      "word": "習得",
+      "reading": "しゅうとく",
+      "meaning": "技術や知識を身につける認知過程。",
+      "sourceId": 67329,
+      "image_asset": "assets/shiritori/general01-word-67329.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67330,
+      "word": "出来",
+      "reading": "しゅったい",
+      "meaning": "何かが発生する事例。",
+      "sourceId": 67330,
+      "image_asset": "assets/shiritori/general01-word-67330.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67331,
+      "word": "証言",
+      "reading": "しょうげん",
+      "meaning": "宣言の元で発表された厳粛な声明。",
+      "sourceId": 67331,
+      "image_asset": "assets/shiritori/general01-word-67331.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67332,
+      "word": "住所",
+      "reading": "じゅうしょ",
+      "meaning": "個人や組織が所在し、連絡をとれる場所。",
+      "sourceId": 67332,
+      "image_asset": "assets/shiritori/general01-word-67332.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67333,
+      "word": "条件",
+      "reading": "じょうけん",
+      "meaning": "合意の一部として要求される声明。",
+      "sourceId": 67333,
+      "image_asset": "assets/shiritori/general01-word-67333.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67334,
+      "word": "冗談",
+      "reading": "じょうだん",
+      "meaning": "笑いを誘おうとするユーモラスな逸話または言葉。",
+      "sourceId": 67334,
+      "image_asset": "assets/shiritori/general01-word-67334.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67335,
+      "word": "常連",
+      "reading": "じょうれん",
+      "meaning": "定期的に来る顧客。",
+      "sourceId": 67335,
+      "image_asset": "assets/shiritori/general01-word-67335.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67336,
+      "word": "スクリーン",
+      "reading": "すくりーん",
+      "meaning": "画像が見られるために投影される白または銀色の表面。",
+      "sourceId": 67336,
+      "image_asset": "assets/shiritori/general01-word-67336.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67337,
+      "word": "探求",
+      "reading": "たんきゅう",
+      "meaning": "物や人を見つけるために徹底的に見る活動。",
+      "sourceId": 67337,
+      "image_asset": "assets/shiritori/general01-word-67337.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67338,
+      "word": "代名詞",
+      "reading": "だいめいし",
+      "meaning": "名詞または名詞句の代わりに使われる機能語。",
+      "sourceId": 67338,
+      "image_asset": "assets/shiritori/general01-word-67338.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67339,
+      "word": "知識人",
+      "reading": "ちしきじん",
+      "meaning": "頭を創造的に使う人。",
+      "sourceId": 67339,
+      "image_asset": "assets/shiritori/general01-word-67339.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67340,
+      "word": "チャプター",
+      "reading": "ちゃぷたー",
+      "meaning": "書物の一部分; 普通番号とタイトルがつけられる。",
+      "sourceId": 67266,
+      "image_asset": "assets/shiritori/general01-repair-word-67266.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67341,
+      "word": "中年",
+      "reading": "ちゅうねん",
+      "meaning": "青春期と老年期の間の生命の時間（例えば、40歳から60歳の間）。",
+      "sourceId": 67341,
+      "image_asset": "assets/shiritori/general01-word-67341.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67342,
+      "word": "添加物",
+      "reading": "てんかぶつ",
+      "meaning": "食物、ガソリン、ペンキ、薬品などの性能を高めるために添加されたもの。",
+      "sourceId": 67342,
+      "image_asset": "assets/shiritori/general01-word-67342.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67343,
+      "word": "日中",
+      "reading": "にっちゅう",
+      "meaning": "日の出から日没までの屋外が明るい時間。",
+      "sourceId": 4724,
+      "image_asset": "assets/shiritori/complete-4820.png",
+      "reason": "日が出ている明るい時間を表す「昼」と共有。"
+    },
+    {
+      "id": 67344,
+      "word": "ハイファイ",
+      "reading": "はいふぁい",
+      "meaning": "ひずみが僅かしかないか、全くない音の再生。",
+      "sourceId": 67344,
+      "image_asset": "assets/shiritori/general01-word-67344.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67345,
+      "word": "描写",
+      "reading": "びょうしゃ",
+      "meaning": "写実あるいは言語による生き生きとした表現。",
+      "sourceId": 67345,
+      "image_asset": "assets/shiritori/general01-word-67345.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67346,
+      "word": "複雑さ",
+      "reading": "ふくざつさ",
+      "meaning": "込み入って複合的な性質。",
+      "sourceId": 67346,
+      "image_asset": "assets/shiritori/general01-word-67346.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67347,
+      "word": "ホルスター",
+      "reading": "ほるすたー",
+      "meaning": "短銃用のさや（通例革製）。",
+      "sourceId": 67347,
+      "image_asset": "assets/shiritori/general01-word-67347.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67348,
+      "word": "マンション",
+      "reading": "まんしょん",
+      "meaning": "通常アパートの階全部の部屋の一そろい。",
+      "sourceId": 67348,
+      "image_asset": "assets/shiritori/general01-repair-word-67348.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67349,
+      "word": "ミステリー",
+      "reading": "みすてりー",
+      "meaning": "理解するすべがなく説明できないもの。",
+      "sourceId": 67349,
+      "image_asset": "assets/shiritori/general01-word-67349.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67350,
+      "word": "流通",
+      "reading": "りゅうつう",
+      "meaning": "品物を生産者から消費者に輸送し販売する、商業活動。",
+      "sourceId": 67350,
+      "image_asset": "assets/shiritori/general01-word-67350.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67351,
+      "word": "令状",
+      "reading": "れいじょう",
+      "meaning": "警察に特定の行為を実行せよと命じている法廷からの令状。",
+      "sourceId": 67351,
+      "image_asset": "assets/shiritori/general01-word-67351.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67352,
+      "word": "御祖母ちゃん",
+      "reading": "おばあちゃん",
+      "meaning": "父あるいは母の母親。",
+      "sourceId": 6226,
+      "image_asset": "assets/shiritori/wave9-word-6226.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67353,
+      "word": "検察官",
+      "reading": "けんさつかん",
+      "meaning": "国を代表して刑事訴追を行う政府高官。",
+      "sourceId": 67353,
+      "image_asset": "assets/shiritori/general01-word-67353.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67354,
+      "word": "コントラバス",
+      "reading": "こんとらばす",
+      "meaning": "バイオリン系の楽器で最大で最低音域のもの。",
+      "sourceId": 67354,
+      "image_asset": "assets/shiritori/general01-word-67354.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67355,
+      "word": "所有者",
+      "reading": "しょゆうしゃ",
+      "meaning": "何かを所有している人。",
+      "sourceId": 67355,
+      "image_asset": "assets/shiritori/general01-word-67355.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67356,
+      "word": "乗客",
+      "reading": "じょうきゃく",
+      "meaning": "乗り物（船、バス、車、飛行機、列車等）で旅をし、その運転・操縦をしていない人。",
+      "sourceId": 67356,
+      "image_asset": "assets/shiritori/general01-word-67356.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67357,
+      "word": "中心部",
+      "reading": "ちゅうしんぶ",
+      "meaning": "より大きなものの内部の、ほぼ真ん中にある領域。",
+      "sourceId": 67357,
+      "image_asset": "assets/shiritori/general01-word-67357.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67358,
+      "word": "中流",
+      "reading": "ちゅうりゅう",
+      "meaning": "流れの中ほど。",
+      "sourceId": 67358,
+      "image_asset": "assets/shiritori/general01-word-67358.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67359,
+      "word": "フォアボール",
+      "reading": "ふぉあぼーる",
+      "meaning": "フォアボールを得た打者が1塁に進むこと。",
+      "sourceId": 67359,
+      "image_asset": "assets/shiritori/general01-word-67359.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67360,
+      "word": "研究室",
+      "reading": "けんきゅうしつ",
+      "meaning": "科学研究の遂行のための仕事場所。",
+      "sourceId": 67360,
+      "image_asset": "assets/shiritori/general01-word-67360.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67361,
+      "word": "ノンフィクション",
+      "reading": "のんふぃくしょん",
+      "meaning": "虚構でない散文書。",
+      "sourceId": 67361,
+      "image_asset": "assets/shiritori/general01-word-67361.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67362,
+      "word": "美",
+      "reading": "び",
+      "meaning": "感覚に喜びを与える特性。",
+      "sourceId": 67362,
+      "image_asset": "assets/shiritori/general01-word-67362.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67363,
+      "word": "無",
+      "reading": "む",
+      "meaning": "重要でない量。",
+      "sourceId": 67363,
+      "image_asset": "assets/shiritori/general01-word-67363.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67364,
+      "word": "奥",
+      "reading": "おく",
+      "meaning": "通常の観察者から最も遠い何かの部分。",
+      "sourceId": 67364,
+      "image_asset": "assets/shiritori/general01-word-67364.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67365,
+      "word": "夏季",
+      "reading": "かき",
+      "meaning": "1年で最も温暖な季節; 北半球では夏至から秋分にそれが広がる。",
+      "sourceId": 67044,
+      "image_asset": "assets/shiritori/general01-word-67044.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67366,
+      "word": "軍",
+      "reading": "ぐん",
+      "meaning": "集合的に兵士。",
+      "sourceId": 67277,
+      "image_asset": "assets/shiritori/general01-word-67277.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67368,
+      "word": "布",
+      "reading": "ぬの",
+      "meaning": "天然繊維あるいは合成繊維を織ること、フェルトにすること、編むこと、または鉤針編みすることによって作られる人工物。",
+      "sourceId": 4218,
+      "image_asset": "assets/shiritori/wave8-word-4218.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67369,
+      "word": "髭",
+      "reading": "ひげ",
+      "meaning": "男性の顔の下の部分に生える毛。",
+      "sourceId": 4658,
+      "image_asset": "assets/shiritori/wave8-word-4658.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67370,
+      "word": "リア",
+      "reading": "りあ",
+      "meaning": "最後に行きつくまたは通常見られない側面。",
+      "sourceId": 67370,
+      "image_asset": "assets/shiritori/general01-word-67370.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67371,
+      "word": "利子",
+      "reading": "りし",
+      "meaning": "借金に付く利子; 一般に借入額の何パーセントか。",
+      "sourceId": 67371,
+      "image_asset": "assets/shiritori/general01-word-67371.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67372,
+      "word": "移送",
+      "reading": "いそう",
+      "meaning": "ある場所から別の場所へ何かを運ぶ行為。",
+      "sourceId": 67372,
+      "image_asset": "assets/shiritori/general01-word-67372.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67373,
+      "word": "田舎",
+      "reading": "いなか",
+      "meaning": "都市部や町の外側の地域。",
+      "sourceId": 67373,
+      "image_asset": "assets/shiritori/general01-word-67373.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67374,
+      "word": "化学",
+      "reading": "かがく",
+      "meaning": "成分の科学; 物質の成分、性質、反応を扱う自然科学の分野。",
+      "sourceId": 67374,
+      "image_asset": "assets/shiritori/general01-word-67374.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67375,
+      "word": "可決",
+      "reading": "かけつ",
+      "meaning": "立法機関による法の通過。",
+      "sourceId": 67375,
+      "image_asset": "assets/shiritori/general01-word-67375.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67376,
+      "word": "課程",
+      "reading": "かてい",
+      "meaning": "学術研究の統合コース。",
+      "sourceId": 67376,
+      "image_asset": "assets/shiritori/general01-word-67376.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67377,
+      "word": "感じ",
+      "reading": "かんじ",
+      "meaning": "ある程度の信頼が置かれる漠然とした考え。",
+      "sourceId": 67377,
+      "image_asset": "assets/shiritori/general01-word-67377.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67378,
+      "word": "機嫌",
+      "reading": "きげん",
+      "meaning": "感情の特徴的な状態（常習的または比較的一時的な）。",
+      "sourceId": 67378,
+      "image_asset": "assets/shiritori/general01-word-67378.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67379,
+      "word": "奇跡",
+      "reading": "きせき",
+      "meaning": "驚くべきすばらしい出来事。",
+      "sourceId": 67379,
+      "image_asset": "assets/shiritori/general01-word-67379.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67380,
+      "word": "期待",
+      "reading": "きたい",
+      "meaning": "未来に希望を感じる土壌。",
+      "sourceId": 67380,
+      "image_asset": "assets/shiritori/general01-word-67380.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67381,
+      "word": "局",
+      "reading": "きょく",
+      "meaning": "政府の運営部門。",
+      "sourceId": 67381,
+      "image_asset": "assets/shiritori/general01-word-67381.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67382,
+      "word": "疑念",
+      "reading": "ぎねん",
+      "meaning": "何かについて確信がない状態。",
+      "sourceId": 67382,
+      "image_asset": "assets/shiritori/general01-word-67382.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67383,
+      "word": "曇",
+      "reading": "くもり",
+      "meaning": "雲でおおわれている時の空の状態。",
+      "sourceId": 1751,
+      "image_asset": "assets/shiritori/wave7r2-word-1751.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67384,
+      "word": "決議",
+      "reading": "けつぎ",
+      "meaning": "会議での正式な表現; 投票によって承認される。",
+      "sourceId": 67384,
+      "image_asset": "assets/shiritori/general01-word-67384.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67385,
+      "word": "外科医",
+      "reading": "げかい",
+      "meaning": "外科を専門とする医師。",
+      "sourceId": 67385,
+      "image_asset": "assets/shiritori/general01-word-67385.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67386,
+      "word": "激怒",
+      "reading": "げきど",
+      "meaning": "強い怒りの気持ち。",
+      "sourceId": 67386,
+      "image_asset": "assets/shiritori/general01-word-67386.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67387,
+      "word": "ゲリラ",
+      "reading": "げりら",
+      "meaning": "サボタージュとハラスメントにより、より強い力と戦う非正規兵の軍隊の一員。",
+      "sourceId": 67387,
+      "image_asset": "assets/shiritori/general01-word-67387.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67388,
+      "word": "抗議",
+      "reading": "こうぎ",
+      "meaning": "正式で厳粛な異議の宣言。",
+      "sourceId": 67388,
+      "image_asset": "assets/shiritori/general01-word-67388.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67389,
+      "word": "荒野",
+      "reading": "こうや",
+      "meaning": "その自然の状態で残されている野生で無人の領域。",
+      "sourceId": 67389,
+      "image_asset": "assets/shiritori/general01-word-67389.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67390,
+      "word": "歯科医",
+      "reading": "しかい",
+      "meaning": "歯科医を開業する資格を持つ人。",
+      "sourceId": 4365,
+      "image_asset": "assets/shiritori/wave7-word-4365.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67391,
+      "word": "死者",
+      "reading": "ししゃ",
+      "meaning": "もはや生きていない人々。",
+      "sourceId": 67391,
+      "image_asset": "assets/shiritori/general01-word-67391.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67392,
+      "word": "次官",
+      "reading": "じかん",
+      "meaning": "ある省の長の直属の秘書。",
+      "sourceId": 67392,
+      "image_asset": "assets/shiritori/general01-word-67392.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67393,
+      "word": "頭脳",
+      "reading": "ずのう",
+      "meaning": "その人の考えと感情に関与している; 判断力の中枢。",
+      "sourceId": 67393,
+      "image_asset": "assets/shiritori/general01-word-67393.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67394,
+      "word": "成果",
+      "reading": "せいか",
+      "meaning": "ある先行する現象に続く現象、またはある先行する現象を原因とする現象。",
+      "sourceId": 67394,
+      "image_asset": "assets/shiritori/general01-word-67394.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67395,
+      "word": "憎悪",
+      "reading": "ぞうお",
+      "meaning": "激しい嫌悪の感情; 行動に現れるほどの強い嫌悪感。",
+      "sourceId": 67395,
+      "image_asset": "assets/shiritori/general01-word-67395.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67396,
+      "word": "地帯",
+      "reading": "ちたい",
+      "meaning": "境界が不確かな特定の地理的地域（通常いくつかの特別な目的にかなうか、その住民、文化または地理学によって特徴付けられる）。",
+      "sourceId": 67174,
+      "image_asset": "assets/shiritori/general01-word-67174.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67397,
+      "word": "程度",
+      "reading": "ていど",
+      "meaning": "強さまたは量または品質の階級の位置。",
+      "sourceId": 67168,
+      "image_asset": "assets/shiritori/general01-word-67168.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67398,
+      "word": "度合い",
+      "reading": "どあい",
+      "meaning": "強さまたは量または品質の階級の位置。",
+      "sourceId": 67168,
+      "image_asset": "assets/shiritori/general01-word-67168.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67399,
+      "word": "内野",
+      "reading": "ないや",
+      "meaning": "野球場で3つの塁とホームベースとに囲まれた領域。",
+      "sourceId": 67399,
+      "image_asset": "assets/shiritori/general01-word-67399.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67400,
+      "word": "ヒール",
+      "reading": "ひーる",
+      "meaning": "靴またはブーツの底; 地面に着いた箇所で、高さをもたらす靴またはブーツの後部。",
+      "sourceId": 67400,
+      "image_asset": "assets/shiritori/general01-word-67400.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67401,
+      "word": "炎",
+      "reading": "ほのお",
+      "meaning": "熱や発光、（時には）煙を出しながら可燃性の物質が燃える過程。",
+      "sourceId": 5096,
+      "image_asset": "assets/shiritori/wave9-word-5096.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67402,
+      "word": "母音",
+      "reading": "ぼいん",
+      "meaning": "声道をあけて発音する言語音。",
+      "sourceId": 67402,
+      "image_asset": "assets/shiritori/general01-word-67402.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67403,
+      "word": "猛威",
+      "reading": "もうい",
+      "meaning": "乱暴さや荒れることの特性。",
+      "sourceId": 67403,
+      "image_asset": "assets/shiritori/general01-word-67403.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67404,
+      "word": "模倣",
+      "reading": "もほう",
+      "meaning": "他の誰かの動作をコピーする（またはコピーしようとすること）こと。",
+      "sourceId": 67404,
+      "image_asset": "assets/shiritori/general01-word-67404.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67405,
+      "word": "予算",
+      "reading": "よさん",
+      "meaning": "特定の目的のために割り当てられる金額。",
+      "sourceId": 67405,
+      "image_asset": "assets/shiritori/general01-word-67405.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67406,
+      "word": "労組",
+      "reading": "ろうそ",
+      "meaning": "雇い主と交渉するために作られる従業員の組織。",
+      "sourceId": 66954,
+      "image_asset": "assets/shiritori/general01-word-66954.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67407,
+      "word": "ローン",
+      "reading": "ろーん",
+      "meaning": "一時的な金銭の支給（一般に金利付きで）。",
+      "sourceId": 67027,
+      "image_asset": "assets/shiritori/general01-word-67027.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67408,
+      "word": "ワゴン",
+      "reading": "わごん",
+      "meaning": "馬やトラクターが引く各種の車輪によって動く車の総称。",
+      "sourceId": 67408,
+      "image_asset": "assets/shiritori/general01-word-67408.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67409,
+      "word": "永続",
+      "reading": "えいぞく",
+      "meaning": "無限の期間に存在することのできる特性。",
+      "sourceId": 67409,
+      "image_asset": "assets/shiritori/general01-word-67409.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67410,
+      "word": "行い",
+      "reading": "おこない",
+      "meaning": "なされた事柄（通常、言われた事柄に対して言う）。",
+      "sourceId": 67410,
+      "image_asset": "assets/shiritori/general01-word-67410.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67411,
+      "word": "解放",
+      "reading": "かいほう",
+      "meaning": "人またはものを解き放つ行為。",
+      "sourceId": 67411,
+      "image_asset": "assets/shiritori/general01-word-67411.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67412,
+      "word": "確信",
+      "reading": "かくしん",
+      "meaning": "証明や証拠を必要としない、揺るぎない信条。",
+      "sourceId": 67212,
+      "image_asset": "assets/shiritori/general01-word-67212.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67413,
+      "word": "カップル",
+      "reading": "かっぷる",
+      "meaning": "互いに結びついたペア。",
+      "sourceId": 67413,
+      "image_asset": "assets/shiritori/general01-word-67413.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67414,
+      "word": "観念",
+      "reading": "かんねん",
+      "meaning": "一般的な包括的概念。",
+      "sourceId": 67414,
+      "image_asset": "assets/shiritori/general01-word-67414.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67415,
+      "word": "慣例",
+      "reading": "かんれい",
+      "meaning": "活動や行動の習慣的な様式。",
+      "sourceId": 67415,
+      "image_asset": "assets/shiritori/general01-word-67415.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67416,
+      "word": "幾何学",
+      "reading": "きかがく",
+      "meaning": "点、線、曲線、および面の純粋数学。",
+      "sourceId": 67416,
+      "image_asset": "assets/shiritori/general01-word-67416.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67417,
+      "word": "規準",
+      "reading": "きじゅん",
+      "meaning": "何かを判断する観点からの理想。",
+      "sourceId": 67417,
+      "image_asset": "assets/shiritori/general01-word-67417.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67418,
+      "word": "傷あと",
+      "reading": "きずあと",
+      "meaning": "傷を負った組織の癒えによって残されたマーク（通常、皮膚で）。",
+      "sourceId": 1402,
+      "image_asset": "assets/shiritori/wave6-word-1402.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67419,
+      "word": "金銭",
+      "reading": "きんせん",
+      "meaning": "最も普通に使われている交換手段; 法定貨幣として機能している。",
+      "sourceId": 803,
+      "image_asset": "assets/shiritori/wave7-word-803.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67420,
+      "word": "軍人",
+      "reading": "ぐんじん",
+      "meaning": "軍隊で任務を果たす人; 軍事力の一員。",
+      "sourceId": 67420,
+      "image_asset": "assets/shiritori/general01-word-67420.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67421,
+      "word": "現金",
+      "reading": "げんきん",
+      "meaning": "紙幣や硬貨の形態をした貨幣。",
+      "sourceId": 803,
+      "image_asset": "assets/shiritori/wave7-word-803.png",
+      "reason": "見出し・読み・語義を照合し、同じ対象または意味を表す既存画像を共有。"
+    },
+    {
+      "id": 67422,
+      "word": "厚生",
+      "reading": "こうせい",
+      "meaning": "幸福を助け、推進する何か。",
+      "sourceId": 67422,
+      "image_asset": "assets/shiritori/general01-word-67422.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67423,
+      "word": "口論",
+      "reading": "こうろん",
+      "meaning": "議論のある言語行為; 強い意見の相違がある論争。",
+      "sourceId": 67165,
+      "image_asset": "assets/shiritori/general01-word-67165.png",
+      "reason": "語義が同一の別表記・別名。"
+    },
+    {
+      "id": 67424,
+      "word": "困難",
+      "reading": "こんなん",
+      "meaning": "その人の能力では処置しかねる状況あるいは状態で、耐え忍ぶため、あるいは克服するために非常な努力を必要とする。",
+      "sourceId": 67424,
+      "image_asset": "assets/shiritori/general01-word-67424.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67425,
+      "word": "裁決",
+      "reading": "さいけつ",
+      "meaning": "熟考の末に到達した立場、意見、または判断。",
+      "sourceId": 67425,
+      "image_asset": "assets/shiritori/general01-word-67425.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67426,
+      "word": "散文",
+      "reading": "さんぶん",
+      "meaning": "詩と区別されるものとしての普通の著作。",
+      "sourceId": 67426,
+      "image_asset": "assets/shiritori/general01-word-67426.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67427,
+      "word": "疾患",
+      "reading": "しっかん",
+      "meaning": "健康障害もしくは、機能異常の状態。",
+      "sourceId": 67427,
+      "image_asset": "assets/shiritori/general01-word-67427.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67428,
+      "word": "失踪",
+      "reading": "しっそう",
+      "meaning": "ひそかに、または説明もなく去る行為。",
+      "sourceId": 67428,
+      "image_asset": "assets/shiritori/general01-word-67428.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67429,
+      "word": "斜面",
+      "reading": "しゃめん",
+      "meaning": "隆起した地形。",
+      "sourceId": 67429,
+      "image_asset": "assets/shiritori/general01-word-67429.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67430,
+      "word": "処刑",
+      "reading": "しょけい",
+      "meaning": "死刑囚を処刑すること。",
+      "sourceId": 67430,
+      "image_asset": "assets/shiritori/general01-word-67430.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67431,
+      "word": "書面",
+      "reading": "しょめん",
+      "meaning": "人または組織に宛てた書かれたメッセージ。",
+      "sourceId": 67431,
+      "image_asset": "assets/shiritori/general01-word-67431.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67432,
+      "word": "神殿",
+      "reading": "しんでん",
+      "meaning": "神聖な礼拝のための建築物からなる崇拝の場所。",
+      "sourceId": 67432,
+      "image_asset": "assets/shiritori/general01-word-67432.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67433,
+      "word": "実演",
+      "reading": "じつえん",
+      "meaning": "物事の仕組みを視覚的に見せること。",
+      "sourceId": 67433,
+      "image_asset": "assets/shiritori/general01-word-67433.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67434,
+      "word": "ジレンマ",
+      "reading": "じれんま",
+      "meaning": "特に、同じように望ましくない選択肢から1つを選ばなければいけない場合の不安定で困難な状態。",
+      "sourceId": 67434,
+      "image_asset": "assets/shiritori/general01-word-67434.png",
+      "reason": "語義に合わせた新規画像。"
+    },
+    {
+      "id": 67435,
+      "word": "推論",
+      "reading": "すいろん",
+      "meaning": "直接的な観察に基づくというよりも、状況的な証拠や前例に基づく理論的判断を含む推論。",
+      "sourceId": 67435,
+      "image_asset": "assets/shiritori/general01-word-67435.png",
+      "reason": "語義に合わせた新規画像。"
+    }
+  ],
+  "afterSha256": "e5cffcc6c75dd915f9f4f5d11260a1c32d11ac064109b54bba02129b41c24b37",
+  "remainingGeneralRowsWithoutImage": 20065
+}
