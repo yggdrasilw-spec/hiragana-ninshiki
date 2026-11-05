@@ -1,6 +1,7 @@
 """Register all 152 approved music pictures together, keeping prior data intact."""
 import csv,hashlib,importlib.util,json,subprocess,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parents[1];NAME='2026-10-15-expansion512e';OUT=ROOT/'data/image-coverage'/NAME;DATA=ROOT/'data/dictionary-imports'
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def save(p,v):p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -24,10 +25,10 @@ with batch.open('w',encoding='utf-8',newline='') as f:
    prompt+='\nTargeted repair: '+(ROOT/'assets/shiritori'/x['sourceSheet']).with_suffix('.prompt.txt').read_text(encoding='utf-8')
   w.writerow({**{k:x[k] for k in ['id','reading','word','meaning','filename','scene','sourceSheet','tileIndex','cropValidation']},'generatedAt':'2026-10-16','prompt':prompt,'credit':'AI生成イラスト'})
 subprocess.run([sys.executable,'-X','utf8','scripts/import-shiritori-assets.py',str(batch)],cwd=ROOT,check=True)
-manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read(manifestpath);lookup={x['file']:x for x in manifest['assets']}
+manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read_manifest(manifestpath);lookup={x['file']:x for x in manifest['assets']}
 for x in items:
  if x.get('editSourceSheet'):lookup[x['filename']]['editSourceSheet']=x['editSourceSheet']
-save(manifestpath,manifest)
+write_manifest(manifestpath, manifest)
 byid={x['id']:x for x in items}
 coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json')
 for x in plan['items']:

@@ -1,6 +1,7 @@
 """Apply explicitly reviewed spelling variants; preserve reversible dictionary history."""
 import argparse,csv,hashlib,io,json
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'data/corrections/2026-10-12-variants.json'
 def read(p):return json.loads(p.read_text())
@@ -32,7 +33,7 @@ for entry in review:entry['id']=newids[entry['beforeKeepId']]
 stream=io.StringIO();w=csv.DictWriter(stream,fieldnames=heads,lineterminator='\n');w.writeheader();w.writerows(current);aftertext=stream.getvalue()
 changes=[{'beforeId':i,'action':'delete' if i in removed else 'edit','before':old,**({'mergedIntoBeforeId':removed[i]} if i in removed else {'after':rows[i-1]})} for i,old in enumerate(before,1) if i in removed or old!=rows[i-1]]
 record={'type':'reviewed-corrections','batch':'data/corrections/2026-10-12-variants.json','beforeSha256':digest(text),'afterSha256':digest(aftertext),'sourceRows':len(before),'currentRows':len(current),'currentBeforeIds':origins,'changes':changes}
-manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read(manifestpath);uses={}
+manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read_manifest(manifestpath);uses={}
 for oid,row in zip(origins,current):
     if row['image_asset']:uses.setdefault(Path(row['image_asset']).name,[]).append((oid,row))
 active=[];retired=[]
@@ -53,6 +54,6 @@ for b in additional['batches']:
     for item in b['items']:item['id']=newids[removed.get(item['id'],item['id'])]
 write(p,additional)
 summarypath=ROOT/'data/image-coverage/summary-2026-10-11.json';summary=read(summarypath);summary.update(vocabularyRows=len(current),totalAssets=len(active),selectedIds=[x['id'] for b in additional['batches'] for x in b['items']]);write(summarypath,summary)
-path.write_text(aftertext);hist.append(record);write(histpath,hist);write(manifestpath,manifest);write(coveragepath,updated)
+path.write_text(aftertext);hist.append(record);write(histpath,hist);write_manifest(manifestpath, manifest);write(coveragepath,updated)
 write(OUT,{'date':'2026-10-12','policy':'読みと意味の両方が同じ表記を統合。同音異義語・生物と食用部分・府県と都市は維持。','merged':review,'previouslyMerged':previouslyMerged,'retiredAssets':retired,'history':record})
 print(json.dumps({'merged':len(pairs),'rows':len(current),'activeAssets':len(active),'retiredAssets':len(retired)}))

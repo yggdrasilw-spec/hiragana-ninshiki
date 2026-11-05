@@ -1,10 +1,11 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),cp=require('node:child_process');
 const root=path.resolve(__dirname,'..');
 const current=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8').replace(/\r\n/g,'\n');
 const rows=current.trimEnd().split('\n').slice(1).map(l=>l.split(','));
 const plan=require('../data/image-coverage/2026-10-13-expansion64/plan.json');
 const reviews=require('../data/dictionary-imports/2026-10-13-expansion64.review.json');
-const manifest=require('../assets/shiritori/manifest.json');
+const manifest=readManifest();
 const before=current.split('\n').slice(0,plan.baselineRows+1).join('\n')+'\n';
 assert.equal(crypto.createHash('sha256').update(before).digest('hex'),plan.baselineSha256,'Every existing row and image assignment preserved');
 assert.equal(rows.length,plan.baselineRows+64);

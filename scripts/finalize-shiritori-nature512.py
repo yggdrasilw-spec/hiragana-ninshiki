@@ -1,6 +1,7 @@
 """Prepare verified crops/R2 inventory, then atomically import reviewed meanings."""
 import argparse,collections,csv,hashlib,importlib.util,json,mimetypes,subprocess,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 R=Path(__file__).resolve().parents[1];O=R/'data/image-coverage/2026-10-19-nature512'
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def save(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -68,13 +69,13 @@ if corrections:
  hpath=R/'data/dictionary-imports/history.json';history=read(hpath);assert history[-1]['afterSha256']==sha(imagebytes)
  after=(R/'whitelist.csv').read_bytes()
  history.append(dict(type='reviewed-corrections',batch=f'data/image-coverage/{p["batch"]}/existing-elements.json',sourceRows=len(current),currentRows=len(current),currentBeforeIds=list(range(1,len(current)+1)),beforeSha256=sha(imagebytes),afterSha256=sha(after),changes=corrections));save(hpath,history)
- manifestpath=R/'assets/shiritori/manifest.json';manifest=read(manifestpath)
+ manifestpath=R/'assets/shiritori/manifest.json';manifest=read_manifest(manifestpath)
  changed={c['beforeId']:c for c in corrections}
  for asset in manifest['assets']:
   for alias in asset.get('aliases',[]):
    if alias['id'] in changed:alias['meaning']=current[alias['id']-1]['meaning']
   if asset.get('aliases') and asset['aliases'][0]['id'] in changed:asset['meaning']=asset['aliases'][0]['meaning']
- save(manifestpath,manifest)
+ write_manifest(manifestpath, manifest)
 save(O/'existing-elements.json',corrections);save(O/'element-registry.json',element_registry)
 after=(R/'whitelist.csv').read_bytes()
 for x in items:

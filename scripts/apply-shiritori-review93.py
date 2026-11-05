@@ -2,6 +2,7 @@
 import csv, hashlib, json, shutil, sys
 from collections import defaultdict
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 from PIL import Image, ImageOps
 ROOT=Path(__file__).resolve().parent.parent
 DIR=ROOT/'data/corrections/review93-2026-10-11'
@@ -12,7 +13,7 @@ csvpath=ROOT/'whitelist.csv';ledgerpath=DIR/'ledger.json'
 if ledgerpath.exists():
     assert read(ledgerpath)['afterSha256']==sha(csvpath),'Later changes exist; do not overwrite with an old plan.'
     if '--refresh-images' in sys.argv:
-        ledger=read(ledgerpath);manifest=read(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
+        ledger=read(ledgerpath);manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
         checks={c['file']:c for c in ledger['imageChecks']}
         for group in read(DIR/'generation.json'):
             with Image.open(ROOT/'assets/shiritori/sheets'/group['file']) as im:
@@ -22,7 +23,7 @@ if ledgerpath.exists():
                     ImageOps.pad(im.crop(box).convert('RGB'),(256,256),method=Image.Resampling.LANCZOS,color='white').save(target,optimize=True)
                     assets[job['file']].update(cropBox=box,sha256=sha(target),resizeMode='contain-with-white-padding')
                     checks[job['file']]['cropBox']=box
-        write(ROOT/'assets/shiritori/manifest.json',manifest);write(ledgerpath,ledger)
+        write_manifest(ROOT/'assets/shiritori/manifest.json', manifest);write(ledgerpath,ledger)
         print('Refreshed image crops using visually measured boundaries; CSV unchanged.');raise SystemExit(0)
     print('Already applied; reviewed CSV matches ledger.');raise SystemExit(0)
 plan=read(DIR/'plan.json');generation=read(DIR/'generation.json')
@@ -37,7 +38,7 @@ for request in plan['requests']:
     matches=[i for i,r in enumerate(rows,1) if r==request['before']]
     assert len(matches)==1 and matches[0]==request['resolvedId'],'Word/reading/meaning/asset identity changed.'
     resolved[request['requestedId']]=matches[0]
-manifest=read(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
+manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
 changedimages={};checks=[]
 for group in generation:
     assert group.get('visualReview',{}).get('accepted') is True,'Inspect generated group before applying: '+str(group['number'])
@@ -128,5 +129,5 @@ historypath=ROOT/'data/dictionary-imports/history.json';history=read(historypath
 assert history[-1]['afterSha256']==plan['beforeSha256']
 history.append(dict(type='reviewed-corrections',ledger=str(ledgerpath.relative_to(ROOT)),beforeSha256=ledger['beforeSha256'],afterSha256=ledger['afterSha256'],
     sourceRows=len(before),currentRows=len(current),currentBeforeIds=origins,changes=changes))
-write(ledgerpath,ledger);write(historypath,history);write(ROOT/'assets/shiritori/manifest.json',manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
+write(ledgerpath,ledger);write(historypath,history);write_manifest(ROOT/'assets/shiritori/manifest.json', manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
 print(json.dumps(dict(rows=len(current),orders=len(plan['requests']),modifiedRows=len(changes),images=len(changedimages),deleted=len(removed)),ensure_ascii=False))

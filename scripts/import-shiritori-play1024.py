@@ -1,6 +1,7 @@
 """Commit a completely staged and remotely verified vocabulary batch locally."""
 import csv,json,hashlib,subprocess,sys,shutil,collections
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'data/dictionary-imports/2026-10-27-play1024'
@@ -14,7 +15,7 @@ def main():
  if s['registered']:print(json.dumps(dict(alreadyRegistered=True,added=n)));return
  raw=(ROOT/'whitelist.csv').read_bytes();assert sha(raw)==s['beforeSha256'],'Concurrent dictionary edit; rebase first'
  old=list(csv.DictReader(raw.decode('utf-8').splitlines()));assert len(old)==s['baselineRows']
- manifest=read(ROOT/'assets/shiritori/manifest.json');byfile={a['file']:a for a in manifest['assets']}
+ manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');byfile={a['file']:a for a in manifest['assets']}
  additions=read(EVIDENCE/'manifest-additions.json');reused=read(EVIDENCE/'manifest-reused.json')
  d=read(ROOT/'data/shiritori-grade-decisions.json');coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json');updates=read(ROOT/'data/image-coverage/review-updates.json')
  assert d['sourceSha256']==updates['csvSha256']==sha(raw)
@@ -47,7 +48,10 @@ def main():
  for name in ['whitelist.csv','assets/shiritori/manifest.json','data/dictionary-imports/history.json','data/shiritori-grade-decisions.json','data/image-coverage/review-2026-10-10.json','data/image-coverage/review-updates.json','data/image-coverage/r2-assets.json','data/shiritori-grade-review.json','shiritori-grade-policy.js']:
   p=backup/name;p.parent.mkdir(parents=True,exist_ok=True)
   assert not p.exists(),'Backup already exists; inspect a previous import attempt'
-  shutil.copyfile(ROOT/name,p)
+  if name == 'assets/shiritori/manifest.json':
+   write_manifest(p, read_manifest(ROOT/name))
+  else:
+   shutil.copyfile(ROOT/name,p)
  assert (ROOT/'whitelist.csv').read_bytes()==raw
  run(node,'scripts/import-shiritori-words.cjs',str(BASE.with_suffix('.csv')),'--append')
  after=(ROOT/'whitelist.csv').read_bytes();assert after.startswith(raw) and len(after.splitlines())-1==len(old)+n
@@ -58,7 +62,7 @@ def main():
   updates['entries'].append(dict(id=x['id'],text=[x['reading'],x['word'],x['meaning']],textUpdatedAt=now,image_asset=x['image_asset'],imageAssignedAt=now))
  d.update(sourceSha256=sha(after),reviewedRows=len(old)+n);save(ROOT/'data/shiritori-grade-decisions.json',d)
  run(sys.executable,'-B','-X','utf8','scripts/build-shiritori-grade-bands.py')
- save(ROOT/'data/image-coverage/review-2026-10-10.json',coverage);save(ROOT/'assets/shiritori/manifest.json',manifest)
+ save(ROOT/'data/image-coverage/review-2026-10-10.json',coverage);write_manifest(ROOT/'assets/shiritori/manifest.json', manifest)
  updates['csvSha256']=sha(after);updates.pop('revision',None);updates['revision']=sha(json.dumps(updates,ensure_ascii=False,sort_keys=True).encode())
  for a in additions:updates['images']['assets/shiritori/'+a['file']]=dict(sha256=a['sha256'],updatedAt=now)
  updates.pop('revision',None);updates['revision']=sha(json.dumps(updates,ensure_ascii=False,sort_keys=True).encode())

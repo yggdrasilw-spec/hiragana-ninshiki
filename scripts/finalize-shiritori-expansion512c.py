@@ -1,6 +1,7 @@
 """Finalize a completely reviewed, reproducible vocabulary-and-picture intake."""
 import argparse,csv,hashlib,importlib.util,io,json,re,subprocess,sys,unicodedata
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parent.parent
 NAME='2026-10-15-expansion512c';OUT=ROOT/'data/image-coverage'/NAME;DATA=ROOT/'data/dictionary-imports'
 HEADER='reading,word,meaning,imagequery,level,imagequery_en,image_asset,image_mode,image_credit'.split(',')
@@ -86,7 +87,7 @@ with imagebatch.open('w',encoding='utf-8',newline='') as f:
  for x in p['newImages']+p['diagrams']:w.writerow({k:('2026-10-15' if k=='generatedAt' else x.get(k,'')) for k in columns})
 run(sys.executable,'-X','utf8','scripts/import-shiritori-assets.py',str(imagebatch))
 target=ROOT/'whitelist.csv';before=target.read_text(encoding='utf-8');rows=list(csv.DictReader(io.StringIO(before)))
-manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read(manifestpath);assets={a['file']:a for a in manifest['assets']}
+manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read_manifest(manifestpath);assets={a['file']:a for a in manifest['assets']}
 for x in items:
  row=rows[x['id']-1];assert all(str(x[k])==row[k] for k in ('reading','word','meaning','level'))
  assert x['filename'] in assets and (ROOT/'assets/shiritori'/x['filename']).is_file()
@@ -99,7 +100,7 @@ buffer=io.StringIO(newline='');w=csv.DictWriter(buffer,fieldnames=HEADER,lineter
 assert after.startswith(baseline),'All pre-existing rows must be unchanged.'
 historypath=DATA/'history.json';history=read(historypath);assert history[-1]['afterSha256']==sha(before)
 history.append(dict(type='image-assets',batches=[str(imagebatch.relative_to(ROOT)),str((OUT/'plan.json').relative_to(ROOT))],beforeSha256=sha(before),afterSha256=sha(after),modifiedLines=[dict(id=i,before=b,after=a) for i,(b,a) in enumerate(zip(before.splitlines()[1:],after.splitlines()[1:]),1) if b!=a]))
-target.write_text(after,encoding='utf-8',newline='\n');save(historypath,history);save(manifestpath,manifest)
+target.write_text(after,encoding='utf-8',newline='\n');save(historypath,history);write_manifest(manifestpath, manifest)
 with batch.open('w',encoding='utf-8',newline='') as f:
  w=csv.DictWriter(f,fieldnames=HEADER,lineterminator='\n');w.writeheader();w.writerows(rows[x['id']-1] for x in items)
 coveragepath=ROOT/'data/image-coverage/review-2026-10-10.json';coverage=read(coveragepath);assert len(coverage)==p['baselineRows']

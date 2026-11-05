@@ -1,6 +1,7 @@
 """Record the pre-publication correction of a confused regional food name."""
 import csv,hashlib,io,json
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parents[1];NAME='2026-10-15-expansion512d'
 OUT=ROOT/'data/image-coverage'/NAME;DATA=ROOT/'data/dictionary-imports'
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
@@ -35,12 +36,12 @@ for x in source['rows']:
  # Do not cite the Japanese B.League as the source for American NBA names.
  if any(k in x['word'] for k in ['レイカーズ','ウォリアーズ','セルティックス','ブルズ','ニックス']):x['sources']=[u for u in x['sources'] if u!='https://www.bleague.jp/club/']+['https://www.nba.com/teams']
 save(DATA/(NAME+'.source.json'),source)
-manifest=read(ROOT/'assets/shiritori/manifest.json')
+manifest=read_manifest(ROOT/'assets/shiritori/manifest.json')
 for a in manifest['assets']:
  if a.get('word')==word and a['file'].startswith('expansion512d-'):
   a['meaning']=meaning;a['review']='編集確認済み：ケチャップ系のスパゲッティの提供例。'+reason
   for alias in a['aliases']:alias['meaning']=meaning;alias['sourceReview']=a['review']
-save(ROOT/'assets/shiritori/manifest.json',manifest)
+write_manifest(ROOT/'assets/shiritori/manifest.json', manifest)
 for path in [DATA/(NAME+'.csv'),ROOT/'data/batches'/f'{NAME}-images.csv']:
  text=path.read_text(encoding='utf-8');reader=csv.DictReader(io.StringIO(text));rows=list(reader);fields=reader.fieldnames
  for r in rows:

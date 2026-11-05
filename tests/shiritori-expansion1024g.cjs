@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),name='2026-10-16-expansion1024g',out=path.join(root,'data/image-coverage',name);
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8')),plan=json(path.join(out,'plan.json')),summary=json(path.join(out,'summary.json'));
@@ -9,7 +10,7 @@ assert.equal(plan.items.length,1024);assert.equal(new Set(plan.items.map(x=>x.re
 const oldReadings=new Set(lines.slice(0,plan.baselineRows).map(s=>s.split(',')[0]));
 const gas=json(path.join(root,'data/dictionary-imports/2026-10-16-gas-vocabulary.review.json'));
 assert.ok(!plan.items.some(x=>gas.some(y=>x.reading===y.reading)),'Keep the concurrent GAS batch disjoint');
-const assets=json(path.join(root,'assets/shiritori/manifest.json')).assets,byfile=new Map(assets.map(a=>[a.file,a]));
+const assets=readManifest().assets,byfile=new Map(assets.map(a=>[a.file,a]));
 assert.equal(byfile.size,assets.length);
 for(const x of plan.items){
  assert.ok(!oldReadings.has(x.reading));assert.ok(!x.reading.endsWith('ん'));

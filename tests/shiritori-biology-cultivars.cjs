@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
 const root=process.env.SHIRITORI_ROOT||path.resolve(__dirname,'..');
 const name='2026-10-17-biology-cultivars';
@@ -16,7 +17,7 @@ for(const f of ['shiritori-grade-policy.js','shiritori-image-policy.js','shirito
 const html=fs.readFileSync(path.join(root,'shiritori.html'),'utf8');
 vm.runInContext(html.slice(html.indexOf('function parseCSV('),html.indexOf('const ST =')),runtime);
 runtime.csv=text;const parsed=vm.runInContext('parseCSV(csv,true)',runtime),byreading=new Map(parsed.map(r=>[r.reading,r]));
-const grades=json('data/shiritori-grade-review.json'),manifest=json('assets/shiritori/manifest.json');
+const grades=json('data/shiritori-grade-review.json'),manifest=readManifest();
 const coreVegetables=plan.items.filter(x=>x.category==='野菜'&&!x.aliasOfReading);
 assert.equal(coreVegetables.length,118);
 for(const x of plan.items){

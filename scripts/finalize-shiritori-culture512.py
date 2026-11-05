@@ -1,6 +1,7 @@
 """Validate all sheets, prepare R2 transfer, then register the reviewed batch."""
 import argparse,collections,csv,hashlib,importlib.util,json,mimetypes,subprocess,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'data/image-coverage/2026-10-19-culture512'
 save=lambda p,x:p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 sha=lambda b:hashlib.sha256(b).hexdigest()
@@ -52,13 +53,13 @@ with imagebatch.open('w',encoding='utf-8',newline='') as f:
 run('node','scripts/import-shiritori-words.cjs',str(batch),'--append','--validate-only')
 run('node','scripts/import-shiritori-words.cjs',str(batch),'--append')
 run(sys.executable,'-B','-X','utf8','scripts/import-shiritori-assets.py',str(imagebatch))
-manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=json.loads(manifestpath.read_text(encoding='utf-8'))
+manifestpath=ROOT/'assets/shiritori/manifest.json';manifest=read_manifest(manifestpath)
 for x in items:
  if not x.get('aliasOf'):continue
  asset=next(a for a in manifest['assets'] if a['file']==x['filename'])
  assert asset['aliases'][0]['id']==x['sharedWithId']
  asset['aliases'].append(dict(id=x['id'],originalId=None,reading=x['reading'],word=x['word'],meaning=x['meaning'],reuseReason='同じ芸術家の短い名前と正式名。本人の仕事を説明する同じ画像を共有。',sourceReview=x['imageReason']))
-save(manifestpath,manifest)
+write_manifest(manifestpath, manifest)
 after=(ROOT/'whitelist.csv').read_bytes();base=(OUT/'registration-baseline.csv').read_bytes();assert after.startswith(base)
 rows=list(csv.DictReader(after.decode('utf-8').splitlines()))
 assert len(rows)==plan['baselineRows']+512

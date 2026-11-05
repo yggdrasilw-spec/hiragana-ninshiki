@@ -1,6 +1,7 @@
 """Apply reviewed corrections once; reruns verify instead of reverting later edits."""
 import csv, hashlib, json, re, shutil
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 from PIL import Image
 ROOT=Path(__file__).resolve().parent.parent
 DIR=ROOT/'data/corrections'
@@ -15,7 +16,7 @@ plan=read(DIR/'2026-10-11-plan.json');groups=read(DIR/'2026-10-11-images.json')
 with csv_path.open(encoding='utf-8-sig',newline='') as f:
     reader=csv.DictReader(f);fields=reader.fieldnames;before=list(reader)
 rows=[dict(r) for r in before]
-manifest=read(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
+manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
 coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json');replaced={}
 for group in groups:
     sheet=ROOT/'assets/shiritori/sheets'/group['file']
@@ -77,5 +78,5 @@ for oid,(old,new) in enumerate(zip(before,rows),1):
 ledger={'date':plan['date'],'policy':plan['policy'],'beforeSha256':before_hash,'afterSha256':digest(csv_path),
     'sourceRows':len(before),'currentRows':len(current),'currentOriginalIds':origins,'changes':changes,
     'removedManifestAssets':orphaned,'replacedImages':list(replaced),'automaticSubjectCleanup':auto}
-write(ledger_path,ledger);write(ROOT/'assets/shiritori/manifest.json',manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
+write(ledger_path,ledger);write_manifest(ROOT/'assets/shiritori/manifest.json', manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
 print(json.dumps({'rows':len(current),'deleted':len(plan['delete']),'merged':len(plan['merge']),'images':len(replaced),'automaticExplanationCleanups':len(auto)},ensure_ascii=False))

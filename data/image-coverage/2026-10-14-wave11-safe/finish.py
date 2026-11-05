@@ -1,11 +1,14 @@
 import csv,json,hashlib
+import sys
 from pathlib import Path
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[2]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from shiritori_manifest import read_manifest
 plan=json.loads((BASE/'plan.json').read_text(encoding='utf-8'))
 crop=json.loads((BASE/'crop-status.json').read_text(encoding='utf-8'))
 assert crop=={'sheets':26,'rejected':[]}
 rows=list(csv.DictReader((ROOT/'whitelist.csv').open(encoding='utf-8-sig',newline='')))
-manifest=json.loads((ROOT/'assets/shiritori/manifest.json').read_text(encoding='utf-8'))
+manifest=read_manifest(ROOT / 'assets/shiritori/manifest.json')
 assets=[a for a in manifest['assets'] if a['file'].startswith('wave11-safe-')]
 assert len(assets)==410 and len({a['file'] for a in assets})==410
 for item in plan:

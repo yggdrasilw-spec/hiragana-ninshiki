@@ -7,6 +7,7 @@ import hashlib
 import json
 import shutil
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,7 +35,7 @@ with csv_path.open(encoding='utf-8', newline='') as stream:
     before = list(reader)
 rows = [dict(r) for r in before]
 manifest_path = ROOT / 'assets/shiritori/manifest.json'
-manifest = read(manifest_path)
+manifest = read_manifest(manifest_path)
 assets = {a['file']: a for a in manifest['assets']}
 image_edits = {}
 for entry in read(ROOT / 'data/image-coverage/2026-10-12/word-image-crop-repairs.json'):
@@ -128,6 +129,6 @@ assert history[-1]['afterSha256'] == record['beforeSha256']
 history.append(record)
 write(history_path, history)
 write(ledger_path, {**record, 'imageEdits': image_edits, 'removedManifestAssets': sorted(set(assets)-set(uses))})
-write(manifest_path, manifest)
+write_manifest(manifest_path, manifest)
 write(coverage_path, new_coverage)
 print(json.dumps({'rows': len(current), 'meaningEdits': len(plan['meanings']), 'merges': len(removed), 'imageEdits': len(image_edits)}, ensure_ascii=False))

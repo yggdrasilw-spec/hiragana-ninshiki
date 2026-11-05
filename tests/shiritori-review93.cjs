@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const ledger=read('data/corrections/review93-2026-10-11/ledger.json');
@@ -25,7 +26,7 @@ assert.match(find('借り暮らし').meaning,/家や部屋を借りて/);
 for(const [a,b] of [['一指','指す'],['いやいや','嫌い'],['運転','機動'],['おてんば','わんぱく'],['劣る','負け'],['お寝坊','遅刻'],['お話','伝える'],['齧り付く','食べる'],['噛む','食べる'],['借り暮らし','借り'],['可愛い','にっこり'],['感覚','味'],['カンカン','怒り'],['監督','班長'],['起案','計画'],['計画','検討'],['競争','運動会'],['義務','道徳'],['区別','ボタン'],['クリティカル','危険'],['帰る','お別れ'],['決別','お別れ']])assert.notEqual(find(a).image_asset,find(b).image_asset,'Distinct scenes: '+a+'/'+b);
 for(const [a,b] of [['お寝坊','寝坊'],['お腹の空く','空腹'],['溺れる','救う'],['液','液体'],['艱難辛苦','忍耐']])assert.equal(find(a).image_asset,find(b).image_asset,'Compatible shared scenes: '+a+'/'+b);
 assert.equal(find('噛む').image_asset,'assets/shiritori/complete-1199.png');
-const manifest=read('assets/shiritori/manifest.json');
+const manifest=readManifest();
 for(const file of ledger.replacedImages){
  const a=manifest.assets.find(a=>a.file===file);assert.ok(a,'Every updated/reused image remains referenced: '+file);
  if(a.sha256)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/shiritori',file))).digest('hex'),a.sha256);

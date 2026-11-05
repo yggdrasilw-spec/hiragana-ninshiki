@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),dir=path.join(root,'data/image-coverage/2026-10-19-nature512');
 const json=p=>JSON.parse(fs.readFileSync(p,'utf8')),hash=b=>crypto.createHash('sha256').update(b).digest('hex');
@@ -7,7 +8,7 @@ const current=fs.readFileSync(path.join(root,'whitelist.csv')),rows=parse(curren
 assert.equal(plan.items.length,544);assert.equal(new Set(plan.items.map(x=>x.reading)).size,544);assert.equal(rows.length,baseline.length+544);
 const corrections=json(path.join(dir,'existing-elements.json')),changed=new Set(corrections.map(c=>c.beforeId));assert.equal(changed.size,12);
 baseline.forEach((r,i)=>{if(!changed.has(i+1))assert.deepEqual(rows[i],r,'Preserved preexisting sense '+(i+1));else{assert.equal(rows[i].reading,r.reading);assert.equal(rows[i].word,r.word);for(const k of Object.keys(r).filter(k=>k!=='meaning'))assert.equal(rows[i][k],r[k]);assert.ok(rows[i].meaning.endsWith(r.meaning));}});
-const manifest=json(path.join(root,'assets/shiritori/manifest.json')),assets=new Map(manifest.assets.map(a=>[a.file,a]));
+const manifest=readManifest(),assets=new Map(manifest.assets.map(a=>[a.file,a]));
 const coverage=json(path.join(root,'data/image-coverage/review-2026-10-10.json')),grades=json(path.join(root,'data/shiritori-grade-review.json'));
 for(const x of plan.items){const row=rows[x.id-1];assert.equal(row.reading,x.reading);assert.equal(row.word,x.word);assert.equal(row.meaning,x.meaning);assert.equal(row.image_asset,'assets/shiritori/'+x.filename);assert.equal(row.image_credit,'AI生成イラスト');assert.match(x.reading,/^[ぁ-ゖー]+$/);assert.equal(grades[x.id-1].level,x.grade);assert.equal(coverage[x.id-1].meaning,x.meaning);assert.equal(coverage[x.id-1].image_asset,row.image_asset);
  const bytes=fs.readFileSync(path.join(root,row.image_asset));assert.equal(bytes.readUInt32BE(16),256);assert.equal(bytes.readUInt32BE(20),256);const asset=assets.get(x.filename);assert.equal(asset.sha256,hash(bytes));assert.ok(asset.aliases.some(a=>a.id===x.id&&a.meaning===x.meaning));assert.equal(asset.sourceSheet,x.sourceSheet);assert.equal(asset.tileIndex,x.tileIndex);assert.ok(x.lexicalSource?.url&&x.meaningReason&&x.ageReason&&x.imageReason);

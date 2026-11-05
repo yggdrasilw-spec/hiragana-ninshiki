@@ -13,6 +13,7 @@ import re
 import hashlib
 import importlib.util
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 
 from PIL import Image
 
@@ -35,7 +36,7 @@ with csv_path.open(encoding="utf-8-sig", newline="") as stream:
 lookup = {}
 for row in rows:
     lookup.setdefault((row["reading"], row["word"]), []).append(row)
-manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+manifest = read_manifest(manifest_path)
 ledger_path = root / "data/corrections/2026-10-11-ledger.json"
 original_ids = json.loads(ledger_path.read_text(encoding="utf-8"))["currentOriginalIds"] if ledger_path.is_file() else []
 registered = {asset["file"]: asset for asset in manifest["assets"]}
@@ -155,7 +156,7 @@ if pending:
         rewritten.append(prefix + ',' + ','.join(row[k] for k in
                          ('image_asset', 'image_mode', 'image_credit')))
     csv_path.write_text('\n'.join(rewritten) + '\n', encoding='utf-8', newline='\n')
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_manifest(manifest_path, manifest)
     if history is not None:
         after_text = csv_path.read_text(encoding="utf-8")
         history.append({

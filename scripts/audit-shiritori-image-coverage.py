@@ -1,13 +1,14 @@
 """Validate the complete word-level action/concept image coverage review."""
 import argparse,csv,json,re
 from pathlib import Path
+from shiritori_manifest import read_manifest
 from PIL import Image
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parent.parent)
 args=parser.parse_args();root=args.root.resolve()
 with (root/'whitelist.csv').open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
 report=json.loads((root/'data/image-coverage/review-2026-10-10.json').read_text(encoding='utf-8'))
-manifest=json.loads((root/'assets/shiritori/manifest.json').read_text(encoding='utf-8'))
+manifest=read_manifest(root/'assets/shiritori/manifest.json')
 assert len(rows)==len(report),'Vocabulary changed: refresh the coverage review.'
 assets={a['file']:a for a in manifest['assets']}
 assert len(assets)==len(manifest['assets']),'Duplicate manifest asset names.'

@@ -1,8 +1,9 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=process.env.SHIRITORI_ROOT||path.resolve(__dirname,'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const text=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8'),lines=text.trimEnd().split('\n'),fields=lines.shift().split(','),rows=lines.map(line=>Object.fromEntries(line.split(',').map((x,i)=>[fields[i],x])));
-const name='data/image-coverage/2026-10-17-biology-generated/',plan=read(name+'plan.json'),summary=read(name+'summary.json'),manifest=read('assets/shiritori/manifest.json'),byfile=new Map(manifest.assets.map(x=>[x.file,x]));
+const name='data/image-coverage/2026-10-17-biology-generated/',plan=read(name+'plan.json'),summary=read(name+'summary.json'),manifest=readManifest(),byfile=new Map(manifest.assets.map(x=>[x.file,x]));
 const a=read('data/dictionary-imports/2026-10-17-biology-cultivars.review.json'),b=read('data/dictionary-imports/2026-10-17-snakes-danger.review.json');
 const coverage=read('data/image-coverage/review-2026-10-10.json');
 assert.equal(a.length,501);assert.equal(b.length,93);assert.equal(b.filter(x=>x.category==='ヘビ').length,76);assert.equal(rows.length,12894);assert.equal(plan.items.length,594);assert.equal(summary.generatedImages,578);assert.equal(summary.sharedImages,16);

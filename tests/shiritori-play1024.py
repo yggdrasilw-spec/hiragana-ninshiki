@@ -1,15 +1,18 @@
 """Batch-specific checks of stable IDs, shared senses, hashes and R2 evidence."""
 import csv,json,hashlib,collections,re
+import sys
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'data/dictionary-imports/2026-10-27-play1024';E=ROOT/'data/image-coverage/2026-10-27-play1024'
+sys.path.insert(0, str(ROOT / 'scripts'))
+from shiritori_manifest import read_manifest
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 s=read(BASE.with_suffix('.summary.json'));items=read(BASE.with_suffix('.review.json'));n=len(items)
 raw=(ROOT/'whitelist.csv').read_bytes();rows=list(csv.DictReader(raw.decode('utf-8').splitlines()))
 assert n>=1024 and s['registered'] and len(rows)==s['baselineRows']+n and hashlib.sha256(raw).hexdigest()==s['afterSha256']
 baseline=b'\n'.join(raw.split(b'\n')[:s['baselineRows']+1])+b'\n';assert hashlib.sha256(baseline).hexdigest()==s['beforeSha256']
 coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json');updates=read(ROOT/'data/image-coverage/review-updates.json');grades=read(ROOT/'data/shiritori-grade-review.json')
-manifest=read(ROOT/'assets/shiritori/manifest.json');assets={x['file']:x for x in manifest['assets']};assert len(assets)==len(manifest['assets'])
+manifest=read_manifest(ROOT / 'assets/shiritori/manifest.json');assets={x['file']:x for x in manifest['assets']};assert len(assets)==len(manifest['assets'])
 assert len(coverage)==len(updates['entries'])==len(grades)==len(rows)
 assert len({(x['reading'],x['word'],x['meaning']) for x in items})==n
 byword={x['word']:x for x in items};groups=collections.defaultdict(list)

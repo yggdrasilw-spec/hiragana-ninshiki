@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
@@ -20,7 +21,7 @@ vm.runInContext(html.slice(html.indexOf('function parseCSV('),html.indexOf('cons
 const parsed=vm.runInContext('parseCSV(csv)',context);
 assert.equal(parsed.find(r=>r.reading==='あり').words.length,1);
 assert.equal(parsed.find(r=>r.reading==='いか').words.length,2);
-const manifest=read('assets/shiritori/manifest.json');
+const manifest=readManifest();
 for(const asset of manifest.assets)for(const alias of asset.aliases||[]){
  const row=rows[alias.id-1];assert.ok(row);for(const k of ['word','reading','meaning'])assert.equal(row[k],alias[k]);assert.equal(row.image_asset,'assets/shiritori/'+asset.file);
 }

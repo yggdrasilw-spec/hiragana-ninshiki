@@ -2,6 +2,7 @@
 import argparse,csv,hashlib,importlib.util,io,json,subprocess,sys
 from collections import Counter
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parents[1];NAME='2026-10-16-expansion1024f';OUT=ROOT/'data/image-coverage'/NAME;DATA=ROOT/'data/dictionary-imports'
 HEADER='reading,word,meaning,imagequery,level,imagequery_en,image_asset,image_mode,image_credit'.split(',')
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
@@ -65,7 +66,7 @@ image_csv=ROOT/'data/batches'/(NAME+'-images.csv');writecsv(image_csv,image_rows
 run('node','scripts/import-shiritori-words.cjs',str(DATA/(NAME+'.csv')),'--append','--validate-only')
 run('node','scripts/import-shiritori-words.cjs',str(DATA/(NAME+'.csv')),'--append')
 run(sys.executable,'-X','utf8','scripts/import-shiritori-assets.py',str(image_csv))
-text=(ROOT/'whitelist.csv').read_text(encoding='utf-8');rows=list(csv.DictReader(io.StringIO(text)));manifest=read(ROOT/'assets/shiritori/manifest.json');assets={x['file']:x for x in manifest['assets']}
+text=(ROOT/'whitelist.csv').read_text(encoding='utf-8');rows=list(csv.DictReader(io.StringIO(text)));manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={x['file']:x for x in manifest['assets']}
 for x in items:
  if not x.get('reuseSlot'):continue
  row=rows[x['id']-1];row.update(image_asset='assets/shiritori/'+x['filename'],image_mode='asset',image_credit='AI生成イラスト')
@@ -80,7 +81,7 @@ history=read(DATA/'history.json');assert history[-1]['afterSha256']==sha(text)
 if after!=text:
  history.append(dict(type='image-assets',batches=[str(image_csv.relative_to(ROOT))],beforeSha256=sha(text),afterSha256=sha(after),modifiedLines=[dict(id=i,before=a,after=b) for i,(a,b) in enumerate(zip(text.splitlines()[1:],after.splitlines()[1:]),1) if a!=b],note='別名の画像割り当てと、既存チロルチョコの外部画像検索抑止。'))
  (ROOT/'whitelist.csv').write_text(after,encoding='utf-8',newline='\n');save(DATA/'history.json',history)
-save(ROOT/'assets/shiritori/manifest.json',manifest)
+write_manifest(ROOT/'assets/shiritori/manifest.json', manifest)
 coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json');byid={r['id']:r for r in coverage}
 for x in items:
  row=rows[x['id']-1];byid[x['id']]=dict(id=x['id'],**row,target=x['imagePolicy']!='none',category=x['category'],scopeReason='具体的な商品・会社名は説明のみ。一般の対象は独自イラスト。',assignment='reused' if x.get('reuseSlot') else 'new' if x['imagePolicy']!='none' else 'explanation-only',sourceId=by_slot[x['reuseSlot']]['id'] if x.get('reuseSlot') else x['id'],sourceReview='語義ごとの画像方針を記録。')

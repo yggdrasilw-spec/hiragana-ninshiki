@@ -1,6 +1,7 @@
 """Extract measured grids; validate all 512 words before importing the full batch."""
 import argparse,csv,hashlib,importlib.util,json,shutil,subprocess,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parent.parent
 NAME='2026-10-14-expansion512b'
 OUT=ROOT/'data/image-coverage'/NAME
@@ -78,7 +79,7 @@ run(sys.executable,'-X','utf8','scripts/import-shiritori-assets.py',str(imagebat
 target=ROOT/'whitelist.csv';before=target.read_text(encoding='utf-8')
 rows=list(csv.DictReader(target.open(encoding='utf-8')))
 manifest_path=ROOT/'assets/shiritori/manifest.json'
-manifest=json.loads(manifest_path.read_text(encoding='utf-8'));assets={a['file']:a for a in manifest['assets']}
+manifest=read_manifest(manifest_path);assets={a['file']:a for a in manifest['assets']}
 for x in items:
  r=rows[x['id']-1]
  assert all(r[k]==str(x[k]) for k in ('reading','word','meaning','level'))
@@ -99,7 +100,7 @@ assert history[-1]['afterSha256']==sha(before)
 changes=[dict(id=i,before=b,after=a) for i,(b,a) in enumerate(zip(before.splitlines()[1:],after.splitlines()[1:]),1) if b!=a]
 assert all(c['id']>plan['baselineRows'] and c['before'].split(',')[:6]==c['after'].split(',')[:6] for c in changes)
 history.append(dict(type='image-assets',batches=[str(imagebatch.relative_to(ROOT)),str((OUT/'plan.json').relative_to(ROOT))],beforeSha256=sha(before),afterSha256=sha(after),modifiedLines=changes))
-save(history_path,history);save(manifest_path,manifest)
+save(history_path,history);write_manifest(manifest_path, manifest)
 coverage_path=ROOT/'data/image-coverage/review-2026-10-10.json'
 coverage=json.loads(coverage_path.read_text(encoding='utf-8'));assert len(coverage)==plan['baselineRows']
 for x in items:

@@ -1,6 +1,7 @@
 import csv,hashlib,json,subprocess,sys
 from collections import Counter
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 R=Path(__file__).resolve().parents[1];O=R/'data/image-coverage/2026-10-17-biology-generated'
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def save(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -29,7 +30,7 @@ with batch.open('w',encoding='utf-8',newline='') as f:
 subprocess.run([sys.executable,'-X','utf8','scripts/import-shiritori-assets.py',str(batch)],cwd=R,check=True)
 before_alias=(R/'whitelist.csv').read_bytes()
 with (R/'whitelist.csv').open(encoding='utf-8',newline='') as f:rows=list(csv.DictReader(f))
-m=read(R/'assets/shiritori/manifest.json');assets={x['file']:x for x in m['assets']};aliases=[]
+m=read_manifest(R/'assets/shiritori/manifest.json');assets={x['file']:x for x in m['assets']};aliases=[]
 for x in p['items']:
  r=rows[x['id']-1]
  if r['image_asset']:continue
@@ -44,7 +45,7 @@ for x in p['items']:
 assert len(aliases)==12,len(aliases)
 with (R/'whitelist.csv').open('w',encoding='utf-8',newline='') as f:
  w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n');w.writeheader();w.writerows(rows)
-after=(R/'whitelist.csv').read_bytes();save(R/'assets/shiritori/manifest.json',m)
+after=(R/'whitelist.csv').read_bytes();write_manifest(R/'assets/shiritori/manifest.json', m)
 hpath=R/'data/dictionary-imports/history.json';h=read(hpath);assert h[-1]['afterSha256']==sha(before_alias)
 h.append(dict(type='image-assets',batches=['data/image-coverage/2026-10-17-biology-generated/shared-aliases.json'],beforeSha256=sha(before_alias),afterSha256=sha(after),modifiedLines=[dict(id=i,before=b,after=a) for i,(b,a) in enumerate(zip(before_alias.decode().splitlines()[1:],after.decode().splitlines()[1:]),1) if b!=a]));save(hpath,h);save(O/'shared-aliases.json',aliases)
 for name in ['2026-10-17-biology-cultivars','2026-10-17-snakes-danger']:

@@ -1,8 +1,11 @@
 """Cross-file acceptance checks for exactly512 existing senses receiving pictures."""
 import collections,csv,hashlib,json
+import sys
 from pathlib import Path
 from PIL import Image
 R=Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(R / 'scripts'))
+from shiritori_manifest import read_manifest
 if not (R/'whitelist.csv').exists():R=Path('C:/Users/user/hiragana-ninshiki')
 O=R/'data/image-coverage/2026-10-25-seven512-images'
 read=lambda p:json.loads(p.read_text(encoding='utf-8'))
@@ -21,7 +24,7 @@ for ident,(old,new) in enumerate(zip(before,current),1):
  if ident in index:
   x=index[ident];assert new['image_asset']=='assets/shiritori/'+x['filename'];assert new['image_mode']=='asset' and new['image_credit']=='AI生成イラスト'
 assert set(changed)==set(index)|later_ids
-manifest=read(R/'assets/shiritori/manifest.json');assets=manifest['assets'];assert len(assets)==baseline['manifestAssets']+1024
+manifest=read_manifest(R / 'assets/shiritori/manifest.json');assets=manifest['assets'];assert len(assets)==baseline['manifestAssets']+1024
 assert sha(json.dumps(assets[:baseline['manifestAssets']],ensure_ascii=False,sort_keys=True).encode())==baseline['manifestPrefixSha256']
 byfile={x['file']:x for x in assets};assert len(byfile)==len(assets)
 coverage=read(R/'data/image-coverage/review-2026-10-10.json');grades=read(R/'data/shiritori-grade-review.json');decisions=read(R/'data/shiritori-grade-decisions.json')

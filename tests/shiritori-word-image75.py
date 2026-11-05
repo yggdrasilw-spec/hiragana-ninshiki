@@ -5,10 +5,13 @@ import io
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+from shiritori_manifest import read_manifest
 def read(file):
     return json.loads((ROOT / file).read_text())
 def digest(blob):
@@ -47,7 +50,7 @@ request = (ROOT / plan['request']).read_text()
 ordered = re.findall(r'^## 画像の修正: assets/shiritori/(\S+)', request, re.M)
 assert len(ordered) == 55
 assert set(ledger['imageEdits']) == set(ordered) - {'wave2-f-word-5640.png'}
-manifest = read('assets/shiritori/manifest.json')
+manifest = read_manifest(ROOT / 'assets/shiritori/manifest.json')
 assets = {a['file']: a for a in manifest['assets']}
 assert len(assets) == len(manifest['assets'])
 assert set(assets) == {Path(r['image_asset']).name for r in live_rows if r['image_asset']}

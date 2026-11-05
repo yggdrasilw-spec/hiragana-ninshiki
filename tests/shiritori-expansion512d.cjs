@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),name='2026-10-15-expansion512d';
 const json=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
@@ -13,7 +14,7 @@ const old=new Set(rows.slice(0,summary.baselineRows).map(x=>x.reading));
 const reserved=new Set(json('data/image-coverage/'+name+'/reservation-snapshot.json').readings);
 const concurrent=json('data/image-coverage/2026-10-15-expansion512c/plan.json').items;
 const other=new Set(concurrent.map(x=>x.reading));
-const manifest=json('assets/shiritori/manifest.json');
+const manifest=readManifest();
 const assets=new Map(manifest.assets.map(x=>[x.file,x]));assert.equal(assets.size,manifest.assets.length);
 for(const x of review){
  const row=rows[x.id-1];

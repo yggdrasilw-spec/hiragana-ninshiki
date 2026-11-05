@@ -1,6 +1,7 @@
 """Draw exact mathematical/quantity diagrams as new PNG assets (no generated-image edits)."""
 import json, math, argparse
 from pathlib import Path
+from shiritori_manifest import read_manifest
 from PIL import Image, ImageDraw, ImageFont
 STAGE=Path(__file__).resolve().parent
 OUT=STAGE/'native'
@@ -326,7 +327,7 @@ def main():
     req=json.loads(args.plan.read_text(encoding='utf-8'))
     # Historical plans must not overwrite reviewed scene replacements or revive removed assets.
     root=STAGE.parent
-    manifest=json.loads((root/'assets/shiritori/manifest.json').read_text(encoding='utf-8'))
+    manifest=read_manifest(root/'assets/shiritori/manifest.json')
     registered={a['file'] for a in manifest['assets']}
     ledger=root/'data/corrections/2026-10-11-ledger.json'
     protected=set(json.loads(ledger.read_text(encoding='utf-8'))['replacedImages']) if ledger.exists() else set()
