@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const ledger=read('data/corrections/round2/ledger.json'),plan=read('data/corrections/round2/plan.json');
@@ -22,7 +23,7 @@ assert.match(byOrigin.get(364).meaning,/一本の指/);assert.match(byOrigin.get
 for(const o of ledger.requestedOrders){assert.deepEqual(byOrigin.get(o.orderId)||null,o.after);if(o.id)assert.deepEqual(rows[o.id-1],o.after);}
 const coverage=read('data/image-coverage/review-2026-10-10.json');assert.equal(coverage.length,liveRows.length);
 liveRows.forEach((r,i)=>{assert.match(r.reading,/^[ぁ-ゖー]+$/);assert.ok(r.meaning&&!/[\r\n,]/.test(r.meaning));assert.equal(coverage[i].id,i+1);for(const k of ['word','reading','meaning','image_asset'])assert.equal(coverage[i][k],r[k]);});
-const manifest=read('assets/shiritori/manifest.json'),assets=manifest.assets;
+const manifest=readManifest(),assets=manifest.assets;
 for(const a of assets){const expected=liveRows.flatMap((r,i)=>r.image_asset==='assets/shiritori/'+a.file?[{id:i+1,reading:r.reading,word:r.word,meaning:r.meaning}]:[]);assert.ok(expected.length);assert.deepEqual(a.aliases.map(({id,reading,word,meaning})=>({id,reading,word,meaning})),expected);}
 for(const file of ledger.replacedImages){const a=(manifest.previousRound2Assets||assets).find(a=>a.file===file);assert.ok(a.prompt&&a.review&&a.scenePrompt&&a.cropBox&&a.cropMethod);assert.ok(fs.existsSync(path.join(root,'assets/shiritori',a.sourceSheet)));assert.equal(a.status,'reviewed');assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'assets/shiritori',a.archivedFile||file))).digest('hex'),a.sha256);}
 require('../scripts/shiritori-correction-ledger.cjs').historicalRows();

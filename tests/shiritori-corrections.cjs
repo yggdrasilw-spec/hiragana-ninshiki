@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
 require('../scripts/shiritori-correction-ledger.cjs').historicalRows();
@@ -20,7 +21,7 @@ assert.match(byOrigin.get(374).meaning,/3.03/);assert.ok(!byOrigin.get(361).mean
 assert.equal(byOrigin.get(317).reading,'いたずらっこ');assert.equal(byOrigin.get(812).reading,'だいず');
 assert.equal(byOrigin.get(438).word,'居留守');assert.match(byOrigin.get(5367).meaning,/任天堂/);
 for(const r of rows){assert.match(r.reading,/^[ぁ-ゖー]+$/);assert.ok(r.meaning&&!/[,\r\n]/.test(r.meaning));}
-const assets=read('assets/shiritori/manifest.json').assets;
+const assets=readManifest().assets;
 for(const a of assets){
   const uses=rows.map((r,i)=>({r,id:i+1})).filter(({r})=>r.image_asset==='assets/shiritori/'+a.file);
   assert.equal(a.aliases.length,uses.length,'Complete current alias list '+a.file);

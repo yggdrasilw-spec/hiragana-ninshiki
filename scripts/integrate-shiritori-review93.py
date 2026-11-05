@@ -2,6 +2,7 @@
 import csv, hashlib, io, json, subprocess
 from collections import defaultdict
 from pathlib import Path
+from shiritori_manifest import write_manifest
 ROOT=Path(__file__).resolve().parent.parent
 DIR=ROOT/'data/corrections/review93-2026-10-11'
 def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT)
@@ -90,7 +91,7 @@ ledger={**old,'baselineCommit':theirs,'initialBaselineCommit':'b7986ad','beforeS
     'integration':dict(mainCommit=theirs,standaloneCommit=ours,policy='mainの非重複変更と画像点検画面の機能を維持し、103注文で変更したフィールドと83枚の点検済み画像を統合。噛みやんはmainで削除済みのため再削除しない。')}
 history=data(theirs,'data/dictionary-imports/history.json');assert history[-1]['afterSha256']==digest(before_blob)
 history.append(dict(type='reviewed-corrections',ledger='data/corrections/review93-2026-10-11/ledger.json',beforeSha256=ledger['beforeSha256'],afterSha256=ledger['afterSha256'],sourceRows=len(before),currentRows=len(rows),currentBeforeIds=ledger['currentBeforeIds'],changes=changes))
-write(DIR/'standalone-ledger.json',old);write(DIR/'ledger.json',ledger);write(ROOT/'assets/shiritori/manifest.json',manifest)
+write(DIR/'standalone-ledger.json',old);write(DIR/'ledger.json',ledger);write_manifest(ROOT/'assets/shiritori/manifest.json', manifest)
 write(ROOT/'data/image-coverage/review-2026-10-10.json',coverage);write(ROOT/'data/dictionary-imports/history.json',history)
 (ROOT/'whitelist.csv').write_bytes(after_blob)
 # Keep both supported history record formats and both obsolete-vocabulary checks.

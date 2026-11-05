@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),name='2026-10-15-expansion512e';
 const json=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
@@ -9,7 +10,7 @@ const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
 assert.equal(plan.items.length,512);assert.equal(new Set(plan.items.map(x=>x.reading)).size,512);
 assert.equal(hash(header.join(',')+'\n'+lines.slice(0,summary.baselineRows).join('\n')+'\n'),summary.beforeSha256,'All preceding vocabulary/IDs/images preserved');
 const reserved=new Set(snapshot.readings),old=new Set(rows.slice(0,summary.baselineRows).map(r=>r.reading));
-const assets=new Map(json('assets/shiritori/manifest.json').assets.map(x=>[x.file,x]));
+const assets=new Map(readManifest().assets.map(x=>[x.file,x]));
 const coverage=json('data/image-coverage/review-2026-10-10.json');let cards=0,illustrations=0;
 for(const x of plan.items){
  assert.ok(!reserved.has(x.reading),'Other batches reserved '+x.reading);

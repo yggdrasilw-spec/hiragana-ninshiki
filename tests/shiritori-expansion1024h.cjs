@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),out=path.join(root,'data/image-coverage/2026-10-18-expansion1024h');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),plan=read(path.join(out,'plan.json')),summary=read(path.join(out,'summary.json'));
@@ -7,7 +8,7 @@ const lines=csv.toString('utf8').trimEnd().split('\n'),head=lines.shift().split(
 const rows=lines.map(l=>Object.fromEntries(l.split(',').map((x,i)=>[head[i],x]))),oldReadings=new Set(rows.slice(0,plan.baselineRows).map(x=>x.reading));
 assert.equal(plan.items.length,1024);assert.equal(new Set(plan.items.map(x=>x.reading)).size,1024);
 assert.equal(rows.length,plan.baselineRows+1024);
-const manifest=read(path.join(root,'assets/shiritori/manifest.json')).assets,byfile=new Map(manifest.map(x=>[x.file,x]));
+const manifest=readManifest().assets,byfile=new Map(manifest.map(x=>[x.file,x]));
 const grade=read(path.join(root,'data/shiritori-grade-review.json')),inventory=read(path.join(root,'data/image-coverage/r2-assets.json'));
 const entries=new Map(inventory.entries.map(x=>[x.key,x]));
 for(const x of plan.items){

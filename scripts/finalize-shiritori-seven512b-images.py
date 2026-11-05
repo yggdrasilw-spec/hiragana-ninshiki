@@ -1,6 +1,7 @@
 """Stage and register the complementary 512 senses after source and delivery checks."""
 import argparse,csv,hashlib,importlib.util,json,mimetypes,shutil,subprocess,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest
 R=Path(__file__).resolve().parents[1]
 O=R/'data/image-coverage/2026-10-25-seven512b-images'
 read=lambda p:json.loads(p.read_text(encoding='utf8'))
@@ -46,7 +47,7 @@ if a.mode=='prepare':
    assert verified[x['filename']]['tileIndex']==x['tileIndex'];copy(f/'tiles'/x['filename'],R/'assets/shiritori'/x['filename'])
    x.update(sourceSheet=source_rel,cropValidation=proof_rel,prompt=prompt,scene=x['word']+'：'+x['meaning'],image_asset='assets/shiritori/'+x['filename'],image_mode='asset',image_credit='AI生成イラスト')
   grid.verify_report(R/proof_rel,R/'assets/shiritori'/source_rel,R/'assets/shiritori')
- manifest=read(R/'assets/shiritori/manifest.json');decisions=read(R/'data/shiritori-grade-decisions.json')
+ manifest=read_manifest(R/'assets/shiritori/manifest.json');decisions=read(R/'data/shiritori-grade-decisions.json')
  O.mkdir(parents=True,exist_ok=True);(O/'registration-baseline.csv').write_bytes(baseline)
  save(O/'baseline-state.json',dict(dictionarySha256=sha(baseline),rowCount=len(rows),manifestAssets=len(manifest['assets']),manifestPrefixSha256=sha(json.dumps(manifest['assets'],ensure_ascii=False,sort_keys=True).encode()),gradeLevelsSha256=sha(json.dumps(decisions['levels'],sort_keys=True).encode())))
  save(O/'semantic-review.json',reviews);save(O/'plan.json',p)
@@ -81,7 +82,7 @@ for i,(old,new) in enumerate(zip(before,after),1):
  for k in old:
   if i not in ids or k not in ['image_asset','image_mode','image_credit']:assert old[k]==new[k],(i,k)
 assert set(changed)==ids
-assets=read(R/'assets/shiritori/manifest.json')['assets'];assert len(assets)==state['manifestAssets']+512
+assets=read_manifest(R/'assets/shiritori/manifest.json')['assets'];assert len(assets)==state['manifestAssets']+512
 assert sha(json.dumps(assets[:state['manifestAssets']],ensure_ascii=False,sort_keys=True).encode())==state['manifestPrefixSha256']
 assert sha(json.dumps(read(R/'data/shiritori-grade-decisions.json')['levels'],sort_keys=True).encode())==state['gradeLevelsSha256']
 byfile={x['file']:x for x in assets};coverage=read(R/'data/image-coverage/review-2026-10-10.json')

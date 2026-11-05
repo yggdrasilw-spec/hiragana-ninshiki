@@ -4,6 +4,7 @@ import hashlib
 import json
 import shutil
 from pathlib import Path
+from shiritori_manifest import read_manifest
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data/image-coverage/2026-10-18-expansion1024h'
@@ -12,7 +13,7 @@ p.add_argument('--sheet', type=int, required=True)
 a = p.parse_args()
 report = json.loads((OUT / f'sheet{a.sheet:02}-crop.json').read_text(encoding='utf-8'))
 dest = OUT / 'superseded' / f'sheet{a.sheet:02}'
-registered = {x['file'] for x in json.loads((ROOT / 'assets/shiritori/manifest.json').read_text(encoding='utf-8'))['assets']}
+registered = {x['file'] for x in read_manifest(ROOT / 'assets/shiritori/manifest.json')['assets']}
 for tile in report['tiles']:
     name = tile['file']
     assert name not in registered, 'Never move registered assets'

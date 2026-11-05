@@ -1,6 +1,7 @@
 """Prepare all reviewed existing-word images, then register after R2 readback."""
 import argparse,csv,hashlib,importlib.util,json,mimetypes,shutil,subprocess,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest
 R=Path('C:/Users/user/hiragana-ninshiki');O=R/'data/image-coverage/2026-10-25-seven512-images'
 read=lambda p:json.loads(p.read_text(encoding='utf-8'))
 save=lambda p,x:p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -29,7 +30,7 @@ for n,a in reviews.items():
  grid.verify_report(report,source,R/'assets/shiritori')
 if args.prepare:
  (O/'registration-baseline.csv').write_bytes(base)
- manifest=read(R/'assets/shiritori/manifest.json');decisions=read(R/'data/shiritori-grade-decisions.json')
+ manifest=read_manifest(R/'assets/shiritori/manifest.json');decisions=read(R/'data/shiritori-grade-decisions.json')
  save(O/'baseline-state.json',dict(manifestAssets=len(manifest['assets']),manifestPrefixSha256=sha(json.dumps(manifest['assets'],ensure_ascii=False,sort_keys=True).encode()),gradeLevelsSha256=sha(json.dumps(decisions['levels'],sort_keys=True).encode())))
  paths={R/'assets/shiritori'/x['filename'] for x in items};paths.update((R/'assets/shiritori/sheets').glob('seven512-sheet*.png'))
  entries=[dict(key=p.relative_to(R).as_posix(),bucket='shiritori-images' if p.parent==R/'assets/shiritori' else 'shiritori-image-archive',bytes=p.stat().st_size,sha256=sha(p.read_bytes()),contentType=mimetypes.guess_type(p.name)[0]) for p in sorted(paths)]
@@ -48,7 +49,7 @@ delivery=read(O/'r2-validation.json');assert delivery['complete'] and delivery['
 decisions=read(R/'data/shiritori-grade-decisions.json');assert decisions['sourceSha256']==sha(base)
 run(sys.executable,'-B','-X','utf8','scripts/import-shiritori-assets.py','data/batches/2026-10-25-seven512-images.csv')
 after=(R/'whitelist.csv').read_bytes();current=list(csv.DictReader(after.decode('utf-8').splitlines()));assert len(current)==len(rows)
-baseline_state=read(O/'baseline-state.json');manifest=read(R/'assets/shiritori/manifest.json')
+baseline_state=read(O/'baseline-state.json');manifest=read_manifest(R/'assets/shiritori/manifest.json')
 assert len(manifest['assets'])==baseline_state['manifestAssets']+512
 assert sha(json.dumps(manifest['assets'][:baseline_state['manifestAssets']],ensure_ascii=False,sort_keys=True).encode())==baseline_state['manifestPrefixSha256']
 target={x['id'] for x in items}

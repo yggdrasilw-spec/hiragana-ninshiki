@@ -1,9 +1,10 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),name='2026-10-15-expansion512c';
 const json=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const plan=json('data/image-coverage/'+name+'/plan.json'),summary=json('data/image-coverage/'+name+'/summary.json');
 const review=json('data/dictionary-imports/'+name+'.review.json'),pairs=json('data/image-coverage/'+name+'/abbreviation-pairs.json');
-const manifest=json('assets/shiritori/manifest.json'),text=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8');
+const manifest=readManifest(),text=fs.readFileSync(path.join(root,'whitelist.csv'),'utf8');
 const lines=text.trimEnd().split(/\r?\n/),header=lines.shift().split(',');
 const rows=lines.map(l=>Object.fromEntries(l.split(',').map((v,i)=>[header[i],v])));
 const hash=s=>crypto.createHash('sha256').update(s).digest('hex');

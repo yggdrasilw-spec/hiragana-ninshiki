@@ -1,6 +1,7 @@
 """Apply the reviewed 2026-10-25 image replacements; default is validation only."""
 import argparse,csv,hashlib,importlib.util,io,json,shutil
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'data/image-coverage/2026-10-25-clipping4'
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
@@ -14,7 +15,7 @@ def main():
   record=read(ledger);assert sha(before)==record['afterSha256'];assert sha(mp.read_bytes())==record['manifestAfterSha256'];assert all(sha((ROOT/'assets/shiritori'/e['afterFile']).read_bytes())==e['afterSha256'] for e in record['edits']);print('Already applied; baseline and image checks passed.');return
  assert sha(before)==baseline['dictionarySha256'],'Dictionary changed; rebase the reviewed plan first.'
  assert sha(mp.read_bytes())==baseline['manifestSha256'],'Manifest changed; rebase the reviewed plan first.'
- text=before.decode('utf-8-sig');reader=csv.DictReader(io.StringIO(text));fields=reader.fieldnames;rows=list(reader);manifest=read(mp);assets={a['file']:a for a in manifest['assets']}
+ text=before.decode('utf-8-sig');reader=csv.DictReader(io.StringIO(text));fields=reader.fieldnames;rows=list(reader);manifest=read_manifest(mp);assets={a['file']:a for a in manifest['assets']}
  review=read(BASE/'semantic-review.json');assert review['approved'] is True
  assert set(review['files'])=={a['file'] for a in plan}
  spec=importlib.util.spec_from_file_location('grid',ROOT/'scripts/crop-shiritori-grid.py');grid=importlib.util.module_from_spec(spec);spec.loader.exec_module(grid)
@@ -50,6 +51,6 @@ def main():
    else:shutil.copyfile(production,backup)
   for e in edits:
    production=ROOT/'assets/shiritori'/e['afterFile'];shutil.copyfile(BASE/'tiles'/e['validatedTile'],production);assert sha(production.read_bytes())==e['afterSha256']
-  csvpath.write_bytes(after);dump(mp,manifest);history.append(record);dump(historypath,history);dump(coveragepath,coverage);dump(ledger,{**summary,'manifestAfterSha256':sha(mp.read_bytes())})
+  csvpath.write_bytes(after);write_manifest(mp, manifest);history.append(record);dump(historypath,history);dump(coveragepath,coverage);dump(ledger,{**summary,'manifestAfterSha256':sha(mp.read_bytes())})
  print(json.dumps({k:v for k,v in summary.items() if k!='edits'},ensure_ascii=False))
 if __name__=='__main__':main()

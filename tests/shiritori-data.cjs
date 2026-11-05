@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -58,7 +59,7 @@ assert.equal(additions.length, expected.filter(line => !external.has(key(line)))
 assert.equal(new Set(additions.map(key)).size, additions.length);
 for (const line of expected) assert.ok(external.has(key(line)) ? currentKeys.has(editedKey(externalResolution(line).key)) : vocabularyKeys.includes(vocabularyKey(line)), 'Reviewed batch vocabulary imported or explicitly unified: ' + line);
 for (const line of additions) { const cols = line.split(','); assert.match(cols[0], /^[ぁ-ゖー]+$/); assert.ok(cols.length >= 6 && cols.length <= 9); assert.match(cols[4], /^[123]$/); }
-const manifest = JSON.parse(fs.readFileSync(path.join(root, 'assets/shiritori/manifest.json'), 'utf8'));
+const manifest = readManifest();
 for (const asset of manifest.assets) {
   assert.ok(asset.prompt && asset.status === 'reviewed');
   assert.ok(rows.find(row => row.reading === asset.reading)?.imagequeries.some(q => q.asset === 'assets/shiritori/' + asset.file));

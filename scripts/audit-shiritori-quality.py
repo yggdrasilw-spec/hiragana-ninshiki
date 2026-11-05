@@ -5,13 +5,14 @@ The external dictionary is optional. Keep its download outside the repository.
 """
 import argparse, collections, csv, gzip, hashlib, json, re
 from pathlib import Path
+from shiritori_manifest import read_manifest
 from PIL import Image
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--dictionary',type=Path)
 parser.add_argument('--output',type=Path)
 args=parser.parse_args();root=Path(__file__).resolve().parent.parent
 rows=list(csv.DictReader((root/'whitelist.csv').open(encoding='utf-8-sig',newline='')))
-manifest=json.loads((root/'assets/shiritori/manifest.json').read_text())
+manifest=read_manifest(root/'assets/shiritori/manifest.json')
 ledger=json.loads((root/'data/corrections/2026-10-11-ledger.json').read_text())
 coverage=json.loads((root/'data/image-coverage/review-2026-10-10.json').read_text())
 assert len(coverage)==len(rows) and all(e['id']==i and all(e[k]==r[k] for k in ['word','reading','meaning','image_asset']) for i,(e,r) in enumerate(zip(coverage,rows),1)),'Refresh coverage identities before auditing.'

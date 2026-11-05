@@ -1,3 +1,4 @@
+const {readManifest} = require('../scripts/shiritori-manifest.cjs');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),name='2026-10-16-expansion1024f',dir='data/image-coverage/'+name;
 const json=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
@@ -9,7 +10,7 @@ assert.ok(plan.items.length>=1024);assert.ok(summary.distinctNewReadings>=1024);
 const keys=plan.items.map(x=>[x.reading,x.word,x.meaning].join(','));assert.equal(new Set(keys).size,keys.length);
 const oldkeys=new Set(before.map(x=>x.split(',').slice(0,3).join(',')));for(const k of keys)assert.ok(!oldkeys.has(k));
 before.forEach((line,i)=>{const now=lines[i].split(','),old=line.split(',');assert.deepEqual(now.slice(0,7),old.slice(0,7),'Preserve prior vocabulary, levels, IDs and assets');if(old[1]!=='チロルチョコ')assert.deepEqual(now,old);});
-const assets=json('assets/shiritori/manifest.json').assets,byfile=new Map(assets.map(a=>[a.file,a]));assert.equal(byfile.size,assets.length);
+const assets=readManifest().assets,byfile=new Map(assets.map(a=>[a.file,a]));assert.equal(byfile.size,assets.length);
 let none=0,illustrated=0;
 for(const x of reviews){
  const r=rows[x.id-1];for(const k of ['word','reading','meaning'])assert.equal(r[k],x[k]);assert.match(r.reading,/^[ぁ-ゖー]+$/);

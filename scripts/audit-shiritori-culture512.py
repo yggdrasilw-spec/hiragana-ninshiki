@@ -1,6 +1,7 @@
 """Audit the exact new meanings, name aliases, five levels and R2 records."""
 import collections,csv,hashlib,json
 from pathlib import Path
+from shiritori_manifest import read_manifest
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'data/image-coverage/2026-10-19-culture512'
 read=lambda p:json.loads(p.read_text(encoding='utf-8'))
 plan=read(OUT/'plan.json');items=plan['items'];current=(ROOT/'whitelist.csv').read_bytes()
@@ -12,7 +13,7 @@ assert current.startswith(base),'Preceding dictionary rows changed'
 assert len(items)==512 and len(rows)>=len(original)+512
 assert len({x['reading'] for x in items})==512
 assert not {x['reading'] for x in items}&{x['reading'] for x in original}
-manifest=read(ROOT/'assets/shiritori/manifest.json');assets={x['file']:x for x in manifest['assets']}
+manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={x['file']:x for x in manifest['assets']}
 grades={x['id']:x for x in read(ROOT/'data/shiritori-grade-review.json')}
 coverage={x['id']:x for x in read(ROOT/'data/image-coverage/review-2026-10-10.json')}
 inventory=read(OUT/'r2-upload.json');objects={(e['bucket'],e['key']):e for e in inventory['entries']}

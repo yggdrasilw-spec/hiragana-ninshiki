@@ -2,6 +2,8 @@
 /whitelist.csv text eol=lf
 /data/japan-places/** text eol=lf
 /data/shiritori-delivery/** text eol=lf
+/assets/shiritori/manifest.json text eol=lf
+/assets/shiritori/manifest-data/*.json text eol=lf
 /data/dictionary-imports/2026-10-27-japan-geography.* text eol=lf
 /data/dictionary-imports/japan-geography-sources/** text eol=lf
 

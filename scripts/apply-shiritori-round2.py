@@ -1,6 +1,7 @@
 """Apply the second user review; preserve a reversible, hashed history and current row IDs."""
 import csv,hashlib,json,sys
 from pathlib import Path
+from shiritori_manifest import read_manifest, write_manifest
 from PIL import Image,ImageOps
 ROOT=Path(__file__).resolve().parent.parent
 DIR=ROOT/'data/corrections/round2'
@@ -11,7 +12,7 @@ path=ROOT/'whitelist.csv'
 if (DIR/'ledger.json').exists():
     assert sha(path)==read(DIR/'ledger.json')['afterSha256'],'Later edits exist; do not overwrite them.'
     if '--recrop' in sys.argv:
-        manifest=read(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
+        manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']}
         for group in read(DIR/'images.json'):
             with Image.open(ROOT/'assets/shiritori/sheets'/group['file']) as im:
                 for t in group['tasks']:
@@ -20,7 +21,7 @@ if (DIR/'ledger.json').exists():
                     output=ROOT/'assets/shiritori'/t['file']
                     ImageOps.pad(im.crop(t['cropBox']).convert('RGB'),(256,256),method=Image.Resampling.LANCZOS,color='white').save(output,optimize=True)
                     assets[t['file']].update(cropBox=t['cropBox'],prompt=group['prompt'],cropMethod=group['cropMethod'],sha256=sha(output))
-        write(ROOT/'assets/shiritori/manifest.json',manifest)
+        write_manifest(ROOT/'assets/shiritori/manifest.json', manifest)
         print('Recorded cell boundaries applied; CSV unchanged.');raise SystemExit(0)
     print('Already applied; hash verified.');raise SystemExit(0)
 plan=read(DIR/'plan.json');groups=read(DIR/'images.json')
@@ -30,7 +31,7 @@ assert history and history[-1]['afterSha256']==before_hash,'Unrecorded dictionar
 with path.open(encoding='utf-8',newline='') as f:
     reader=csv.DictReader(f);heads=reader.fieldnames;before=list(reader)
 rows=[dict(r) for r in before];coverage=read(ROOT/'data/image-coverage/review-2026-10-10.json')
-manifest=read(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']};replaced={}
+manifest=read_manifest(ROOT/'assets/shiritori/manifest.json');assets={a['file']:a for a in manifest['assets']};replaced={}
 for group in groups:
     source=ROOT/'assets/shiritori/sheets'/group['file']
     assert source.exists() and group.get('visuallyReviewed'),'Review and retain each generated sheet before applying.'
@@ -92,7 +93,7 @@ ledger={'date':plan['date'],'sourceRows':len(before),'currentRows':len(current),
 def line(r):return ','.join(r[k] for k in heads)
 history.append({'type':'vocabulary-corrections','batch':'data/corrections/round2/plan.json','beforeSha256':before_hash,'afterSha256':after_hash,
  'sourceRows':len(before),'currentOriginalIds':origins,'changes':[{'originalId':c['originalId'],'before':line(c['before']),**({'after':line(c['after'])} if c['after'] else {})} for c in changes]})
-write(historypath,history);write(DIR/'ledger.json',ledger);write(ROOT/'assets/shiritori/manifest.json',manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
+write(historypath,history);write(DIR/'ledger.json',ledger);write_manifest(ROOT/'assets/shiritori/manifest.json', manifest);write(ROOT/'data/image-coverage/review-2026-10-10.json',newcoverage)
 # This selection plan explicitly uses live IDs; historical batches and reviews remain historical.
 p=ROOT/'data/image-coverage/additional-plan-2026-10-11.json';additional=read(p)
 for group in additional['batches']:

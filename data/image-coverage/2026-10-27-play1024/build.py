@@ -7,6 +7,8 @@ import csv,json,hashlib,collections,shutil,sys
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 HERE=Path(__file__).resolve().parent;ROOT=Path('C:/Users/user/hiragana-ninshiki')
+sys.path.insert(0, str(ROOT / 'scripts'))
+from shiritori_manifest import read_manifest
 BASE=HERE/'2026-10-27-play1024';OUT=HERE/'assets';OUT.mkdir(exist_ok=True)
 sha=lambda b:hashlib.sha256(b).hexdigest()
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
@@ -18,7 +20,7 @@ for x in rows:groups[x['canonical']].append(x)
 fontpath='C:/Windows/Fonts/BIZ-UDGothicB.ttc'
 regular='C:/Windows/Fonts/BIZ-UDGothicR.ttc'
 colors=['#175c74','#755029','#345c3a','#525095','#845142','#385c81','#6b4273','#6c5337','#326565','#734b68']
-cats=list(dict.fromkeys(x['category'] for x in rows));manifest=read(ROOT/'assets/shiritori/manifest.json')
+cats=list(dict.fromkeys(x['category'] for x in rows));manifest=read_manifest(ROOT / 'assets/shiritori/manifest.json')
 byfile={x['file']:x for x in manifest['assets']};plan=[];existing=[]
 for canonical,aliases in groups.items():
  first=next((x for x in aliases if x['word']==canonical),aliases[0]);parent=parentmap.get(first.get('existingCanonicalId'))
