@@ -1,0 +1,147 @@
+{
+  "count": 8,
+  "targetCount": 512,
+  "pending": [
+    {
+      "id": 67656,
+      "word": "却下",
+      "verdict": "hold",
+      "reason": "却下の場面は読めるが、語名が二箇所にあり答えが見える。"
+    },
+    {
+      "id": 67909,
+      "word": "湾",
+      "verdict": "hold",
+      "reason": "形は合うが、自己比較を含む現行語義は要確認。表題で答えも見える。"
+    },
+    {
+      "id": 67500,
+      "word": "インシュリン",
+      "verdict": "hold",
+      "reason": "分泌の象徴だが、現行語義の肝臓での作用は原文確認待ち。語名も読め、答えが見える。"
+    },
+    {
+      "id": 67541,
+      "word": "皺",
+      "verdict": "hold",
+      "reason": "皺は描けているが、現行語義は要確認。表題で答えも見える。"
+    },
+    {
+      "id": 67849,
+      "word": "コレステロール",
+      "verdict": "hold",
+      "reason": "肝臓の産生を示す模式図として成立するが、語名が二箇所にあり答えが見える。"
+    },
+    {
+      "id": 67454,
+      "word": "泣き声",
+      "verdict": "hold",
+      "reason": "泣き声は描けているが、泣く条件のない現行語義は要確認。表題で答えも見える。"
+    },
+    {
+      "id": 67949,
+      "word": "小口",
+      "verdict": "hold",
+      "reason": "製本の小口として正しいが、現行語義の「問題を解く助けになる証拠」と一致しないため採用保留。"
+    },
+    {
+      "id": 67985,
+      "word": "赤痢",
+      "verdict": "hold",
+      "reason": "腸感染症の診断を表すが、語名が二箇所にあり答えが見える。"
+    },
+    {
+      "id": 67806,
+      "word": "名曲",
+      "verdict": "hold",
+      "reason": "優れた音楽を表すが、音楽に限定しない現行語義は要確認。表題で答えも見える。"
+    }
+  ],
+  "beforeSha256": "7eb06bda5d7fa479731212719106f5b5dac5f538fd4ec58b3db15e5e658d019c",
+  "assignedIds": [
+    67464,
+    67513,
+    67530,
+    67606,
+    67702,
+    67787,
+    67922,
+    68012
+  ],
+  "sheets": {
+    "model512-remaining17-s01-a01": {
+      "source": "assets/shiritori/sheets/model512-remaining17-s01-a01.png",
+      "cropValidation": "data/image-coverage/2026-11-04-model512-remaining17/model512-remaining17-s01-a01-crop.json",
+      "semanticReview": "data/image-coverage/2026-11-04-model512-remaining17/model512-remaining17-s01-a01-semantic-review.json",
+      "sourceSha256": "01a729bc74f7ac3aaaad0013fb5a0968850c21f8037b60b3e2c2c44c8b319c51"
+    }
+  },
+  "assignments": [
+    {
+      "id": 67464,
+      "reading": "めいだい",
+      "word": "命題",
+      "meaning": "何かを肯定または否定し、真または偽である言明。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67464.png",
+      "sha256": "abfa2f0431986b83cdf2a6c87354a2df251f4bcb441c651ad85eaeb592fd3f01"
+    },
+    {
+      "id": 67513,
+      "reading": "ほうていしき",
+      "word": "方程式",
+      "meaning": "2つの式が等しい数学的命題。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67513.png",
+      "sha256": "f03cc6dddfef1e690dfbfd99d2e1c6a8e8afcd354a63a0e61205ee1ab8ae3c47"
+    },
+    {
+      "id": 67606,
+      "reading": "だりつ",
+      "word": "打率",
+      "meaning": "バッターの打率の程度; 公式打席の数に割られるヒットの数。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67606.png",
+      "sha256": "24bbb85cb099721aebcf1356ebf3ae54973275f87757e69cce255fd218dd3d68"
+    },
+    {
+      "id": 67922,
+      "reading": "おんす",
+      "word": "オンス",
+      "meaning": "薬種屋の重量単位で480グレーンや1ポンドの12分の1と等しい。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67922.png",
+      "sha256": "ae3536bdf621b32a133e81661a563bf05ce95e86ca712beb781625340845c943"
+    },
+    {
+      "id": 68012,
+      "reading": "てびき",
+      "word": "手びき",
+      "meaning": "基本的な情報または指図を提供する何か。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-68012.png",
+      "sha256": "1d9c7febbfa28083049a9259918d97afc52716ec4651220dabf716bcb1e62273"
+    },
+    {
+      "id": 67787,
+      "reading": "せんじょう",
+      "word": "戦場",
+      "meaning": "戦闘が行われている（行われてきた）場所。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67787.png",
+      "sha256": "40710053339a05979cb1cb7c1da60fa05252f182fbcdb3e1b00cb175cab28d9b"
+    },
+    {
+      "id": 67530,
+      "reading": "ど",
+      "word": "度",
+      "meaning": "弧形と角度の測定単位。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67530.png",
+      "sha256": "1b570fe9b9643c65abf4b21436011702fcd2a05e3467070aca6496f8a1d46d2d"
+    },
+    {
+      "id": 67702,
+      "reading": "としごろ",
+      "word": "年頃",
+      "meaning": "ある資格または権利が発生する人生の年（通常、年齢で定義される）。",
+      "image_asset": "assets/shiritori/model512-remaining17-s01-a01-word-67702.png",
+      "sha256": "3e909e9b0bcc2a70d7da27c0b548cc9c70eecb726e4eca8bec44af83866eb56f"
+    }
+  ],
+  "afterSha256": "93740fd02ae06d0a9bfa8a8ae0c8a35815b4e397e6a8af12012b7afbc5ef6b05",
+  "nonImageColumnsUnchanged": true
+}

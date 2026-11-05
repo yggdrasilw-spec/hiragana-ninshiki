@@ -1,0 +1,154 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "phase": "remaining-content-repair",
+  "sheet": 1,
+  "attempt": 1,
+  "sourceSha256": "01a729bc74f7ac3aaaad0013fb5a0968850c21f8037b60b3e2c2c44c8b319c51",
+  "items": [
+    {
+      "id": 67464,
+      "tileIndex": 1,
+      "file": "model512-remaining17-s01-a01-word-67464.png",
+      "sha256": "abfa2f0431986b83cdf2a6c87354a2df251f4bcb441c651ad85eaeb592fd3f01",
+      "verdict": "pass",
+      "observation": "赤いりんごを例に「りんごは赤い」に緑のチェック、「りんごは青い」に青い×を置く。",
+      "reason": "肯定を表す二つの文に、目の前の赤い実についての真偽を対応させている。"
+    },
+    {
+      "id": 67656,
+      "tileIndex": 2,
+      "file": "model512-remaining17-s01-a01-word-67656.png",
+      "sha256": "9b1ac95fa0a4e2954f7537e9ba05e6b8580d4d3d3a14e7eb11688f1ee5aea4d0",
+      "verdict": "hold",
+      "observation": "裁判官が「却下」と赤い枠で明記した文書を渡す。",
+      "reason": "押印の内容がはっきり読め、裁判上の却下を示す。 語名が画像内の文書またはラベルに読め、答えが見えるため用途上も保留。"
+    },
+    {
+      "id": 67513,
+      "tileIndex": 3,
+      "file": "model512-remaining17-s01-a01-word-67513.png",
+      "sha256": "f03cc6dddfef1e690dfbfd99d2e1c6a8e8afcd354a63a0e61205ee1ab8ae3c47",
+      "verdict": "pass",
+      "observation": "黒板に「x + 3 = 5」、水平な天秤に左はxと橙三個、右は橙五個。",
+      "reason": "未知数を含む正しい等式で、図の数量と左右の対応も一致する。"
+    },
+    {
+      "id": 67909,
+      "tileIndex": 4,
+      "file": "model512-remaining17-s01-a01-word-67909.png",
+      "sha256": "3b9edf96a0cefe5016d721cf3b9f3f4a89d69a75a92af4d96cb8c77fcce02852",
+      "verdict": "hold",
+      "observation": "両側の岬で陸に囲まれ、海へ開く入り江。",
+      "reason": "湾の形として成立するが、現行語義は「湾より大きい」と自己比較しており原文確認まで採用保留。"
+    },
+    {
+      "id": 67606,
+      "tileIndex": 5,
+      "file": "model512-remaining17-s01-a01-word-67606.png",
+      "sha256": "24bbb85cb099721aebcf1356ebf3ae54973275f87757e69cce255fd218dd3d68",
+      "verdict": "pass",
+      "observation": "打者の横の表に「安打 1」「打数 4」「= .250」。",
+      "reason": "安打数と打数が明示され、1÷4＝.250の計算も正しい。"
+    },
+    {
+      "id": 67922,
+      "tileIndex": 6,
+      "file": "model512-remaining17-s01-a01-word-67922.png",
+      "sha256": "ae3536bdf621b32a133e81661a563bf05ce95e86ca712beb781625340845c943",
+      "verdict": "pass",
+      "observation": "薬種店風の天秤と「1 ℥」風の印を刻んだ分銅。「薬衡」の札。",
+      "reason": "薬衡を指定した重量単位を表し、薬衡オンスの記号と読める。"
+    },
+    {
+      "id": 68012,
+      "tileIndex": 7,
+      "file": "model512-remaining17-s01-a01-word-68012.png",
+      "sha256": "1d9c7febbfa28083049a9259918d97afc52716ec4651220dabf716bcb1e62273",
+      "verdict": "pass",
+      "observation": "開いた本に土へ穴を作る、種を入れる、水をやる順序が矢印で並ぶ。",
+      "reason": "基本的な手順を順序とともに伝える手びき。"
+    },
+    {
+      "id": 67541,
+      "tileIndex": 8,
+      "file": "model512-remaining17-s01-a01-word-67541.png",
+      "sha256": "2192906a6bb399cb09c020a7870546f4bb392e04b89be27473dfb0a82d692be4",
+      "verdict": "hold",
+      "observation": "紙の平らな面に数本の細長い凹凸がある。",
+      "reason": "皺の具体例だが、現行語義の単なる浅いへこみでは皺以外も含むため語義確認まで採用保留。"
+    },
+    {
+      "id": 67787,
+      "tileIndex": 9,
+      "file": "model512-remaining17-s01-a01-word-67787.png",
+      "sha256": "40710053339a05979cb1cb7c1da60fa05252f182fbcdb3e1b00cb175cab28d9b",
+      "verdict": "pass",
+      "observation": "土煙の上がる野で二軍が槍と刀を構え、倒れた兵も見える。",
+      "reason": "戦闘が行われている場所として成立。"
+    },
+    {
+      "id": 67849,
+      "tileIndex": 10,
+      "file": "model512-remaining17-s01-a01-word-67849.png",
+      "sha256": "602180fd8379797a9370b226c8e82d16b84ebdfc727368cf9e85ff91dc656662",
+      "verdict": "hold",
+      "observation": "肝臓から細胞へつなぎ、下に金色の四つの環と「コレステロール」の文字。",
+      "reason": "文字は合うが構造の図は主に六角形四つに見え、コレステロールに必要な五員環や側鎖が示されない。 語名が画像内の文書またはラベルに読め、答えが見えるため用途上も保留。"
+    },
+    {
+      "id": 67454,
+      "tileIndex": 11,
+      "file": "model512-remaining17-s01-a01-word-67454.png",
+      "sha256": "6148fe6ea8bbd87c9766b4299846621b6e64a5c286d83c8d7fe2a62c6c506493",
+      "verdict": "hold",
+      "observation": "涙を流して口を開く子供と口から広がる青い音波。",
+      "reason": "泣き声は描けているが、現行語義は泣くことを条件とせず興奮した発声全般を指すため採用保留。"
+    },
+    {
+      "id": 67530,
+      "tileIndex": 12,
+      "file": "model512-remaining17-s01-a01-word-67530.png",
+      "sha256": "1b570fe9b9643c65abf4b21436011702fcd2a05e3467070aca6496f8a1d46d2d",
+      "verdict": "pass",
+      "observation": "垂直と水平の二本の矢印の間に直角印と「90°」。",
+      "reason": "直角と90度の数値・単位記号が正しく対応。"
+    },
+    {
+      "id": 67949,
+      "tileIndex": 13,
+      "file": "model512-remaining17-s01-a01-word-67949.png",
+      "sha256": "aaf4ece2d0b0b92b3d8209a9dd02b214a71fd3cecff2243f8a578819680e2c55",
+      "verdict": "hold",
+      "observation": "本の背と反対にあるページの断面を指で示す。",
+      "reason": "製本の小口として正しいが、現行語義の「問題を解く助けになる証拠」と一致しないため採用保留。"
+    },
+    {
+      "id": 67702,
+      "tileIndex": 14,
+      "file": "model512-remaining17-s01-a01-word-67702.png",
+      "sha256": "3e909e9b0bcc2a70d7da27c0b548cc9c70eecb726e4eca8bec44af83866eb56f",
+      "verdict": "pass",
+      "observation": "誕生日を表すケーキから、「10歳から」と表示した活動場所へ入る子供に矢印。",
+      "reason": "年齢が資格の条件になる場面。10の表示は開始年齢で、ろうそくは年齢を数える表示として使われていない。"
+    },
+    {
+      "id": 67985,
+      "tileIndex": 15,
+      "file": "model512-remaining17-s01-a01-word-67985.png",
+      "sha256": "d867942e172860e3c869611d4ce72b1f74d7a205e940e7e670fce18d9d67e085",
+      "verdict": "hold",
+      "observation": "医師が「赤痢」と明記した紙を確認し、背景に大腸図と検査器具。",
+      "reason": "文字が疾患を特定し、腸の感染症の診断を示す。 語名が画像内の文書またはラベルに読め、答えが見えるため用途上も保留。"
+    },
+    {
+      "id": 67806,
+      "tileIndex": 16,
+      "file": "model512-remaining17-s01-a01-word-67806.png",
+      "sha256": "767b5eea589f89f91541a11d17f1e11e0f2bfa6285bee71420c33f5167f2288f",
+      "verdict": "hold",
+      "observation": "音楽家風の人物が楽譜を掲げ、聴衆が感動し月桂冠が添えられる。",
+      "reason": "優れた楽曲は描けているが、現行語義は音楽以外の傑作まで含むため語義確認まで採用保留。"
+    }
+  ]
+}
