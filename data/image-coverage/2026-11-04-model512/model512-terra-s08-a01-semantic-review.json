@@ -1,0 +1,153 @@
+{
+  "model": "gpt-6.1-terra",
+  "effort": "low",
+  "sheet": 8,
+  "attempt": 1,
+  "sourceSha256": "57911b595802aa5af717a8eede9d3b317af36340cce91dd9e0390c741c758930",
+  "items": [
+    {
+      "id": 67613,
+      "tileIndex": 1,
+      "file": "model512-terra-s08-a01-word-67613.png",
+      "sha256": "b1ea78045f09a82baacf02b465ecd259d63206ba3b63a781e3d683251eebf3fb",
+      "verdict": "pass",
+      "observation": "食物とカップを載せたトレー",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67570,
+      "tileIndex": 2,
+      "file": "model512-terra-s08-a01-word-67570.png",
+      "sha256": "d10f38120c0d9ba814c72c15987f56f49e26245dfed14219ab5d1b64b4006f4a",
+      "verdict": "pass",
+      "observation": "教師が学校の規則を示す",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 68002,
+      "tileIndex": 3,
+      "file": "model512-terra-s08-a01-word-68002.png",
+      "sha256": "d6d9aa9bf614ab03041b8572c621221b425e735bdbbc707f3d2146d79b876bb8",
+      "verdict": "pass",
+      "observation": "試行錯誤しパズルを解く子",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67962,
+      "tileIndex": 4,
+      "file": "model512-terra-s08-a01-word-67962.png",
+      "sha256": "e273a27cbe9281bd245dab9b95112643b02b38add5c783dd027357c338ff64f3",
+      "verdict": "pass",
+      "observation": "議会で採決する人々",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67782,
+      "tileIndex": 5,
+      "file": "model512-terra-s08-a01-word-67782.png",
+      "sha256": "79de52aa0866c3331a4e14177e5c3b6f8508755259b83f75ad8f603d8c0c76be",
+      "verdict": "pass",
+      "observation": "普段着のズボン",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67975,
+      "tileIndex": 6,
+      "file": "model512-terra-s08-a01-word-67975.png",
+      "sha256": "45323d28e3806cd5fc0cebfb8fbb2666dbbc6839d4ce65d3fe5ee4ed58d55933",
+      "verdict": "uncertain",
+      "observation": "残念そうな人が書類を渡す",
+      "reason": "書類の受け渡しだけでは辞任かどうか特定しにくい"
+    },
+    {
+      "id": 67777,
+      "tileIndex": 7,
+      "file": "model512-terra-s08-a01-word-67777.png",
+      "sha256": "cbab6509f9a27f2dcf4eb298b07ec917208cb5950e898713651216e421f6b903",
+      "verdict": "pass",
+      "observation": "射撃場で標的に発射",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67551,
+      "tileIndex": 8,
+      "file": "model512-terra-s08-a01-word-67551.png",
+      "sha256": "159141019070123490fd6dfc586746598bfee0bb09fac79f749d92495cd4ccca",
+      "verdict": "uncertain",
+      "observation": "未知の物を見て困る人",
+      "reason": "一つの未知の物への疑問で知識や教育の不足を判別しにくい"
+    },
+    {
+      "id": 67674,
+      "tileIndex": 9,
+      "file": "model512-terra-s08-a01-word-67674.png",
+      "sha256": "7f31af237a3ebfea3d14843259c5432284dac2c5afc20e37452352112b15376d",
+      "verdict": "pass",
+      "observation": "前進する列車と矢印",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67495,
+      "tileIndex": 10,
+      "file": "model512-terra-s08-a01-word-67495.png",
+      "sha256": "df8b2c2c26c882e4c2a5ff4a5abd61f8b627bed0fd61fb93885fa7aa6545ffd9",
+      "verdict": "pass",
+      "observation": "飲み物をこぼして立ち去る人",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67580,
+      "tileIndex": 11,
+      "file": "model512-terra-s08-a01-word-67580.png",
+      "sha256": "c4a56acdc15fcd70f4209a5199cceb2e018fb96b0c06fa9f14a6f89e0c9221c8",
+      "verdict": "pass",
+      "observation": "同じ教師による一連の授業",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67768,
+      "tileIndex": 12,
+      "file": "model512-terra-s08-a01-word-67768.png",
+      "sha256": "8d765ab9b0704fb8afb6fc3b900ef04dd3247602d71a0fe4a28e0e62e7883b68",
+      "verdict": "pass",
+      "observation": "収入を表す大きな貨幣の山と小さな支出",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67788,
+      "tileIndex": 13,
+      "file": "model512-terra-s08-a01-word-67788.png",
+      "sha256": "22e584365c44475f737a592999c4a8a1c56b5385b84a19a9375b328382f25851",
+      "verdict": "pass",
+      "observation": "心臓の画像を説明する医師",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67755,
+      "tileIndex": 14,
+      "file": "model512-terra-s08-a01-word-67755.png",
+      "sha256": "43fcc77a2da0e1b941620f436c7ebb7342e1fced4f6260c00b84c24e39d3c882",
+      "verdict": "pass",
+      "observation": "四人で演奏する音楽家",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67910,
+      "tileIndex": 15,
+      "file": "model512-terra-s08-a01-word-67910.png",
+      "sha256": "0b3a88e15e446d5f9ca674a5fb608f29c72336f37acb8758e00f59cda3b04d9f",
+      "verdict": "pass",
+      "observation": "庭に悪意を持つ人物",
+      "reason": "語義の具体例として成立"
+    },
+    {
+      "id": 67758,
+      "tileIndex": 16,
+      "file": "model512-terra-s08-a01-word-67758.png",
+      "sha256": "1cd6a72290c7c765c51b9fde03e8ba45b0fdadf4d691512b00f6c89d7a55ba31",
+      "verdict": "pass",
+      "observation": "災害後に物資を届ける人々",
+      "reason": "語義の具体例として成立"
+    }
+  ]
+}

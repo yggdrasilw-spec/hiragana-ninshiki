@@ -1,0 +1,154 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "phase": "publication-content-repair",
+  "sheet": 1,
+  "attempt": 2,
+  "sourceSha256": "1a95f1c8159f7385f062881f001cf253bb222bfe588b48a292abb9a666ca4425",
+  "items": [
+    {
+      "id": 67974,
+      "tileIndex": 1,
+      "file": "model512-publish-repairs-s01-a02-word-67974.png",
+      "sha256": "7c9ff323a284c763feeb00a23dd0c2f42b483ce2e087ee929d7d059567d46fe7",
+      "verdict": "pass",
+      "observation": "ゴールの帯のところで赤い「1」の走者が先頭、青い「2」がその後、緑の「3」が最後。",
+      "reason": "位置関係と三つの数字が二番目の走者を示す。"
+    },
+    {
+      "id": 67468,
+      "tileIndex": 2,
+      "file": "model512-publish-repairs-s01-a02-word-67468.png",
+      "sha256": "1a90c6767ae4a0a5b5ef38e408d026b41b2fe932afbf4df92b00c40bfe013f6e",
+      "verdict": "pass",
+      "observation": "管弦楽の演奏の上に譜面を表す四枚のカードが並び、一枚を強調。",
+      "reason": "交響曲を構成する独立した部分を抜き出す図として成立。"
+    },
+    {
+      "id": 67490,
+      "tileIndex": 3,
+      "file": "model512-publish-repairs-s01-a02-word-67490.png",
+      "sha256": "99cda75e85a5140beab1fb8bc1da8c05d0dafff86dc03169e4bf8d25295c1191",
+      "verdict": "pass",
+      "observation": "二匹の成体のウサギが巣で複数の仔を囲む。",
+      "reason": "子を産み個体を増やす繁殖の結果の例。"
+    },
+    {
+      "id": 67509,
+      "tileIndex": 4,
+      "file": "model512-publish-repairs-s01-a02-word-67509.png",
+      "sha256": "32c63e3611887b9ec3fee535ec8520278e6b2d021819211fc61ad7c1d5fa8669",
+      "verdict": "pass",
+      "observation": "働いた対価の硬貨の一部が公的機関へ分かれる図。",
+      "reason": "所得を基準にして人から徴収する税を示す。"
+    },
+    {
+      "id": 67464,
+      "tileIndex": 5,
+      "file": "model512-publish-repairs-s01-a02-word-67464.png",
+      "sha256": "282491c91b3e1f59f1870eba569307796684ad2e4363f138d5c03d5013a2b4a9",
+      "verdict": "hold",
+      "observation": "同じりんごの絵に、一方は等号と正解印、もう一方は等号と不正解印。",
+      "reason": "真偽の印はあるが、何を肯定または否定しているのか言明や比較対象が示されない。"
+    },
+    {
+      "id": 67935,
+      "tileIndex": 6,
+      "file": "model512-publish-repairs-s01-a02-word-67935.png",
+      "sha256": "91ff3ffd2312464af9f977370a71199d04c2a02a5e6bba66260ccb99bc7738a8",
+      "verdict": "pass",
+      "observation": "格納庫に飛行機の外殻、翼、車輪、エンジンのない空の取付部が見える。",
+      "reason": "エンジンを除く航空機の構造を示す。"
+    },
+    {
+      "id": 67656,
+      "tileIndex": 7,
+      "file": "model512-publish-repairs-s01-a02-word-67656.png",
+      "sha256": "96a7115df3c856b85568d99c6c171806eff0a32410fd27d3ad2d9e92f7ac96f8",
+      "verdict": "uncertain",
+      "observation": "裁判官らしい人が赤い印鑑を書類の上に置く。",
+      "reason": "印や書類に処分内容が見えず、却下の判断かは分からない。"
+    },
+    {
+      "id": 67511,
+      "tileIndex": 8,
+      "file": "model512-publish-repairs-s01-a02-word-67511.png",
+      "sha256": "416fa61aedad455b139796fe21e97a65d1ab1fe0264abaa1e91fca1f6ce2fe5f",
+      "verdict": "pass",
+      "observation": "複数の取材映像が中央のネット接続した編集室に集まり、複数の新聞社風の部屋へ配られる。",
+      "reason": "報道を集め電子的に配る機関の構造。"
+    },
+    {
+      "id": 67535,
+      "tileIndex": 9,
+      "file": "model512-publish-repairs-s01-a02-word-67535.png",
+      "sha256": "615b4753b1bef2c53e90c3c1bd2d54798a8154df67c973159cba4e31c20b7fb3",
+      "verdict": "pass",
+      "observation": "男児・ボール・女児にそれぞれ「Subject (nominative)」「Object (accusative)」「Recipient (dative)」の矢印。",
+      "reason": "物を渡す場面の主格・対格・与格の対応例。ラベルの綴りと矢印の指示先が合う。"
+    },
+    {
+      "id": 67586,
+      "tileIndex": 10,
+      "file": "model512-publish-repairs-s01-a02-word-67586.png",
+      "sha256": "dadb293c4e4b761eb551102b265c667ebbc00f1405d02173b2981df135bfe699",
+      "verdict": "pass",
+      "observation": "閲兵場で複数の兵員集団と戦車・砲車両が指揮官の前に整列。",
+      "reason": "戦闘可能な規模の陸軍部隊。"
+    },
+    {
+      "id": 67513,
+      "tileIndex": 11,
+      "file": "model512-publish-repairs-s01-a02-word-67513.png",
+      "sha256": "0fe776d9462c013980d70edfe4b6e8a83e879c4871766ed726dcdd30341155fe",
+      "verdict": "uncertain",
+      "observation": "黒板に「2 + 3 = 5」、下に赤二個と青三個と黄五個の等式。",
+      "reason": "数字と等号は提示語義の等しい式に合うが、未知数のない加法の等式であり、学校数学の方程式との語義差がある。"
+    },
+    {
+      "id": 67812,
+      "tileIndex": 12,
+      "file": "model512-publish-repairs-s01-a02-word-67812.png",
+      "sha256": "07798d16183808571ecb2708e88f4d0198518792edb6df12fc9cfe633c59c5ce",
+      "verdict": "pass",
+      "observation": "戦闘跡で複数の人の遺体が布に覆われ、手前の布に血痕。",
+      "reason": "人命を奪う暴力に伴う流血を示す。"
+    },
+    {
+      "id": 67975,
+      "tileIndex": 13,
+      "file": "model512-publish-repairs-s01-a02-word-67975.png",
+      "sha256": "b7dda61e2bd4ab4b6cc631a3fbc2ed34fd169338323fbff0e0dcf1d8c3000a30",
+      "verdict": "pass",
+      "observation": "退去用の箱を置く従業員が身分証を返し、相手が鍵を持つ。",
+      "reason": "役目を手放す退任の場面として成立。"
+    },
+    {
+      "id": 67551,
+      "tileIndex": 14,
+      "file": "model512-publish-repairs-s01-a02-word-67551.png",
+      "sha256": "2944a65447bcfc5f07a31b727ecf60edf5e6d69a67ae91483d65087e5759204c",
+      "verdict": "pass",
+      "observation": "閉じた本の前で空白の吹き出し、次に本を開き天体を学ぶ同じ子供。",
+      "reason": "知識のない状態と学習の対比。"
+    },
+    {
+      "id": 67564,
+      "tileIndex": 15,
+      "file": "model512-publish-repairs-s01-a02-word-67564.png",
+      "sha256": "f8a21a486633549f5e0a3079a97491ebaa3fe4654dd682dd3f98d777a740562e",
+      "verdict": "pass",
+      "observation": "微小な一粒を載せる前後で秤の針の角度が変わる。",
+      "reason": "わずかな重量にも反応する計器の感度。目盛りに誤数字はない。"
+    },
+    {
+      "id": 67650,
+      "tileIndex": 16,
+      "file": "model512-publish-repairs-s01-a02-word-67650.png",
+      "sha256": "ee1fb76d0ed17858e9c34f724b8e5a5f42c611e9b3d6a3a688f23cf19633b840",
+      "verdict": "pass",
+      "observation": "組み上がった椅子からばらばらの木部品への矢印と、のこぎり。",
+      "reason": "切断して分解する解体の例。"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "b92a24173bd595ea079116b35c5f4f7d28fb07897e884308ff245690159e639d",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      8
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      623,
+      630
+    ],
+    [
+      935,
+      943
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      7
+    ],
+    [
+      311,
+      317
+    ],
+    [
+      624,
+      632
+    ],
+    [
+      935,
+      943
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        8,
+        7,
+        311,
+        311
+      ],
+      "edgeInkFraction": 0.948469093009821,
+      "contentFraction": 0.9418099704707313,
+      "file": "model512-sol-s05-a02-word-67816.png",
+      "sha256": "b4cfe7d41e710d4b9cd4c8a6187a1872e95cf1a5223cbba213271fb9ca61cd50"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        318,
+        7,
+        623,
+        311
+      ],
+      "edgeInkFraction": 0.9177892918825561,
+      "contentFraction": 0.9564387402933563,
+      "file": "model512-sol-s05-a02-word-67656.png",
+      "sha256": "21e25b69b6d7cac10d4c13a91909cd898e173464c3a7701864580dcc4ceb5f0e"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        630,
+        7,
+        935,
+        311
+      ],
+      "edgeInkFraction": 0.9952216465169833,
+      "contentFraction": 0.9743528904227783,
+      "file": "model512-sol-s05-a02-word-67549.png",
+      "sha256": "81080cc236f4b1d2fdf302ede3a241e9d95c6bb9944bd8d72ec0eab06d8f872e"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        943,
+        7,
+        1248,
+        311
+      ],
+      "edgeInkFraction": 0.5149107656879678,
+      "contentFraction": 0.7327329594477998,
+      "file": "model512-sol-s05-a02-word-67960.png",
+      "sha256": "64d6f67c4d0c8fa07de9b698acb1636fa4407bba4bc044045955c0a8aade7584"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        8,
+        317,
+        311,
+        624
+      ],
+      "edgeInkFraction": 0.9945977011494253,
+      "contentFraction": 0.892121133937498,
+      "file": "model512-sol-s05-a02-word-67615.png",
+      "sha256": "1fdc5c7bf3c1aa9ff7a1bf269a16f9af79fb08e2566892a624bb666835dd8be1"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        318,
+        317,
+        623,
+        624
+      ],
+      "edgeInkFraction": 0.9897479954180985,
+      "contentFraction": 0.9484167245154056,
+      "file": "model512-sol-s05-a02-word-67450.png",
+      "sha256": "f0b8c2308acb4d0106434368cac18f4e077e5ddc34373697d059e96e539dce2a"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        630,
+        317,
+        935,
+        624
+      ],
+      "edgeInkFraction": 0.9420962199312715,
+      "contentFraction": 0.9301329631014044,
+      "file": "model512-sol-s05-a02-word-67714.png",
+      "sha256": "d086fcb492251ac4508e143ce68bafe0b8188d3d9f5e453a96d4141c150740c1"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        943,
+        317,
+        1248,
+        624
+      ],
+      "edgeInkFraction": 0.9983963344788087,
+      "contentFraction": 0.9971271426282907,
+      "file": "model512-sol-s05-a02-word-67569.png",
+      "sha256": "f612943ac2b036d0a2803c10bcbac3314a6f310037507690f324a17a7ff73d8f"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        8,
+        632,
+        311,
+        935
+      ],
+      "edgeInkFraction": 0.7384259259259259,
+      "contentFraction": 0.8360836083608361,
+      "file": "model512-sol-s05-a02-word-67828.png",
+      "sha256": "292d4ca307e3dc4670abb15745ab0e4ac20aa12cc59cfff92d067419817a2647"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        318,
+        632,
+        623,
+        935
+      ],
+      "edgeInkFraction": 0.985121107266436,
+      "contentFraction": 0.9308986636368555,
+      "file": "model512-sol-s05-a02-word-67851.png",
+      "sha256": "4ce5c3598eeb7363d8ebda95c0e098549d0b768b96ad6b11af6f7333de5fb2b4"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        630,
+        632,
+        935,
+        935
+      ],
+      "edgeInkFraction": 0.9705305651672433,
+      "contentFraction": 0.9231834658875724,
+      "file": "model512-sol-s05-a02-word-67481.png",
+      "sha256": "15656f0fb54858e56ac6ef1bbf68922f7101b321de8a819bd67cd068b524466f"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        943,
+        632,
+        1248,
+        935
+      ],
+      "edgeInkFraction": 0.9125144175317186,
+      "contentFraction": 0.8944543634691338,
+      "file": "model512-sol-s05-a02-word-67703.png",
+      "sha256": "f135d154315a7105652d542080997a864024bf28ea7abdf87c7069ef468d11d3"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        8,
+        943,
+        311,
+        1247
+      ],
+      "edgeInkFraction": 0.9439052570768341,
+      "contentFraction": 0.8728938683342018,
+      "file": "model512-sol-s05-a02-word-67733.png",
+      "sha256": "aec50cc090cd7461f0f99d6a694fdb9ded691af139985c014c248760cffb12fa"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        318,
+        943,
+        623,
+        1247
+      ],
+      "edgeInkFraction": 0.8127230857800806,
+      "contentFraction": 0.8168464193270061,
+      "file": "model512-sol-s05-a02-word-67710.png",
+      "sha256": "6d9a85d9d2bcb42ce2c3fd919853a0397494cc9082ce05b4b4960410ffe984c8"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        630,
+        943,
+        935,
+        1247
+      ],
+      "edgeInkFraction": 0.9810017271157168,
+      "contentFraction": 0.9601056945642795,
+      "file": "model512-sol-s05-a02-word-67627.png",
+      "sha256": "055a1cc84e78b3ab3fbe73da0640aba6053efa84dc84c26d82d9c3035e183b36"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        943,
+        943,
+        1248,
+        1247
+      ],
+      "edgeInkFraction": 0.9459412780656304,
+      "contentFraction": 0.858660483175151,
+      "file": "model512-sol-s05-a02-word-67565.png",
+      "sha256": "195c79d71d92d9cfbe5d657d4f6845a77f6f41973189f573b3a99ae78f414fdb"
+    }
+  ]
+}

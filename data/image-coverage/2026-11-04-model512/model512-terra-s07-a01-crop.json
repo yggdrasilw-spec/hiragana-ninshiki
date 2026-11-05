@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "385f3fc0099a8c1a9cf5796bc9ffc468f8692d18284bf64dce749775f648641f",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      624,
+      629
+    ],
+    [
+      936,
+      943
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      317
+    ],
+    [
+      623,
+      631
+    ],
+    [
+      935,
+      942
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        6,
+        6,
+        311,
+        311
+      ],
+      "edgeInkFraction": 0.950287356321839,
+      "contentFraction": 0.9677936038699274,
+      "file": "model512-terra-s07-a01-word-67793.png",
+      "sha256": "c0b212c29e975319f4e0fd173014bc82c8cd9658ddebebbab79976f54510468b"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        318,
+        6,
+        624,
+        311
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9900246437372763,
+      "file": "model512-terra-s07-a01-word-67916.png",
+      "sha256": "4be9cd7f5b6e66cbef255bdebde38f76bd821932e7a20429ab44130c0711e4ba"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        629,
+        6,
+        936,
+        311
+      ],
+      "edgeInkFraction": 0.877205040091638,
+      "contentFraction": 0.896950926469803,
+      "file": "model512-terra-s07-a01-word-67643.png",
+      "sha256": "a88367659045015be75528358c0422f56424ffed9e46a9060b90ff6c030ef720"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        943,
+        6,
+        1248,
+        311
+      ],
+      "edgeInkFraction": 0.9403448275862069,
+      "contentFraction": 0.9817683418435904,
+      "file": "model512-terra-s07-a01-word-67550.png",
+      "sha256": "4fd11ee5f1d43682e7e554e49822438023803dedae4de00c4eaedf7791ae6370"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        6,
+        317,
+        311,
+        623
+      ],
+      "edgeInkFraction": 0.9854847963281699,
+      "contentFraction": 0.9801778634951248,
+      "file": "model512-terra-s07-a01-word-67905.png",
+      "sha256": "8db3163092f5b6ef086864ddfd2e2921e04270a1e1660136cc0455c6475f3496"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        318,
+        317,
+        624,
+        623
+      ],
+      "edgeInkFraction": 0.9927835051546392,
+      "contentFraction": 0.9970096971250374,
+      "file": "model512-terra-s07-a01-word-67451.png",
+      "sha256": "89e75d1423d58261532d1c45c7c72d6b94564c1296c48dfcd952525e15075e72"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        629,
+        317,
+        936,
+        623
+      ],
+      "edgeInkFraction": 0.9998856489422527,
+      "contentFraction": 0.9999148410721509,
+      "file": "model512-terra-s07-a01-word-67473.png",
+      "sha256": "3ec419f968ba97600425869dc1c5d60dc7e1ef53353ac4240fabfcd685d699ff"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        943,
+        317,
+        1248,
+        623
+      ],
+      "edgeInkFraction": 0.7970740103270224,
+      "contentFraction": 0.8649094610521805,
+      "file": "model512-terra-s07-a01-word-68014.png",
+      "sha256": "3c272d8deec2bcbbc6af2f1cd9d2b9f01779ade1579f93e289b12c984b7a1a76"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        6,
+        631,
+        311,
+        935
+      ],
+      "edgeInkFraction": 0.9928612550374208,
+      "contentFraction": 0.9968183779119931,
+      "file": "model512-terra-s07-a01-word-67994.png",
+      "sha256": "4ce07e45319c99a7bd1a094e0fd95f56b031b533e0bddc0ab952a8a7cd0de1b8"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        318,
+        631,
+        624,
+        935
+      ],
+      "edgeInkFraction": 0.988103448275862,
+      "contentFraction": 0.9948077915376677,
+      "file": "model512-terra-s07-a01-word-67811.png",
+      "sha256": "21b372b8d990ffaa3b894e59f0b5c7b8a671b8115c723f08af5e673c079ccda7"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        629,
+        631,
+        936,
+        935
+      ],
+      "edgeInkFraction": 0.9635111876075731,
+      "contentFraction": 0.9841419509686268,
+      "file": "model512-terra-s07-a01-word-67594.png",
+      "sha256": "1afec2623425811074589ba5a071094028e577f27064cde20f86e625fdbe01bb"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        943,
+        631,
+        1248,
+        935
+      ],
+      "edgeInkFraction": 0.9990788716177317,
+      "contentFraction": 0.9972497842968076,
+      "file": "model512-terra-s07-a01-word-67667.png",
+      "sha256": "a482eaa6b72734801341fd8f033ddc7071dcd43c224ed1988c9790072f4fa519"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        6,
+        942,
+        311,
+        1248
+      ],
+      "edgeInkFraction": 0.9944922547332186,
+      "contentFraction": 0.9963570127504554,
+      "file": "model512-terra-s07-a01-word-67795.png",
+      "sha256": "94692720a273b5caaa98ba789e5e989c789dfdb21ce89ce8688742bece9de066"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        318,
+        942,
+        624,
+        1248
+      ],
+      "edgeInkFraction": 0.9193585337915234,
+      "contentFraction": 0.9428531761288393,
+      "file": "model512-terra-s07-a01-word-67489.png",
+      "sha256": "6d1baf744f051522a0232c5a7409be2a8135a9601aaba57b583ecf6597b6de9b"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        629,
+        942,
+        936,
+        1248
+      ],
+      "edgeInkFraction": 0.9963407661520869,
+      "contentFraction": 0.9943049967000915,
+      "file": "model512-terra-s07-a01-word-67518.png",
+      "sha256": "cfa45620b315223bd651ebcac91a7712fed8865c2bbca55f38bee20001527895"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        943,
+        942,
+        1248,
+        1248
+      ],
+      "edgeInkFraction": 0.9918531267928858,
+      "contentFraction": 0.9840137147755277,
+      "file": "model512-terra-s07-a01-word-67981.png",
+      "sha256": "40155e9ad27da09ada9099f469f6fb89840dcda2afec000e0373ab67c28c385c"
+    }
+  ]
+}

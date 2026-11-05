@@ -1,0 +1,154 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "phase": "pooled-content-repair",
+  "sheet": 1,
+  "attempt": 2,
+  "sourceSha256": "eb5252129a7f81195314688c4a9edea4fba35c347b3316ff63fb518c6ecf7f65",
+  "items": [
+    {
+      "id": 67974,
+      "tileIndex": 1,
+      "file": "model512-repairs-s01-a02-word-67974.png",
+      "sha256": "4526d5b5e38ef7ecf09fc9298324adcaf86ac4e1b7a1c8dded5a460fc768a0e6",
+      "verdict": "uncertain",
+      "observation": "黄色い輪の主走者がゴール線を越え、遠方に別の走者がいる",
+      "reason": "主走者が二着であると断定できる走行方向と先着関係が弱い。"
+    },
+    {
+      "id": 67921,
+      "tileIndex": 2,
+      "file": "model512-repairs-s01-a02-word-67921.png",
+      "sha256": "7bf103655e44e1ecd9f719e11f00bd3317d74f07f99111a1edddc6cbe271773a",
+      "verdict": "pass",
+      "observation": "机の人が時計や請求書の心配で頭を抱える",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67859,
+      "tileIndex": 3,
+      "file": "model512-repairs-s01-a02-word-67859.png",
+      "sha256": "f75a58f07621a6012ae57bee42240660164d7c7949297ddb07cdf7dfd70e9db9",
+      "verdict": "pass",
+      "observation": "自国の文化を高い台へ置く主観的な思考の泡",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67463,
+      "tileIndex": 4,
+      "file": "model512-repairs-s01-a02-word-67463.png",
+      "sha256": "b655ebb7d8113a92dba4a8becf43ca0f5f8f98f3782445a788ec8d75060f99a6",
+      "verdict": "pass",
+      "observation": "茂みに隠れた狐が驚く兎へ飛び出す",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67958,
+      "tileIndex": 5,
+      "file": "model512-repairs-s01-a02-word-67958.png",
+      "sha256": "16573c94cbd8c1a0c7c4275171e13e2a5aedf361737ec74249888795ee0b1cdb",
+      "verdict": "pass",
+      "observation": "先生が手洗いと順番と助け合いの規則絵を示す",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67667,
+      "tileIndex": 6,
+      "file": "model512-repairs-s01-a02-word-67667.png",
+      "sha256": "99e924c2d71c7d45846b1e54143d5427b826d41f342bd8da6c420454ae8c783d",
+      "verdict": "pass",
+      "observation": "子が飲み終えたコップを置き途中のパズルへ戻る",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67559,
+      "tileIndex": 7,
+      "file": "model512-repairs-s01-a02-word-67559.png",
+      "sha256": "d60d12747a8e64298423ad069120ce181b7c84c4936f7c1af1b50bd561395af3",
+      "verdict": "pass",
+      "observation": "前列の右端の選手だけ黄色い輪、後方QBは無強調",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67762,
+      "tileIndex": 8,
+      "file": "model512-repairs-s01-a02-word-67762.png",
+      "sha256": "949902278902377b7b3400eb03d14ff17758c2539ad74db9c8f40f68a8e39ffd",
+      "verdict": "pass",
+      "observation": "成人が賭け金の硬貨とチップを置きサイコロ勝負",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67935,
+      "tileIndex": 9,
+      "file": "model512-repairs-s01-a02-word-67935.png",
+      "sha256": "7ae384eca8557f6f3aac958dfb35e82c473defb442360a71d20b1e70073d6fb1",
+      "verdict": "hold",
+      "observation": "翼下に円形のエンジン状装置が残った航空機",
+      "reason": "エンジンを除くという指定に対し翼下にエンジン状の筒と内部が残る。"
+    },
+    {
+      "id": 68009,
+      "tileIndex": 10,
+      "file": "model512-repairs-s01-a02-word-68009.png",
+      "sha256": "1446ad8d70d383983fb1666833c4342ec205611c1539ebfc3e65804c130f691e",
+      "verdict": "pass",
+      "observation": "鍵を室内に忘れた人が戸外で空のポケットを確認",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67728,
+      "tileIndex": 11,
+      "file": "model512-repairs-s01-a02-word-67728.png",
+      "sha256": "eaa78a148d79b6b35371e4f0e751c53e46b1351c0dcf0829ddc7d0fd6c48fbd1",
+      "verdict": "pass",
+      "observation": "均等な水の分配と公平を示す天秤",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67918,
+      "tileIndex": 12,
+      "file": "model512-repairs-s01-a02-word-67918.png",
+      "sha256": "81b875ddb21f4b6bc4289f82c11094a2f97c99ab8a591057fd9105d22760e64b",
+      "verdict": "pass",
+      "observation": "既存庁舎と新案の模型の間で伝統を論じる政治家",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67461,
+      "tileIndex": 13,
+      "file": "model512-repairs-s01-a02-word-67461.png",
+      "sha256": "0dd116ad0248360fb98e740b879082d372bf030bde9e03485beb0a8e9c307b85",
+      "verdict": "pass",
+      "observation": "地球儀の出生国と新生児の家族像を結ぶ思考泡",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 67468,
+      "tileIndex": 14,
+      "file": "model512-repairs-s01-a02-word-67468.png",
+      "sha256": "7daa6abf6f37ecbe9189ecdb3a9a7d39fcc3ce701c4d678ede9de9b0a5f1c345",
+      "verdict": "hold",
+      "observation": "指揮者と楽団、四つの短い音符区画の一つを強調",
+      "reason": "強調された範囲は短い一小節程度で主要な独立部である楽章を示せない。"
+    },
+    {
+      "id": 67683,
+      "tileIndex": 15,
+      "file": "model512-repairs-s01-a02-word-67683.png",
+      "sha256": "ea8a178e3b880776dd3f9d257836d56701ca1b391ecfb3ddddf190194e6e9542",
+      "verdict": "pass",
+      "observation": "複数試合の勝敗と引分けを行別記号で並べるチーム成績表",
+      "reason": "指定語義の具体場面として成立する。"
+    },
+    {
+      "id": 68015,
+      "tileIndex": 16,
+      "file": "model512-repairs-s01-a02-word-68015.png",
+      "sha256": "86947bfde69cd1e40b6f932a5260e49d8d532d22e9a4c48b59e6e29868d6406a",
+      "verdict": "pass",
+      "observation": "開いた本に同じ人物の出生と幼少と仕事と老年がつながる",
+      "reason": "指定語義の具体場面として成立する。"
+    }
+  ]
+}

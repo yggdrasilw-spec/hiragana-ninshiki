@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "7deee8182be248755fd15be9b6437b38e76d0d736901e408ec0ba9ac788a89eb",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      6
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      622,
+      630
+    ],
+    [
+      936,
+      943
+    ],
+    [
+      1249,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      310,
+      317
+    ],
+    [
+      623,
+      630
+    ],
+    [
+      936,
+      944
+    ],
+    [
+      1243,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        6,
+        5,
+        311,
+        310
+      ],
+      "edgeInkFraction": 0.6868965517241379,
+      "contentFraction": 0.7718892770760548,
+      "file": "model512-luna-s05-a01-word-67464.png",
+      "sha256": "f264029016493dd55ce096369f334bfa567db44e2f8ea38b6ab0ef13b740e3a4"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        318,
+        5,
+        622,
+        310
+      ],
+      "edgeInkFraction": 0.9878526194588371,
+      "contentFraction": 0.9734685073339086,
+      "file": "model512-luna-s05-a01-word-67775.png",
+      "sha256": "3c5a11c04343f07ff4914081f1431213fa594f5ecf45d0951882db602ff9673f"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        630,
+        5,
+        936,
+        310
+      ],
+      "edgeInkFraction": 0.823350545037292,
+      "contentFraction": 0.9143255116254152,
+      "file": "model512-luna-s05-a01-word-67491.png",
+      "sha256": "8aaa247048b0df8504c0774e9e903efb2b931642230e22d22aa89a1f3e1ed5ba"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        943,
+        5,
+        1249,
+        310
+      ],
+      "edgeInkFraction": 0.919219736087206,
+      "contentFraction": 0.9688203150112504,
+      "file": "model512-luna-s05-a01-word-67989.png",
+      "sha256": "dbacd545a2543083ec5147f54b5b1128a88ce7597ed1c4efdf016072be4958d6"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        6,
+        317,
+        311,
+        623
+      ],
+      "edgeInkFraction": 0.8423981640849111,
+      "contentFraction": 0.8562198649951784,
+      "file": "model512-luna-s05-a01-word-67825.png",
+      "sha256": "6348a24c3777c4c15774ef6cab6195d930bad6b6e309705377184afae3976117"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        318,
+        317,
+        622,
+        623
+      ],
+      "edgeInkFraction": 0.9139080459770115,
+      "contentFraction": 0.9154734262125903,
+      "file": "model512-luna-s05-a01-word-67437.png",
+      "sha256": "31c58f5b9b29cdd383dba487f94feea2408b49f434ad0b03b8ef5a141315c628"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        630,
+        317,
+        936,
+        623
+      ],
+      "edgeInkFraction": 0.963631156930126,
+      "contentFraction": 0.9789290443846383,
+      "file": "model512-luna-s05-a01-word-67501.png",
+      "sha256": "d54f120888eaff9b2b9c55ce5fa77138cbdff4f9e811d4092f8c555bb06e177d"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        943,
+        317,
+        1249,
+        623
+      ],
+      "edgeInkFraction": 0.9975372279495991,
+      "contentFraction": 0.9940300739031996,
+      "file": "model512-luna-s05-a01-word-67891.png",
+      "sha256": "0cf0b4e02057fce4142b00a6ba4a5ebbaed97cbf7c4fe63b76ab34c893cfe6d8"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        6,
+        630,
+        311,
+        936
+      ],
+      "edgeInkFraction": 0.9923121055651176,
+      "contentFraction": 0.9776813457623487,
+      "file": "model512-luna-s05-a01-word-67510.png",
+      "sha256": "24538b2e30c9004d649ee729f55cad75c8588465db87ff952643301088635a83"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        318,
+        630,
+        622,
+        936
+      ],
+      "edgeInkFraction": 0.9993103448275862,
+      "contentFraction": 0.9879815961472308,
+      "file": "model512-luna-s05-a01-word-67445.png",
+      "sha256": "0bd56ed992ab421815a6d2ac36713131c98ca66318a40828ae544d0cb22c291b"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        630,
+        630,
+        936,
+        936
+      ],
+      "edgeInkFraction": 0.9882016036655212,
+      "contentFraction": 0.9618843179973514,
+      "file": "model512-luna-s05-a01-word-67855.png",
+      "sha256": "69eba7c8f0a753913fd2d40ac0cfdaee9148b4d558378ffc5f6be385073d7af6"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        943,
+        630,
+        1249,
+        936
+      ],
+      "edgeInkFraction": 0.9257159221076747,
+      "contentFraction": 0.9411657909351104,
+      "file": "model512-luna-s05-a01-word-67749.png",
+      "sha256": "153e9456da2a145c4d5b7965d6cdb662bd881f3c5ffc6a296380ec72a053f165"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        6,
+        944,
+        311,
+        1243
+      ],
+      "edgeInkFraction": 0.5987224157955865,
+      "contentFraction": 0.7099292724381819,
+      "file": "model512-luna-s05-a01-word-67692.png",
+      "sha256": "50b9d6e5027ec2c900efc84c51ef49d0a26b404a4a97cfbb5cce48728108a717"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        318,
+        944,
+        622,
+        1243
+      ],
+      "edgeInkFraction": 0.6787667248400233,
+      "contentFraction": 0.7276777856011266,
+      "file": "model512-luna-s05-a01-word-67935.png",
+      "sha256": "f0b4925a20d2db31dabf9546ad0534e7dca767c89a6ad2c6229e0ecd5cfe880f"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        630,
+        944,
+        936,
+        1243
+      ],
+      "edgeInkFraction": 0.9627826086956521,
+      "contentFraction": 0.9677902376112095,
+      "file": "model512-luna-s05-a01-word-67745.png",
+      "sha256": "c4c9f8367c80db208e31839bffb4963878c077b71c53ba4b0dc84aa51dda9250"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        943,
+        944,
+        1249,
+        1243
+      ],
+      "edgeInkFraction": 0.8261449275362319,
+      "contentFraction": 0.9593634555271384,
+      "file": "model512-luna-s05-a01-word-67732.png",
+      "sha256": "fe58ca7bc4d5893bbd3273e5ea8c1fcfe596dfae7758de61f6d41be0ffe0bcdd"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "count": 25,
+  "targetCount": 512,
+  "pending": [
+    {
+      "id": 67464,
+      "word": "命題",
+      "verdict": "hold",
+      "reason": "真偽の印はあるが、何を肯定または否定しているのか言明や比較対象が示されない。"
+    },
+    {
+      "id": 67656,
+      "word": "却下",
+      "verdict": "uncertain",
+      "reason": "印や書類に処分内容が見えず、却下の判断かは分からない。"
+    },
+    {
+      "id": 67513,
+      "word": "方程式",
+      "verdict": "uncertain",
+      "reason": "数字と等号は提示語義の等しい式に合うが、未知数のない加法の等式であり、学校数学の方程式との語義差がある。"
+    },
+    {
+      "id": 67909,
+      "word": "湾"
+    },
+    {
+      "id": 67606,
+      "word": "打率",
+      "verdict": "uncertain",
+      "reason": "三つの×がすべて打数に入る打席の結果か確認できず、打率の分母が不明。"
+    },
+    {
+      "id": 67500,
+      "word": "インシュリン"
+    },
+    {
+      "id": 67922,
+      "word": "オンス",
+      "verdict": "hold",
+      "reason": "指定された薬衡オンスの記号・量が確認できず、別単位と誤読される。"
+    },
+    {
+      "id": 68012,
+      "word": "手びき",
+      "verdict": "hold",
+      "reason": "左で付けた横の折り目が完成図に残らず、右の図へのつながりも示されない。折り方の指図として矛盾する。"
+    },
+    {
+      "id": 67541,
+      "word": "皺",
+      "verdict": "uncertain",
+      "reason": "提示語義のへこみには合うが皺という語とは不整合。"
+    },
+    {
+      "id": 67787,
+      "word": "戦場",
+      "verdict": "uncertain",
+      "reason": "対峙は見えるが攻撃や戦闘の跡がなく、実際に戦闘が行われた場所かは判断できない。"
+    },
+    {
+      "id": 67849,
+      "word": "コレステロール",
+      "verdict": "hold",
+      "reason": "コレステロールの分子構造として成立しない。"
+    },
+    {
+      "id": 67454,
+      "word": "泣き声",
+      "verdict": "uncertain",
+      "reason": "語義の興奮発声には合うが泣き声という単語とは不整合。"
+    },
+    {
+      "id": 67530,
+      "word": "度",
+      "verdict": "hold",
+      "reason": "度を測る用具の数値目盛りが乱れ正しい角度単位を示す教材にならない。"
+    },
+    {
+      "id": 67949,
+      "word": "小口",
+      "verdict": "uncertain",
+      "reason": "提示語義の手掛かりには合うが小口という単語とは不整合。"
+    },
+    {
+      "id": 67702,
+      "word": "年頃",
+      "verdict": "uncertain",
+      "reason": "年齢によって資格・権利が生じる場面かは画像から判定不能。"
+    },
+    {
+      "id": 67985,
+      "word": "赤痢",
+      "verdict": "uncertain",
+      "reason": "腸感染症は示すが重い下痢や赤痢に結びつく固有根拠が見えない。"
+    },
+    {
+      "id": 67806,
+      "word": "名曲",
+      "verdict": "uncertain",
+      "reason": "提示語義の優れた作品には合うが名曲という語とは不整合。"
+    }
+  ],
+  "beforeSha256": "896dc9e3b2da2b0b7f0deab26ca026ffb3a08b53c877a461d5621a8a00c01018",
+  "assignedIds": [
+    67443,
+    67468,
+    67476,
+    67490,
+    67509,
+    67511,
+    67523,
+    67535,
+    67551,
+    67564,
+    67573,
+    67586,
+    67650,
+    67723,
+    67734,
+    67785,
+    67812,
+    67815,
+    67878,
+    67884,
+    67935,
+    67974,
+    67975,
+    67995,
+    68011
+  ],
+  "sheets": {
+    "model512-publish-repairs-s01-a02": {
+      "source": "assets/shiritori/sheets/model512-publish-repairs-s01-a02.png",
+      "cropValidation": "data/image-coverage/2026-11-04-model512-repairs/model512-publish-repairs-s01-a02-crop.json",
+      "semanticReview": "data/image-coverage/2026-11-04-model512-repairs/model512-publish-repairs-s01-a02-semantic-review.json",
+      "sourceSha256": "1a95f1c8159f7385f062881f001cf253bb222bfe588b48a292abb9a666ca4425"
+    },
+    "model512-publish-repairs-s02-a01": {
+      "source": "assets/shiritori/sheets/model512-publish-repairs-s02-a01.png",
+      "cropValidation": "data/image-coverage/2026-11-04-model512-repairs/model512-publish-repairs-s02-a01-crop.json",
+      "semanticReview": "data/image-coverage/2026-11-04-model512-repairs/model512-publish-repairs-s02-a01-semantic-review.json",
+      "sourceSha256": "16fe138f9279ec8430b0c1e1fbe400ad55f69d3fce0d9ea28f0d6945e86fbd7e"
+    }
+  },
+  "assignments": [
+    {
+      "id": 67974,
+      "reading": "じてん",
+      "word": "次点",
+      "meaning": "2番目に終えた競技者。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67974.png",
+      "sha256": "7c9ff323a284c763feeb00a23dd0c2f42b483ce2e087ee929d7d059567d46fe7"
+    },
+    {
+      "id": 67468,
+      "reading": "がくしょう",
+      "word": "楽章",
+      "meaning": "交響曲やソナタの、主要な独立部。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67468.png",
+      "sha256": "1a90c6767ae4a0a5b5ef38e408d026b41b2fe932afbf4df92b00c40bfe013f6e"
+    },
+    {
+      "id": 67490,
+      "reading": "はんしょく",
+      "word": "繁殖",
+      "meaning": "子を孕み、産む性活動。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67490.png",
+      "sha256": "99cda75e85a5140beab1fb8bc1da8c05d0dafff86dc03169e4bf8d25295c1191"
+    },
+    {
+      "id": 67509,
+      "reading": "しょとくぜい",
+      "word": "所得税",
+      "meaning": "年収に課せられる対人課税。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67509.png",
+      "sha256": "32c63e3611887b9ec3fee535ec8520278e6b2d021819211fc61ad7c1d5fa8669"
+    },
+    {
+      "id": 67935,
+      "reading": "きたい",
+      "word": "機体",
+      "meaning": "（エンジンを除く）飛行機やロケットの枠組みと被覆。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67935.png",
+      "sha256": "91ff3ffd2312464af9f977370a71199d04c2a02a5e6bba66260ccb99bc7738a8"
+    },
+    {
+      "id": 67511,
+      "reading": "つうしんしゃ",
+      "word": "通信社",
+      "meaning": "新聞のためのニュース報告を集めて、電子的に配給する機関。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67511.png",
+      "sha256": "416fa61aedad455b139796fe21e97a65d1ab1fe0264abaa1e91fca1f6ce2fe5f"
+    },
+    {
+      "id": 67535,
+      "reading": "かく",
+      "word": "格",
+      "meaning": "何らかの方法で他の語に関する名詞または代名詞または形容詞（しばしば、抑揚により特徴づけられる）。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67535.png",
+      "sha256": "615b4753b1bef2c53e90c3c1bd2d54798a8154df67c973159cba4e31c20b7fb3"
+    },
+    {
+      "id": 67586,
+      "reading": "しだん",
+      "word": "師団",
+      "meaning": "戦闘を行うことができる規模の陸軍部隊。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67586.png",
+      "sha256": "dadb293c4e4b761eb551102b265c667ebbc00f1405d02173b2981df135bfe699"
+    },
+    {
+      "id": 67812,
+      "reading": "りゅうけつ",
+      "word": "流血",
+      "meaning": "殺人をもたらす流血。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67812.png",
+      "sha256": "07798d16183808571ecb2708e88f4d0198518792edb6df12fc9cfe633c59c5ce"
+    },
+    {
+      "id": 67975,
+      "reading": "じにん",
+      "word": "辞任",
+      "meaning": "降参する行為（主張、任務、所有など）。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67975.png",
+      "sha256": "b7dda61e2bd4ab4b6cc631a3fbc2ed34fd169338323fbff0e0dcf1d8c3000a30"
+    },
+    {
+      "id": 67551,
+      "reading": "むち",
+      "word": "無知",
+      "meaning": "知識または教育の不足。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67551.png",
+      "sha256": "2944a65447bcfc5f07a31b727ecf60edf5e6d69a67ae91483d65087e5759204c"
+    },
+    {
+      "id": 67564,
+      "reading": "かんど",
+      "word": "感度",
+      "meaning": "物理的な刺激反応する、またはわずかな物理量や物理的な差異を示すことのできる能力。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67564.png",
+      "sha256": "f8a21a486633549f5e0a3079a97491ebaa3fe4654dd682dd3f98d777a740562e"
+    },
+    {
+      "id": 67650,
+      "reading": "かいたい",
+      "word": "解体",
+      "meaning": "ばらばらに離れるように切断すること。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s01-a02-word-67650.png",
+      "sha256": "ee1fb76d0ed17858e9c34f724b8e5a5f42c611e9b3d6a3a688f23cf19633b840"
+    },
+    {
+      "id": 67785,
+      "reading": "せいりがく",
+      "word": "生理学",
+      "meaning": "生命体の機能を扱う生物科学の分野。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67785.png",
+      "sha256": "09b5f67071d584d4ed6e369a0201bec0b78f52c9cecec611b28f9526dd74d618"
+    },
+    {
+      "id": 67815,
+      "reading": "れんじゃー",
+      "word": "レンジャー",
+      "meaning": "奇襲のための突撃専用部隊として訓練を受けた部隊の隊員。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67815.png",
+      "sha256": "8d9a56eb11169ce6cf982be3b7c9fe946444f8d486470be648a813776f6ed0a4"
+    },
+    {
+      "id": 67884,
+      "reading": "いん",
+      "word": "韻",
+      "meaning": "2つかそれ以上の文の音の一致（特に最終音の）。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67884.png",
+      "sha256": "cd629c09c10c96bdc9d1fecf40d82ccb389816071a3ff17dac45cb5f2418037f"
+    },
+    {
+      "id": 67443,
+      "reading": "だんやく",
+      "word": "弾薬",
+      "meaning": "銃から点火される発射体。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67443.png",
+      "sha256": "01acd686ca3c96a10d0b69bdf2f8f17eb2a97ed544cf4595d9997580bb7887a9"
+    },
+    {
+      "id": 67734,
+      "reading": "ぼくめつ",
+      "word": "撲滅",
+      "meaning": "一掃する行為。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67734.png",
+      "sha256": "0b65a220237d6a9c8cfafcfe46485b2f80bb67890a734b6e3463f13df4b2a02f"
+    },
+    {
+      "id": 67878,
+      "reading": "り",
+      "word": "利",
+      "meaning": "より優った、あるいはより好ましい位置を保つという特質。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67878.png",
+      "sha256": "3a676378b261a1898c79ff7d6276fbd28bc3b54ab4bc382e3b4444924f767a97"
+    },
+    {
+      "id": 67723,
+      "reading": "ふれーず",
+      "word": "フレーズ",
+      "meaning": "文の文法的な構成要素を形成する、1つ以上の単語から成る表現。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67723.png",
+      "sha256": "406a335fe356919828aa995002477a6e16757a50668a549540a0d7415cacfaa5"
+    },
+    {
+      "id": 67573,
+      "reading": "きょむ",
+      "word": "虚無",
+      "meaning": "存在しない状態。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67573.png",
+      "sha256": "66d9ab8dae4dbf5e19b0dd10267b83214a5352b7c28b370ed046ae6451f5378e"
+    },
+    {
+      "id": 67476,
+      "reading": "しゃーまん",
+      "word": "シャーマン",
+      "meaning": "シャーマニズムを実践する社会において：目に見える世界と精神世界を口寄せするもの; 治癒または予言のための魔法的行い。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67476.png",
+      "sha256": "ca87ce8edb35a709d63ff09b105106b5d47574fe6c046c682176c258daf4c0d5"
+    },
+    {
+      "id": 68011,
+      "reading": "てすり",
+      "word": "手摺り",
+      "meaning": "水平な横木と支柱からなる柵。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-68011.png",
+      "sha256": "9e124fd38864da87473bb8b4589a764d0e43a4373e398d887ea7440863d62498"
+    },
+    {
+      "id": 67995,
+      "reading": "たちば",
+      "word": "立場",
+      "meaning": "あなたがあなた自身を見つける状態または位置。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67995.png",
+      "sha256": "6cbcddcd1561532a41aef77e7b67ffea1307dd8844353cb48f2dfd6d7298fd1b"
+    },
+    {
+      "id": 67523,
+      "reading": "じゅういちがつ",
+      "word": "十一月",
+      "meaning": "10月の後、12月の前の月。",
+      "image_asset": "assets/shiritori/model512-publish-repairs-s02-a01-word-67523.png",
+      "sha256": "c82887fcc2151cfbbd05bebaf3392304e877e86ddc9d19374074d0b6128dbf58"
+    }
+  ],
+  "afterSha256": "7eb06bda5d7fa479731212719106f5b5dac5f538fd4ec58b3db15e5e658d019c",
+  "nonImageColumnsUnchanged": true
+}

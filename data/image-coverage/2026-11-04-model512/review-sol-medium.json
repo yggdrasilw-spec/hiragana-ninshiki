@@ -1,0 +1,3870 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "items": [
+    {
+      "sample": "M001",
+      "id": 67436,
+      "sha256": "5991fc8c27b9a73c39c3aa7de2657592fc062e9540761c32bff2e19a5f627469",
+      "verdict": "pass",
+      "observation": "同じ子の親切・観察・落ち着き・挑戦が並ぶ。",
+      "reason": "個人の複合的属性を表す。"
+    },
+    {
+      "sample": "M002",
+      "id": 67437,
+      "sha256": "31c58f5b9b29cdd383dba487f94feea2408b49f434ad0b03b8ef5a141315c628",
+      "verdict": "pass",
+      "observation": "公的建物前で演説する人物。",
+      "reason": "政治指導者の代表像。"
+    },
+    {
+      "sample": "M003",
+      "id": 67438,
+      "sha256": "0fb853f5efbf294d404da5630ca104f88224ad85462228b0a64bbe4f54fb8d5e",
+      "verdict": "pass",
+      "observation": "街頭にりんごの大型ポスター。",
+      "reason": "製品宣伝の例。"
+    },
+    {
+      "sample": "M004",
+      "id": 67439,
+      "sha256": "60ec8638bfa2ab7903528e5736247dd183a7b8f0f4f571b93ecc6d1cb45d4997",
+      "verdict": "pass",
+      "observation": "乗客を載せて海を進む大型船。",
+      "reason": "旅客船の例。"
+    },
+    {
+      "sample": "M005",
+      "id": 67440,
+      "sha256": "7ca05e4926041d72f4025a9cf3065e924a92ba7923d9f21e3d6f480a11194f85",
+      "verdict": "pass",
+      "observation": "教会で乳児の頭に水をかける聖職者。",
+      "reason": "洗礼の例。"
+    },
+    {
+      "sample": "M006",
+      "id": 67442,
+      "sha256": "eec324c8f1e1fc824543eb80843f3069acf3fc0949b3b5e9bff10067dedb3b78",
+      "verdict": "pass",
+      "observation": "一人のバイオリン奏者と聴衆。",
+      "reason": "独奏者の例。"
+    },
+    {
+      "sample": "M007",
+      "id": 67444,
+      "sha256": "f491fcdd6886f91bad4ca5b7bd538a9e14c1476f0e4b7ec43068589648b066bd",
+      "verdict": "pass",
+      "observation": "綴じた印刷書籍。",
+      "reason": "出版著作物。"
+    },
+    {
+      "sample": "M008",
+      "id": 67445,
+      "sha256": "0bd56ed992ab421815a6d2ac36713131c98ca66318a40828ae544d0cb22c291b",
+      "verdict": "pass",
+      "observation": "足跡を虫眼鏡で調べる探偵。",
+      "reason": "手掛かりの具体例。"
+    },
+    {
+      "sample": "M009",
+      "id": 67447,
+      "sha256": "63ff9687d3e61c9560eee5ff1266148905afb66ae9fcd71b8c918676c7d3d708",
+      "verdict": "pass",
+      "observation": "紙片を渡す人物と情報伝達の矢印。",
+      "reason": "情報を渡す活動。"
+    },
+    {
+      "sample": "M010",
+      "id": 67448,
+      "sha256": "b0404c4c7fc01f1945163dbcba703429206d9896453de00f23dd0bee96cbef07",
+      "verdict": "pass",
+      "observation": "電信装置の窓口で紙片を渡す。",
+      "reason": "電報の配達として成立。"
+    },
+    {
+      "sample": "M011",
+      "id": 67449,
+      "sha256": "1b976af314dc0418c81b38d86530416f91beb0a085ebf4174ddc23c74b0b1e29",
+      "verdict": "pass",
+      "observation": "嵐から逃げるように走る子。",
+      "reason": "物理的な逃亡。"
+    },
+    {
+      "sample": "M012",
+      "id": 67450,
+      "sha256": "f0b8c2308acb4d0106434368cac18f4e077e5ddc34373697d059e96e539dce2a",
+      "verdict": "pass",
+      "observation": "顔を隠した人物が封筒を箱に入れる。",
+      "reason": "匿名性の象徴。"
+    },
+    {
+      "sample": "M013",
+      "id": 67451,
+      "sha256": "89e75d1423d58261532d1c45c7c72d6b94564c1296c48dfcd952525e15075e72",
+      "verdict": "pass",
+      "observation": "頑丈な革製大型ケース。",
+      "reason": "旅行トランク。"
+    },
+    {
+      "sample": "M014",
+      "id": 67452,
+      "sha256": "c4b446aa130819cb2626051462723912950f93733c5cb64819b6e240ae6c4ca5",
+      "verdict": "pass",
+      "observation": "関係資料を結ぶ板の前で気付く子。",
+      "reason": "見抜く力の象徴。"
+    },
+    {
+      "sample": "M015",
+      "id": 67453,
+      "sha256": "0212a76151020edd1b187cf45d827d0b2a427cef353e0f4bd899e3b97c8c5e3f",
+      "verdict": "pass",
+      "observation": "頭と四肢のない胴部模型。",
+      "reason": "胴体の構造。"
+    },
+    {
+      "sample": "M016",
+      "id": 67454,
+      "sha256": "6452fff3d349520750964ddcfb35890c34714b771744c4ff2431e6c5c29d3add",
+      "verdict": "uncertain",
+      "observation": "贈物を前に笑顔で歓声を上げる子。",
+      "reason": "語義の興奮発声には合うが泣き声という単語とは不整合。"
+    },
+    {
+      "sample": "M017",
+      "id": 67455,
+      "sha256": "8eae1bbfa82538e4010a934b78914bfb10f501247292469b8276d3898a9bdbb3",
+      "verdict": "pass",
+      "observation": "方位図の矢印が左下を指す。",
+      "reason": "南西225度の向き。"
+    },
+    {
+      "sample": "M018",
+      "id": 67456,
+      "sha256": "00c94159a42ec709224eacd3d8ac2cd98258823a307dadcc6c6c295e6ac3fa68",
+      "verdict": "pass",
+      "observation": "コンパスの矢印が右下を指す。",
+      "reason": "南東135度の向き。"
+    },
+    {
+      "sample": "M019",
+      "id": 67457,
+      "sha256": "7b835cb5a6026095274054f536a97865e0468372b666351bde6bd19d0dfaafe5",
+      "verdict": "pass",
+      "observation": "地平から昇る朝日。",
+      "reason": "一日の始まりの象徴。"
+    },
+    {
+      "sample": "M020",
+      "id": 67458,
+      "sha256": "3ea96f4d4ea80c88f90806f0ec4d54d134e43c5ac7a436c228643b17c6a030eb",
+      "verdict": "pass",
+      "observation": "三人の列の中央の人物に赤矢印。",
+      "reason": "どちらから数えても二番目。"
+    },
+    {
+      "sample": "M021",
+      "id": 67459,
+      "sha256": "a7290d992dc214e49d5ee31dbf0ec2be0c71a875d07b1a7a67afa5e7b1b466c1",
+      "verdict": "pass",
+      "observation": "工員が工場で上司へ話す。",
+      "reason": "口頭報告の例。"
+    },
+    {
+      "sample": "M022",
+      "id": 67460,
+      "sha256": "98e65ebb28e5aecc1b96737aa40a023d03cfc6fa370ba0ae6cae40721ba1080d",
+      "verdict": "pass",
+      "observation": "方位図の矢印が右上を指す。",
+      "reason": "北東45度の向き。"
+    },
+    {
+      "sample": "M023",
+      "id": 67461,
+      "sha256": "0dd116ad0248360fb98e740b879082d372bf030bde9e03485beb0a8e9c307b85",
+      "verdict": "pass",
+      "observation": "地球上の故郷を指す子と出生家族の回想。",
+      "reason": "出生国の象徴として成立。"
+    },
+    {
+      "sample": "M024",
+      "id": 67462,
+      "sha256": "46705019dde7ce1726c73ca3ff47606cb65266ed02ef4c5d7806e1dbb56aa122",
+      "verdict": "pass",
+      "observation": "沿岸で双眼鏡を使う兵士と艦艇。",
+      "reason": "国を守る軍事資源・活動。"
+    },
+    {
+      "sample": "M025",
+      "id": 67463,
+      "sha256": "b655ebb7d8113a92dba4a8becf43ca0f5f8f98f3782445a788ec8d75060f99a6",
+      "verdict": "pass",
+      "observation": "茂みに身を隠す狐と前を通る兎。",
+      "reason": "隠れて獲物を待つ例。"
+    },
+    {
+      "sample": "M026",
+      "id": 67465,
+      "sha256": "97bab6ae54fa92933ddcc1e1d190fde5dbde3a3d664160b27b0c39522c4ccef4",
+      "verdict": "pass",
+      "observation": "施設前でチェックリストを確かめる人物。",
+      "reason": "前提条件の確認の象徴。"
+    },
+    {
+      "sample": "M027",
+      "id": 67466,
+      "sha256": "23bb1416b8a845bf49f2219e86fb2787868cd04933e94eda578bb7938da7ccf7",
+      "verdict": "pass",
+      "observation": "二人の作業員が一本の梁を運ぶ。",
+      "reason": "協同作業。"
+    },
+    {
+      "sample": "M028",
+      "id": 67469,
+      "sha256": "165123767fc20573e5548a19a94eae29f24fa8c492313c15e4a10f2774d3c6cb",
+      "verdict": "pass",
+      "observation": "水をこぼした失敗から慎重に運ぶ姿へ矢印。",
+      "reason": "出来事から学ぶ意味を示す。"
+    },
+    {
+      "sample": "M029",
+      "id": 67470,
+      "sha256": "b9df9773326d9bd521d2b9ca8b123dad920ca737128d4ba41bdce8aa3adccb4f",
+      "verdict": "pass",
+      "observation": "拳を上げて威嚇する人とおびえる相手。",
+      "reason": "危害の意図を示す例。"
+    },
+    {
+      "sample": "M030",
+      "id": 67471,
+      "sha256": "f0dad52f3f4cbf0b9d8e63541356946b9958727ddb0143fc2fd87cf10b0288d1",
+      "verdict": "pass",
+      "observation": "競売人と札を上げる入札者。",
+      "reason": "競売の場面。"
+    },
+    {
+      "sample": "M031",
+      "id": 67472,
+      "sha256": "925cc5798808eb442ec4f5fc2961b888b90221f63f4c526db9e57c19c0a69f52",
+      "verdict": "pass",
+      "observation": "怯える人へ強い態度で書類を指す男。",
+      "reason": "署名を強いる場面として成立。"
+    },
+    {
+      "sample": "M032",
+      "id": 67473,
+      "sha256": "3ec419f968ba97600425869dc1c5d60dc7e1ef53353ac4240fabfcd685d699ff",
+      "verdict": "pass",
+      "observation": "複数の形と色の積木をまとめた建造物。",
+      "reason": "部分の組合せの例。"
+    },
+    {
+      "sample": "M033",
+      "id": 67474,
+      "sha256": "122a9f75342fa64229905855458d43a5c427e22486068445a632ab35e045655a",
+      "verdict": "pass",
+      "observation": "店員と客が商品を売買する店舗。",
+      "reason": "小売店の例。"
+    },
+    {
+      "sample": "M034",
+      "id": 67475,
+      "sha256": "837015c670ad877068cac1f2e8abc62feb3620d6ac3c35ded8a30ab05ec2c559",
+      "verdict": "pass",
+      "observation": "ゴルフ場でクラブを振る人物。",
+      "reason": "ゴルフ競技者。"
+    },
+    {
+      "sample": "M035",
+      "id": 67477,
+      "sha256": "d6e7df6850ce0c9087b0caab2cc79c63c2b6b97300d09644acc93f0abc645e11",
+      "verdict": "pass",
+      "observation": "術衣の医師が器具を使い手術台で処置。",
+      "reason": "外科手術の代表場面。"
+    },
+    {
+      "sample": "M036",
+      "id": 67478,
+      "sha256": "df3a383e00bac4d04a32de83ba90bb8cb80003ef4ff0f57e4262692a7f01aa77",
+      "verdict": "pass",
+      "observation": "乳児から成人までの写真アルバム。",
+      "reason": "出生から現在までの経過。"
+    },
+    {
+      "sample": "M037",
+      "id": 67479,
+      "sha256": "9665964d03ab275a5e08132fa0d66c48b5cd177d1d04c9fb266811e4b453e07f",
+      "verdict": "pass",
+      "observation": "印章と署名のある装飾文書。",
+      "reason": "証書の代表形。署名風文字は意味判定に影響しない。"
+    },
+    {
+      "sample": "M038",
+      "id": 67480,
+      "sha256": "bc103e8f66cc2c7bad2a47e29899ee21bc2ac20b0138eeee29c119ea629014a4",
+      "verdict": "pass",
+      "observation": "二台の車の前部が衝撃とともに接触。",
+      "reason": "二物体の衝突。"
+    },
+    {
+      "sample": "M039",
+      "id": 67481,
+      "sha256": "15656f0fb54858e56ac6ef1bbf68922f7101b321de8a819bd67cd068b524466f",
+      "verdict": "pass",
+      "observation": "家族が食卓を囲み生活用品が置かれた室内。",
+      "reason": "暮らしている住宅。"
+    },
+    {
+      "sample": "M040",
+      "id": 67482,
+      "sha256": "99b0a240d5fbc74f131330419b675ed24f53b41f90ffee21516a3d8a2a8c9748",
+      "verdict": "pass",
+      "observation": "家の庭で手入れし近隣と挨拶する人物。",
+      "reason": "定住する住人の例。"
+    },
+    {
+      "sample": "M041",
+      "id": 67483,
+      "sha256": "2e891d008ea10591c22ccd3e577937ef3378f149aac2780646161f5ee8178009",
+      "verdict": "pass",
+      "observation": "旗を背に二人の国家代表が文書へ署名。",
+      "reason": "国際合意の代表場面。"
+    },
+    {
+      "sample": "M042",
+      "id": 67485,
+      "sha256": "0466b4b8c5d84c24219565589d2d18a1347450ef4dc4e8a408609d45fae8437e",
+      "verdict": "pass",
+      "observation": "職人が木馬を削って作る。",
+      "reason": "人が作成する行為。"
+    },
+    {
+      "sample": "M043",
+      "id": 67486,
+      "sha256": "d46dbe9451f15d7745a051a6f4e8c1f57e0d90565842e99a42eadf5d26f8110a",
+      "verdict": "pass",
+      "observation": "異なる形や色の葉・花・貝殻が並ぶ。",
+      "reason": "目立つ異種性。"
+    },
+    {
+      "sample": "M044",
+      "id": 67487,
+      "sha256": "8f5e5ed2fa33e05ef471b6c7147f5f5dfc6ba72d8a009e10b0a1ca2aa7d7e7b1",
+      "verdict": "pass",
+      "observation": "幼児が母へ向かい一歩踏み出す。",
+      "reason": "最初の行動の具体例。"
+    },
+    {
+      "sample": "M045",
+      "id": 67488,
+      "sha256": "4af27aebcae739bbf0cab5b0630b5b4bf6dfec3fa98026e2177f0d8167f80d39",
+      "verdict": "pass",
+      "observation": "机に向かう人が椅子の調整レバーを操作。",
+      "reason": "適した高さに合わせる例。"
+    },
+    {
+      "sample": "M046",
+      "id": 67489,
+      "sha256": "6d1baf744f051522a0232c5a7409be2a8135a9601aaba57b583ecf6597b6de9b",
+      "verdict": "pass",
+      "observation": "武装した人々が政府建物へ進む。",
+      "reason": "政府への攻撃の例。"
+    },
+    {
+      "sample": "M047",
+      "id": 67491,
+      "sha256": "8aaa247048b0df8504c0774e9e903efb2b931642230e22d22aa89a1f3e1ed5ba",
+      "verdict": "pass",
+      "observation": "勲章を受け周りから拍手される人物。",
+      "reason": "尊敬され称えられる状態。"
+    },
+    {
+      "sample": "M048",
+      "id": 67493,
+      "sha256": "9ed86a84756a86bb50bae35024e16fa67d2a91465de670d4d9361d8c8b5beb84",
+      "verdict": "pass",
+      "observation": "揃い装丁の複数巻と前に出した一冊。",
+      "reason": "シリーズ中の一巻。見える1は巻番号として成立。"
+    },
+    {
+      "sample": "M049",
+      "id": 67494,
+      "sha256": "dc6267870552cb852493a2cb750a99fbd9d76b2ac83a8d2df4c52374eb019775",
+      "verdict": "pass",
+      "observation": "サッカー場の各位置に選手を配置。",
+      "reason": "選手の役割・配置の象徴。"
+    },
+    {
+      "sample": "M050",
+      "id": 67495,
+      "sha256": "df8b2c2c26c882e4c2a5ff4a5abd61f8b627bed0fd61fb93885fa7aa6545ffd9",
+      "verdict": "pass",
+      "observation": "飲物をこぼしたまま立ち去る人。",
+      "reason": "後始末に責任を取らない例。"
+    },
+    {
+      "sample": "M051",
+      "id": 67496,
+      "sha256": "ba6307adc2364584b910100763a443ab8d312bb0e69c0e1e9731346aaa6865de",
+      "verdict": "pass",
+      "observation": "噛み合う歯車と連結棒の内部構造。",
+      "reason": "技術的仕組みの例。"
+    },
+    {
+      "sample": "M052",
+      "id": 67497,
+      "sha256": "e0db90d652c0f745bf784778d4276b92d5e70c334ef9f80df990da9bad5cee00",
+      "verdict": "pass",
+      "observation": "都市の工房でデジタル設計と3Dプリンターを使う。",
+      "reason": "現行技術の象徴として語義に対応。"
+    },
+    {
+      "sample": "M053",
+      "id": 67498,
+      "sha256": "0df29ad9b7be04795399407b7b54db86a590c2b3a547b2c6fae56c55ddf8d681",
+      "verdict": "pass",
+      "observation": "整備士が客へ紙の請求書を渡す。",
+      "reason": "専門業務の料金請求の例。"
+    },
+    {
+      "sample": "M054",
+      "id": 67499,
+      "sha256": "9d209a9b3cd65834a02b046de550a6740fa9f3ddce3d13ee4a6a2fbfc2790627",
+      "verdict": "pass",
+      "observation": "歌とギター・管・弦楽器を一緒に演奏。",
+      "reason": "音楽家のグループ。"
+    },
+    {
+      "sample": "M055",
+      "id": 67501,
+      "sha256": "d54f120888eaff9b2b9c55ce5fa77138cbdff4f9e811d4092f8c555bb06e177d",
+      "verdict": "pass",
+      "observation": "なでられ音楽に微笑む少女。",
+      "reason": "感覚や精神的反応の象徴。"
+    },
+    {
+      "sample": "M056",
+      "id": 67502,
+      "sha256": "99f376a80d0e65f524ba150d0aed09d290f4a3b76f548f8d41c4614455aec6ac",
+      "verdict": "pass",
+      "observation": "二国の旗を背景に対話する公務員。",
+      "reason": "外交交渉の場面。"
+    },
+    {
+      "sample": "M057",
+      "id": 67503,
+      "sha256": "e60bb517a51d79316c131d305dbd57cca91a6a73af8eff0e96ecf901e85cc546",
+      "verdict": "pass",
+      "observation": "学生が集まる居室・共用室を持つ居住棟。",
+      "reason": "寄宿舎の例。"
+    },
+    {
+      "sample": "M058",
+      "id": 67504,
+      "sha256": "2a3bcc873cfc36c58ecf82c32926913efa4afe4a568020c849c18d5d064aeccd",
+      "verdict": "pass",
+      "observation": "立会人と列席者の前で指輪を交わす新郎新婦。",
+      "reason": "結婚の儀式。"
+    },
+    {
+      "sample": "M059",
+      "id": 67508,
+      "sha256": "f37f6f71f425743f1e67006d9b36ab732e5e77521b56221cea3e2fb4a30f3bcb",
+      "verdict": "pass",
+      "observation": "米袋・野菜箱・瓶缶が貯蔵棚に並ぶ。",
+      "reason": "食品備蓄。"
+    },
+    {
+      "sample": "M060",
+      "id": 67510,
+      "sha256": "24538b2e30c9004d649ee729f55cad75c8588465db87ff952643301088635a83",
+      "verdict": "pass",
+      "observation": "指揮者と管弦打楽器の大編成楽団。",
+      "reason": "交響曲演奏の代表場面として成立。"
+    },
+    {
+      "sample": "M061",
+      "id": 67512,
+      "sha256": "94ce036f48ab0dfbe783adbcee09cbc7cdbba75c719c64a7100e58cb6f325fa2",
+      "verdict": "pass",
+      "observation": "上り下りが循環する不可能階段。",
+      "reason": "自己矛盾の象徴として成立。"
+    },
+    {
+      "sample": "M062",
+      "id": 67514,
+      "sha256": "9f273c8904d56f65bd5e41f52f0b4c3e6856f5261356543a655c774097351246",
+      "verdict": "pass",
+      "observation": "水路から広い水面へ水が流れ込む。",
+      "reason": "流入の具体例。"
+    },
+    {
+      "sample": "M063",
+      "id": 67515,
+      "sha256": "5fed19a292a457b36bb64b2c1abe62275646cf39df1e27f1936eddda25ca60ac",
+      "verdict": "pass",
+      "observation": "駅で荷物を引き列車へ向かう人物。",
+      "reason": "移動する旅行者。"
+    },
+    {
+      "sample": "M064",
+      "id": 67516,
+      "sha256": "3083a219bb9eae8951424b4d4b0c267718380e99b4a35c783ef2e022dd1ab12e",
+      "verdict": "pass",
+      "observation": "舞台で曲芸・音楽・手品の道具を扱う人。",
+      "reason": "使用できる技能や道具の集合。"
+    },
+    {
+      "sample": "M065",
+      "id": 67517,
+      "sha256": "ca8094a698132742cd5695a91cb2f2543f319edef4a86769d0578cd2f1c9415a",
+      "verdict": "pass",
+      "observation": "工事現場でれんがを積む作業員。",
+      "reason": "特定職で働く人。"
+    },
+    {
+      "sample": "M066",
+      "id": 67518,
+      "sha256": "cfa45620b315223bd651ebcac91a7712fed8865c2bbca55f38bee20001527895",
+      "verdict": "pass",
+      "observation": "浴衣の地域住民が盆踊りに集まる。",
+      "reason": "文化を共有する共同体の例。"
+    },
+    {
+      "sample": "M067",
+      "id": 67519,
+      "sha256": "bce2804347179b9b635970c8b111239db57f0220bf3e7191dd9c7a10f1050bea",
+      "verdict": "pass",
+      "observation": "ひまわりの中心を大写しにした写真。",
+      "reason": "近距離写真の例。"
+    },
+    {
+      "sample": "M068",
+      "id": 67521,
+      "sha256": "8223dd784ad958d6e2644a0b3ee4fee2d851faf542e58b50672180163c8e8c2f",
+      "verdict": "pass",
+      "observation": "工場で迎えられ作業員と握手する人物。",
+      "reason": "仕事への復帰を示す場面。"
+    },
+    {
+      "sample": "M069",
+      "id": 67523,
+      "sha256": "7b8788d6ca19be7e58fb3d60e3157f17d1d065ea2d1606c2d1c8e325932ac380",
+      "verdict": "hold",
+      "observation": "紅葉で飾られた日付のないカレンダー。",
+      "reason": "十一月を示す月番号や固有根拠がなく秋一般にとどまる。"
+    },
+    {
+      "sample": "M070",
+      "id": 67524,
+      "sha256": "49120d51d309cdf360d106bf31538ddc20595b8222e884fbf3724dc06f20c170",
+      "verdict": "pass",
+      "observation": "笑顔で両腕を上げ跳ぶ子供。",
+      "reason": "活力にあふれる態度。"
+    },
+    {
+      "sample": "M071",
+      "id": 67525,
+      "sha256": "77e4c29c52a37a6964f3dec1244c6031b2e7997cf7684fa26957a566edc64318",
+      "verdict": "pass",
+      "observation": "川清掃の改善図を説明し聴衆が賛同。",
+      "reason": "行動を促す説得の場面。"
+    },
+    {
+      "sample": "M072",
+      "id": 67526,
+      "sha256": "39086501b3e6d428c9b39bd08fd978d6cd1f6c73c40ea1b9d68ac69300f7f5a1",
+      "verdict": "pass",
+      "observation": "計算機と資料を持ち舞台制作を監督する人。",
+      "reason": "制作統括と資金管理を示す。"
+    },
+    {
+      "sample": "M073",
+      "id": 67527,
+      "sha256": "f04ef462d117d52932bd009422b95ab93017523b971b3467b3377be7dc67a515",
+      "verdict": "pass",
+      "observation": "野生の象を撮影するスタッフと映像画面。",
+      "reason": "事実を紹介する記録映像の制作。"
+    },
+    {
+      "sample": "M074",
+      "id": 67528,
+      "sha256": "ed3565ef297fcdbfd3c280c555c8b8928ba5fa37d863d55779b457d300f2810a",
+      "verdict": "pass",
+      "observation": "大編成の管弦楽団が舞台で演奏。",
+      "reason": "交響楽団の例。"
+    },
+    {
+      "sample": "M075",
+      "id": 67529,
+      "sha256": "d6b731cb722c848ee06969ee35454d918e6d789508b8504ed856e4e2f020e503",
+      "verdict": "pass",
+      "observation": "療法士に支えられ脚の運動をする患者。",
+      "reason": "運動によるリハビリ。"
+    },
+    {
+      "sample": "M076",
+      "id": 67530,
+      "sha256": "caa392a5b81f490b253062f403392fa809e8a48d9e3e51f07a16fd04d2361442",
+      "verdict": "hold",
+      "observation": "分度器と角の図。個別画像で目盛り数字が不連続。",
+      "reason": "度を測る用具の数値目盛りが乱れ正しい角度単位を示す教材にならない。"
+    },
+    {
+      "sample": "M077",
+      "id": 67531,
+      "sha256": "e994138bc75373655b25296bb2600a55dc871250a299a8c52d8a5d02a173d55f",
+      "verdict": "pass",
+      "observation": "人が縄で縛った大箱を背負う。",
+      "reason": "運ばれる荷。"
+    },
+    {
+      "sample": "M078",
+      "id": 67533,
+      "sha256": "4583069162ac1a8bd210bf87ba63c93c76529b4de4e3cfb39ea0369f2119a3ab",
+      "verdict": "pass",
+      "observation": "登山前に地図の目的地へ経路を引く。",
+      "reason": "計画行動と予期する到達結果。"
+    },
+    {
+      "sample": "M079",
+      "id": 67536,
+      "sha256": "90dd94329f8c1c170e067479a4d6cb3582b4fdf163e24ca01acfcd1d537627d7",
+      "verdict": "pass",
+      "observation": "干ばつ地で極端に痩せた人が食料を受け取る。",
+      "reason": "栄養不足による飢餓の例。"
+    },
+    {
+      "sample": "M080",
+      "id": 67537,
+      "sha256": "f353bc85f54097d85037cac7ef5eaafb44e1e776825d30e0bc65f84e3de9927c",
+      "verdict": "pass",
+      "observation": "嵐の海で救助を待つ小船の人々。",
+      "reason": "非常に危険な状態。"
+    },
+    {
+      "sample": "M081",
+      "id": 67538,
+      "sha256": "a2742e63f207c0a007eca37b2deed9f3485fbf2a5b1775c4cc557b9327c8b002",
+      "verdict": "pass",
+      "observation": "天秤と法を象徴する本。",
+      "reason": "権利の抽象概念を表す象徴。"
+    },
+    {
+      "sample": "M082",
+      "id": 67539,
+      "sha256": "b7ecef6f808d6e12c3b250877414d6cc958300533b1d4acaff0b05a08e3ba023",
+      "verdict": "pass",
+      "observation": "月のある同じ海岸の満潮と干潮、上下矢印。",
+      "reason": "周期的な海面変化を示す。"
+    },
+    {
+      "sample": "M083",
+      "id": 67540,
+      "sha256": "53c4ede04f3a275fcfd3065472e78028e902f83d64572dbe9d82b6ae05670496",
+      "verdict": "pass",
+      "observation": "サッカーチームが輪になり拳を上げる。",
+      "reason": "集団の成功へ向かう精神。"
+    },
+    {
+      "sample": "M084",
+      "id": 67541,
+      "sha256": "905fd7d50845a086fa8a2913848f2f531a54cd130d99f638b182b370a84b0fa9",
+      "verdict": "uncertain",
+      "observation": "金属車体の面に浅いへこみ。",
+      "reason": "提示語義のへこみには合うが皺という語とは不整合。"
+    },
+    {
+      "sample": "M085",
+      "id": 67542,
+      "sha256": "eb1af2911999f3e4804020563bb5b6cd768c1bd4af08642ee84f9f7d3c69b8cc",
+      "verdict": "pass",
+      "observation": "熟したりんごを収穫する人物。",
+      "reason": "収穫にふさわしい時機の例。"
+    },
+    {
+      "sample": "M086",
+      "id": 67543,
+      "sha256": "c00f215a5e7aa34d5cba9bb70b61c3bee4098eafa969f11db2ab162addd98c71",
+      "verdict": "pass",
+      "observation": "山頂までの高さ矢印と物差し。",
+      "reason": "数学的に表せる量の具体例。ただし語義は高より数量一般に近い。"
+    },
+    {
+      "sample": "M087",
+      "id": 67544,
+      "sha256": "4970f4d6008d36047fbb5590a3f8bfea3c376cc7f00bea1bf5febb3c53327e2e",
+      "verdict": "pass",
+      "observation": "会議を主導する上位役職らしい人物。",
+      "reason": "職業的地位の代表場面。"
+    },
+    {
+      "sample": "M088",
+      "id": 67545,
+      "sha256": "cd4517e0af1eab84173d7d9d6e65dfb18348f4e60077fb9ff5d071be51952093",
+      "verdict": "pass",
+      "observation": "公共建物前でプラカードを持つ群衆。",
+      "reason": "集団の考えを公に示すデモ。"
+    },
+    {
+      "sample": "M089",
+      "id": 67546,
+      "sha256": "2bffc34c9c28522df06abf5c8ef6212b5afaa3bdfb3b2865ce22deebb2d2db6c",
+      "verdict": "pass",
+      "observation": "雨の中で傘に守られる少女。",
+      "reason": "有利な効用の具体例。"
+    },
+    {
+      "sample": "M090",
+      "id": 67547,
+      "sha256": "6be8d10c280f76901b1274373980c36bbdf51c83d0528accd3577c7bcf636fa9",
+      "verdict": "pass",
+      "observation": "木造建築の太い水平材。",
+      "reason": "建築用の梁。"
+    },
+    {
+      "sample": "M091",
+      "id": 67548,
+      "sha256": "b1d76ea017b0e943313b4fee3840808935d99331504274cde2b2fc5e5cdd89f5",
+      "verdict": "pass",
+      "observation": "同じ大きさに二分されたりんご。",
+      "reason": "二等分の一方の具体例。"
+    },
+    {
+      "sample": "M092",
+      "id": 67549,
+      "sha256": "81080cc236f4b1d2fdf302ede3a241e9d95c6bb9944bd8d72ec0eab06d8f872e",
+      "verdict": "pass",
+      "observation": "同じ兎の絵で装丁の異なる二冊。",
+      "reason": "同種で少し違う版の例。"
+    },
+    {
+      "sample": "M093",
+      "id": 67550,
+      "sha256": "4fd11ee5f1d43682e7e554e49822438023803dedae4de00c4eaedf7791ae6370",
+      "verdict": "pass",
+      "observation": "二人が背を向け腕を組み険しい顔。",
+      "reason": "不調和の状態。"
+    },
+    {
+      "sample": "M094",
+      "id": 67552,
+      "sha256": "6d4713f3551cd48bf6e9b17e41c3b2f585c9b55cfd2d46dd99a9854e4abafdcb",
+      "verdict": "pass",
+      "observation": "成人女性に笑顔で駆け寄る少女。",
+      "reason": "姪と親族の交流の代表例として成立。"
+    },
+    {
+      "sample": "M095",
+      "id": 67554,
+      "sha256": "a22c752e0633f55aba78bbdf66bcd175e59ae177dbe33845560a4d714262d25b",
+      "verdict": "pass",
+      "observation": "雨が降る中で傘を差す人物。",
+      "reason": "雨を避ける合理的動機の具体例。"
+    },
+    {
+      "sample": "M096",
+      "id": 67555,
+      "sha256": "c8792dde284a600939132fb7f08955686bddef992c8bd07f2d96d640da4a244a",
+      "verdict": "pass",
+      "observation": "立派な会場で勲章を着け拍手される人物。",
+      "reason": "社会的威信の象徴。"
+    },
+    {
+      "sample": "M097",
+      "id": 67556,
+      "sha256": "9f6ed5f903d60c8d0455c5983d6c3f29468920194a17ac411e74d9535376c6a7",
+      "verdict": "pass",
+      "observation": "担当者が相手へ文書を渡す。",
+      "reason": "仕事を委ね権限を渡す場面。"
+    },
+    {
+      "sample": "M098",
+      "id": 67557,
+      "sha256": "a77df73fe1773e5b70f2bc819cdfa153174207a9f76fec0054b98d8490f873ff",
+      "verdict": "pass",
+      "observation": "舞台俳優と衣装・道具・照明のスタッフ。",
+      "reason": "劇団組織の例。"
+    },
+    {
+      "sample": "M099",
+      "id": 67558,
+      "sha256": "666bcd867f155fed170df9a59da59104313d3ccf852670e3beddcb986e37487a",
+      "verdict": "pass",
+      "observation": "登山者が進入規制の柵を越える。",
+      "reason": "規則を無視する違反。"
+    },
+    {
+      "sample": "M100",
+      "id": 67559,
+      "sha256": "d60d12747a8e64298423ad069120ce181b7c84c4936f7c1af1b50bd561395af3",
+      "verdict": "pass",
+      "observation": "フットボールのライン端の選手が丸で示される。",
+      "reason": "端でプレイするエンドの役割。"
+    },
+    {
+      "sample": "M101",
+      "id": 67560,
+      "sha256": "5f08007e54c989b790efa90cd577d4eda55eae7568333e674bd51303f0fe8e7c",
+      "verdict": "pass",
+      "observation": "果物が籠いっぱいに供給される。",
+      "reason": "十分な供給量の例。"
+    },
+    {
+      "sample": "M102",
+      "id": 67561,
+      "sha256": "065ce6b697a43e165fb0a08b7c654dd525190d45aaea1d84e0fe8163dcec51e0",
+      "verdict": "pass",
+      "observation": "上司から書類を受けうつむく勤務者。",
+      "reason": "雇用終了の代表場面。"
+    },
+    {
+      "sample": "M103",
+      "id": 67563,
+      "sha256": "b01b3f734835b767943739cdde8e5672435ee90b9380c8f15ffe093e01932762",
+      "verdict": "pass",
+      "observation": "光と生育の関係を考え実験する研究者。",
+      "reason": "観察を説明する仮説。"
+    },
+    {
+      "sample": "M104",
+      "id": 67565,
+      "sha256": "195c79d71d92d9cfbe5d657d4f6845a77f6f41973189f573b3a99ae78f414fdb",
+      "verdict": "pass",
+      "observation": "業績資料を囲んで会議する経営層。",
+      "reason": "企業経営を担当する人々。"
+    },
+    {
+      "sample": "M105",
+      "id": 67566,
+      "sha256": "bd0bbb528a760fd16d5f18f731eb8e31ac0e0b213ad42001ff8bdfb4da0e29f3",
+      "verdict": "pass",
+      "observation": "歯車・配管・駆動部からなる複雑な装置。",
+      "reason": "多数部品の構築物。"
+    },
+    {
+      "sample": "M106",
+      "id": 67567,
+      "sha256": "e9e82dbb7fbbcd5605603d30b8aadda7f54e15f4fd49dcf171b02c898b918b09",
+      "verdict": "pass",
+      "observation": "カメラ・照明・三脚・収納バッグ。",
+      "reason": "撮影サービスに必要な機材。"
+    },
+    {
+      "sample": "M107",
+      "id": 67568,
+      "sha256": "411f816a3d7230ad03d743114eea060bf947c6606382bc5b9b787df9392a49b6",
+      "verdict": "pass",
+      "observation": "航空機を正面から見て鼻状の先端を示す。",
+      "reason": "航空機の機首。"
+    },
+    {
+      "sample": "M108",
+      "id": 67569,
+      "sha256": "f612943ac2b036d0a2803c10bcbac3314a6f310037507690f324a17a7ff73d8f",
+      "verdict": "pass",
+      "observation": "地面で目を閉じ倒れる人と介助者。",
+      "reason": "自然な意識喪失の代表像。"
+    },
+    {
+      "sample": "M109",
+      "id": 67570,
+      "sha256": "d10f38120c0d9ba814c72c15987f56f49e26245dfed14219ab5d1b64b4006f4a",
+      "verdict": "pass",
+      "observation": "教師が教室の可否ルール図を示す。",
+      "reason": "権威による規則。"
+    },
+    {
+      "sample": "M110",
+      "id": 67571,
+      "sha256": "0cfa8a358f9ff611833ad280d354a287d5f2b4ea9bd2027909d405eb432ddd3e",
+      "verdict": "pass",
+      "observation": "職人が陶器を見本図と比較する。",
+      "reason": "評価のための参考基準。"
+    },
+    {
+      "sample": "M111",
+      "id": 67574,
+      "sha256": "32e57976e5ba18f5e1207f3bca5b54e5c11f2209f9c8d4e55005a18922a609e1",
+      "verdict": "pass",
+      "observation": "議長と議員が議場で審議。",
+      "reason": "立法府の議会。"
+    },
+    {
+      "sample": "M112",
+      "id": 67575,
+      "sha256": "bb0d58beaaaf60b82d9fc494e24ab17e6587343f55deef8a10a006402fd91d9e",
+      "verdict": "pass",
+      "observation": "境界線と異なる色に分かれた地域地図。",
+      "reason": "明確な地域区分。"
+    },
+    {
+      "sample": "M113",
+      "id": 67576,
+      "sha256": "8ac8337ea7641fd1c5a21b7d7382e2cf36559ed3d0115a228607febfb8a27189",
+      "verdict": "pass",
+      "observation": "飛行機を載せた長い平甲板の軍艦。",
+      "reason": "空母の構造。語義の戦艦という分類は厳密には要点検。"
+    },
+    {
+      "sample": "M114",
+      "id": 67577,
+      "sha256": "05af0fd6b301f7c3f945c7a7cb3d86c7ae2ffbfc20ced8ec1bdfe2e4037f064b",
+      "verdict": "pass",
+      "observation": "子供が年長者へ丁寧にお辞儀する。",
+      "reason": "敬意の態度。"
+    },
+    {
+      "sample": "M115",
+      "id": 67578,
+      "sha256": "f9e8e0dc1d5af60ee21463ed84b72cb874ae62373d20ef37c80b96f00979dd46",
+      "verdict": "pass",
+      "observation": "空の菓子壺と食べかすを疑わしそうに見る人。",
+      "reason": "そうかもしれないという疑いの印象。"
+    },
+    {
+      "sample": "M116",
+      "id": 67579,
+      "sha256": "53d5f501399f7a978cf66b64033d462d86dbeb596c115a76b3209cddb5aebd27",
+      "verdict": "pass",
+      "observation": "会話が順に指差し合う激しい口論へ変わる。",
+      "reason": "程度が強まる過程。"
+    },
+    {
+      "sample": "M117",
+      "id": 67580,
+      "sha256": "c4a56acdc15fcd70f4209a5199cceb2e018fb96b0c06fa9f14a6f89e0c9221c8",
+      "verdict": "pass",
+      "observation": "カレンダーを伴う連続した植物の授業。",
+      "reason": "一連の教育レッスン。"
+    },
+    {
+      "sample": "M118",
+      "id": 67581,
+      "sha256": "f0a5533332bb103358bdee4697e20fba24ee59e42ec6ca7d3e5bec268cf1e6fc",
+      "verdict": "pass",
+      "observation": "法廷で担当者が文書を読み上げる。",
+      "reason": "正式な告発の場面。"
+    },
+    {
+      "sample": "M119",
+      "id": 67582,
+      "sha256": "67c73e74462883f048ec784f175c005b803a167800a3b21d021094a21937bea4",
+      "verdict": "pass",
+      "observation": "持物の写真を示し被害を法律家へ説明。",
+      "reason": "不法行為を訴える例。"
+    },
+    {
+      "sample": "M120",
+      "id": 67583,
+      "sha256": "2184f50aa948f1082a2a340d4eac1c453b675d7bd06e8666b6370475bacb19c9",
+      "verdict": "pass",
+      "observation": "福祉・教育・生活改善の図を囲み議論する人々。",
+      "reason": "厚生を促進する社会変化の支持として成立。"
+    },
+    {
+      "sample": "M121",
+      "id": 67584,
+      "sha256": "957b0a2d36610ba61c53b01d5d0e8b292e10ebbf8fbd952dd1d396cedb8ba2ee",
+      "verdict": "pass",
+      "observation": "嵐で崩壊した住宅と困惑する家族。",
+      "reason": "深刻な崩壊と不運。"
+    },
+    {
+      "sample": "M122",
+      "id": 67585,
+      "sha256": "43d11aa62990c38b536b20a8023c114024ff843b8a5a57d4870c6f26e34f172b",
+      "verdict": "pass",
+      "observation": "頂上手前の険しい山でうなだれる登山者。",
+      "reason": "目標達成を阻まれた気持ち。"
+    },
+    {
+      "sample": "M123",
+      "id": 67589,
+      "sha256": "792c5428d36fb2d9de9dc2a8a31b43e5631e25f19bb23c7b7f0dab89d76054f6",
+      "verdict": "pass",
+      "observation": "結婚衣装と花束を持つ女性。",
+      "reason": "新婦の代表像。"
+    },
+    {
+      "sample": "M124",
+      "id": 67590,
+      "sha256": "98b925e39e4aa2be182c4f77a6edbff54dd4915dd8d32bd0e7c37016a1aba771",
+      "verdict": "pass",
+      "observation": "裁判官の前で証拠を検討する法廷。",
+      "reason": "法手続きによる審理。"
+    },
+    {
+      "sample": "M125",
+      "id": 67591,
+      "sha256": "fb90ac182ba0174db54bfb1eea0917e3fd3db326aa6e6369ce54566918d694a0",
+      "verdict": "pass",
+      "observation": "リストの一行を指が指す。",
+      "reason": "独立した列挙項目。"
+    },
+    {
+      "sample": "M126",
+      "id": 67592,
+      "sha256": "6be87f6d545ca4902bf316fe5ab7038da0b2da50cb9e02fa6f36b6a550359da4",
+      "verdict": "pass",
+      "observation": "支援者が食事や毛布を困った人へ配る。",
+      "reason": "慈善活動。"
+    },
+    {
+      "sample": "M127",
+      "id": 67594,
+      "sha256": "1afec2623425811074589ba5a071094028e577f27064cde20f86e625fdbe01bb",
+      "verdict": "pass",
+      "observation": "喜びから自然に友人へ抱きつく少女。",
+      "reason": "抑制のない自然な感情。"
+    },
+    {
+      "sample": "M128",
+      "id": 67595,
+      "sha256": "58da31bd77688cadffc1b015a16605620e70f249a43fa822158c85c0b59b07a6",
+      "verdict": "pass",
+      "observation": "いちごの赤い煮詰めたものを瓶・パンに盛る。",
+      "reason": "果物の砂糖煮ジャム。"
+    },
+    {
+      "sample": "M129",
+      "id": 67597,
+      "sha256": "20e0b2b213cd8d8a143485d9b84f2a680418fa83c253b95b1da9316a20fe9477",
+      "verdict": "pass",
+      "observation": "土嚢と見張台を備え兵士が守る場所。",
+      "reason": "戦術的に占める陣地。"
+    },
+    {
+      "sample": "M130",
+      "id": 67598,
+      "sha256": "0ee1ee25251d0717afda5e6f6e5617419974de64d8ccd5e18c20e7c592d9b8ee",
+      "verdict": "pass",
+      "observation": "闇の怪物から明るい側の手で引き上げられる人。",
+      "reason": "悪からの救いの象徴。"
+    },
+    {
+      "sample": "M131",
+      "id": 67599,
+      "sha256": "beb0b2fcfc6d34c6fb31941f055b96d9d3174536584100ebd6bf20df6e5f2e32",
+      "verdict": "pass",
+      "observation": "地面や木を覆う白い積雪。",
+      "reason": "積もった雪。"
+    },
+    {
+      "sample": "M132",
+      "id": 67601,
+      "sha256": "01baca52709a83a9d48e48c7e2e864baf171bfcaa0f6a797c23b79f61a9fcc16",
+      "verdict": "pass",
+      "observation": "こめかみに手を当て顔をしかめ痛み線がある。",
+      "reason": "頭痛の代表像。"
+    },
+    {
+      "sample": "M133",
+      "id": 67602,
+      "sha256": "d55bc78110914f2c48f51c15be686284997edf4aaaf8fb80b9d332b4132e94a6",
+      "verdict": "pass",
+      "observation": "工具で自転車の機構を手入れする人。",
+      "reason": "使用可能に維持する整備。"
+    },
+    {
+      "sample": "M134",
+      "id": 67604,
+      "sha256": "8dcb0c3f81f590fbd39d4e926712cfe640fa08c183c2d261292e7402ecabaae4",
+      "verdict": "pass",
+      "observation": "幼い子がバイオリンを自然な姿で演奏。",
+      "reason": "音楽の素質の代表例。"
+    },
+    {
+      "sample": "M135",
+      "id": 67605,
+      "sha256": "400d97122bb10c874b585ebc1b1274ae247e634d18cd7bc863a502df1fa37c19",
+      "verdict": "pass",
+      "observation": "田園に囲まれ外周道路でまとまる小都市。",
+      "reason": "境界のある町の例。"
+    },
+    {
+      "sample": "M136",
+      "id": 67607,
+      "sha256": "ad16636df214ae23976d44ddbcd96af18aef9aad95392fe8725012930ae14b02",
+      "verdict": "pass",
+      "observation": "結婚指輪を着け新婦に寄り添う男性。",
+      "reason": "女性の配偶者である夫。"
+    },
+    {
+      "sample": "M137",
+      "id": 67608,
+      "sha256": "18d46ef66f01c4584442a2655c16057e781a6ea887452047220a02680fd5cde2",
+      "verdict": "pass",
+      "observation": "封筒を持ち近所の家へ向かう子供。",
+      "reason": "任務のための短い移動。"
+    },
+    {
+      "sample": "M138",
+      "id": 67609,
+      "sha256": "9ac517f33cd1dea1f5e494ab1792d9ae84d1b6ca011b5744873c19d329158237",
+      "verdict": "pass",
+      "observation": "大工たちが木の家を建築する。",
+      "reason": "建設する行為。"
+    },
+    {
+      "sample": "M139",
+      "id": 67610,
+      "sha256": "459e8790295760cc10013019f612da06b8a18cc06c2e68c94dac71de45f6db96",
+      "verdict": "pass",
+      "observation": "安全な道と危険な状況を図で教える冊子。",
+      "reason": "行動の指示を与える手引き。"
+    },
+    {
+      "sample": "M140",
+      "id": 67612,
+      "sha256": "825ce33c6681dd4be208c5752cedb6651b92a9646e83482f3002de36757f58f3",
+      "verdict": "pass",
+      "observation": "建物・道路・公共交通が密集する街区。",
+      "reason": "都市を構成する地域。"
+    },
+    {
+      "sample": "M141",
+      "id": 67613,
+      "sha256": "b1ea78045f09a82baacf02b465ecd259d63206ba3b63a781e3d683251eebf3fb",
+      "verdict": "pass",
+      "observation": "食物とカップを載せた浅い開放型の盆。",
+      "reason": "トレー。"
+    },
+    {
+      "sample": "M142",
+      "id": 67614,
+      "sha256": "569eb5097732c7c7a14f5ef6d6a5258b967b58fa677ffbf4cc42e6529df4c667",
+      "verdict": "pass",
+      "observation": "家を断面にして室内を見せる。",
+      "reason": "建物の内側。"
+    },
+    {
+      "sample": "M143",
+      "id": 67615,
+      "sha256": "1fdc5c7bf3c1aa9ff7a1bf269a16f9af79fb08e2566892a624bb666835dd8be1",
+      "verdict": "pass",
+      "observation": "夜に日々の体験を絵と行で記録する人。",
+      "reason": "日誌の例。"
+    },
+    {
+      "sample": "M144",
+      "id": 67616,
+      "sha256": "78059dcb723fd19080296606e81ed2adb93cbea32df35878152be186e1f02459",
+      "verdict": "pass",
+      "observation": "野球場で二塁と一塁の間に守備選手を強調。",
+      "reason": "二塁手の守備位置。"
+    },
+    {
+      "sample": "M145",
+      "id": 67617,
+      "sha256": "86bb09564c630d216d56b006e29c16fc1d8c1591bb30f2dfdcd4e4acefb6b73a",
+      "verdict": "pass",
+      "observation": "寝床に畳まれた襟付きのパジャマ。",
+      "reason": "就寝用衣服。"
+    },
+    {
+      "sample": "M146",
+      "id": 67618,
+      "sha256": "c9720b389432806e4eefd79f283ad97bead19f22e6d005844962147c9c0b8c86",
+      "verdict": "pass",
+      "observation": "夜の寝床で目を閉じ眠る子供。",
+      "reason": "自然な睡眠。"
+    },
+    {
+      "sample": "M147",
+      "id": 67619,
+      "sha256": "86bb76d6b774771f95ed8b668faca38f7d1b57258433dddbc51747df2a784fcf",
+      "verdict": "pass",
+      "observation": "弓で的の中心へ狙いを定める。",
+      "reason": "達成目標の具体例。"
+    },
+    {
+      "sample": "M148",
+      "id": 67620,
+      "sha256": "48355f5670fbf3fd33cdd19255e2481589a17749b4b5e7e703805ed8f04532ae",
+      "verdict": "pass",
+      "observation": "波が砂の城を崩す。",
+      "reason": "完全に壊す出来事の例。"
+    },
+    {
+      "sample": "M149",
+      "id": 67621,
+      "sha256": "93087c82edc1ed6b2962fdc4acded253bad87fef9ed021e70c514114d8f7b655",
+      "verdict": "pass",
+      "observation": "王冠と城の図を囲み密談する集団。",
+      "reason": "権力を狙う派閥の象徴。"
+    },
+    {
+      "sample": "M150",
+      "id": 67622,
+      "sha256": "8870d1821a864d60200433ce82a541b7fdb26239e8e0a79e3b7ddde00e4fd6a9",
+      "verdict": "pass",
+      "observation": "茶色の葉で巻いた一本の太い煙草。",
+      "reason": "葉巻。"
+    },
+    {
+      "sample": "M151",
+      "id": 67623,
+      "sha256": "7906da6f454ad895928f4338529a9c37cc080fdef77135e4a32bddd12a005715",
+      "verdict": "pass",
+      "observation": "並列のコースで異なる距離を進む自転車。",
+      "reason": "進む程度の比較として速さを表す。"
+    },
+    {
+      "sample": "M152",
+      "id": 67624,
+      "sha256": "8ab99780b1e5def0230abee0443455acfd525a891c8b2df94e77ae7fe1c9047c",
+      "verdict": "pass",
+      "observation": "雨を見上げ計画の絵に赤い取消線がある子。",
+      "reason": "うまくいかない悲観的気分。"
+    },
+    {
+      "sample": "M153",
+      "id": 67625,
+      "sha256": "33b2abba7391dc27b35cbe6d563aff36367f997900e5db4a03bbb47ec3fb18de",
+      "verdict": "pass",
+      "observation": "水を含み滴が落ちるスポンジ。",
+      "reason": "液体で満たされた飽和の例。"
+    },
+    {
+      "sample": "M154",
+      "id": 67626,
+      "sha256": "b81d59a292953b45f994c91155458fd38680b71d339a2ed00d7a17821ea482eb",
+      "verdict": "pass",
+      "observation": "炊き出し支援箱へ金銭を入れる人々。",
+      "reason": "運動を支える金の例。"
+    },
+    {
+      "sample": "M155",
+      "id": 67627,
+      "sha256": "055a1cc84e78b3ab3fbe73da0640aba6053efa84dc84c26d82d9c3035e183b36",
+      "verdict": "pass",
+      "observation": "路上で横たわり震える人と介助者。",
+      "reason": "制御不能な発作の代表場面。"
+    },
+    {
+      "sample": "M156",
+      "id": 67628,
+      "sha256": "c3628662bf182096b5c0351cb7c747414405fd9a930a5ca2d34b363e615a87f1",
+      "verdict": "pass",
+      "observation": "床に敷かれた厚い青いパッド。",
+      "reason": "床用マット。"
+    },
+    {
+      "sample": "M157",
+      "id": 67629,
+      "sha256": "8c96eb3b57850e0cfc772e9d942e8522a81b81cfd7640537df3e8ce440ce55b5",
+      "verdict": "pass",
+      "observation": "正面向きの子供が画面左側の手を上げる。",
+      "reason": "身体の右手。親指の向きも対応。"
+    },
+    {
+      "sample": "M158",
+      "id": 67630,
+      "sha256": "0322927e3153ca5cefdea5e717206569969bc5b90f1f60dea3e243a884880dd9",
+      "verdict": "pass",
+      "observation": "年長者が焚火を囲む子供へ語る。",
+      "reason": "口伝の物語の場面。"
+    },
+    {
+      "sample": "M159",
+      "id": 67631,
+      "sha256": "dbb05a0b34288c67d89ba14db7976695948ea8d19227fe5a1886bce8220fbccb",
+      "verdict": "pass",
+      "observation": "木漏れ日の下で全員が穏やかな笑顔。",
+      "reason": "場全体の心理的雰囲気。"
+    },
+    {
+      "sample": "M160",
+      "id": 67632,
+      "sha256": "d53108d0c45f64ca2d086378f0c2d235471b16f2eb3446c23ef982a00114cf1e",
+      "verdict": "pass",
+      "observation": "教室の鉢植えに水をやる児童。",
+      "reason": "担当する仕事の例。"
+    },
+    {
+      "sample": "M161",
+      "id": 67633,
+      "sha256": "8661fa4b4792b7c688524000ee6f40f0765021733ba7d4d6825234efbcbe875b",
+      "verdict": "pass",
+      "observation": "室内で住人が所有者らしい人へ紙幣を払う。",
+      "reason": "住居使用料の支払い例。"
+    },
+    {
+      "sample": "M162",
+      "id": 67634,
+      "sha256": "4bf3e56913f7b2b0b939ada9235d06e9e20478158ff51876c4bd72fb5cca6597",
+      "verdict": "pass",
+      "observation": "道に立つ若い男性。",
+      "reason": "男の具体例。"
+    },
+    {
+      "sample": "M163",
+      "id": 67635,
+      "sha256": "c5c2111f06464c1897144181212a6d194cdac16a4566309120d9bc37504bf115",
+      "verdict": "pass",
+      "observation": "採油用ポンプが井戸に接続される。",
+      "reason": "油井の例。"
+    },
+    {
+      "sample": "M164",
+      "id": 67637,
+      "sha256": "9011adb66ec8e2bb4962a2e88ba7a1a6fd81d8ae234718f3c11fb5392cfa0ad8",
+      "verdict": "pass",
+      "observation": "宿泊客と受付が鍵を受け渡す。",
+      "reason": "予約した宿泊サービスの代表場面。"
+    },
+    {
+      "sample": "M165",
+      "id": 67638,
+      "sha256": "ab4f69703184589d15ffcd5d4d8c021c13739ba48d11c97e90638469d3bb96dc",
+      "verdict": "pass",
+      "observation": "なめした皮と革製財布。",
+      "reason": "革素材の例。"
+    },
+    {
+      "sample": "M166",
+      "id": 67639,
+      "sha256": "12d38a2345c860f4fec25a616ae6826d8955422fd717a38b0216548c6756b36d",
+      "verdict": "pass",
+      "observation": "赤茶色の矩形ブロックと積んだ壁。",
+      "reason": "煉瓦の形状と用途。"
+    },
+    {
+      "sample": "M167",
+      "id": 67641,
+      "sha256": "0737c566a52efc380598ad0cccc86444d6ef6013c1ba8aa1d18c723f8b27690c",
+      "verdict": "pass",
+      "observation": "手を取り互いを愛情ある表情で見る男女。",
+      "reason": "愛する・愛される人の語義に対応。"
+    },
+    {
+      "sample": "M168",
+      "id": 67642,
+      "sha256": "3b3449b8796e50db2c5c082ce937f2c6add2955ad38228a2b0ac1769508680a2",
+      "verdict": "pass",
+      "observation": "地図を囲み状況を検討する会議。",
+      "reason": "考察される案件の例。"
+    },
+    {
+      "sample": "M169",
+      "id": 67643,
+      "sha256": "a88367659045015be75528358c0422f56424ffed9e46a9060b90ff6c030ef720",
+      "verdict": "pass",
+      "observation": "新年の初日の出・花火と冬のカレンダー。",
+      "reason": "年初の月の象徴として成立。カレンダーに誤数字はない。"
+    },
+    {
+      "sample": "M170",
+      "id": 67644,
+      "sha256": "d41ca62c977b41b9a9ec2b5b10c992cf05d99d11bf0f7e0948b66defc5f6e710",
+      "verdict": "pass",
+      "observation": "人物ごとの行を整然と並べた一覧表。",
+      "reason": "規則正しく並ぶ項目。"
+    },
+    {
+      "sample": "M171",
+      "id": 67646,
+      "sha256": "e620c1a487f953e4c82a25e9cc583e549abe5eab423fb75809ee4a73cc726a5b",
+      "verdict": "pass",
+      "observation": "同方向の直線矢印のうち一本が上へ曲がる。",
+      "reason": "標準から外れる変化の象徴。"
+    },
+    {
+      "sample": "M172",
+      "id": 67647,
+      "sha256": "eb61f17d3fe6be172a169f9860d27aa0a4a7fceeef33908b7ff7c326a90f1672",
+      "verdict": "pass",
+      "observation": "商店主が帳簿の横で売上金を数える。",
+      "reason": "販売による収入。"
+    },
+    {
+      "sample": "M173",
+      "id": 67649,
+      "sha256": "7654d863db9832cba27651f7df94627a4cf751214a1bbcbc9c99f0848a463751",
+      "verdict": "pass",
+      "observation": "被覆内の導線と端末・通信機器。",
+      "reason": "信号や電力の経路。"
+    },
+    {
+      "sample": "M174",
+      "id": 67651,
+      "sha256": "fbdc78bb005de83baed929ffe99c951266a5f90cb0e714eb8c07ca386add1f73",
+      "verdict": "pass",
+      "observation": "住宅や公園と道が広がる近所。",
+      "reason": "周辺地域の例。"
+    },
+    {
+      "sample": "M175",
+      "id": 67652,
+      "sha256": "38fd4d69745d94485691fc75708a69b7fca69e618613eac57cd075eda8fe01fc",
+      "verdict": "pass",
+      "observation": "目に涙を浮かべ微笑む人の顔。",
+      "reason": "顔に表れる感情。"
+    },
+    {
+      "sample": "M176",
+      "id": 67654,
+      "sha256": "449fd16db0486a36d0d15e74d0cbba8b86d07812a4b30e6fbb7648a4796bb224",
+      "verdict": "pass",
+      "observation": "二国の小旗を置き代表が対話する。",
+      "reason": "国家間の交渉。"
+    },
+    {
+      "sample": "M177",
+      "id": 67655,
+      "sha256": "acaa413bbc234533c157c4235c3a1d8db8784b7cdadf462ab231cb02e48f3005",
+      "verdict": "pass",
+      "observation": "芸術・科学・文学の表示の前で学者たちが交流。",
+      "reason": "学術振興組織の場面。"
+    },
+    {
+      "sample": "M178",
+      "id": 67657,
+      "sha256": "0f797ea6c495c4d8d5cf1b15c73d8cdfce258aa2a57a90a39dfc2920ec3542ad",
+      "verdict": "pass",
+      "observation": "二群以上の兵員と車両・支援設備を将校が指揮。",
+      "reason": "軍団の代表配置。"
+    },
+    {
+      "sample": "M179",
+      "id": 67658,
+      "sha256": "537fe024b73bde472c7155cbef36990dac8c4c31512d1baac3dab4340d1bb624",
+      "verdict": "pass",
+      "observation": "若手から管理職へ同人物の仕事の変遷。",
+      "reason": "職業人生の歩み。"
+    },
+    {
+      "sample": "M180",
+      "id": 67659,
+      "sha256": "34b318865e90306a112f494dd5d9a4ba9bd4bd53c4ad739b51d0152d868acaf5",
+      "verdict": "pass",
+      "observation": "宝入りの期待と空の宝箱の現実に驚く。",
+      "reason": "幻想から現実へ戻る幻滅。"
+    },
+    {
+      "sample": "M181",
+      "id": 67661,
+      "sha256": "4a89ff58ed6e452273d374e31aff15787ba83a9d30d4f560ca8a03dbcdfe21a6",
+      "verdict": "pass",
+      "observation": "作業場で新しい飛行装置を思い描く子。",
+      "reason": "頭の中で作る考案。"
+    },
+    {
+      "sample": "M182",
+      "id": 67662,
+      "sha256": "391633a239310cb6ef84d065924470c0b9a6aaf3ee1997fa068f74cc55cebe5d",
+      "verdict": "pass",
+      "observation": "複数資料を読み顎に手を当て考える人。",
+      "reason": "注意深い思考過程。"
+    },
+    {
+      "sample": "M183",
+      "id": 67663,
+      "sha256": "36b3180b5ff2b3a7ffa3fadc2a11a984858361e1bc69b63829e80189ecbaccf1",
+      "verdict": "pass",
+      "observation": "時計を前に困った顔で弁明する人物。",
+      "reason": "遅刻等の口実を述べる例。"
+    },
+    {
+      "sample": "M184",
+      "id": 67664,
+      "sha256": "7e93dea708ce2a930212f0352d670e7ffb82bfd8d155ab83244fc6a6d4d71b2a",
+      "verdict": "pass",
+      "observation": "冠と礼装を身に着けた王・王妃・子供たち。",
+      "reason": "君主の家族集団。"
+    },
+    {
+      "sample": "M185",
+      "id": 67665,
+      "sha256": "4d8e105952eef94bd97e7a11c3046a643ca98466f0fce9e08f2e9e5c10aec9b5",
+      "verdict": "pass",
+      "observation": "年長者から若い担当者へ鍵を引き継ぐ。",
+      "reason": "次に任務を担う人。"
+    },
+    {
+      "sample": "M186",
+      "id": 67666,
+      "sha256": "306c6de2815ac683521d685b2942efc2ccaae1510172192a1811cf77a70794c3",
+      "verdict": "pass",
+      "observation": "岩間から湧き出して川になる水。",
+      "reason": "始まりの場所である水源。"
+    },
+    {
+      "sample": "M187",
+      "id": 67667,
+      "sha256": "99e924c2d71c7d45846b1e54143d5427b826d41f342bd8da6c420454ae8c783d",
+      "verdict": "pass",
+      "observation": "飲物を置き中断したパズルへ再び取り組む子。",
+      "reason": "作業の再開の例。"
+    },
+    {
+      "sample": "M188",
+      "id": 67669,
+      "sha256": "94d37b58bac522a2f8b6b199e9ab36e99f80f657265b0ac14203730e577fddbe",
+      "verdict": "pass",
+      "observation": "窓口で紙幣を払い領収書を受け取る。",
+      "reason": "支出された金額の例。"
+    },
+    {
+      "sample": "M189",
+      "id": 67670,
+      "sha256": "622315bfac91a949a10bb37141ffba974cd3ef44f326cf9e237539a6a60c2468",
+      "verdict": "pass",
+      "observation": "パン店の客が店主へ硬貨を渡す。",
+      "reason": "金銭支払いの行為。"
+    },
+    {
+      "sample": "M190",
+      "id": 67671,
+      "sha256": "63b35fc4d5bfcd50e7695d2b26a8c573ba577abf7eb228fd8e3a81205f92425d",
+      "verdict": "pass",
+      "observation": "湾曲した金属の匙面と柄で土をすくう。",
+      "reason": "シャベルの構造と用途。"
+    },
+    {
+      "sample": "M191",
+      "id": 67672,
+      "sha256": "590e7572c116a88fbde016103e2a48ab775a63465cdbd55f4d3f152b506377f3",
+      "verdict": "pass",
+      "observation": "断層画像の臓器内に異常な白い塊を示す。",
+      "reason": "腫瘍の代表画像。"
+    },
+    {
+      "sample": "M192",
+      "id": 67674,
+      "sha256": "7f31af237a3ebfea3d14843259c5432284dac2c5afc20e37452352112b15376d",
+      "verdict": "pass",
+      "observation": "前方の大きな矢印に沿って列車が進む。",
+      "reason": "前方への動き。"
+    },
+    {
+      "sample": "M193",
+      "id": 67675,
+      "sha256": "349d4a883a25a1168c2933925d7b6eb9c5090602d7f10ba8500e9cffef339616",
+      "verdict": "pass",
+      "observation": "商品棚と操作部を持つ機械から品物を取り出す。",
+      "reason": "自動販売機の使用例。"
+    },
+    {
+      "sample": "M194",
+      "id": 67676,
+      "sha256": "b5ed55ea45c64cbc2dded457f1109e2e1e3fae164cd0e701922ecaac2b2e4b2a",
+      "verdict": "pass",
+      "observation": "取っ手付き大型グラスに泡立つビール。",
+      "reason": "ビール用ジョッキ。"
+    },
+    {
+      "sample": "M195",
+      "id": 67677,
+      "sha256": "40f0ea41daecc0841ce329a19eddf8bb110f6fef6a72c90617bc0dbac367e47a",
+      "verdict": "pass",
+      "observation": "本の三場面が矢印で連続する。",
+      "reason": "物語の展開・筋書き。"
+    },
+    {
+      "sample": "M196",
+      "id": 67678,
+      "sha256": "d40a2384d995a64fe3cd706a5dc0b6551785a7c31e43958104df397d881cb60b",
+      "verdict": "pass",
+      "observation": "二本のマイク・再生機・二台のスピーカー。",
+      "reason": "提示語義のステレオ構成を描く。マイク必須とする語義は要点検。"
+    },
+    {
+      "sample": "M197",
+      "id": 67679,
+      "sha256": "395e4b397a2edd27c6890693fcdfebfa00b29067789118b4e7f44ca3119479cf",
+      "verdict": "pass",
+      "observation": "自転車の中心軸からリムへ伸びる金属棒。",
+      "reason": "スポーク構造。"
+    },
+    {
+      "sample": "M198",
+      "id": 67680,
+      "sha256": "58875a8a2c9aa2d240385c2799720fbf6c4ac6e5dcc4e15ccc3d5473a59a7beb",
+      "verdict": "pass",
+      "observation": "容器の上限を赤い線で示す。",
+      "reason": "大きさを制限する原則の具体例。"
+    },
+    {
+      "sample": "M199",
+      "id": 67681,
+      "sha256": "55fff26328eaded0c313cb0f21cb23e21b7384bc2d4a641d52f093793d6505dd",
+      "verdict": "pass",
+      "observation": "二人が合意して握手する。",
+      "reason": "解決された結果の象徴として提示語義に対応。清算の語義は一般的合意に広い。"
+    },
+    {
+      "sample": "M200",
+      "id": 67682,
+      "sha256": "2ff2bb7b31e57f25ea84f91524f2f27ab8d7ff53b429492bfd7d118f6a2e6b0e",
+      "verdict": "pass",
+      "observation": "後光のある神聖な人物が弱者に手を差し伸べる。",
+      "reason": "聖人の象徴。"
+    },
+    {
+      "sample": "M201",
+      "id": 67683,
+      "sha256": "ea8a178e3b880776dd3f9d257836d56701ca1b391ecfb3ddddf190194e6e9542",
+      "verdict": "pass",
+      "observation": "試合一覧に勝ち・負け・引分けの印が並ぶ。",
+      "reason": "チームの勝敗成績。"
+    },
+    {
+      "sample": "M202",
+      "id": 67684,
+      "sha256": "a16df38c10eff089e8208aae7da069e0171a548b2bd74b151be421aa599aa2d7",
+      "verdict": "pass",
+      "observation": "若い男子が通学風の服装で立つ。",
+      "reason": "青年の例。"
+    },
+    {
+      "sample": "M203",
+      "id": 67685,
+      "sha256": "5deb3436cc303dcaeaab328e905361598bdc20cf5301c986b6b1c10faf2d45c9",
+      "verdict": "pass",
+      "observation": "男性と女性の人物と対応する性別記号。",
+      "reason": "提示語義の二カテゴリー。"
+    },
+    {
+      "sample": "M204",
+      "id": 67686,
+      "sha256": "23fd8ac91b08dd81fd7a40dd4f5a579143f02f18fa52bf1fde5d34cafa22009d",
+      "verdict": "pass",
+      "observation": "子供が木に向かい歩き矢印が近づく向き。",
+      "reason": "空間的な接近。"
+    },
+    {
+      "sample": "M205",
+      "id": 67687,
+      "sha256": "bcc40d867c9f22af26cfda3d614628fe56f0229d1ff8f219c65f6ff90d547881",
+      "verdict": "pass",
+      "observation": "船上でロープを扱う乗員。",
+      "reason": "船員の作業例。"
+    },
+    {
+      "sample": "M206",
+      "id": 67688,
+      "sha256": "508ee90a9cbba8248f8bff3c8e8a8a31d035a099b0471823eedfc8aa8e6212ed",
+      "verdict": "pass",
+      "observation": "鉛筆のとがった芯の先を矢印で指す。",
+      "reason": "最先端部。"
+    },
+    {
+      "sample": "M207",
+      "id": 67689,
+      "sha256": "abec1d532de2484d63ea1d15213105936e3835ca7af90ab590b4af78363ddafc",
+      "verdict": "pass",
+      "observation": "武装した軍隊が横一列に整列。",
+      "reason": "攻撃に備える戦列。"
+    },
+    {
+      "sample": "M208",
+      "id": 67690,
+      "sha256": "0d058fb825ae3eb9542daac4ac86f63bef5bb0cf4f1413adfe8c60792c461794",
+      "verdict": "pass",
+      "observation": "道で二人が驚き笑顔で出会う。",
+      "reason": "偶然の出会い。"
+    },
+    {
+      "sample": "M209",
+      "id": 67691,
+      "sha256": "acd869c63c1e43e3428b345ff8ef5e26a524b90694e9bb2f1243e11e6aa805f4",
+      "verdict": "pass",
+      "observation": "駅で空のポケットを裏返し困惑する人。",
+      "reason": "財布等を失った不利益の例。"
+    },
+    {
+      "sample": "M210",
+      "id": 67692,
+      "sha256": "50b9d6e5027ec2c900efc84c51ef49d0a26b404a4a97cfbb5cce48728108a717",
+      "verdict": "pass",
+      "observation": "芽から大きな植物への三段階と矢印。",
+      "reason": "大きさが増す過程。"
+    },
+    {
+      "sample": "M211",
+      "id": 67694,
+      "sha256": "c6a8b21f239dadb817eb82d54455941bf9ff1b274ce0261cf03c0e3f5702ed78",
+      "verdict": "pass",
+      "observation": "学術施設と複数校舎を学生が行き交う。",
+      "reason": "高等教育拠点としての大学。"
+    },
+    {
+      "sample": "M212",
+      "id": 67695,
+      "sha256": "11295098d475a15f56163d2d02462276fb2cf367c7eeef926fd118be0a97838f",
+      "verdict": "pass",
+      "observation": "画家が果物を見て静物画を描く。",
+      "reason": "描写対象として選んだ題材。"
+    },
+    {
+      "sample": "M213",
+      "id": 67696,
+      "sha256": "509c9da80c20198a5aea054fdcb0a9e8a87b944eed601a1ff7789cd694a6a5d0",
+      "verdict": "pass",
+      "observation": "自転車の車輪とフレームが曲がっている。",
+      "reason": "損傷による悪化。"
+    },
+    {
+      "sample": "M214",
+      "id": 67697,
+      "sha256": "ed3f976677e1a7f6a3cdbd83dfa4cbcf3a3f91006b6bc5f08799225d393f619f",
+      "verdict": "pass",
+      "observation": "割れた皿から一片が離れている。",
+      "reason": "全体の個別部分。"
+    },
+    {
+      "sample": "M215",
+      "id": 67698,
+      "sha256": "d48940b29e4a56bdb885659d1e5e47ab611a32a7de3e2a1a5e82203957b14899",
+      "verdict": "pass",
+      "observation": "警官が集団を阻止し静止させる。",
+      "reason": "権威によって鎮める例。"
+    },
+    {
+      "sample": "M216",
+      "id": 67699,
+      "sha256": "847e4b09ba35091ffc28b7bcbdd4f7afca0e2c8ca844fed779f59892636393cc",
+      "verdict": "pass",
+      "observation": "遺影と花の前で沈痛な人々。",
+      "reason": "死を悲しむ追悼。"
+    },
+    {
+      "sample": "M217",
+      "id": 67700,
+      "sha256": "d86ba8c18844ef4dcfa633a9bb5c98547a4d7a19ebca8c4a22a5049657b596ec",
+      "verdict": "pass",
+      "observation": "若い芽が日光へ向かう。",
+      "reason": "将来の成長・成功の可能性の象徴。"
+    },
+    {
+      "sample": "M218",
+      "id": 67701,
+      "sha256": "c8a9ee3a1c6c23d184a86baa266217596dccdefe603f5547ec2036116c318fab",
+      "verdict": "pass",
+      "observation": "登山者が険しい岩を力強く登る。",
+      "reason": "達成に向けた精力的な試み。"
+    },
+    {
+      "sample": "M219",
+      "id": 67702,
+      "sha256": "0f1bba2c1c5b167365a5901b518b16c5baafbc449b3bc0a2b998eb872d993694",
+      "verdict": "uncertain",
+      "observation": "若者が窓口で身分証風カードを受け取る。",
+      "reason": "年齢によって資格・権利が生じる場面かは画像から判定不能。"
+    },
+    {
+      "sample": "M220",
+      "id": 67703,
+      "sha256": "f135d154315a7105652d542080997a864024bf28ea7abdf87c7069ef468d11d3",
+      "verdict": "pass",
+      "observation": "菜園の図を囲んで話し合う人々。",
+      "reason": "会話の主題が菜園として示される。"
+    },
+    {
+      "sample": "M221",
+      "id": 67704,
+      "sha256": "409c11cdae1275217a72d7b5a7cee9f6c914eecb74976bf725ac0f519cdd2b3c",
+      "verdict": "pass",
+      "observation": "ドイツ国旗を置いた机で二人が会話する。",
+      "reason": "ドイツ語会話の代表場面。"
+    },
+    {
+      "sample": "M222",
+      "id": 67705,
+      "sha256": "c7fc984df985774245be1b19e81eab643117a0906938183766da654ce8ff114a",
+      "verdict": "pass",
+      "observation": "地表へ開く入口と奥に続く岩の空洞。",
+      "reason": "洞窟の構造。"
+    },
+    {
+      "sample": "M223",
+      "id": 67706,
+      "sha256": "fb05e2571cf87f88de1eecd397e4d14059b9b36d27fb87aab1a9e36e18e41b70",
+      "verdict": "pass",
+      "observation": "二選手が同時にゴールし表示が0対0。",
+      "reason": "同点で終了する象徴。表示数値も等しい。"
+    },
+    {
+      "sample": "M224",
+      "id": 67707,
+      "sha256": "b7873672af7be82093a89ceeac8049f34dde67e88628373eb23aaab0d0f95225",
+      "verdict": "pass",
+      "observation": "一軒の売り手へ多数の客が列を作る。",
+      "reason": "一売り手と多数買い手の象徴。"
+    },
+    {
+      "sample": "M225",
+      "id": 67708,
+      "sha256": "faee1078048678ac005d379a844b38a4f4a8f6cf0a39fdfd9cdd953b4cc1f3c0",
+      "verdict": "pass",
+      "observation": "迷路の壁の開口から外へ出る人物。",
+      "reason": "脱出用の穴。"
+    },
+    {
+      "sample": "M226",
+      "id": 67709,
+      "sha256": "9aaee2bb4d770c43b9cab7ee23a6f0b2b3f66192175e290c3d3d4cb9bcb2026b",
+      "verdict": "pass",
+      "observation": "精子が卵子へ接して入ろうとする図。",
+      "reason": "提示語義の受精を描く。妊娠と受精の同一視は語義上要点検。"
+    },
+    {
+      "sample": "M227",
+      "id": 67710,
+      "sha256": "6d9a85d9d2bcb42ce2c3fd919853a0397494cc9082ce05b4b4960410ffe984c8",
+      "verdict": "pass",
+      "observation": "カレンダーと金銭から高齢者の生活への矢印。",
+      "reason": "定期支払いによる生活保障。"
+    },
+    {
+      "sample": "M228",
+      "id": 67711,
+      "sha256": "8eb01846cee9e1b3af309c58cd82b253c6bf3f0c3be4384079042f54903a5798",
+      "verdict": "pass",
+      "observation": "蒸気機関車と当時の服装の人々。",
+      "reason": "特徴を持つ歴史時代。"
+    },
+    {
+      "sample": "M229",
+      "id": 67712,
+      "sha256": "66132d99dd6cb9b8b3c0a947be0d111fb832acab570e471c184538e0f8106d69",
+      "verdict": "pass",
+      "observation": "農場で収穫物を持つ農夫。",
+      "reason": "農場を運営する人。"
+    },
+    {
+      "sample": "M230",
+      "id": 67713,
+      "sha256": "2e4c1b79750636a36f5ca62903a7ed9d2abddce5bdd213990fea11bd845bf73d",
+      "verdict": "pass",
+      "observation": "共通の起点から左右へ分岐する矢印。",
+      "reason": "異なる方向へ離れる発散。"
+    },
+    {
+      "sample": "M231",
+      "id": 67714,
+      "sha256": "d086fcb492251ac4508e143ce68bafe0b8188d3d9f5e453a96d4141c150740c1",
+      "verdict": "pass",
+      "observation": "砲兵が敵拠点方向へ大砲を撃つ。",
+      "reason": "武器の発砲。"
+    },
+    {
+      "sample": "M232",
+      "id": 67715,
+      "sha256": "3d9c294e62598489f02a5fec4ac1a674f24b7983f7d9ea0fb7324decaa9079ec",
+      "verdict": "pass",
+      "observation": "色のついた薄い花びらを開く花の接写。",
+      "reason": "花弁の形状。"
+    },
+    {
+      "sample": "M233",
+      "id": 67717,
+      "sha256": "a5eaf37392c89e88ca85576a631f001e369a0a33389eef70a0340d8d31298351",
+      "verdict": "pass",
+      "observation": "競技審判が判定の手信号を出す。",
+      "reason": "判断行為の例。"
+    },
+    {
+      "sample": "M234",
+      "id": 67718,
+      "sha256": "4ea5c53e2be0859e7dcc68eb365b5be87dcc07fa05cddb6e2005288d3c6f1309",
+      "verdict": "pass",
+      "observation": "囚人服で手錠をかけられ警官に連行される人。",
+      "reason": "有罪の犯罪者の代表像。"
+    },
+    {
+      "sample": "M235",
+      "id": 67719,
+      "sha256": "c7a6ddcc98700a386de9b1952911b2dcfab88bdbbd9288be026f6eec177950d3",
+      "verdict": "pass",
+      "observation": "航空機が地上へ爆弾を落とす。",
+      "reason": "爆撃。"
+    },
+    {
+      "sample": "M236",
+      "id": 67721,
+      "sha256": "febfd65036f46aa153b1272dda2e32ca72f2e212bcfc09f73e235ecb58d569d5",
+      "verdict": "pass",
+      "observation": "読書資料を前に評価文を書く人。",
+      "reason": "文学の書面評価の例。"
+    },
+    {
+      "sample": "M237",
+      "id": 67722,
+      "sha256": "d6e8f2b6508d6cf43eb17c639206b8bac673925d5f271bd93eb3fc0db59d8d4d",
+      "verdict": "pass",
+      "observation": "陶工が器の表面を慎重に調べる。",
+      "reason": "物の特徴的属性として品質を確かめる例。"
+    },
+    {
+      "sample": "M238",
+      "id": 67724,
+      "sha256": "67903adc622a69efde696a55d9450d7cec90c4b41381f653f1c5447c63ce49e3",
+      "verdict": "pass",
+      "observation": "立方体から球へ形と色が変わる矢印。",
+      "reason": "一状態から別状態への変更。"
+    },
+    {
+      "sample": "M239",
+      "id": 67725,
+      "sha256": "0f55bf7c3e2940eaa7f7c8f6f8f3c04eedb07a77e8d8ee0aff848a0827ab7fff",
+      "verdict": "pass",
+      "observation": "指導者が選手を二群のチームへ振り分ける。",
+      "reason": "集団を編成する行為。"
+    },
+    {
+      "sample": "M240",
+      "id": 67726,
+      "sha256": "1aa3d587f399d4e9b5c942af052a399b91f60bb60deaac023eb30607baad86fe",
+      "verdict": "pass",
+      "observation": "脂肪と赤身が帯状になった焼いた薄切り肉。",
+      "reason": "ベーコンの代表形。"
+    },
+    {
+      "sample": "M241",
+      "id": 67728,
+      "sha256": "eaa78a148d79b6b35371e4f0e751c53e46b1351c0dcf0829ddc7d0fd6c48fbd1",
+      "verdict": "pass",
+      "observation": "水を公平に配り天秤の象徴を共有する人々。",
+      "reason": "社会を拘束する公正な原則の象徴。語義は自然法に近い。"
+    },
+    {
+      "sample": "M242",
+      "id": 67729,
+      "sha256": "dec9ccc767553cc66cbce21f98134227f00ca8c8f81cb3644b1720d833363b99",
+      "verdict": "pass",
+      "observation": "議会の投票と正式な法律文書。",
+      "reason": "立法府で可決する法令。"
+    },
+    {
+      "sample": "M243",
+      "id": 67730,
+      "sha256": "bfd771fc777b3ed4408d8f5d8529a8412f3278d2a7ab45e21dfc1432d6c66970",
+      "verdict": "pass",
+      "observation": "方位図の赤い矢印が左上へ向く。",
+      "reason": "北西315度。"
+    },
+    {
+      "sample": "M244",
+      "id": 67731,
+      "sha256": "93d393272e026e51071e7e60c541866b58332bbb4522d4c6d65850f2d9050d96",
+      "verdict": "pass",
+      "observation": "大きな社屋と管理室から各部署を見る人物。",
+      "reason": "管理経営の中心オフィス。"
+    },
+    {
+      "sample": "M245",
+      "id": 67732,
+      "sha256": "fe58ca7bc4d5893bbd3273e5ea8c1fcfe596dfae7758de61f6d41be0ffe0bcdd",
+      "verdict": "pass",
+      "observation": "本を収める棚付き家具。",
+      "reason": "本箱。"
+    },
+    {
+      "sample": "M246",
+      "id": 67733,
+      "sha256": "aec50cc090cd7461f0f99d6a694fdb9ded691af139985c014c248760cffb12fa",
+      "verdict": "pass",
+      "observation": "走者が五角形のホームベースに触れる。",
+      "reason": "得点前に触る本塁。"
+    },
+    {
+      "sample": "M247",
+      "id": 67735,
+      "sha256": "0cbf331c00793721f01ff68ea32cb4921e349b0fc108afc6cb658d423f7826c0",
+      "verdict": "pass",
+      "observation": "客の前で舞台の幕が開き明かりが点く。",
+      "reason": "始まりの出来事。"
+    },
+    {
+      "sample": "M248",
+      "id": 67736,
+      "sha256": "6d95421c741b16772967b666bdf8c9af081494913f25b8daf3c24bcda86f2e09",
+      "verdict": "pass",
+      "observation": "魔法使いが杖から光の球を呼び出す。",
+      "reason": "超自然力の技の象徴。"
+    },
+    {
+      "sample": "M249",
+      "id": 67737,
+      "sha256": "59f44eb3760d6876b3ddc9db0e2759a3ea568aef14c4838fb696dc954139beb9",
+      "verdict": "pass",
+      "observation": "家までつながる一本の曲がった道。",
+      "reason": "地点へ向かう線として道筋。"
+    },
+    {
+      "sample": "M250",
+      "id": 67738,
+      "sha256": "d67ee9a8febcd1236570eed1fee4de98f6741c5464ce7b58d818713b3e311557",
+      "verdict": "pass",
+      "observation": "共同の水汲み施設から人々が水を得る。",
+      "reason": "利用できる供給施設。"
+    },
+    {
+      "sample": "M251",
+      "id": 67739,
+      "sha256": "c5945e9bfd8268e495b42b52d9f07bd8b6f811b98a8cb3c56cb269a6e684069c",
+      "verdict": "pass",
+      "observation": "年長職人の指導で若者が木材を削る。",
+      "reason": "働いて学ぶ見習い。"
+    },
+    {
+      "sample": "M252",
+      "id": 67740,
+      "sha256": "b8ea6a25e0d30d62b05f71bbbdee6fd86814c1eebc3f4af2c207fec345f7e2f4",
+      "verdict": "pass",
+      "observation": "本を前に窓辺で静かに深く考える人物。",
+      "reason": "継続した熟考。"
+    },
+    {
+      "sample": "M253",
+      "id": 67741,
+      "sha256": "32a873e47bf4ef6f6951bf9d91bc5514563b5f9934ee3bfcbb38dc191779ea72",
+      "verdict": "pass",
+      "observation": "新生児を抱く母と話す父に発話吹き出し。",
+      "reason": "赤子に名前を付ける場面として成立。"
+    },
+    {
+      "sample": "M254",
+      "id": 67742,
+      "sha256": "3fe7906f96dddfc3bcf60552794b8b60221438186bcb898ed221f1e3a1d63a9f",
+      "verdict": "pass",
+      "observation": "重要人物が来訪者と机を挟んで面会。",
+      "reason": "重要人物との会議。"
+    },
+    {
+      "sample": "M255",
+      "id": 67743,
+      "sha256": "ede2f0a63eca9e4ec31ddfdd1382110bba53d1de3941537b6f7cac0cceccd33f",
+      "verdict": "pass",
+      "observation": "庭を通る人を住人が抗議せず見送る。",
+      "reason": "無抗議で受け入れる場面。"
+    },
+    {
+      "sample": "M256",
+      "id": 67744,
+      "sha256": "4136282526776e4a5e4218124cb22fd2e5d25c7fcfe4427fe4d916b3eb199863",
+      "verdict": "pass",
+      "observation": "同じ花と葉が繰り返される装飾枠。",
+      "reason": "反復デザインのモチーフ。"
+    },
+    {
+      "sample": "M257",
+      "id": 67745,
+      "sha256": "c4c9f8367c80db208e31839bffb4963878c077b71c53ba4b0dc84aa51dda9250",
+      "verdict": "pass",
+      "observation": "主人が客を笑顔で招きお茶と菓子を用意。",
+      "reason": "歓迎の親切として提示語義に対応。優遇よりもてなしに近い語義。"
+    },
+    {
+      "sample": "M258",
+      "id": 67746,
+      "sha256": "a0d16903f9c18a3483c15c185201a3fbe8ce7a4ae8a5a60b47f6a70660644858",
+      "verdict": "pass",
+      "observation": "優勢そうな駒数の側が落ち着き相手が困るチェス。",
+      "reason": "競争上有利な立場の表現。"
+    },
+    {
+      "sample": "M259",
+      "id": 67747,
+      "sha256": "a78e3544e37e2d9d8c35b249046a0948e9b69cfc64b4ee0db3a74992b6c423a9",
+      "verdict": "pass",
+      "observation": "積木城の構成ブロック一個を拡大表示。",
+      "reason": "全体の構造要素。"
+    },
+    {
+      "sample": "M260",
+      "id": 67748,
+      "sha256": "638bdeefcf1f9b678959a04dced35864f8ce6445946686a71e4642b4ae92307b",
+      "verdict": "pass",
+      "observation": "打球が打者から低い直線軌道で進む。",
+      "reason": "ライナーの飛び方。"
+    },
+    {
+      "sample": "M261",
+      "id": 67749,
+      "sha256": "153e9456da2a145c4d5b7965d6cdb662bd881f3c5ffc6a296380ec72a053f165",
+      "verdict": "pass",
+      "observation": "話す人を見て注意深く耳を傾ける子。",
+      "reason": "聞き手。"
+    },
+    {
+      "sample": "M262",
+      "id": 67750,
+      "sha256": "8df3560c09e7207a7f6d8a119e576bff6575623831d01df93f701c437f13bb6b",
+      "verdict": "pass",
+      "observation": "設計図を囲み建築計画を考える集団。",
+      "reason": "計画を案出する過程。"
+    },
+    {
+      "sample": "M263",
+      "id": 67751,
+      "sha256": "362954f23e9c3453ad3e4ab242ecb4fdfef240a072c0b448e3eaedbf0f346481",
+      "verdict": "pass",
+      "observation": "城を中心に赤い境界で区切られた土地。",
+      "reason": "支配領域の象徴。"
+    },
+    {
+      "sample": "M264",
+      "id": 67752,
+      "sha256": "0b2c8489f69e1977b34c55263b7664d8e53c18aa74578f286c9c31f9e89167ad",
+      "verdict": "pass",
+      "observation": "アンテナが飛行機へ波を出し反射を受信し画面表示。",
+      "reason": "遠方物体検出のレーダー。"
+    },
+    {
+      "sample": "M265",
+      "id": 67753,
+      "sha256": "9484aef05f068481dbe539d4c507370a8936cb150085c8fb957faf1e903fcf3b",
+      "verdict": "pass",
+      "observation": "新聞紙面を検討・修正する編集者。",
+      "reason": "出版内容を決める業務。"
+    },
+    {
+      "sample": "M266",
+      "id": 67754,
+      "sha256": "7db8f8ba40160b3feb8720e02bfcc73f7811fa4da61f4962595e8933777c771f",
+      "verdict": "pass",
+      "observation": "枝の果実が青から赤い成熟状態へ並ぶ。",
+      "reason": "完全な発展・熟成の例。"
+    },
+    {
+      "sample": "M267",
+      "id": 67755,
+      "sha256": "43fcc77a2da0e1b941620f436c7ebb7342e1fced4f6260c00b84c24e39d3c882",
+      "verdict": "pass",
+      "observation": "四人が舞台で楽器を合奏する。",
+      "reason": "四人の演奏者で数量一致。"
+    },
+    {
+      "sample": "M268",
+      "id": 67756,
+      "sha256": "e2d61b258abc7692399d4d4c1215a86c419b208513b7bb37a8255846835ffe60",
+      "verdict": "pass",
+      "observation": "飲食店で店員が請求書を客へ提示。",
+      "reason": "レストランの勘定。"
+    },
+    {
+      "sample": "M269",
+      "id": 67757,
+      "sha256": "8d093795ed7bf574dfb43cf568b8be07882803ece75bc128a465c767d5a54f4c",
+      "verdict": "pass",
+      "observation": "公的機関の机で文書事務を行う職員。",
+      "reason": "非選出の政府役人の代表像。"
+    },
+    {
+      "sample": "M270",
+      "id": 67758,
+      "sha256": "1cd6a72290c7c765c51b9fde03e8ba45b0fdadf4d691512b00f6c89d7a55ba31",
+      "verdict": "pass",
+      "observation": "災害被災者へ救援物資と毛布を渡す。",
+      "reason": "困難時の援助。"
+    },
+    {
+      "sample": "M271",
+      "id": 67759,
+      "sha256": "d233f8f01f3e8088499432249e6c1bf5ca3c7a3f95821b31a7a9baa3298721d6",
+      "verdict": "pass",
+      "observation": "玉座の君主を取り囲む助言者たち。",
+      "reason": "宮廷の構成員。"
+    },
+    {
+      "sample": "M272",
+      "id": 67760,
+      "sha256": "1c2d5abf771644c025bff60fc8c7ec7a88c462347adfd32ec6bcef43086d3c85",
+      "verdict": "pass",
+      "observation": "中央に結び目のある綱の一番端を指す。",
+      "reason": "中央から最も離れた点。"
+    },
+    {
+      "sample": "M273",
+      "id": 67762,
+      "sha256": "949902278902377b7b3400eb03d14ff17758c2539ad74db9c8f40f68a8e39ffd",
+      "verdict": "pass",
+      "observation": "硬貨とチップを賭けてサイコロを囲む人々。",
+      "reason": "賭け勝負の場面。"
+    },
+    {
+      "sample": "M274",
+      "id": 67763,
+      "sha256": "f919a12cd9b9b3c2cd1d0ffc15b593aa812177c569070d80e86814722ce39c85",
+      "verdict": "pass",
+      "observation": "布地・衣料の展示場で複数の商談。",
+      "reason": "同じ産業の会社や人々。"
+    },
+    {
+      "sample": "M275",
+      "id": 67764,
+      "sha256": "47664a9fd70ac214f18de3e00f7086fca4b1bf5360a55e1fc6e612cc0a0ed8d7",
+      "verdict": "pass",
+      "observation": "他の子に指差され笑われ、うつむく子。",
+      "reason": "自尊心を傷つけられる屈辱。"
+    },
+    {
+      "sample": "M276",
+      "id": 67765,
+      "sha256": "e9c49d1b71f8dd7574f8f3e2cf9512a07dc03f549ae11900f2fc1a49df374e52",
+      "verdict": "pass",
+      "observation": "広場を埋め尽くす多数の人々。",
+      "reason": "一緒にいる群衆。"
+    },
+    {
+      "sample": "M277",
+      "id": 67766,
+      "sha256": "e8dc1baa458fb7a563b02b2c113ea997e213d2768354be20a17dd180beeb730f",
+      "verdict": "pass",
+      "observation": "教師が小さな赤い球と大きな青い球を示す。",
+      "reason": "名詞が指す物の色や大きさを表す形容詞の象徴。"
+    },
+    {
+      "sample": "M278",
+      "id": 67768,
+      "sha256": "8d765ab9b0704fb8afb6fc3b900ef04dd3247602d71a0fe4a28e0e62e7883b68",
+      "verdict": "pass",
+      "observation": "商店から緑と赤の矢印が出て、緑側の硬貨が多い。",
+      "reason": "収入が支出を上回る構造を図示。"
+    },
+    {
+      "sample": "M279",
+      "id": 67769,
+      "sha256": "55a8a1193ed2e846f2432998c9e8246143a1b42f3d59bfa6788191fc7443a900",
+      "verdict": "pass",
+      "observation": "武装した一団が城門へ駆けて攻める。",
+      "reason": "急な襲撃の例。"
+    },
+    {
+      "sample": "M280",
+      "id": 67770,
+      "sha256": "bd91105e6c9057bed06354df1f9b6d33b2061ac106810c98901881c1fc763b29",
+      "verdict": "pass",
+      "observation": "店主が棚の商品を客へ売る。",
+      "reason": "小売商人の例。"
+    },
+    {
+      "sample": "M281",
+      "id": 67771,
+      "sha256": "8df9986dc534ce0a2f53480a1ab6cf4c26193c65f2316f1ac6276bfffe0f8cef",
+      "verdict": "pass",
+      "observation": "人が目撃した場面を警察官へ話す。",
+      "reason": "事件を見て伝える証人。"
+    },
+    {
+      "sample": "M282",
+      "id": 67772,
+      "sha256": "ea62e524c29eb9df9216a15ee344bb967c3ef4b869317b267d6408c0a53724dc",
+      "verdict": "pass",
+      "observation": "探偵が二つの指紋を比較する。",
+      "reason": "事実に基づく証拠を調べる場面。"
+    },
+    {
+      "sample": "M283",
+      "id": 67773,
+      "sha256": "e67653d39159ef6f61aaa0d160ab72e74733b185838853bb5972ee8208fffa15",
+      "verdict": "pass",
+      "observation": "職人が木の器を彫刻刀で削る。",
+      "reason": "手工芸に熟練した人。"
+    },
+    {
+      "sample": "M284",
+      "id": 67774,
+      "sha256": "0879143a83120eb05e40097ed2d5dea614b887d8e340d63d1b934b7ef9e35d35",
+      "verdict": "pass",
+      "observation": "軍服の人物が地図を指し部下へ指示。",
+      "reason": "軍隊の指揮官。"
+    },
+    {
+      "sample": "M285",
+      "id": 67775,
+      "sha256": "3c5a11c04343f07ff4914081f1431213fa594f5ecf45d0951882db602ff9673f",
+      "verdict": "pass",
+      "observation": "軍勢が地図上の境界を越え敵城へ向かう。",
+      "reason": "敵地への侵入。"
+    },
+    {
+      "sample": "M286",
+      "id": 67776,
+      "sha256": "1f9e12e8019448b3cb5cdb8fd9a848701b644b90f0b29eaa5d8e2719777d657f",
+      "verdict": "pass",
+      "observation": "戦車と兵が境界標を越えて進む。",
+      "reason": "侵略行為の例。"
+    },
+    {
+      "sample": "M287",
+      "id": 67777,
+      "sha256": "cbab6509f9a27f2dcf4eb298b07ec917208cb5950e898713651216e421f6b903",
+      "verdict": "pass",
+      "observation": "射撃場で標的に向かい銃を発射する。",
+      "reason": "弾丸を撃つ行為。"
+    },
+    {
+      "sample": "M288",
+      "id": 67778,
+      "sha256": "646adaa0ddde21dcc350a790e64a6d3cb4a9513af357809d73c938d020236fa7",
+      "verdict": "pass",
+      "observation": "容器の上端寄りに黒線と注水を止める手。",
+      "reason": "入れられる最大量の印。"
+    },
+    {
+      "sample": "M289",
+      "id": 67779,
+      "sha256": "a3f0fa293d8f06cb37b159fa20fca72bced65fe5c864185b30d406a51fa47aac",
+      "verdict": "pass",
+      "observation": "ビルと店舗が並び、人が歩道を行き交う。",
+      "reason": "街の往来の例。"
+    },
+    {
+      "sample": "M290",
+      "id": 67780,
+      "sha256": "a70b9657c45bb4ded6576e220ada80321646815a89ba84e1658e4fc8c6bbe04e",
+      "verdict": "pass",
+      "observation": "両腕と両脚を広げ体を伸ばす人。",
+      "reason": "身体のストレッチ。"
+    },
+    {
+      "sample": "M291",
+      "id": 67781,
+      "sha256": "01159884d5a78aa5d083fd0c80160c242d89fdad4fc97a878769db8b064704ee",
+      "verdict": "pass",
+      "observation": "スペイン国旗を背景に吹き出しを伴い会話する二人。",
+      "reason": "スペイン語会話を表す。"
+    },
+    {
+      "sample": "M292",
+      "id": 67782,
+      "sha256": "79de52aa0866c3331a4e14177e5c3b6f8508755259b83f75ad8f603d8c0c76be",
+      "verdict": "pass",
+      "observation": "センタープレスとポケットがある茶色のズボン。",
+      "reason": "スラックスの形。"
+    },
+    {
+      "sample": "M293",
+      "id": 67783,
+      "sha256": "b46d3c2db79f859eae85d606b841efeae29b32dd907073eeee842d8b774171d4",
+      "verdict": "pass",
+      "observation": "客が店員へ文書を示して要求を伝える。",
+      "reason": "何かを求める請求の場面。"
+    },
+    {
+      "sample": "M294",
+      "id": 67784,
+      "sha256": "b4e32ab2f4632a4af19e11f057dd26a2c742bec157ff33a121040a203a8c8d51",
+      "verdict": "pass",
+      "observation": "種から根、葉、花、果実のある株に育つ。",
+      "reason": "生物の生長の過程。"
+    },
+    {
+      "sample": "M295",
+      "id": 67786,
+      "sha256": "8196b4d01268fd02fdab8155f486e8956b55e2e2e09cb93fd06ef5492c3e92e0",
+      "verdict": "pass",
+      "observation": "式服と角帽を着けた卒業式の参列者と演説者。",
+      "reason": "特別な機会の公式行事。"
+    },
+    {
+      "sample": "M296",
+      "id": 67787,
+      "sha256": "71188ba4932d7e96aec21bd635f696bd2d44c3e80e5b258edba986bfcfa1aad1",
+      "verdict": "uncertain",
+      "observation": "野営地、旗、塀の脇の大砲があるが戦闘は描かれない。",
+      "reason": "現在または過去に戦闘があった場所か判定できない。"
+    },
+    {
+      "sample": "M297",
+      "id": 67788,
+      "sha256": "22e584365c44475f737a592999c4a8a1c56b5385b84a19a9375b328382f25851",
+      "verdict": "pass",
+      "observation": "医師が患者へ心臓の画像を説明。",
+      "reason": "一科を実践する循環器専門医の代表場面。"
+    },
+    {
+      "sample": "M298",
+      "id": 67790,
+      "sha256": "5991fb2faade15a27a0a43f79dc55faf5594de43d3144885959df129733d2cab",
+      "verdict": "pass",
+      "observation": "食べ物を抱え込み困窮者に分けない人物。",
+      "reason": "容赦なく強欲な人として提示語義に合う。"
+    },
+    {
+      "sample": "M299",
+      "id": 67791,
+      "sha256": "d68ef6b3bcfbf562ae206a9b8947825224d29490904b583da0aae9b5d4d54be4",
+      "verdict": "pass",
+      "observation": "車が矢印に沿って空の駐車枠へ曲がる。",
+      "reason": "車を枠へ入れる駐車。"
+    },
+    {
+      "sample": "M300",
+      "id": 67792,
+      "sha256": "02ca30acfc34deabfd8b783d8181eddb2175fc5a0ddd324658f2fab40e6c1133",
+      "verdict": "pass",
+      "observation": "脳の神経細胞から腕へ運動信号がつながる図。",
+      "reason": "身体の過程を管理する神経集団。"
+    },
+    {
+      "sample": "M301",
+      "id": 67793,
+      "sha256": "c0b212c29e975319f4e0fd173014bc82c8cd9658ddebebbab79976f54510468b",
+      "verdict": "pass",
+      "observation": "台座の上の人間の石像。",
+      "reason": "人体を表した彫刻。"
+    },
+    {
+      "sample": "M302",
+      "id": 67794,
+      "sha256": "ba41ad7819fd5dd830f7524eb8ec1b624724aa56fe86351059adadb4dfe662be",
+      "verdict": "pass",
+      "observation": "市場で品物と紙幣を交換する売り手と買い手。",
+      "reason": "商品取引の例。"
+    },
+    {
+      "sample": "M303",
+      "id": 67795,
+      "sha256": "94692720a273b5caaa98ba789e5e989c789dfdb21ce89ce8688742bece9de066",
+      "verdict": "pass",
+      "observation": "電鍵、電線、遠方の装置と点・線の信号。",
+      "reason": "電信装置の代表構成。"
+    },
+    {
+      "sample": "M304",
+      "id": 67796,
+      "sha256": "7e2b2bad48f1a90ae5cc6f3ab7a280d71f130c1d45a9bf924845d293b21d58cb",
+      "verdict": "pass",
+      "observation": "ガラス球の内側でコイル状フィラメントが発光。",
+      "reason": "白熱電球の構造。"
+    },
+    {
+      "sample": "M305",
+      "id": 67797,
+      "sha256": "97841ac307db7d04fa401f518a1f6e47654e10d699e03152c6f6cf5243937ae2",
+      "verdict": "pass",
+      "observation": "警官が道路を横切る位置に赤白の柵を置く。",
+      "reason": "交通を止めるバリケード。"
+    },
+    {
+      "sample": "M306",
+      "id": 67798,
+      "sha256": "2f959c8c9a68114af1f2698df1ba944f1d2c877db059b0b36f994805f5bdd9ff",
+      "verdict": "pass",
+      "observation": "浸水した家の前で困窮する一家と救援者。",
+      "reason": "災害で不利益を受けた人々。"
+    },
+    {
+      "sample": "M307",
+      "id": 67799,
+      "sha256": "01865c7ce30979cfb4d8cdb60cb05118e107778db88586e86a9abc55032d50a3",
+      "verdict": "pass",
+      "observation": "サッカーの試合でボールを運ぶ選手。",
+      "reason": "競技に参加する人。"
+    },
+    {
+      "sample": "M308",
+      "id": 67801,
+      "sha256": "ea160c39d13b9086657b3611a66860583d41245bc89bc714c5a7540dc1dd0df6",
+      "verdict": "pass",
+      "observation": "舞台の人が帽子からウサギを出し観客が見る。",
+      "reason": "観客を楽しませる奇術師。"
+    },
+    {
+      "sample": "M309",
+      "id": 67802,
+      "sha256": "b20a81a2808ab5b83467fa26751c43787d62c327e3eb4c7398ef0fd256f40512",
+      "verdict": "pass",
+      "observation": "競技場にチームユニフォーム姿のライオン。",
+      "reason": "チームを象徴する動物マスコット。"
+    },
+    {
+      "sample": "M310",
+      "id": 67803,
+      "sha256": "a692b43526c65bd698526df879bf298195afeeca309d99cc89f9697cff3db415",
+      "verdict": "pass",
+      "observation": "施術者が寝台の人の肩を両手でもむ。",
+      "reason": "緊張をほぐすマッサージ。"
+    },
+    {
+      "sample": "M311",
+      "id": 67804,
+      "sha256": "963ad7acaae7ddb9a8c6c3e77457ce0e3a8c82b0c0a5f622bda90ab7c9327022",
+      "verdict": "pass",
+      "observation": "消しゴムで紙上の鉛筆線を消す。",
+      "reason": "削除による訂正。"
+    },
+    {
+      "sample": "M312",
+      "id": 67805,
+      "sha256": "aebd2e7f6ce37948dd9f24bb6d246b051ad5e5475705120bec05bc441f547b1c",
+      "verdict": "pass",
+      "observation": "広場に集まったさまざまな市民。",
+      "reason": "一まとまりの一般の人々。"
+    },
+    {
+      "sample": "M313",
+      "id": 67806,
+      "sha256": "887bb99477ab8b6599322c53dbf0278b272217b6207e2ec5e0f57ae1dcf137f4",
+      "verdict": "uncertain",
+      "observation": "画家が完成した絵を示し観客から拍手を受ける。",
+      "reason": "提示語義の優れた作品には合うが名曲という語とは不整合。"
+    },
+    {
+      "sample": "M314",
+      "id": 67809,
+      "sha256": "34d2264b114293d0e26c12e6ef7a9967f94ec7107d65654585c245b05442dc50",
+      "verdict": "pass",
+      "observation": "旅行者が荷物を引き観光地の駅へ降り立つ。",
+      "reason": "旅の終着地点の例。"
+    },
+    {
+      "sample": "M315",
+      "id": 67810,
+      "sha256": "c8c6b882a742300614f95285d6992ef4f0d547a80ea7cebacb77d9d64aa6a24d",
+      "verdict": "pass",
+      "observation": "箱にボール、ぬいぐるみ、傘、時計などが混在。",
+      "reason": "雑多な取り合わせ。時計の目盛りは語義に影響しない。"
+    },
+    {
+      "sample": "M316",
+      "id": 67811,
+      "sha256": "21b372b8d990ffaa3b894e59f0b5c7b8a671b8115c723f08af5e673c079ccda7",
+      "verdict": "pass",
+      "observation": "荷物を持つ訪問者を玄関で出迎える住人。",
+      "reason": "来客の場面。"
+    },
+    {
+      "sample": "M317",
+      "id": 67813,
+      "sha256": "57a0c147b2ca6b7d26a13f128535976f4567d5ed878b1f327a5c18ef6424b300",
+      "verdict": "pass",
+      "observation": "耳の垂れた猟犬型の犬が林床を嗅ぐ。",
+      "reason": "狩猟に使う犬の代表像。"
+    },
+    {
+      "sample": "M318",
+      "id": 67814,
+      "sha256": "46e0798d04439f74a572fb749d85685db56ffef78a7d323c7efde0ecaff96e3f",
+      "verdict": "pass",
+      "observation": "若者が券売機の画面を操作する。",
+      "reason": "設備を使う利用者。"
+    },
+    {
+      "sample": "M319",
+      "id": 67816,
+      "sha256": "b4cfe7d41e710d4b9cd4c8a6187a1872e95cf1a5223cbba213271fb9ca61cd50",
+      "verdict": "pass",
+      "observation": "数人で重い荷車を坂へ押し上げる。",
+      "reason": "身体的な力を使う大変な作業。"
+    },
+    {
+      "sample": "M320",
+      "id": 67817,
+      "sha256": "2846661f299317e2de7d30825343819b87ff69f4bd2aa31e0f7d83d921c389f3",
+      "verdict": "pass",
+      "observation": "観客席に囲まれた野球場で試合が行われる。",
+      "reason": "球技の施設。"
+    },
+    {
+      "sample": "M321",
+      "id": 67818,
+      "sha256": "3b4dfc2e0b9c34533b5d8a5b34aa901344da46fa2bc56ae1edb3745cbe2e9259",
+      "verdict": "pass",
+      "observation": "作業員が工具で機械内部を整備する。",
+      "reason": "技術工程を扱う職業人。"
+    },
+    {
+      "sample": "M322",
+      "id": 67819,
+      "sha256": "c379d5285212b13b27481cf64f89c4b995622c7546a5f383dbccaa072b616a05",
+      "verdict": "pass",
+      "observation": "授業で農産物の生産、販売、消費を順に図示。",
+      "reason": "経済学が扱う活動を示す。"
+    },
+    {
+      "sample": "M323",
+      "id": 67820,
+      "sha256": "57800016e70571e1a2673c131940218af870828fc86cb077499b01f1ea4db224",
+      "verdict": "pass",
+      "observation": "二人が同じ正式文書へ署名する。",
+      "reason": "拘束力ある協定を文書にする例。"
+    },
+    {
+      "sample": "M324",
+      "id": 67822,
+      "sha256": "dc0d553007d7cd5ce6455cd4f42f985d71def35c11bec31cefa04e0b0c1e0e9d",
+      "verdict": "pass",
+      "observation": "同じテーブルの全員が頷く。",
+      "reason": "集団としての合意。"
+    },
+    {
+      "sample": "M325",
+      "id": 67823,
+      "sha256": "c9027f9097edcc5c2693baeec2e6b3ba50c41d47c522511910dc802272e266b9",
+      "verdict": "pass",
+      "observation": "独奏バイオリン奏者の後ろにオーケストラ。",
+      "reason": "独奏と管弦楽のための楽曲の代表場面。"
+    },
+    {
+      "sample": "M326",
+      "id": 67824,
+      "sha256": "ecda5851eb148698b44ab0ce2022928ec3495600bdca918a8e9d3ad604caa9fc",
+      "verdict": "pass",
+      "observation": "近接して向かい合う青と赤の武装部隊。",
+      "reason": "敵同士が差し迫る前線。"
+    },
+    {
+      "sample": "M327",
+      "id": 67825,
+      "sha256": "6348a24c3777c4c15774ef6cab6195d930bad6b6e309705377184afae3976117",
+      "verdict": "pass",
+      "observation": "パズルを何度か組み直してはめる順序。",
+      "reason": "答えまで試みる過程。"
+    },
+    {
+      "sample": "M328",
+      "id": 67826,
+      "sha256": "a4a85f7ab98f2b57a7fb6c3b43e68374575bd2369bb1b3886970cbdbc433ef8e",
+      "verdict": "pass",
+      "observation": "部屋で四人が弦楽器を合奏。",
+      "reason": "少人数のクラシック演奏。"
+    },
+    {
+      "sample": "M329",
+      "id": 67827,
+      "sha256": "a862916ed19ff347cdac382e38d8fc7eeebaa3cc9faac02d74973966fd5dc23d",
+      "verdict": "pass",
+      "observation": "さまざまな人々を調査し統計をまとめる場面。",
+      "reason": "人間社会の研究。"
+    },
+    {
+      "sample": "M330",
+      "id": 67828,
+      "sha256": "292d4ca307e3dc4670abb15745ab0e4ac20aa12cc59cfff92d067419817a2647",
+      "verdict": "pass",
+      "observation": "顕微鏡で植物細胞を研究する人。",
+      "reason": "生命体を対象にする科学。"
+    },
+    {
+      "sample": "M331",
+      "id": 67829,
+      "sha256": "857081ec9c87fdac7e301aa5f42b5b0263ef5f29307967f13a78817e145b0295",
+      "verdict": "pass",
+      "observation": "指導者と学生が研究室で専門的な実験を行う。",
+      "reason": "大学院研究の代表場面。"
+    },
+    {
+      "sample": "M332",
+      "id": 67830,
+      "sha256": "819892e12fe991692d101570e555e55036d3ab87478c1ea19ee49668b1706849",
+      "verdict": "pass",
+      "observation": "工場で研究者が産業用ロボットを扱う。",
+      "reason": "科学を産業へ応用する例。"
+    },
+    {
+      "sample": "M333",
+      "id": 67831,
+      "sha256": "25aa4c74b25425bcddc3d22f10485da3cb46c8040740d87a2b9f1356bae1df23",
+      "verdict": "pass",
+      "observation": "青の選手たちがゴールの前を守る。",
+      "reason": "相手の得点を防ぐ側。"
+    },
+    {
+      "sample": "M334",
+      "id": 67832,
+      "sha256": "511c2ac529dd250eb50e74ea8815d6642f7d25d139f03f9e2d9a6c979936ac5f",
+      "verdict": "pass",
+      "observation": "四人のテニス選手が対戦表を経て一つの杯へ進む。",
+      "reason": "一連の試合で勝者を決める形式。"
+    },
+    {
+      "sample": "M335",
+      "id": 67833,
+      "sha256": "e6e198a98554641bfe15a814d0d45243c93f10bdf9a8b34a552d26ef9f3914e7",
+      "verdict": "pass",
+      "observation": "走行中のバスで覆面の人が運転手に進路を指示。",
+      "reason": "乗り物を乗っ取る例。"
+    },
+    {
+      "sample": "M336",
+      "id": 67834,
+      "sha256": "093b562081fd6d4267227fdc7c30791d9ef2fa67e9c7e634b4390c972f70c73f",
+      "verdict": "pass",
+      "observation": "口を開いて発声線を出す人と聞く人。",
+      "reason": "口で話すコミュニケーション。"
+    },
+    {
+      "sample": "M337",
+      "id": 67835,
+      "sha256": "8773d6df25a3c70a36b20b7f4d9b10ff9db78b55fcd7a6c1d125673cf00eb80d",
+      "verdict": "pass",
+      "observation": "仮装した子供たちがカボチャの灯のある家を訪ねる。",
+      "reason": "ハロウィーンの風習。"
+    },
+    {
+      "sample": "M338",
+      "id": 67836,
+      "sha256": "ff2c61cdf500829b0d536979fa49e1f4fda7382d8acd4f52d50ce749d26c4663",
+      "verdict": "pass",
+      "observation": "手提げバッグの中に財布、鍵、櫛など。",
+      "reason": "金や小物を運ぶハンドバッグ。"
+    },
+    {
+      "sample": "M339",
+      "id": 67838,
+      "sha256": "ce1e8ba188c81449915cc471d181c33fa0ead39e4da1281c24a62578d7cd4b88",
+      "verdict": "pass",
+      "observation": "鑑賞者が絵を近くで分析しノートを取る。",
+      "reason": "美術作品の評論家の例。"
+    },
+    {
+      "sample": "M340",
+      "id": 67839,
+      "sha256": "3d197daf6a15190959f3e140ebeac608f49bbfa3cc68a6fba9e0c4d3803916a5",
+      "verdict": "pass",
+      "observation": "スーツの男性が事業の図面を囲む会議を主導。",
+      "reason": "商工業の経営幹部の代表場面。"
+    },
+    {
+      "sample": "M341",
+      "id": 67840,
+      "sha256": "a9b426e7f5c4c82cde057fdb38e11a0cc84fefe63a58b922b34a71f2e1e2a525",
+      "verdict": "pass",
+      "observation": "書店で同じ本が多数平積みされ、複数の客が手に取る。",
+      "reason": "大量に売れる本。"
+    },
+    {
+      "sample": "M342",
+      "id": 67841,
+      "sha256": "6ac219fd834dfc780ee00c5000eb3a9d409d6054d29c5114c004447d4b9e8930",
+      "verdict": "pass",
+      "observation": "周囲を見下ろすように胸を張り腕を組む人物。",
+      "reason": "自己評価の誇大さの象徴。"
+    },
+    {
+      "sample": "M343",
+      "id": 67842,
+      "sha256": "c531afe1f331007f532afac4f39233168b2054ddebf705c37c088769d3e1c276",
+      "verdict": "pass",
+      "observation": "キッパ姿の男性と家族、ろうそくと編みパン。",
+      "reason": "安息日を迎えるユダヤ教の実践の例。"
+    },
+    {
+      "sample": "M344",
+      "id": 67843,
+      "sha256": "4e960d77fe3dc721ed49a4c172c33ebf258a7f95b5d7b02c456d55076171f41d",
+      "verdict": "pass",
+      "observation": "眠れない夜と日中の疲労が循環矢印でつながる。",
+      "reason": "問題が最初の問題を悪化させる循環。"
+    },
+    {
+      "sample": "M345",
+      "id": 67844,
+      "sha256": "a20ca1cabe423faddede51c68a3e578dc3e56816d92d11698c976f7e68b7d873",
+      "verdict": "pass",
+      "observation": "教師が星の褒美を示すと子供が意欲的な表情。",
+      "reason": "積極的な動機づけ。"
+    },
+    {
+      "sample": "M346",
+      "id": 67845,
+      "sha256": "5d924998e0bcbc1b6fb8e8d3500fc0b54f69dc07d5250a4aee59e0e1adf690b7",
+      "verdict": "pass",
+      "observation": "雨の中で上の外壁板が下の板にかぶさる。",
+      "reason": "別部品の上にかかる板。"
+    },
+    {
+      "sample": "M347",
+      "id": 67846,
+      "sha256": "2aef041f422fbf39f0bae078e16c2fd4e9a165c697a67ec87d2ba1c0f0b1bba4",
+      "verdict": "pass",
+      "observation": "演台の人物に記者がマイクやカメラを向ける。",
+      "reason": "記者が質問する会見。"
+    },
+    {
+      "sample": "M348",
+      "id": 67847,
+      "sha256": "9e05c7c009ee93c7a13ace8f76a0149e06f7d28bddfbf7b31143fe95755c6bfe",
+      "verdict": "pass",
+      "observation": "劇の舞台で中心人物が強い照明を浴び劇的に発言。",
+      "reason": "決定的瞬間の代表場面。"
+    },
+    {
+      "sample": "M349",
+      "id": 67848,
+      "sha256": "0f54e1904ac07abe7e4ff3aab4c811af7baa42e69cb12c68090bec457a615095",
+      "verdict": "pass",
+      "observation": "地域に根ざす集落で年長者が子供らにかご編みを伝える。",
+      "reason": "土地に古くから住む人々の代表像。"
+    },
+    {
+      "sample": "M350",
+      "id": 67849,
+      "sha256": "604e008e1df8ebf72185b4c47d4010c7edaaff20e501fee2b15889efaf090345",
+      "verdict": "hold",
+      "observation": "肝臓と分子模型。個別画像では模型の両端に赤い原子があり長い側鎖がない。",
+      "reason": "コレステロールの分子構造として成立しない。"
+    },
+    {
+      "sample": "M351",
+      "id": 67850,
+      "sha256": "2203d94111b5de30d9f14c637563c255b52f41ce735378d3bdc2fdcf7f3027bf",
+      "verdict": "pass",
+      "observation": "調査者が集落で住民の会話と関係を記録。",
+      "reason": "社会の中の人間関係を調べる科学の例。"
+    },
+    {
+      "sample": "M352",
+      "id": 67851,
+      "sha256": "4ce5c3598eeb7363d8ebda95c0e098549d0b768b96ad6b11af6f7333de5fb2b4",
+      "verdict": "pass",
+      "observation": "書店で印刷された本や冊子を売場に陳列。",
+      "reason": "販売を目的とした印刷作品。"
+    },
+    {
+      "sample": "M353",
+      "id": 67852,
+      "sha256": "0702d655ffc7158bacf499b9d73b2419f0c428fa1aacdeb4cdfd82e99f979353",
+      "verdict": "pass",
+      "observation": "学校制服の生徒が教材の横で紙幣入り封筒を受け取る。",
+      "reason": "学生に学業目的の経済援助を渡す例。"
+    },
+    {
+      "sample": "M354",
+      "id": 67853,
+      "sha256": "5746e4ff7d448d9b81dce00e24aab93f61ae9bf7e637a7c2511c35da6bef193f",
+      "verdict": "pass",
+      "observation": "カメラと新聞を携え取材相手の話を記録する人。",
+      "reason": "新聞や雑誌の記者。"
+    },
+    {
+      "sample": "M355",
+      "id": 67854,
+      "sha256": "396372e26ac881271d4cb3ff66cbce856b84b7eb96760621d85410cb94fe3034",
+      "verdict": "pass",
+      "observation": "売店に新聞と雑誌がまとまって陳列される。",
+      "reason": "提示語義の集合としての新聞・雑誌。"
+    },
+    {
+      "sample": "M356",
+      "id": 67855,
+      "sha256": "69eba7c8f0a753913fd2d40ac0cfdaee9148b4d558378ffc5f6be385073d7af6",
+      "verdict": "pass",
+      "observation": "子供たちが歴史、文学、美術を示す本を読む。",
+      "reason": "一般知識や知的技能を養う学問。"
+    },
+    {
+      "sample": "M357",
+      "id": 67856,
+      "sha256": "8580972804f0022830cf22f422fb96cfe0785382238abe839c195223ceff08b8",
+      "verdict": "pass",
+      "observation": "複数の大型貨物車が石橋を渡る。",
+      "reason": "大きな荷重に耐える構造の例。"
+    },
+    {
+      "sample": "M358",
+      "id": 67857,
+      "sha256": "509aca7c4764ef7270456b8fffb2e56d91b5cf434fcfe6303a6f5cd11e33cbb4",
+      "verdict": "pass",
+      "observation": "料理人が目立つ赤白縞の高い帽子を着ける。",
+      "reason": "人物を区別する特徴的な目印。"
+    },
+    {
+      "sample": "M359",
+      "id": 67858,
+      "sha256": "e617245637caa225a4a2def122b01ee2651694b271ded5a750559ccf41f55884",
+      "verdict": "pass",
+      "observation": "同じ教室の隣の席で話す生徒二人。",
+      "reason": "同じ学校の知り合い。"
+    },
+    {
+      "sample": "M360",
+      "id": 67859,
+      "sha256": "f75a58f07621a6012ae57bee42240660164d7c7949297ddb07cdf7dfd70e9db9",
+      "verdict": "pass",
+      "observation": "複数文化の象徴のうち一つを思考内で高い金色台に置く。",
+      "reason": "自国文化を優越させる思想の象徴。"
+    },
+    {
+      "sample": "M361",
+      "id": 67860,
+      "sha256": "b1e82d363b27c5bea99ede05a85cab7c90e844bb2b206947c28b28c6715093e4",
+      "verdict": "pass",
+      "observation": "店主が店舗前で企業担当者と許可証風の文書を持ち握手。",
+      "reason": "指定店での営業許可を得る代表場面。"
+    },
+    {
+      "sample": "M362",
+      "id": 67861,
+      "sha256": "427876b5706dddab81c1de31f8af119a2f544cea0834044acf7a0d45d2b95ab8",
+      "verdict": "pass",
+      "observation": "ロッカーとベンチのある部屋で運動着に着替える人。",
+      "reason": "ロッカールーム。"
+    },
+    {
+      "sample": "M363",
+      "id": 67862,
+      "sha256": "551889659dcc1daada8b0ca5f6fe5435fa68a48b1bf005b61cb2bb3dac22c977",
+      "verdict": "pass",
+      "observation": "クリスマスツリー、ベル、贈物を描いた二つ折りカード。",
+      "reason": "クリスマスの挨拶カード。"
+    },
+    {
+      "sample": "M364",
+      "id": 67863,
+      "sha256": "ae7e127cada22f9695ab60cf6247aacd0f3709f5e0390ada41bb37c96817390c",
+      "verdict": "pass",
+      "observation": "医師が聴診し、血圧計、採血管、視力検査表もある。",
+      "reason": "複数検査による身体検査。"
+    },
+    {
+      "sample": "M365",
+      "id": 67864,
+      "sha256": "a56ea8e59d92789a394c298c5da6006438fdff30bf61aaea14b0a92a360b9ebe",
+      "verdict": "pass",
+      "observation": "小さい店でコーヒーと軽食が提供される。",
+      "reason": "コーヒーショップの例。"
+    },
+    {
+      "sample": "M366",
+      "id": 67865,
+      "sha256": "58f522ed6ab5af59cc36c53b626ae05cc746907c3677efab30104461c8273e18",
+      "verdict": "pass",
+      "observation": "大学風施設の窓口で学生が金銭を払う。",
+      "reason": "教育のための支払いの代表場面。"
+    },
+    {
+      "sample": "M367",
+      "id": 67866,
+      "sha256": "94f2f50a8bba27f1566e6306a226d28cda6b22c2d6430172d79c029efc62ec7d",
+      "verdict": "pass",
+      "observation": "太陽電池板のある人工装置と地球を回る軌道線。",
+      "reason": "人工衛星の構造と軌道。"
+    },
+    {
+      "sample": "M368",
+      "id": 67867,
+      "sha256": "024b7d155c0e13e8c7d2fb16d6f02169863bdb9a56cde2d8f0952a2c52a7385c",
+      "verdict": "pass",
+      "observation": "候補者風の人が町で住民と握手し支援者が紙を配る。",
+      "reason": "当選を目指す選挙運動の例。"
+    },
+    {
+      "sample": "M369",
+      "id": 67868,
+      "sha256": "d390c4e2eca6806ee29ab39a2cd41cae134c3cfa886842eefdc379ebd6e69c22",
+      "verdict": "pass",
+      "observation": "舞台の踊り手が左右対称に高さを変えて並ぶ。",
+      "reason": "一まとまりとして機能する配列。"
+    },
+    {
+      "sample": "M370",
+      "id": 67869,
+      "sha256": "4764c905179c5054b2a8c7cb929fc04b2d7fff4621bdc97ec04f73cc27276be8",
+      "verdict": "pass",
+      "observation": "カエルが仲間とともに水草のある池にいる。",
+      "reason": "通常暮らす環境として提示語義に合う。"
+    },
+    {
+      "sample": "M371",
+      "id": 67870,
+      "sha256": "70f1506b51ce3b0d4053a181da2aae541757dae771a19aa9935dac99270c3b76",
+      "verdict": "pass",
+      "observation": "店や歩道が並ぶ町の通りをバスや車が走る。",
+      "reason": "交通の主要な往来。"
+    },
+    {
+      "sample": "M372",
+      "id": 67871,
+      "sha256": "180f2313f613a99b7c5551e10c1fe8196c5a56a48b9699451012d281faf557a7",
+      "verdict": "pass",
+      "observation": "学校を背景に複数の委員が会議を行う。",
+      "reason": "公立学校を担当する委員会の代表場面。"
+    },
+    {
+      "sample": "M373",
+      "id": 67873,
+      "sha256": "fd7b9c92f7b907274677c890ed7817ab89e9b43a39b5589c8f4d10202c3a5723",
+      "verdict": "pass",
+      "observation": "昔の出来事や発明を並べた年表を子供が見る。",
+      "reason": "過去の出来事の集合。"
+    },
+    {
+      "sample": "M374",
+      "id": 67874,
+      "sha256": "a67b0cd3ea19d831f507b899f853edd31776d43607bd973c25278e508f78783a",
+      "verdict": "pass",
+      "observation": "包丁の平たい研磨済み金属部と切先が大きく見える。",
+      "reason": "切る道具の刃。"
+    },
+    {
+      "sample": "M375",
+      "id": 67875,
+      "sha256": "10bbd5ddf20ca9a25947b70f444df19ed0c34b1589d800390482ad22f07e354d",
+      "verdict": "pass",
+      "observation": "同じ画風の風景を複数の画家が描く。",
+      "reason": "似た様式で結ばれた画家集団。"
+    },
+    {
+      "sample": "M376",
+      "id": 67876,
+      "sha256": "a16dfc4cd432f8bdba4423cd543538c2eba84e925571ecc5fd5a0af9638ed0b3",
+      "verdict": "pass",
+      "observation": "暗い部屋の机を電気スタンドが照らす。",
+      "reason": "人工の可視照明源。"
+    },
+    {
+      "sample": "M377",
+      "id": 67877,
+      "sha256": "2eb09a3aa20d608ae9c83d5c2e8a180fc67c36bb68f87bac46554ae7ebc28ece",
+      "verdict": "pass",
+      "observation": "赤い目と爪のある暗い超自然の怪物。",
+      "reason": "邪悪な超自然的存在。"
+    },
+    {
+      "sample": "M378",
+      "id": 67879,
+      "sha256": "e794d58fc669f0bbc703885fcac57ae3f1cb03003f2bc2d2735af1ef63790f5c",
+      "verdict": "pass",
+      "observation": "クレーンの吊り索で木箱を上方へ持ち上げる。",
+      "reason": "上方への位置変化。"
+    },
+    {
+      "sample": "M379",
+      "id": 67880,
+      "sha256": "0828a0f90d6805902753ae1a516e4bdc1e27458c7f021a98920770c5e271837e",
+      "verdict": "pass",
+      "observation": "歩く馬の胴から下の脚と蹄を示す。",
+      "reason": "移動に使う動物の脚。"
+    },
+    {
+      "sample": "M380",
+      "id": 67881,
+      "sha256": "1c417594c4dd0040b65201ebf31cdc2e57481878d38673a6663231a8555bef96",
+      "verdict": "pass",
+      "observation": "細い腰、触角のある複数のアリが餌を運ぶ。",
+      "reason": "社会性昆虫の働きアリの例。"
+    },
+    {
+      "sample": "M381",
+      "id": 67883,
+      "sha256": "ea633fc7f978ed93cc64f28e2e0ce670d29ed3016affc5e53fc88fbdf39431b6",
+      "verdict": "pass",
+      "observation": "赤道を赤線で示し、平行線まで南北方向の矢印を置く。",
+      "reason": "赤道を基準にした緯度を表す図。角度数値の記載はない。"
+    },
+    {
+      "sample": "M382",
+      "id": 67885,
+      "sha256": "6207bf5aef17060214674a2822fbb5d439736bdb9ca1659191077c59d03fb2a1",
+      "verdict": "pass",
+      "observation": "空皿の前で腹を押さえつらそうな子供。",
+      "reason": "食物を必要とする空腹。"
+    },
+    {
+      "sample": "M383",
+      "id": 67886,
+      "sha256": "22e334f9c9fc129644a36b55b390ea18a0e7a44623ada01bf78da4858c223ff0",
+      "verdict": "pass",
+      "observation": "母親らしい女性が付き添い、別の女性が子供を迎える。",
+      "reason": "叔母と甥の家族交流の代表例。"
+    },
+    {
+      "sample": "M384",
+      "id": 67887,
+      "sha256": "c02de48272396ac70ff9a0e717a5c1f1f745c91219082a79b11aee00119e3722",
+      "verdict": "pass",
+      "observation": "木陰で横になってくつろぐ人。",
+      "reason": "休息という活動で特徴づけられるひとときの例。"
+    },
+    {
+      "sample": "M385",
+      "id": 67888,
+      "sha256": "8bc76c4cabf35cb563ac4aac312f6361b63493627bc4cd79fdf574a0bc72bd30",
+      "verdict": "pass",
+      "observation": "葬儀の花とろうそくに囲まれた蓋つき木箱。",
+      "reason": "埋葬や火葬用の棺の形と場面。"
+    },
+    {
+      "sample": "M386",
+      "id": 67889,
+      "sha256": "f75fb0f0f18754b62388977ad8b7efaf3313d9ecec3349f77b9c8db91495e816",
+      "verdict": "pass",
+      "observation": "鏡に映る自分の服装や姿を見る人。",
+      "reason": "物理的な見た目として提示語義に対応。"
+    },
+    {
+      "sample": "M387",
+      "id": 67891,
+      "sha256": "0cf0b4e02057fce4142b00a6ba4a5ebbaed97cbf7c4fe63b76ab34c893cfe6d8",
+      "verdict": "pass",
+      "observation": "林に体毛と爪が目立つ大型のクマ。",
+      "reason": "毛むくじゃらで強い鉤爪を持つ熊。"
+    },
+    {
+      "sample": "M388",
+      "id": 67893,
+      "sha256": "7ccdd686dbdae399f02a407c675d6cb4b5aaa1bb483d83d564d603d9ebd6daab",
+      "verdict": "pass",
+      "observation": "二人が文書を見ながら同じ件を検討。",
+      "reason": "関心の対象となる話題の代表場面。"
+    },
+    {
+      "sample": "M389",
+      "id": 67894,
+      "sha256": "76aa97d765775f02d46d1d7d176420525634f89e63cc6761b37c3a20e5c3bc64",
+      "verdict": "pass",
+      "observation": "コーチが座り込んだ選手の横で親指を立てて励ます。",
+      "reason": "希望や支援を与える。"
+    },
+    {
+      "sample": "M390",
+      "id": 67895,
+      "sha256": "ee4bc7690534f871b1747c4719de51404b5dd27136e19c4b31f006b399732d3f",
+      "verdict": "pass",
+      "observation": "林に枝分かれした角のあるシカ。",
+      "reason": "語義の枝角を備えた雄の例。"
+    },
+    {
+      "sample": "M391",
+      "id": 67896,
+      "sha256": "2ce1e738c399506d325c4ac70fe6af04de7882cefa9d727bb43e197c94a4e431",
+      "verdict": "pass",
+      "observation": "遠い家を夕暮れにじっと見つめる人。",
+      "reason": "離れた人や場所を恋しく思う持続的願望の象徴。"
+    },
+    {
+      "sample": "M392",
+      "id": 67897,
+      "sha256": "bb573169a9c7003e41fb002f088ea8bcb788cb3eef8803b54fbd0ce1b89391e2",
+      "verdict": "pass",
+      "observation": "柵で囲まれた畑の奥の端に人が立つ。",
+      "reason": "領域の外れ・角を示す。"
+    },
+    {
+      "sample": "M393",
+      "id": 67898,
+      "sha256": "3c76b943875184d56916532fe047915cd418138e6338ff8bcef64b5fccadb726",
+      "verdict": "pass",
+      "observation": "二個のりんごのまとまり三組と、等号の右に六個。",
+      "reason": "二かける三の積と数量が一致。"
+    },
+    {
+      "sample": "M394",
+      "id": 67899,
+      "sha256": "93f88666bcbebba484f631a7dba824aa36ead4db95869849c1cf6806928e3364",
+      "verdict": "pass",
+      "observation": "箱の宝石、金貨、金塊、王冠が大量に並ぶ。",
+      "reason": "大規模な財産の象徴。"
+    },
+    {
+      "sample": "M395",
+      "id": 67900,
+      "sha256": "df19f487027d00a8020339c53f7e67da9418de707870c4564501f663e8527e4f",
+      "verdict": "pass",
+      "observation": "森林の黄褐色の大きなネコ科動物に黒い縞。",
+      "reason": "虎の特徴。"
+    },
+    {
+      "sample": "M396",
+      "id": 67901,
+      "sha256": "e5d3b14eec9b4e204d76dbcd07ddeed703a858904b94eaf22562e7f61e37aa09",
+      "verdict": "pass",
+      "observation": "子供の前に離れたボールと飛ぶ軌道線。",
+      "reason": "腕を使い空中へ放る行為。"
+    },
+    {
+      "sample": "M397",
+      "id": 67903,
+      "sha256": "a0b1403ebffe7af0c2b251ffd81413098f4e912795c37da2d8c0562da7f25978",
+      "verdict": "pass",
+      "observation": "短い脚で立つ灰色のふっくらしたハト。",
+      "reason": "野生鳥のハトの例。"
+    },
+    {
+      "sample": "M398",
+      "id": 67905,
+      "sha256": "8db3163092f5b6ef086864ddfd2e2921e04270a1e1660136cc0455c6475f3496",
+      "verdict": "pass",
+      "observation": "金管楽器の三つのピストンを指で押す接写。",
+      "reason": "音を変える弁の構造。"
+    },
+    {
+      "sample": "M399",
+      "id": 67907,
+      "sha256": "87d4ae05ab116302e24e708bb4f8d9fabd3fd7f3ebd8df3e5d117fc46164ab96",
+      "verdict": "pass",
+      "observation": "しおれた鉢植えと、じょうろを示す話し手の吹き出し。",
+      "reason": "水をやりたい・頼みたいという意図の例。"
+    },
+    {
+      "sample": "M400",
+      "id": 67908,
+      "sha256": "0e4c61d5a0595807e040b28efec8df5b95fb6b06dcfde64647e676cb0771b9df",
+      "verdict": "pass",
+      "observation": "雨が上がった後らしい公園に折れた枝や水たまり。",
+      "reason": "先に起きた嵐の時間をおいた結果。"
+    },
+    {
+      "sample": "M401",
+      "id": 67910,
+      "sha256": "0b3a88e15e446d5f9ca674a5fb608f29c72336f37acb8758e00f59cda3b04d9f",
+      "verdict": "pass",
+      "observation": "隠れた人物が道具を持ち、庭の人を不穏な笑みで見る。",
+      "reason": "人に害を加えようとする意図の象徴。"
+    },
+    {
+      "sample": "M402",
+      "id": 67911,
+      "sha256": "aec0ceadc25ef0fe395f71d6f8730dab61d26774505ce294a8ecd4c5b90cf72b",
+      "verdict": "pass",
+      "observation": "照る太陽の下で子供が汗を流し扇子を使う。",
+      "reason": "暑さの身体的反応。"
+    },
+    {
+      "sample": "M403",
+      "id": 67912,
+      "sha256": "cf36af2ec8f434b50e8c0d0173f43a8c71068ee7d1aa7a8723472b84a654eafe",
+      "verdict": "pass",
+      "observation": "毛虫、さなぎ、蝶を矢印でつなぐ。",
+      "reason": "状態から次の状態へ移る例。"
+    },
+    {
+      "sample": "M404",
+      "id": 67913,
+      "sha256": "5cb83f7e491137e53cc3951b4c53af500a7f6eaada139761a3fdd548fdfe2ed5",
+      "verdict": "pass",
+      "observation": "集団の上に本・天秤・ハートなどの価値観の印がまとまる。",
+      "reason": "集団の信念体系の象徴。"
+    },
+    {
+      "sample": "M405",
+      "id": 67914,
+      "sha256": "bd063286ae478eb6876a7c098769797e31287a5f82e79bf9917a1ff9a420ac30",
+      "verdict": "pass",
+      "observation": "親の世代と同じ花色が次世代に現れる模式図。",
+      "reason": "形質の世代間継承。"
+    },
+    {
+      "sample": "M406",
+      "id": 67915,
+      "sha256": "f53f940a9818650fd1294efbe30cf5a270ad41ddce8bbf0116a04056f7077d94",
+      "verdict": "pass",
+      "observation": "会議中に挙手して強い表情で発言する人。",
+      "reason": "反対意見を言葉で述べる代表場面。"
+    },
+    {
+      "sample": "M407",
+      "id": 67916,
+      "sha256": "4be9cd7f5b6e66cbef255bdebde38f76bd821932e7a20429ab44130c0711e4ba",
+      "verdict": "pass",
+      "observation": "古い冊子に城と軍勢を描き羽根ペンが横にある。",
+      "reason": "過去の出来事の物語風記録。"
+    },
+    {
+      "sample": "M408",
+      "id": 67917,
+      "sha256": "8e4af7fcd147fd89f3f1fc969b2dd415d896c0577ca7003824a526fc3df0467d",
+      "verdict": "pass",
+      "observation": "人々が食卓を囲み料理を前に乾杯。",
+      "reason": "社交や楽しみの集まり。"
+    },
+    {
+      "sample": "M409",
+      "id": 67918,
+      "sha256": "81b875ddb21f4b6bc4289f82c11094a2f97c99ab8a591057fd9105d22760e64b",
+      "verdict": "pass",
+      "observation": "政治家風の人物が伝統文化や旧来の街の模型を示して話す。",
+      "reason": "従来の社会や文化の維持を支持する場面。"
+    },
+    {
+      "sample": "M410",
+      "id": 67919,
+      "sha256": "2ab527ac4a4da71d719df7c2cb0d8d0c17a0f41cde1746676e88b0e9dc6970b4",
+      "verdict": "pass",
+      "observation": "人が便器に向かい前かがみになり口元が便器内を向く。",
+      "reason": "口から胃内容物を排出する場面の代表像。"
+    },
+    {
+      "sample": "M411",
+      "id": 67920,
+      "sha256": "60f7f9e628c1ad172dea3f242ad6e27812b91058d82f44931da4d7eb5b1012b3",
+      "verdict": "pass",
+      "observation": "顔の正面が額から顎、左右の耳まで大きく見える。",
+      "reason": "人頭の前部。"
+    },
+    {
+      "sample": "M412",
+      "id": 67921,
+      "sha256": "7bf103655e44e1ecd9f719e11f00bd3317d74f07f99111a1edddc6cbe271773a",
+      "verdict": "pass",
+      "observation": "仕事書類や期限や家の心配を思い浮かべ頭を抱える人。",
+      "reason": "煩わしい懸念という比喩的な重荷。"
+    },
+    {
+      "sample": "M413",
+      "id": 67923,
+      "sha256": "f5d127854ad1fb526e11dd54883ce1e3920b2e0274c9e48e1ecffe8ae6dcd230",
+      "verdict": "pass",
+      "observation": "池の岸辺に長い後脚をたたんだ尾のないカエル。",
+      "reason": "両生類の特徴に合う。"
+    },
+    {
+      "sample": "M414",
+      "id": 67925,
+      "sha256": "58137e5a45781e9483d080ac79b77d83c7de757191eda5737a670dbdfcd45058",
+      "verdict": "pass",
+      "observation": "人が肘を動かしたそばでコップが倒れ水がこぼれる。",
+      "reason": "不注意による過失の例。"
+    },
+    {
+      "sample": "M415",
+      "id": 67926,
+      "sha256": "4ddfbf7a007081ddef52b02d0ffc99fcf903442f709fecabb1f3403790d6b794",
+      "verdict": "pass",
+      "observation": "七つの曜日枠の左から三番目を黄色にする。",
+      "reason": "日曜始まりの週で第三日に当たる火曜。枠数も対応。"
+    },
+    {
+      "sample": "M416",
+      "id": 67927,
+      "sha256": "5f9273250b2bac22d763dcdf98601c8c45c40855210024811f54faca4242030b",
+      "verdict": "pass",
+      "observation": "ぬいぐるみを抱く人に幼少時の記憶が浮かぶ。",
+      "reason": "記憶を呼び覚ます例。"
+    },
+    {
+      "sample": "M417",
+      "id": 67930,
+      "sha256": "3eb56bef539e4aabc255f3b523a44fa6caeb06f125df07907e670268e4292cda",
+      "verdict": "pass",
+      "observation": "光を通す硬い透明のカットグラス。",
+      "reason": "透明な固体としての硝子。"
+    },
+    {
+      "sample": "M418",
+      "id": 67931,
+      "sha256": "6b834c2642e9cfb61f4e5545dca9a4f3551f7742349f1154cf28ad856871c7a2",
+      "verdict": "pass",
+      "observation": "同じ場所で静かな子と活発な子が対照的に座る。",
+      "reason": "性向による反応の違いの象徴。"
+    },
+    {
+      "sample": "M419",
+      "id": 67932,
+      "sha256": "adff863df32432a7f48792ad9f5f9dbfdc81258375f7df3324d1d80fbeee0566",
+      "verdict": "pass",
+      "observation": "競馬場を走る馬に競走服とヘルメットの人が乗る。",
+      "reason": "競馬の騎手。鞍布番号は語義に影響しない。"
+    },
+    {
+      "sample": "M420",
+      "id": 67934,
+      "sha256": "769e6e5229ca9c32ab743ef371d65254485312cd5d435e0141fbe0e0f22b2d39",
+      "verdict": "pass",
+      "observation": "書き直し跡のある原稿を書き、脇に丸めた紙。",
+      "reason": "推敲前の原稿を書く例。"
+    },
+    {
+      "sample": "M421",
+      "id": 67936,
+      "sha256": "c8e7342a896a66153b9e74f813c49fd194f50536b2bafb37c7662825136a282c",
+      "verdict": "pass",
+      "observation": "尖った耳と鼻、豊かな尾の赤い哺乳類。",
+      "reason": "狐の特徴。"
+    },
+    {
+      "sample": "M422",
+      "id": 67937,
+      "sha256": "f3bbbb0020c1ee060cf3cbb502a86c997406f47b027a8c3c732e0f1467e1e01e",
+      "verdict": "pass",
+      "observation": "走者がスタート位置で強く集中した表情。",
+      "reason": "やる気が表に出た気迫。"
+    },
+    {
+      "sample": "M423",
+      "id": 67940,
+      "sha256": "8f87c5f48f4259621d7b2efffedc9895009ade60f706cf9960f7c73c747aa37c",
+      "verdict": "pass",
+      "observation": "改まった服装で互いに揃ってお辞儀する人々。",
+      "reason": "社会に受け入れられる行動様式。"
+    },
+    {
+      "sample": "M424",
+      "id": 67942,
+      "sha256": "d619a93542b070725a3f5789da8dad4ddb796f2cd0e13bfb59a2a35f48014ee1",
+      "verdict": "pass",
+      "observation": "バーナーの大きな輪の炎の横に細管から小さな炎。",
+      "reason": "点火用の予備炎。"
+    },
+    {
+      "sample": "M425",
+      "id": 67943,
+      "sha256": "daa4a8c9692dd390b9787288e9f60dae2e44525b6080637710803524d0a3003d",
+      "verdict": "pass",
+      "observation": "台所で朝食を作り鉢植えに水をやる人。",
+      "reason": "日々の暮しの例。"
+    },
+    {
+      "sample": "M426",
+      "id": 67945,
+      "sha256": "27ae95e4ef9055ce6a349d56fdbc22095b61df1898ef904a1ad8534b415f4dd2",
+      "verdict": "pass",
+      "observation": "雨中に設置した目盛りのある採水容器。",
+      "reason": "雨量を測るゲージ。目盛りに誤った数字はない。"
+    },
+    {
+      "sample": "M427",
+      "id": 67946,
+      "sha256": "633fd1126a3cd2316e8cf155d059ee8505f5c848f20c9a49a283740f75b62ae0",
+      "verdict": "pass",
+      "observation": "公的演台から法律を示す文書を掲げ発表。",
+      "reason": "公に言明する公布の例。"
+    },
+    {
+      "sample": "M428",
+      "id": 67947,
+      "sha256": "c8b958a412935671fbfc86361b7ad9965d5d7c03dd0d261bfbcd2927176a5ffa",
+      "verdict": "pass",
+      "observation": "店員が客に少量のりんごを渡す。",
+      "reason": "消費者向け少量販売。"
+    },
+    {
+      "sample": "M429",
+      "id": 67949,
+      "sha256": "f367eaba964ec124866e06ef6ac1df41d52c87dfd7979dc95b9dc08c9f8d0299",
+      "verdict": "uncertain",
+      "observation": "探偵が靴の跡を虫眼鏡で調べる。",
+      "reason": "提示語義の手掛かりには合うが小口という単語とは不整合。"
+    },
+    {
+      "sample": "M430",
+      "id": 67951,
+      "sha256": "c40babf51b553a2c38d55d60cd6ce90146390982e98ecd33aa8026a96bc1f99d",
+      "verdict": "pass",
+      "observation": "二人以上の水泳選手が同時に競い、審判が計時。",
+      "reason": "勝者を選ぶ競争。"
+    },
+    {
+      "sample": "M431",
+      "id": 67952,
+      "sha256": "c6a8fded1d0bde4bfe8a80f76874616f497dbfccca1b03213ffb1ee5cbc29d11",
+      "verdict": "pass",
+      "observation": "こいのぼりと咲いたアヤメ類の春の景色。",
+      "reason": "端午の節句を通して五月を表す。"
+    },
+    {
+      "sample": "M432",
+      "id": 67953,
+      "sha256": "f21a1f078439d2498aec50db6a8f90df4ff445373491d187ba0f99f9ecc2a9c9",
+      "verdict": "pass",
+      "observation": "布の強く光る表と折り返したつやのない裏。",
+      "reason": "サテンの表裏の特徴。"
+    },
+    {
+      "sample": "M433",
+      "id": 67954,
+      "sha256": "3d9b3ec95d9a9b2d1732a853925ba6dcf9b6173aeb11c88de92c3e15693dbca4",
+      "verdict": "pass",
+      "observation": "鑑賞者が画家と作品に向け笑顔で話し手を広げる。",
+      "reason": "賞賛・感嘆を表す例。"
+    },
+    {
+      "sample": "M434",
+      "id": 67955,
+      "sha256": "b018e593247911812230e9a813fdf44a1213f50c0c3b9154bab7a38ecda845c6",
+      "verdict": "pass",
+      "observation": "野球場の本塁から見て左側の三塁近くに選手を強調。",
+      "reason": "サードの守備位置と一致。"
+    },
+    {
+      "sample": "M435",
+      "id": 67956,
+      "sha256": "4fa9dbf82e24d3abeeb60f3ed7adcdce2e72b2754d61481357662f62f8c5f6b2",
+      "verdict": "pass",
+      "observation": "高台の人が手をかざし遠くまで見渡す。",
+      "reason": "目が届く範囲の例。"
+    },
+    {
+      "sample": "M436",
+      "id": 67958,
+      "sha256": "16573c94cbd8c1a0c7c4275171e13e2a5aedf361737ec74249888795ee0b1cdb",
+      "verdict": "pass",
+      "observation": "教師が手洗い、交代、助け合いの図を指す。",
+      "reason": "適切な行動へ導く原則。"
+    },
+    {
+      "sample": "M437",
+      "id": 67959,
+      "sha256": "e23beba497e826fba45d0121686e68b647ed5fc3ee0a97974f9b4c514a817a2e",
+      "verdict": "pass",
+      "observation": "男の子が草地に立つ。",
+      "reason": "提示語義の人間の男の子。"
+    },
+    {
+      "sample": "M438",
+      "id": 67960,
+      "sha256": "64d6f67c4d0c8fa07de9b698acb1636fa4407bba4bc044045955c0a8aade7584",
+      "verdict": "pass",
+      "observation": "祖父母、親、子の三世代をつなぐ家系図。",
+      "reason": "先祖から続く系統。"
+    },
+    {
+      "sample": "M439",
+      "id": 67961,
+      "sha256": "23246558f7b3e2f72b80a033f74143757b3e8620777ca68b1f6b22a6d8988848",
+      "verdict": "pass",
+      "observation": "緑のボタンを押すと透明カバー内の歯車が回る。",
+      "reason": "機械を始動する行為。"
+    },
+    {
+      "sample": "M440",
+      "id": 67962,
+      "sha256": "e273a27cbe9281bd245dab9b95112643b02b38add5c783dd027357c338ff64f3",
+      "verdict": "pass",
+      "observation": "議場で議長が木槌を上げ議員が挙手。",
+      "reason": "法的権力を行使する制度の象徴。"
+    },
+    {
+      "sample": "M441",
+      "id": 67963,
+      "sha256": "973cd37c7626450814884194c74e9be5ea487030eaade06d962beaf6e52ae23a",
+      "verdict": "pass",
+      "observation": "国の区域地図で一地域を黄色にし議事堂と旗を置く。",
+      "reason": "議会選出権のある行政区域の象徴。"
+    },
+    {
+      "sample": "M442",
+      "id": 67964,
+      "sha256": "9906fcb9fec37ae4f98db6b4cba9b0bba8a0e4f55bb7ae3d62ddd7dfb9c427b1",
+      "verdict": "pass",
+      "observation": "小さな着想の印から大きく強調された電球へ矢印。",
+      "reason": "複数の考えの中で重要な核心を示す。"
+    },
+    {
+      "sample": "M443",
+      "id": 67967,
+      "sha256": "18e7b79b71bcdf1438974844b8b8688f96a88107b867c54afe13ebecfdcb9ca3",
+      "verdict": "pass",
+      "observation": "歯車と寸法線を含む複数図面を技術者が確認。",
+      "reason": "設計基準の詳細。個別画像でも明瞭な誤数値はない。"
+    },
+    {
+      "sample": "M444",
+      "id": 67968,
+      "sha256": "e3b059fa5ec058523ae32fb946334b6fc89f01b24feabfe0c931e47228a56b75",
+      "verdict": "pass",
+      "observation": "洗濯設備の店で客と店員が衣類を受け渡す。",
+      "reason": "特定サービスを利用する場面として提示語義に対応。"
+    },
+    {
+      "sample": "M445",
+      "id": 67971,
+      "sha256": "79bc2f8a29ea79c1807a7fb90549f98fe92a4baaf324d5a2e33ee61e7bffe814",
+      "verdict": "pass",
+      "observation": "研究者風の人が脳と心の図を見て考える。",
+      "reason": "精神生活の研究の象徴。"
+    },
+    {
+      "sample": "M446",
+      "id": 67972,
+      "sha256": "387b44f63fbd594984c26e0a416ca22e2018fa252be5aed2b4ad7cd8debe7334",
+      "verdict": "pass",
+      "observation": "攻撃の拳を武道着の人が腕で防ぐ。",
+      "reason": "自らを守る行為。"
+    },
+    {
+      "sample": "M447",
+      "id": 67973,
+      "sha256": "7b7712c4f1c409fffb89629878ccdc1cfbae8667714818bb8db48a1fbf58f3ed",
+      "verdict": "pass",
+      "observation": "住民が地元の会合で手を上げ意見を示す。",
+      "reason": "自分たちで地域を統治する例。"
+    },
+    {
+      "sample": "M448",
+      "id": 67976,
+      "sha256": "2fd066afa07492d11a4918ba1cd64429dfedd66e384794251853f006463b42ee",
+      "verdict": "pass",
+      "observation": "買物帰りの人が自宅の玄関で鍵を置く。",
+      "reason": "住み活動の起点・終点となる場所。"
+    },
+    {
+      "sample": "M449",
+      "id": 67977,
+      "sha256": "a6d12a42dd5c756f03f43b012299a76220031ccdc23f8ad69c4fc0ed730a6ce2",
+      "verdict": "pass",
+      "observation": "トロフィーを持つ子が自分を指し誇らしげに話す。",
+      "reason": "自分を褒めあげる行為。"
+    },
+    {
+      "sample": "M450",
+      "id": 67978,
+      "sha256": "2c408cf54357bb920bf82259c83bcbaf9cc33336f58d8f0d50eb1bddca59f472",
+      "verdict": "pass",
+      "observation": "火に掛けたフライパンで食材を炒める人。",
+      "reason": "加熱による食事の準備。"
+    },
+    {
+      "sample": "M451",
+      "id": 67979,
+      "sha256": "bfcd4c10a39e29460204fce8cdfbd6987b61ed6bf0ddb14d3f3df3c64a20f235",
+      "verdict": "pass",
+      "observation": "地球の上に雲のある大気と星空が広がる。",
+      "reason": "大気と宇宙の可視部分。"
+    },
+    {
+      "sample": "M452",
+      "id": 67980,
+      "sha256": "bbc999d927e9c62c34442cee67623b09cd7e771493b36c1f12e115f2bb6795eb",
+      "verdict": "pass",
+      "observation": "二つの大きな岩の間に狭い通路。",
+      "reason": "物の間の空間。"
+    },
+    {
+      "sample": "M453",
+      "id": 67981,
+      "sha256": "40155e9ad27da09ada9099f469f6fb89840dcda2afec000e0373ab67c28c385c",
+      "verdict": "pass",
+      "observation": "二人のうち一人が山道の方向を手で示す。",
+      "reason": "取るとよい道を提案する例。"
+    },
+    {
+      "sample": "M454",
+      "id": 67982,
+      "sha256": "07540af9c7d1df0d661b69aa2b69d4f6afa22f6614711a621327f32b892f2f72",
+      "verdict": "pass",
+      "observation": "茂みに身を隠しフェンス内の通信施設を撮影。",
+      "reason": "秘密情報を得る諜報員の代表像。"
+    },
+    {
+      "sample": "M455",
+      "id": 67983,
+      "sha256": "8ca6f824597d2053d26fbaa50770319212f29b5016b6117aed1a5f695e12ce88",
+      "verdict": "pass",
+      "observation": "カレンダーの連続した一列が色で示される。",
+      "reason": "続いた期間全体を示す。日付の誤記はない。"
+    },
+    {
+      "sample": "M456",
+      "id": 67984,
+      "sha256": "17e68917abd274589e8b325beca4f299514a32c2bbb7c7697fe4be35956d201b",
+      "verdict": "pass",
+      "observation": "ライフガードが監視台から泳ぐ人々を見守る。",
+      "reason": "職務として果たす安全監視の責務。"
+    },
+    {
+      "sample": "M457",
+      "id": 67985,
+      "sha256": "adf41f9bb61c5d62ae3fc8dfc46196104b7e02788b572c02587bde713610cc90",
+      "verdict": "uncertain",
+      "observation": "腹痛の子供と医師、トイレ、細菌風の印がある大腸の図。",
+      "reason": "腸感染症は示すが重い下痢や赤痢に結びつく固有根拠が見えない。"
+    },
+    {
+      "sample": "M458",
+      "id": 67986,
+      "sha256": "f60c77e7cf99b7c852f651c142ae40b456f78b736e2863569cd6433113b5d8d5",
+      "verdict": "pass",
+      "observation": "前後席のある箱型の乗用車に側面二枚のドアと独立した後部。",
+      "reason": "四ドア式セダンの形。"
+    },
+    {
+      "sample": "M459",
+      "id": 67987,
+      "sha256": "86534fe5e7094f822e82cccc268a1a0c12a86e36a08cd774632181250b38bf4b",
+      "verdict": "pass",
+      "observation": "脚立の作業員が天井照明を工具で取り付ける。",
+      "reason": "備品の設置。"
+    },
+    {
+      "sample": "M460",
+      "id": 67988,
+      "sha256": "56e120e381f0c0f3cbbb9faa106ef0c9ebb1be1193b028cafab22f1759e39a29",
+      "verdict": "pass",
+      "observation": "寒そうな人に上着の人が毛布を掛ける。",
+      "reason": "親切と思いやりの例。"
+    },
+    {
+      "sample": "M461",
+      "id": 67989,
+      "sha256": "dbacd545a2543083ec5147f54b5b1128a88ce7597ed1c4efdf016072be4958d6",
+      "verdict": "pass",
+      "observation": "入口の行列で先頭の人が最初に中へ入る。",
+      "reason": "最初に行く前の側。"
+    },
+    {
+      "sample": "M462",
+      "id": 67990,
+      "sha256": "f4eaf0202a7e3fff9e6584dc3b19e1154560491708455682fc304ae9fbfe4754",
+      "verdict": "pass",
+      "observation": "子供が空容器と車輪、棒を組み合わせ独自の道具を作る。",
+      "reason": "独自に考え行動する例。"
+    },
+    {
+      "sample": "M463",
+      "id": 67991,
+      "sha256": "71791cec0f8d43ed66a887462ac0f76205cf381eabaed4bc73cda2eca788cbb2",
+      "verdict": "pass",
+      "observation": "地図で森林地帯だけが赤い点線で囲まれる。",
+      "reason": "特性のある制限区域。"
+    },
+    {
+      "sample": "M464",
+      "id": 67992,
+      "sha256": "beeda6ccdceb6e0d84c0ac3f9bc8a0f55b0a75294674eb5af08040c5e2518db0",
+      "verdict": "pass",
+      "observation": "木の椅子を作った職人へ客が紙幣を手渡す。",
+      "reason": "仕事の報酬としての対価。"
+    },
+    {
+      "sample": "M465",
+      "id": 67993,
+      "sha256": "a8f061ee517e091c9d7bfad42542f9290aa05e19316ffe4bc0b932599bfbf22f",
+      "verdict": "pass",
+      "observation": "人が腐葉や有機物の混じった土を菜園に投入。",
+      "reason": "土を肥やす動植物材料の例。"
+    },
+    {
+      "sample": "M466",
+      "id": 67994,
+      "sha256": "4ce07e45319c99a7bd1a094e0fd95f56b031b533e0bddc0ab952a8a7cd0de1b8",
+      "verdict": "pass",
+      "observation": "かごがいくつも並び大量のりんごが入る。",
+      "reason": "大きな不明確な数。"
+    },
+    {
+      "sample": "M467",
+      "id": 67995,
+      "sha256": "34ff1079be31b2c90c2dc1aba7049a7d40cca90510a8940677d65f6fdb6b59e1",
+      "verdict": "uncertain",
+      "observation": "地図上に立つ人物と現在地を示すピン。",
+      "reason": "物理的位置を示すが立場の社会的・状況的な意味は見えない。語義の位置の訳が曖昧。"
+    },
+    {
+      "sample": "M468",
+      "id": 67996,
+      "sha256": "53e7021e5a16502bffc95cec957c002c98e09b843bcd7c1d062b56278ef1c60d",
+      "verdict": "pass",
+      "observation": "白い紙巻きの端に刻み葉、反対側にフィルター。",
+      "reason": "喫煙用の紙巻き煙草。"
+    },
+    {
+      "sample": "M469",
+      "id": 67997,
+      "sha256": "db770d306a99843e122133d716becb911196d866d10f7b07127b0e81c748bda6",
+      "verdict": "pass",
+      "observation": "野球の打者が振ったバットの近くに打球。",
+      "reason": "塁を目指す打撃。"
+    },
+    {
+      "sample": "M470",
+      "id": 67999,
+      "sha256": "14f96bcf84712caccf92e2c2767f8b7147c0ce820ccda29701ed24a4ebfd9051",
+      "verdict": "pass",
+      "observation": "一人が身振りしながら話し相手が耳を傾ける。",
+      "reason": "話し言葉による談話。"
+    },
+    {
+      "sample": "M471",
+      "id": 68000,
+      "sha256": "793ae83fef036f66a813e9474e10eb156536dbba05c9689980d65319eee5259c",
+      "verdict": "pass",
+      "observation": "子供の目と蝶を結ぶ点線。",
+      "reason": "視覚で外界を知覚する例。"
+    },
+    {
+      "sample": "M472",
+      "id": 68001,
+      "sha256": "62c2b4648d6fbc8b4d140f841aca657ec636a7558741053f0e996f6e9efce073",
+      "verdict": "pass",
+      "observation": "山稜・谷・川が示された起伏の地図。",
+      "reason": "土地の特性としての地形。方位図に意味を変える誤記は見えない。"
+    },
+    {
+      "sample": "M473",
+      "id": 68002,
+      "sha256": "d6d9aa9bf614ab03041b8572c621221b425e735bdbbc707f3d2146d79b876bb8",
+      "verdict": "pass",
+      "observation": "試して考え、パズルを理解して完成に近づく子供。",
+      "reason": "経験から解決を学ぶ能力。"
+    },
+    {
+      "sample": "M474",
+      "id": 68003,
+      "sha256": "98e110de76f6f0efa4697affd2583d0c08b958e1e6f0e42cccea652ac1a47be9",
+      "verdict": "pass",
+      "observation": "地図の一点に赤いピンが置かれる。",
+      "reason": "正確な位置の印。"
+    },
+    {
+      "sample": "M475",
+      "id": 68005,
+      "sha256": "7b6fd44e3560d11714a495107c6cad1821fa4183706ed898bff790e88743aad6",
+      "verdict": "pass",
+      "observation": "女性の乳房の断面に乳腺群と乳管が描かれる。",
+      "reason": "乳を分泌する腺器官の代表的な断面。"
+    },
+    {
+      "sample": "M476",
+      "id": 68006,
+      "sha256": "e2fa7c179c6baa17150cac9a0ea89bbdef5c689a7a758427089f4234975b8435",
+      "verdict": "pass",
+      "observation": "現場監督が作業員たちへ工程表を示す。",
+      "reason": "労働者を管理する人。"
+    },
+    {
+      "sample": "M477",
+      "id": 68009,
+      "sha256": "1446ad8d70d383983fb1666833c4342ec205611c1539ebfc3e65804c130f691e",
+      "verdict": "pass",
+      "observation": "玄関前で鍵がないことに気づき、鍵と未確認リストを思い出す。",
+      "reason": "見落としによる手落ち。"
+    },
+    {
+      "sample": "M478",
+      "id": 68010,
+      "sha256": "86b5c6f4705debba46615b6e43a0a6e2129fd35e3befdc4bc96fc6071fc0f371",
+      "verdict": "pass",
+      "observation": "相手へ身を乗り出し拳を握り歯を見せる人物。",
+      "reason": "敵対的な気持ち。"
+    },
+    {
+      "sample": "M479",
+      "id": 68011,
+      "sha256": "b0cd3fee51b5924707cdd7aa0a141f2abd7c655a49f1facf6305b844242a6ba4",
+      "verdict": "uncertain",
+      "observation": "階段に沿って傾いた一本の手すりと垂直の支柱。",
+      "reason": "実物は手摺りだが提示語義の水平な横木という構造とは不一致。"
+    },
+    {
+      "sample": "M480",
+      "id": 68012,
+      "sha256": "e65188dc191d56f9131cf96e4c3f72f94d4c967168e5ccc616fdbe3966fe8359",
+      "verdict": "hold",
+      "observation": "鳥の巣箱を作る図入り冊子。個別画像で各段が同じ一桁の印を付け、同じ板から完成品へ飛ぶ。",
+      "reason": "段の区別がなく工程として成り立たず、基本的な指図を示す教材として不十分。"
+    },
+    {
+      "sample": "M481",
+      "id": 68013,
+      "sha256": "93a7f98f275090f3d5b56b7d0e96d285bb6fa6d1262df62bb9d69aebb87532a6",
+      "verdict": "pass",
+      "observation": "スプーンから砂糖を飲み物へ落とす。",
+      "reason": "ある物を他の物に加える行為。"
+    },
+    {
+      "sample": "M482",
+      "id": 68014,
+      "sha256": "3c272d8deec2bcbbc6af2f1cd9d2b9f01779ade1579f93e289b12c984b7a1a76",
+      "verdict": "pass",
+      "observation": "同じ人が穏やかに応じる姿と怒って応じる姿を考える。",
+      "reason": "感情や態度を含む行動の構えを示す。"
+    },
+    {
+      "sample": "M483",
+      "id": 68015,
+      "sha256": "86947bfde69cd1e40b6f932a5260e49d8d532d22e9a4c48b59e6e29868d6406a",
+      "verdict": "pass",
+      "observation": "本の見開きに誕生、子供時代、仕事、老年の場面が並ぶ。",
+      "reason": "一人の生涯を構成する出来事の説明。"
+    }
+  ]
+}

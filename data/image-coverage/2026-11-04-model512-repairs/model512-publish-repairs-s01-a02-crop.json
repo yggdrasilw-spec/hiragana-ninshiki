@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "1a95f1c8159f7385f062881f001cf253bb222bfe588b48a292abb9a666ca4425",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      5
+    ],
+    [
+      312,
+      317
+    ],
+    [
+      623,
+      629
+    ],
+    [
+      935,
+      941
+    ],
+    [
+      1250,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      311,
+      317
+    ],
+    [
+      623,
+      630
+    ],
+    [
+      937,
+      942
+    ],
+    [
+      1249,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        5,
+        5,
+        312,
+        311
+      ],
+      "edgeInkFraction": 0.9485420240137221,
+      "contentFraction": 0.9659044942624172,
+      "file": "model512-publish-repairs-s01-a02-word-67974.png",
+      "sha256": "7c9ff323a284c763feeb00a23dd0c2f42b483ce2e087ee929d7d059567d46fe7"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        317,
+        5,
+        623,
+        311
+      ],
+      "edgeInkFraction": 0.9974799541809851,
+      "contentFraction": 0.9911145286001111,
+      "file": "model512-publish-repairs-s01-a02-word-67468.png",
+      "sha256": "1a90c6767ae4a0a5b5ef38e408d026b41b2fe932afbf4df92b00c40bfe013f6e"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        629,
+        5,
+        935,
+        311
+      ],
+      "edgeInkFraction": 0.9869415807560138,
+      "contentFraction": 0.9825067281814687,
+      "file": "model512-publish-repairs-s01-a02-word-67490.png",
+      "sha256": "99cda75e85a5140beab1fb8bc1da8c05d0dafff86dc03169e4bf8d25295c1191"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        941,
+        5,
+        1250,
+        311
+      ],
+      "edgeInkFraction": 0.9586894586894587,
+      "contentFraction": 0.8823317892421262,
+      "file": "model512-publish-repairs-s01-a02-word-67509.png",
+      "sha256": "32c63e3611887b9ec3fee535ec8520278e6b2d021819211fc61ad7c1d5fa8669"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        5,
+        317,
+        312,
+        623
+      ],
+      "edgeInkFraction": 0.9939393939393939,
+      "contentFraction": 0.9505652423835984,
+      "file": "model512-publish-repairs-s01-a02-word-67464.png",
+      "sha256": "282491c91b3e1f59f1870eba569307796684ad2e4363f138d5c03d5013a2b4a9"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        317,
+        317,
+        623,
+        623
+      ],
+      "edgeInkFraction": 0.9869415807560138,
+      "contentFraction": 0.9584881883036439,
+      "file": "model512-publish-repairs-s01-a02-word-67935.png",
+      "sha256": "91ff3ffd2312464af9f977370a71199d04c2a02a5e6bba66260ccb99bc7738a8"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        629,
+        317,
+        935,
+        623
+      ],
+      "edgeInkFraction": 0.9962772050400917,
+      "contentFraction": 0.993122303387586,
+      "file": "model512-publish-repairs-s01-a02-word-67656.png",
+      "sha256": "96a7115df3c856b85568d99c6c171806eff0a32410fd27d3ad2d9e92f7ac96f8"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        941,
+        317,
+        1250,
+        623
+      ],
+      "edgeInkFraction": 0.9642735042735042,
+      "contentFraction": 0.9576009476066586,
+      "file": "model512-publish-repairs-s01-a02-word-67511.png",
+      "sha256": "416fa61aedad455b139796fe21e97a65d1ab1fe0264abaa1e91fca1f6ce2fe5f"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        5,
+        630,
+        312,
+        937
+      ],
+      "edgeInkFraction": 0.9539383561643836,
+      "contentFraction": 0.9388852932126601,
+      "file": "model512-publish-repairs-s01-a02-word-67535.png",
+      "sha256": "615b4753b1bef2c53e90c3c1bd2d54798a8154df67c973159cba4e31c20b7fb3"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        317,
+        630,
+        623,
+        937
+      ],
+      "edgeInkFraction": 0.9821612349914237,
+      "contentFraction": 0.9910689574418258,
+      "file": "model512-publish-repairs-s01-a02-word-67586.png",
+      "sha256": "dadb293c4e4b761eb551102b265c667ebbc00f1405d02173b2981df135bfe699"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        629,
+        630,
+        935,
+        937
+      ],
+      "edgeInkFraction": 0.9994854202401372,
+      "contentFraction": 0.9847033275851057,
+      "file": "model512-publish-repairs-s01-a02-word-67513.png",
+      "sha256": "0fe776d9462c013980d70edfe4b6e8a83e879c4871766ed726dcdd30341155fe"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        941,
+        630,
+        1250,
+        937
+      ],
+      "edgeInkFraction": 0.9965301478953356,
+      "contentFraction": 0.9885413701864795,
+      "file": "model512-publish-repairs-s01-a02-word-67812.png",
+      "sha256": "07798d16183808571ecb2708e88f4d0198518792edb6df12fc9cfe633c59c5ce"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        5,
+        942,
+        312,
+        1249
+      ],
+      "edgeInkFraction": 0.9698059360730593,
+      "contentFraction": 0.9822067077634776,
+      "file": "model512-publish-repairs-s01-a02-word-67975.png",
+      "sha256": "b7dda61e2bd4ab4b6cc631a3fbc2ed34fd169338323fbff0e0dcf1d8c3000a30"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        317,
+        942,
+        623,
+        1249
+      ],
+      "edgeInkFraction": 0.954488279016581,
+      "contentFraction": 0.9282642481531157,
+      "file": "model512-publish-repairs-s01-a02-word-67551.png",
+      "sha256": "2944a65447bcfc5f07a31b727ecf60edf5e6d69a67ae91483d65087e5759204c"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        629,
+        942,
+        935,
+        1249
+      ],
+      "edgeInkFraction": 0.9620926243567753,
+      "contentFraction": 0.9730259096037981,
+      "file": "model512-publish-repairs-s01-a02-word-67564.png",
+      "sha256": "f8a21a486633549f5e0a3079a97491ebaa3fe4654dd682dd3f98d777a740562e"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        941,
+        942,
+        1250,
+        1249
+      ],
+      "edgeInkFraction": 0.995164960182025,
+      "contentFraction": 0.9916722009634947,
+      "file": "model512-publish-repairs-s01-a02-word-67650.png",
+      "sha256": "ee1fb76d0ed17858e9c34f724b8e5a5f42c611e9b3d6a3a688f23cf19633b840"
+    }
+  ]
+}
