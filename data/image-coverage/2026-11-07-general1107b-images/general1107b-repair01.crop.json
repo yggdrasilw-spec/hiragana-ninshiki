@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "c23dbba18f61787ff3e4b85703a5922c2f71eb4c81c5b731ddd6053442774691",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      5
+    ],
+    [
+      311,
+      317
+    ],
+    [
+      624,
+      630
+    ],
+    [
+      934,
+      944
+    ],
+    [
+      1249,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      7
+    ],
+    [
+      310,
+      317
+    ],
+    [
+      622,
+      630
+    ],
+    [
+      935,
+      941
+    ],
+    [
+      1249,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        5,
+        7,
+        311,
+        310
+      ],
+      "edgeInkFraction": 0.8761658031088083,
+      "contentFraction": 0.9012597338165189,
+      "file": "general1107b-repair01-word-82629.png",
+      "sha256": "f87217c8ab8eb122635975289bc6890ec75abc13b78d83d5e298cdb9194ef7a7"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        317,
+        7,
+        624,
+        310
+      ],
+      "edgeInkFraction": 0.8394252873563218,
+      "contentFraction": 0.8680513002440309,
+      "file": "general1107b-repair01-word-82709.png",
+      "sha256": "373e40371043eb41dad564bdc13248fe7c6d959f5e2fcb982f34297c172cd6bf"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        630,
+        7,
+        934,
+        310
+      ],
+      "edgeInkFraction": 0.9666666666666667,
+      "contentFraction": 0.9684514504081987,
+      "file": "general1107b-repair01-word-82712.png",
+      "sha256": "fcd21cec035328fd3043e15f205683009ad525251b45b0c2b18975629910d33e"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        944,
+        7,
+        1249,
+        310
+      ],
+      "edgeInkFraction": 0.6407727797001154,
+      "contentFraction": 0.7828274630741763,
+      "file": "general1107b-repair01-word-82715.png",
+      "sha256": "88817aae2d62666ee8b21939114ead7c7a547e3413bc8530a803e35c29f749b6"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        5,
+        317,
+        311,
+        622
+      ],
+      "edgeInkFraction": 0.9144578313253012,
+      "contentFraction": 0.9322082931533269,
+      "file": "general1107b-repair01-word-82772.png",
+      "sha256": "3b645f2908135cca704181e550b0dd64b0f11dda5227e55d4653a0fb4c53d3f7"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        317,
+        317,
+        624,
+        622
+      ],
+      "edgeInkFraction": 0.9281214203894617,
+      "contentFraction": 0.8608853526993111,
+      "file": "general1107b-repair01-word-82776.png",
+      "sha256": "21dddfc0374d657a7d0c593756db993bc409f758da19133ff3c36a9c860d230d"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        630,
+        317,
+        934,
+        622
+      ],
+      "edgeInkFraction": 0.8756476683937824,
+      "contentFraction": 0.8863999137187231,
+      "file": "general1107b-repair01-word-82807.png",
+      "sha256": "3ffd12c1df5022431be063051f56663031c7917542c2e7a8589448e6aa1766b8"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        944,
+        317,
+        1249,
+        622
+      ],
+      "edgeInkFraction": 0.978103448275862,
+      "contentFraction": 0.9620747110991669,
+      "file": "general1107b-repair01-word-82817.png",
+      "sha256": "ffebe0f7b616388ce71b34b3026daae8ad1bc4801d4c83439a30e8d574d4903c"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        5,
+        630,
+        311,
+        935
+      ],
+      "edgeInkFraction": 0.9397016637980493,
+      "contentFraction": 0.8938176363441551,
+      "file": "general1107b-repair01-word-82837.png",
+      "sha256": "149f198ed3f350b83acce02cbf18f7ad53146eb7816294d5170a3c74b6026e98"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        317,
+        630,
+        624,
+        935
+      ],
+      "edgeInkFraction": 0.9505154639175257,
+      "contentFraction": 0.903337427244086,
+      "file": "general1107b-repair01-word-82853.png",
+      "sha256": "808379422197f5c2518d368ae55df17691939ba6314a513c95347bd6a9d2d134"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        630,
+        630,
+        934,
+        935
+      ],
+      "edgeInkFraction": 0.9156591824985607,
+      "contentFraction": 0.921904659188956,
+      "file": "general1107b-repair01-word-82883.png",
+      "sha256": "41e0aa51ad07e494656fb9c27e6bb86cbaf3e00d94f24d4237569e9f7b2892e5"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        944,
+        630,
+        1249,
+        935
+      ],
+      "edgeInkFraction": 0.9100574712643679,
+      "contentFraction": 0.9164525665143779,
+      "file": "general1107b-repair01-word-82890.png",
+      "sha256": "1f66a2380f45047bfe7496aa8a291b73b7c621718b5335b399d2b1deeccacb07"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        5,
+        941,
+        311,
+        1249
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9994482641541466,
+      "file": "general1107b-repair01-word-83025.png",
+      "sha256": "b33691f3016add119e347ee8bd0024cac9e595cb5fb203eff82e722dd1b244d2"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        317,
+        941,
+        624,
+        1249
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9902914674901646,
+      "file": "general1107b-repair01-word-68022.png",
+      "sha256": "04819f78b8feef0ddeeb92203b4e272ff3b48075591c61007dd9fa67e888c989"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        630,
+        941,
+        934,
+        1249
+      ],
+      "edgeInkFraction": 0.9971935853379152,
+      "contentFraction": 0.9857634142173616,
+      "file": "general1107b-repair01-word-68031.png",
+      "sha256": "55ecc48b88c15a4e871308a17fedc39fb192bed249997ff54ad7927eaabe9e20"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        944,
+        941,
+        1249,
+        1249
+      ],
+      "edgeInkFraction": 0.9794168096054888,
+      "contentFraction": 0.993698105173515,
+      "file": "general1107b-repair01-word-68217.png",
+      "sha256": "02d2daf54bf050978024e379527a370a76338750b456fa06eaf34c8787935eae"
+    }
+  ]
+}
