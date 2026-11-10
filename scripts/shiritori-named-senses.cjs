@@ -19,7 +19,7 @@ function load(root){
 }
 function loadReviewedGeneral(root) {
  const imports = path.join(root, 'data/dictionary-imports');
- const files = ['2026-11-09-common16.review.json', '2026-11-09-common512.review.json'];
+ const files = ['2026-11-09-common16.review.json', '2026-11-09-common512.review.json', '2026-11-10-common512.review.json'];
  return new Set(files.flatMap(file => {
   const source = path.join(imports, file);
   if (!fs.existsSync(source)) return [];
