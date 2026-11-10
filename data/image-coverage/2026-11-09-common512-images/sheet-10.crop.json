@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "3679f9186e6c26f1febd9fab87d949e1ad9593ecb7c80f78729f2cde8db8085a",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      7
+    ],
+    [
+      311,
+      317
+    ],
+    [
+      623,
+      629
+    ],
+    [
+      936,
+      941
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      5
+    ],
+    [
+      312,
+      318
+    ],
+    [
+      623,
+      630
+    ],
+    [
+      935,
+      942
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        7,
+        5,
+        311,
+        312
+      ],
+      "edgeInkFraction": 0.999827882960413,
+      "contentFraction": 0.9979855991770958,
+      "file": "common20261109-word-89908.png",
+      "sha256": "44215d247220e83a6aafae696897366279c244f2d24536b43dfcca18682a1bb3"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        317,
+        5,
+        623,
+        312
+      ],
+      "edgeInkFraction": 0.9789594053744998,
+      "contentFraction": 0.9778799684911967,
+      "file": "common20261109-word-89909.png",
+      "sha256": "14976f31e63be6f4b7fab753e2fdc6b6054f3ac06a3b30b3ef6a90b11b379568"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        629,
+        5,
+        936,
+        312
+      ],
+      "edgeInkFraction": 0.9982305936073059,
+      "contentFraction": 0.9849123067618755,
+      "file": "common512-s10-evidence-03.png",
+      "sha256": "de5586d0174504dace99b46cd8e8f6e1846526f1bb35fe08cbea235cf041a91e"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        941,
+        5,
+        1248,
+        312
+      ],
+      "edgeInkFraction": 0.9418949771689498,
+      "contentFraction": 0.9823446402614351,
+      "file": "common20261109-word-89911.png",
+      "sha256": "d4ce191c48af251782e788cc632fe63481f28e8f23544a68abd84b7878f98507"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        7,
+        318,
+        311,
+        623
+      ],
+      "edgeInkFraction": 0.6143350604490501,
+      "contentFraction": 0.8171052631578948,
+      "file": "common20261109-word-89912.png",
+      "sha256": "be35089ec75b3d695b8b81a9b8ce6b1323e2a8e9e7623fdc16026ffb73ea8e2b"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        317,
+        318,
+        623,
+        623
+      ],
+      "edgeInkFraction": 0.9537578886976478,
+      "contentFraction": 0.9803921568627451,
+      "file": "common20261109-word-89913.png",
+      "sha256": "c06c3ed976c00cd7eb8d3531b4a93095a1d825fb6c1b02877d8850dd0c7292b8"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        629,
+        318,
+        936,
+        623
+      ],
+      "edgeInkFraction": 0.9103092783505154,
+      "contentFraction": 0.8693223687723608,
+      "file": "common20261109-word-89914.png",
+      "sha256": "3382accb1f7bef0b57e560348f980793c7dc37be2e4932a9cf0a8410bd6bb530"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        941,
+        318,
+        1248,
+        623
+      ],
+      "edgeInkFraction": 1.0,
+      "contentFraction": 0.9900784962887809,
+      "file": "common20261109-word-89915.png",
+      "sha256": "79246690116da442ece543d3db19fee596e6f9114042b2868492ef3258e8885f"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        7,
+        630,
+        311,
+        935
+      ],
+      "edgeInkFraction": 0.942832469775475,
+      "contentFraction": 0.9657571182053495,
+      "file": "common20261109-word-89916.png",
+      "sha256": "171440937c11c224504d961443c2dfe987f407772c83e05e61b6fdc7b838cfce"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        317,
+        630,
+        623,
+        935
+      ],
+      "edgeInkFraction": 0.9496844520940907,
+      "contentFraction": 0.9577842065788064,
+      "file": "common20261109-word-89917.png",
+      "sha256": "13de5d5ba08f360c23293d4ae80dfdea3b3ab4b397b706298fb5c727d735b5d7"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        629,
+        630,
+        936,
+        935
+      ],
+      "edgeInkFraction": 0.9993699885452463,
+      "contentFraction": 0.9979494847012335,
+      "file": "common20261109-word-89918.png",
+      "sha256": "b4b17cac8779f3aebc069dac2c0e734390d0738127acbcb4074c65a099402ea2"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        941,
+        630,
+        1248,
+        935
+      ],
+      "edgeInkFraction": 0.9980526918671249,
+      "contentFraction": 0.9959096491696481,
+      "file": "common20261109-word-89919.png",
+      "sha256": "1c6117ab67b707f2c0cf90e2c737b280cbd507a38b1259b15797862512ea34fa"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        7,
+        942,
+        311,
+        1246
+      ],
+      "edgeInkFraction": 0.942156862745098,
+      "contentFraction": 0.966466845567867,
+      "file": "common20261109-word-89920.png",
+      "sha256": "2bd68e37f21527dc07048989617fed01e100fc61994dabbc32fb5b767da5cc5b"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        317,
+        942,
+        623,
+        1246
+      ],
+      "edgeInkFraction": 0.996551724137931,
+      "contentFraction": 0.9974415204678363,
+      "file": "common20261109-word-89921.png",
+      "sha256": "876dd54a74249c44b2db1898276036889b2ff2eba921cd32bac5c93127559a21"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        629,
+        942,
+        936,
+        1246
+      ],
+      "edgeInkFraction": 0.9909925415949512,
+      "contentFraction": 0.885082719012515,
+      "file": "common20261109-word-89922.png",
+      "sha256": "5282529d75d6e1e09c3cf031ae9a0f092356b45acf7ca363cad8854fa6875488"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        941,
+        942,
+        1248,
+        1246
+      ],
+      "edgeInkFraction": 0.999942627653471,
+      "contentFraction": 0.9997428424481399,
+      "file": "common20261109-word-89923.png",
+      "sha256": "426aa783759c8a5dc13e1fb21488c16373df7a47b8ad82e2d67c4a4286d1747a"
+    }
+  ]
+}

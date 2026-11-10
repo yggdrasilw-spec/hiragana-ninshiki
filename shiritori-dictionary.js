@@ -100,10 +100,10 @@
     merge(a,b){
       if(!a)return b||null;if(!b)return a;
       if(a._indexOnly||b._indexOnly)return {...a,_indexOnly:true};
-      const row={reading:a.reading,words:[],meanings:[],meaningLevels:[],imagequeries:[],genres:[],level:Math.min(a.level,b.level)},seen=new Set();
+      const row={reading:a.reading,words:[],meanings:[],meaningLevels:[],imagequeries:[],genres:[],namedSenses:[],level:Math.min(a.level,b.level)},seen=new Set();
       for(const source of [a,b])source.words.forEach((word,i)=>{
         const key=word+'\t'+source.meanings[i];if(seen.has(key))return;seen.add(key);
-        row.words.push(word);row.meanings.push(source.meanings[i]);row.meaningLevels.push(source.meaningLevels[i]);row.imagequeries.push(source.imagequeries[i]);row.genres.push(source.genres?.[i]);
+        row.words.push(word);row.meanings.push(source.meanings[i]);row.meaningLevels.push(source.meaningLevels[i]);row.imagequeries.push(source.imagequeries[i]);row.genres.push(source.genres?.[i]);row.namedSenses.push(source.namedSenses?.[i]??null);
       });return row;
     }
     mergeRows(a,b){

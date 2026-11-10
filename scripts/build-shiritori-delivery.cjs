@@ -70,6 +70,16 @@ function build(root){
   if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
   if(mangaMatched.size!==manga.size)throw Error('Manga metadata is stale: unmatched exact meanings');
   if(companyMatched.size!==companies.size)throw Error('Company/brand metadata is stale: unmatched exact meanings');
+  const senseCatalog=require('./shiritori-named-senses.cjs');
+  const named=senseCatalog.load(root),reviewedGeneral=senseCatalog.loadReviewedGeneral(root);
+  for(const row of rows){
+    const flags=row.words.map((word,i)=>{
+      const meaning=row.meanings[i],key=senseCatalog.key({reading:row.reading,word,meaning});
+      if(reviewedGeneral.has(key))return false;
+      return named.has(key)||context.ShiritoriVocabulary.isNamedSense(word,meaning)||null;
+    });
+    if(flags.some(flag=>flag!==null))row.namedSenses=flags;
+  }
   return compileRows(rows,hash(csv));
 }
 function profiles(list){

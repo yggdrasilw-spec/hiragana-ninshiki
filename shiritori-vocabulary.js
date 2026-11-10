@@ -26,9 +26,27 @@
     if(/道具|どうぐ|使う|つかう|服|衣|家|いえ|部屋|へや|家具|乗り物|のりもの/.test(t))return 'daily';
     return 'other';
   }
+  function isNamedSense(word,meaning=''){
+    if(/^(?:ディズニー|ピクサー)のアニメ映画[。：]/.test(meaning)||/漫画。描いたのは|ゆるキャラグランプリに登録したキャラクター|(?:ゆかりのある|という)ご当地キャラクター|^原作・制作名義[。：]/.test(meaning))return true;
+    return /^(?:音楽作品|音楽バンド|音楽家|映画作品|テレビ番組|ライブ公演|お笑い芸人|お笑いグループ|芸能グループ|タレント|俳優|声優|落語家|アニメ作品|漫画作品|漫画作品の名前|漫画の作者|原作者|アニメ原作者|マンガ作品|小説作品|文学作品|ゲーム作品|企業名|店名・ブランド|商品ブランド|アニメ・小説作品の略称)[。：]/.test(meaning)
+      || /ポケモン|プリキュア|ガンダム|の登場人物|が発表した|が歌う|の楽曲|の曲。|という曲|という作品|という漫画|というアニメ|サンリオのキャラクター|(?:サッカー|バスケットボール)クラブの名前/.test(meaning)
+      || /[「『].+[」』].*(?:アニメ|漫画|まんが|小説|映画|作品|主人公|登場)/.test(meaning);
+  }
+  function preferGeneral(row){
+    if(!row?.words||row.words.length<2)return row;
+    const indices=row.words.map((_,i)=>i).sort((a,b)=>Number(namedAt(row,a))-Number(namedAt(row,b)));
+    if(indices.every((i,j)=>i===j))return row;
+    const result={...row};
+    for(const key of ['words','meanings','meaningLevels','imagequeries','genres','namedSenses'])if(Array.isArray(row[key]))result[key]=indices.map(i=>row[key][i]);
+    return result;
+  }
+  function namedAt(row,i){return row.namedSenses?.[i]??isNamedSense(row.words[i],row.meanings[i]);}
+  function namedOnly(row){return !!row?.words?.length&&row.words.every((w,i)=>namedAt(row,i));}
+  function compareGeneral(a,b){return Number(namedOnly(a))-Number(namedOnly(b));}
   function project(row,indices){
     return {...row,level:Math.min(...indices.map(i=>row.meaningLevels?.[i]||row.level||4)),words:indices.map(i=>row.words[i]),meanings:indices.map(i=>row.meanings[i]),
-      meaningLevels:indices.map(i=>row.meaningLevels?.[i]||row.level||4),imagequeries:indices.map(i=>row.imagequeries[i])};
+      meaningLevels:indices.map(i=>row.meaningLevels?.[i]||row.level||4),imagequeries:indices.map(i=>row.imagequeries[i]),
+      ...(row.genres?{genres:indices.map(i=>row.genres[i])}:{}),...(row.namedSenses?{namedSenses:indices.map(i=>row.namedSenses[i])}:{})};
   }
   // Optimal string alignment distance: one missing/extra/wrong kana or swapped pair.
   function distance(a,b){
@@ -50,6 +68,6 @@
       .sort((a,b)=>rank(a.row.reading)-rank(b.row.reading)||(a.row.level>level)-(b.row.level>level)||a.row.level-b.row.level||a.row.reading.localeCompare(b.row.reading,'ja'))
       .slice(0,3).map(x=>x.row);
   }
-  root.ShiritoriVocabulary={categories,category,project,distance,suggestions};
+  root.ShiritoriVocabulary={categories,category,isNamedSense,namedAt,preferGeneral,namedOnly,compareGeneral,project:(row,indices)=>preferGeneral(project(row,indices)),distance,suggestions};
   if(typeof module!=='undefined')module.exports=root.ShiritoriVocabulary;
 })(typeof window==='undefined'?globalThis:window);
