@@ -1,0 +1,4877 @@
+{
+  "baseSha": "e5a25ef542d888298a6307116ea828a344fb30b2",
+  "dictionarySha256": "20462e57a0315bfaafb8d115e5dd6447cb49bf3e1bbb60d7bb98e1f22fd4a871",
+  "priorRelease": "output\\shiritori-common-rest-20261111\\resume.md",
+  "priorPublicCheck": "output\\shiritori-common-rest-20261111\\pages-verification.json",
+  "reservationSources": [
+    "output\\shiritori-512-20261105\\plan.json",
+    "output\\shiritori-512-20261105\\registration-preview.json",
+    "output\\shiritori-512-20261107\\plan.json",
+    "output\\shiritori-512-20261107\\repair-plan.json",
+    "output\\shiritori-common-rest-20261111\\plan.json",
+    "output\\shiritori-common-rest-20261111\\progress.json",
+    "output\\shiritori-common-rest-20261111\\accepted-images.json",
+    "output\\shiritori-common-rest-20261111\\registration-summary.json",
+    "output\\shiritori-common512-20261109\\plan.json",
+    "output\\shiritori-common512-20261109\\progress.json",
+    "output\\shiritori-common512-20261109\\accepted-images.json",
+    "output\\shiritori-common512-20261109\\registration-summary.json",
+    "output\\shiritori-common512-20261110\\plan.json",
+    "output\\shiritori-common512-20261110\\accepted-images.json",
+    "output\\shiritori-common512-20261110\\registration-summary.json",
+    "output\\shiritori-followup512-20261107\\plan.json",
+    "output\\shiritori-followup512-20261107\\summary.json",
+    "output\\shiritori-followup512-20261107\\repair-plan.json",
+    "output\\shiritori-followup512-20261107\\reserved-images.json",
+    "output\\shiritori-followup512-20261107\\accepted-images.json",
+    "output\\shiritori-general-images-20261103\\plan.json",
+    "output\\shiritori-general-images-20261103\\registration-preview.json",
+    "output\\shiritori-model512-20261104\\plan.json",
+    "output\\shiritori-model512-20261104\\summary.json",
+    "output\\shiritori-model512-20261104\\registration-preview.json",
+    "output\\shiritori-next512-20261107\\plan.json",
+    "output\\shiritori-next512-20261107\\reserved-images.json",
+    "output\\shiritori-seven512b\\plan.json",
+    "output\\shiritori-seven512b-color\\plan.json",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-07-ha.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-07-hi-wa.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-08-grid.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-08-learning.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-11-additional.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-11-common-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-11-jmdict.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-11-school-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-images-a.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-images-b.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-images-c.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-images-d.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-images-e.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-images-f.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-integrated-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-wave3-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-wave4-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-wave5-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-wave6-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-12-wave7-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-13-expansion512-fixes.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-13-expansion512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-13-expansion64-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-13-wave8-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-13-wave9-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-14-expansion512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-14-expansion512b-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-14-wave10-existing512.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-14-wave11-safe-existing410.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-15-expansion512c-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-15-expansion512d-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-15-expansion512e-cards.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-15-expansion512e-music-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-16-expansion1024f-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-16-expansion1024g-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-18-expansion1024h-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-19-culture512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-19-nature512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-19-request25-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-25-clipping4-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-25-quality-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-25-seven512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-10-25-seven512b-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-01-eiken-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-01-eiken-words.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-03-automation-first128.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-03-automation-repairs.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-03-automation-sheet09.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-03-automation-sheets10-16.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-03-automation-sheets17-24.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-03-automation-sheets25-32.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-04-general01-512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-04-model512-remaining17.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-04-model512-repairs.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-04-model512.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-06-general02-512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-06-general1106b-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-07-general1107-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-07-general1107b-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-09-common512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-10-common512-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\2026-11-11-common-rest138-images.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\agent-abstract-words.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\agent-home-actions.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\agent-landscapes.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\agent-objects-nature.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\agent-physical-verbs.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\agent-social-scenes.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\eiken-print-20261101.csv",
+    "output\\shiritori-common-rest-20261111\\release\\data\\batches\\gas-vocabulary.csv"
+  ],
+  "sheets": [
+    {
+      "sheet": "sheet01",
+      "tiles": [
+        {
+          "id": 68036,
+          "reading": "のうち",
+          "word": "農地",
+          "meaning": "農業が行われる田園地域。",
+          "level": "3",
+          "filename": "general1111-word-68036.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 68042,
+          "reading": "はしり",
+          "word": "走り",
+          "meaning": "走る行為; 速いペースの、足による移動。",
+          "level": "3",
+          "filename": "general1111-word-68042.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 68070,
+          "reading": "ほこう",
+          "word": "歩行",
+          "meaning": "足で移動する行為。",
+          "level": "3",
+          "filename": "general1111-word-68070.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 68071,
+          "reading": "ほっぷ",
+          "word": "ホップ",
+          "meaning": "跳ぶ行為; （特に1フィート）上方または前方に飛び上がること。",
+          "level": "3",
+          "filename": "general1111-word-68071.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 68131,
+          "reading": "かしょう",
+          "word": "歌唱",
+          "meaning": "声楽曲を歌うこと。",
+          "level": "3",
+          "filename": "general1111-word-68131.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 68211,
+          "reading": "すいでん",
+          "word": "水田",
+          "meaning": "稲を育てる、灌漑された、あるいは水を張った畑。",
+          "level": "3",
+          "filename": "general1111-word-68211.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 68284,
+          "reading": "にゅうじ",
+          "word": "乳児",
+          "meaning": "非常に年の若く（生後1年までの）、まだ歩いたり話したりできない子供。",
+          "level": "3",
+          "filename": "general1111-word-68284.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 68352,
+          "reading": "ぼうせき",
+          "word": "紡績",
+          "meaning": "糸を作ること。",
+          "level": "3",
+          "filename": "general1111-word-68352.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 68383,
+          "reading": "らんかん",
+          "word": "欄干",
+          "meaning": "人々が転ぶのを防ぐ階段かバルコニーの側面の手摺り。",
+          "level": "3",
+          "filename": "general1111-word-68383.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 68490,
+          "reading": "ばいきんぐ",
+          "word": "バイキング",
+          "meaning": "客が自分でとって食べるようにカウンターに並べた食事。",
+          "level": "3",
+          "filename": "general1111-word-68490.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 68499,
+          "reading": "ぶてぃっく",
+          "word": "ブティック",
+          "meaning": "女性の服と宝石を売る店。",
+          "level": "3",
+          "filename": "general1111-word-68499.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 68518,
+          "reading": "らしんばん",
+          "word": "羅針盤",
+          "meaning": "方向を見つけるためのナビゲーションの機器。",
+          "level": "3",
+          "filename": "general1111-word-68518.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 68557,
+          "reading": "すいじょうき",
+          "word": "水蒸気",
+          "meaning": "大気内であるが沸点未満で放散される蒸気の状態の水。",
+          "level": "3",
+          "filename": "general1111-word-68557.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 68573,
+          "reading": "ふくろこうじ",
+          "word": "袋小路",
+          "meaning": "アクセスが一端であるだけにある通路。",
+          "level": "3",
+          "filename": "general1111-word-68573.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 68683,
+          "reading": "かつ",
+          "word": "カツ",
+          "meaning": "通常、揚げたり焼かれたりする薄くスライスされた肉（とくに子牛肉）。",
+          "level": "3",
+          "filename": "general1111-word-68683.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 68701,
+          "reading": "きみ",
+          "word": "黄身",
+          "meaning": "卵白で囲まれた黄色い球形の部分。",
+          "level": "3",
+          "filename": "general1111-word-68701.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet02",
+      "tiles": [
+        {
+          "id": 68812,
+          "reading": "てき",
+          "word": "テキ",
+          "meaning": "牛肉の切り身を通例焼いて調理したもの。",
+          "level": "3",
+          "filename": "general1111-word-68812.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 68928,
+          "reading": "りぶ",
+          "word": "リブ",
+          "meaning": "肋骨を1本以上含む肉の切り身。",
+          "level": "3",
+          "filename": "general1111-word-68928.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 69001,
+          "reading": "おちゃ",
+          "word": "御茶",
+          "meaning": "勤務日の休憩にとるスナック。",
+          "level": "3",
+          "filename": "general1111-word-69001.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 69136,
+          "reading": "けんぷ",
+          "word": "絹布",
+          "meaning": "ある種の昆虫の繭の細い糸から作られる織物。",
+          "level": "3",
+          "filename": "general1111-word-69136.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 69283,
+          "reading": "すぱむ",
+          "word": "スパム",
+          "meaning": "主として豚肉で作られる缶詰肉。",
+          "level": "3",
+          "filename": "general1111-word-69283.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 69304,
+          "reading": "せんい",
+          "word": "繊維",
+          "meaning": "紡がれて紡績糸になることのできる細く、とても長くされた物質。",
+          "level": "3",
+          "filename": "general1111-word-69304.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 69383,
+          "reading": "つくり",
+          "word": "造り",
+          "meaning": "何かの建設方法とその部分の調整。",
+          "level": "3",
+          "filename": "general1111-word-69383.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 69391,
+          "reading": "てぃー",
+          "word": "ティー",
+          "meaning": "お茶が出されるレセプションやパーティー。",
+          "level": "3",
+          "filename": "general1111-word-69391.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 69411,
+          "reading": "とうき",
+          "word": "陶器",
+          "meaning": "粘土で作られ窯で焼かれる陶磁器。",
+          "level": "3",
+          "filename": "general1111-word-69411.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 69461,
+          "reading": "ねごと",
+          "word": "寝言",
+          "meaning": "ねむっているときに、知らずに いう ことば。",
+          "level": "2",
+          "filename": "general1111-word-69461.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 69476,
+          "reading": "はいく",
+          "word": "ハイク",
+          "meaning": "通常、運動や楽しみのための長時間の歩行。",
+          "level": "3",
+          "filename": "general1111-word-69476.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 69489,
+          "reading": "はだぎ",
+          "word": "肌着",
+          "meaning": "上着の下、肌の上に着ける衣類。",
+          "level": "3",
+          "filename": "general1111-word-69489.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 69490,
+          "reading": "はっと",
+          "word": "ハット",
+          "meaning": "頭を悪天候から保護する頭飾り; 冠の形と通常縁のある。",
+          "level": "3",
+          "filename": "general1111-word-69490.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 69502,
+          "reading": "はんこ",
+          "word": "判子",
+          "meaning": "印刷または彫刻の結果である記号。",
+          "level": "3",
+          "filename": "general1111-word-69502.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 69505,
+          "reading": "はんぷ",
+          "word": "頒布",
+          "meaning": "分配、または普及、割り当てる行為。",
+          "level": "3",
+          "filename": "general1111-word-69505.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 69526,
+          "reading": "ぱんふ",
+          "word": "パンフ",
+          "meaning": "普通紙表紙の小さな本。",
+          "level": "3",
+          "filename": "general1111-word-69526.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet03",
+      "tiles": [
+        {
+          "id": 69543,
+          "reading": "ひばり",
+          "word": "雲雀",
+          "meaning": "茶色の小斑点のある欧州産のヒバリで、非常に高い空を舞う間に鳴くことで知られる。",
+          "level": "3",
+          "filename": "general1111-word-69543.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 69553,
+          "reading": "ひより",
+          "word": "日和",
+          "meaning": "温度、風、雲、および降水量の観点から、大気状態を形成する大気条件。",
+          "level": "3",
+          "filename": "general1111-word-69553.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 69600,
+          "reading": "ぶんこ",
+          "word": "文庫",
+          "meaning": "本と研究のために、本と他の資料を保存するために建設される保管所。",
+          "level": "3",
+          "filename": "general1111-word-69600.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 69604,
+          "reading": "ぷらざ",
+          "word": "プラザ",
+          "meaning": "歩行者のための空間がある公共広場。",
+          "level": "3",
+          "filename": "general1111-word-69604.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 69656,
+          "reading": "ぽるか",
+          "word": "ポルカ",
+          "meaning": "ポルカを踊るために演奏される音楽。",
+          "level": "3",
+          "filename": "general1111-word-69656.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 69793,
+          "reading": "りんご",
+          "word": "林檎",
+          "meaning": "特に楕円形の食用の果実をつけるマリュス属の木のいずれか。",
+          "level": "3",
+          "filename": "general1111-word-69793.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 69929,
+          "reading": "おどりば",
+          "word": "踊場",
+          "meaning": "階段の途中の平らな所。",
+          "level": "3",
+          "filename": "general1111-word-69929.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 69932,
+          "reading": "おもちゃ",
+          "word": "玩具",
+          "meaning": "遊ぶために考案された人工品。",
+          "level": "3",
+          "filename": "general1111-word-69932.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 69971,
+          "reading": "かくしん",
+          "word": "革新",
+          "meaning": "悪習を正した結果として、よりよい方向へ変わること。",
+          "level": "3",
+          "filename": "general1111-word-69971.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 70009,
+          "reading": "かんづめ",
+          "word": "缶詰め",
+          "meaning": "缶詰保存食品。",
+          "level": "3",
+          "filename": "general1111-word-70009.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 70093,
+          "reading": "くわいあ",
+          "word": "クワイア",
+          "meaning": "宗教的儀式の一部として歌うコーラス。",
+          "level": "3",
+          "filename": "general1111-word-70093.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 70210,
+          "reading": "ごみばこ",
+          "word": "塵箱",
+          "meaning": "がらくたを収集するまで入れておくもの。",
+          "level": "3",
+          "filename": "general1111-word-70210.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 70211,
+          "reading": "さいえん",
+          "word": "菜園",
+          "meaning": "野菜を育てる小さい庭。",
+          "level": "3",
+          "filename": "general1111-word-70211.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 70349,
+          "reading": "じょうき",
+          "word": "蒸気",
+          "meaning": "沸騰の温度の水は大気で拡散した。",
+          "level": "3",
+          "filename": "general1111-word-70349.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 70363,
+          "reading": "じんどう",
+          "word": "人道",
+          "meaning": "歩行者のための舗装された歩道; 通常通りや車道の脇にある。",
+          "level": "3",
+          "filename": "general1111-word-70363.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 70366,
+          "reading": "すいけい",
+          "word": "水系",
+          "meaning": "川とその支流すべて。",
+          "level": "3",
+          "filename": "general1111-word-70366.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet04",
+      "tiles": [
+        {
+          "id": 70379,
+          "reading": "すきやき",
+          "word": "鋤焼き",
+          "meaning": "牛の薄切りまたは鶏肉、豚肉をタマネギ・野菜・醤油といっしょに食卓で簡単に調理したもの。",
+          "level": "3",
+          "filename": "general1111-word-70379.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 70387,
+          "reading": "すとーむ",
+          "word": "ストーム",
+          "meaning": "約64から72ノットの風（ビューフォート風力階級では11）、雨、雷、稲妻を伴った激しい天候状態。",
+          "level": "3",
+          "filename": "general1111-word-70387.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 70405,
+          "reading": "せいうん",
+          "word": "青雲",
+          "meaning": "昼間に見た空。",
+          "level": "3",
+          "filename": "general1111-word-70405.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 70406,
+          "reading": "せいがく",
+          "word": "声楽",
+          "meaning": "歌う音楽（器楽曲との対比として）。",
+          "level": "3",
+          "filename": "general1111-word-70406.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 70422,
+          "reading": "せいてん",
+          "word": "晴天",
+          "meaning": "穏やかな天候; 野外活動に適している。",
+          "level": "3",
+          "filename": "general1111-word-70422.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 70447,
+          "reading": "せともの",
+          "word": "瀬戸もの",
+          "meaning": "高品質の磁器で、もともとは中国だけで作られた。",
+          "level": "3",
+          "filename": "general1111-word-70447.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 70556,
+          "reading": "だんだん",
+          "word": "段々",
+          "meaning": "一続きの階段、または一続きのステップ。",
+          "level": "3",
+          "filename": "general1111-word-70556.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 70561,
+          "reading": "ちくさん",
+          "word": "畜産",
+          "meaning": "家畜の繁殖と世話。",
+          "level": "3",
+          "filename": "general1111-word-70561.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 70621,
+          "reading": "てんぷら",
+          "word": "天麩羅",
+          "meaning": "野菜・魚介類を練り粉にくぐらせて油で揚げたもの。",
+          "level": "3",
+          "filename": "general1111-word-70621.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 70630,
+          "reading": "でんこう",
+          "word": "電光",
+          "meaning": "発光によって伴われる、突然の雲から雲へまたは雲から地上への放電。",
+          "level": "3",
+          "filename": "general1111-word-70630.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 70697,
+          "reading": "どらまー",
+          "word": "ドラマー",
+          "meaning": "ドラムを演奏する人。",
+          "level": "3",
+          "filename": "general1111-word-70697.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 70756,
+          "reading": "はくまい",
+          "word": "白米",
+          "meaning": "外皮または外の茶色の層を取り除いておくこと。",
+          "level": "3",
+          "filename": "general1111-word-70756.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 70771,
+          "reading": "はなむこ",
+          "word": "花婿",
+          "meaning": "最近結婚した男性。",
+          "level": "3",
+          "filename": "general1111-word-70771.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 70775,
+          "reading": "はみがき",
+          "word": "歯みがき",
+          "meaning": "歯を掃除するための物質; 歯ブラシとともに用いる。",
+          "level": "3",
+          "filename": "general1111-word-70775.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 70801,
+          "reading": "ぱてぃお",
+          "word": "パティオ",
+          "meaning": "普通住居に隣接している舗装された戸外の場所。",
+          "level": "3",
+          "filename": "general1111-word-70801.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 70827,
+          "reading": "ひるまえ",
+          "word": "昼前",
+          "meaning": "夜明けから正午までの時間。",
+          "level": "3",
+          "filename": "general1111-word-70827.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet05",
+      "tiles": [
+        {
+          "id": 70868,
+          "reading": "ぶれっど",
+          "word": "ブレッド",
+          "meaning": "小麦粉またはミールの生地で作られ、通常はイーストまたはベーキングパウダーでふくらまされ、それから焼かれる食物。",
+          "level": "3",
+          "filename": "general1111-word-70868.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 70873,
+          "reading": "ぶろんず",
+          "word": "ブロンズ",
+          "meaning": "銅でつくられた彫刻。",
+          "level": "3",
+          "filename": "general1111-word-70873.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 70923,
+          "reading": "ほうせい",
+          "word": "縫製",
+          "meaning": "縫って継いだり張ったりする行為。",
+          "level": "3",
+          "filename": "general1111-word-70923.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 70959,
+          "reading": "ぽんぽん",
+          "word": "ポンポン",
+          "meaning": "消化管の拡大し筋肉質の嚢状の器官; 消化の主要な器官。",
+          "level": "3",
+          "filename": "general1111-word-70959.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 70973,
+          "reading": "まどぐち",
+          "word": "窓口",
+          "meaning": "光と空気を通し、それを通じて顧客が応対される壁またはスクリーンの開口部。",
+          "level": "3",
+          "filename": "general1111-word-70973.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 70974,
+          "reading": "まないた",
+          "word": "真魚板",
+          "meaning": "肉や野菜を切る木製の板。",
+          "level": "3",
+          "filename": "general1111-word-70974.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 71069,
+          "reading": "ゆりかご",
+          "word": "揺り籃",
+          "meaning": "囲いと揺り子つきベビーベッド。",
+          "level": "3",
+          "filename": "general1111-word-71069.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 71084,
+          "reading": "ようにく",
+          "word": "羊肉",
+          "meaning": "よく成育した家畜の羊の肉。",
+          "level": "3",
+          "filename": "general1111-word-71084.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 71173,
+          "reading": "あさごはん",
+          "word": "朝御飯",
+          "meaning": "1日の最初の食事（通常は朝の）。",
+          "level": "3",
+          "filename": "general1111-word-71173.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 71260,
+          "reading": "きゃんぱー",
+          "word": "キャンパー",
+          "meaning": "行楽のために一時的にテントやロッジで寝泊まりする人。",
+          "level": "3",
+          "filename": "general1111-word-71260.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 71280,
+          "reading": "きょうそう",
+          "word": "競走",
+          "meaning": "足で駆けるレース。",
+          "level": "3",
+          "filename": "general1111-word-71280.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 71281,
+          "reading": "きょうぞう",
+          "word": "胸像",
+          "meaning": "人の頭部と肩の彫刻。",
+          "level": "3",
+          "filename": "general1111-word-71281.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 71328,
+          "reading": "こもりうた",
+          "word": "子守り歌",
+          "meaning": "子供をなだめ寝かしつける静かな歌。",
+          "level": "3",
+          "filename": "general1111-word-71328.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 71346,
+          "reading": "さーろいん",
+          "word": "サーロイン",
+          "meaning": "臀部のすぐ前の腰の部分（特に牛肉の）。",
+          "level": "3",
+          "filename": "general1111-word-71346.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 71426,
+          "reading": "しょくざい",
+          "word": "食材",
+          "meaning": "食料雑貨品店で売っている品物。",
+          "level": "3",
+          "filename": "general1111-word-71426.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 71442,
+          "reading": "しーふーど",
+          "word": "シーフード",
+          "meaning": "食用魚（淡水魚も含む）・貝・魚卵など。",
+          "level": "3",
+          "filename": "general1111-word-71442.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet06",
+      "tiles": [
+        {
+          "id": 71471,
+          "reading": "じょうぞう",
+          "word": "醸造",
+          "meaning": "モルトとホップをすりつぶしてゆでたものをイーストで発酵させることによって（ビールやエールのような）麦芽酒を生産すること。",
+          "level": "3",
+          "filename": "general1111-word-71471.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 71511,
+          "reading": "せれなーど",
+          "word": "セレナード",
+          "meaning": "女性の家の外で歌う歌。",
+          "level": "3",
+          "filename": "general1111-word-71511.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 71700,
+          "reading": "ふんしゅつ",
+          "word": "噴出",
+          "meaning": "突然蒸気と火山性の物体が激しく噴出する現象。",
+          "level": "3",
+          "filename": "general1111-word-71700.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 71706,
+          "reading": "ぶるねっと",
+          "word": "ブルネット",
+          "meaning": "黒い（茶色の）髪の人。",
+          "level": "3",
+          "filename": "general1111-word-71706.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 71732,
+          "reading": "ほこうしゃ",
+          "word": "歩行者",
+          "meaning": "徒歩で旅行する人。",
+          "level": "3",
+          "filename": "general1111-word-71732.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 71746,
+          "reading": "まっとれす",
+          "word": "マットレス",
+          "meaning": "弾力のある詰め物がしてあり、しばしばコイルばねを内蔵する大きく厚いマットで、ベッドとして、あるいはその一部として使われる。",
+          "level": "3",
+          "filename": "general1111-word-71746.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 71750,
+          "reading": "まよねーず",
+          "word": "マヨネーズ",
+          "meaning": "卵黄、油、および酢。",
+          "level": "3",
+          "filename": "general1111-word-71750.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 71872,
+          "reading": "きゃぶれたー",
+          "word": "キャブレター",
+          "meaning": "爆発に先立ちガソリン蒸気と空気を混ぜる。",
+          "level": "3",
+          "filename": "general1111-word-71872.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 71912,
+          "reading": "しゃーりんぐ",
+          "word": "シャーリング",
+          "meaning": "殻で覆われて焼かれた卵。",
+          "level": "3",
+          "filename": "general1111-word-71912.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 71957,
+          "reading": "すとろべりー",
+          "word": "ストロベリー",
+          "meaning": "多肉質の赤い甘い実。",
+          "level": "3",
+          "filename": "general1111-word-71957.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 71981,
+          "reading": "ちょうじゅう",
+          "word": "鳥獣",
+          "meaning": "飼いならされていない（人間以外の）すべての生物。",
+          "level": "3",
+          "filename": "general1111-word-71981.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 72000,
+          "reading": "どっぐふーど",
+          "word": "ドッグフード",
+          "meaning": "犬用につくられた食品。",
+          "level": "3",
+          "filename": "general1111-word-72000.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 72060,
+          "reading": "ぺっとふーど",
+          "word": "ペットフード",
+          "meaning": "ペット用に加工された食品。",
+          "level": "3",
+          "filename": "general1111-word-72060.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 72087,
+          "reading": "ようじんぼう",
+          "word": "用心棒",
+          "meaning": "重要人物に付き添って警護する人。",
+          "level": "3",
+          "filename": "general1111-word-72087.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 72147,
+          "reading": "ごうせいせんい",
+          "word": "合成繊維",
+          "meaning": "天然の素材から、または化学処理によって作られる。",
+          "level": "3",
+          "filename": "general1111-word-72147.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 72343,
+          "reading": "ぼでぃびるだー",
+          "word": "ボディビルダー",
+          "meaning": "筋肉を発達させるために特別の運動をする人。",
+          "level": "3",
+          "filename": "general1111-word-72343.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet07",
+      "tiles": [
+        {
+          "id": 72356,
+          "reading": "きょうきん",
+          "word": "胸筋",
+          "meaning": "胸の2つの大きな筋肉のどちらか。",
+          "level": "3",
+          "filename": "general1111-word-72356.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 72390,
+          "reading": "でいど",
+          "word": "泥土",
+          "meaning": "水がしみた土; 柔らかい湿った地面。",
+          "level": "3",
+          "filename": "general1111-word-72390.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 72418,
+          "reading": "たいそうせんしゅ",
+          "word": "体操選手",
+          "meaning": "体操の技術にたけた運動選手。",
+          "level": "3",
+          "filename": "general1111-word-72418.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 72459,
+          "reading": "ちょうこくか",
+          "word": "彫刻家",
+          "meaning": "彫刻を創作する芸術家。",
+          "level": "3",
+          "filename": "general1111-word-72459.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 72538,
+          "reading": "きょうぎしゃ",
+          "word": "競技者",
+          "meaning": "競争に参加する人。",
+          "level": "3",
+          "filename": "general1111-word-72538.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 72584,
+          "reading": "たいようほうしゃ",
+          "word": "太陽放射",
+          "meaning": "太陽からの放射。",
+          "level": "3",
+          "filename": "general1111-word-72584.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 72600,
+          "reading": "ふか",
+          "word": "孵化",
+          "meaning": "卵から子を産むこと。",
+          "level": "3",
+          "filename": "general1111-word-72600.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 72628,
+          "reading": "がいとう",
+          "word": "外套",
+          "meaning": "冬に服の上に着られる重いコート。",
+          "level": "3",
+          "filename": "general1111-word-72628.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 72683,
+          "reading": "かじゅえん",
+          "word": "果樹園",
+          "meaning": "下ばえのない小さい栽培森。",
+          "level": "3",
+          "filename": "general1111-word-72683.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 72702,
+          "reading": "すくわっと",
+          "word": "スクワット",
+          "meaning": "ひざを曲げてかがんでいる位置を繰り返し取ることによって運動すること; 脚の筋肉を強化する。",
+          "level": "3",
+          "filename": "general1111-word-72702.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 72721,
+          "reading": "ぼくそうち",
+          "word": "牧草地",
+          "meaning": "草またはアルファルファが干し草になるために育てられるフィールド。",
+          "level": "3",
+          "filename": "general1111-word-72721.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 72724,
+          "reading": "まるたごや",
+          "word": "丸太小屋",
+          "meaning": "丸太で建てた小屋。",
+          "level": "3",
+          "filename": "general1111-word-72724.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 72759,
+          "reading": "たいいんげつ",
+          "word": "太陰月",
+          "meaning": "新月と次の新月の間の期間（29.531日）。",
+          "level": "3",
+          "filename": "general1111-word-72759.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 72776,
+          "reading": "ふっかつさい",
+          "word": "復活祭",
+          "meaning": "キリストの復活を祝う、キリスト教の祝賀; 春分の日の後、最初の満月の第1日曜日に祝われる。",
+          "level": "3",
+          "filename": "general1111-word-72776.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 72789,
+          "reading": "かくせいそうち",
+          "word": "拡声装置",
+          "meaning": "公共の場で通信手段として使用される電気増幅システム。",
+          "level": "3",
+          "filename": "general1111-word-72789.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 72797,
+          "reading": "こーらすがーる",
+          "word": "コーラスガール",
+          "meaning": "コーラスラインで踊る女性。",
+          "level": "3",
+          "filename": "general1111-word-72797.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet08",
+      "tiles": [
+        {
+          "id": 72811,
+          "reading": "ふるーてぃすと",
+          "word": "フルーティスト",
+          "meaning": "フルートを演奏する人。",
+          "level": "3",
+          "filename": "general1111-word-72811.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 72911,
+          "reading": "そくほ",
+          "word": "速歩",
+          "meaning": "ゆっくりとしたペースで走ること。",
+          "level": "3",
+          "filename": "general1111-word-72911.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 73006,
+          "reading": "すたっこ",
+          "word": "スタッコ",
+          "meaning": "漆喰は、今ではほとんどがポートランドセメントと砂、および石灰から作られる; 外壁または表面をおおうために柔らかい間に適用される。",
+          "level": "3",
+          "filename": "general1111-word-73006.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 73030,
+          "reading": "とりはだ",
+          "word": "鳥肌",
+          "meaning": "冷たさ、感情的なストレス、あるいは皮膚苛立ちに対する反応としての皮膚の毛の反射的な直立。",
+          "level": "3",
+          "filename": "general1111-word-73030.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 73036,
+          "reading": "ながいす",
+          "word": "長椅子",
+          "meaning": "2人以上が座れる長いす。",
+          "level": "3",
+          "filename": "general1111-word-73036.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 73084,
+          "reading": "らぐーん",
+          "word": "ラグーン",
+          "meaning": "砂または珊瑚の礁によってより本流から分断される水域。",
+          "level": "3",
+          "filename": "general1111-word-73084.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 73163,
+          "reading": "しょくぜん",
+          "word": "食膳",
+          "meaning": "食事が出されるテーブル。",
+          "level": "3",
+          "filename": "general1111-word-73163.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 73165,
+          "reading": "しょっかく",
+          "word": "触角",
+          "meaning": "例えば、昆虫や甲殻類の頭部にある1対の動く付属物の1つ; 典型的に触・味覚に敏感。",
+          "level": "3",
+          "filename": "general1111-word-73165.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 73230,
+          "reading": "ほしじるし",
+          "word": "星印",
+          "meaning": "印刷で使われる星形の文字＊。",
+          "level": "3",
+          "filename": "general1111-word-73230.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 73368,
+          "reading": "ばすかいしゃ",
+          "word": "バス会社",
+          "meaning": "地方交通を供給する公益事業体。",
+          "level": "3",
+          "filename": "general1111-word-73368.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 73372,
+          "reading": "びじゅつひん",
+          "word": "美術品",
+          "meaning": "傑作美術のひとつの作品である芸術（特に、芸術的価値のある絵画、彫刻）。",
+          "level": "3",
+          "filename": "general1111-word-73372.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 73379,
+          "reading": "べっどかばー",
+          "word": "ベッドカバー",
+          "meaning": "ベッドの装飾カバー。",
+          "level": "3",
+          "filename": "general1111-word-73379.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 73383,
+          "reading": "ぼでぃーびる",
+          "word": "ボディービル",
+          "meaning": "緊張させて筋肉を作る運動。",
+          "level": "3",
+          "filename": "general1111-word-73383.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 73388,
+          "reading": "まーまれーど",
+          "word": "マーマレード",
+          "meaning": "柑橘類の果肉と皮で作ったジャム。",
+          "level": "3",
+          "filename": "general1111-word-73388.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 73417,
+          "reading": "うぇっじひーる",
+          "word": "ウェッジヒール",
+          "meaning": "靴底がそのまま高くなったヒール。",
+          "level": "3",
+          "filename": "general1111-word-73417.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 73428,
+          "reading": "かくてるどれす",
+          "word": "カクテルドレス",
+          "meaning": "公式の場に適したドレス。",
+          "level": "3",
+          "filename": "general1111-word-73428.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet09",
+      "tiles": [
+        {
+          "id": 73431,
+          "reading": "かーてんこーる",
+          "word": "カーテンコール",
+          "meaning": "俳優あるいは出演者がコンサートや劇の終わりに観衆の拍手に感謝して現れること。",
+          "level": "3",
+          "filename": "general1111-word-73431.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 73434,
+          "reading": "がっしゅくじょ",
+          "word": "合宿所",
+          "meaning": "金を払う客に対して設備と食事を提供する個人の家。",
+          "level": "3",
+          "filename": "general1111-word-73434.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 73451,
+          "reading": "ごうりゅうてん",
+          "word": "合流点",
+          "meaning": "ものが結合するか、一緒に流れる場所（特に川）。",
+          "level": "3",
+          "filename": "general1111-word-73451.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 73581,
+          "reading": "じょうきたーびん",
+          "word": "蒸気タービン",
+          "meaning": "蒸気が回転翼に当たって回すタービン。",
+          "level": "3",
+          "filename": "general1111-word-73581.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 73658,
+          "reading": "ほっとちょこれーと",
+          "word": "ホットチョコレート",
+          "meaning": "ココア粉とミルクと砂糖から作られる飲料; 通常暖かくして飲む。",
+          "level": "3",
+          "filename": "general1111-word-73658.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 73669,
+          "reading": "でんぱぼうえんきょう",
+          "word": "電波望遠鏡",
+          "meaning": "地球外の源からのラジオ周波数の範囲にある電磁放射を拾い集める。",
+          "level": "3",
+          "filename": "general1111-word-73669.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 73673,
+          "reading": "いんぐりっしゅまふぃん",
+          "word": "イングリッシュマフィン",
+          "meaning": "フライパンで料理される丸い、ふくらんだマフィン; 通常、食べられる前に割られて、焼かれる。",
+          "level": "3",
+          "filename": "general1111-word-73673.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 73745,
+          "reading": "えい",
+          "word": "海鷂魚",
+          "meaning": "水平に平らな体と拡張した羽のような胸びれと下面の鰓を持つ軟骨魚類; ほとんどは胸びれを動かして泳ぐ。",
+          "level": "3",
+          "filename": "general1111-word-73745.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 73797,
+          "reading": "きか",
+          "word": "気化",
+          "meaning": "蒸気になる作用。",
+          "level": "3",
+          "filename": "general1111-word-73797.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 73870,
+          "reading": "さす",
+          "word": "砂州",
+          "meaning": "砂でできた州。",
+          "level": "3",
+          "filename": "general1111-word-73870.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 73903,
+          "reading": "じぐ",
+          "word": "ジグ",
+          "meaning": "ジグを踊るための4分の3拍子の音楽。",
+          "level": "3",
+          "filename": "general1111-word-73903.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 74004,
+          "reading": "とや",
+          "word": "鳥屋",
+          "meaning": "飼鳥類用の農舎。",
+          "level": "3",
+          "filename": "general1111-word-74004.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 74035,
+          "reading": "はぜ",
+          "word": "蝦虎魚",
+          "meaning": "沿岸性、または汽水性の小型の棘鰭類の魚で、大きな頭部と、吸盤に変形した腹びれのついた長くて先が細くなった体を持つ。",
+          "level": "3",
+          "filename": "general1111-word-74035.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 74044,
+          "reading": "はろ",
+          "word": "ハロ",
+          "meaning": "太陽や月の回りの光の輪。",
+          "level": "3",
+          "filename": "general1111-word-74044.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 74066,
+          "reading": "びく",
+          "word": "魚籠",
+          "meaning": "魚を保持するために釣り人によって使われた小枝のかご。",
+          "level": "3",
+          "filename": "general1111-word-74066.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 74097,
+          "reading": "べら",
+          "word": "遍羅",
+          "meaning": "肉質の唇と強力な歯を持つ主に熱帯性の海産魚; たいていは鮮やかな色をしている。",
+          "level": "3",
+          "filename": "general1111-word-74097.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet10",
+      "tiles": [
+        {
+          "id": 74175,
+          "reading": "あいさ",
+          "word": "秋沙",
+          "meaning": "端がぎざぎざの細長い鉤状のくちばしを持つ羽冠のある魚食性大型潜水ガモ。",
+          "level": "3",
+          "filename": "general1111-word-74175.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 74198,
+          "reading": "あとり",
+          "word": "花鶏",
+          "meaning": "ユーラシア産フィンチ。",
+          "level": "3",
+          "filename": "general1111-word-74198.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 74199,
+          "reading": "あにす",
+          "word": "アニス",
+          "meaning": "薬としてと料理と酒で使われた、カンゾウに風味をつけられた種。",
+          "level": "3",
+          "filename": "general1111-word-74199.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 74237,
+          "reading": "いしく",
+          "word": "石工",
+          "meaning": "石やれんがを扱う職人。",
+          "level": "3",
+          "filename": "general1111-word-74237.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 74333,
+          "reading": "えんむ",
+          "word": "煙霧",
+          "meaning": "地上近くの大気中に浮遊している水蒸気の水滴。",
+          "level": "3",
+          "filename": "general1111-word-74333.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 74353,
+          "reading": "おけや",
+          "word": "桶屋",
+          "meaning": "木の樽や桶を作ったり修理したりする職人。",
+          "level": "3",
+          "filename": "general1111-word-74353.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 74360,
+          "reading": "おしり",
+          "word": "御尻",
+          "meaning": "人間の体のうち、自分が上に座る肉付きのよい部分。",
+          "level": "3",
+          "filename": "general1111-word-74360.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 74378,
+          "reading": "おでい",
+          "word": "汚泥",
+          "meaning": "厚く堆積したきたない物。",
+          "level": "3",
+          "filename": "general1111-word-74378.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 74424,
+          "reading": "かかし",
+          "word": "案山子",
+          "meaning": "鳥を驚かして種から遠ざける人間の形をした物体。",
+          "level": "3",
+          "filename": "general1111-word-74424.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 74438,
+          "reading": "かこう",
+          "word": "佳肴",
+          "meaning": "特選食品とされるもの。",
+          "level": "3",
+          "filename": "general1111-word-74438.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 74485,
+          "reading": "かみつ",
+          "word": "花蜜",
+          "meaning": "受粉媒介者を引き付ける甘い液体状の分泌物。",
+          "level": "3",
+          "filename": "general1111-word-74485.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 74779,
+          "reading": "こぷら",
+          "word": "コプラ",
+          "meaning": "油を抽出されるココヤシの果肉を乾燥させたもの。",
+          "level": "3",
+          "filename": "general1111-word-74779.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 74784,
+          "reading": "こやみ",
+          "word": "小やみ",
+          "meaning": "穏やかな天候の時期。",
+          "level": "3",
+          "filename": "general1111-word-74784.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 74792,
+          "reading": "こんが",
+          "word": "コンガ",
+          "meaning": "コンガを踊るための音楽。",
+          "level": "3",
+          "filename": "general1111-word-74792.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 74817,
+          "reading": "さいう",
+          "word": "細雨",
+          "meaning": "非常に軽い降雨; 霧より強いが、にわか雨より弱い。",
+          "level": "3",
+          "filename": "general1111-word-74817.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 74832,
+          "reading": "さかん",
+          "word": "左官",
+          "meaning": "しっくいの塗装職人。",
+          "level": "3",
+          "filename": "general1111-word-74832.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet11",
+      "tiles": [
+        {
+          "id": 74833,
+          "reading": "さきん",
+          "word": "砂金",
+          "meaning": "砂鉱床採鉱で得られた金のかけらや小片（時に小さな塊）。",
+          "level": "3",
+          "filename": "general1111-word-74833.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 74907,
+          "reading": "しせん",
+          "word": "支川",
+          "meaning": "本流に流れ込む支流。",
+          "level": "3",
+          "filename": "general1111-word-74907.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 74912,
+          "reading": "しっく",
+          "word": "疾苦",
+          "meaning": "精神的または肉体的な苦痛。",
+          "level": "3",
+          "filename": "general1111-word-74912.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 75004,
+          "reading": "じしん",
+          "word": "磁針",
+          "meaning": "ほとんど摩擦なく、磁気コンパスので浮遊した細長い磁石; 地球の磁極の方向を示すのに用いる。",
+          "level": "3",
+          "filename": "general1111-word-75004.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 75042,
+          "reading": "すたあ",
+          "word": "スタア",
+          "meaning": "夜、地球から（光の点として）見られる天体。",
+          "level": "3",
+          "filename": "general1111-word-75042.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 75092,
+          "reading": "せんぷ",
+          "word": "宣布",
+          "meaning": "正式な公式声明。",
+          "level": "3",
+          "filename": "general1111-word-75092.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 75096,
+          "reading": "ぜんし",
+          "word": "前翅",
+          "meaning": "4枚の羽根のある昆虫の対の前翅の片方。",
+          "level": "3",
+          "filename": "general1111-word-75096.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 75119,
+          "reading": "そぞう",
+          "word": "塑造",
+          "meaning": "完成した作品がコピーできるワックスまたは粘土の予備的な彫刻。",
+          "level": "3",
+          "filename": "general1111-word-75119.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 75172,
+          "reading": "たまや",
+          "word": "玉屋",
+          "meaning": "宝石を作る人。",
+          "level": "3",
+          "filename": "general1111-word-75172.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 75201,
+          "reading": "だっく",
+          "word": "ダック",
+          "meaning": "野生または飼い慣らされた遊泳性の小さな鳥で、たいてい平たい体に短い肢を持ち、肢には水掻きが付いていて、くちばしは幅広い。",
+          "level": "3",
+          "filename": "general1111-word-75201.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 75365,
+          "reading": "とるて",
+          "word": "トルテ",
+          "meaning": "通常クリームと果実またはナッツで覆われたコクのあるケーキ; オーストリア産。",
+          "level": "3",
+          "filename": "general1111-word-75365.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 75435,
+          "reading": "ねだい",
+          "word": "寝台",
+          "meaning": "家具の1つで眠るための場所を提供する。",
+          "level": "3",
+          "filename": "general1111-word-75435.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 75436,
+          "reading": "ねっぱ",
+          "word": "熱波",
+          "meaning": "異常に暑い天気の波。",
+          "level": "3",
+          "filename": "general1111-word-75436.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 75460,
+          "reading": "はくう",
+          "word": "白雨",
+          "meaning": "短い時間の降雨。",
+          "level": "3",
+          "filename": "general1111-word-75460.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 75488,
+          "reading": "はりめ",
+          "word": "針目",
+          "meaning": "編み物、かぎ編み、刺繍、または縫い物で作られる輪、または結び目。",
+          "level": "3",
+          "filename": "general1111-word-75488.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 75496,
+          "reading": "ばくふ",
+          "word": "瀑布",
+          "meaning": "川の水の急な落下。",
+          "level": "3",
+          "filename": "general1111-word-75496.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet12",
+      "tiles": [
+        {
+          "id": 75534,
+          "reading": "ひすい",
+          "word": "翡翠",
+          "meaning": "強い光沢を帯びる半貴石の宝石; 通例緑色だが、時に白色を帯びる; ジェード輝石または軟玉から成る。",
+          "level": "3",
+          "filename": "general1111-word-75534.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 75537,
+          "reading": "ひでり",
+          "word": "日照り",
+          "meaning": "降雨量の不足。",
+          "level": "3",
+          "filename": "general1111-word-75537.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 75645,
+          "reading": "ぷらう",
+          "word": "プラウ",
+          "meaning": "土地を耕して、植え付ける前に溝を切るための一つ以上の重い刃のある農具。",
+          "level": "3",
+          "filename": "general1111-word-75645.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 75664,
+          "reading": "へんな",
+          "word": "ヘンナ",
+          "meaning": "特に毛染め用に用いられる赤みがかった茶色の染料。",
+          "level": "3",
+          "filename": "general1111-word-75664.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 75679,
+          "reading": "ぺこー",
+          "word": "ペコー",
+          "meaning": "上等な紅茶; インド・スリランカ・ジャワ産。",
+          "level": "3",
+          "filename": "general1111-word-75679.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 75761,
+          "reading": "みさご",
+          "word": "雎鳩",
+          "meaning": "魚を主食とし、何年も持つ大きな巣をしばしば作る世界中にいる大型で無害のタカ。",
+          "level": "3",
+          "filename": "general1111-word-75761.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 75773,
+          "reading": "みみず",
+          "word": "蚯蚓",
+          "meaning": "穴居性で土壌を空気にさらすのに役立つ地上性ぜん虫; しばしば地面が冷えていたり、濡れているときに表面に出る; 釣り人によって餌として使用される。",
+          "level": "3",
+          "filename": "general1111-word-75773.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 75782,
+          "reading": "むかか",
+          "word": "無花果",
+          "meaning": "食用に適する果実のために広く栽培される地中海の高木。",
+          "level": "3",
+          "filename": "general1111-word-75782.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 75783,
+          "reading": "むぎこ",
+          "word": "麦粉",
+          "meaning": "小麦から作った穀粉。",
+          "level": "3",
+          "filename": "general1111-word-75783.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 75896,
+          "reading": "よこぎ",
+          "word": "横木",
+          "meaning": "彼らがエクササイズを行う際の、体操選手への補助として用いられる水平ロッド。",
+          "level": "3",
+          "filename": "general1111-word-75896.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 75900,
+          "reading": "よたか",
+          "word": "怪鴟",
+          "meaning": "斑点のある灰色がかった茶色の羽毛と大きな眼を持つ主に薄明薄暮性または夜行性の非スズメ類の鳥; 昆虫を食とする。",
+          "level": "3",
+          "filename": "general1111-word-75900.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 75915,
+          "reading": "らっこ",
+          "word": "猟虎",
+          "meaning": "非常に厚いこげ茶色の毛衣を持つ北太平洋産の大型のカワウソ。",
+          "level": "3",
+          "filename": "general1111-word-75915.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 75972,
+          "reading": "ろけん",
+          "word": "路肩",
+          "meaning": "道の側に沿った土地（通常舗装してない）の狭い端。",
+          "level": "3",
+          "filename": "general1111-word-75972.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 75986,
+          "reading": "わぴち",
+          "word": "ワピチ",
+          "meaning": "非常に多く枝分かれした大きな枝角を有する北米産の大鹿。",
+          "level": "3",
+          "filename": "general1111-word-75986.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 76004,
+          "reading": "あかちゃ",
+          "word": "赤茶",
+          "meaning": "赤味がかった茶色の色合い。",
+          "level": "3",
+          "filename": "general1111-word-76004.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 76016,
+          "reading": "あくてん",
+          "word": "悪天",
+          "meaning": "戸外での活動には不向きな天候。",
+          "level": "3",
+          "filename": "general1111-word-76016.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet13",
+      "tiles": [
+        {
+          "id": 76051,
+          "reading": "あなぐま",
+          "word": "穴熊",
+          "meaning": "強い爪のある丈夫な肉食性の穿孔哺乳類; 北半球に広く分布する。",
+          "level": "3",
+          "filename": "general1111-word-76051.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 76123,
+          "reading": "いぐるー",
+          "word": "イグルー",
+          "meaning": "エスキモーの小屋; 通例（芝土または雪の）ブロックでドーム型に建てられる。",
+          "level": "3",
+          "filename": "general1111-word-76123.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 76182,
+          "reading": "いりあい",
+          "word": "入相",
+          "meaning": "太陽が地平線の下に沈み始める夕方の時刻。",
+          "level": "3",
+          "filename": "general1111-word-76182.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 76250,
+          "reading": "うすちゃ",
+          "word": "薄茶",
+          "meaning": "軽いが、飽和していない茶色。",
+          "level": "3",
+          "filename": "general1111-word-76250.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 76254,
+          "reading": "うたたね",
+          "word": "転寝",
+          "meaning": "浅い断続的な睡眠。",
+          "level": "3",
+          "filename": "general1111-word-76254.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 76381,
+          "reading": "おおばこ",
+          "word": "大葉子",
+          "meaning": "シャゼンソウ属の多数の植物の総称; 非常に小さな花の楕円葉と小さな穂があるほとんどが小さな道端または玄関先の庭雑草; 種子が薬剤に使われるものもある。",
+          "level": "3",
+          "filename": "general1111-word-76381.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 76429,
+          "reading": "おはりこ",
+          "word": "御針子",
+          "meaning": "服を作ったり直す人。",
+          "level": "3",
+          "filename": "general1111-word-76429.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 76473,
+          "reading": "かいそう",
+          "word": "海草",
+          "meaning": "海で育つ植物で、特に海草を意味する。",
+          "level": "3",
+          "filename": "general1111-word-76473.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 76521,
+          "reading": "かくぼう",
+          "word": "角帽",
+          "meaning": "頂部が平たい正方形で房のついた大学帽。",
+          "level": "3",
+          "filename": "general1111-word-76521.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 76569,
+          "reading": "かたくり",
+          "word": "片栗",
+          "meaning": "春に花が咲く多年生の森林地の植物; 広く栽培されている。",
+          "level": "3",
+          "filename": "general1111-word-76569.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 76577,
+          "reading": "かちゅう",
+          "word": "花柱",
+          "meaning": "雌しべの、子房と柱頭の間の、細長い部分。",
+          "level": "3",
+          "filename": "general1111-word-76577.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 76596,
+          "reading": "かなもの",
+          "word": "金物",
+          "meaning": "金属で作られた手段（ツールか道具）。",
+          "level": "3",
+          "filename": "general1111-word-76596.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 76608,
+          "reading": "かぽっく",
+          "word": "カポック",
+          "meaning": "カポックの木から取れる植物繊維; 詰め物や絶縁用に使用される。",
+          "level": "3",
+          "filename": "general1111-word-76608.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 76620,
+          "reading": "からかる",
+          "word": "カラカル",
+          "meaning": "北アフリカ・南アジアの砂漠に生息する。",
+          "level": "3",
+          "filename": "general1111-word-76620.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 76622,
+          "reading": "からざお",
+          "word": "殻竿",
+          "meaning": "一端にぶらぶらした棒の付いた手持ち道具でなる道具; 手動脱穀するのに使われる。",
+          "level": "3",
+          "filename": "general1111-word-76622.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 76623,
+          "reading": "からしな",
+          "word": "芥子菜",
+          "meaning": "調理された緑野菜として食べられる葉。",
+          "level": "3",
+          "filename": "general1111-word-76623.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet14",
+      "tiles": [
+        {
+          "id": 76635,
+          "reading": "かりごや",
+          "word": "仮小屋",
+          "meaning": "一時的な軍事の避難所。",
+          "level": "3",
+          "filename": "general1111-word-76635.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 76645,
+          "reading": "かるみあ",
+          "word": "カルミア",
+          "meaning": "カルミア属のどんな植物でも。",
+          "level": "3",
+          "filename": "general1111-word-76645.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 76650,
+          "reading": "かわせみ",
+          "word": "川蝉",
+          "meaning": "短い尾に長く鋭いくちばしを持ち、非スズメ類の大きな頭部を持つ鳥; 普通は羽冠が有り、明るい色をしている; 主に魚を主食にする。",
+          "level": "3",
+          "filename": "general1111-word-76650.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 76681,
+          "reading": "かんぞう",
+          "word": "甘草",
+          "meaning": "青い花と羽状の複葉を持つ地中海地方原産の根深いきめの粗い植物; 長く厚い甘い根のためにヨーロッパで広く耕作される。",
+          "level": "3",
+          "filename": "general1111-word-76681.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 76726,
+          "reading": "がうちょ",
+          "word": "ガウチョ",
+          "meaning": "南米大草原のカウボーイ。",
+          "level": "3",
+          "filename": "general1111-word-76726.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 76756,
+          "reading": "きいちご",
+          "word": "木苺",
+          "meaning": "たいてい赤色、時に黒や黄色の果実をつける木質のイバラで、果実は熟すと花床から離れ、ブラックベリーより丸く小さい。",
+          "level": "3",
+          "filename": "general1111-word-76756.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 76823,
+          "reading": "きりいし",
+          "word": "切石",
+          "meaning": "建築用の四角い切り出した石のブロック。",
+          "level": "3",
+          "filename": "general1111-word-76823.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 76862,
+          "reading": "ぎゃざー",
+          "word": "ギャザー",
+          "meaning": "縫い線において糸をきつく引っ張ることで作られる折り目またはしわで成る縫製。",
+          "level": "3",
+          "filename": "general1111-word-76862.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 76863,
+          "reading": "ぎゃもん",
+          "word": "ギャモン",
+          "meaning": "豚のもも肉（一般に薫製にする）。",
+          "level": "3",
+          "filename": "general1111-word-76863.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 76878,
+          "reading": "くあっが",
+          "word": "クアッガ",
+          "meaning": "シマウマに類似していた南アフリカの哺乳動物; 19世紀後半以来絶滅。",
+          "level": "3",
+          "filename": "general1111-word-76878.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 76886,
+          "reading": "くじゃく",
+          "word": "孔雀",
+          "meaning": "しばしば鑑賞鳥として飼育される、非常に大型で陸生の東南アジア産のキジ。",
+          "level": "3",
+          "filename": "general1111-word-76886.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 76905,
+          "reading": "くつずみ",
+          "word": "靴墨",
+          "meaning": "靴の表面に光沢を与え、保護するのに用いられる物質。",
+          "level": "3",
+          "filename": "general1111-word-76905.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 76908,
+          "reading": "くつべら",
+          "word": "靴箆",
+          "meaning": "足を靴に簡単に入れるために使われる考案物。",
+          "level": "3",
+          "filename": "general1111-word-76908.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 76925,
+          "reading": "くりふね",
+          "word": "刳船",
+          "meaning": "大木を彫り抜き形を作ったカヌー。",
+          "level": "3",
+          "filename": "general1111-word-76925.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 76935,
+          "reading": "くろちゃ",
+          "word": "黒茶",
+          "meaning": "ミディアムブラウンからダークブラウン色。",
+          "level": "3",
+          "filename": "general1111-word-76935.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 76949,
+          "reading": "ぐっぴー",
+          "word": "グッピー",
+          "meaning": "南米や西インド諸国産の小さな淡水魚; しばしば水族館で飼育される。",
+          "level": "3",
+          "filename": "general1111-word-76949.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet15",
+      "tiles": [
+        {
+          "id": 77001,
+          "reading": "けむだし",
+          "word": "煙出し",
+          "meaning": "火からの煙が建物の壁または屋根を通じて運ばれる道を提供する縦の溝。",
+          "level": "3",
+          "filename": "general1111-word-77001.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 77107,
+          "reading": "こおろぎ",
+          "word": "蟋蟀",
+          "meaning": "昆虫を跳ねさせる; 雄は前翅を擦り合わせてチュッチュッ鳴く。",
+          "level": "3",
+          "filename": "general1111-word-77107.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 77141,
+          "reading": "こりうす",
+          "word": "コリウス",
+          "meaning": "コリウス属のヨーロッパの熱帯植物の総称で、様々な色の装飾的な葉と青い花の穂状花序を持つ。",
+          "level": "3",
+          "filename": "general1111-word-77141.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 77145,
+          "reading": "ころもで",
+          "word": "衣手",
+          "meaning": "アームホールで取り付けられ腕を覆う衣服の部分。",
+          "level": "3",
+          "filename": "general1111-word-77145.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 77150,
+          "reading": "こんごう",
+          "word": "金剛",
+          "meaning": "宝石として価値のあるとても固い自然のままの結晶炭素。",
+          "level": "3",
+          "filename": "general1111-word-77150.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 77157,
+          "reading": "こんぱく",
+          "word": "魂魄",
+          "meaning": "人の非肉体的部分; 個人の生活の原動力となる。",
+          "level": "3",
+          "filename": "general1111-word-77157.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 77159,
+          "reading": "こんふぃ",
+          "word": "コンフィ",
+          "meaning": "それ自身の脂肪でゆっくり料理された1片の肉（特にアヒル）。",
+          "level": "3",
+          "filename": "general1111-word-77159.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 77188,
+          "reading": "ごったに",
+          "word": "ごった煮",
+          "meaning": "肉・野菜で作ったシチュー（または濃いスープ）。",
+          "level": "3",
+          "filename": "general1111-word-77188.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 77197,
+          "reading": "ごむのき",
+          "word": "ゴムの木",
+          "meaning": "ラテックスを産出する南米の高木の小さな属。",
+          "level": "3",
+          "filename": "general1111-word-77197.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 77218,
+          "reading": "さいほん",
+          "word": "サイホン",
+          "meaning": "容器内の液体から容器外の下の方までのびる管で、気圧によって液体がチューブの中を進む。",
+          "level": "3",
+          "filename": "general1111-word-77218.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 77253,
+          "reading": "さむぞら",
+          "word": "寒空",
+          "meaning": "異常に寒い天気の期間。",
+          "level": "3",
+          "filename": "general1111-word-77253.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 77266,
+          "reading": "さんたん",
+          "word": "サンタン",
+          "meaning": "太陽光線にさらされることによって皮膚が褐色化すること。",
+          "level": "3",
+          "filename": "general1111-word-77266.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 77300,
+          "reading": "しかにく",
+          "word": "鹿肉",
+          "meaning": "食肉用のシカの肉。",
+          "level": "3",
+          "filename": "general1111-word-77300.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 77331,
+          "reading": "したぬり",
+          "word": "下塗り",
+          "meaning": "表面に塗られる、塗料または陶砂による、最初または予備のコーティング。",
+          "level": "3",
+          "filename": "general1111-word-77331.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 77339,
+          "reading": "しだしや",
+          "word": "仕出し屋",
+          "meaning": "（パーティーなどのために）料理やサービスを提供する人。",
+          "level": "3",
+          "filename": "general1111-word-77339.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 77342,
+          "reading": "しちゅう",
+          "word": "仔虫",
+          "meaning": "卵からかえり、基本的に親と似ていないで変身しなくてはならないほとんどの無脊椎動物、両生類と魚の未成熟の自生形体。",
+          "level": "3",
+          "filename": "general1111-word-77342.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet16",
+      "tiles": [
+        {
+          "id": 77350,
+          "reading": "しとらす",
+          "word": "シトラス",
+          "meaning": "厚い皮と果汁の多い果実を持つ柑橘類の多くの果物のどれか; 暖かい地域で栽培されている。",
+          "level": "3",
+          "filename": "general1111-word-77350.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 77364,
+          "reading": "しむーん",
+          "word": "シムーン",
+          "meaning": "アラビアや北アフリカの砂漠で吹く激しい砂まじりの熱風。",
+          "level": "3",
+          "filename": "general1111-word-77364.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 77504,
+          "reading": "しんばる",
+          "word": "シンバル",
+          "meaning": "凹面の真鍮ディスクから成る打楽器; ドラムスティックで打たれるか、または2が一緒に打たれるとき、大きいすさまじい音を出す。",
+          "level": "3",
+          "filename": "general1111-word-77504.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 77511,
+          "reading": "しんぼう",
+          "word": "心棒",
+          "meaning": "車が回転するシャフト。",
+          "level": "3",
+          "filename": "general1111-word-77511.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 77551,
+          "reading": "じゅえき",
+          "word": "樹液",
+          "meaning": "植物の維管束系を通して循環する糖、塩、鉱物の水溶液。",
+          "level": "3",
+          "filename": "general1111-word-77551.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 77555,
+          "reading": "じゅごん",
+          "word": "儒艮",
+          "meaning": "東アフリカからオーストラリアまで見られる海牛類の牙のある哺乳類; 平らな尾は二葉である。",
+          "level": "3",
+          "filename": "general1111-word-77555.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 77562,
+          "reading": "じゅーと",
+          "word": "ジュート",
+          "meaning": "ロープや袋を作るのに用いられる植物繊維。",
+          "level": "3",
+          "filename": "general1111-word-77562.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 77564,
+          "reading": "じょうい",
+          "word": "上衣",
+          "meaning": "袖を持ち肩から下に向けて体を覆う外側の衣服; 屋外で着られる。",
+          "level": "3",
+          "filename": "general1111-word-77564.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 77574,
+          "reading": "じょうろ",
+          "word": "如雨露",
+          "meaning": "持ち手と穴のあいた注ぎ口がついた容器; 植物に水をやるのに使われる。",
+          "level": "3",
+          "filename": "general1111-word-77574.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 77575,
+          "reading": "じょがー",
+          "word": "ジョガー",
+          "meaning": "（通常、運動のために）一定のゆっくりしたペースで走る人。",
+          "level": "3",
+          "filename": "general1111-word-77575.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 77639,
+          "reading": "すずがも",
+          "word": "鈴鴨",
+          "meaning": "大型スズガモ類で、北米に産し、雄の頭は緑がかった玉虫色に光り輝く。",
+          "level": "3",
+          "filename": "general1111-word-77639.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 77652,
+          "reading": "すなのみ",
+          "word": "砂蚤",
+          "meaning": "小型の熱帯性ノミ; 受精した雌は、人間を含む寄主の皮膚の下に潜伏する。",
+          "level": "3",
+          "filename": "general1111-word-77652.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 77733,
+          "reading": "せったー",
+          "word": "セッター",
+          "meaning": "以前は、猟鳥を発見するのと同時にしゃがむ訓練をされたが、現在はその場所を示すよう訓練をされた長い毛の犬。",
+          "level": "3",
+          "filename": "general1111-word-77733.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 77741,
+          "reading": "せもりな",
+          "word": "セモリナ",
+          "meaning": "パスタに使われるデュラム小麦（または他の硬質小麦）を製粉したもの。",
+          "level": "3",
+          "filename": "general1111-word-77741.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 77761,
+          "reading": "せんてい",
+          "word": "剪定",
+          "meaning": "植物を刈り込む行為。",
+          "level": "3",
+          "filename": "general1111-word-77761.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 77768,
+          "reading": "せんばん",
+          "word": "旋盤",
+          "meaning": "金属または木を成形するための工作機械; 加工品が固定した道具に対し水平軸の周りを回る。",
+          "level": "3",
+          "filename": "general1111-word-77768.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet17",
+      "tiles": [
+        {
+          "id": 77793,
+          "reading": "そううん",
+          "word": "層雲",
+          "meaning": "大きく暗く低い雲。",
+          "level": "3",
+          "filename": "general1111-word-77793.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 77806,
+          "reading": "そうじふ",
+          "word": "掃除婦",
+          "meaning": "家事をするために雇われた人間の女性。",
+          "level": "3",
+          "filename": "general1111-word-77806.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 77863,
+          "reading": "ぞうむし",
+          "word": "象虫",
+          "meaning": "植物や植物製品を主食にするほとんどが小型甲虫のいくつかの科の総称; 特にゾウムシとマメゾウムシ。",
+          "level": "3",
+          "filename": "general1111-word-77863.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 77926,
+          "reading": "たぬきも",
+          "word": "狸藻",
+          "meaning": "タヌキモ属の多くの水性食虫植物の総称で、そのうちある種のものは微小な水性生物を罠にかけるために葉が小さな壺形の嚢に変わっている。",
+          "level": "3",
+          "filename": "general1111-word-77926.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 77971,
+          "reading": "たーきー",
+          "word": "ターキー",
+          "meaning": "扇形の尾を持つ大型キジ科の鳥; 食用に広く家畜化されている。",
+          "level": "3",
+          "filename": "general1111-word-77971.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 77977,
+          "reading": "だいずゆ",
+          "word": "大豆油",
+          "meaning": "大豆からとった油。",
+          "level": "3",
+          "filename": "general1111-word-77977.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 78018,
+          "reading": "ちゃづつ",
+          "word": "茶筒",
+          "meaning": "茶を入れておくための缶。",
+          "level": "3",
+          "filename": "general1111-word-78018.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 78022,
+          "reading": "ちゅうそ",
+          "word": "柱礎",
+          "meaning": "（柱や彫像のための）建築上の支柱または土台。",
+          "level": "3",
+          "filename": "general1111-word-78022.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 78033,
+          "reading": "ちょうな",
+          "word": "手斧",
+          "meaning": "木を切り、形成するのに使用される刃の道具。",
+          "level": "3",
+          "filename": "general1111-word-78033.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 78047,
+          "reading": "つぃたー",
+          "word": "ツィター",
+          "meaning": "弦が平らな共鳴板上に伸びた、音楽の弦楽器; 平らにして置き、ピックや指で演奏される。",
+          "level": "3",
+          "filename": "general1111-word-78047.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 78079,
+          "reading": "つちぶた",
+          "word": "土豚",
+          "meaning": "シロアリを主食とするアフリカの草原地帯にすむ夜行性・穴居性の哺乳動物; 管歯目の唯一の現存代表種。",
+          "level": "3",
+          "filename": "general1111-word-78079.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 78111,
+          "reading": "てぃあら",
+          "word": "ティアラ",
+          "meaning": "公式の席で女性が着ける、宝石で飾られた頭飾り。",
+          "level": "3",
+          "filename": "general1111-word-78111.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 78146,
+          "reading": "てつぼう",
+          "word": "鉄帽",
+          "meaning": "頭部を保護する硬質の被り物で打撃に耐える。",
+          "level": "3",
+          "filename": "general1111-word-78146.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 78161,
+          "reading": "てんきず",
+          "word": "天気図",
+          "meaning": "一定の時刻に広い地域にかけての主な気象要素を表した図。",
+          "level": "3",
+          "filename": "general1111-word-78161.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 78164,
+          "reading": "てんさい",
+          "word": "甜菜",
+          "meaning": "一般的なビートの種類で、白くて甘い根からは砂糖が得られる。",
+          "level": "3",
+          "filename": "general1111-word-78164.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 78260,
+          "reading": "となかい",
+          "word": "馴鹿",
+          "meaning": "雄雌両性とも大きな枝角を持つ北極鹿; ユーラシアではトナカイ、北米ではカリブーと呼ばれる。",
+          "level": "3",
+          "filename": "general1111-word-78260.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet18",
+      "tiles": [
+        {
+          "id": 78263,
+          "reading": "とびうお",
+          "word": "飛魚",
+          "meaning": "熱帯の海産魚で、短い滑空飛行用に肥大した翼状のヒレを持つ。",
+          "level": "3",
+          "filename": "general1111-word-78263.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 78264,
+          "reading": "とびむし",
+          "word": "跳虫",
+          "meaning": "多数の微小な無翅の原始的昆虫で、ほとんど絶え間なく跳躍する性質を可能にする特別な腹肢を持つ; 有機堆積物が豊かな土壌中、または、雪面か水の表面で見つかる。",
+          "level": "3",
+          "filename": "general1111-word-78264.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 78267,
+          "reading": "とまりぎ",
+          "word": "とまり木",
+          "meaning": "休息場所として役立つ枝か棒から成っているサポート（特に鳥のために）。",
+          "level": "3",
+          "filename": "general1111-word-78267.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 78278,
+          "reading": "とりかご",
+          "word": "鳥篭",
+          "meaning": "鳥が飼われるケージ。",
+          "level": "3",
+          "filename": "general1111-word-78278.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 78300,
+          "reading": "とんかち",
+          "word": "トンカチ",
+          "meaning": "重く頑丈な頭と柄のついた手道具; 叩いて衝撃力を与えるのに用いる。",
+          "level": "3",
+          "filename": "general1111-word-78300.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 78332,
+          "reading": "どるまん",
+          "word": "ドルマン",
+          "meaning": "ドルマン袖のついた女性用の外套。",
+          "level": "3",
+          "filename": "general1111-word-78332.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 78369,
+          "reading": "なたまめ",
+          "word": "鉈豆",
+          "meaning": "通常赤または褐色の豆が入った長い莢をつける、旧世界の熱帯の巻きつき植物; 東洋で食物として長く栽培されている。",
+          "level": "3",
+          "filename": "general1111-word-78369.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 78375,
+          "reading": "なまにく",
+          "word": "生肉",
+          "meaning": "料理していない肉。",
+          "level": "3",
+          "filename": "general1111-word-78375.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 78400,
+          "reading": "にじます",
+          "word": "虹鱒",
+          "meaning": "海水から淡水に移動する太平洋産のマスの肉。",
+          "level": "3",
+          "filename": "general1111-word-78400.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 78409,
+          "reading": "にゅうし",
+          "word": "乳歯",
+          "meaning": "幼若哺乳類（子供たちの20本のうちの1本）の最初の一時的な歯のうちの1つ。",
+          "level": "3",
+          "filename": "general1111-word-78409.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 78422,
+          "reading": "ぬかるみ",
+          "word": "泥濘",
+          "meaning": "水または解けかけの雪の深い柔らかい泥。",
+          "level": "3",
+          "filename": "general1111-word-78422.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 78471,
+          "reading": "はいぎょ",
+          "word": "肺魚",
+          "meaning": "細長い体に対の肉鰭を持つ空気を吸う魚; ある特定の種は、干ばつに生き残るために粘液で裏側を覆った泥のカバーを作る。",
+          "level": "3",
+          "filename": "general1111-word-78471.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 78501,
+          "reading": "はくめい",
+          "word": "薄明",
+          "meaning": "太陽が地平線の下にあるのに光線が地上の大気に反射して空から散光していること。",
+          "level": "3",
+          "filename": "general1111-word-78501.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 78504,
+          "reading": "はこふぐ",
+          "word": "箱河豚",
+          "meaning": "多数の小さな熱帯魚で、体と頭が骨板に覆われている。",
+          "level": "3",
+          "filename": "general1111-word-78504.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 78511,
+          "reading": "はたうち",
+          "word": "畑打ち",
+          "meaning": "鋤で土地を耕すこと。",
+          "level": "3",
+          "filename": "general1111-word-78511.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 78521,
+          "reading": "はどっく",
+          "word": "ハドック",
+          "meaning": "大西洋の両側で重要な食用魚; タラの同類だが、たいていはより小さい。",
+          "level": "3",
+          "filename": "general1111-word-78521.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet19",
+      "tiles": [
+        {
+          "id": 78523,
+          "reading": "はなうた",
+          "word": "鼻唄",
+          "meaning": "口を閉じて歌う行為。",
+          "level": "3",
+          "filename": "general1111-word-78523.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 78526,
+          "reading": "はなごけ",
+          "word": "花苔",
+          "meaning": "トナカイとカリブーの主要な食物を構成していて、時々人間によって食べられている北極と少し北の温暖な地方の直生の灰色がかった枝分かれしている苔。",
+          "level": "3",
+          "filename": "general1111-word-78526.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 78568,
+          "reading": "ばいせん",
+          "word": "焙煎",
+          "meaning": "オーブンの乾式加熱で（肉を）調理すること（通常、油脂を加える）。",
+          "level": "3",
+          "filename": "general1111-word-78568.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 78584,
+          "reading": "ばすーん",
+          "word": "バスーン",
+          "meaning": "ダブルリードの楽器; オーボエ科のテノール。",
+          "level": "3",
+          "filename": "general1111-word-78584.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 78611,
+          "reading": "ぱばーぬ",
+          "word": "パバーヌ",
+          "meaning": "パヴァーヌを踊るために作られた音楽。",
+          "level": "3",
+          "filename": "general1111-word-78611.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 78623,
+          "reading": "ひきつり",
+          "word": "引きつり",
+          "meaning": "痛みを伴う、無意識のうちの筋肉の収縮。",
+          "level": "3",
+          "filename": "general1111-word-78623.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 78663,
+          "reading": "ひびやき",
+          "word": "罅焼き",
+          "meaning": "表面にひびわれの網目模様のついた光沢のある陶磁器。",
+          "level": "3",
+          "filename": "general1111-word-78663.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 78675,
+          "reading": "ひらきど",
+          "word": "開き戸",
+          "meaning": "部屋または建物または車の入り口を閉鎖するだろう揺れるかまたは滑っている柵。",
+          "level": "3",
+          "filename": "general1111-word-78675.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 78700,
+          "reading": "びるだー",
+          "word": "ビルダー",
+          "meaning": "（ビルなどの）建物建設を請負い、工事を監督する人。",
+          "level": "3",
+          "filename": "general1111-word-78700.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 78704,
+          "reading": "びんなが",
+          "word": "鬢長",
+          "meaning": "極上の白い肉をもつ比較的小さなマグロ; 缶詰マグロの重要な材料。",
+          "level": "3",
+          "filename": "general1111-word-78704.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 78777,
+          "reading": "ふせかご",
+          "word": "伏せ籠",
+          "meaning": "鳥や動物を入れておくものでワイヤや金属製の棒でできている。",
+          "level": "3",
+          "filename": "general1111-word-78777.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 78791,
+          "reading": "ふみいた",
+          "word": "踏み板",
+          "meaning": "階段を昇降する時に足を休ませる場所として作られた支持物。",
+          "level": "3",
+          "filename": "general1111-word-78791.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 78806,
+          "reading": "ふんしん",
+          "word": "分針",
+          "meaning": "分を指し示す。",
+          "level": "3",
+          "filename": "general1111-word-78806.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 78883,
+          "reading": "べいばく",
+          "word": "米麦",
+          "meaning": "人間の食物のために調理され供されることのできるとうもろこしの実。",
+          "level": "3",
+          "filename": "general1111-word-78883.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 78888,
+          "reading": "べにざけ",
+          "word": "紅鮭",
+          "meaning": "太平洋沿岸と河に棲むサケの、脂っぽい赤い肉。",
+          "level": "3",
+          "filename": "general1111-word-78888.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 78889,
+          "reading": "べにばな",
+          "word": "紅花",
+          "meaning": "ユーラシア産のアザミに似た植物で、赤またはオレンジ色の頭花と、高価な油がとれる種が目的で広く栽培される。",
+          "level": "3",
+          "filename": "general1111-word-78889.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet20",
+      "tiles": [
+        {
+          "id": 78906,
+          "reading": "ぺみかん",
+          "word": "ペミカン",
+          "meaning": "きめ細かくすりつぶして溶けた脂肪を混ぜた、低カロリーの乾燥肉; 特に北米のインディアンによって使用される。",
+          "level": "3",
+          "filename": "general1111-word-78906.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 78908,
+          "reading": "ぺんきや",
+          "word": "ペンキ屋",
+          "meaning": "物にペンキを塗るために雇われている職人。",
+          "level": "3",
+          "filename": "general1111-word-78908.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 78916,
+          "reading": "ほうきぎ",
+          "word": "箒木",
+          "meaning": "ユーラシア産の密に枝分かれした植物; 葉は秋に紫赤色になる。",
+          "level": "3",
+          "filename": "general1111-word-78916.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 78943,
+          "reading": "ほうらん",
+          "word": "抱卵",
+          "meaning": "体の温かさによって卵をかえすために卵の上に座ること。",
+          "level": "3",
+          "filename": "general1111-word-78943.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 78948,
+          "reading": "ほこうき",
+          "word": "歩行器",
+          "meaning": "キャスターまたはホイールを囲んでいるフレームワーク; 赤ちゃんが歩くことを学ぶこと助ける。",
+          "level": "3",
+          "filename": "general1111-word-78948.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 78953,
+          "reading": "ほしにく",
+          "word": "干し肉",
+          "meaning": "細い切れに切られて、日なたで乾燥した肉（特に牛肉）。",
+          "level": "3",
+          "filename": "general1111-word-78953.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 78983,
+          "reading": "ぼうじま",
+          "word": "棒縞",
+          "meaning": "軍隊の階級と勤務を表す袖につけるV字形のバッジ。",
+          "level": "3",
+          "filename": "general1111-word-78983.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 78987,
+          "reading": "ぼうふり",
+          "word": "棒振り",
+          "meaning": "楽団を指揮する人。",
+          "level": "3",
+          "filename": "general1111-word-78987.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 78998,
+          "reading": "ぼでぃす",
+          "word": "ボディス",
+          "meaning": "ウェストより上に着るドレスの部分。",
+          "level": "3",
+          "filename": "general1111-word-78998.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 79012,
+          "reading": "ぽりっじ",
+          "word": "ポリッジ",
+          "meaning": "どろっとするまで、水またはミルクでオートミールまたは他の食事または豆類を沸騰させることによって作られる柔らかい食物。",
+          "level": "3",
+          "filename": "general1111-word-79012.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 79013,
+          "reading": "ぽるちこ",
+          "word": "ポルチコ",
+          "meaning": "屋根がついた、しばしば円柱のある部分で構成される、建物の玄関または入り口。",
+          "level": "3",
+          "filename": "general1111-word-79013.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 79025,
+          "reading": "まきひげ",
+          "word": "巻き鬚",
+          "meaning": "いくつかのつる性植物が身を支えるために物にからめる、細長い茎状の構造物。",
+          "level": "3",
+          "filename": "general1111-word-79025.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 79066,
+          "reading": "まめるい",
+          "word": "豆類",
+          "meaning": "様々な、鞘植物の食用種子（エンドウ豆、インゲン豆またはレンズ豆など）。",
+          "level": "3",
+          "filename": "general1111-word-79066.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 79096,
+          "reading": "みずかき",
+          "word": "水掻き",
+          "meaning": "いくつの水生鳥と哺乳類のつま先をつないでいる膜。",
+          "level": "3",
+          "filename": "general1111-word-79096.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 79118,
+          "reading": "みつろう",
+          "word": "蜜蝋",
+          "meaning": "ミツバチが巣を作るために分泌する黄色または茶色の蝋。",
+          "level": "3",
+          "filename": "general1111-word-79118.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 79152,
+          "reading": "むろあじ",
+          "word": "室鯵",
+          "meaning": "小型の銀色の魚; ノバスコシアからブラジルにかけて。",
+          "level": "3",
+          "filename": "general1111-word-79152.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet21",
+      "tiles": [
+        {
+          "id": 79166,
+          "reading": "めかじき",
+          "word": "眼旗魚",
+          "meaning": "たいていステーキに供されるメカジキの肉。",
+          "level": "3",
+          "filename": "general1111-word-79166.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 79174,
+          "reading": "めりけん",
+          "word": "米利堅",
+          "meaning": "指を手のひらにぎゅっと握りしめた手（殴るためのように）。",
+          "level": "3",
+          "filename": "general1111-word-79174.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 79206,
+          "reading": "ものでぃ",
+          "word": "モノディ",
+          "meaning": "（たいてい伴奏つきで）1人で歌う音楽。",
+          "level": "3",
+          "filename": "general1111-word-79206.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 79223,
+          "reading": "やきあみ",
+          "word": "焼き網",
+          "meaning": "平行な金属棒の調理器具; 魚または肉をグリルで焼くのに用いられる。",
+          "level": "3",
+          "filename": "general1111-word-79223.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 79226,
+          "reading": "やきぐし",
+          "word": "焼き串",
+          "meaning": "肉を火の上に支えておくための串。",
+          "level": "3",
+          "filename": "general1111-word-79226.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 79248,
+          "reading": "やまなみ",
+          "word": "山脈",
+          "meaning": "連なった丘や山。",
+          "level": "3",
+          "filename": "general1111-word-79248.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 79270,
+          "reading": "ゆたんぽ",
+          "word": "湯湯婆",
+          "meaning": "湯で満たされており、ベッドや体の一部を暖かくする（通例ゴム製の）止め具のついた入れ物。",
+          "level": "3",
+          "filename": "general1111-word-79270.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 79275,
+          "reading": "ゆりのき",
+          "word": "百合木",
+          "meaning": "北米産の樹高の高い材木用高木で、チューリップの形をした緑がかった黄色の花とコーンに似た果実をつける; 特に家具製作に使われる柔らかい白い材がとれる。",
+          "level": "3",
+          "filename": "general1111-word-79275.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 79337,
+          "reading": "らいうん",
+          "word": "雷雲",
+          "meaning": "垂直方向に大きく広がる暗い雲で、電気を帯びている; 雷雨を伴う。",
+          "level": "3",
+          "filename": "general1111-word-79337.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 79356,
+          "reading": "らんうん",
+          "word": "乱雲",
+          "meaning": "雨を運ぶ暗灰色の雲。",
+          "level": "3",
+          "filename": "general1111-word-79356.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 79364,
+          "reading": "らんぱく",
+          "word": "卵白",
+          "meaning": "卵の白い部分; 栄養がある保護用のゼラチン状の物質で、卵黄の周囲にあり、主に、水に溶けるアルブミンから成る。",
+          "level": "3",
+          "filename": "general1111-word-79364.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 79388,
+          "reading": "りゅうさ",
+          "word": "流砂",
+          "meaning": "粘着性のない濡れた砂が詰まった穴で、物が下に吸い込まれる。",
+          "level": "3",
+          "filename": "general1111-word-79388.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 79536,
+          "reading": "あざみうま",
+          "word": "薊馬",
+          "meaning": "羽がある場合は細くやわらかい羽を持つ、様々な非常に小さい吸汁昆虫; これらは植物の樹液を常食とし、その多くが有害である。",
+          "level": "3",
+          "filename": "general1111-word-79536.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 79559,
+          "reading": "あとりうむ",
+          "word": "アトリウム",
+          "meaning": "建物の中央部分; 空に向かって開いている。",
+          "level": "3",
+          "filename": "general1111-word-79559.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 79572,
+          "reading": "あぶらかす",
+          "word": "油滓",
+          "meaning": "亜麻仁や綿の実や大豆などから油をとった後の固まり; 家畜の飼料に使う。",
+          "level": "3",
+          "filename": "general1111-word-79572.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 79574,
+          "reading": "あぶらむし",
+          "word": "油虫",
+          "meaning": "いろいろな小さな植物を吸っている昆虫のどれでも。",
+          "level": "3",
+          "filename": "general1111-word-79574.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet22",
+      "tiles": [
+        {
+          "id": 79582,
+          "reading": "あめじすと",
+          "word": "アメジスト",
+          "meaning": "透明で紫色の様々な石英; 宝石として用いられる。",
+          "level": "3",
+          "filename": "general1111-word-79582.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 79584,
+          "reading": "あらいぐま",
+          "word": "浣熊",
+          "meaning": "北米産アライグマ。",
+          "level": "3",
+          "filename": "general1111-word-79584.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 79585,
+          "reading": "あらいごし",
+          "word": "洗い越し",
+          "meaning": "渡れる川の中の浅い部分。",
+          "level": "3",
+          "filename": "general1111-word-79585.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 79604,
+          "reading": "あわだてき",
+          "word": "泡立て器",
+          "meaning": "ワイヤーのコイルが組み込まれたミキサー; 卵やクリームを泡立てるのに使われる。",
+          "level": "3",
+          "filename": "general1111-word-79604.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 79699,
+          "reading": "うきぶくろ",
+          "word": "浮き袋",
+          "meaning": "浮く材質で輪の形をした生命維持用具。",
+          "level": "3",
+          "filename": "general1111-word-79699.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 79702,
+          "reading": "うさぎごや",
+          "word": "うさぎ小屋",
+          "meaning": "うさぎ用の小屋。",
+          "level": "3",
+          "filename": "general1111-word-79702.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 79746,
+          "reading": "えいしょう",
+          "word": "詠唱",
+          "meaning": "単調に歌う行為。",
+          "level": "3",
+          "filename": "general1111-word-79746.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 79762,
+          "reading": "えのきたけ",
+          "word": "榎茸",
+          "meaning": "他のキノコがないときに、初春または晩秋に存在する食用のキノコ; 粘着性の滑らかなオレンジ色から茶色のカサと、成熟すると黒くなる柔らかい茎とさえない襞を持つ; 一般的に群れて生育する。",
+          "level": "3",
+          "filename": "general1111-word-79762.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 79764,
+          "reading": "えびすぐさ",
+          "word": "恵比須草",
+          "meaning": "黄色の花と細長い曲がったさやのある全世界に分布する熱帯の植物または半低木; 雑草; 時にカワラケツメイ属に分類される。",
+          "level": "3",
+          "filename": "general1111-word-79764.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 79773,
+          "reading": "えんげいか",
+          "word": "園芸家",
+          "meaning": "（果物、花、野菜、観賞植物といった）植物を栽培する技術の達人。",
+          "level": "3",
+          "filename": "general1111-word-79773.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 79786,
+          "reading": "おうむがい",
+          "word": "鸚鵡貝",
+          "meaning": "青白い真珠状の隔壁のある渦巻き状の殻を持つインド・太平洋産の頭足類。",
+          "level": "3",
+          "filename": "general1111-word-79786.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 79789,
+          "reading": "おおけたで",
+          "word": "大毛蓼",
+          "meaning": "幅広い卵形の葉と深紅色の花が穂状に細長く垂れ下がる一年生植物; 東南アジアとオーストラリア; 北米に帰化した。",
+          "level": "3",
+          "filename": "general1111-word-79789.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 79794,
+          "reading": "おぎのしき",
+          "word": "荻野式",
+          "meaning": "排卵が月経開始のの14日前に生じると仮定される自然受胎調節法（妊孕期は、彼女のサイクルの10日目から18日目まで広がるとされる）。",
+          "level": "3",
+          "filename": "general1111-word-79794.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 79798,
+          "reading": "おさきぼう",
+          "word": "御先棒",
+          "meaning": "目的を達成するために他人に使われる人物。",
+          "level": "3",
+          "filename": "general1111-word-79798.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 79818,
+          "reading": "おながざめ",
+          "word": "尾長鮫",
+          "meaning": "自分の餌の小魚を集めるのに使う鞭のような尾を持つ暖海の大型大洋産のサメ。",
+          "level": "3",
+          "filename": "general1111-word-79818.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 79840,
+          "reading": "おろしがね",
+          "word": "おろし金",
+          "meaning": "（野菜やチーズなどの）食物を切り刻むための、鋭利な打ち抜き穴のついた台所用品。",
+          "level": "3",
+          "filename": "general1111-word-79840.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet23",
+      "tiles": [
+        {
+          "id": 79859,
+          "reading": "かいぎゅう",
+          "word": "海牛",
+          "meaning": "大きい草食の水生哺乳動物の2つの属性で、櫂の形をした尾にひれ足のような前肢があるが、後肢がない。",
+          "level": "3",
+          "filename": "general1111-word-79859.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 79868,
+          "reading": "かいじょう",
+          "word": "階上",
+          "meaning": "地上階の上の建物の一部。",
+          "level": "3",
+          "filename": "general1111-word-79868.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 79937,
+          "reading": "かどりーる",
+          "word": "カドリール",
+          "meaning": "カドリールを踊るための音楽。",
+          "level": "3",
+          "filename": "general1111-word-79937.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 79956,
+          "reading": "かわらばと",
+          "word": "河原鳩",
+          "meaning": "ほとんどの家畜用の種が血統をひいている黒い帯状の紋の付いた羽を持つ薄い灰色のユーラシア鳩。",
+          "level": "3",
+          "filename": "general1111-word-79956.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 80025,
+          "reading": "きじゅうき",
+          "word": "起重機",
+          "meaning": "重い物体を持ち上げ動かす; 持ち上げる道具は、縦軸の周りを回転する枢軸を付けられた張り出し棒からつるされる。",
+          "level": "3",
+          "filename": "general1111-word-80025.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 80035,
+          "reading": "きのこぐも",
+          "word": "茸雲",
+          "meaning": "（特に核爆弾の）爆発後空に立ち上るきのこのような形をした瓦礫とほこりでできた大きな雲。",
+          "level": "3",
+          "filename": "general1111-word-80035.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 80129,
+          "reading": "きんせんか",
+          "word": "金盞花",
+          "meaning": "ヨーロッパ産のよく見られる一年生のキンセンカ。",
+          "level": "3",
+          "filename": "general1111-word-80129.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 80147,
+          "reading": "ぎゃれーじ",
+          "word": "ギャレージ",
+          "meaning": "自動車を保管するための外の建物（または建物の一部）。",
+          "level": "3",
+          "filename": "general1111-word-80147.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 80179,
+          "reading": "くらりおん",
+          "word": "クラリオン",
+          "meaning": "中世の金管楽器で明瞭な高い音をもつ。",
+          "level": "3",
+          "filename": "general1111-word-80179.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 80182,
+          "reading": "くりーゔぁ",
+          "word": "クリーヴァ",
+          "meaning": "大きな正方形の刃を持つ肉屋の包丁。",
+          "level": "3",
+          "filename": "general1111-word-80182.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 80187,
+          "reading": "くろっかす",
+          "word": "クロッカス",
+          "meaning": "細い草のような葉と白または黄色または紫の花を持つ、クロッカス属の多数の丈の低い植物の総称; 主として地中海地方原産だが、広く栽培される。",
+          "level": "3",
+          "filename": "general1111-word-80187.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 80285,
+          "reading": "こうどけい",
+          "word": "高度計",
+          "meaning": "地面からの高さを図る器具; 飛行で用いられる。",
+          "level": "3",
+          "filename": "general1111-word-80285.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 80295,
+          "reading": "こくくじら",
+          "word": "克鯨",
+          "meaning": "北太平洋産の中型の灰色がかった黒のクジラ。",
+          "level": "3",
+          "filename": "general1111-word-80295.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 80372,
+          "reading": "さいちょう",
+          "word": "犀鳥",
+          "meaning": "骨性突起で覆われた、非常に大きなくちばしを持つ熱帯アフリカとアジアの鳥; カワセミに関係する。",
+          "level": "3",
+          "filename": "general1111-word-80372.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 80389,
+          "reading": "さくそるん",
+          "word": "サクソルン",
+          "meaning": "弁のついたラッパに似ている金菅楽器類の1つ。",
+          "level": "3",
+          "filename": "general1111-word-80389.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 80401,
+          "reading": "さとうきび",
+          "word": "砂糖黍",
+          "meaning": "樹液が糖蜜と商業的な糖の源である多汁のトウ; 新鮮なトウは、時々ジュースとして噛まれる。",
+          "level": "3",
+          "filename": "general1111-word-80401.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet24",
+      "tiles": [
+        {
+          "id": 80414,
+          "reading": "さんかくす",
+          "word": "三角州",
+          "meaning": "川がより大きな本流に入る前に分かれる沖積堆積物の低い三角形の領域。",
+          "level": "3",
+          "filename": "general1111-word-80414.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 80440,
+          "reading": "しおつなみ",
+          "word": "潮津波",
+          "meaning": "潮の流れが原因で（潮流がぶつかったり河口が狭いなどで）起こる高波（たいてい危険な）。",
+          "level": "3",
+          "filename": "general1111-word-80440.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 80442,
+          "reading": "しかくまめ",
+          "word": "四角豆",
+          "meaning": "4つのぎざぎざの舞台袖がある紫がかっている花とさやのクラスタを生じさせる結節がある巻きついている年に一度のつる植物; 旧世界の熱帯地方。",
+          "level": "3",
+          "filename": "general1111-word-80442.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 80457,
+          "reading": "しごとばこ",
+          "word": "仕事箱",
+          "meaning": "仕事（特に針仕事）の道具と材料を入れる入れ物。",
+          "level": "3",
+          "filename": "general1111-word-80457.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 80471,
+          "reading": "したびらめ",
+          "word": "舌平目",
+          "meaning": "脂の少ないヒラメの肉。",
+          "level": "3",
+          "filename": "general1111-word-80471.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 80530,
+          "reading": "しゅくえん",
+          "word": "祝宴",
+          "meaning": "大勢の人々のための正式の食事会。",
+          "level": "3",
+          "filename": "general1111-word-80530.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 80570,
+          "reading": "しょうしゃ",
+          "word": "哨舎",
+          "meaning": "天候から歩哨を保護する開いた正面を備えた小さな避難所。",
+          "level": "3",
+          "filename": "general1111-word-80570.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 80618,
+          "reading": "しんぐるい",
+          "word": "寝具類",
+          "meaning": "ベッドで使われるカバー。",
+          "level": "3",
+          "filename": "general1111-word-80618.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 80689,
+          "reading": "じゅしょう",
+          "word": "樹梢",
+          "meaning": "木または他の植物の上部の枝と葉。",
+          "level": "3",
+          "filename": "general1111-word-80689.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 80740,
+          "reading": "じんじゃー",
+          "word": "ジンジャー",
+          "meaning": "一般的なしょうがの、刺激味のある根茎; 特にアジアの料理法で調味料として生で使用される。",
+          "level": "3",
+          "filename": "general1111-word-80740.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 80775,
+          "reading": "すたぺりあ",
+          "word": "スタペリア",
+          "meaning": "スタペリア属植物の総称で、多肉性歯状突起のあるサボテンに似た茎を持ち、葉はなく、花は大形で悪臭があり、星の形をしている。",
+          "level": "3",
+          "filename": "general1111-word-80775.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 80789,
+          "reading": "すなあらし",
+          "word": "砂嵐",
+          "meaning": "ちりまたは砂のかたまりを持ち上げる暴風。",
+          "level": "3",
+          "filename": "general1111-word-80789.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 80795,
+          "reading": "すぷれっど",
+          "word": "スプレッド",
+          "meaning": "パンやクラッカーに塗るおいしい調合物で、他の料理を準備する間に出される。",
+          "level": "3",
+          "filename": "general1111-word-80795.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 80798,
+          "reading": "すみばしら",
+          "word": "隅柱",
+          "meaning": "建物のすみにある構造部材を支える四角い柱。",
+          "level": "3",
+          "filename": "general1111-word-80798.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 80803,
+          "reading": "すーぷざら",
+          "word": "スープ皿",
+          "meaning": "広い縁のある深皿。",
+          "level": "3",
+          "filename": "general1111-word-80803.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 80847,
+          "reading": "せんすいふ",
+          "word": "潜水夫",
+          "meaning": "水面下で働く人。",
+          "level": "3",
+          "filename": "general1111-word-80847.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet25",
+      "tiles": [
+        {
+          "id": 80876,
+          "reading": "そうじにん",
+          "word": "掃除人",
+          "meaning": "建物を掃除し維持管理するために雇われた人。",
+          "level": "3",
+          "filename": "general1111-word-80876.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 80923,
+          "reading": "たからがい",
+          "word": "宝貝",
+          "meaning": "タカラガイ属の非常に多い熱帯海洋性腹足類で、非常につやがある、通常は明るい斑紋のある殻を持つ。",
+          "level": "3",
+          "filename": "general1111-word-80923.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 80939,
+          "reading": "たちあおい",
+          "word": "立葵",
+          "meaning": "ビロードアオイ属の各種の植物の総称; タチアオイ属に似ているが、それより小さい花を持つ。",
+          "level": "3",
+          "filename": "general1111-word-80939.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 80951,
+          "reading": "たまりんど",
+          "word": "タマリンド",
+          "meaning": "生で食べられるか、米と魚で料理されるか、カレーとチャツネのために保存されて食べられる非常につんとくる果肉のあるる大きな熱帯の種鞘。",
+          "level": "3",
+          "filename": "general1111-word-80951.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 80966,
+          "reading": "たんようき",
+          "word": "単葉機",
+          "meaning": "翼が1枚の飛行機。",
+          "level": "3",
+          "filename": "general1111-word-80966.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 80989,
+          "reading": "ちぇりすと",
+          "word": "チェリスト",
+          "meaning": "チェロを演奏する人。",
+          "level": "3",
+          "filename": "general1111-word-80989.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 81021,
+          "reading": "ちゅにっく",
+          "word": "チュニック",
+          "meaning": "尻またはひざまで伸びる様々なゆるい外套のどれか。",
+          "level": "3",
+          "filename": "general1111-word-81021.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 81030,
+          "reading": "ちょうざめ",
+          "word": "蝶鮫",
+          "meaning": "肉と卵が価値のある大型原始魚; 北方の温帯地域に広く分布する。",
+          "level": "3",
+          "filename": "general1111-word-81030.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 81038,
+          "reading": "ちょうづめ",
+          "word": "腸詰",
+          "meaning": "細かく切った肉に香料をたっぷりときかせ、皮に詰めたもの。",
+          "level": "3",
+          "filename": "general1111-word-81038.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 81057,
+          "reading": "ちらんじあ",
+          "word": "チランジア",
+          "meaning": "地上性の分散した根を持ち、あるいは着生性の植物の大きな属で、ふつうは群塊や下垂する塊を形成する。",
+          "level": "3",
+          "filename": "general1111-word-81057.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 81059,
+          "reading": "ちりそーす",
+          "word": "チリソース",
+          "meaning": "トマト・タマネギ・（甘・辛）トウガラシを酢・砂糖・種々の香料といっしょにとろ火で煮たもの。",
+          "level": "3",
+          "filename": "general1111-word-81059.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 81071,
+          "reading": "つかつくり",
+          "word": "塚造",
+          "meaning": "オーストララシアの大きい足の短い翼の鳥; 卵を付加するために、腐敗している植物の山を造る。",
+          "level": "3",
+          "filename": "general1111-word-81071.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 81091,
+          "reading": "つりどうぐ",
+          "word": "釣道具",
+          "meaning": "釣で使用されるギヤ。",
+          "level": "3",
+          "filename": "general1111-word-81091.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 81138,
+          "reading": "でいたんち",
+          "word": "泥炭地",
+          "meaning": "植物を分解する湿ったスポンジ状の地面; 沼地より水はけが悪い; 土壌は耕作に向かないが、切って乾かすと燃料として使える。",
+          "level": "3",
+          "filename": "general1111-word-81138.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 81181,
+          "reading": "とけいざら",
+          "word": "時計皿",
+          "meaning": "実験室のガラス器具; 蒸発皿やビーカーの蓋として使われる浅いガラス皿。",
+          "level": "3",
+          "filename": "general1111-word-81181.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 81187,
+          "reading": "とっぱーず",
+          "word": "トッパーズ",
+          "meaning": "トパーズ色の明るい茶。",
+          "level": "3",
+          "filename": "general1111-word-81187.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet26",
+      "tiles": [
+        {
+          "id": 81188,
+          "reading": "とっぴんぐ",
+          "word": "トッピング",
+          "meaning": "料理の上にのせる風味豊かなもの。",
+          "level": "3",
+          "filename": "general1111-word-81188.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 81206,
+          "reading": "とるねーど",
+          "word": "トルネード",
+          "meaning": "地上へ向かって伸びた漏斗雲が特色で、地上に発生する局地的で激しく破壊的な暴風。",
+          "level": "3",
+          "filename": "general1111-word-81206.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 81213,
+          "reading": "とーだんす",
+          "word": "トーダンス",
+          "meaning": "つま先で踊るダンス。",
+          "level": "3",
+          "filename": "general1111-word-81213.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 81214,
+          "reading": "どあまっと",
+          "word": "ドアマット",
+          "meaning": "外のドアの外側に置かれ、入る前に靴をぬぐうためのマット。",
+          "level": "3",
+          "filename": "general1111-word-81214.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 81247,
+          "reading": "なきうさぎ",
+          "word": "啼兎",
+          "meaning": "アジアと北米西部の岩がちの高地の小さな短い耳をもった穴に棲む哺乳類。",
+          "level": "3",
+          "filename": "general1111-word-81247.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 81273,
+          "reading": "にっしゅつ",
+          "word": "日出",
+          "meaning": "地平線上に昇る太陽の毎日の事象。",
+          "level": "3",
+          "filename": "general1111-word-81273.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 81285,
+          "reading": "ぬりぐすり",
+          "word": "塗薬",
+          "meaning": "筋肉の凝りと痛みを和らげるために皮膚にすりこまれる薬の液体。",
+          "level": "3",
+          "filename": "general1111-word-81285.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 81313,
+          "reading": "のぼりふじ",
+          "word": "昇藤",
+          "meaning": "ハウチワマメ属の植物の総称; 通常紫がかった青い花の直立した穂状花序を持つ。",
+          "level": "3",
+          "filename": "general1111-word-81313.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 81320,
+          "reading": "はいごうど",
+          "word": "配合土",
+          "meaning": "腐敗した植物と肥料の混合物; 肥料として用いられる。",
+          "level": "3",
+          "filename": "general1111-word-81320.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 81341,
+          "reading": "はちぶんぎ",
+          "word": "八分儀",
+          "meaning": "天体の角度を計測するための測定器; 六分儀に似ているが45度の目盛りが付いている。",
+          "level": "3",
+          "filename": "general1111-word-81341.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 81348,
+          "reading": "はなあおい",
+          "word": "花葵",
+          "meaning": "アレセア属の各種の丈の高い植物の総称; 中東に起源をもつが、とても大きくさまざまな色彩の花のために広く帰化し、栽培される。",
+          "level": "3",
+          "filename": "general1111-word-81348.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 81351,
+          "reading": "はなづくり",
+          "word": "花作り",
+          "meaning": "顕花植物を栽培すること。",
+          "level": "3",
+          "filename": "general1111-word-81351.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 81380,
+          "reading": "ばくがとう",
+          "word": "麦芽糖",
+          "meaning": "澱粉の消化の過程で生成される、白色の結晶糖。",
+          "level": "3",
+          "filename": "general1111-word-81380.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 81385,
+          "reading": "ばすどらむ",
+          "word": "バスドラム",
+          "meaning": "2つヘッドを持つ大きなドラム; 不明確であるが、非常に低いピッチの音をたてる。",
+          "level": "3",
+          "filename": "general1111-word-81385.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 81398,
+          "reading": "ぱすとらみ",
+          "word": "パストラミ",
+          "meaning": "味の濃い薫製した牛肉の切り身。",
+          "level": "3",
+          "filename": "general1111-word-81398.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 81414,
+          "reading": "ひかきぼう",
+          "word": "火かき棒",
+          "meaning": "取っ手のついた金属棒からなる炉辺道具; 火をかきまわすのに使われる。",
+          "level": "3",
+          "filename": "general1111-word-81414.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet27",
+      "tiles": [
+        {
+          "id": 81451,
+          "reading": "ひょうけつ",
+          "word": "氷結",
+          "meaning": "何かを液体から固体に変化させるために熱を取り除くこと。",
+          "level": "3",
+          "filename": "general1111-word-81451.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 81467,
+          "reading": "ひよこまめ",
+          "word": "雛豆",
+          "meaning": "ヒヨコマメの種。",
+          "level": "3",
+          "filename": "general1111-word-81467.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 81468,
+          "reading": "ひらいしん",
+          "word": "避雷針",
+          "meaning": "高い位置に付けられ地面につながる金属導体; 稲妻による破壊から建物を保護する。",
+          "level": "3",
+          "filename": "general1111-word-81468.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 81515,
+          "reading": "ぴんぼーる",
+          "word": "ピンボール",
+          "meaning": "傾斜のあるボードの上でやるゲーム; 目的はビー玉を標的またはポケットにあてることである。",
+          "level": "3",
+          "filename": "general1111-word-81515.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 81535,
+          "reading": "ふくようき",
+          "word": "複葉機",
+          "meaning": "旧式の飛行機; 2枚羽根で一方が他方の上にある。",
+          "level": "3",
+          "filename": "general1111-word-81535.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 81543,
+          "reading": "ふしょくど",
+          "word": "腐植土",
+          "meaning": "部分的に分解された有機物; 土壌の有機成分。",
+          "level": "3",
+          "filename": "general1111-word-81543.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 81559,
+          "reading": "ふっきそう",
+          "word": "富貴草",
+          "meaning": "白い花の頂生穂状花序を持つ、成長の遅い日本の常緑亜低木; 地被植物として栽培されている。",
+          "level": "3",
+          "filename": "general1111-word-81559.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 81563,
+          "reading": "ふなあそび",
+          "word": "船遊び",
+          "meaning": "娯楽のための水上旅行。",
+          "level": "3",
+          "filename": "general1111-word-81563.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 81575,
+          "reading": "ふりゅーと",
+          "word": "フリュート",
+          "meaning": "高音の木管楽器; 指穴が一つの端にあり、息を吹き込む開口部が閉じた端の近くにある、交差している一端が閉じている細長い筒。",
+          "level": "3",
+          "filename": "general1111-word-81575.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 81578,
+          "reading": "ふろりすと",
+          "word": "フロリスト",
+          "meaning": "花と観賞植物が売られている店。",
+          "level": "3",
+          "filename": "general1111-word-81578.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 81613,
+          "reading": "ぶんりゅう",
+          "word": "分流",
+          "meaning": "主流から流れて、再結合しない川の支流。",
+          "level": "3",
+          "filename": "general1111-word-81613.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 81618,
+          "reading": "ぷらすたー",
+          "word": "プラスター",
+          "meaning": "石灰や石こうに砂と水と混ぜた混合物; 固まると滑らかな固体になる; 壁や天井を塗るのに用いられる。",
+          "level": "3",
+          "filename": "general1111-word-81618.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 81643,
+          "reading": "へびとんぼ",
+          "word": "蛇蜻蛉",
+          "meaning": "雄には長くほっそりした大顎がある大型軟体昆虫; 水生の幼虫で、しばしば釣りの餌に使われる。",
+          "level": "3",
+          "filename": "general1111-word-81643.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 81667,
+          "reading": "ぺぺろみあ",
+          "word": "ペペロミア",
+          "meaning": "ペペロミア属の様々な植物のいずれか; それらのしばしば水分の多い葉のために主に栽培される。",
+          "level": "3",
+          "filename": "general1111-word-81667.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 81686,
+          "reading": "ほうぼくち",
+          "word": "放牧地",
+          "meaning": "芝や牧草に覆われ、家畜の放牧に適した場所。",
+          "level": "3",
+          "filename": "general1111-word-81686.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 81693,
+          "reading": "ほこうえい",
+          "word": "蒲公英",
+          "meaning": "長い直根と深く刻み目の入った葉とけばに覆われた種のボールに後に変わる明るい黄色の花を持つタンポポ属のいくつかの植物のどれか。",
+          "level": "3",
+          "filename": "general1111-word-81693.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet28",
+      "tiles": [
+        {
+          "id": 81737,
+          "reading": "ぽろねーず",
+          "word": "ポロネーズ",
+          "meaning": "ぴったりとした女性用胴着とカラフルなペチコートを見せるためにひきつけてあるオーバースカートのある女性のドレス。",
+          "level": "3",
+          "filename": "general1111-word-81737.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 81758,
+          "reading": "ますとどん",
+          "word": "マストドン",
+          "meaning": "中新世から更新世にかけて世界中に繁殖していた絶滅した象のような哺乳動物; 臼歯の形がマンモスと異なる。",
+          "level": "3",
+          "filename": "general1111-word-81758.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 81760,
+          "reading": "まだらしみ",
+          "word": "斑紙魚",
+          "meaning": "例えば、暖炉の周りなどの暖かく湿った場所にいる。",
+          "level": "3",
+          "filename": "general1111-word-81760.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 81768,
+          "reading": "まつばらん",
+          "word": "松葉蘭",
+          "meaning": "外観が洋服用のブラシに似ている主に骨格の熱帯の茂み形成植物; 根が欠けていること。",
+          "level": "3",
+          "filename": "general1111-word-81768.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 81936,
+          "reading": "ゆでたまご",
+          "word": "茹で卵",
+          "meaning": "殻ごと静かにゆでた卵。",
+          "level": "3",
+          "filename": "general1111-word-81936.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 81952,
+          "reading": "ようじうお",
+          "word": "楊子魚",
+          "meaning": "長い筒状の口先と骨ばった板で覆われたスリムな体をもった魚。",
+          "level": "3",
+          "filename": "general1111-word-81952.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 81959,
+          "reading": "ようふくや",
+          "word": "洋服屋",
+          "meaning": "衣服を仕立てたり、直したりする仕事の人。",
+          "level": "3",
+          "filename": "general1111-word-81959.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 81964,
+          "reading": "よくりゅう",
+          "word": "翼竜",
+          "meaning": "絶滅したジュラ紀と白亜紀の爬虫類で、鳥のようなくちばしと、各前肢の非常に長い第4の指により支えられる膜翼があるもの。",
+          "level": "3",
+          "filename": "general1111-word-81964.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 81977,
+          "reading": "らいちょう",
+          "word": "雷鳥",
+          "meaning": "羽の生えた肢と普通は白い冬羽毛を持つ大型の北極・亜北極ライチョウ。",
+          "level": "3",
+          "filename": "general1111-word-81977.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 81979,
+          "reading": "らいりゅう",
+          "word": "雷竜",
+          "meaning": "北米で一般的であったジュラ紀後期の巨大四足草食恐竜。",
+          "level": "3",
+          "filename": "general1111-word-81979.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 82040,
+          "reading": "りんごあめ",
+          "word": "林檎飴",
+          "meaning": "キャンディのような物質でおおわれているリンゴ（通常カラメル状の砂糖）。",
+          "level": "3",
+          "filename": "general1111-word-82040.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 82042,
+          "reading": "りんしょう",
+          "word": "輪唱",
+          "meaning": "声部がお互いに追いかける合唱曲; 1つの声部が歌い始め、他の声部が次々に加わり、最後にすべての声部がこの歌の異なるパートを同時に歌う。",
+          "level": "3",
+          "filename": "general1111-word-82042.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 82070,
+          "reading": "れんにゅう",
+          "word": "練乳",
+          "meaning": "甘くしたエバミルク。",
+          "level": "3",
+          "filename": "general1111-word-82070.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 82179,
+          "reading": "あめりかおし",
+          "word": "アメリカ鴛鴦",
+          "meaning": "中が空洞の木に巣を作る北米産の見栄えのするカモ。",
+          "level": "3",
+          "filename": "general1111-word-82179.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 82185,
+          "reading": "あらばすたー",
+          "word": "アラバスター",
+          "meaning": "緻密で細粒質の通例白色の石膏で、彫刻に用いられる。",
+          "level": "3",
+          "filename": "general1111-word-82185.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 82254,
+          "reading": "いわしくじら",
+          "word": "鰯鯨",
+          "meaning": "ナガスクジラに似ているが、小さめである。",
+          "level": "3",
+          "filename": "general1111-word-82254.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet29",
+      "tiles": [
+        {
+          "id": 82256,
+          "reading": "いんげんまめ",
+          "word": "隠元豆",
+          "meaning": "暗赤色の大きい豆; 普通乾燥させる。",
+          "level": "3",
+          "filename": "general1111-word-82256.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 82291,
+          "reading": "うちゅうじん",
+          "word": "宇宙塵",
+          "meaning": "太陽系宇宙空間に生ずる粒子やガスのかたまり。",
+          "level": "3",
+          "filename": "general1111-word-82291.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 82326,
+          "reading": "えすぷれっそ",
+          "word": "エスプレッソ",
+          "meaning": "熱い水を細かく挽いたコーヒー豆を圧力で通すことで入れられる強いブラックコーヒー。",
+          "level": "3",
+          "filename": "general1111-word-82326.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 82329,
+          "reading": "えっぐのっぐ",
+          "word": "エッグノッグ",
+          "meaning": "卵・蒸留酒を混ぜて甘くしたミルクまたはクリーム。",
+          "level": "3",
+          "filename": "general1111-word-82329.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 82346,
+          "reading": "えんべろーぷ",
+          "word": "エンベロープ",
+          "meaning": "包んだり覆ったりするものの総称。",
+          "level": "3",
+          "filename": "general1111-word-82346.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 82373,
+          "reading": "おとしたまご",
+          "word": "落し卵",
+          "meaning": "沸騰した湯に静かに入れた卵。",
+          "level": "3",
+          "filename": "general1111-word-82373.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 82413,
+          "reading": "かいがらぼね",
+          "word": "貝殻骨",
+          "meaning": "人間の肩の両側にある2つの平坦な三角形の骨の1つ。",
+          "level": "3",
+          "filename": "general1111-word-82413.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 82465,
+          "reading": "かっとがらす",
+          "word": "カットガラス",
+          "meaning": "切子面を切って、または研磨して装飾を施したグラス。",
+          "level": "3",
+          "filename": "general1111-word-82465.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 82501,
+          "reading": "かんけつせん",
+          "word": "間欠泉",
+          "meaning": "温水と水蒸気を放出する泉。",
+          "level": "3",
+          "filename": "general1111-word-82501.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 82529,
+          "reading": "がいとうまく",
+          "word": "外套膜",
+          "meaning": "軟体動物や腕足類の表皮の防御層で殻を形成する物質を分泌する。",
+          "level": "3",
+          "filename": "general1111-word-82529.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 82559,
+          "reading": "きのぼりうお",
+          "word": "木登魚",
+          "meaning": "エラがそれが空気を吸い込むめるようにするために変形したインドの小さな止まり木; 陸地移動できるとげ状の胸びれを持つ。",
+          "level": "3",
+          "filename": "general1111-word-82559.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 82597,
+          "reading": "きょくげいし",
+          "word": "曲芸師",
+          "meaning": "回転、宙返り、ツイストなどの演技をする体操選手。",
+          "level": "3",
+          "filename": "general1111-word-82597.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 82606,
+          "reading": "きんかちょう",
+          "word": "錦花鳥",
+          "meaning": "シマウマのもののような模様をもつ小さなオーストラリアのハタオリドリ。",
+          "level": "3",
+          "filename": "general1111-word-82606.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 82651,
+          "reading": "くるまだいく",
+          "word": "車大工",
+          "meaning": "馬車を作ったり修理したりする職人。",
+          "level": "3",
+          "filename": "general1111-word-82651.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 82669,
+          "reading": "ぐろーらんぷ",
+          "word": "グローランプ",
+          "meaning": "熱陰極を持つガス放電管; ストロボで使用される。",
+          "level": "3",
+          "filename": "general1111-word-82669.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 82702,
+          "reading": "けんそううん",
+          "word": "巻層雲",
+          "meaning": "高い高度に発生する、薄くて均一なかすんだ雲の層。",
+          "level": "3",
+          "filename": "general1111-word-82702.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet30",
+      "tiles": [
+        {
+          "id": 82741,
+          "reading": "こうこうせい",
+          "word": "向光性",
+          "meaning": "太陽への定位反応。",
+          "level": "3",
+          "filename": "general1111-word-82741.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 82745,
+          "reading": "こうさくしゃ",
+          "word": "耕作者",
+          "meaning": "土壌を耕す科学、芸術またはビジネスに関心のある人。",
+          "level": "3",
+          "filename": "general1111-word-82745.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 82756,
+          "reading": "こうどうこう",
+          "word": "黄道光",
+          "meaning": "空の発光する地帯; 横道面の宇宙塵からの太陽の反射; ちょうど日の出前と日没後に見られる。",
+          "level": "3",
+          "filename": "general1111-word-82756.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 82763,
+          "reading": "こおりざとう",
+          "word": "氷砂糖",
+          "meaning": "一続きになった堅い透明な水晶状の砂糖。",
+          "level": "3",
+          "filename": "general1111-word-82763.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 82818,
+          "reading": "こーひーのき",
+          "word": "コーヒーの木",
+          "meaning": "コーヒー豆をもたらす熱帯の旧世界原産のいくつかの小さな木と低木のいずれか。",
+          "level": "3",
+          "filename": "general1111-word-82818.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 82820,
+          "reading": "こーひーまめ",
+          "word": "コーヒー豆",
+          "meaning": "コーヒーの木の実; コーヒー用に挽いたもの。",
+          "level": "3",
+          "filename": "general1111-word-82820.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 82882,
+          "reading": "さやえんどう",
+          "word": "莢豌豆",
+          "meaning": "平らでさやごと食べられる青エンドウ。",
+          "level": "3",
+          "filename": "general1111-word-82882.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 82902,
+          "reading": "ざとうくじら",
+          "word": "座頭鯨",
+          "meaning": "長い前びれを持つ大型のヒゲクジラで、潜水するときに背をアーチ形に曲げるか丸くすることで知られる。",
+          "level": "3",
+          "filename": "general1111-word-82902.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 82942,
+          "reading": "しゃりんどめ",
+          "word": "車輪止",
+          "meaning": "重い物体が滑ったり転がったりするのを防ぐのに用いられる木の塊。",
+          "level": "3",
+          "filename": "general1111-word-82942.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 82983,
+          "reading": "しゅんせつき",
+          "word": "浚渫機",
+          "meaning": "運河または川床から材料を除去するパワーショベル。",
+          "level": "3",
+          "filename": "general1111-word-82983.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 83042,
+          "reading": "しんだいしゃ",
+          "word": "寝台車",
+          "meaning": "眠るための寝台がついた客車。",
+          "level": "3",
+          "filename": "general1111-word-83042.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 83116,
+          "reading": "じょうりゅう",
+          "word": "蒸留",
+          "meaning": "液体を沸騰させその蒸気を凝縮する過程。",
+          "level": "3",
+          "filename": "general1111-word-83116.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 83123,
+          "reading": "じょーぜっと",
+          "word": "ジョーゼット",
+          "meaning": "薄いシルクのドレスの材質。",
+          "level": "3",
+          "filename": "general1111-word-83123.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 83131,
+          "reading": "すいしゃごや",
+          "word": "水車小屋",
+          "meaning": "水車を動力とする製粉所。",
+          "level": "3",
+          "filename": "general1111-word-83131.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 83191,
+          "reading": "ずあおあとり",
+          "word": "頭青花鶏",
+          "meaning": "快い歌声の欧州産小型フィンチ。",
+          "level": "3",
+          "filename": "general1111-word-83191.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 83253,
+          "reading": "せんたくかご",
+          "word": "洗濯籠",
+          "meaning": "洗濯前の汚れ物や乾燥前の濡れた服を入れる詰めかご。",
+          "level": "3",
+          "filename": "general1111-word-83253.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet31",
+      "tiles": [
+        {
+          "id": 83307,
+          "reading": "たいようとう",
+          "word": "太陽灯",
+          "meaning": "医療または美容整形術で使用する水銀蒸気灯。",
+          "level": "3",
+          "filename": "general1111-word-83307.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 83332,
+          "reading": "たんぶりんぐ",
+          "word": "タンブリング",
+          "meaning": "アクロバットの体操の動き。",
+          "level": "3",
+          "filename": "general1111-word-83332.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 83358,
+          "reading": "だぶるべっど",
+          "word": "ダブルベッド",
+          "meaning": "2人が泊まるのに十分な広さのベッド。",
+          "level": "3",
+          "filename": "general1111-word-83358.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 83415,
+          "reading": "ついんべっど",
+          "word": "ツインベッド",
+          "meaning": "2台1組の同じベッドのうちの1台。",
+          "level": "3",
+          "filename": "general1111-word-83415.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 83428,
+          "reading": "つっかいぼう",
+          "word": "突っ支い棒",
+          "meaning": "上にある物を支えたり、土台となる物。",
+          "level": "3",
+          "filename": "general1111-word-83428.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 83437,
+          "reading": "てぃーせっと",
+          "word": "ティーセット",
+          "meaning": "お茶を出すための磁器あるいは銀器の一揃い。",
+          "level": "3",
+          "filename": "general1111-word-83437.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 83440,
+          "reading": "てぃーぽっと",
+          "word": "ティーポット",
+          "meaning": "お茶をいれるためのポット; 普通注ぎ口と取っ手がついている。",
+          "level": "3",
+          "filename": "general1111-word-83440.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 83441,
+          "reading": "てぃーるーむ",
+          "word": "ティールーム",
+          "meaning": "お茶と軽食を出すレストラン。",
+          "level": "3",
+          "filename": "general1111-word-83441.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 83442,
+          "reading": "てぃーわごん",
+          "word": "ティーワゴン",
+          "meaning": "お茶や軽食を出すためのワゴン。",
+          "level": "3",
+          "filename": "general1111-word-83442.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 83464,
+          "reading": "てらまいしん",
+          "word": "テラマイシン",
+          "meaning": "土壌の放線菌から得られる黄色の結晶質の抗生物質（商標名テラマイシン）; 様々な細菌性のリケッチア性感染症を治療するのに用いられる。",
+          "level": "3",
+          "filename": "general1111-word-83464.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 83470,
+          "reading": "てんさいとう",
+          "word": "テンサイ糖",
+          "meaning": "テンサイから作られる砂糖。",
+          "level": "3",
+          "filename": "general1111-word-83470.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 83479,
+          "reading": "てーくだうん",
+          "word": "テークダウン",
+          "meaning": "立った姿勢からマットの位置に来ている。",
+          "level": "3",
+          "filename": "general1111-word-83479.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 83508,
+          "reading": "でんきなまず",
+          "word": "電気鯰",
+          "meaning": "電気器官を持つナイル川・熱帯アフリカ中部産の淡水ナマズ。",
+          "level": "3",
+          "filename": "general1111-word-83508.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 83512,
+          "reading": "でんしゃだい",
+          "word": "電車代",
+          "meaning": "列車で旅行のために請求された料金。",
+          "level": "3",
+          "filename": "general1111-word-83512.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 83617,
+          "reading": "ながすくじら",
+          "word": "長簀鯨",
+          "meaning": "喉に沿って深い溝があり、平らな頭部を持つ大型ヒゲクジラ; 大西洋と太平洋の。",
+          "level": "3",
+          "filename": "general1111-word-83617.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 83622,
+          "reading": "なめくじうお",
+          "word": "蛞蝓魚",
+          "meaning": "小さい半透明のランセット形の穴居性海洋動物; 脊椎動物の原始的先祖。",
+          "level": "3",
+          "filename": "general1111-word-83622.png",
+          "tileIndex": 16
+        }
+      ]
+    },
+    {
+      "sheet": "sheet32",
+      "tiles": [
+        {
+          "id": 83650,
+          "reading": "ねつでんつい",
+          "word": "熱電対",
+          "meaning": "異なる金属でできた2本の針金が両端で接続されている温度計の一種; 一方の接続部は測定される温度下におかれ、他方はそれより低い一定の温度に保たれる; 回路で発生する電流は、温度差に比例する。",
+          "level": "3",
+          "filename": "general1111-word-83650.png",
+          "tileIndex": 1
+        },
+        {
+          "id": 83661,
+          "reading": "はいけいまく",
+          "word": "背景幕",
+          "meaning": "ステージの後ろに掛けられる風景。",
+          "level": "3",
+          "filename": "general1111-word-83661.png",
+          "tileIndex": 2
+        },
+        {
+          "id": 83690,
+          "reading": "はなごんどう",
+          "word": "花巨頭",
+          "meaning": "北海で一般的なスレートから灰色のとがっていない鼻のイルカ。",
+          "level": "3",
+          "filename": "general1111-word-83690.png",
+          "tileIndex": 3
+        },
+        {
+          "id": 83693,
+          "reading": "はりせんぼん",
+          "word": "針千本",
+          "meaning": "身体が膨張する場合、背骨は直立になる; 温水の中で世界的な。",
+          "level": "3",
+          "filename": "general1111-word-83693.png",
+          "tileIndex": 4
+        },
+        {
+          "id": 83708,
+          "reading": "はんらんげん",
+          "word": "氾濫原",
+          "meaning": "川の沈殿物で主に作られており、氾濫を受けやすい川に隣接した低い平野。",
+          "level": "3",
+          "filename": "general1111-word-83708.png",
+          "tileIndex": 5
+        },
+        {
+          "id": 83762,
+          "reading": "ひじかけいす",
+          "word": "肘掛椅子",
+          "meaning": "両側に腕を支える部分がついている。",
+          "level": "3",
+          "filename": "general1111-word-83762.png",
+          "tileIndex": 6
+        },
+        {
+          "id": 83771,
+          "reading": "ひめはなばち",
+          "word": "姫花蜂",
+          "meaning": "ヒメハナバチ属の種のハチ。",
+          "level": "3",
+          "filename": "general1111-word-83771.png",
+          "tileIndex": 7
+        },
+        {
+          "id": 83817,
+          "reading": "ふうけいがか",
+          "word": "風景画家",
+          "meaning": "風景を描く人。",
+          "level": "3",
+          "filename": "general1111-word-83817.png",
+          "tileIndex": 8
+        },
+        {
+          "id": 83818,
+          "reading": "ふうしゃごや",
+          "word": "風車小屋",
+          "meaning": "風を動力とする製粉機。",
+          "level": "3",
+          "filename": "general1111-word-83818.png",
+          "tileIndex": 9
+        },
+        {
+          "id": 83850,
+          "reading": "ふなくいむし",
+          "word": "船食虫",
+          "meaning": "典型的なフナクイムシ。",
+          "level": "3",
+          "filename": "general1111-word-83850.png",
+          "tileIndex": 10
+        },
+        {
+          "id": 83932,
+          "reading": "へるすふーど",
+          "word": "ヘルスフード",
+          "meaning": "一般に健康を促進すると考えられている自然食品や加工食品。",
+          "level": "3",
+          "filename": "general1111-word-83932.png",
+          "tileIndex": 11
+        },
+        {
+          "id": 83965,
+          "reading": "ほうせきてん",
+          "word": "宝石店",
+          "meaning": "宝石を売買する会社。",
+          "level": "3",
+          "filename": "general1111-word-83965.png",
+          "tileIndex": 12
+        },
+        {
+          "id": 83977,
+          "reading": "ほったてごや",
+          "word": "掘っ立て小屋",
+          "meaning": "住居として使われる小さい粗雑な避難所。",
+          "level": "3",
+          "filename": "general1111-word-83977.png",
+          "tileIndex": 13
+        },
+        {
+          "id": 83985,
+          "reading": "ほーむすぱん",
+          "word": "ホームスパン",
+          "meaning": "粗くゆったり編んだ織りもの。",
+          "level": "3",
+          "filename": "general1111-word-83985.png",
+          "tileIndex": 14
+        },
+        {
+          "id": 83996,
+          "reading": "ぼぶきゃっと",
+          "word": "ボブキャット",
+          "meaning": "北米産小型オオヤマネコ。",
+          "level": "3",
+          "filename": "general1111-word-83996.png",
+          "tileIndex": 15
+        },
+        {
+          "id": 84022,
+          "reading": "ますくらっと",
+          "word": "マスクラット",
+          "meaning": "光沢の有るこげ茶色の被毛を持つ北米産のビーバーのような水生齧歯動物。",
+          "level": "3",
+          "filename": "general1111-word-84022.png",
+          "tileIndex": 16
+        }
+      ]
+    }
+  ]
+}

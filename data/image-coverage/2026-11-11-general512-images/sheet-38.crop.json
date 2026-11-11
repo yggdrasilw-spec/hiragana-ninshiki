@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "passed": true,
+  "method": "magenta-grid-full-color-v7",
+  "sourceSha256": "3949c5c3c739bf27812e6ad6a83902b56cf4c919675da60a0f660400e1475244",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "columns": 4,
+  "rows": 4,
+  "columnBands": [
+    [
+      0,
+      9
+    ],
+    [
+      311,
+      318
+    ],
+    [
+      622,
+      633
+    ],
+    [
+      935,
+      942
+    ],
+    [
+      1248,
+      1254
+    ]
+  ],
+  "rowBands": [
+    [
+      0,
+      11
+    ],
+    [
+      310,
+      317
+    ],
+    [
+      622,
+      629
+    ],
+    [
+      935,
+      941
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "tiles": [
+    {
+      "tileIndex": 1,
+      "cropBox": [
+        9,
+        11,
+        311,
+        310
+      ],
+      "edgeInkFraction": 0.9682428488032692,
+      "contentFraction": 0.9853042149327781,
+      "file": "general1111-word-85395.png",
+      "sha256": "7f845f5d14ff6a6a83fe4de26208272daae711ebe68c4ff9a25c9990e5e205f7"
+    },
+    {
+      "tileIndex": 2,
+      "cropBox": [
+        318,
+        11,
+        622,
+        310
+      ],
+      "edgeInkFraction": 0.7780104712041885,
+      "contentFraction": 0.8515446224256293,
+      "file": "general1111-word-84097.png",
+      "sha256": "ea168dd83d4eb5a3337ac0c6f6137b219bdd98f9e8b327b50b1d68c253bbc78d"
+    },
+    {
+      "tileIndex": 3,
+      "cropBox": [
+        633,
+        11,
+        935,
+        310
+      ],
+      "edgeInkFraction": 0.9858143607705779,
+      "contentFraction": 0.9662450995592372,
+      "file": "general1111-word-84043.png",
+      "sha256": "b96a54a2218458ae47e6686c95a97f771425597d1675f8f3f5c71e80b39f1650"
+    },
+    {
+      "tileIndex": 4,
+      "cropBox": [
+        942,
+        11,
+        1248,
+        310
+      ],
+      "edgeInkFraction": 0.9450434782608695,
+      "contentFraction": 0.9422038603624281,
+      "file": "general1111-evidence-38-04.png",
+      "sha256": "51727185bbd94a6ecede850ea52a1d7e06312b8e71e8db24315ac3715a732328"
+    },
+    {
+      "tileIndex": 5,
+      "cropBox": [
+        9,
+        317,
+        311,
+        622
+      ],
+      "edgeInkFraction": 0.9903523974581167,
+      "contentFraction": 0.9779502768429053,
+      "file": "general1111-evidence-38-05.png",
+      "sha256": "1bf098e50402a2fd518c22e959887dd4edf129c73ddb4640eb74861c21bdc6f3"
+    },
+    {
+      "tileIndex": 6,
+      "cropBox": [
+        318,
+        317,
+        622,
+        622
+      ],
+      "edgeInkFraction": 0.9560161197466897,
+      "contentFraction": 0.9610332182916307,
+      "file": "general1111-evidence-38-06.png",
+      "sha256": "b92b073a65848d5d464589cf8bff1b4db7bcc4996c8522f204c0239551bfea2e"
+    },
+    {
+      "tileIndex": 7,
+      "cropBox": [
+        633,
+        317,
+        935,
+        622
+      ],
+      "edgeInkFraction": 0.8220681686886193,
+      "contentFraction": 0.831516664857236,
+      "file": "general1111-evidence-38-07.png",
+      "sha256": "d559ab9660580b9af31ac96965420c64d6ff0891602daec7076b4643b6cbbcf7"
+    },
+    {
+      "tileIndex": 8,
+      "cropBox": [
+        942,
+        317,
+        1248,
+        622
+      ],
+      "edgeInkFraction": 0.9982788296041308,
+      "contentFraction": 0.9207543126540234,
+      "file": "general1111-evidence-38-08.png",
+      "sha256": "a646ccb31e874823eb0027ca62255f240f98abafa1af12f8b5c6db611e8488e8"
+    },
+    {
+      "tileIndex": 9,
+      "cropBox": [
+        9,
+        629,
+        311,
+        935
+      ],
+      "edgeInkFraction": 0.9660899653979239,
+      "contentFraction": 0.9781197247110764,
+      "file": "general1111-evidence-38-09.png",
+      "sha256": "107ed991aa9ed12b0f72a1ea0754086f8b67521ad142ac67607843a1f9877af2"
+    },
+    {
+      "tileIndex": 10,
+      "cropBox": [
+        318,
+        629,
+        622,
+        935
+      ],
+      "edgeInkFraction": 0.9641379310344828,
+      "contentFraction": 0.9153981768145855,
+      "file": "general1111-evidence-38-10.png",
+      "sha256": "33606835a0419e25e468a8f6150be0c40c5228677fe921b463fb1fab3254f173"
+    },
+    {
+      "tileIndex": 11,
+      "cropBox": [
+        633,
+        629,
+        935,
+        935
+      ],
+      "edgeInkFraction": 0.9664936562860438,
+      "contentFraction": 0.9783577890317274,
+      "file": "general1111-evidence-38-11.png",
+      "sha256": "a1259aef3cb8042cfe1a8951a9c220d9d29e5cbe571b4f0c9387bd6f3042d89e"
+    },
+    {
+      "tileIndex": 12,
+      "cropBox": [
+        942,
+        629,
+        1248,
+        935
+      ],
+      "edgeInkFraction": 0.9074455899198167,
+      "contentFraction": 0.9601542141911231,
+      "file": "general1111-evidence-38-12.png",
+      "sha256": "ac4b52d20bb925653a340c3459b3899ee483d0af3f4c345d217bb9d64ad7e806"
+    },
+    {
+      "tileIndex": 13,
+      "cropBox": [
+        9,
+        941,
+        311,
+        1247
+      ],
+      "edgeInkFraction": 0.9832756632064591,
+      "contentFraction": 0.9853157598580271,
+      "file": "general1111-evidence-38-13.png",
+      "sha256": "e1c98a169f987c770ddeb5f0f3fd8d7321e87cd8638e5d66f1d6094f6a3c5a91"
+    },
+    {
+      "tileIndex": 14,
+      "cropBox": [
+        318,
+        941,
+        622,
+        1247
+      ],
+      "edgeInkFraction": 0.922528735632184,
+      "contentFraction": 0.9480994152046783,
+      "file": "general1111-evidence-38-14.png",
+      "sha256": "9d08ec53924487a59cff505fb8604f42d558763165cb89c184f7d29a6cab6449"
+    },
+    {
+      "tileIndex": 15,
+      "cropBox": [
+        633,
+        941,
+        935,
+        1247
+      ],
+      "edgeInkFraction": 0.9554209919261822,
+      "contentFraction": 0.9853374020689953,
+      "file": "general1111-evidence-38-15.png",
+      "sha256": "5cd89274a41fc8274901d32846da90bcd91ef55d90e756ee0bedb23d1ea86538"
+    },
+    {
+      "tileIndex": 16,
+      "cropBox": [
+        942,
+        941,
+        1248,
+        1247
+      ],
+      "edgeInkFraction": 0.9533791523482246,
+      "contentFraction": 0.9429813319663377,
+      "file": "general1111-evidence-38-16.png",
+      "sha256": "7d2fa125b343aa5ac28bf9416dd810b5058c94ddf7ed0c1884f4982d78c9d9a3"
+    }
+  ]
+}
