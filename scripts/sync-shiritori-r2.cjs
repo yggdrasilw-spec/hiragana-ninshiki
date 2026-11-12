@@ -5,6 +5,9 @@ const root = path.resolve(__dirname, '..');
 const args = process.argv.slice(2), option = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
 const inventoryPath = option('--inventory', path.join(root, 'data/image-coverage/r2-assets.json'));
 const inventory = JSON.parse(fs.readFileSync(inventoryPath, 'utf8'));
+// Source sheets remain local; never re-upload them from historical inventories.
+const localSourceSheet = key => key.startsWith('assets/shiritori/sheets/') || /(?:^|\/)(?:wave\d+-)?sheet-\d[^/]*\.(?:png|jpe?g|webp|tiff?|avif)$/i.test(key);
+inventory.entries = inventory.entries.filter(entry => !localSourceSheet(entry.key));
 const wrangler = option('--wrangler', process.env.WRANGLER_CLI);
 const s3File = option('--s3-credentials');
 if (!wrangler && !s3File) throw Error('Pass --s3-credentials FILE or --wrangler path/to/wrangler/bin/wrangler.js');

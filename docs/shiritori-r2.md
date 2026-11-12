@@ -7,11 +7,22 @@
 | バケット | 内容 | 公開範囲 |
 | --- | --- | --- |
 | `shiritori-images` | 単語画像と `shiritori_title.png` | 読み取り専用Workerから配信 |
-| `shiritori-image-archive` | 生成元シート、過去の修正版、点検用画像 | 非公開 |
+| `shiritori-image-archive` | 元シート以外の過去の修正版・点検用画像 | 非公開 |
+| ローカルの作業フォルダー | 生成元シート画像（初回・再生成・不合格分を含む） | R2へアップロードしない |
 
 公開WorkerはGET・HEAD・OPTIONSだけを受け付けます。画像パスは単語画像とタイトルだけに限定し、バケット一覧・生成元シート・更新APIは公開しません。ブラウザー用CORS、ETag、Content-Type、5分の再検証付きキャッシュを返します。
 
 画像ファイルは `.gitignore` 対象です。既存のローカル画像はそのまま使えます。Gitの画像削除はローカル原本の削除を意味しません。
+
+## 元シートはローカル保管（2026-11-12更新）
+
+**元シート画像をR2へアップロードしない。** 非公開バケットも同様。元シートは既存のローカル原本を保存し、生成プロンプト・切り出し検証JSON・SHA-256・保存先との対応を保持する。`sourceSheet` は由来とローカル検証用の参照であり、R2保管の要件ではない。
+
+既存R2の元シート画像はユーザーの明示依頼により削除する運用へ変更した。過去の転送台帳や移行記録に残る元シートを欠落扱いして、再アップロード・自動復元しない。新規cloneから元シートをR2で復元することもできない。必要な元シートは既存ローカル保存先を参照する。
+
+`scripts/shiritori-r2-inventory.py` と `scripts/sync-shiritori-r2.cjs` は、`assets/shiritori/sheets/` および過去の `sheet-NN` 原画像をR2転送対象から除外する。別の登録スクリプトで差分一覧を作る場合も、元シート画像を除外する。配信する個別画像のR2保存・読み戻しSHA-256照合は継続する。
+
+削除対象・ローカル原本の照合・削除結果は `C:/Users/user/sonohoka/output/shiritori-r2-local-sheets-20261112/` に保存する。過去の移行結果は当時の記録として以下に保持する。
 
 ## 新しくcloneした場合
 
@@ -21,7 +32,7 @@
 node scripts/restore-shiritori-r2.cjs
 ```
 
-全画像のパス・容量・SHA-256・保管バケットは `data/image-coverage/r2-assets.json` に記録しています。非公開の生成元も復元する場合は、対象2バケットに限定したR2 S3認証情報をリポジトリ外のJSONファイルに保存して指定します。
+全画像のパス・容量・SHA-256・保管バケットは `data/image-coverage/r2-assets.json` に記録しています。元シート以外の非公開の点検画像等を復元する場合は、対象2バケットに限定したR2 S3認証情報をリポジトリ外のJSONファイルに保存して指定します。
 
 ```powershell
 npm install --prefix cloudflare/images

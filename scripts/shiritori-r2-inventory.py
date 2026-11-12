@@ -4,11 +4,16 @@ import csv
 import hashlib
 import json
 import mimetypes
+import re
 from pathlib import Path
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 EXTENSIONS = {'.png', '.jpg', '.jpeg', '.webp', '.svg', '.gif', '.avif', '.ico', '.bmp', '.tif', '.tiff'}
+
+def is_local_source_sheet(key):
+    return key.startswith('assets/shiritori/sheets/') or bool(re.search(r'(?:^|/)(?:wave\d+-)?sheet-\d[^/]*\.(?:png|jpe?g|webp|tiff?|avif)$', key, re.I))
+
 
 def inventory():
     tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode().split('\0')
@@ -18,6 +23,8 @@ def inventory():
         paths.update(p for p in (ROOT / folder).rglob('*') if p.is_file() and p.suffix.lower() in EXTENSIONS)
     entries = []
     for path in sorted(paths):
+        if is_local_source_sheet(path.relative_to(ROOT).as_posix()):
+            continue
         if not path.is_file():
             raise RuntimeError(f'Missing tracked image: {path}')
         key = path.relative_to(ROOT).as_posix()
