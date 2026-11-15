@@ -14,12 +14,16 @@ try{
   fixture.distinctSenseReason='同音異義語の確認を模したテスト';fs.writeFileSync(review,JSON.stringify([fixture]));assert.equal(run().status,0);
   const ledger=JSON.parse(fs.readFileSync(path.join(root,'data/corrections/2026-10-11-ledger.json'),'utf8'));
   const removed=ledger.changes.find(c=>c.originalId===215).before;
+  // The obsolete lexical key is the fixture. Archived images need not be
+  // present in a clean checkout to prove that deleted vocabulary stays deleted.
+  Object.assign(removed,{image_asset:'',image_mode:'none',image_credit:''});
   fs.writeFileSync(batch,header+'\n'+header.split(',').map(k=>removed[k]).join(',')+'\n');fs.unlinkSync(review);
   const result=cp.spawnSync(process.execPath,[path.join(root,'scripts/import-shiritori-words.cjs'),batch],{encoding:'utf8'});
-  assert.equal(result.status,0);assert.equal(JSON.parse(result.stdout).added,0,'Deleted vocabulary cannot return from old batches');
+  assert.equal(result.status,0,result.stderr);assert.equal(JSON.parse(result.stdout).added,0,'Deleted vocabulary cannot return from old batches');
   const round2=path.join(root,'data/corrections/round2/ledger.json');
   if(fs.existsSync(round2)){
     const removed2=JSON.parse(fs.readFileSync(round2,'utf8')).changes.find(c=>c.action==='delete').before;
+    Object.assign(removed2,{image_asset:'',image_mode:'none',image_credit:''});
     fs.writeFileSync(batch,header+'\n'+header.split(',').map(k=>removed2[k]).join(',')+'\n');
     const stale=cp.spawnSync(process.execPath,[path.join(root,'scripts/import-shiritori-words.cjs'),batch],{encoding:'utf8'});
     assert.equal(stale.status,0,stale.stderr);assert.equal(JSON.parse(stale.stdout).added,0,'Round 2 deleted vocabulary cannot return from old batches');

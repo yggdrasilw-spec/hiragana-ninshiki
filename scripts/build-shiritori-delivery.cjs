@@ -30,12 +30,20 @@ function build(root){
   const onomatopoeiaFile=path.join(root,'data/onomatopoeia/entries.jsonl');
   const onomatopoeia=new Map(fs.existsSync(onomatopoeiaFile)?fs.readFileSync(onomatopoeiaFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const onomatopoeiaMatched=new Set();
+  const relatedFile=path.join(root,'data/dictionary-imports/2026-11-15-request-related.entries.json');
+  const related=new Map(fs.existsSync(relatedFile)?JSON.parse(fs.readFileSync(relatedFile,'utf8')).map(e=>[[e.reading,e.word,e.meaning].join('\t'),e]):[]);
+  const relatedMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{
     const key=[row.reading,w,row.meanings[i]].join('\t'),entry=science.get(key);
     if(entry){
       if(!context.ShiritoriVocabulary.categories[entry.genre]||!entry.source?.url?.startsWith('https://'))throw Error('Invalid science metadata: '+w);
       row.imagequeries[i].source=entry.source;matched.add(key);return entry.genre;
+    }
+    const addition=related.get(key);
+    if(addition){
+      if(!context.ShiritoriVocabulary.categories[addition.genre]||!addition.source?.url?.startsWith('https://'))throw Error('Invalid related-vocabulary metadata: '+w);
+      row.imagequeries[i].source=addition.source;relatedMatched.add(key);return addition.genre;
     }
     const company=companies.get(key);
     if(company){
@@ -64,6 +72,7 @@ function build(root){
     }
     return context.ShiritoriVocabulary.category(w,row.meanings[i],row.imagequeries[i]?.ja);
   });
+  if(relatedMatched.size!==related.size)throw Error('Related-vocabulary metadata is stale: unmatched exact meanings');
   if(onomatopoeiaMatched.size!==onomatopoeia.size)throw Error('Onomatopoeia metadata is stale: unmatched exact meanings');
   if(generalMatched.size!==general.size)throw Error('General vocabulary metadata is stale: unmatched exact meanings');
   if(geoMatched.size!==geo.size)throw Error('Geography/history metadata is stale: unmatched exact meanings');

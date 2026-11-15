@@ -1,0 +1,28 @@
+{
+  "local": true,
+  "baseCommit": "fdb0083fcb6bf9d2838a608dedb852d6368b8a3b",
+  "baselineRows": 90909,
+  "afterRows": 91992,
+  "added": 1083,
+  "newReadings": 893,
+  "requestedTerms": 78,
+  "requestedCovered": 78,
+  "oldRowsPreserved": true,
+  "exactSenses": 1083,
+  "lexicalFormMatched": 859,
+  "editorialWithoutJmdictMatch": 224,
+  "expertReview": false,
+  "imagesGenerated": 0,
+  "checks": [
+    "1083 exact senses and reading/meaning/genre/grade/source delivery",
+    "full delivery 130 count/filter checks",
+    "grade-policy duplicate/missing/stale-data guards",
+    "append history and stable IDs",
+    "import review gate and obsolete-vocabulary rejection",
+    "idempotent reimport adds zero",
+    "delivery --check",
+    "1280/390/320px browser payloads and 29 sample details per width",
+    "real game input and ending-n rule"
+  ],
+  "portableTestFixture": "Obsolete-word test fixtures now omit archived image paths, keeping the lexical deletion check independent from local image binaries."
+}
