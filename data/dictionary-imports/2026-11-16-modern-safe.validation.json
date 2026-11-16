@@ -1,0 +1,37 @@
+{
+  "batch": "2026-11-16-modern-safe",
+  "checkedOn": "2026-11-16",
+  "passed": true,
+  "addedSenses": 262,
+  "previousRowsPreserved": 91992,
+  "totalSenses": 92254,
+  "checks": [
+    "node tests/shiritori-modern-safe.cjs",
+    "node tests/shiritori-request-related.cjs",
+    "python tests/shiritori-grade-policy.py",
+    "node tests/shiritori-delivery.cjs",
+    "node tests/shiritori-import-history.cjs",
+    "node tests/shiritori-import-quality.cjs",
+    "node scripts/build-shiritori-delivery.cjs --check"
+  ],
+  "reimport": {
+    "added": 0,
+    "rows": 92254
+  },
+  "browser": {
+    "widths": [
+      1280,
+      390,
+      320
+    ],
+    "checkedSensesPerWidth": 262,
+    "renderedSamplesPerWidth": 39,
+    "endingN": true,
+    "userInputAndCpuReply": true,
+    "screenshotsVisuallyInspected": [
+      1280,
+      320
+    ]
+  },
+  "expertReview": false
+}

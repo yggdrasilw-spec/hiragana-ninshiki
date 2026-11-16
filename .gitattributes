@@ -32,5 +32,6 @@
 /data/onomatopoeia/** text eol=lf
 /data/dictionary-imports/2026-11-03-onomatopoeia2000.* text eol=lf
 /data/dictionary-imports/2026-11-15-request-related.* text eol=lf
+/data/dictionary-imports/2026-11-16-modern-safe.* text eol=lf
 # Keep the existing CRLF history representation without rewriting old records.
 /data/dictionary-imports/history.json -text whitespace=cr-at-eol

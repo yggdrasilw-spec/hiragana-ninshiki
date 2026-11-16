@@ -30,8 +30,8 @@ function build(root){
   const onomatopoeiaFile=path.join(root,'data/onomatopoeia/entries.jsonl');
   const onomatopoeia=new Map(fs.existsSync(onomatopoeiaFile)?fs.readFileSync(onomatopoeiaFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const onomatopoeiaMatched=new Set();
-  const relatedFile=path.join(root,'data/dictionary-imports/2026-11-15-request-related.entries.json');
-  const related=new Map(fs.existsSync(relatedFile)?JSON.parse(fs.readFileSync(relatedFile,'utf8')).map(e=>[[e.reading,e.word,e.meaning].join('\t'),e]):[]);
+  const relatedFiles=['2026-11-15-request-related','2026-11-16-modern-safe'].map(batch=>path.join(root,'data/dictionary-imports/'+batch+'.entries.json'));
+  const related=new Map(relatedFiles.flatMap(file=>fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).map(e=>[[e.reading,e.word,e.meaning].join('\t'),e]):[]));
   const relatedMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{

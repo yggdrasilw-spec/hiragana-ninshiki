@@ -1,0 +1,977 @@
+{
+  "checkedOn": "2026-11-16",
+  "references": {
+    "shincho26": {
+      "title": "新潮社・ガールズラボ2026年上半期調査",
+      "url": "https://prtimes.jp/main/html/rd/p/000002974.000047877.html",
+      "date": "2026-06-12"
+    },
+    "shincho25": {
+      "title": "新潮社・小中学生2025年流行調査",
+      "url": "https://prtimes.jp/main/html/rd/p/000002545.000047877.html",
+      "date": "2025-11"
+    },
+    "kufura": {
+      "title": "小学館kufura・ネットスラング解説",
+      "url": "https://kufura.jp/life/lifeslyle/706803",
+      "note": "検索結果で確認。現在本文の取得は410応答。"
+    },
+    "sanseido24": {
+      "title": "三省堂・今年の新語2024の発表",
+      "url": "https://prtimes.jp/main/html/rd/p/000000144.000014647.html",
+      "date": "2024-12"
+    },
+    "sanseido18": {
+      "title": "三省堂・今年の新語2018の発表",
+      "url": "https://prtimes.jp/a/?c=14647&f=d14647-58-pdf-0.pdf&r=58",
+      "date": "2018"
+    },
+    "daijisen25": {
+      "title": "小学館・大辞泉が選ぶ新語大賞2025",
+      "url": "https://daijisen.jp/shingo/archive/archive_2025.html",
+      "date": "2025"
+    },
+    "taipa": {
+      "title": "大宅壮一文庫・タイパの解説と用例資料",
+      "url": "https://www.oya-bunko.or.jp/magazine/introduction/tabid/945/Default.aspx",
+      "date": "2022-11-18"
+    },
+    "hokkaido": {
+      "title": "北海道教育委員会・ネットパトロールマニュアル",
+      "url": "https://www.dokyoi.pref.hokkaido.lg.jp/fs/1/0/2/9/7/1/0/5/_/manual.pdf",
+      "note": "過去の基礎用語資料。2026年の流行を示す資料ではない。"
+    },
+    "mextsns": {
+      "title": "日本語教育コンテンツ共有システム・SNSで日本語コミュニケーション",
+      "url": "https://www.nihongo-ews.mext.go.jp/contents_files/download/?cfid=570&content_id=963",
+      "date": "2016"
+    },
+    "jiyu25": {
+      "title": "自由国民社・新語流行語大賞の公式発表",
+      "url": "https://www.jiyu.co.jp/singo/",
+      "date": "2026-11-16取得",
+      "note": "取得時は2026年候補。エッホエッホの2025年の根拠にはベネッセ等の過去の発表を使用。"
+    },
+    "keio": {
+      "title": "慶應義塾大学・オンラインサブカルチャーの研究",
+      "url": "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/download.php?koara_id=AA1121824X-20260300-0209",
+      "date": "2026-03"
+    },
+    "uchuneko": {
+      "title": "JSTサイエンスポータル・宇宙猫に言及する記事",
+      "url": "https://scienceportal.jst.go.jp/newsflash/20250828_n01/",
+      "date": "2025-08-28"
+    },
+    "workcat": {
+      "title": "くまみね工房・仕事猫",
+      "url": "https://www.kumamine.jp/1672/"
+    },
+    "eg26": {
+      "title": "イー・ガーディアン・SNS流行語大賞2026候補",
+      "url": "https://www.e-guardian.co.jp/info/docs/492bf1992049e84de9e4de946f5b2acf1813eb9f.pdf",
+      "date": "2026-11-13",
+      "note": "候補の発表であり年間大賞の決定ではない。"
+    },
+    "punch": {
+      "title": "市川市動植物園公式サイト",
+      "url": "https://www.city.ichikawa.lg.jp/site/zoo/index.html"
+    },
+    "trans": {
+      "title": "株式会社トランス・推し活用語解説",
+      "url": "https://www.trans.co.jp/oshiken/column/oshikatsu_terms/"
+    },
+    "transnui": {
+      "title": "株式会社トランス・ぬい活の解説",
+      "url": "https://www.trans.co.jp/sales-promotion/column/oshikatsu/trend_nuikatsu/"
+    },
+    "alc": {
+      "title": "アルク日本語ジャーナル・推し活用語",
+      "url": "https://nj.alc.co.jp/entry/20230412-oshikatsu",
+      "date": "2023-04-12"
+    },
+    "seals": {
+      "title": "ニコプチ・シール帳とボンドロの紹介",
+      "url": "https://www.nicopuchi.jp/article/detail/42652?page=2",
+      "date": "2026-10"
+    },
+    "sweets": {
+      "title": "集英社オンライン・お菓子帳の取材",
+      "url": "https://shueisha.online/articles/-/257693",
+      "date": "2026-06"
+    },
+    "bonbon": {
+      "title": "サンエックス・ボンボンドロップシール公式発表",
+      "url": "https://www.san-x.co.jp/release/25.07-28_SG_BONBON.pdf",
+      "date": "2025-07-28"
+    },
+    "donut": {
+      "title": "ミスタードーナツ・もっちゅりん発売発表",
+      "url": "https://www.misterdonut.jp/businessinfo/news_release/pdf/nr_250528_01.pdf",
+      "date": "2025-05-28"
+    },
+    "jstai": {
+      "title": "JST・生成AI活用ガイド小学校編の用語集",
+      "url": "https://scienceteam.jst.go.jp/app/uploads/2025/03/ai_guide_2024_2_b1_0005.pdf",
+      "date": "2024-12"
+    },
+    "ipaai": {
+      "title": "IPA・AI利用者のためのセキュリティ豆知識",
+      "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000009h9u-att/1-1.pdf"
+    },
+    "mlitai": {
+      "title": "国土交通省・AI活用の留意事項の用語説明",
+      "url": "https://www.mlit.go.jp/river/shishin_guideline/gijutsu/gijutsukijunn/pdf/AI_katsuyou_ryuui.pdf"
+    },
+    "ntt": {
+      "title": "NTT西日本・ICT用語集",
+      "url": "https://business.ntt-west.co.jp/glossary/",
+      "note": "索引に対応する個別項目URLが得られる場合は項目へのリンクを優先する。"
+    },
+    "caa_fake": {
+      "title": "政府広報・ネット上の偽情報や誤情報",
+      "url": "https://www.gov-online.go.jp/article/202403/entry-5920.html"
+    },
+    "ipapass": {
+      "title": "IPA・不正ログイン対策",
+      "url": "https://www.ipa.go.jp/security/anshin/measures/account_security.html"
+    },
+    "envnature": {
+      "title": "環境省・ネイチャーポジティブ用語集",
+      "url": "https://policies.env.go.jp/nature/nature-positive/words/"
+    },
+    "envdeco": {
+      "title": "環境省・デコ活の新たな取り組み",
+      "url": "https://www.env.go.jp/press/press_05618.html",
+      "date": "2026-10"
+    },
+    "circular": {
+      "title": "経済産業省・サーキュラーエコノミーの行動解説",
+      "url": "https://www.meti.go.jp/policy/energy_environment/shigenjunkan/circular_economy/action/"
+    },
+    "repair": {
+      "title": "環境省・循環経済のリペア等の分類",
+      "url": "https://www.env.go.jp/policy/keizai_portal/B_industry/b_houkoku3.pdf"
+    },
+    "ethical": {
+      "title": "消費者庁・エシカル消費",
+      "url": "https://www.ethical.caa.go.jp/ethical-consumption.html"
+    },
+    "mextgiga": {
+      "title": "文部科学省・GIGAスクールと学びの充実",
+      "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/senseiouen/mext_01489.html"
+    },
+    "mhlwlearn": {
+      "title": "厚生労働省・リカレント教育",
+      "url": "https://www.mhlw.go.jp/stf/newpage_18817.html"
+    },
+    "mhlwtele": {
+      "title": "厚生労働省・テレワーク",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/shigoto/telework.html"
+    },
+    "mobility": {
+      "title": "国土交通省・新モビリティサービス",
+      "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000193.html"
+    },
+    "agent2026": {
+      "title": "デジタル庁・AIエージェント利用環境と基準",
+      "url": "https://www.digital.go.jp/policies/genai/agent-safety-standard",
+      "date": "2026-11-06"
+    },
+    "physical2026": {
+      "title": "経済産業省・フィジカルAIとマルチモーダル基盤モデル開発",
+      "url": "https://www.meti.go.jp/press/2026/06/20260630005/20260630005.html",
+      "date": "2026-06-30"
+    },
+    "tokens": {
+      "title": "OpenAI・トークンとコンテキストの説明",
+      "url": "https://help.openai.com/ja-jp/articles/4936856-understanding-and-counting-tokens"
+    },
+    "opendata": {
+      "title": "デジタル庁・オープンデータ",
+      "url": "https://www.digital.go.jp/resources/open_data"
+    },
+    "benesse25": {
+      "title": "ベネッセ・小学生総決算ランキング2025",
+      "url": "https://prtimes.jp/main/html/rd/p/000001421.000000120.html",
+      "checkedOn": "2026-11-16"
+    },
+    "xglossary": {
+      "title": "Xヘルプ・用語集",
+      "url": "https://help.x.com/ja/resources/glossary",
+      "checkedOn": "2026-11-16"
+    },
+    "xprivacy": {
+      "title": "Xヘルプ・公開と非公開の投稿",
+      "url": "https://help.x.com/ja/safety-and-security/public-and-protected-posts",
+      "checkedOn": "2026-11-16"
+    },
+    "googlesafety": {
+      "title": "Google・オンラインで自分を守る情報管理",
+      "url": "https://developers.google.com/codelabs/protect-yourself-from-online-harassment?hl=ja",
+      "checkedOn": "2026-11-16"
+    },
+    "rolling": {
+      "title": "農林水産省・子ども向けローリングストック解説",
+      "url": "https://www.maff.go.jp/j/kids/kodomo_kasumi/2024/content/fcp.html",
+      "checkedOn": "2026-11-16"
+    },
+    "fido": {
+      "title": "FIDOアライアンス・パスキーの解説",
+      "url": "https://fidoalliance.org/passkeys-2/?lang=ja",
+      "checkedOn": "2026-11-16"
+    },
+    "ntt_hal": {
+      "title": "NTT東日本・ハルシネーションとRAGの解説",
+      "url": "https://business.ntt-east.co.jp/content/cloudsolution/municipality/column-31.html",
+      "checkedOn": "2026-11-16"
+    },
+    "physicalguideline": {
+      "title": "IPA・AI事業者ガイドライン更新資料",
+      "url": "https://www.ipa.go.jp/disc/committee/begoj9000000egny-att/20260305_009_03_00.pdf",
+      "checkedOn": "2026-11-16"
+    },
+    "giga_note": {
+      "title": "文部科学省公式・GIGAの説明",
+      "url": "https://mext-gov.note.jp/n/nb4c7b1af23f9",
+      "checkedOn": "2026-11-16"
+    },
+    "circular_nies": {
+      "title": "国立環境研究所・循環経済の施策",
+      "url": "https://www.nies.go.jp/pr/news-and-updates/2023/20231002/20231002.html",
+      "checkedOn": "2026-11-16"
+    },
+    "sustainablefashion": {
+      "title": "消費者庁・サステナブルファッション",
+      "url": "https://www.ethical.caa.go.jp/sustainable/",
+      "checkedOn": "2026-11-16"
+    },
+    "transhome": {
+      "title": "トランス・推し活の周辺グッズと用語",
+      "url": "https://www.trans.co.jp/oshiken/",
+      "checkedOn": "2026-11-16"
+    },
+    "ntt_00339": {
+      "title": "NTT西日本・データセンター",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00339.html",
+      "term": "データセンター"
+    },
+    "ntt_00336": {
+      "title": "NTT西日本・クラウドストレージ",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00336.html",
+      "term": "クラウドストレージ"
+    },
+    "ntt_00165": {
+      "title": "NTT西日本・デジタルツイン",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00165.html",
+      "term": "デジタルツイン"
+    },
+    "ntt_00254": {
+      "title": "NTT西日本・アイトラッキング",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00254.html",
+      "term": "アイトラッキング"
+    },
+    "ntt_00726": {
+      "title": "NTT西日本・ウェアラブルコンピューター",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00726.html",
+      "term": "ウェアラブルコンピューター"
+    },
+    "ntt_00057": {
+      "title": "NTT西日本・IoT",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00057.html",
+      "term": "IoT"
+    },
+    "ntt_00500": {
+      "title": "NTT西日本・フィード",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00500.html",
+      "term": "フィード"
+    },
+    "ntt_00897": {
+      "title": "NTT西日本・メンション",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00897.html",
+      "term": "メンション"
+    },
+    "ntt_00620": {
+      "title": "NTT西日本・DMI",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00620.html",
+      "term": "DMI"
+    },
+    "ntt_00349": {
+      "title": "NTT西日本・アーカイブ",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00349.html",
+      "term": "アーカイブ"
+    },
+    "ntt_00098": {
+      "title": "NTT西日本・オンデマンド",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00098.html",
+      "term": "オンデマンド"
+    },
+    "ntt_00034": {
+      "title": "NTT西日本・サブスクリプション（サブスク）",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00034.html",
+      "term": "サブスクリプション（サブスク）"
+    },
+    "ntt_00876": {
+      "title": "NTT西日本・キャッシュレス決済",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00876.html",
+      "term": "キャッシュレス決済"
+    },
+    "ntt_00881": {
+      "title": "NTT西日本・QRコード決済",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00881.html",
+      "term": "QRコード決済"
+    },
+    "ntt_00890": {
+      "title": "NTT西日本・USB Type-C",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00890.html",
+      "term": "USB Type-C"
+    },
+    "ntt_00039": {
+      "title": "NTT西日本・テザリング",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00039.html",
+      "term": "テザリング"
+    },
+    "ntt_00068": {
+      "title": "NTT西日本・eSIM",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00068.html",
+      "term": "eSIM"
+    },
+    "ntt_00561": {
+      "title": "NTT西日本・プラットフォーム",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00561.html",
+      "term": "プラットフォーム"
+    },
+    "ntt_00899": {
+      "title": "NTT西日本・ダッシュボード",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00899.html",
+      "term": "ダッシュボード"
+    },
+    "search_kufura": {
+      "title": "小学館・ネットスラング解説の検索索引",
+      "url": "https://kufura.jp/life/lifeslyle/706803",
+      "note": "本文410応答。検索索引で語の見出し・意味を確認したもの。"
+    }
+  },
+  "retrieval": [
+    {
+      "id": "agent2026",
+      "url": "https://www.digital.go.jp/policies/genai/agent-safety-standard",
+      "status": 200,
+      "sha256": "ad3c98a596867e8fdb2a231f0e00a14f925fcb773f51be6b57c75b8b76988166",
+      "format": "html",
+      "characters": 2032,
+      "textExtracted": true
+    },
+    {
+      "id": "alc",
+      "url": "https://nj.alc.co.jp/entry/20230412-oshikatsu",
+      "status": 200,
+      "sha256": "c4159da4148ab6963c48c13a957809b3e1069c689a1b2f556bae6919ade4e2e2",
+      "format": "html",
+      "characters": 3234,
+      "textExtracted": true
+    },
+    {
+      "id": "benesse25",
+      "url": "https://prtimes.jp/main/html/rd/p/000001421.000000120.html",
+      "status": 200,
+      "sha256": "0dddbba73f9d9c418d98ecc4caeede7f332e0f85cf57f6982743b403c76927cc",
+      "format": "html",
+      "characters": 4221,
+      "textExtracted": true
+    },
+    {
+      "id": "bonbon",
+      "url": "https://www.san-x.co.jp/release/25.07-28_SG_BONBON.pdf",
+      "status": 200,
+      "sha256": "1d0b03570a6654911bf509504a850b1126416c1673a675a2e00dccbaa378c3d0",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "caa_fake",
+      "url": "https://www.gov-online.go.jp/article/202403/entry-5920.html",
+      "error": "403 Client Error: Forbidden for url: https://www.gov-online.go.jp/article/202403/entry-5920.html",
+      "textExtracted": false
+    },
+    {
+      "id": "circular",
+      "url": "https://www.meti.go.jp/policy/energy_environment/shigenjunkan/circular_economy/action/",
+      "error": "403 Client Error: Forbidden for url: https://www.meti.go.jp/policy/energy_environment/shigenjunkan/circular_economy/action/",
+      "textExtracted": false
+    },
+    {
+      "id": "circular_nies",
+      "url": "https://www.nies.go.jp/pr/news-and-updates/2023/20231002/20231002.html",
+      "status": 200,
+      "sha256": "d7442691d5ec1a1ffd606e0d67d33f35e09afb3263c573f2c86c3e6102daf447",
+      "format": "html",
+      "characters": 8173,
+      "textExtracted": true
+    },
+    {
+      "id": "daijisen25",
+      "url": "https://daijisen.jp/shingo/archive/archive_2025.html",
+      "status": 200,
+      "sha256": "1c4d93e553732752ffdd21275130bd4dde30cf28fd2d59ce450ab36f9ecd6e07",
+      "format": "html",
+      "characters": 4592,
+      "textExtracted": true
+    },
+    {
+      "id": "donut",
+      "url": "https://www.misterdonut.jp/businessinfo/news_release/pdf/nr_250528_01.pdf",
+      "status": 200,
+      "sha256": "29d3aa27702b4c23b7303935d8f51fde0a64bc1a1e8897aa21daf3c29a70d160",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "eg26",
+      "url": "https://www.e-guardian.co.jp/info/docs/492bf1992049e84de9e4de946f5b2acf1813eb9f.pdf",
+      "status": 200,
+      "sha256": "bb93d17547826a80775466f788f9ca7b46ad8d6f44b8df3f8962563ec75c5395",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "envdeco",
+      "url": "https://www.env.go.jp/press/press_05618.html",
+      "status": 200,
+      "sha256": "d0571395baa6b810ee6813264d0fb3d3090241019dd2dba71256c9d301c88da2",
+      "format": "html",
+      "characters": 4182,
+      "textExtracted": true
+    },
+    {
+      "id": "envnature",
+      "url": "https://policies.env.go.jp/nature/nature-positive/words/",
+      "status": 200,
+      "sha256": "aa5088c0447bbdf55b27e88eee5896b0004cfd18fa3087efaa16fede66aa0487",
+      "format": "html",
+      "characters": 38894,
+      "textExtracted": true
+    },
+    {
+      "id": "ethical",
+      "url": "https://www.ethical.caa.go.jp/ethical-consumption.html",
+      "status": 200,
+      "sha256": "ad50c19e2ca940f921377201be77cc05347215d0ac2ffecae0588229161f24c8",
+      "format": "html",
+      "characters": 2433,
+      "textExtracted": true
+    },
+    {
+      "id": "fido",
+      "url": "https://fidoalliance.org/passkeys-2/?lang=ja",
+      "status": 200,
+      "sha256": "e34450524bcb0074493024a59d1432be2a47dd2294fac97363c7f8e222765839",
+      "format": "html",
+      "characters": 14066,
+      "textExtracted": true
+    },
+    {
+      "id": "giga_note",
+      "url": "https://mext-gov.note.jp/n/nb4c7b1af23f9",
+      "status": 200,
+      "sha256": "dbd0f02330e57a52002d1d8caccd4ce482945ef7fbd9bbc84fa3f2e751db7e6c",
+      "format": "html",
+      "characters": 6568,
+      "textExtracted": true
+    },
+    {
+      "id": "googlesafety",
+      "url": "https://developers.google.com/codelabs/protect-yourself-from-online-harassment?hl=ja",
+      "status": 200,
+      "sha256": "bde9adb225e9514ecdac8e36b9690be24a5fbfb200e9f1d5f284bfe569d75125",
+      "format": "html",
+      "characters": 5668,
+      "textExtracted": true
+    },
+    {
+      "id": "hokkaido",
+      "url": "https://www.dokyoi.pref.hokkaido.lg.jp/fs/1/0/2/9/7/1/0/5/_/manual.pdf",
+      "status": 200,
+      "sha256": "0503a919a9ff2f0dc9e566de1b16da1961f4fa15170d0f0bd44e975f47aa2b0e",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "ipaai",
+      "url": "https://www.ipa.go.jp/digital/ai/security/rcu1hd0000009h9u-att/1-1.pdf",
+      "status": 200,
+      "sha256": "1b00e8ee4af40f11b03e190511e73c5aaea7bbe25ff1de91fb914f5f29b1aef0",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "ipapass",
+      "url": "https://www.ipa.go.jp/security/anshin/measures/account_security.html",
+      "status": 200,
+      "sha256": "eacf6769edd1eb0c7f01c36377887e10daf381f7b3dda1f12ba64576fa36b7c5",
+      "format": "html",
+      "characters": 24694,
+      "textExtracted": true
+    },
+    {
+      "id": "jiyu25",
+      "url": "https://www.jiyu.co.jp/singo/",
+      "status": 200,
+      "sha256": "d9a497173f91c926bd1b32a7f77cd2becbd3637606cf353f89a48c132855eab2",
+      "format": "html",
+      "characters": 3136,
+      "textExtracted": true
+    },
+    {
+      "id": "jstai",
+      "url": "https://scienceteam.jst.go.jp/app/uploads/2025/03/ai_guide_2024_2_b1_0005.pdf",
+      "status": 200,
+      "sha256": "4503ccb0ebd06ef98c7a12eb5f6956876dd5e457035660ca71037280c9b51033",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "keio",
+      "url": "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/download.php?koara_id=AA1121824X-20260300-0209",
+      "status": 200,
+      "sha256": "dc58a2a628b04cb55c05b3f2c1311087f3d1983fc83d0c45d2e876c107c09f20",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "kufura",
+      "url": "https://kufura.jp/life/lifeslyle/706803",
+      "error": "410 Client Error: Gone for url: https://kufura.jp/life/lifeslyle/706803",
+      "textExtracted": false
+    },
+    {
+      "id": "mextgiga",
+      "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/senseiouen/mext_01489.html",
+      "status": 200,
+      "sha256": "6ea00ae75f4bb77d521cdee3fef293de70e22b3152b929f5b9a2d9267cef6d67",
+      "format": "html",
+      "characters": 2598,
+      "textExtracted": true
+    },
+    {
+      "id": "mextsns",
+      "url": "https://www.nihongo-ews.mext.go.jp/contents_files/download/?cfid=570&content_id=963",
+      "status": 200,
+      "sha256": "64f7ec3d0ba3ab0260229f0148c3531561908d41eb700efd0e2737824620aa25",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "mhlwlearn",
+      "url": "https://www.mhlw.go.jp/stf/newpage_18817.html",
+      "status": 200,
+      "sha256": "29c7cd123cabe0e91c29f57f40ff281ba08a2272daf1168d25f3c7b2fc88c567",
+      "format": "html",
+      "characters": 5465,
+      "textExtracted": true
+    },
+    {
+      "id": "mhlwtele",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/shigoto/telework.html",
+      "status": 200,
+      "sha256": "696ba1b5464b376abae31eea06ab138bfa03b5e4b872291ec93bf7f73013a25b",
+      "format": "html",
+      "characters": 5260,
+      "textExtracted": true
+    },
+    {
+      "id": "mlitai",
+      "url": "https://www.mlit.go.jp/river/shishin_guideline/gijutsu/gijutsukijunn/pdf/AI_katsuyou_ryuui.pdf",
+      "status": 200,
+      "sha256": "a0ce92b7dcc5ee5cb6a953c6ed139038d99d6ffd173bee932bcb38100c90eba9",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "mobility",
+      "url": "https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000193.html",
+      "status": 200,
+      "sha256": "6cc31b2f9caca5530600e14af3b037c70e044327caea6c8ebe5a03f616f03f91",
+      "format": "html",
+      "characters": 1948,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt",
+      "url": "https://business.ntt-west.co.jp/glossary/",
+      "status": 200,
+      "sha256": "6fe2d8e453eda9932a64aed31b9f8a938e5039a44763cccfe74f961f471a4963",
+      "format": "html",
+      "characters": 11041,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00034",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00034.html",
+      "status": 200,
+      "sha256": "c6343beba4d9642086d6d257d1de95d55a28ded1a93d979d6eaf3972a6ef5d3c",
+      "format": "html",
+      "characters": 2766,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00039",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00039.html",
+      "status": 200,
+      "sha256": "ec2947f44393256924293071de1d4372405f28122f4da07ebd1b8468baf9638a",
+      "format": "html",
+      "characters": 2773,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00057",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00057.html",
+      "status": 200,
+      "sha256": "da36b3f9a449780cddce6d21f908f98a78461fe71911e187ee9b728a46bc9da5",
+      "format": "html",
+      "characters": 2803,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00068",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00068.html",
+      "status": 200,
+      "sha256": "5507155e9cd324d090a254f60b8abde6b23c91b69f476d625d55410486fcdc64",
+      "format": "html",
+      "characters": 2765,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00098",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00098.html",
+      "status": 200,
+      "sha256": "fb9296abd1d6d3e0e10862bd083e77880d7bd3c84b7b39264bf6ffb110ffe2e4",
+      "format": "html",
+      "characters": 2737,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00165",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00165.html",
+      "status": 200,
+      "sha256": "58ad0759f1bf216c2c9984366831a4afcc351db03dee57c18816dcf6835605a6",
+      "format": "html",
+      "characters": 2703,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00254",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00254.html",
+      "status": 200,
+      "sha256": "ac0fd494b36989d9b992d4557877758a9a1a06391cca83476a463675d789373a",
+      "format": "html",
+      "characters": 2861,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00336",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00336.html",
+      "status": 200,
+      "sha256": "21fd1035a80feefa9f46747ab6f57af973576affd40ad0a552516e03a585e363",
+      "format": "html",
+      "characters": 2382,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00339",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00339.html",
+      "status": 200,
+      "sha256": "eb28014dad4e5ab75aea494ef5e438492d4615a739b45f92b7a6470bcd943404",
+      "format": "html",
+      "characters": 2439,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00349",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00349.html",
+      "status": 200,
+      "sha256": "1dc6f685b7e5b6d79fdf5b125f43aa6aaf953b4253f8911dd9362121311c485c",
+      "format": "html",
+      "characters": 2396,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00500",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00500.html",
+      "status": 200,
+      "sha256": "0282489d9497cc016f0ca738f19f6ad922c1f0451fb20626cefce83a85f83eff",
+      "format": "html",
+      "characters": 2349,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00561",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00561.html",
+      "status": 200,
+      "sha256": "84ca3cc8e7e80750652670f107760ac0700222e1281f6b13e837d9079f279559",
+      "format": "html",
+      "characters": 2353,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00620",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00620.html",
+      "status": 200,
+      "sha256": "6797a59784824a14c9bc5c053fc07f7711f11857fa4b7f97e2d86d209ce91d3f",
+      "format": "html",
+      "characters": 2383,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00726",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00726.html",
+      "status": 200,
+      "sha256": "3efe921b88331dd8f29e7529fed39e5c425221d6503a28becee00837fb7aa612",
+      "format": "html",
+      "characters": 2450,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00876",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00876.html",
+      "status": 200,
+      "sha256": "b7e8bd48c21f1755acd357fbf3360b9e5a5a6af7baeb59914cba8ad7bff1713d",
+      "format": "html",
+      "characters": 2394,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00881",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00881.html",
+      "status": 200,
+      "sha256": "fa103f1296d5d67f67a086a746b8e88b436e2bdb9af2087b19ba702e2f0cb54c",
+      "format": "html",
+      "characters": 2482,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00890",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00890.html",
+      "status": 200,
+      "sha256": "e8c0b70801239f1ca08604cc1c1a961749a24ae406487d36801ecadd9f764038",
+      "format": "html",
+      "characters": 2469,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00897",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00897.html",
+      "status": 200,
+      "sha256": "689ac18546302cc20de38aef07b95936030b1717dd891976b1280305359f051d",
+      "format": "html",
+      "characters": 2404,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_00899",
+      "url": "https://business.ntt-west.co.jp/glossary/words-00899.html",
+      "status": 200,
+      "sha256": "04a9f25199b006751e43449a4fbca02fba61c6b39ece4545b330c9ce818da049",
+      "format": "html",
+      "characters": 2363,
+      "textExtracted": true
+    },
+    {
+      "id": "ntt_hal",
+      "url": "https://business.ntt-east.co.jp/content/cloudsolution/municipality/column-31.html",
+      "status": 200,
+      "sha256": "c483a29f65ff928f48462a49b44497d71fd67ce77c19f3e4fc3d5edaa163c94a",
+      "format": "html",
+      "characters": 4946,
+      "textExtracted": true
+    },
+    {
+      "id": "opendata",
+      "url": "https://www.digital.go.jp/resources/open_data",
+      "status": 200,
+      "sha256": "19e83b90968d032a14b88f948ff88c72bb99fe9e334a6638572baa0973310d94",
+      "format": "html",
+      "characters": 3461,
+      "textExtracted": true
+    },
+    {
+      "id": "physical2026",
+      "url": "https://www.meti.go.jp/press/2026/06/20260630005/20260630005.html",
+      "error": "403 Client Error: Forbidden for url: https://www.meti.go.jp/press/2026/06/20260630005/20260630005.html",
+      "textExtracted": false
+    },
+    {
+      "id": "physicalguideline",
+      "url": "https://www.ipa.go.jp/disc/committee/begoj9000000egny-att/20260305_009_03_00.pdf",
+      "status": 200,
+      "sha256": "a06ec09988c8bdc06e1f0b70875f9c3582f4d55036e4a96c6060ee929ea755a4",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "punch",
+      "url": "https://www.city.ichikawa.lg.jp/site/zoo/index.html",
+      "status": 200,
+      "sha256": "7e81ac28b443d2a723c03b935e2c64409a6c85ff65a336a609a7cd9bf7711e97",
+      "format": "html",
+      "characters": 2530,
+      "textExtracted": true
+    },
+    {
+      "id": "repair",
+      "url": "https://www.env.go.jp/policy/keizai_portal/B_industry/b_houkoku3.pdf",
+      "status": 200,
+      "sha256": "4deb1e74c85329cb33f2811c9b5147acb877d2684a02fa3a0af532cb7557d3fb",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "rolling",
+      "url": "https://www.maff.go.jp/j/kids/kodomo_kasumi/2024/content/fcp.html",
+      "status": 200,
+      "sha256": "a7d52371fb901cec65d353acb5020d5fdb0beeee90b6d7c8d1e6a94426bcdc6d",
+      "format": "html",
+      "characters": 28654,
+      "textExtracted": true
+    },
+    {
+      "id": "sanseido18",
+      "url": "https://prtimes.jp/a/?c=14647&f=d14647-58-pdf-0.pdf&r=58",
+      "status": 200,
+      "sha256": "6d0a2e00677afa286cee916c4f7028a7bb71f7bdf59723585fc320ffbb60f5e4",
+      "format": "pdf",
+      "textExtracted": false
+    },
+    {
+      "id": "sanseido24",
+      "url": "https://prtimes.jp/main/html/rd/p/000000144.000014647.html",
+      "status": 200,
+      "sha256": "048dd1be9fb200628e2906af3ec2a459605a33edb2c580a159f78d58c46351d1",
+      "format": "html",
+      "characters": 7121,
+      "textExtracted": true
+    },
+    {
+      "id": "seals",
+      "url": "https://www.nicopuchi.jp/article/detail/42652?page=2",
+      "status": 200,
+      "sha256": "51d653062e34ae921cf1a73267b1508ab5efc8cd3121e07d38d7c00c6488541d",
+      "format": "html",
+      "characters": 2648,
+      "textExtracted": true
+    },
+    {
+      "id": "shincho25",
+      "url": "https://prtimes.jp/main/html/rd/p/000002545.000047877.html",
+      "status": 200,
+      "sha256": "dd66b4902caf96ec350df0974d79ce1158875f743170d433170104bd171cf407",
+      "format": "html",
+      "characters": 4185,
+      "textExtracted": true
+    },
+    {
+      "id": "shincho26",
+      "url": "https://prtimes.jp/main/html/rd/p/000002974.000047877.html",
+      "status": 200,
+      "sha256": "e06ba72e8670a5dd0c5248886e1e5c3d02b910c29ef6bff7395156b80ab63a0d",
+      "format": "html",
+      "characters": 7187,
+      "textExtracted": true
+    },
+    {
+      "id": "sustainablefashion",
+      "url": "https://www.ethical.caa.go.jp/sustainable/",
+      "status": 200,
+      "sha256": "0a7b7c19162def6264ec5168355515607a02893fdfa006947794db1543caf7f6",
+      "format": "html",
+      "characters": 14369,
+      "textExtracted": true
+    },
+    {
+      "id": "sweets",
+      "url": "https://shueisha.online/articles/-/257693",
+      "status": 200,
+      "sha256": "846de161580aff38583945c7990ba7cdd364924e13d6a3e17511f3b41c0f0b1d",
+      "format": "html",
+      "characters": 9409,
+      "textExtracted": true
+    },
+    {
+      "id": "taipa",
+      "url": "https://www.oya-bunko.or.jp/magazine/introduction/tabid/945/Default.aspx",
+      "status": 200,
+      "sha256": "3c7c7c0a8db074ef2639883abbb8240ef9e0c221c2deecf7fe526edf3b528484",
+      "format": "html",
+      "characters": 7694,
+      "textExtracted": true
+    },
+    {
+      "id": "tokens",
+      "url": "https://help.openai.com/ja-jp/articles/4936856-understanding-and-counting-tokens",
+      "status": 200,
+      "sha256": "f4b429da5ec3066b85d9dc81376369c967cdbd0eb452398b5f8bc899688d4489",
+      "format": "html",
+      "characters": 3336,
+      "textExtracted": true
+    },
+    {
+      "id": "trans",
+      "url": "https://www.trans.co.jp/oshiken/column/oshikatsu_terms/",
+      "status": 200,
+      "sha256": "a6479432dafd7f34594c68279e5114a3374cdf1c0a0250bd6afd947d8b5306a4",
+      "format": "html",
+      "characters": 7559,
+      "textExtracted": true
+    },
+    {
+      "id": "transhome",
+      "url": "https://www.trans.co.jp/oshiken/",
+      "status": 200,
+      "sha256": "aa652179b77194e239ee53f95eb9749e2007b9fb9335d820470502d803a82e40",
+      "format": "html",
+      "characters": 6614,
+      "textExtracted": true
+    },
+    {
+      "id": "transnui",
+      "url": "https://www.trans.co.jp/sales-promotion/column/oshikatsu/trend_nuikatsu/",
+      "status": 200,
+      "sha256": "c01aeb9fdee6a2df23e4c3c6e875f818786676287278f9ab5ad958d3cc2dd843",
+      "format": "html",
+      "characters": 7168,
+      "textExtracted": true
+    },
+    {
+      "id": "uchuneko",
+      "url": "https://scienceportal.jst.go.jp/newsflash/20250828_n01/",
+      "status": 200,
+      "sha256": "5eb31b38deb2a76c41cf73a6d54e2baf44dcd77184dfff07637fbf90e1065545",
+      "format": "html",
+      "characters": 3268,
+      "textExtracted": true
+    },
+    {
+      "id": "workcat",
+      "url": "https://www.kumamine.jp/1672/",
+      "status": 200,
+      "sha256": "13927a6d24d139b4be10be867d977023a7e0327bae4e27f8c1b165f1ea3a8487",
+      "format": "html",
+      "characters": 258,
+      "textExtracted": true
+    },
+    {
+      "id": "xglossary",
+      "url": "https://help.x.com/ja/resources/glossary",
+      "error": "403 Client Error: Forbidden for url: https://help.x.com/ja/resources/glossary",
+      "textExtracted": false
+    },
+    {
+      "id": "xprivacy",
+      "url": "https://help.x.com/ja/safety-and-security/public-and-protected-posts",
+      "error": "403 Client Error: Forbidden for url: https://help.x.com/ja/safety-and-security/public-and-protected-posts",
+      "textExtracted": false
+    }
+  ],
+  "jmdictSha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+  "license": "CC BY-SA 4.0",
+  "limitations": "語形照合と編集による意味・適合性の確認。全件専門家校閲や流行語の完全網羅ではない。原資料・画像・音声・歌詞は転載せず説明を独自作成。"
+}
