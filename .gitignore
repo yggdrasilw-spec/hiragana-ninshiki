@@ -40,3 +40,15 @@
 /data/lexical-expansion/related-queue.jsonl
 /data/lexical-expansion/*-candidates.jsonl
 /data/lexical-expansion/named-seed-exclusions.json
+
+# Rebuildable multi-source discovery data; keep reports and editorial decisions.
+/data/vocabulary-gap/sources/
+/data/vocabulary-gap/candidates.sqlite3*
+/data/vocabulary-gap/queue.jsonl
+
+# Intermediate definition drafts are rebuilt from pinned source data and editorial TSVs.
+/data/vocabulary-gap/common4262/wiktionary-matches.json
+/data/vocabulary-gap/common4262/initial-drafts.jsonl
+/data/vocabulary-gap/common4262/drafts.jsonl
+/data/vocabulary-gap/common4262/draft-review.tsv
+/data/vocabulary-gap/common4262/pending.tsv

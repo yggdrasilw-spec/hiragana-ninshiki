@@ -1,0 +1,43 @@
+{
+  "baselineSha256": "4b6cbe7cc3eeb4a58770b5979e230d911c02ffe2c011d6230faf8dc20281ff93",
+  "jmdictSha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+  "sources": [
+    {
+      "id": "jmdict",
+      "file": "jmdict-eng-3.6.2.json",
+      "sha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+      "date": "2026-10-05",
+      "url": "https://www.edrdg.org/jmdict/j_jmdict.html",
+      "license": "CC BY-SA 4.0",
+      "retrieval": "Existing frozen source; see data/general10000/source-metadata.json"
+    },
+    {
+      "id": "sudachi-small",
+      "file": "small_lex.zip",
+      "sha256": "981b78cdc532ce058b34c76cd9acd3c9a6c771cc0ce528d7de92424b21172125",
+      "date": "20261015",
+      "url": "https://sudachi.s3.ap-northeast-1.amazonaws.com/sudachidict-raw/v1/20261015/small_lex.zip",
+      "license": "Apache-2.0 and bundled notices; see SudachiDict-LEGAL"
+    },
+    {
+      "id": "sudachi-core",
+      "file": "core_lex.zip",
+      "sha256": "e9ac06222f0ce401a0fef9b129e61e93d59e3ff395a1b037f498962ee5b8ad8b",
+      "date": "20261015",
+      "url": "https://sudachi.s3.ap-northeast-1.amazonaws.com/sudachidict-raw/v1/20261015/core_lex.zip",
+      "license": "Apache-2.0 and bundled notices; see SudachiDict-LEGAL"
+    }
+  ],
+  "filters": {
+    "jmdict:blacklist": 4894,
+    "jmdict:unsupported-form": 16727,
+    "sudachi-small:raw-rows": 765652,
+    "sudachi-small:outside-ordinary-noun-scope": 596152,
+    "sudachi-small:unsupported-form": 112,
+    "sudachi-small:blacklist": 2145,
+    "sudachi-core:raw-rows": 864397,
+    "sudachi-core:outside-ordinary-noun-scope": 797998,
+    "sudachi-core:unsupported-form": 2178,
+    "sudachi-core:blacklist": 1292
+  }
+}

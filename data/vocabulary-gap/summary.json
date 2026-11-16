@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "createdAt": "2026-11-16T08:54:13.373463+00:00",
+  "baselineCommit": "8a08d60db6c042cc4eb035401ab979d2e8eb5ec8",
+  "upstreamCommit": "8a08d60db6c042cc4eb035401ab979d2e8eb5ec8",
+  "baselineSha256": "4b6cbe7cc3eeb4a58770b5979e230d911c02ffe2c011d6230faf8dc20281ff93",
+  "baselineRows": 119489,
+  "baselineReadings": 86118,
+  "sources": [
+    {
+      "id": "jmdict",
+      "file": "jmdict-eng-3.6.2.json",
+      "sha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+      "date": "2026-10-05",
+      "url": "https://www.edrdg.org/jmdict/j_jmdict.html",
+      "license": "CC BY-SA 4.0",
+      "retrieval": "Existing frozen source; see data/general10000/source-metadata.json"
+    },
+    {
+      "id": "sudachi-small",
+      "file": "small_lex.zip",
+      "sha256": "981b78cdc532ce058b34c76cd9acd3c9a6c771cc0ce528d7de92424b21172125",
+      "date": "20261015",
+      "url": "https://sudachi.s3.ap-northeast-1.amazonaws.com/sudachidict-raw/v1/20261015/small_lex.zip",
+      "license": "Apache-2.0 and bundled notices; see SudachiDict-LEGAL"
+    },
+    {
+      "id": "sudachi-core",
+      "file": "core_lex.zip",
+      "sha256": "e9ac06222f0ce401a0fef9b129e61e93d59e3ff395a1b037f498962ee5b8ad8b",
+      "date": "20261015",
+      "url": "https://sudachi.s3.ap-northeast-1.amazonaws.com/sudachidict-raw/v1/20261015/core_lex.zip",
+      "license": "Apache-2.0 and bundled notices; see SudachiDict-LEGAL"
+    }
+  ],
+  "filters": {
+    "jmdict:blacklist": 4894,
+    "jmdict:unsupported-form": 16727,
+    "sudachi-small:raw-rows": 765652,
+    "sudachi-small:outside-ordinary-noun-scope": 596152,
+    "sudachi-small:unsupported-form": 112,
+    "sudachi-small:blacklist": 2145,
+    "sudachi-core:raw-rows": 864397,
+    "sudachi-core:outside-ordinary-noun-scope": 797998,
+    "sudachi-core:unsupported-form": 2178,
+    "sudachi-core:blacklist": 1292
+  },
+  "adopted": 0,
+  "candidatePairs": 362794,
+  "gaps": {
+    "same-reading-new-surface": 51259,
+    "new-reading": 258857,
+    "existing-pair-sense-audit": 52678
+  },
+  "missingPairs": 310116,
+  "uniqueNewReadings": 188810,
+  "missingBySource": {
+    "both": 63810,
+    "jmdict-only": 117492,
+    "sudachi-only": 128814
+  },
+  "shortlistPairs": 2000,
+  "limits": [
+    "Pending candidates, not approved entries. No dictionary mutation.",
+    "Existing reading/form is not proof of meaning coverage; alias/sense classifications require editorial review.",
+    "Common markers and family substrings rank candidates; they do not prove frequency, meaning or child suitability.",
+    "Sudachi small/core ordinary nouns only. Full proper-name expansion and standalone latest UniDic not ingested.",
+    "Sudachi small incorporates part of UniDic; this is not three independent dictionary confirmations.",
+    "Ending-n entries are retained and marked; raw reading forms may require pronunciation/old-kana review.",
+    "Untagged inappropriate content can remain. Candidate files must not feed CPU/hints directly."
+  ]
+}

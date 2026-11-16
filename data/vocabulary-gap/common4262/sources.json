@@ -1,0 +1,20 @@
+{
+  "jawiktionary": {
+    "url": "https://kaikki.org/jawiktionary/raw-wiktextract-data.jsonl.gz",
+    "dumpDate": "2026-11-01",
+    "extractedAt": "2026-11-02",
+    "sha256": "728782429f82dcb5ed0047672e7ca1ac343c44463a83ce43e45592178a2e7f8d",
+    "bytes": 65876129,
+    "license": "CC BY-SA 4.0",
+    "primary": "https://ja.wiktionary.org/"
+  },
+  "jmdict": {
+    "id": "jmdict",
+    "file": "jmdict-eng-3.6.2.json",
+    "sha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+    "date": "2026-10-05",
+    "url": "https://www.edrdg.org/jmdict/j_jmdict.html",
+    "license": "CC BY-SA 4.0",
+    "retrieval": "Existing frozen source; see data/general10000/source-metadata.json"
+  }
+}

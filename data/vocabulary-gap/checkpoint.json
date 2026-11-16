@@ -1,0 +1,20 @@
+{
+  "phase": "common4262-registered-and-validated",
+  "baselineSha256": "4b6cbe7cc3eeb4a58770b5979e230d911c02ffe2c011d6230faf8dc20281ff93",
+  "next": "Resolve the one source-meaning hold and continue non-common-reading candidates; preserve all decisions.",
+  "completedSources": [
+    "jmdict",
+    "sudachi-small",
+    "sudachi-core"
+  ],
+  "pendingSources": [
+    "standalone-latest-UniDic",
+    "unknown-input-log"
+  ],
+  "decisionsPath": "data/vocabulary-gap/decisions.jsonl",
+  "registeredBatch": "2026-11-16-common4262",
+  "processedScopeReadings": 4262,
+  "registeredReadings": 4239,
+  "excludedReadings": 22,
+  "heldReadings": 1
+}

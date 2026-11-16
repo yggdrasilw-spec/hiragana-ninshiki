@@ -30,7 +30,7 @@ function build(root){
   const onomatopoeiaFile=path.join(root,'data/onomatopoeia/entries.jsonl');
   const onomatopoeia=new Map(fs.existsSync(onomatopoeiaFile)?fs.readFileSync(onomatopoeiaFile,'utf8').trim().split('\n').filter(Boolean).map(line=>{const e=JSON.parse(line);return [[e.reading,e.word,e.meaning].join('\t'),e];}):[]);
   const onomatopoeiaMatched=new Set();
-  const relatedNames=['2026-11-15-request-related.entries.json','2026-11-16-modern-safe.entries.json','2026-11-16-life-family.entries.json','2026-11-16-life-family-02.entries.json',
+  const relatedNames=['2026-11-16-common4262.entries.json','2026-11-15-request-related.entries.json','2026-11-16-modern-safe.entries.json','2026-11-16-life-family.entries.json','2026-11-16-life-family-02.entries.json',
     ...fs.readdirSync(path.join(root,'data/dictionary-imports')).filter(file=>/^2026-11-16-related-closure(?:-\d+)?\.entries\.json$/.test(file)).sort()];
   const relatedFiles=relatedNames.map(file=>path.join(root,'data/dictionary-imports',file));
   const related=new Map(relatedFiles.flatMap(file=>fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).filter(e=>!e.withdrawn).map(e=>[[e.reading,e.word,e.meaning].join('\t'),e]):[]));
