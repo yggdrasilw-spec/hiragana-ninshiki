@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "baselineCommit": "aa9a4f725444954ba61c9a3b37a91e3ae240cc6b",
+  "upstreamCommit": "aa9a4f725444954ba61c9a3b37a91e3ae240cc6b",
+  "baselineSha256": "60a51583704926e373a2aa78091bef1913929428066fd9d045e835edcbc63b2c",
+  "baselineRows": 100505,
+  "baselineReadings": 84070,
+  "source": {
+    "file": "data/general10000/sources/jmdict-eng-3.6.2.json",
+    "sha256": "25eb58f942c3847b8379599a687e2c4b194d7eb2bfccfad2eff7be671a11e097",
+    "dictDate": "2026-10-05"
+  },
+  "families": 64,
+  "queuePairs": 56453,
+  "statuses": {
+    "pending-review": 37949,
+    "surface-present-sense-unchecked": 18504
+  },
+  "missingFamilyPairs": 28971,
+  "missingCommonPairs": 9662,
+  "decisions": 411,
+  "filters": {
+    "blacklistReading": 5219,
+    "unsuitableSense": 643,
+    "unsuitableWord": 129
+  },
+  "limits": [
+    "Substring matches propose families; they do not establish semantic membership.",
+    "An existing reading and spelling does not prove that all ordinary senses are present.",
+    "Source eligibility is not child-suitability review. No automatic adoption.",
+    "Coverage is relative to this source and taxonomy; it is not completeness of Japanese.",
+    "Frequency data and unknown-input logs are not yet ingested."
+  ]
+}

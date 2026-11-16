@@ -33,3 +33,10 @@
 /data/general10000/sources/
 /data/general10000/candidates.jsonl
 /data/general10000/registration-baseline.csv
+
+# Rebuildable local lexical discovery caches; preserve summaries, decisions,
+# source references and the durable related-seen checkpoint in Git.
+/data/lexical-expansion/queue.jsonl
+/data/lexical-expansion/related-queue.jsonl
+/data/lexical-expansion/*-candidates.jsonl
+/data/lexical-expansion/named-seed-exclusions.json

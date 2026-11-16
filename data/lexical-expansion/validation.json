@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "localOnly": true,
+  "baselineCommit": "aa9a4f725444954ba61c9a3b37a91e3ae240cc6b",
+  "baselineRows": 92254,
+  "rows": 100505,
+  "readings": 84070,
+  "added": 8251,
+  "newReadings": 968,
+  "sourceSha256": "60a51583704926e373a2aa78091bef1913929428066fd9d045e835edcbc63b2c",
+  "originalPrefixPreserved": true,
+  "sourceEvidenceChecked": 8251,
+  "individuallyEdited": 397,
+  "provisionalSourceMatched": 7854,
+  "checks": [
+    "delivery",
+    "grade-ledger",
+    "import-history",
+    "review-gates",
+    "idempotency",
+    "source-reading-and-applicability",
+    "ordinary-homonyms",
+    "prior-image-ledgers-unchanged"
+  ],
+  "browser": {
+    "curated": [
+      {
+        "width": 1280,
+        "checkedSenses": 397,
+        "renderedSamples": 26,
+        "endingN": true,
+        "played": [
+          "おりたたみがさ",
+          "さんかくふらすこ"
+        ],
+        "passed": true
+      },
+      {
+        "width": 390,
+        "checkedSenses": 397,
+        "renderedSamples": 26,
+        "endingN": true,
+        "played": [
+          "おりたたみがさ",
+          "さんしゅ"
+        ],
+        "passed": true
+      },
+      {
+        "width": 320,
+        "checkedSenses": 397,
+        "renderedSamples": 26,
+        "endingN": true,
+        "played": [
+          "おりたたみがさ",
+          "さまーら"
+        ],
+        "passed": true
+      }
+    ],
+    "related": [
+      {
+        "width": 1280,
+        "checkedSenses": 7854,
+        "renderedSamples": 39,
+        "endingN": true,
+        "played": [
+          "おりたたみがさ",
+          "さくじょうそしき"
+        ],
+        "passed": true
+      },
+      {
+        "width": 390,
+        "checkedSenses": 7854,
+        "renderedSamples": 39,
+        "endingN": true,
+        "played": [
+          "おりたたみがさ",
+          "さんどあろーらのすがた"
+        ],
+        "passed": true
+      },
+      {
+        "width": 320,
+        "checkedSenses": 7854,
+        "renderedSamples": 39,
+        "endingN": true,
+        "played": [
+          "おりたたみがさ",
+          "さくまかつとし"
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "limits": [
+    "Desktop Chrome viewport emulation; physical mobile devices were not tested.",
+    "Source matching and editorial explanation are not expert review of every adopted sense.",
+    "No public deployment in this task."
+  ]
+}

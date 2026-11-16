@@ -1,0 +1,970 @@
+[
+  {
+    "id": "bags",
+    "scene": "持ち物・買い物",
+    "anchors": [
+      "袋",
+      "バッグ"
+    ],
+    "sourcePairs": 264,
+    "surfacePresent": 71,
+    "missingPairs": 193,
+    "pendingSemanticReview": 264
+  },
+  {
+    "id": "shoes",
+    "scene": "着替え",
+    "anchors": [
+      "靴",
+      "シューズ"
+    ],
+    "sourcePairs": 126,
+    "surfacePresent": 42,
+    "missingPairs": 84,
+    "pendingSemanticReview": 126
+  },
+  {
+    "id": "clothing",
+    "scene": "着替え",
+    "anchors": [
+      "服",
+      "シャツ",
+      "ズボン",
+      "スカート"
+    ],
+    "sourcePairs": 289,
+    "surfacePresent": 51,
+    "missingPairs": 238,
+    "pendingSemanticReview": 289
+  },
+  {
+    "id": "headwear",
+    "scene": "着替え",
+    "anchors": [
+      "帽",
+      "マフラー",
+      "手袋"
+    ],
+    "sourcePairs": 97,
+    "surfacePresent": 31,
+    "missingPairs": 66,
+    "pendingSemanticReview": 97
+  },
+  {
+    "id": "fasteners",
+    "scene": "身支度",
+    "anchors": [
+      "ひも",
+      "紐",
+      "ボタン",
+      "ファスナー"
+    ],
+    "sourcePairs": 152,
+    "surfacePresent": 17,
+    "missingPairs": 135,
+    "pendingSemanticReview": 152
+  },
+  {
+    "id": "bedding",
+    "scene": "起床・就寝",
+    "anchors": [
+      "布団",
+      "ふとん",
+      "枕",
+      "毛布",
+      "寝具"
+    ],
+    "sourcePairs": 114,
+    "surfacePresent": 30,
+    "missingPairs": 84,
+    "pendingSemanticReview": 114
+  },
+  {
+    "id": "wash",
+    "scene": "洗面・入浴",
+    "anchors": [
+      "歯",
+      "せっけん",
+      "石鹸",
+      "タオル",
+      "風呂",
+      "シャンプー"
+    ],
+    "sourcePairs": 475,
+    "surfacePresent": 99,
+    "missingPairs": 376,
+    "pendingSemanticReview": 475
+  },
+  {
+    "id": "hair",
+    "scene": "身だしなみ",
+    "anchors": [
+      "髪",
+      "くし",
+      "ヘア"
+    ],
+    "sourcePairs": 276,
+    "surfacePresent": 47,
+    "missingPairs": 229,
+    "pendingSemanticReview": 276
+  },
+  {
+    "id": "cleaning",
+    "scene": "掃除",
+    "anchors": [
+      "掃除",
+      "ほうき",
+      "ちりとり",
+      "雑巾",
+      "モップ",
+      "ごみ"
+    ],
+    "sourcePairs": 81,
+    "surfacePresent": 38,
+    "missingPairs": 43,
+    "pendingSemanticReview": 81
+  },
+  {
+    "id": "laundry",
+    "scene": "洗濯",
+    "anchors": [
+      "洗濯",
+      "洗剤",
+      "物干し",
+      "ハンガー"
+    ],
+    "sourcePairs": 53,
+    "surfacePresent": 35,
+    "missingPairs": 18,
+    "pendingSemanticReview": 53
+  },
+  {
+    "id": "umbrellas",
+    "scene": "雨の日の外出",
+    "anchors": [
+      "傘",
+      "雨具",
+      "かっぱ"
+    ],
+    "sourcePairs": 69,
+    "surfacePresent": 25,
+    "missingPairs": 44,
+    "pendingSemanticReview": 69
+  },
+  {
+    "id": "clocks",
+    "scene": "時間・予定",
+    "anchors": [
+      "時計",
+      "カレンダー",
+      "暦"
+    ],
+    "sourcePairs": 163,
+    "surfacePresent": 56,
+    "missingPairs": 107,
+    "pendingSemanticReview": 163
+  },
+  {
+    "id": "containers",
+    "scene": "収納・包装",
+    "anchors": [
+      "箱",
+      "容器",
+      "ケース",
+      "瓶",
+      "びん",
+      "かご"
+    ],
+    "sourcePairs": 407,
+    "surfacePresent": 96,
+    "missingPairs": 311,
+    "pendingSemanticReview": 407
+  },
+  {
+    "id": "furniture",
+    "scene": "家の中",
+    "anchors": [
+      "机",
+      "椅子",
+      "いす",
+      "棚",
+      "たんす",
+      "ソファ"
+    ],
+    "sourcePairs": 190,
+    "surfacePresent": 45,
+    "missingPairs": 145,
+    "pendingSemanticReview": 190
+  },
+  {
+    "id": "rooms",
+    "scene": "家の中",
+    "anchors": [
+      "部屋",
+      "玄関",
+      "廊下",
+      "階段",
+      "ベランダ"
+    ],
+    "sourcePairs": 109,
+    "surfacePresent": 18,
+    "missingPairs": 91,
+    "pendingSemanticReview": 109
+  },
+  {
+    "id": "windows",
+    "scene": "家の設備",
+    "anchors": [
+      "窓",
+      "扉",
+      "ドア",
+      "戸",
+      "カーテン"
+    ],
+    "sourcePairs": 573,
+    "surfacePresent": 79,
+    "missingPairs": 494,
+    "pendingSemanticReview": 573
+  },
+  {
+    "id": "lighting",
+    "scene": "家の設備",
+    "anchors": [
+      "電灯",
+      "照明",
+      "電球",
+      "ライト"
+    ],
+    "sourcePairs": 242,
+    "surfacePresent": 58,
+    "missingPairs": 184,
+    "pendingSemanticReview": 242
+  },
+  {
+    "id": "appliances",
+    "scene": "家事",
+    "anchors": [
+      "冷蔵",
+      "冷凍",
+      "電子レンジ",
+      "炊飯",
+      "掃除機",
+      "扇風機"
+    ],
+    "sourcePairs": 44,
+    "surfacePresent": 14,
+    "missingPairs": 30,
+    "pendingSemanticReview": 44
+  },
+  {
+    "id": "paper",
+    "scene": "学校・工作",
+    "anchors": [
+      "紙",
+      "ノート",
+      "帳"
+    ],
+    "sourcePairs": 787,
+    "surfacePresent": 143,
+    "missingPairs": 644,
+    "pendingSemanticReview": 787
+  },
+  {
+    "id": "writing",
+    "scene": "学校・文房具",
+    "anchors": [
+      "鉛筆",
+      "ペン",
+      "筆",
+      "消しゴム",
+      "定規"
+    ],
+    "sourcePairs": 453,
+    "surfacePresent": 102,
+    "missingPairs": 351,
+    "pendingSemanticReview": 453
+  },
+  {
+    "id": "craft",
+    "scene": "学校・工作",
+    "anchors": [
+      "はさみ",
+      "鋏",
+      "のり",
+      "テープ",
+      "粘土",
+      "絵の具"
+    ],
+    "sourcePairs": 183,
+    "surfacePresent": 32,
+    "missingPairs": 151,
+    "pendingSemanticReview": 183
+  },
+  {
+    "id": "schoolrooms",
+    "scene": "学校の設備",
+    "anchors": [
+      "教室",
+      "校",
+      "黒板",
+      "体育館",
+      "保健室"
+    ],
+    "sourcePairs": 496,
+    "surfacePresent": 48,
+    "missingPairs": 448,
+    "pendingSemanticReview": 496
+  },
+  {
+    "id": "schoollife",
+    "scene": "学校生活",
+    "anchors": [
+      "給食",
+      "当番",
+      "係",
+      "遠足",
+      "運動会",
+      "学級"
+    ],
+    "sourcePairs": 299,
+    "surfacePresent": 54,
+    "missingPairs": 245,
+    "pendingSemanticReview": 299
+  },
+  {
+    "id": "study",
+    "scene": "学習",
+    "anchors": [
+      "問題",
+      "答え",
+      "計算",
+      "漢字",
+      "宿題",
+      "教科"
+    ],
+    "sourcePairs": 304,
+    "surfacePresent": 32,
+    "missingPairs": 272,
+    "pendingSemanticReview": 304
+  },
+  {
+    "id": "rice",
+    "scene": "食事",
+    "anchors": [
+      "ご飯",
+      "御飯",
+      "おにぎり",
+      "おむすび",
+      "丼"
+    ],
+    "sourcePairs": 114,
+    "surfacePresent": 18,
+    "missingPairs": 96,
+    "pendingSemanticReview": 114
+  },
+  {
+    "id": "bread",
+    "scene": "食事",
+    "anchors": [
+      "パン",
+      "サンドイッチ"
+    ],
+    "sourcePairs": 401,
+    "surfacePresent": 92,
+    "missingPairs": 309,
+    "pendingSemanticReview": 401
+  },
+  {
+    "id": "noodles",
+    "scene": "食事",
+    "anchors": [
+      "麺",
+      "うどん",
+      "そば",
+      "ラーメン",
+      "パスタ"
+    ],
+    "sourcePairs": 191,
+    "surfacePresent": 31,
+    "missingPairs": 160,
+    "pendingSemanticReview": 191
+  },
+  {
+    "id": "soups",
+    "scene": "食事",
+    "anchors": [
+      "汁",
+      "スープ",
+      "みそ",
+      "味噌"
+    ],
+    "sourcePairs": 321,
+    "surfacePresent": 52,
+    "missingPairs": 269,
+    "pendingSemanticReview": 321
+  },
+  {
+    "id": "egg",
+    "scene": "料理・食材",
+    "anchors": [
+      "卵",
+      "玉子"
+    ],
+    "sourcePairs": 235,
+    "surfacePresent": 61,
+    "missingPairs": 174,
+    "pendingSemanticReview": 235
+  },
+  {
+    "id": "meat",
+    "scene": "料理・食材",
+    "anchors": [
+      "肉",
+      "ハム",
+      "ソーセージ"
+    ],
+    "sourcePairs": 443,
+    "surfacePresent": 76,
+    "missingPairs": 367,
+    "pendingSemanticReview": 443
+  },
+  {
+    "id": "vegetables",
+    "scene": "料理・食材",
+    "anchors": [
+      "菜",
+      "いも",
+      "芋",
+      "豆",
+      "ねぎ",
+      "葱"
+    ],
+    "sourcePairs": 749,
+    "surfacePresent": 109,
+    "missingPairs": 640,
+    "pendingSemanticReview": 749
+  },
+  {
+    "id": "fruit",
+    "scene": "料理・食材",
+    "anchors": [
+      "果",
+      "りんご",
+      "いちご",
+      "みかん"
+    ],
+    "sourcePairs": 333,
+    "surfacePresent": 84,
+    "missingPairs": 249,
+    "pendingSemanticReview": 333
+  },
+  {
+    "id": "seasoning",
+    "scene": "調理",
+    "anchors": [
+      "塩",
+      "砂糖",
+      "醤油",
+      "しょうゆ",
+      "ソース",
+      "酢",
+      "油"
+    ],
+    "sourcePairs": 1131,
+    "surfacePresent": 276,
+    "missingPairs": 855,
+    "pendingSemanticReview": 1131
+  },
+  {
+    "id": "cooking",
+    "scene": "調理",
+    "anchors": [
+      "鍋",
+      "釜",
+      "包丁",
+      "まな板",
+      "ざる",
+      "おたま",
+      "フライパン"
+    ],
+    "sourcePairs": 217,
+    "surfacePresent": 48,
+    "missingPairs": 169,
+    "pendingSemanticReview": 217
+  },
+  {
+    "id": "tableware",
+    "scene": "食事の支度",
+    "anchors": [
+      "皿",
+      "茶碗",
+      "箸",
+      "はし",
+      "コップ",
+      "スプーン",
+      "フォーク"
+    ],
+    "sourcePairs": 219,
+    "surfacePresent": 52,
+    "missingPairs": 167,
+    "pendingSemanticReview": 219
+  },
+  {
+    "id": "drinks",
+    "scene": "飲み物",
+    "anchors": [
+      "茶",
+      "乳",
+      "ジュース",
+      "コーヒー",
+      "飲料"
+    ],
+    "sourcePairs": 808,
+    "surfacePresent": 157,
+    "missingPairs": 651,
+    "pendingSemanticReview": 808
+  },
+  {
+    "id": "sweets",
+    "scene": "おやつ",
+    "anchors": [
+      "菓子",
+      "ケーキ",
+      "クッキー",
+      "飴",
+      "アイス",
+      "餅"
+    ],
+    "sourcePairs": 364,
+    "surfacePresent": 84,
+    "missingPairs": 280,
+    "pendingSemanticReview": 364
+  },
+  {
+    "id": "shops",
+    "scene": "買い物",
+    "anchors": [
+      "売り場",
+      "売場",
+      "商店",
+      "屋",
+      "店舗",
+      "レジ"
+    ],
+    "sourcePairs": 988,
+    "surfacePresent": 227,
+    "missingPairs": 761,
+    "pendingSemanticReview": 988
+  },
+  {
+    "id": "money",
+    "scene": "買い物",
+    "anchors": [
+      "財布",
+      "硬貨",
+      "紙幣",
+      "小銭",
+      "お金",
+      "釣り銭"
+    ],
+    "sourcePairs": 20,
+    "surfacePresent": 7,
+    "missingPairs": 13,
+    "pendingSemanticReview": 20
+  },
+  {
+    "id": "roads",
+    "scene": "通学・散歩",
+    "anchors": [
+      "道",
+      "交差点",
+      "信号",
+      "歩道橋",
+      "踏切"
+    ],
+    "sourcePairs": 1242,
+    "surfacePresent": 229,
+    "missingPairs": 1013,
+    "pendingSemanticReview": 1242
+  },
+  {
+    "id": "vehicles",
+    "scene": "交通",
+    "anchors": [
+      "車",
+      "バス",
+      "タクシー",
+      "自転車",
+      "トラック"
+    ],
+    "sourcePairs": 1151,
+    "surfacePresent": 201,
+    "missingPairs": 950,
+    "pendingSemanticReview": 1151
+  },
+  {
+    "id": "railway",
+    "scene": "交通",
+    "anchors": [
+      "鉄道",
+      "電車",
+      "駅",
+      "切符",
+      "改札"
+    ],
+    "sourcePairs": 216,
+    "surfacePresent": 30,
+    "missingPairs": 186,
+    "pendingSemanticReview": 216
+  },
+  {
+    "id": "boats",
+    "scene": "旅行・交通",
+    "anchors": [
+      "船",
+      "舟",
+      "ボート",
+      "飛行機",
+      "空港"
+    ],
+    "sourcePairs": 722,
+    "surfacePresent": 121,
+    "missingPairs": 601,
+    "pendingSemanticReview": 722
+  },
+  {
+    "id": "playground",
+    "scene": "公園・外遊び",
+    "anchors": [
+      "遊具",
+      "滑り台",
+      "すべり台",
+      "ぶらんこ",
+      "砂場",
+      "公園"
+    ],
+    "sourcePairs": 36,
+    "surfacePresent": 8,
+    "missingPairs": 28,
+    "pendingSemanticReview": 36
+  },
+  {
+    "id": "balls",
+    "scene": "運動・遊び",
+    "anchors": [
+      "ボール",
+      "球",
+      "ラケット",
+      "バット"
+    ],
+    "sourcePairs": 622,
+    "surfacePresent": 141,
+    "missingPairs": 481,
+    "pendingSemanticReview": 622
+  },
+  {
+    "id": "toys",
+    "scene": "室内遊び",
+    "anchors": [
+      "人形",
+      "積み木",
+      "おもちゃ",
+      "玩具",
+      "パズル",
+      "かるた"
+    ],
+    "sourcePairs": 123,
+    "surfacePresent": 39,
+    "missingPairs": 84,
+    "pendingSemanticReview": 123
+  },
+  {
+    "id": "music",
+    "scene": "音楽",
+    "anchors": [
+      "楽器",
+      "太鼓",
+      "笛",
+      "弦",
+      "ピアノ",
+      "譜"
+    ],
+    "sourcePairs": 285,
+    "surfacePresent": 59,
+    "missingPairs": 226,
+    "pendingSemanticReview": 285
+  },
+  {
+    "id": "weather",
+    "scene": "天気",
+    "anchors": [
+      "雨",
+      "雪",
+      "雲",
+      "風",
+      "霜",
+      "雷",
+      "虹"
+    ],
+    "sourcePairs": 1951,
+    "surfacePresent": 364,
+    "missingPairs": 1587,
+    "pendingSemanticReview": 1951
+  },
+  {
+    "id": "water",
+    "scene": "自然・水辺",
+    "anchors": [
+      "川",
+      "池",
+      "湖",
+      "海",
+      "波",
+      "水"
+    ],
+    "sourcePairs": 3554,
+    "surfacePresent": 677,
+    "missingPairs": 2877,
+    "pendingSemanticReview": 3554
+  },
+  {
+    "id": "land",
+    "scene": "自然・地面",
+    "anchors": [
+      "山",
+      "石",
+      "砂",
+      "土",
+      "坂",
+      "丘"
+    ],
+    "sourcePairs": 2787,
+    "surfacePresent": 596,
+    "missingPairs": 2191,
+    "pendingSemanticReview": 2787
+  },
+  {
+    "id": "plants",
+    "scene": "自然観察",
+    "anchors": [
+      "花",
+      "草",
+      "木",
+      "葉",
+      "種",
+      "芽",
+      "根"
+    ],
+    "sourcePairs": 3951,
+    "surfacePresent": 663,
+    "missingPairs": 3288,
+    "pendingSemanticReview": 3951
+  },
+  {
+    "id": "insects",
+    "scene": "自然観察",
+    "anchors": [
+      "虫",
+      "蝶",
+      "ちょう",
+      "かぶとむし",
+      "クワガタ"
+    ],
+    "sourcePairs": 612,
+    "surfacePresent": 78,
+    "missingPairs": 534,
+    "pendingSemanticReview": 612
+  },
+  {
+    "id": "animals",
+    "scene": "自然観察",
+    "anchors": [
+      "鳥",
+      "魚",
+      "犬",
+      "猫",
+      "貝",
+      "カニ"
+    ],
+    "sourcePairs": 1563,
+    "surfacePresent": 227,
+    "missingPairs": 1336,
+    "pendingSemanticReview": 1563
+  },
+  {
+    "id": "body",
+    "scene": "体・健康",
+    "anchors": [
+      "手",
+      "足",
+      "指",
+      "爪",
+      "耳",
+      "鼻",
+      "目"
+    ],
+    "sourcePairs": 4456,
+    "surfacePresent": 791,
+    "missingPairs": 3665,
+    "pendingSemanticReview": 4456
+  },
+  {
+    "id": "health",
+    "scene": "体・健康",
+    "anchors": [
+      "体温",
+      "薬",
+      "包帯",
+      "マスク",
+      "けが",
+      "傷"
+    ],
+    "sourcePairs": 751,
+    "surfacePresent": 127,
+    "missingPairs": 624,
+    "pendingSemanticReview": 751
+  },
+  {
+    "id": "safety",
+    "scene": "安全・防災",
+    "anchors": [
+      "防災",
+      "避難",
+      "救急",
+      "消火",
+      "消防",
+      "ヘルメット"
+    ],
+    "sourcePairs": 116,
+    "surfacePresent": 33,
+    "missingPairs": 83,
+    "pendingSemanticReview": 116
+  },
+  {
+    "id": "tools",
+    "scene": "修理・工作",
+    "anchors": [
+      "工具",
+      "ねじ",
+      "釘",
+      "金槌",
+      "かなづち",
+      "ドライバー"
+    ],
+    "sourcePairs": 114,
+    "surfacePresent": 18,
+    "missingPairs": 96,
+    "pendingSemanticReview": 114
+  },
+  {
+    "id": "gardening",
+    "scene": "栽培",
+    "anchors": [
+      "植木",
+      "鉢",
+      "じょうろ",
+      "肥料",
+      "スコップ",
+      "畑"
+    ],
+    "sourcePairs": 175,
+    "surfacePresent": 41,
+    "missingPairs": 134,
+    "pendingSemanticReview": 175
+  },
+  {
+    "id": "sewing",
+    "scene": "裁縫",
+    "anchors": [
+      "針",
+      "糸",
+      "縫い",
+      "裁縫",
+      "ミシン"
+    ],
+    "sourcePairs": 467,
+    "surfacePresent": 78,
+    "missingPairs": 389,
+    "pendingSemanticReview": 467
+  },
+  {
+    "id": "communication",
+    "scene": "連絡・郵便",
+    "anchors": [
+      "電話",
+      "手紙",
+      "郵便",
+      "封筒",
+      "はがき",
+      "切手"
+    ],
+    "sourcePairs": 285,
+    "surfacePresent": 46,
+    "missingPairs": 239,
+    "pendingSemanticReview": 285
+  },
+  {
+    "id": "digital",
+    "scene": "情報機器",
+    "anchors": [
+      "画面",
+      "電源",
+      "充電",
+      "キーボード",
+      "マウス",
+      "パソコン"
+    ],
+    "sourcePairs": 173,
+    "surfacePresent": 20,
+    "missingPairs": 153,
+    "pendingSemanticReview": 173
+  },
+  {
+    "id": "events",
+    "scene": "季節の行事",
+    "anchors": [
+      "正月",
+      "節分",
+      "七夕",
+      "祭り",
+      "花見",
+      "誕生"
+    ],
+    "sourcePairs": 126,
+    "surfacePresent": 17,
+    "missingPairs": 109,
+    "pendingSemanticReview": 126
+  },
+  {
+    "id": "jobs",
+    "scene": "町の仕事",
+    "anchors": [
+      "配達",
+      "運転手",
+      "店員",
+      "先生",
+      "大工",
+      "農家"
+    ],
+    "sourcePairs": 65,
+    "surfacePresent": 15,
+    "missingPairs": 50,
+    "pendingSemanticReview": 65
+  },
+  {
+    "id": "time",
+    "scene": "時間・予定",
+    "anchors": [
+      "朝",
+      "昼",
+      "夕",
+      "夜",
+      "曜日",
+      "休日"
+    ],
+    "sourcePairs": 873,
+    "surfacePresent": 167,
+    "missingPairs": 706,
+    "pendingSemanticReview": 873
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "baselineSha256": "60a51583704926e373a2aa78091bef1913929428066fd9d045e835edcbc63b2c",
+  "seedEntries": 52135,
+  "visitedEntries": 60974,
+  "processedEntries": 60974,
+  "rounds": {
+    "0": 52134,
+    "1": 6670,
+    "2": 1602,
+    "3": 433,
+    "4": 102,
+    "5": 28,
+    "6": 2,
+    "7": 3
+  },
+  "frontier": [],
+  "reachableGraphExhausted": true,
+  "unresolvedReferences": 2101,
+  "pairs": 84333,
+  "counts": {
+    "missingPairs": 56740,
+    "presentPairs": 27593,
+    "newlyLinkedMissingPairs": 10443
+  },
+  "limits": [
+    "A completed walk is coverage of reachable source references, not completeness of Japanese.",
+    "Graph discovery never grants adoption or confirms child suitability."
+  ]
+}
