@@ -6,6 +6,7 @@ the rule. Results remain provisional level 4 until individually edited.
 """
 import collections,csv,hashlib,json,re,unicodedata
 from pathlib import Path
+from shiritori_lexical_policy import REJECT_MISC, context_notes
 R=Path(__file__).resolve().parents[1];D=R/'data/lexical-expansion';S=R/'data/general10000/sources'
 norm=lambda t:unicodedata.normalize('NFKC',t)
 hira=lambda t:''.join(chr(ord(c)-96) if 'ァ'<=c<='ヶ' else c for c in norm(t))
@@ -51,9 +52,9 @@ RULES=[
 def main():
  raw=(R/'whitelist.csv').read_bytes();old=list(csv.DictReader(raw.decode('utf-8-sig').splitlines()));pairs={(x['reading'],norm(x['word'])) for x in old};readings={x['reading'] for x in old}
  jm=json.loads((S/'jmdict-eng-3.6.2.json').read_text(encoding='utf-8'));forms=collections.defaultdict(list)
- forbidden={'arch','obs','rare','vulg','derog','sl','dated','sens','X'}
+ forbidden=REJECT_MISC
  unsafe=re.compile(r'性交|性行為|性的|性器|陰茎|膣|睾丸|精液|射精|自慰|売春|娼婦|ポルノ|猥褻|わいせつ|強姦|レイプ|自殺|自傷|麻薬|コカイン|ヘロイン|覚醒剤|差別語|蔑称|侮蔑|卑語|卑俗|黒ん坊|土人|きちがい|処刑|殺人|拷問|屠殺|暗殺|大人のおもちゃ|大人の玩具|\b(?:sex|sexual|erotic|pornography|vagina|penis|scrotum|masturbation|prostitution|suicide|execution|torture)\b',re.I)
- def allowed(s):return not s['dialect'] and not set(s['misc']) & forbidden and not unsafe.search(' '.join(g['text'] for g in s['gloss']))
+ def allowed(s):return not set(s['misc']) & forbidden and not unsafe.search(' '.join(g['text'] for g in s['gloss']))
  for e in jm['words']:
   for number,s in enumerate(e['sense'],1):
    if not allowed(s):continue
@@ -71,12 +72,12 @@ def main():
  for e in jm['words']:
   for k in e['kana']:
    reading=hira(k['text'])
-   if not re.fullmatch('[ぁ-ゖー]{1,30}',reading) or reading.startswith('ん') or set(k['tags']) & {'ik','ok','rk','gikun'}:continue
+   if not re.fullmatch('[ぁ-ゖー]{1,120}',reading) or set(k['tags']) & {'ik','ok'}:continue
    if any(reading==p if mode=='exact' else p in reading for mode,p in blocked):continue
    for w in e['kanji'] or [dict(text=k['text'],tags=[])]:
     word=w['text'];key=(reading,norm(word))
-    if key in pairs or key in result or unsafe.search(word) or re.search(r'[\s,\r\n\t()（）/／0-9A-Za-z−-]',word):continue
-    if set(w['tags']) & {'iK','ik','oK','rk'}:continue
+    if key in pairs or key in result or unsafe.search(word) or re.search(r'[,\r\n\t<>]',word):continue
+    if set(w['tags']) & {'iK','ik'}:continue
     if '*' not in k['appliesToKanji'] and word not in k['appliesToKanji']:continue
     senses=[(i,s) for i,s in enumerate(e['sense'],1) if allowed(s) and set(s['partOfSpeech']) & {'n','n-vs','n-t','n-adv'} and ('*' in s['appliesToKana'] or k['text'] in s['appliesToKana']) and ('*' in s['appliesToKanji'] or word in s['appliesToKanji'])]
     for suffix,stempos,english,template in RULES:
@@ -104,9 +105,11 @@ def main():
          if re.search(r'\b'+re.escape(text)+r'\b',normalized(full)):matched.append(dict(stemGloss=sg,compoundGloss=full))
       if matched:aligned.append(dict(**se,semanticAlignment=matched))
      if not aligned:continue
-     meaning=template.format(stem=stem)
+     chosen=e['sense'][evidence[0]['senseNumber']-1]
+     note=context_notes(chosen,w.get('tags',[]),k.get('tags',[]))
+     meaning=note+template.format(stem=stem)
      result[key]=dict(reading=reading,word=word,meaning=meaning,entryId=e['id'],evidence=evidence,stem=stem,stemEvidence=aligned,
-       rule=suffix+'-'+stempos,englishPattern=english,template=template,grade=4,gap='new-reading' if reading not in readings else 'new-spelling',
+       rule=suffix+'-'+stempos,englishPattern=english,template=template,contextNote=note,grade=4,gap='new-reading' if reading not in readings else 'new-spelling',
        reviewStatus='source-and-structure-checked-provisional',definitionAuthor='複合語の構造に基づく独自説明',common=k['common'] or w.get('common',False))
      counts[suffix]+=1;break
  rows=sorted(result.values(),key=lambda x:(x['gap']!='new-reading',not x['common'],len(x['reading']),x['reading'],x['word']))

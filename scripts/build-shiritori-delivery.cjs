@@ -33,7 +33,7 @@ function build(root){
   const relatedNames=['2026-11-15-request-related.entries.json','2026-11-16-modern-safe.entries.json','2026-11-16-life-family.entries.json','2026-11-16-life-family-02.entries.json',
     ...fs.readdirSync(path.join(root,'data/dictionary-imports')).filter(file=>/^2026-11-16-related-closure(?:-\d+)?\.entries\.json$/.test(file)).sort()];
   const relatedFiles=relatedNames.map(file=>path.join(root,'data/dictionary-imports',file));
-  const related=new Map(relatedFiles.flatMap(file=>fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).map(e=>[[e.reading,e.word,e.meaning].join('\t'),e]):[]));
+  const related=new Map(relatedFiles.flatMap(file=>fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).filter(e=>!e.withdrawn).map(e=>[[e.reading,e.word,e.meaning].join('\t'),e]):[]));
   const relatedMatched=new Set();
   const matched=new Set();
   for(const row of rows)row.genres=row.words.map((w,i)=>{

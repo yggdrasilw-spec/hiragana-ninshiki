@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve(__dirname,'..'),related=process.argv.includes('--related'),batch=related?'2026-11-16-related-closure':'2026-11-16-life-family';
 const files=fs.readdirSync(path.join(root,'data/dictionary-imports')).filter(f=>related?/^2026-11-16-related-closure(?:-\d+)?\.review\.json$/.test(f):/^2026-11-16-life-family(?:-\d+)?\.review\.json$/.test(f));
-const items=files.flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,'data/dictionary-imports',file),'utf8')));
+const items=files.flatMap(file=>JSON.parse(fs.readFileSync(path.join(root,'data/dictionary-imports',file),'utf8'))).filter(x=>!x.withdrawn);
 const server=http.createServer((req,res)=>{
  const file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
  if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);return res.end();}

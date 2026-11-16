@@ -14,7 +14,7 @@ def main():
   batch=f'2026-11-16-related-closure-{number:02d}';sf=R/'data/dictionary-imports'/f'{batch}.summary.json'
   if sf.exists() and json.loads(sf.read_text(encoding='utf-8')).get('registered'):
    number+=1;continue
-  for script in ['scan-shiritori-source-aliases.py','prepare-shiritori-compound-closure.py']:
+  for script in ['scan-shiritori-source-aliases.py','prepare-shiritori-compound-closure.py','prepare-shiritori-confirmed-wordnet.py']:
    with (out/f'{batch}-{script}.log').open('w',encoding='utf-8') as f:
     subprocess.run([sys.executable,'-B','-X','utf8','scripts/'+script],cwd=R,stdout=f,stderr=subprocess.STDOUT,check=True)
   command=[sys.executable,'-B','-X','utf8','scripts/import-shiritori-related-closure.py','--batch',batch]

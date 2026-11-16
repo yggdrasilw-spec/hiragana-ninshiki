@@ -1,6 +1,7 @@
 """Build a resumable, source-backed ordinary-word queue; never import automatically."""
 import argparse, collections, csv, hashlib, json, re, subprocess, unicodedata
 from pathlib import Path
+from shiritori_lexical_policy import REJECT_MISC
 
 def norm(t): return unicodedata.normalize('NFKC', t)
 def hira(t): return ''.join(chr(ord(c)-96) if 'ァ' <= c <= 'ヶ' else c for c in norm(t))
@@ -30,15 +31,17 @@ def audit(root):
         if not line or line.startswith('#'): continue
         m=re.match(r'(exact|contains)\s*[:=]\s*(.*)',line,re.I)
         blocks.append((m[1].lower(),hira(m[2])) if m else ('contains',hira(line)))
-    excluded={'arch','obs','rare','vulg','derog','sl','dated','sens','X'}
+    excluded=REJECT_MISC
     unsuitable=re.compile(r'性玩具|枕絵|春画|陰茎|陰嚢|玉袋|膣|性交|自慰|売春|猥褻|麻薬|覚醒剤|\b(?:sex|sexual|erotic|pornography|pornographic|vagina|penis|scrotum|testicle|masturbation|prostitution|suicide)\b',re.I)
     counts=collections.Counter(); inventory={}; queue={}
     for family in config['families']:
         inventory[family['id']]={**family,'sourcePairs':0,'surfacePresent':0,'missingPairs':0,'pendingSemanticReview':0}
     for entry in jm['words']:
         for kana in entry['kana']:
+            if 'ok' in kana.get('tags',[]):
+                counts['historical-kana-is-spelling-not-pronunciation']+=1;continue
             reading=hira(kana['text'])
-            if not re.fullmatch('[ぁ-ゖー]{1,30}',reading) or reading.startswith('ん'): continue
+            if not re.fullmatch('[ぁ-ゖー]{1,120}',reading): continue
             if any(reading==v if mode=='exact' else v in reading for mode,v in blocks):
                 counts['blacklistReading']+=1; continue
             for form in entry['kanji'] or [{'text':kana['text'],'tags':[],'common':kana['common']}]:
@@ -46,12 +49,12 @@ def audit(root):
                 if unsuitable.search(word):
                     counts['unsuitableWord']+=1; continue
                 if '*' not in kana['appliesToKanji'] and word not in kana['appliesToKanji']: continue
-                if any(t in form.get('tags',[]) for t in ['iK','ik','oK','rk','sK']): continue
-                if re.search('[,\r\n\t/／()（）]',word): continue
+                if any(t in form.get('tags',[]) for t in ['iK','ik','sK']): continue
+                if re.search('[,\r\n\t<>]',word): continue
                 senses=[]
                 for number,sense in enumerate(entry['sense'],1):
                     if not set(sense['partOfSpeech']) & {'n','n-adv','n-t','n-vs'}: continue
-                    if sense['dialect'] or set(sense['misc']) & excluded: continue
+                    if set(sense['misc']) & excluded: continue
                     if unsuitable.search(' '.join(g['text'] for g in sense['gloss'])):
                         counts['unsuitableSense']+=1; continue
                     if '*' not in sense['appliesToKana'] and kana['text'] not in sense['appliesToKana']: continue
@@ -60,7 +63,6 @@ def audit(root):
                 if not senses: continue
                 families=[f['id'] for f in config['families'] if any(a in word for a in f['anchors'])]
                 common=kana['common'] or form.get('common',False)
-                if not families and not common: continue
                 present=key in pairs
                 if key not in queue:
                     queue[key]=dict(key=reading+'\t'+word,reading=reading,word=word,families=[],common=common,readingCommon=kana['common'],
@@ -72,7 +74,9 @@ def audit(root):
                 item['common'] |= common
                 item['readingCommon'] |= kana['common']
                 item['evidence'].append(dict(entryId=entry['id'],senseNumbers=senses,
-                    sourceWord=word,sourceKana=kana['text'],url='https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&seq='+entry['id']))
+                    sourceWord=word,sourceKana=kana['text'],formTags=form.get('tags',[]),readingTags=kana.get('tags',[]),
+                    senseTags=[dict(number=n,misc=entry['sense'][n-1]['misc'],dialect=entry['sense'][n-1]['dialect']) for n in senses],
+                    url='https://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&seq='+entry['id']))
     ordered=sorted(queue.values(),key=lambda r:(r['status']!='pending-review',not r['readingCommon'],not bool(r['families']),not r['common'],len(r['reading']),r['reading'],r['word']))
     # Editorial decisions live separately and are never replaced by a refreshed audit.
     decisions={}
@@ -91,7 +95,7 @@ def audit(root):
     save(folder/'family-coverage.json',list(inventory.values()))
     summary=dict(schema=1,baselineCommit=baseline_commit,upstreamCommit=upstream_commit,baselineSha256=hashlib.sha256(raw).hexdigest(),baselineRows=len(rows),
         baselineReadings=len(readings),source=dict(file=source.relative_to(root).as_posix(),sha256=hashlib.sha256(source.read_bytes()).hexdigest(),dictDate=jm['dictDate']),
-        families=len(inventory),queuePairs=len(ordered),statuses=dict(collections.Counter(r['status'] for r in ordered)),
+        adoptionPolicyVersion=2,difficultyExcluded=False,families=len(inventory),queuePairs=len(ordered),statuses=dict(collections.Counter(r['status'] for r in ordered)),
         missingFamilyPairs=sum(r['status']=='pending-review' and bool(r['families']) for r in ordered),
         missingCommonPairs=sum(r['status']=='pending-review' and r['common'] for r in ordered),
         decisions=len(decisions),filters=dict(counts),

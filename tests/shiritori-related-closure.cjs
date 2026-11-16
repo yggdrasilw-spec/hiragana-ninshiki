@@ -12,6 +12,7 @@ for(const batch of batches){
  const baseline=snapshot.trimEnd().split('\n').slice(0,s.baselineRows+1).join('\n')+'\n';assert.equal(hash(baseline),s.baselineSha256);
  assert.equal(history[n].addedLines.length,s.added);assert.equal(items.length,s.added);assert.equal(s.allIndividuallyReviewed,false);
  for(const x of items){
+  if(x.withdrawn){assert(x.withdrawalReason);continue;}
   const row=byReading.get(x.reading),i=row.words.findIndex((w,i)=>w===x.word&&row.meanings[i]===x.meaning);assert(i>=0,x.word);
   assert.equal(row.meaningLevels[i],4,x.word);assert.equal(row.genres[i],x.genre,x.word);assert.equal(row.imagequeries[i].mode,'none');
   assert(row.imagequeries[i].source?.url.startsWith('https://'));assert.equal(x.provisional,true);

@@ -1,6 +1,7 @@
 """Walk source cross-references to closure and retain each discovery's parent."""
 import collections,csv,hashlib,json,re,unicodedata
 from pathlib import Path
+from shiritori_lexical_policy import REJECT_MISC
 R=Path(__file__).resolve().parents[1];D=R/'data/lexical-expansion'
 norm=lambda t:unicodedata.normalize('NFKC',t)
 hira=lambda t:''.join(chr(ord(c)-96) if 'ァ'<=c<='ヶ' else c for c in norm(t))
@@ -9,7 +10,7 @@ def main():
  entries={e['id']:e for e in jm['words']};forms=collections.defaultdict(set);safe={}
  inappropriate=re.compile(r'性玩具|陰茎|膣|性交|自慰|売春|猥褻|麻薬|覚醒剤|\b(?:sex|sexual|erotic|pornography|vagina|penis|scrotum|masturbation|prostitution|suicide)\b',re.I)
  for e in jm['words']:
-  senses=[(i,s) for i,s in enumerate(e['sense'],1) if set(s['partOfSpeech']) & {'n','n-t','n-adv','n-vs'} and not s['dialect'] and not set(s['misc']) & {'arch','obs','rare','vulg','derog','sl','dated','sens','X'} and not inappropriate.search(' '.join(g['text'] for g in s['gloss']))]
+  senses=[(i,s) for i,s in enumerate(e['sense'],1) if set(s['partOfSpeech']) & {'n','n-t','n-adv','n-vs'} and not set(s['misc']) & REJECT_MISC and not inappropriate.search(' '.join(g['text'] for g in s['gloss']))]
   if not senses:continue
   safe[e['id']]=senses
   for f in e['kanji']+e['kana']:
@@ -62,13 +63,13 @@ def main():
   for k in e['kana']:
    reading=hira(k['text'])
    if any(reading==v if mode=='exact' else v in reading for mode,v in blocked):continue
-   if not re.fullmatch('[ぁ-ゖー]{1,30}',reading) or reading.startswith('ん'):continue
-   if set(k['tags']) & {'ik','ok','rk','gikun'}:continue
+   if not re.fullmatch('[ぁ-ゖー]{1,120}',reading):continue
+   if set(k['tags']) & {'ik','ok'}:continue
    for w in e['kanji'] or [dict(text=k['text'],tags=[])]:
     word=w['text'];key=(reading,norm(word))
-    if set(w['tags']) & {'iK','ik','oK','rk'}:continue
+    if set(w['tags']) & {'iK','ik'}:continue
     if '*' not in k['appliesToKanji'] and word not in k['appliesToKanji']:continue
-    if re.search(r'[\s,\r\n\t()（）/／]',word) or inappropriate.search(word):continue
+    if re.search(r'[,\r\n\t<>]',word) or inappropriate.search(word):continue
     applicable=[i for i,s in safe[eid] if ('*' in s['appliesToKana'] or k['text'] in s['appliesToKana']) and ('*' in s['appliesToKanji'] or word in s['appliesToKanji'])]
     if not applicable or key in candidates:continue
     present=key in pairs

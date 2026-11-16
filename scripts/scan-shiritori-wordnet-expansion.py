@@ -1,6 +1,7 @@
 """Inspect remaining source-aligned noun senses, including missing ordinary senses."""
 import collections,csv,difflib,hashlib,json,re,unicodedata,xml.etree.ElementTree as E
 from pathlib import Path
+from shiritori_lexical_policy import REJECT_MISC
 R=Path(__file__).resolve().parents[1];D=R/'data/lexical-expansion';S=R/'data/general10000/sources'
 norm=lambda t:unicodedata.normalize('NFKC',t)
 hira=lambda t:''.join(chr(ord(c)-96) if 'ァ'<=c<='ヶ' else c for c in norm(t))
@@ -24,9 +25,10 @@ def main():
   m=re.match(r'(exact|contains)\s*[:=]\s*(.*)',line,re.I);blocked.append((m[1].lower(),hira(m[2])) if m else ('contains',hira(line)))
  for e in jm['words']:
   for k in e['kana']:
+   if 'ok' in k.get('tags',[]):continue
    for w in e['kanji'] or [{'text':k['text'],'common':k['common'],'tags':[]}]:
     if '*' not in k['appliesToKanji'] and w['text'] not in k['appliesToKanji']:continue
-    senses=[(i,s) for i,s in enumerate(e['sense'],1) if set(s['partOfSpeech']) & {'n','n-t','n-adv','n-vs'} and ('*' in s['appliesToKana'] or k['text'] in s['appliesToKana']) and ('*' in s['appliesToKanji'] or w['text'] in s['appliesToKanji']) and not s['dialect'] and not set(s['misc']) & {'arch','obs','rare','vulg','derog','sl','dated','sens','X'}]
+    senses=[(i,s) for i,s in enumerate(e['sense'],1) if set(s['partOfSpeech']) & {'n','n-t','n-adv','n-vs'} and ('*' in s['appliesToKana'] or k['text'] in s['appliesToKana']) and ('*' in s['appliesToKanji'] or w['text'] in s['appliesToKanji']) and not set(s['misc']) & REJECT_MISC]
     for i,s in senses:
      gs=[g['text'] for g in s['gloss'] if g['lang']=='eng']
      if not unsafe.search(w['text']+' '.join(gs)):index[(hira(k['text']),norm(w['text']))].append(dict(id=e['id'],senseNumber=i,common=k['common'] or w['common'],gloss=gs))
@@ -39,7 +41,7 @@ def main():
   l=e.find('Lemma');f=e.find("Form[@script='hira']")
   if l.get('partOfSpeech')!='n' or f is None:continue
   word=l.get('writtenForm');reading=hira(f.get('writtenForm'));key=(reading,norm(word))
-  if not re.fullmatch('[ぁ-ゖー]{1,30}',reading) or reading.startswith('ん') or re.search(r'[\s,\r\n()（）/／0-9A-Za-z−-]',word):continue
+  if not re.fullmatch('[ぁ-ゖー]{1,120}',reading) or re.search(r'[,\r\n<>]',word):continue
   if key not in index:continue
   if any(reading==p if m=='exact' else p in reading for m,p in blocked):continue
   for se in e.findall('Sense'):

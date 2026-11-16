@@ -58,6 +58,8 @@ def main():
  byexact={(x['reading'],x['word'],x['meaning']):i+1 for i,x in enumerate(old)}
  aliases=[json.loads(s) for s in (D/'alias-candidates.jsonl').read_text(encoding='utf-8').splitlines()]
  compounds=[json.loads(s) for s in (D/'compound-candidates.jsonl').read_text(encoding='utf-8').splitlines()]
+ confirmedfile=D/'wordnet-confirmed-candidates.jsonl'
+ confirmed=[json.loads(s) for s in confirmedfile.read_text(encoding='utf-8').splitlines()] if confirmedfile.exists() else []
  edits=read(D/'compound-editorial.json');holds=[];reviews=[];entries=[];lines=[];kinds=collections.Counter()
  previous=[]
  for x in aliases:
@@ -73,10 +75,11 @@ def main():
   if x['word'] in edits['holdWords']:
    holds.append(dict(word=x['word'],reading=x['reading'],reason='接尾辞の直訳では語義を十分に説明できない。個別編集待ち。'));continue
   x=dict(x,kind='compound',family=x['rule'],genre='daily')
-  if x['word'] in edits['overrides']:x['meaning']=edits['overrides'][x['word']];x['editorialOverride']=True
+  if x['word'] in edits['overrides']:x['meaning']=x.get('contextNote','')+edits['overrides'][x['word']];x['editorialOverride']=True
   if x['rule'].startswith(('権','料','代','費','者','員','業','事業')):x['genre']='society'
   if x['rule'].startswith(('辞典','用紙','研究','練習','訓練')):x['genre']='school'
   previous.append(x)
+ for x in confirmed:previous.append(dict(x,family='wordnet-confirmed'))
  # Recover the seed's exact genre. This does not infer identity from reading.
  idx=read(R/'data/shiritori-delivery/index.json');genres={}
  for chunk in idx['chunks']:
@@ -92,22 +95,32 @@ def main():
    seed=x['seed'];x['genre']=genres[(seed['reading'],seed['word'],seed['meaning'])]
    meaningreason='読み・表記の適用先を守った単一名詞語義の別表記・関連語。説明は既存の語義から継承。'
    if x['relation']=='identical-single-sense-gloss-set':meaningreason+='別項目間は全英語語義集合の一致と、独立した日本語定義との一致を記録。'
-   lexical=dict(method=x['relation'],entryId=x['entryId'],senseNumber=1,seedId=seed['id'],seedReading=seed['reading'],seedWord=seed['word'],trustedEditorialSeed=x['trustedEditorialSeed'],meaningChecks=x['meaningChecks'],equivalentGlossSet=seed.get('equivalentGlossSet',[]),seedEntryId=seed.get('seedEntryId'))
-  else:
+   lexical=dict(method=x['relation'],entryId=x['entryId'],senseNumber=1,seedId=seed['id'],seedReading=seed['reading'],seedWord=seed['word'],trustedEditorialSeed=x['trustedEditorialSeed'],meaningChecks=x['meaningChecks'],equivalentGlossSet=seed.get('equivalentGlossSet',[]),seedEntryId=seed.get('seedEntryId'),
+     inheritedGrade=seed['grade'],wordnetSynset=seed.get('wordnetSynset'),englishSenseWitnesses=seed.get('englishSenseWitnesses',[]),
+     contextNote=x.get('contextNote',''),senseTags=x.get('senseTags',[]),dialectTags=x.get('dialectTags',[]),formTags=x.get('formTags',[]),readingTags=x.get('readingTags',[]),seedDefinitionCorrection=x.get('seedDefinitionCorrection'))
+  elif x['kind']=='compound':
    meaningreason='独立した辞書見出し・名詞語義、構成語の品詞、複合語と構成語の英語語義の包含関係を確認。構造に基づく独自説明。'
    lexical=dict(method='dictionary-headword-stem-pos-and-gloss-composition',entryId=x['entryId'],evidence=evidence,stem=x['stem'],stemEvidence=x['stemEvidence'],rule=x['rule'],editorialOverride=x.get('editorialOverride',False))
+  else:
+   meaningreason='JMdictの適用可能な名詞語義と日本語WordNetの語義を照合。英語の語義対応が一意になる根拠を保存。定義は日本語WordNetを継承し、一部は個別に修正。'
+   lexical=dict(method='independently-disambiguated-wordnet-and-jmdict',entryId=x['entryId'],senseNumber=x['senseNumber'],wordnetSynset=x['wordnetSynset'],wordnetSenseId=x['wordnetSenseId'],englishSenseWitnesses=x['englishSenseWitnesses'],
+    originalDefinition=x['originalDefinition'],contextNote=x['contextNote'],senseTags=x['senseTags'],dialectTags=x['dialectTags'],editorialOverride=x['editorialOverride'])
   item=dict(id=len(old)+len(reviews)+1,reading=x['reading'],word=x['word'],meaning=x['meaning'],level=3,grade=4,category='一般語・複合語の関連展開',genre=x['genre'],kind=x['kind'],family=x['family'],
     lexicalSource=lexical,sources=[url],meaningReason=meaningreason,
     ageReason='一括照合による関連語候補として暫定レベル4。低学年・中学年への個別認定は行っていない。',
     distinctSenseReason='既存と同じ読みでも、出典の別表記・別名または別の語を保持する。既出判定は読み単位のまま。' if x['reading'] in oldread else '',
     imageReason='今回は語彙のみを追加。画像が適切な一般物は将来の画像補完候補。',imageEligible=True,image_mode='none',image_asset='',
-    reviewStatus='source-checked-provisional',provisional=True)
+    reviewStatus='source-checked-provisional',provisional=True,adoptionPolicyVersion=2)
   source=dict(title='JMdict / EDRDG・関連語の説明',url=url,license='CC BY-SA 4.0',verification=lexical['method'],reviewStatus='source-checked-provisional',jmdictIds=[x['entryId']])
+  if lexical.get('wordnetSynset'):
+   source.update(title='日本語WordNet 2.1 / JMdict',license='JMdict CC BY-SA 4.0 / WordNet License',wordnetLicense='data/general10000/wordnet-LICENSE.txt',synset=lexical['wordnetSynset'])
+   if lexical.get('seedDefinitionCorrection') or lexical.get('editorialOverride'):
+    source.update(title='JMdict・独自編集の説明',license='CC BY-SA 4.0',definitionAuthor='独自作成。元の説明の誤訳等を修正。')
   entries.append(dict(reading=x['reading'],word=x['word'],meaning=x['meaning'],genre=x['genre'],source=source))
   reviews.append(item);lines.append(','.join([x['reading'],x['word'],x['meaning'],'','3','','','none','']));pairs.add(key);kinds[x['kind']]+=1
  summary=dict(batch=BATCH,registered=False,baselineRows=len(old),baselineSha256=sha(before),added=len(reviews),
   newReadings=len({x['reading'] for x in reviews}-oldread),existingReadings=len({x['reading'] for x in reviews}&oldread),kinds=kinds,held=len(holds),
-  grade=4,reviewStatus='source-checked-provisional',allIndividuallyReviewed=False,imagesGenerated=0)
+  grade=4,reviewStatus='source-checked-provisional',allIndividuallyReviewed=False,imagesGenerated=0,adoptionPolicyVersion=2,difficultyExcluded=False)
  if not reviews:print(json.dumps(dict(added=0,exhaustedCurrentRules=True)));return
  save(BASE.with_suffix('.review.json'),reviews);save(BASE.with_suffix('.entries.json'),entries);save(BASE.with_suffix('.held.json'),holds);save(sf,summary)
  BASE.with_suffix('.csv').write_text('reading,word,meaning,imagequery,level,imagequery_en,image_asset,image_mode,image_credit\n'+'\n'.join(lines)+'\n',encoding='utf-8')

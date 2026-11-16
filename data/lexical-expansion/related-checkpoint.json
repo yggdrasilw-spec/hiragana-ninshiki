@@ -1,27 +1,27 @@
 {
   "schema": 1,
-  "baselineSha256": "60a51583704926e373a2aa78091bef1913929428066fd9d045e835edcbc63b2c",
-  "seedEntries": 52135,
-  "visitedEntries": 60974,
-  "processedEntries": 60974,
+  "baselineSha256": "4b6cbe7cc3eeb4a58770b5979e230d911c02ffe2c011d6230faf8dc20281ff93",
+  "seedEntries": 185112,
+  "visitedEntries": 185846,
+  "processedEntries": 185846,
   "rounds": {
-    "0": 52134,
-    "1": 6670,
-    "2": 1602,
-    "3": 433,
-    "4": 102,
+    "0": 176536,
+    "1": 7091,
+    "2": 1645,
+    "3": 438,
+    "4": 103,
     "5": 28,
     "6": 2,
     "7": 3
   },
   "frontier": [],
   "reachableGraphExhausted": true,
-  "unresolvedReferences": 2101,
-  "pairs": 84333,
+  "unresolvedReferences": 2118,
+  "pairs": 237539,
   "counts": {
-    "missingPairs": 56740,
-    "presentPairs": 27593,
-    "newlyLinkedMissingPairs": 10443
+    "presentPairs": 49492,
+    "missingPairs": 188047,
+    "newlyLinkedMissingPairs": 10285
   },
   "limits": [
     "A completed walk is coverage of reachable source references, not completeness of Japanese.",

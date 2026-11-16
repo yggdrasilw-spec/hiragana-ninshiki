@@ -1,0 +1,39 @@
+{
+  "policyVersion": 2,
+  "passedSourceEvidence": true,
+  "sourceCheckedSenses": 26838,
+  "curatedSourceChecked": 397,
+  "addedActiveItems": 18984,
+  "newReadings": 2048,
+  "currentRows": 119489,
+  "currentReadings": 86118,
+  "sourceSha256": "4b6cbe7cc3eeb4a58770b5979e230d911c02ffe2c011d6230faf8dc20281ff93",
+  "publishedBaselinePreserved": true,
+  "withdrawnBeforePublication": 10,
+  "difficultyExcluded": false,
+  "grade": 4,
+  "reviewStatus": "source-checked-provisional",
+  "allIndividuallyReviewed": false,
+  "checks": [
+    "lexical-source-evidence",
+    "lexical-broad-policy",
+    "related-closure",
+    "life-family",
+    "grade-policy",
+    "import-history",
+    "import-quality",
+    "delivery-check"
+  ],
+  "browser": {
+    "passed": true,
+    "widths": [
+      1280,
+      390,
+      320
+    ],
+    "checkedSensesPerWidth": 26838,
+    "renderedSamplesPerWidth": 40,
+    "actualInput": true,
+    "endingN": true
+  }
+}

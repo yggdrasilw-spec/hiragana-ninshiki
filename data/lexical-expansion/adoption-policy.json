@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "effectiveDate": "2026-11-16",
+  "userInstruction": "基本的に、不適切でなければ採用しましょう。難しくてもオーケーです。",
+  "difficultyIsRejectionReason": false,
+  "allowSpecialistTerms": true,
+  "allowRareWords": true,
+  "allowHistoricalWords": true,
+  "allowDialectWords": true,
+  "allowAlternateSpellings": true,
+  "treatOldKanaAsModernPronunciation": false,
+  "requireAttestedReadingAndForm": true,
+  "requireMeaningEvidence": true,
+  "unreviewedElementaryGrade": 4,
+  "excludedSenseTags": ["vulg", "derog", "sens", "X"],
+  "retainedContextTags": ["arch", "obs", "dated", "rare", "sl"],
+  "notes": [
+    "語義の難しさと内容の適切さを分ける。難しさだけでは保留しない。",
+    "古語・方言などの用法を説明と出典記録に残す。",
+    "語義の取り違え、裏付けのない読み、廃止済みの誤表記は難語の許可とは別に扱う。",
+    "一般語を優先することは、難語を採用対象から外すことを意味しない。"
+  ]
+}

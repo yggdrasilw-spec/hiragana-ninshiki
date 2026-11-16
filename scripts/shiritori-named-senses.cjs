@@ -20,10 +20,17 @@ function load(root){
 function loadReviewedGeneral(root) {
  const imports = path.join(root, 'data/dictionary-imports');
  const files = ['2026-11-09-common16.review.json', '2026-11-09-common512.review.json', '2026-11-10-common512.review.json', '2026-11-11-common-rest138.review.json', '2026-11-11-general512b.review.json', '2026-11-16-life-family.review.json', '2026-11-16-life-family-02.review.json'];
- return new Set(files.flatMap(file => {
+ const reviewed = new Set(files.flatMap(file => {
   const source = path.join(imports, file);
   if (!fs.existsSync(source)) return [];
   return JSON.parse(fs.readFileSync(source, 'utf8')).map(key);
  }));
+ // Musical forms describe types of composition, not individual titles.
+ for (const r of [
+  {reading:'きょうそうきょく',word:'きょうそうきょく',meaning:'ソロ演奏とオーケストラのための楽曲。'},
+  {reading:'こんつぇると',word:'コンツェルト',meaning:'ソロ演奏とオーケストラのための楽曲。'},
+  {reading:'げんそうきょく',word:'幻想曲',meaning:'自由な形式の楽曲で、通例いくつかの類似する主題をつなぎ合わせている。'}
+ ]) reviewed.add(key(r));
+ return reviewed;
 }
 module.exports={load,loadReviewedGeneral,key};
