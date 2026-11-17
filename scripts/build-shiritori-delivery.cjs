@@ -5,7 +5,7 @@ function build(root){
   const read=f=>fs.readFileSync(path.join(root,f),'utf8');
   const csv=read('whitelist.csv'),html=read('shiritori.html');
   const context=vm.createContext({});context.window=context;
-  for(const file of ['shiritori-image-policy.js','shiritori-vocabulary.js','shiritori-grade-policy.js','shiritori-mrs-details.js'])vm.runInContext(read(file),context);
+  for(const file of ['shiritori-image-policy.js','shiritori-vocabulary.js','shiritori-grade-policy.js','shiritori-mrs-details.js','shiritori-meaning-sources.js'])vm.runInContext(read(file),context);
   if(context.ShiritoriGradePolicy.sourceSha256!==hash(csv))throw Error('Grade policy is stale: rebuild grade bands before delivery');
   const parser=html.match(/function parseCSV\([\s\S]*?return Array.from\(map.values\(\)\);\s*}/)?.[0];
   if(!parser)throw Error('CSV parser not found');
@@ -81,6 +81,12 @@ function build(root){
   if(matched.size!==science.size)throw Error('Science metadata is stale: unmatched exact meanings');
   if(mangaMatched.size!==manga.size)throw Error('Manga metadata is stale: unmatched exact meanings');
   if(companyMatched.size!==companies.size)throw Error('Company/brand metadata is stale: unmatched exact meanings');
+  // Researched corrections take precedence over inherited source labels. The
+  // same exact-key supplement is applied by the CSV fallback parser above.
+  for(const row of rows)row.words.forEach((word,i)=>{
+    const source=context.ShiritoriMeaningSources.get(row.reading,word,row.meanings[i]);
+    if(source)row.imagequeries[i].source={...(row.imagequeries[i].source||{}),...source};
+  });
   const senseCatalog=require('./shiritori-named-senses.cjs');
   const named=senseCatalog.load(root),reviewedGeneral=senseCatalog.loadReviewedGeneral(root);
   for(const row of rows){
