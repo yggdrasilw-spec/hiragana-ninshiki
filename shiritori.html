@@ -1643,7 +1643,7 @@ body.speech-input #linkDraftInput,body.speech-input #btnOk,body.speech-input #bt
 <script src="shiritori-assets.js?v=20261018"></script>
 <script src="shiritori-image-policy.js?v=20261014"></script>
 <script src="shiritori-mrs-details.js?v=fb073b6bfce570b2"></script>
-<script src="shiritori-meaning-sources.js?v=20261118-batch0001"></script>
+<script src="shiritori-meaning-sources.js?v=20261118-batch0002-followup"></script>
 <script src="shiritori-vocabulary.js?v=20261109-common-first"></script>
 <script src="shiritori-dictionary.js?v=20261109-sense-kind"></script>
 <script src="shiritori-feedback-config.js?v=20261014"></script>
@@ -1684,6 +1684,7 @@ function parseCSV(csvText, useGradePolicy=false){
     const reading      = parts[0].trim();
     const word         = parts[1].trim();
     const meaning       = parts[2].trim();
+    if(window.ShiritoriMeaningSources?.isExcluded?.(reading,word,meaning)) continue;
     const imagequery    = (parts[3]||'').trim() || word;
     const level         = useGradePolicy ? (window.ShiritoriGradePolicy?.levels[[reading,word,meaning].join('\t')] || 4) : (parseInt(parts[4]||'1') || 1);
     const imagequeryEn  = (parts[5]||'').trim() || null;
