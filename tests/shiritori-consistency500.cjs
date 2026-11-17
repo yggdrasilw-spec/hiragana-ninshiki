@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const lineage=require('../scripts/shiritori-correction-ledger.cjs');
 const parse=text=>text.trimEnd().split('\n').slice(1).map(line=>line.split(','));
-const reviews=['0001','0002','0002-followup'].map(id=>JSON.parse(read(`data/meaning-review/source-check-20261118-batch${id}.json`)));
+const reviews=['0001','0002','0002-followup','0003','0004'].map(id=>JSON.parse(read(`data/meaning-review/source-check-20261118-batch${id}.json`)));
 const first=reviews[0];
 assert.equal(first.changes.length,50);assert.equal(first.unresolved.length,0);
 const ctx=vm.createContext({});ctx.window=ctx;
@@ -43,8 +43,16 @@ for(const review of reviews){
    assert.ok(!group?.words.some((item,i)=>item===word&&group.meanings[i]===meaning));
   }
  }
- const scopeRows=review.rowDecisions?.length||500;
- for(const r of [...review.changes,...review.additions]){
+ if(review.followupRows){
+  const prior=JSON.parse(read('data/meaning-review/'+review.priorReview));
+  assert.deepEqual(review.followupRows.map(row=>row.id),prior.unresolved.map(row=>row.id));
+  for(const item of review.followupRows)assert.deepEqual(item.baselineKey,before[item.id-1].slice(0,3));
+  assert.deepEqual(review.additionalSenseReview.map(row=>row.id),prior.changes
+   .filter(row=>row.senseCoverageReview==='pending').map(row=>row.id));
+  assert.deepEqual(review.followupRows.filter(row=>row.decision==='pending').map(row=>row.id),review.unresolved.map(row=>row.id));
+ }
+ const scopeRows=review.rowDecisions?.length||review.followupRows?.length||500;
+ for(const r of [...review.changes,...review.additions,...(review.retained||[])]){
   const exact=[r.reading,r.word,r.meaning].join('\t');
   for(const list of [fallback,rows]){
    const group=list.find(x=>x.reading===r.reading),i=group.words.findIndex((w,i)=>w===r.word&&group.meanings[i]===r.meaning);
@@ -65,7 +73,7 @@ for(const review of reviews){
   }
  }
  console.log(JSON.stringify({scopeRows,corrected:edited.size,added:review.additions.length,
-  unresolved:review.unresolved.length,sourcePairsChecked:(edited.size+review.additions.length)*2}));
+  unresolved:review.unresolved.length,sourcePairsChecked:(edited.size+review.additions.length+(review.retained?.length||0))*2}));
 }
 const second=reviews[1],followup=reviews[2];
 assert.equal(followup.unresolved.length,0);

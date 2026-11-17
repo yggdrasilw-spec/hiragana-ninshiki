@@ -1,0 +1,3900 @@
+{
+  "schema": 2,
+  "scope": "1001〜1500行目点検後の追加調査",
+  "priorReview": "source-check-20261118-batch0003.json",
+  "baselineSha256": "ad437cb8ed0a4b92406eabea572cdd7754dd8436f80a34ec89946735320c55ad",
+  "checkedAt": "2026-11-18",
+  "nextRow": 1501,
+  "imageLinksRemoved": [
+    1229,
+    1261
+  ],
+  "additionsCsv": "data/dictionary-imports/2026-11-18-consistency1001-1500-followup-senses.csv",
+  "applicationRecord": "data/meaning-review/consistency1001-1500-followup-application.json",
+  "changes": [
+    {
+      "reading": "かえる",
+      "word": "カエル",
+      "meaning": "おたまじゃくしから育つ、うしろ足でぴょんとはねるなかま。水べや、木の上などでくらすものがいる。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1012,
+          "meaning": "水辺にすみ、後ろ足で跳ねる両生類。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "水辺を主な生活場所とする種のほか、陸上や樹上で暮らすカエルもいる。",
+      "evidence": "水辺を主な生活場所とする種のほか、陸上や樹上で暮らすカエルもいる。",
+      "sources": [
+        "https://www.tokyo-zoo.net/ueno/blog/13859/index.html"
+      ],
+      "sourceTitles": [
+        "上野動物園「カエルの観察は、ぜひ上野動物園で」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.tokyo-zoo.net/ueno/blog/13859/index.html",
+          "title": "上野動物園「カエルの観察は、ぜひ上野動物園で」",
+          "evidence": "水辺を主な生活場所とする種のほか、陸上や樹上で暮らすカエルもいる。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "水辺を主な生活場所とする種のほか、陸上や樹上で暮らすカエルもいる。",
+      "id": 1012,
+      "beforeReading": "かえる",
+      "beforeWord": "カエル",
+      "beforeMeaning": "水辺にすみ、後ろ足で跳ねる両生類。"
+    },
+    {
+      "reading": "かき",
+      "word": "柿",
+      "meaning": "秋ごろに、だいだい色に実るくだもの。あまいものや、しぶいものがある。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1021,
+          "meaning": "秋に実る、甘い果物。"
+        },
+        {
+          "row": 27537,
+          "meaning": "お笑いグループ：吉本興業の公式プロフィールに掲載されている。メンバーはげんせい・銘苅。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "甘柿と渋柿がある。すべて甘いという旧説明を修正。",
+      "evidence": "甘柿と渋柿がある。すべて甘いという旧説明を修正。",
+      "sources": [
+        "https://www.maff.go.jp/j/heya/kodomo_sodan/0411/01.html"
+      ],
+      "sourceTitles": [
+        "農林水産省「甘柿と渋柿の違い」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.maff.go.jp/j/heya/kodomo_sodan/0411/01.html",
+          "title": "農林水産省「甘柿と渋柿の違い」",
+          "evidence": "甘柿と渋柿がある。すべて甘いという旧説明を修正。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "甘柿と渋柿がある。すべて甘いという旧説明を修正。",
+      "id": 1021,
+      "beforeReading": "かき",
+      "beforeWord": "柿",
+      "beforeMeaning": "秋に実る、甘い果物。"
+    },
+    {
+      "reading": "かしこい",
+      "word": "賢い",
+      "meaning": "はなしをよく分かったり、どうすればよいかをうまく考えたりできること。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1048,
+          "meaning": "理解や判断をする力があること。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "知恵・理解や判断に関わる意味を、子ども向けに言い換えた。",
+      "evidence": "知恵・理解や判断に関わる意味を、子ども向けに言い換えた。",
+      "sources": [
+        "https://imidas.jp/kojiten/detail/W-06-1-040-06.html"
+      ],
+      "sourceTitles": [
+        "集英社『広辞典』「賢い」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://imidas.jp/kojiten/detail/W-06-1-040-06.html",
+          "title": "集英社『広辞典』「賢い」",
+          "evidence": "知恵・理解や判断に関わる意味を、子ども向けに言い換えた。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "知恵・理解や判断に関わる意味を、子ども向けに言い換えた。",
+      "id": 1048,
+      "beforeReading": "かしこい",
+      "beforeWord": "賢い",
+      "beforeMeaning": "理解や判断をする力があること。"
+    },
+    {
+      "reading": "かじつ",
+      "word": "果実",
+      "meaning": "花がさいたあと、めしべの一部などが育ってできる実。種が入っているものと、種がないものがある。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1055,
+          "meaning": "植物の花が咲いたあとにでき、種を含む部分。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "子房壁や花床の発達で果実ができることを確認。種なし果実の論文と照合した。",
+      "evidence": "子房壁や花床の発達で果実ができることを確認。種なし果実の論文と照合した。",
+      "sources": [
+        "https://www.hinshu2.maff.go.jp/info/sinsakijun/kijun/1173.pdf"
+      ],
+      "sourceTitles": [
+        "農林水産省「くり審査基準」単為結果"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.hinshu2.maff.go.jp/info/sinsakijun/kijun/1173.pdf",
+          "title": "農林水産省「くり審査基準」単為結果",
+          "evidence": "子房壁や花床の発達で果実ができることを確認。種なし果実の論文と照合した。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "子房壁や花床の発達で果実ができることを確認。種なし果実の論文と照合した。",
+      "id": 1055,
+      "beforeReading": "かじつ",
+      "beforeWord": "果実",
+      "beforeMeaning": "植物の花が咲いたあとにでき、種を含む部分。"
+    },
+    {
+      "reading": "かすみ",
+      "word": "霞",
+      "meaning": "空気中の小さな水滴やちりなどで、遠くの景色がぼんやり見えること。俳句では春の季語。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1061,
+          "meaning": "空気中の水分などで、遠くがぼやけて見えること。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "大気中の水滴やちりによる現象と、春の季語としての使用を確認。",
+      "evidence": "大気中の水滴やちりによる現象と、春の季語としての使用を確認。",
+      "sources": [
+        "https://www.publication.law.nihon-u.ac.jp/pdf/treatise/treatise_108/all.pdf"
+      ],
+      "sourceTitles": [
+        "日本大学『日本法學』掲載論考「霞」該当節"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.publication.law.nihon-u.ac.jp/pdf/treatise/treatise_108/all.pdf",
+          "title": "日本大学『日本法學』掲載論考「霞」該当節",
+          "evidence": "大気中の水滴やちりによる現象と、春の季語としての使用を確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "大気中の水滴やちりによる現象と、春の季語としての使用を確認。",
+      "id": 1061,
+      "beforeReading": "かすみ",
+      "beforeWord": "霞",
+      "beforeMeaning": "空気中の水分などで、遠くがぼやけて見えること。"
+    },
+    {
+      "reading": "かぜ",
+      "word": "風邪",
+      "meaning": "のどがいたい、せきや鼻水が出るなどの症状が出ることがある、鼻やのどの病気。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1066,
+          "meaning": "せきや熱が出る、鼻やのどの感染症。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "上気道の病気で、症状が一定でないことを確認。",
+      "evidence": "上気道の病気で、症状が一定でないことを確認。",
+      "sources": [
+        "https://www.mhlw.go.jp/content/10807000/001492728.pdf"
+      ],
+      "sourceTitles": [
+        "厚生労働省「風邪症候群とは？」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.mhlw.go.jp/content/10807000/001492728.pdf",
+          "title": "厚生労働省「風邪症候群とは？」",
+          "evidence": "上気道の病気で、症状が一定でないことを確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "上気道の病気で、症状が一定でないことを確認。",
+      "id": 1066,
+      "beforeReading": "かぜ",
+      "beforeWord": "風邪",
+      "beforeMeaning": "せきや熱が出る、鼻やのどの感染症。"
+    },
+    {
+      "reading": "かち",
+      "word": "勝ち",
+      "meaning": "しあいなどで、相手を上回って よい結果を出すこと。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1083,
+          "meaning": "試合などで相手に勝つこと。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "勝利を表す用法。見出し語と同じ動詞だけの説明を避けた。",
+      "evidence": "勝利を表す用法。見出し語と同じ動詞だけの説明を避けた。",
+      "sources": [
+        "https://kotobank.jp/word/%E5%8B%9D-530344"
+      ],
+      "sourceTitles": [
+        "小学館『精選版 日本国語大辞典』「勝」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E5%8B%9D-530344",
+          "title": "小学館『精選版 日本国語大辞典』「勝」",
+          "evidence": "勝利を表す用法。見出し語と同じ動詞だけの説明を避けた。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "勝利を表す用法。見出し語と同じ動詞だけの説明を避けた。",
+      "id": 1083,
+      "beforeReading": "かち",
+      "beforeWord": "勝ち",
+      "beforeMeaning": "試合などで相手に勝つこと。"
+    },
+    {
+      "reading": "かつおぶし",
+      "word": "鰹節",
+      "meaning": "かつおの身を煮て、煙でいぶしながら乾かしたかたい食品。けずって料理にかけたり、だしを取ったりする。けずったものも「かつお節」とよぶことがある。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1090,
+          "meaning": "かつおを乾燥させて削った食品。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "煮熟・焙乾とだしの用途を照合。塊を削ったものは削り節と区別。",
+      "evidence": "煮熟・焙乾とだしの用途を照合。塊を削ったものは削り節と区別。",
+      "sources": [
+        "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/katuobusi.html"
+      ],
+      "sourceTitles": [
+        "農林水産省「にっぽん伝統食図鑑 かつお節」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/katuobusi.html",
+          "title": "農林水産省「にっぽん伝統食図鑑 かつお節」",
+          "evidence": "煮熟・焙乾とだしの用途を照合。塊を削ったものは削り節と区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "煮熟・焙乾とだしの用途を照合。塊を削ったものは削り節と区別。",
+      "id": 1090,
+      "beforeReading": "かつおぶし",
+      "beforeWord": "鰹節",
+      "beforeMeaning": "かつおを乾燥させて削った食品。"
+    },
+    {
+      "reading": "かね",
+      "word": "金",
+      "meaning": "ものを買うときなどに使う、こうかやおさつなど。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1119,
+          "meaning": "物を買うときなどに使う、お金。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "金銭の意味に硬貨・紙幣の例を示す。金属の意味を独立登録。",
+      "evidence": "金銭の意味に硬貨・紙幣の例を示す。金属の意味を独立登録。",
+      "sources": [
+        "https://www.kanjipedia.jp/kotoba/0001607300"
+      ],
+      "sourceTitles": [
+        "漢字ペディア「金（かね）」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.kanjipedia.jp/kotoba/0001607300",
+          "title": "漢字ペディア「金（かね）」",
+          "evidence": "金銭の意味に硬貨・紙幣の例を示す。金属の意味を独立登録。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "金銭の意味に硬貨・紙幣の例を示す。金属の意味を独立登録。",
+      "id": 1119,
+      "beforeReading": "かね",
+      "beforeWord": "金",
+      "beforeMeaning": "物を買うときなどに使う、お金。"
+    },
+    {
+      "reading": "かぶとむし",
+      "word": "カブトムシ",
+      "meaning": "夏ごろに見られる、かたいはねを持つ虫。オスの頭には大きなつのがある。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1135,
+          "meaning": "頭に角がある、甲虫の仲間。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "大きな頭角はオスの特徴。両方に角があるように読める説明を修正。",
+      "evidence": "大きな頭角はオスの特徴。両方に角があるように読める説明を修正。",
+      "sources": [
+        "https://www.nibb.ac.jp/press/2019/04/11.html"
+      ],
+      "sourceTitles": [
+        "基礎生物学研究所「カブトムシの角」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.nibb.ac.jp/press/2019/04/11.html",
+          "title": "基礎生物学研究所「カブトムシの角」",
+          "evidence": "大きな頭角はオスの特徴。両方に角があるように読める説明を修正。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "大きな頭角はオスの特徴。両方に角があるように読める説明を修正。",
+      "id": 1135,
+      "beforeReading": "かぶとむし",
+      "beforeWord": "カブトムシ",
+      "beforeMeaning": "頭に角がある、甲虫の仲間。"
+    },
+    {
+      "reading": "かめ",
+      "word": "瓶",
+      "meaning": "胴がふくらんだ大きめの入れ物。焼き物などで作り、水や酒などを入れる。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1171,
+          "meaning": "酒や水などを入れる、口の広い陶器の器。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "かめの古い表記・用途を確認し、広口・陶製のみの限定を外した。",
+      "evidence": "かめの古い表記・用途を確認し、広口・陶製のみの限定を外した。",
+      "sources": [
+        "https://kotobank.jp/word/%E7%93%AE-623672"
+      ],
+      "sourceTitles": [
+        "『精選版 日本国語大辞典』「瓮」ほか既存の「甕」項目"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E7%93%AE-623672",
+          "title": "『精選版 日本国語大辞典』「瓮」ほか既存の「甕」項目",
+          "evidence": "かめの古い表記・用途を確認し、広口・陶製のみの限定を外した。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "かめの古い表記・用途を確認し、広口・陶製のみの限定を外した。",
+      "id": 1171,
+      "beforeReading": "かめ",
+      "beforeWord": "瓶",
+      "beforeMeaning": "酒や水などを入れる、口の広い陶器の器。"
+    },
+    {
+      "reading": "からから",
+      "word": "カラカラ",
+      "meaning": "母親の骨を頭にかぶっていると図鑑に書かれている、じめんタイプのポケモン。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1190,
+          "meaning": "母親の頭の骨をかぶっている、じめんタイプのポケモン。"
+        },
+        {
+          "row": 90403,
+          "meaning": "中南米などにすむ、顔の一部がオレンジ色をしたハヤブサの仲間。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "公式図鑑で母親の骨とタイプを確認。頭にかぶる骨を頭骨と限定しない。",
+      "evidence": "公式図鑑で母親の骨とタイプを確認。頭にかぶる骨を頭骨と限定しない。",
+      "sources": [
+        "https://zukan.pokemon.co.jp/detail/0104"
+      ],
+      "sourceTitles": [
+        "ポケモンずかん「カラカラ」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://zukan.pokemon.co.jp/detail/0104",
+          "title": "ポケモンずかん「カラカラ」",
+          "evidence": "公式図鑑で母親の骨とタイプを確認。頭にかぶる骨を頭骨と限定しない。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "公式図鑑で母親の骨とタイプを確認。頭にかぶる骨を頭骨と限定しない。",
+      "id": 1190,
+      "beforeReading": "からから",
+      "beforeWord": "カラカラ",
+      "beforeMeaning": "母親の頭の骨をかぶっている、じめんタイプのポケモン。"
+    },
+    {
+      "reading": "からなくし",
+      "word": "カラナクシ",
+      "meaning": "みずタイプのポケモン。すむ場所によって、ピンク色の「にしのうみ」と青色の「ひがしのうみ」の姿がある。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1199,
+          "meaning": "海にすむ、ナメクジのような姿のポケモン。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "にしのうみ・ひがしのうみとタイプを照合。海の中だけで暮らすとは限定しない。",
+      "evidence": "にしのうみ・ひがしのうみとタイプを照合。海の中だけで暮らすとは限定しない。",
+      "sources": [
+        "https://zukan.pokemon.co.jp/detail/0422"
+      ],
+      "sourceTitles": [
+        "ポケモンずかん「カラナクシ にしのうみ」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://zukan.pokemon.co.jp/detail/0422",
+          "title": "ポケモンずかん「カラナクシ にしのうみ」",
+          "evidence": "にしのうみ・ひがしのうみとタイプを照合。海の中だけで暮らすとは限定しない。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "にしのうみ・ひがしのうみとタイプを照合。海の中だけで暮らすとは限定しない。",
+      "id": 1199,
+      "beforeReading": "からなくし",
+      "beforeWord": "カラナクシ",
+      "beforeMeaning": "海にすむ、ナメクジのような姿のポケモン。"
+    },
+    {
+      "reading": "かれー",
+      "word": "カレー",
+      "meaning": "香りのある こうしんりょうで 味をつけた 料理。ごはんに かけて 食べる ものも ある。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1223,
+          "meaning": "香辛料を使った、とろみのある料理。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "香辛料を用いる料理の総称。とろみを必須とせず、カレーライスも扱う。",
+      "evidence": "香辛料を用いる料理の総称。とろみを必須とせず、カレーライスも扱う。",
+      "sources": [
+        "https://www.sbcurry.com/dictionary/word/word01/"
+      ],
+      "sourceTitles": [
+        "エスビー食品「カレー全般」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.sbcurry.com/dictionary/word/word01/",
+          "title": "エスビー食品「カレー全般」",
+          "evidence": "香辛料を用いる料理の総称。とろみを必須とせず、カレーライスも扱う。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "香辛料を用いる料理の総称。とろみを必須とせず、カレーライスも扱う。",
+      "id": 1223,
+      "beforeReading": "かれー",
+      "beforeWord": "カレー",
+      "beforeMeaning": "香辛料を使った、とろみのある料理。"
+    },
+    {
+      "reading": "かれやま",
+      "word": "枯山",
+      "meaning": "草や木が枯れた冬の山。俳句の季語として使う。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1229,
+          "meaning": "木が少なく、草木の葉があまりない山。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "同じ読みの季語「枯山」を例句と照合。木が少ないという地形の説明を避けた。",
+      "evidence": "同じ読みの季語「枯山」を例句と照合。木が少ないという地形の説明を避けた。",
+      "sources": [
+        "https://kigosai.sub.jp/001/archives/2789"
+      ],
+      "sourceTitles": [
+        "きごさい「冬の山」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kigosai.sub.jp/001/archives/2789",
+          "title": "きごさい「冬の山」",
+          "evidence": "同じ読みの季語「枯山」を例句と照合。木が少ないという地形の説明を避けた。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "同じ読みの季語「枯山」を例句と照合。木が少ないという地形の説明を避けた。",
+      "id": 1229,
+      "beforeReading": "かれやま",
+      "beforeWord": "枯れ山",
+      "beforeMeaning": "木が少なく、草木の葉があまりない山。"
+    },
+    {
+      "reading": "かんかん",
+      "word": "カンカン",
+      "meaning": "金ぞくなどを続けてたたくときの、かたい音。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1261,
+          "meaning": "金属などを続けてたたいたときの、かたい音。また、とても腹を立てているようす。"
+        },
+        {
+          "row": 32604,
+          "meaning": "お笑い芸人：吉本興業の公式プロフィールに掲載されている。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "音・怒り・強い日差しの別義を確認。画像に対応する音を既存行に残した。",
+      "evidence": "音・怒り・強い日差しの別義を確認。画像に対応する音を既存行に残した。",
+      "sources": [
+        "https://kotobank.jp/word/%E3%81%8B%E3%82%93%E3%81%8B%E3%82%93-469383"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「かんかん」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E3%81%8B%E3%82%93%E3%81%8B%E3%82%93-469383",
+          "title": "デジタル大辞泉「かんかん」",
+          "evidence": "音・怒り・強い日差しの別義を確認。画像に対応する音を既存行に残した。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "音・怒り・強い日差しの別義を確認。画像に対応する音を既存行に残した。",
+      "id": 1261,
+      "beforeReading": "かんかん",
+      "beforeWord": "カンカン",
+      "beforeMeaning": "金属などを続けてたたいたときの、かたい音。また、とても腹を立てているようす。"
+    },
+    {
+      "reading": "かんぐり",
+      "word": "勘ぐり",
+      "meaning": "人の言葉や行動にはよくないわけがありそうだと、実際より深く疑うこと。",
+      "effectiveLevel": 3,
+      "existingSenses": [
+        {
+          "row": 1269,
+          "meaning": "本当かどうかを疑うこと。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "悪いように推測することが中心。真偽を問うだけの疑いと区別。",
+      "evidence": "悪いように推測することが中心。真偽を問うだけの疑いと区別。",
+      "sources": [
+        "https://kotobank.jp/word/%E5%8B%98%E7%B9%B0%E3%82%8B-469582"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「勘繰る」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E5%8B%98%E7%B9%B0%E3%82%8B-469582",
+          "title": "デジタル大辞泉「勘繰る」",
+          "evidence": "悪いように推測することが中心。真偽を問うだけの疑いと区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "悪いように推測することが中心。真偽を問うだけの疑いと区別。",
+      "id": 1269,
+      "beforeReading": "かんぐり",
+      "beforeWord": "勘ぐり",
+      "beforeMeaning": "本当かどうかを疑うこと。"
+    },
+    {
+      "reading": "かんぜい",
+      "word": "関税",
+      "meaning": "国や地域の境を越えて品物を取り引きするときにかかる税金。日本では輸入品にかかる。",
+      "effectiveLevel": 3,
+      "existingSenses": [
+        {
+          "row": 1291,
+          "meaning": "外国から品物を輸入するときにかかる税金。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "国内制度と、取引相手国が課す関税を区別。国内制度では輸入貨物が対象。",
+      "evidence": "国内制度と、取引相手国が課す関税を区別。国内制度では輸入貨物が対象。",
+      "sources": [
+        "https://www.mof.go.jp/policy/customs_tariff/summary/index.html"
+      ],
+      "sourceTitles": [
+        "財務省「わが国の関税制度の概要」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.mof.go.jp/policy/customs_tariff/summary/index.html",
+          "title": "財務省「わが国の関税制度の概要」",
+          "evidence": "国内制度と、取引相手国が課す関税を区別。国内制度では輸入貨物が対象。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "国内制度と、取引相手国が課す関税を区別。国内制度では輸入貨物が対象。",
+      "id": 1291,
+      "beforeReading": "かんぜい",
+      "beforeWord": "関税",
+      "beforeMeaning": "外国から品物を輸入するときにかかる税金。"
+    },
+    {
+      "reading": "がちごらす",
+      "word": "ガチゴラス",
+      "meaning": "チゴラスから進化する、いわ・ドラゴンタイプのポケモン。大きなあごを持つ。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1312,
+          "meaning": "昔の王者を思わせる、いわ・ドラゴンタイプのポケモン。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "分類・進化とあごの特徴を確認。",
+      "evidence": "分類・進化とあごの特徴を確認。",
+      "sources": [
+        "https://www.pokemon.co.jp/ex/xy/pokemon/new/30.html"
+      ],
+      "sourceTitles": [
+        "ポケットモンスターＸ・Ｙ公式「ガチゴラス」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.pokemon.co.jp/ex/xy/pokemon/new/30.html",
+          "title": "ポケットモンスターＸ・Ｙ公式「ガチゴラス」",
+          "evidence": "分類・進化とあごの特徴を確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "分類・進化とあごの特徴を確認。",
+      "id": 1312,
+      "beforeReading": "がちごらす",
+      "beforeWord": "ガチゴラス",
+      "beforeMeaning": "昔の王者を思わせる、いわ・ドラゴンタイプのポケモン。"
+    },
+    {
+      "reading": "がらすばん",
+      "word": "ガラス板",
+      "meaning": "ガラスをうすく平らな形にしたもの。理科の実験などに使う。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1328,
+          "meaning": "平らな板状のガラス。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "平たい形のガラスという基本義と、理科実験用の製品を確認。",
+      "evidence": "平たい形のガラスという基本義と、理科実験用の製品を確認。",
+      "sources": [
+        "https://axel.as-1.co.jp/asone/d/4-528-01/"
+      ],
+      "sourceTitles": [
+        "アズワン「ガラス板 GB200」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://axel.as-1.co.jp/asone/d/4-528-01/",
+          "title": "アズワン「ガラス板 GB200」",
+          "evidence": "平たい形のガラスという基本義と、理科実験用の製品を確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "平たい形のガラスという基本義と、理科実験用の製品を確認。",
+      "id": 1328,
+      "beforeReading": "がらすばん",
+      "beforeWord": "ガラス板",
+      "beforeMeaning": "平らな板状のガラス。"
+    },
+    {
+      "reading": "がんだむ",
+      "word": "RX-78-2 ガンダム",
+      "meaning": "テレビアニメ「機動戦士ガンダム」で、少年アムロ・レイが乗る地球連邦軍のモビルスーツ。型式はRX-78-2。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1337,
+          "meaning": "機動戦士ガンダムの主役機。地球連邦軍の白い悪魔と呼ばれる。伝説的な高性能MS。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "公式の機体番号・乗り手を確認。作品名の語義と分けた。",
+      "evidence": "公式の機体番号・乗り手を確認。作品名の語義と分けた。",
+      "sources": [
+        "https://gundam-official.com/news/i/special-series/ms-pb/special-series_ms-pb_20100722_486p"
+      ],
+      "sourceTitles": [
+        "GUNDAM Official「RX-78-2 ガンダム」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://gundam-official.com/news/i/special-series/ms-pb/special-series_ms-pb_20100722_486p",
+          "title": "GUNDAM Official「RX-78-2 ガンダム」",
+          "evidence": "公式の機体番号・乗り手を確認。作品名の語義と分けた。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "公式の機体番号・乗り手を確認。作品名の語義と分けた。",
+      "id": 1337,
+      "beforeReading": "がんだむ",
+      "beforeWord": "RX-78-2 ガンダム",
+      "beforeMeaning": "機動戦士ガンダムの主役機。地球連邦軍の白い悪魔と呼ばれる。伝説的な高性能MS。"
+    },
+    {
+      "reading": "がんだむ",
+      "word": "ガンダム",
+      "meaning": "1979年に放送が始まったテレビアニメ「機動戦士ガンダム」の略称。少年アムロ・レイが戦争に巻き込まれる物語。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1338,
+          "meaning": "アニメ「機動戦士ガンダム」の用語。地球連邦軍が開発した伝説的な高性能モビルスーツ。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "公式作品紹介で放送年と人物・設定を確認。隣の機体名の行と区別。",
+      "evidence": "公式作品紹介で放送年と人物・設定を確認。隣の機体名の行と区別。",
+      "sources": [
+        "https://www.sunrise-inc.co.jp/work/detail.php?cid=20"
+      ],
+      "sourceTitles": [
+        "サンライズ「機動戦士ガンダム」作品紹介"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.sunrise-inc.co.jp/work/detail.php?cid=20",
+          "title": "サンライズ「機動戦士ガンダム」作品紹介",
+          "evidence": "公式作品紹介で放送年と人物・設定を確認。隣の機体名の行と区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "公式作品紹介で放送年と人物・設定を確認。隣の機体名の行と区別。",
+      "id": 1338,
+      "beforeReading": "がんだむ",
+      "beforeWord": "ガンダム",
+      "beforeMeaning": "アニメ「機動戦士ガンダム」の用語。地球連邦軍が開発した伝説的な高性能モビルスーツ。"
+    },
+    {
+      "reading": "がんだむえふきゅうじゅういち",
+      "word": "ガンダムF91",
+      "meaning": "映画「機動戦士ガンダムF91」の主役機。最大稼働時に「質量を持った残像」と呼ばれる現象を起こす。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1341,
+          "meaning": "アニメ「機動戦士ガンダムF91」の用語。小型・高性能化を突き詰め、最大稼働時に「質量を持った残像」を生み出すMS。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "映画の機体と残像の設定を公式商品資料で照合。",
+      "evidence": "映画の機体と残像の設定を公式商品資料で照合。",
+      "sources": [
+        "https://gundam-official.com/news/i/news/goods/news_goods_20100611_4177p"
+      ],
+      "sourceTitles": [
+        "GUNDAM Official「ガンダムF91（残像Ver.）」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://gundam-official.com/news/i/news/goods/news_goods_20100611_4177p",
+          "title": "GUNDAM Official「ガンダムF91（残像Ver.）」",
+          "evidence": "映画の機体と残像の設定を公式商品資料で照合。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "映画の機体と残像の設定を公式商品資料で照合。",
+      "id": 1341,
+      "beforeReading": "がんだむえふきゅうじゅういち",
+      "beforeWord": "ガンダムF91",
+      "beforeMeaning": "アニメ「機動戦士ガンダムF91」の用語。小型・高性能化を突き詰め、最大稼働時に「質量を持った残像」を生み出すMS。"
+    },
+    {
+      "reading": "がんだむしさくいちごうき",
+      "word": "ガンダム試作1号機",
+      "meaning": "「機動戦士ガンダム0083」に登場する試作モビルスーツ。ゼフィランサスと呼ばれ、宇宙用の改修形態はフルバーニアン。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1342,
+          "meaning": "汎用人型としての基本性能を極限まで高めた地上戦用機。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "機体の呼称ゼフィランサスと、公式商品資料が示すフルバーニアンを区別。",
+      "evidence": "機体の呼称ゼフィランサスと、公式商品資料が示すフルバーニアンを区別。",
+      "sources": [
+        "https://manual.bandai-hobby.net/pdf/984.pdf"
+      ],
+      "sourceTitles": [
+        "BANDAI「ガンダム試作1号機」公式説明書"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://manual.bandai-hobby.net/pdf/984.pdf",
+          "title": "BANDAI「ガンダム試作1号機」公式説明書",
+          "evidence": "機体の呼称ゼフィランサスと、公式商品資料が示すフルバーニアンを区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "機体の呼称ゼフィランサスと、公式商品資料が示すフルバーニアンを区別。",
+      "id": 1342,
+      "beforeReading": "がんだむしさくいちごうき",
+      "beforeWord": "ガンダム試作1号機",
+      "beforeMeaning": "汎用人型としての基本性能を極限まで高めた地上戦用機。"
+    },
+    {
+      "reading": "がんだむしさくさんごうき",
+      "word": "ガンダム試作3号機",
+      "meaning": "「機動戦士ガンダム0083」に登場する試作機。中心の機体ステイメンがオーキスと合体した姿をデンドロビウムと呼ぶ。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1343,
+          "meaning": "ステイメンとオーキスが合体した超大型MA形態。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "二つの構成物と合体形態の名前を確認。",
+      "evidence": "二つの構成物と合体形態の名前を確認。",
+      "sources": [
+        "https://www.bandai.co.jp/candy/gundam/converge/ex07/"
+      ],
+      "sourceTitles": [
+        "バンダイ キャンディ「ガンダム試作3号機 デンドロビウム」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.bandai.co.jp/candy/gundam/converge/ex07/",
+          "title": "バンダイ キャンディ「ガンダム試作3号機 デンドロビウム」",
+          "evidence": "二つの構成物と合体形態の名前を確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "二つの構成物と合体形態の名前を確認。",
+      "id": 1343,
+      "beforeReading": "がんだむしさくさんごうき",
+      "beforeWord": "ガンダム試作3号機",
+      "beforeMeaning": "ステイメンとオーキスが合体した超大型MA形態。"
+    },
+    {
+      "reading": "がんだむしさくよんごうき",
+      "word": "ガンダム試作4号機",
+      "meaning": "「機動戦士ガンダム」シリーズの設定に登場する試作機で、ガーベラとも呼ばれる。別の機体ガーベラ・テトラのもとになった。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1345,
+          "meaning": "強襲用に開発されていたが開発中止となりガーベラ・テトラとなった。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "公式の商品機体解説で試作4号機と派生機の関係を確認。",
+      "evidence": "公式の商品機体解説で試作4号機と派生機の関係を確認。",
+      "sources": [
+        "https://www.bandaispirits.co.jp/products/search/detail.php?grp_id=5312&prd_id=13554"
+      ],
+      "sourceTitles": [
+        "BANDAI SPIRITS「ガーベラ・テトラ」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.bandaispirits.co.jp/products/search/detail.php?grp_id=5312&prd_id=13554",
+          "title": "BANDAI SPIRITS「ガーベラ・テトラ」",
+          "evidence": "公式の商品機体解説で試作4号機と派生機の関係を確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "公式の商品機体解説で試作4号機と派生機の関係を確認。",
+      "id": 1345,
+      "beforeReading": "がんだむしさくよんごうき",
+      "beforeWord": "ガンダム試作4号機",
+      "beforeMeaning": "強襲用に開発されていたが開発中止となりガーベラ・テトラとなった。"
+    },
+    {
+      "reading": "がんどふぉーまっと",
+      "word": "GUNDフォーマット",
+      "meaning": "アニメ「機動戦士ガンダム 水星の魔女」の用語。人の体の働きを広げるGUNDの技術をモビルスーツの操縦に応用した仕組み。",
+      "effectiveLevel": 5,
+      "existingSenses": [
+        {
+          "row": 1351,
+          "meaning": "アニメ「機動戦士ガンダム 水星の魔女」の用語。身体機能拡張技術をMSの制御システムへと応用したMS型生体コード。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "GUND医療技術とGUND-ARMの機体応用を公式用語集で区別。",
+      "evidence": "GUND医療技術とGUND-ARMの機体応用を公式用語集で区別。",
+      "sources": [
+        "https://gundam-official.com/witch-from-mercury/words/"
+      ],
+      "sourceTitles": [
+        "「機動戦士ガンダム 水星の魔女」公式 用語集"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://gundam-official.com/witch-from-mercury/words/",
+          "title": "「機動戦士ガンダム 水星の魔女」公式 用語集",
+          "evidence": "GUND医療技術とGUND-ARMの機体応用を公式用語集で区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "GUND医療技術とGUND-ARMの機体応用を公式用語集で区別。",
+      "id": 1351,
+      "beforeReading": "がんどふぉーまっと",
+      "beforeWord": "GUNDフォーマット",
+      "beforeMeaning": "アニメ「機動戦士ガンダム 水星の魔女」の用語。身体機能拡張技術をMSの制御システムへと応用したMS型生体コード。"
+    },
+    {
+      "reading": "き",
+      "word": "気",
+      "meaning": "人の心のはたらきや、そのときの気持ち。「気が重い」「やる気が出る」などと使う。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1358,
+          "meaning": "目には見えず、雰囲気や心の様子として感じるもの。"
+        },
+        {
+          "row": 40504,
+          "meaning": "中国思想で物や生命を構成し変化させる要素や働き。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "一般的な心理用法を例示し、中国思想の意味は既存の別行にあることを確認。",
+      "evidence": "一般的な心理用法を例示し、中国思想の意味は既存の別行にあることを確認。",
+      "sources": [
+        "https://kotobank.jp/word/%E6%B0%97-49796"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「気」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E6%B0%97-49796",
+          "title": "デジタル大辞泉「気」",
+          "evidence": "一般的な心理用法を例示し、中国思想の意味は既存の別行にあることを確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "一般的な心理用法を例示し、中国思想の意味は既存の別行にあることを確認。",
+      "id": 1358,
+      "beforeReading": "き",
+      "beforeWord": "気",
+      "beforeMeaning": "目には見えず、雰囲気や心の様子として感じるもの。"
+    },
+    {
+      "reading": "きうい",
+      "word": "キウイ",
+      "meaning": "切ると中に小さな黒い種が見える、甘ずっぱい くだもの。中がみどり色や黄色のものがある。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1366,
+          "meaning": "毛のある皮と、甘酸っぱい実を持つ果物。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "果実と種の特徴を確認。品種による色や毛の違いで紛らわしくならない表現にした。",
+      "evidence": "果実と種の特徴を確認。品種による色や毛の違いで紛らわしくならない表現にした。",
+      "sources": [
+        "https://kids.gakken.co.jp/jiten/dictionary02200030/"
+      ],
+      "sourceTitles": [
+        "学研キッズネット「キウイフルーツ」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kids.gakken.co.jp/jiten/dictionary02200030/",
+          "title": "学研キッズネット「キウイフルーツ」",
+          "evidence": "果実と種の特徴を確認。品種による色や毛の違いで紛らわしくならない表現にした。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "果実と種の特徴を確認。品種による色や毛の違いで紛らわしくならない表現にした。",
+      "id": 1366,
+      "beforeReading": "きうい",
+      "beforeWord": "キウイ",
+      "beforeMeaning": "毛のある皮と、甘酸っぱい実を持つ果物。"
+    },
+    {
+      "reading": "きしゃ",
+      "word": "汽車",
+      "meaning": "蒸気の力で機関車を動かす列車。列車を広くそう呼ぶこともある。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1396,
+          "meaning": "蒸気の力で走る、昔の列車。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "蒸気列車と、移動手段として列車を広く指す用法を照合。年代で限定しない。",
+      "evidence": "蒸気列車と、移動手段として列車を広く指す用法を照合。年代で限定しない。",
+      "sources": [
+        "https://kotobank.jp/jeword/%E6%B1%BD%E8%BB%8A"
+      ],
+      "sourceTitles": [
+        "プログレッシブ和英中辞典「汽車」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/jeword/%E6%B1%BD%E8%BB%8A",
+          "title": "プログレッシブ和英中辞典「汽車」",
+          "evidence": "蒸気列車と、移動手段として列車を広く指す用法を照合。年代で限定しない。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "蒸気列車と、移動手段として列車を広く指す用法を照合。年代で限定しない。",
+      "id": 1396,
+      "beforeReading": "きしゃ",
+      "beforeWord": "汽車",
+      "beforeMeaning": "蒸気の力で走る、昔の列車。"
+    },
+    {
+      "reading": "きずあと",
+      "word": "傷跡",
+      "meaning": "けががなおったあとも、はだに残る線や へこみなど。",
+      "effectiveLevel": 1,
+      "existingSenses": [
+        {
+          "row": 1402,
+          "meaning": "けがが治ったあとに残る跡。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "checked",
+      "checkedAt": "2026-11-18",
+      "reason": "傷が治った後に残るもの。見出し語を使わず、身近な言葉で説明。",
+      "evidence": "傷が治った後に残るもの。見出し語を使わず、身近な言葉で説明。",
+      "sources": [
+        "https://www.kanjipedia.jp/kotoba/0003426100"
+      ],
+      "sourceTitles": [
+        "漢字ペディア「傷跡・傷痕」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.kanjipedia.jp/kotoba/0003426100",
+          "title": "漢字ペディア「傷跡・傷痕」",
+          "evidence": "傷が治った後に残るもの。見出し語を使わず、身近な言葉で説明。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "傷が治った後に残るもの。見出し語を使わず、身近な言葉で説明。",
+      "id": 1402,
+      "beforeReading": "きずあと",
+      "beforeWord": "傷跡",
+      "beforeMeaning": "けがが治ったあとに残る跡。"
+    },
+    {
+      "reading": "きはつ",
+      "word": "揮発",
+      "meaning": "液体が、ふだんの室温でも気体になって空気中へ出ていくこと。",
+      "effectiveLevel": 3,
+      "existingSenses": [
+        {
+          "row": 1428,
+          "meaning": "液体が、常温で気体に変わること。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "専門辞典と大辞泉の液体の語義を確認。固体の昇華をこの意味に加えない。",
+      "evidence": "専門辞典と大辞泉の液体の語義を確認。固体の昇華をこの意味に加えない。",
+      "sources": [
+        "https://www.jsme.or.jp/jsme-medwiki/doku.php?id=10%3A1002708"
+      ],
+      "sourceTitles": [
+        "日本機械学会「揮発性」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.jsme.or.jp/jsme-medwiki/doku.php?id=10%3A1002708",
+          "title": "日本機械学会「揮発性」",
+          "evidence": "専門辞典と大辞泉の液体の語義を確認。固体の昇華をこの意味に加えない。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "専門辞典と大辞泉の液体の語義を確認。固体の昇華をこの意味に加えない。",
+      "id": 1428,
+      "beforeReading": "きはつ",
+      "beforeWord": "揮発",
+      "beforeMeaning": "液体が、常温で気体に変わること。"
+    }
+  ],
+  "additions": [
+    {
+      "reading": "かお",
+      "word": "顔",
+      "meaning": "人から受けている尊敬や信用。「顔をつぶす」とは、その人に恥をかかせること。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1015,
+          "meaning": "目や鼻や口がある、頭の前の部分。"
+        },
+        {
+          "row": 123813,
+          "meaning": "気持ちが目や口などの様子に表れたもの。「困った顔をする」など。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "「顔が立つ」「顔がつぶれる」の面目を表す別義を確認。",
+      "evidence": "「顔が立つ」「顔がつぶれる」の面目を表す別義を確認。",
+      "sources": [
+        "https://ir.lib.hiroshima-u.ac.jp/38902/files/27937"
+      ],
+      "sourceTitles": [
+        "広島大学学術情報リポジトリ「顔」用法分析"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://ir.lib.hiroshima-u.ac.jp/38902/files/27937",
+          "title": "広島大学学術情報リポジトリ「顔」用法分析",
+          "evidence": "「顔が立つ」「顔がつぶれる」の面目を表す別義を確認。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "「顔が立つ」「顔がつぶれる」の面目を表す別義を確認。",
+      "baseId": 1015
+    },
+    {
+      "reading": "かたち",
+      "word": "形",
+      "meaning": "物事がまとまって、はっきりわかる姿や状態。「計画が形になる」など。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1073,
+          "meaning": "丸い、四角いなど、ものの見た目のようす。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "形が具体化する用法を外形と区別。",
+      "evidence": "形が具体化する用法を外形と区別。",
+      "sources": [
+        "https://www.kanjipedia.jp/kotoba/0001755700"
+      ],
+      "sourceTitles": [
+        "漢字ペディア「形（かたち）」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.kanjipedia.jp/kotoba/0001755700",
+          "title": "漢字ペディア「形（かたち）」",
+          "evidence": "形が具体化する用法を外形と区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "形が具体化する用法を外形と区別。",
+      "baseId": 1073
+    },
+    {
+      "reading": "かたち",
+      "word": "形",
+      "meaning": "中身とは別に、決まりに合わせて整えた外側の形式。「形だけのあいさつ」など。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1073,
+          "meaning": "丸い、四角いなど、ものの見た目のようす。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "語義2の形式・様式。",
+      "evidence": "語義2の形式・様式。",
+      "sources": [
+        "https://www.kanjipedia.jp/kotoba/0001755700"
+      ],
+      "sourceTitles": [
+        "漢字ペディア「形（かたち）」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.kanjipedia.jp/kotoba/0001755700",
+          "title": "漢字ペディア「形（かたち）」",
+          "evidence": "語義2の形式・様式。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "語義2の形式・様式。",
+      "baseId": 1073
+    },
+    {
+      "reading": "かね",
+      "word": "金",
+      "meaning": "鉄や銅のように、道具や材料に使われる金属を指すことば。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1119,
+          "meaning": "物を買うときなどに使う、お金。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "金銭義と金属の語義を区別。",
+      "evidence": "金銭義と金属の語義を区別。",
+      "sources": [
+        "https://www.kanjipedia.jp/kotoba/0001607300"
+      ],
+      "sourceTitles": [
+        "漢字ペディア「金（かね）」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.kanjipedia.jp/kotoba/0001607300",
+          "title": "漢字ペディア「金（かね）」",
+          "evidence": "金銭義と金属の語義を区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "金銭義と金属の語義を区別。",
+      "baseId": 1119
+    },
+    {
+      "reading": "かんかん",
+      "word": "カンカン",
+      "meaning": "ひどく腹を立てて、強く怒っているようす。「かんかんに怒る」など。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1261,
+          "meaning": "金属などを続けてたたいたときの、かたい音。また、とても腹を立てているようす。"
+        },
+        {
+          "row": 32604,
+          "meaning": "お笑い芸人：吉本興業の公式プロフィールに掲載されている。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "怒る様子を表す用法を独立行に追加。",
+      "evidence": "怒る様子を表す用法を独立行に追加。",
+      "sources": [
+        "https://kotobank.jp/word/%E3%81%8B%E3%82%93%E3%81%8B%E3%82%93-469383"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「かんかん」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E3%81%8B%E3%82%93%E3%81%8B%E3%82%93-469383",
+          "title": "デジタル大辞泉「かんかん」",
+          "evidence": "怒る様子を表す用法を独立行に追加。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "怒る様子を表す用法を独立行に追加。",
+      "baseId": 1261
+    },
+    {
+      "reading": "かんかん",
+      "word": "カンカン",
+      "meaning": "太陽の光がとても強く、照りつけるようす。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1261,
+          "meaning": "金属などを続けてたたいたときの、かたい音。また、とても腹を立てているようす。"
+        },
+        {
+          "row": 32604,
+          "meaning": "お笑い芸人：吉本興業の公式プロフィールに掲載されている。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "強い日差しを表す用法を独立行に追加。",
+      "evidence": "強い日差しを表す用法を独立行に追加。",
+      "sources": [
+        "https://kotobank.jp/word/%E3%81%8B%E3%82%93%E3%81%8B%E3%82%93-469383"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「かんかん」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E3%81%8B%E3%82%93%E3%81%8B%E3%82%93-469383",
+          "title": "デジタル大辞泉「かんかん」",
+          "evidence": "強い日差しを表す用法を独立行に追加。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "強い日差しを表す用法を独立行に追加。",
+      "baseId": 1261
+    },
+    {
+      "reading": "き",
+      "word": "気",
+      "meaning": "ある物事に向けられる注意や意識。「足元に気をつける」など。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1358,
+          "meaning": "目には見えず、雰囲気や心の様子として感じるもの。"
+        },
+        {
+          "row": 40504,
+          "meaning": "中国思想で物や生命を構成し変化させる要素や働き。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "注意を向ける用法。心理義・思想義と区別する。",
+      "evidence": "注意を向ける用法。心理義・思想義と区別する。",
+      "sources": [
+        "https://kotobank.jp/word/%E6%B0%97-49796"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「気」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E6%B0%97-49796",
+          "title": "デジタル大辞泉「気」",
+          "evidence": "注意を向ける用法。心理義・思想義と区別する。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "注意を向ける用法。心理義・思想義と区別する。",
+      "baseId": 1358
+    },
+    {
+      "reading": "き",
+      "word": "気",
+      "meaning": "ものや場所からなんとなく感じ取れる様子。「人の気がする」など。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1358,
+          "meaning": "目には見えず、雰囲気や心の様子として感じるもの。"
+        },
+        {
+          "row": 40504,
+          "meaning": "中国思想で物や生命を構成し変化させる要素や働き。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "気配や雰囲気を表す用法。",
+      "evidence": "気配や雰囲気を表す用法。",
+      "sources": [
+        "https://kotobank.jp/word/%E6%B0%97-49796"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「気」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E6%B0%97-49796",
+          "title": "デジタル大辞泉「気」",
+          "evidence": "気配や雰囲気を表す用法。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "気配や雰囲気を表す用法。",
+      "baseId": 1358
+    },
+    {
+      "reading": "きうい",
+      "word": "キウイ",
+      "meaning": "ニュージーランドにすむ、翼が小さく飛べない鳥のなかま。キーウィとも書く。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1366,
+          "meaning": "毛のある皮と、甘酸っぱい実を持つ果物。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "果物と同名の鳥。動物園資料で生息地と飛べない特徴を確認。「キウイ」の表記は袋井市交流員資料も照合。",
+      "evidence": "果物と同名の鳥。動物園資料で生息地と飛べない特徴を確認。「キウイ」の表記は袋井市交流員資料も照合。",
+      "sources": [
+        "https://www.tennojizoo.jp/nakigoe/2011/08/top.html"
+      ],
+      "sourceTitles": [
+        "天王寺動物園「なきごえ」キーウィ"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.tennojizoo.jp/nakigoe/2011/08/top.html",
+          "title": "天王寺動物園「なきごえ」キーウィ",
+          "evidence": "果物と同名の鳥。動物園資料で生息地と飛べない特徴を確認。「キウイ」の表記は袋井市交流員資料も照合。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "果物と同名の鳥。動物園資料で生息地と飛べない特徴を確認。「キウイ」の表記は袋井市交流員資料も照合。",
+      "baseId": 1366
+    },
+    {
+      "reading": "きく",
+      "word": "聞く",
+      "meaning": "人のたのみや言いつけを受け入れ、そのとおりにすること。「注意を聞く」など。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1383,
+          "meaning": "耳で音や声を感じ取ること。"
+        },
+        {
+          "row": 123837,
+          "meaning": "わからないことについて、人に答えをたずねること。"
+        },
+        {
+          "row": 123838,
+          "meaning": "人から伝えられた話や知らせを受け取ること。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "意見・要求の受け入れを聴覚や質問の語義から区別。",
+      "evidence": "意見・要求の受け入れを聴覚や質問の語義から区別。",
+      "sources": [
+        "https://kotobank.jp/word/%E8%81%9E%E3%81%8F-472904"
+      ],
+      "sourceTitles": [
+        "デジタル大辞泉「聞く」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E8%81%9E%E3%81%8F-472904",
+          "title": "デジタル大辞泉「聞く」",
+          "evidence": "意見・要求の受け入れを聴覚や質問の語義から区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "意見・要求の受け入れを聴覚や質問の語義から区別。",
+      "baseId": 1383
+    },
+    {
+      "reading": "きずあと",
+      "word": "傷跡",
+      "meaning": "災害やつらい出来事のあとに残る被害や、心に残る痛み。",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1402,
+          "meaning": "けがが治ったあとに残る跡。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "比喩用法の文例を確認。皮膚に残るものと区別。",
+      "evidence": "比喩用法の文例を確認。皮膚に残るものと区別。",
+      "sources": [
+        "https://kotobank.jp/word/%E5%82%B7%E8%B7%A1-2027608"
+      ],
+      "sourceTitles": [
+        "精選版 日本国語大辞典「傷跡」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E5%82%B7%E8%B7%A1-2027608",
+          "title": "精選版 日本国語大辞典「傷跡」",
+          "evidence": "比喩用法の文例を確認。皮膚に残るものと区別。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "比喩用法の文例を確認。皮膚に残るものと区別。",
+      "baseId": 1402
+    }
+  ],
+  "retained": [
+    {
+      "reading": "かかえこみ",
+      "word": "抱え込み",
+      "meaning": "ひざを胸に引き寄せて、体を小さく丸める姿勢。",
+      "effectiveLevel": 2,
+      "existingSenses": [
+        {
+          "row": 1016,
+          "meaning": "ひざを胸に引き寄せて、体を小さく丸める姿勢。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "跳び箱で両膝を曲げて体を丸める動きの意味に合う。元の体操の説明を維持。別競技の名称は保留。",
+      "evidence": "跳び箱で両膝を曲げて体を丸める動きの意味に合う。元の体操の説明を維持。別競技の名称は保留。",
+      "sources": [
+        "https://www.mext.go.jp/sports/content/202309293-spt_sseisaku02-000022053_222.pdf"
+      ],
+      "sourceTitles": [
+        "スポーツ庁「器械運動（中学年）」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.mext.go.jp/sports/content/202309293-spt_sseisaku02-000022053_222.pdf",
+          "title": "スポーツ庁「器械運動（中学年）」",
+          "evidence": "跳び箱で両膝を曲げて体を丸める動きの意味に合う。元の体操の説明を維持。別競技の名称は保留。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "pending",
+      "senseCoverageNote": "跳び箱で両膝を曲げて体を丸める動きの意味に合う。元の体操の説明を維持。別競技の名称は保留。",
+      "id": 1016
+    },
+    {
+      "reading": "かさんかすいそすい",
+      "word": "過酸化水素水",
+      "meaning": "消毒などに使う、過酸化水素を水に溶かした液体。",
+      "effectiveLevel": 3,
+      "existingSenses": [
+        {
+          "row": 1043,
+          "meaning": "消毒などに使う、過酸化水素を水に溶かした液体。"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "過酸化水素の水溶液で、製剤に消毒用途があることを確認。元の説明を維持。",
+      "evidence": "過酸化水素の水溶液で、製剤に消毒用途があることを確認。元の説明を維持。",
+      "sources": [
+        "https://www.pmda.go.jp/PmdaSearch/otcDetail/ResultDataSetPDF/400135_J0601005948_03_01/A"
+      ],
+      "sourceTitles": [
+        "PMDA掲載「日本薬局方 オキシドール」添付文書"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.pmda.go.jp/PmdaSearch/otcDetail/ResultDataSetPDF/400135_J0601005948_03_01/A",
+          "title": "PMDA掲載「日本薬局方 オキシドール」添付文書",
+          "evidence": "過酸化水素の水溶液で、製剤に消毒用途があることを確認。元の説明を維持。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "過酸化水素の水溶液で、製剤に消毒用途があることを確認。元の説明を維持。",
+      "id": 1043
+    },
+    {
+      "reading": "かつせんつきろうと",
+      "word": "活せん付ろうと",
+      "meaning": "コックがついていて、液体の落ちる量を調節できるろうと",
+      "effectiveLevel": 4,
+      "existingSenses": [
+        {
+          "row": 1095,
+          "meaning": "コックがついていて、液体の落ちる量を調節できるろうと"
+        }
+      ],
+      "status": "source-checked",
+      "expressionReview": "checked",
+      "level1Review": "not-applicable",
+      "checkedAt": "2026-11-18",
+      "reason": "活栓付滴下ロートが実在し、活栓を開閉して滴下を調整することを確認。この行の説明を維持。",
+      "evidence": "活栓付滴下ロートが実在し、活栓を開閉して滴下を調整することを確認。この行の説明を維持。",
+      "sources": [
+        "https://san-web.co-sansyo.co.jp/sanweb/d/82-1944"
+      ],
+      "sourceTitles": [
+        "三商「滴下ロート」"
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://san-web.co-sansyo.co.jp/sanweb/d/82-1944",
+          "title": "三商「滴下ロート」",
+          "evidence": "活栓付滴下ロートが実在し、活栓を開閉して滴下を調整することを確認。この行の説明を維持。",
+          "checkedAt": "2026-11-18"
+        }
+      ],
+      "senseCoverageReview": "checked",
+      "senseCoverageNote": "活栓付滴下ロートが実在し、活栓を開閉して滴下を調整することを確認。この行の説明を維持。",
+      "id": 1095
+    }
+  ],
+  "exclusions": [
+    {
+      "id": 1059,
+      "baselineKey": [
+        "かす",
+        "掠す",
+        "あとで返してもらう約束で、自分の物を人に使わせること。"
+      ],
+      "reason": "既存の「貸す」と同じ貸借の説明。文化庁は貸借義に「貸す」を示す。「掠す」を貸借義とする根拠が得られず、誤表記の重複行として通常辞書とCSVフォールバックから外す。原本と履歴に行を残す。",
+      "sourceRecords": [
+        {
+          "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/kokugo/shoiinkai/iinkai_06/pdf/shiryo_3.pdf",
+          "title": "文化庁「異字同訓の漢字の使い分け」",
+          "evidence": "かすの貸借義に「貸す」を示す。第1058行に収録済み。",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "url": "https://www.kanjipedia.jp/kotoba/0007114500",
+          "title": "漢字ペディア「掠れる」",
+          "evidence": "掠を含む別語の用例を照合した。貸借義の根拠にはならない。",
+          "checkedAt": "2026-11-18"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": 1023,
+      "baselineKey": [
+        "かき",
+        "書き",
+        "文字を紙などに書きしるすこと。"
+      ],
+      "status": "needs-source",
+      "reason": "動詞の意味と連用形は確認。単独の名詞見出しとしての現在の用例と適用範囲を未確定とした。",
+      "sourceRecords": [
+        {
+          "url": "https://kotobank.jp/word/%E6%9B%B8%E3%81%8F-459993",
+          "title": "デジタル大辞泉「書く」",
+          "evidence": "動詞の意味と連用形は確認。単独の名詞見出しとしての現在の用例と適用範囲を未確定とした。",
+          "checkedAt": "2026-11-18"
+        }
+      ]
+    },
+    {
+      "id": 1209,
+      "baselineKey": [
+        "かりぐらし",
+        "借り暮らし",
+        "家や部屋を借りて、そこで生活すること。"
+      ],
+      "status": "needs-source",
+      "reason": "家を借りて暮らす一般的な行為は確認。語「借り暮らし」を普通名詞として立項できる資料は今回の検索で確認できなかった。",
+      "sourceRecords": [
+        {
+          "url": "https://www.mlit.go.jp/kankocho/content/001965591.pdf",
+          "title": "国土交通省等「生活編 日本で暮らし、働くために」",
+          "evidence": "家を借りて暮らす一般的な行為は確認。語「借り暮らし」を普通名詞として立項できる資料は今回の検索で確認できなかった。",
+          "checkedAt": "2026-11-18"
+        }
+      ]
+    }
+  ],
+  "followupRows": [
+    {
+      "id": 1012,
+      "decision": "corrected",
+      "baselineKey": [
+        "かえる",
+        "カエル",
+        "水辺にすみ、後ろ足で跳ねる両生類。"
+      ],
+      "reason": "水辺を主な生活場所とする種のほか、陸上や樹上で暮らすカエルもいる。"
+    },
+    {
+      "id": 1016,
+      "decision": "source-checked",
+      "baselineKey": [
+        "かかえこみ",
+        "抱え込み",
+        "ひざを胸に引き寄せて、体を小さく丸める姿勢。"
+      ],
+      "reason": "跳び箱で両膝を曲げて体を丸める動きの意味に合う。元の体操の説明を維持。別競技の名称は保留。"
+    },
+    {
+      "id": 1021,
+      "decision": "corrected",
+      "baselineKey": [
+        "かき",
+        "柿",
+        "秋に実る、甘い果物。"
+      ],
+      "reason": "甘柿と渋柿がある。すべて甘いという旧説明を修正。"
+    },
+    {
+      "id": 1023,
+      "decision": "pending",
+      "baselineKey": [
+        "かき",
+        "書き",
+        "文字を紙などに書きしるすこと。"
+      ],
+      "reason": "動詞の意味と連用形は確認。単独の名詞見出しとしての現在の用例と適用範囲を未確定とした。"
+    },
+    {
+      "id": 1043,
+      "decision": "source-checked",
+      "baselineKey": [
+        "かさんかすいそすい",
+        "過酸化水素水",
+        "消毒などに使う、過酸化水素を水に溶かした液体。"
+      ],
+      "reason": "過酸化水素の水溶液で、製剤に消毒用途があることを確認。元の説明を維持。"
+    },
+    {
+      "id": 1048,
+      "decision": "corrected",
+      "baselineKey": [
+        "かしこい",
+        "賢い",
+        "理解や判断をする力があること。"
+      ],
+      "reason": "知恵・理解や判断に関わる意味を、子ども向けに言い換えた。"
+    },
+    {
+      "id": 1055,
+      "decision": "corrected",
+      "baselineKey": [
+        "かじつ",
+        "果実",
+        "植物の花が咲いたあとにでき、種を含む部分。"
+      ],
+      "reason": "子房壁や花床の発達で果実ができることを確認。種なし果実の論文と照合した。"
+    },
+    {
+      "id": 1059,
+      "decision": "excluded",
+      "baselineKey": [
+        "かす",
+        "掠す",
+        "あとで返してもらう約束で、自分の物を人に使わせること。"
+      ],
+      "reason": "既存の「貸す」と同じ貸借の説明。文化庁は貸借義に「貸す」を示す。「掠す」を貸借義とする根拠が得られず、誤表記の重複行として通常辞書とCSVフォールバックから外す。原本と履歴に行を残す。"
+    },
+    {
+      "id": 1061,
+      "decision": "corrected",
+      "baselineKey": [
+        "かすみ",
+        "霞",
+        "空気中の水分などで、遠くがぼやけて見えること。"
+      ],
+      "reason": "大気中の水滴やちりによる現象と、春の季語としての使用を確認。"
+    },
+    {
+      "id": 1066,
+      "decision": "corrected",
+      "baselineKey": [
+        "かぜ",
+        "風邪",
+        "せきや熱が出る、鼻やのどの感染症。"
+      ],
+      "reason": "上気道の病気で、症状が一定でないことを確認。"
+    },
+    {
+      "id": 1083,
+      "decision": "corrected",
+      "baselineKey": [
+        "かち",
+        "勝ち",
+        "試合などで相手に勝つこと。"
+      ],
+      "reason": "勝利を表す用法。見出し語と同じ動詞だけの説明を避けた。"
+    },
+    {
+      "id": 1090,
+      "decision": "corrected",
+      "baselineKey": [
+        "かつおぶし",
+        "鰹節",
+        "かつおを乾燥させて削った食品。"
+      ],
+      "reason": "煮熟・焙乾とだしの用途を照合。塊を削ったものは削り節と区別。"
+    },
+    {
+      "id": 1095,
+      "decision": "source-checked",
+      "baselineKey": [
+        "かつせんつきろうと",
+        "活せん付ろうと",
+        "コックがついていて、液体の落ちる量を調節できるろうと"
+      ],
+      "reason": "活栓付滴下ロートが実在し、活栓を開閉して滴下を調整することを確認。この行の説明を維持。"
+    },
+    {
+      "id": 1119,
+      "decision": "corrected",
+      "baselineKey": [
+        "かね",
+        "金",
+        "物を買うときなどに使う、お金。"
+      ],
+      "reason": "金銭の意味に硬貨・紙幣の例を示す。金属の意味を独立登録。"
+    },
+    {
+      "id": 1135,
+      "decision": "corrected",
+      "baselineKey": [
+        "かぶとむし",
+        "カブトムシ",
+        "頭に角がある、甲虫の仲間。"
+      ],
+      "reason": "大きな頭角はオスの特徴。両方に角があるように読める説明を修正。"
+    },
+    {
+      "id": 1171,
+      "decision": "corrected",
+      "baselineKey": [
+        "かめ",
+        "瓶",
+        "酒や水などを入れる、口の広い陶器の器。"
+      ],
+      "reason": "かめの古い表記・用途を確認し、広口・陶製のみの限定を外した。"
+    },
+    {
+      "id": 1190,
+      "decision": "corrected",
+      "baselineKey": [
+        "からから",
+        "カラカラ",
+        "母親の頭の骨をかぶっている、じめんタイプのポケモン。"
+      ],
+      "reason": "公式図鑑で母親の骨とタイプを確認。頭にかぶる骨を頭骨と限定しない。"
+    },
+    {
+      "id": 1199,
+      "decision": "corrected",
+      "baselineKey": [
+        "からなくし",
+        "カラナクシ",
+        "海にすむ、ナメクジのような姿のポケモン。"
+      ],
+      "reason": "にしのうみ・ひがしのうみとタイプを照合。海の中だけで暮らすとは限定しない。"
+    },
+    {
+      "id": 1209,
+      "decision": "pending",
+      "baselineKey": [
+        "かりぐらし",
+        "借り暮らし",
+        "家や部屋を借りて、そこで生活すること。"
+      ],
+      "reason": "家を借りて暮らす一般的な行為は確認。語「借り暮らし」を普通名詞として立項できる資料は今回の検索で確認できなかった。"
+    },
+    {
+      "id": 1223,
+      "decision": "corrected",
+      "baselineKey": [
+        "かれー",
+        "カレー",
+        "香辛料を使った、とろみのある料理。"
+      ],
+      "reason": "香辛料を用いる料理の総称。とろみを必須とせず、カレーライスも扱う。"
+    },
+    {
+      "id": 1229,
+      "decision": "corrected",
+      "baselineKey": [
+        "かれやま",
+        "枯れ山",
+        "木が少なく、草木の葉があまりない山。"
+      ],
+      "reason": "同じ読みの季語「枯山」を例句と照合。木が少ないという地形の説明を避けた。"
+    },
+    {
+      "id": 1261,
+      "decision": "corrected",
+      "baselineKey": [
+        "かんかん",
+        "カンカン",
+        "金属などを続けてたたいたときの、かたい音。また、とても腹を立てているようす。"
+      ],
+      "reason": "音・怒り・強い日差しの別義を確認。画像に対応する音を既存行に残した。"
+    },
+    {
+      "id": 1269,
+      "decision": "corrected",
+      "baselineKey": [
+        "かんぐり",
+        "勘ぐり",
+        "本当かどうかを疑うこと。"
+      ],
+      "reason": "悪いように推測することが中心。真偽を問うだけの疑いと区別。"
+    },
+    {
+      "id": 1291,
+      "decision": "corrected",
+      "baselineKey": [
+        "かんぜい",
+        "関税",
+        "外国から品物を輸入するときにかかる税金。"
+      ],
+      "reason": "国内制度と、取引相手国が課す関税を区別。国内制度では輸入貨物が対象。"
+    },
+    {
+      "id": 1312,
+      "decision": "corrected",
+      "baselineKey": [
+        "がちごらす",
+        "ガチゴラス",
+        "昔の王者を思わせる、いわ・ドラゴンタイプのポケモン。"
+      ],
+      "reason": "分類・進化とあごの特徴を確認。"
+    },
+    {
+      "id": 1328,
+      "decision": "corrected",
+      "baselineKey": [
+        "がらすばん",
+        "ガラス板",
+        "平らな板状のガラス。"
+      ],
+      "reason": "平たい形のガラスという基本義と、理科実験用の製品を確認。"
+    },
+    {
+      "id": 1337,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんだむ",
+        "RX-78-2 ガンダム",
+        "機動戦士ガンダムの主役機。地球連邦軍の白い悪魔と呼ばれる。伝説的な高性能MS。"
+      ],
+      "reason": "公式の機体番号・乗り手を確認。作品名の語義と分けた。"
+    },
+    {
+      "id": 1338,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんだむ",
+        "ガンダム",
+        "アニメ「機動戦士ガンダム」の用語。地球連邦軍が開発した伝説的な高性能モビルスーツ。"
+      ],
+      "reason": "公式作品紹介で放送年と人物・設定を確認。隣の機体名の行と区別。"
+    },
+    {
+      "id": 1341,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんだむえふきゅうじゅういち",
+        "ガンダムF91",
+        "アニメ「機動戦士ガンダムF91」の用語。小型・高性能化を突き詰め、最大稼働時に「質量を持った残像」を生み出すMS。"
+      ],
+      "reason": "映画の機体と残像の設定を公式商品資料で照合。"
+    },
+    {
+      "id": 1342,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんだむしさくいちごうき",
+        "ガンダム試作1号機",
+        "汎用人型としての基本性能を極限まで高めた地上戦用機。"
+      ],
+      "reason": "機体の呼称ゼフィランサスと、公式商品資料が示すフルバーニアンを区別。"
+    },
+    {
+      "id": 1343,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんだむしさくさんごうき",
+        "ガンダム試作3号機",
+        "ステイメンとオーキスが合体した超大型MA形態。"
+      ],
+      "reason": "二つの構成物と合体形態の名前を確認。"
+    },
+    {
+      "id": 1345,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんだむしさくよんごうき",
+        "ガンダム試作4号機",
+        "強襲用に開発されていたが開発中止となりガーベラ・テトラとなった。"
+      ],
+      "reason": "公式の商品機体解説で試作4号機と派生機の関係を確認。"
+    },
+    {
+      "id": 1351,
+      "decision": "corrected",
+      "baselineKey": [
+        "がんどふぉーまっと",
+        "GUNDフォーマット",
+        "アニメ「機動戦士ガンダム 水星の魔女」の用語。身体機能拡張技術をMSの制御システムへと応用したMS型生体コード。"
+      ],
+      "reason": "GUND医療技術とGUND-ARMの機体応用を公式用語集で区別。"
+    },
+    {
+      "id": 1358,
+      "decision": "corrected",
+      "baselineKey": [
+        "き",
+        "気",
+        "目には見えず、雰囲気や心の様子として感じるもの。"
+      ],
+      "reason": "一般的な心理用法を例示し、中国思想の意味は既存の別行にあることを確認。"
+    },
+    {
+      "id": 1366,
+      "decision": "corrected",
+      "baselineKey": [
+        "きうい",
+        "キウイ",
+        "毛のある皮と、甘酸っぱい実を持つ果物。"
+      ],
+      "reason": "果実と種の特徴を確認。品種による色や毛の違いで紛らわしくならない表現にした。"
+    },
+    {
+      "id": 1396,
+      "decision": "corrected",
+      "baselineKey": [
+        "きしゃ",
+        "汽車",
+        "蒸気の力で走る、昔の列車。"
+      ],
+      "reason": "蒸気列車と、移動手段として列車を広く指す用法を照合。年代で限定しない。"
+    },
+    {
+      "id": 1402,
+      "decision": "corrected",
+      "baselineKey": [
+        "きずあと",
+        "傷跡",
+        "けがが治ったあとに残る跡。"
+      ],
+      "reason": "傷が治った後に残るもの。見出し語を使わず、身近な言葉で説明。"
+    },
+    {
+      "id": 1428,
+      "decision": "corrected",
+      "baselineKey": [
+        "きはつ",
+        "揮発",
+        "液体が、常温で気体に変わること。"
+      ],
+      "reason": "専門辞典と大辞泉の液体の語義を確認。固体の昇華をこの意味に加えない。"
+    }
+  ],
+  "additionalSenseReview": [
+    {
+      "id": 1011,
+      "reading": "かう",
+      "word": "買う",
+      "existingSenses": [
+        {
+          "row": 1011,
+          "meaning": "お金を はらって、ものを 手に 入れること。"
+        },
+        {
+          "row": 123781,
+          "meaning": "人の力や働きを高く評価すること。「まじめさを買う」など。"
+        },
+        {
+          "row": 123782,
+          "meaning": "ある行動が、人の怒りや反感などを引き起こすこと。「反感を買う」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1473740",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1473740",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "購入、評価、反感を招く意味を収録済み。「役目を引き受ける」意味の独立性と用例は継続。"
+    },
+    {
+      "id": 1013,
+      "reading": "かえる",
+      "word": "帰る",
+      "existingSenses": [
+        {
+          "row": 1013,
+          "meaning": "家や、もといた場所へ もどること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1221270",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1221270",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "帰宅・元の場所に戻る用法と、客が退出する場面は現行説明で扱える。野球の本塁に帰る用例は専門資料で確認する。"
+    },
+    {
+      "id": 1028,
+      "reading": "かく",
+      "word": "書く",
+      "existingSenses": [
+        {
+          "row": 1028,
+          "meaning": "えんぴつなどで、字や文をしるすこと。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1343950",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1343950",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "文字や文を記す意味を収録済み。辞書の絵をかく用法は同じ読みの既存「描く」の説明に対応する。"
+    },
+    {
+      "id": 1029,
+      "reading": "かく",
+      "word": "描く",
+      "existingSenses": [
+        {
+          "row": 1029,
+          "meaning": "えんぴつや絵の具などで、絵にすること。"
+        },
+        {
+          "row": 123785,
+          "meaning": "見ていない場面やこれからのことを、心の中に思い浮かべること。"
+        },
+        {
+          "row": 123786,
+          "meaning": "動いた跡などが、ある形を作ること。「空に弧を描く」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1583460",
+          "senseNumbers": [
+            1,
+            3,
+            4
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1583460",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・3・4 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "絵にする、思い浮かべる、跡が形を作るという該当3語義を収録済み。"
+    },
+    {
+      "id": 1037,
+      "reading": "かこう",
+      "word": "火口",
+      "existingSenses": [
+        {
+          "row": 1037,
+          "meaning": "火山で、地下のマグマやガスが地上に出てくる場所。くぼみになっていることが多い。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1193860",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.jma.go.jp/jma/kishou/know/kazan/kazanyougo/chikei.html",
+          "title": "気象庁「火山体・火山地形に関する用語」",
+          "evidence": "火山地形の専門語としての定義を照合。JMdict1193860には燃焼機器の用法もあり、機器資料と日本語用例の確認を残す。",
+          "checkedAt": "2026-11-18"
+        },
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1193860",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "火山地形の意味は気象庁で確認済み。燃焼機器に使う「火口」は機器資料と読みの確認を残す。"
+    },
+    {
+      "id": 1047,
+      "reading": "かし",
+      "word": "歌詞",
+      "existingSenses": [
+        {
+          "row": 1047,
+          "meaning": "歌に出てくることば。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1193280",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1193280",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "歌の言葉と台本のうち歌われる言葉を含む用法は現行説明で扱える。"
+    },
+    {
+      "id": 1057,
+      "reading": "かじりつく",
+      "word": "齧り付く",
+      "existingSenses": [
+        {
+          "row": 1057,
+          "meaning": "歯を、食べ物などに強くくいこませること。"
+        },
+        {
+          "row": 123787,
+          "meaning": "何かにぴったりくっついて、なかなか離れないこと。「机にかじりつく」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1575570",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1575570",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "歯を食い込ませる意味と、くっついて離れない意味を独立登録済み。"
+    },
+    {
+      "id": 1058,
+      "reading": "かす",
+      "word": "貸す",
+      "existingSenses": [
+        {
+          "row": 1058,
+          "meaning": "あとで返してもらう約束で、人にものやお金をわたすこと。"
+        },
+        {
+          "row": 123788,
+          "meaning": "家や道具などを、使用料を受け取って使わせること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1411160",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1411160",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "貸与と有料の貸し出しは収録済み。「手を貸す」の援助義の切り分けを調査する。"
+    },
+    {
+      "id": 1073,
+      "reading": "かたち",
+      "word": "形",
+      "existingSenses": [
+        {
+          "row": 1073,
+          "meaning": "丸い、四角いなど、ものの見た目のようす。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1250220",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "additions": [
+        {
+          "meaning": "物事がまとまって、はっきりわかる姿や状態。「計画が形になる」など。",
+          "sourceRecords": [
+            {
+              "url": "https://www.kanjipedia.jp/kotoba/0001755700",
+              "title": "漢字ペディア「形（かたち）」",
+              "evidence": "形が具体化する用法を外形と区別。",
+              "checkedAt": "2026-11-18"
+            }
+          ]
+        },
+        {
+          "meaning": "中身とは別に、決まりに合わせて整えた外側の形式。「形だけのあいさつ」など。",
+          "sourceRecords": [
+            {
+              "url": "https://www.kanjipedia.jp/kotoba/0001755700",
+              "title": "漢字ペディア「形（かたち）」",
+              "evidence": "語義2の形式・様式。",
+              "checkedAt": "2026-11-18"
+            }
+          ]
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1250220",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5・6 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "外形のほか、まとまった状態と形式の語義を補充。容貌と囲碁の専門用法は継続。"
+    },
+    {
+      "id": 1074,
+      "reading": "かたづけ",
+      "word": "片付け",
+      "existingSenses": [
+        {
+          "row": 1074,
+          "meaning": "出ているものをしまって、まわりをきれいにすること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1511780",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1511780",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "片付けの整理義は収録済み。仕事を済ませる用例を日本語資料で追加確認する。"
+    },
+    {
+      "id": 1075,
+      "reading": "かたな",
+      "word": "刀",
+      "existingSenses": [
+        {
+          "row": 1075,
+          "meaning": "刃が長く、ものを切るために使う武器。日本刀は、ふつう片がわにだけ刃がある。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1446420",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1446420",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "日本刀を代表例とする武器の意味を収録済み。異なる読みの専門用法は対象外。"
+    },
+    {
+      "id": 1079,
+      "reading": "かたみち",
+      "word": "片道",
+      "existingSenses": [
+        {
+          "row": 1079,
+          "meaning": "行くか帰るか、どちらか一方だけの道のり。"
+        },
+        {
+          "row": 123789,
+          "meaning": "一方向にだけ乗れる乗車券。往復券と区別するときの「片道」。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1511760",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1511760",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "一方向の行程と乗車券を独立登録済み。"
+    },
+    {
+      "id": 1113,
+      "reading": "かなでる",
+      "word": "奏でる",
+      "existingSenses": [
+        {
+          "row": 1113,
+          "meaning": "がっきで音を出して、曲などをえんそうすること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1399470",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1399470",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "楽器を演奏する普通の意味を確認。舞うという旧用法は時代を示せる日本語資料が必要。"
+    },
+    {
+      "id": 1114,
+      "reading": "かなり",
+      "word": "かなり",
+      "existingSenses": [
+        {
+          "row": 1114,
+          "meaning": "物ごとのていどが、ふつうより だいぶ 大きいこと。「かなり重い」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1590560",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1590560",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "程度の大きさを示す副詞の意味を収録済み。"
+    },
+    {
+      "id": 1130,
+      "reading": "かぶ",
+      "word": "カブ",
+      "existingSenses": [
+        {
+          "row": 1130,
+          "meaning": "根もとの丸くふくらんだところや、葉を食べる野菜。白いものや赤いものがある。"
+        },
+        {
+          "row": 68685,
+          "meaning": "男の子供（男の子への親しみを込めた呼びかけ語）。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1208920",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1208920",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5・6・7・8 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "野菜のカブの説明と、株の持ち分・切り株・根のまとまり・評判、既存の生物学の株を区別。営業権と古い用法は継続。"
+    },
+    {
+      "id": 1131,
+      "reading": "かぶと",
+      "word": "兜",
+      "existingSenses": [
+        {
+          "row": 1131,
+          "meaning": "昔の武士などが、頭を守るためにかぶったもの。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1209030",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1209030",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "頭を守る武具を収録済み。関連する意匠や用語は同義の範囲。"
+    },
+    {
+      "id": 1152,
+      "reading": "かまど",
+      "word": "竃",
+      "existingSenses": [
+        {
+          "row": 1152,
+          "meaning": "下でまきなどを燃やし、上にのせた釜やなべで料理をする昔の設備。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1928090",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1928090",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "調理設備の意味を収録済み。世帯を指す用法を日本語資料で再確認する。"
+    },
+    {
+      "id": 1157,
+      "reading": "かみ",
+      "word": "神",
+      "existingSenses": [
+        {
+          "row": 1157,
+          "meaning": "人が特別な力をもつと考え、まつったり、いのったりする相手。"
+        },
+        {
+          "row": 123794,
+          "meaning": "とてもすばらしいものや人をほめるくだけた言い方。「これは神だ」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1364440",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1364440",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "神格の意味とくだけた賛辞を収録済み。古い皇室・雷の用例は継続。"
+    },
+    {
+      "id": 1161,
+      "reading": "かみなり",
+      "word": "雷",
+      "existingSenses": [
+        {
+          "row": 1161,
+          "meaning": "空で強い光が走ったり、そのあとに大きな音が聞こえたりすること。"
+        },
+        {
+          "row": 123795,
+          "meaning": "大きな声でひどくしかられること。「先生の雷が落ちた」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1585060",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1585060",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "雷光・雷鳴と叱責の意味を収録済み。雷を司る神を独立義にするかは継続。"
+    },
+    {
+      "id": 1164,
+      "reading": "かみやすり",
+      "word": "紙やすり",
+      "existingSenses": [
+        {
+          "row": 1164,
+          "meaning": "細かい砂のような粒がついた紙。木や金ぞくの表面をこすって、なめらかにするのに使う。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "2017800",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目2017800",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "研磨に使う紙の意味を収録済み。研磨材や用途の違いは現行説明の具体例に当たる。"
+    },
+    {
+      "id": 1166,
+      "reading": "かむ",
+      "word": "噛む",
+      "existingSenses": [
+        {
+          "row": 1166,
+          "meaning": "食べものに歯をあてて、細かくしたり、かみ切ったりすること。"
+        },
+        {
+          "row": 123796,
+          "meaning": "話している途中で、言葉をつかえたり言いまちがえたりすること。"
+        },
+        {
+          "row": 123797,
+          "meaning": "歯車などが、でっぱりとくぼみをうまく合わせて動くこと。"
+        },
+        {
+          "row": 123798,
+          "meaning": "物事に加わって、関わりを持つこと。「計画に一枚かむ」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1209240",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1209240",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5・6・7 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "かむ、話で言葉につかえる、歯車が合う、計画に関与する意味を収録済み。波と説得に関する用例は継続。"
+    },
+    {
+      "id": 1170,
+      "reading": "かめ",
+      "word": "亀",
+      "existingSenses": [
+        {
+          "row": 1170,
+          "meaning": "せなかと おなかが、かたい こうらで まもられている 生きもの。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1224260",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1224260",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "動物の総称を収録済み。家紋や酒豪の古い用法を別途確認する。"
+    },
+    {
+      "id": 1196,
+      "reading": "からすてんぐ",
+      "word": "烏天狗",
+      "existingSenses": [
+        {
+          "row": 1196,
+          "meaning": "カラスのような くちばしを もつと される、天狗の一種。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1845420",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1845420",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "鳥のくちばしを持つ天狗の意味を収録済み。"
+    },
+    {
+      "id": 1210,
+      "reading": "かりこむ",
+      "word": "刈り込む",
+      "existingSenses": [
+        {
+          "row": 1210,
+          "meaning": "木の枝や草を切って、形や長さをととのえること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1209400",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1209400",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "草や枝を整える意味を収録済み。収穫して収納する用法と文章を削る用法は継続。"
+    },
+    {
+      "id": 1218,
+      "reading": "かるた",
+      "word": "かるた",
+      "existingSenses": [
+        {
+          "row": 1218,
+          "meaning": "読まれたことばに合うふだを、見つけて取る遊び。"
+        },
+        {
+          "row": 123800,
+          "meaning": "読み札や取り札として使う、遊びのふだそのもの。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1590710",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1590710",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "札を取る遊びと遊びに使う札の両方を収録済み。"
+    },
+    {
+      "id": 1228,
+      "reading": "かれは",
+      "word": "枯葉",
+      "existingSenses": [
+        {
+          "row": 1228,
+          "meaning": "かれて、茶色くなったり、かさかさになったりした葉。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1590730",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1590730",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "落葉する前も含む、枯れた葉の普通義を収録済み。"
+    },
+    {
+      "id": 1235,
+      "reading": "かわ",
+      "word": "河",
+      "existingSenses": [
+        {
+          "row": 1235,
+          "meaning": "雨などの水が集まり、地面の上を流れていく水の道。「川」と同じ意味。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1390020",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "entry": "2754360",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1390020",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        },
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目2754360",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "川の別表記を収録済み。麻雀の捨て牌を置く場所を指す専門義は資料確認を残す。"
+    },
+    {
+      "id": 1239,
+      "reading": "かわき",
+      "word": "渇き",
+      "existingSenses": [
+        {
+          "row": 1239,
+          "meaning": "のどがかわいて、水などを飲みたくなること。"
+        },
+        {
+          "row": 123801,
+          "meaning": "知識や愛情などを、満たされずに強く求める気持ち。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1208510",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1208510",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "水を飲みたい感覚と、何かを強く求める比喩義を収録済み。"
+    },
+    {
+      "id": 1241,
+      "reading": "かわく",
+      "word": "渇く",
+      "existingSenses": [
+        {
+          "row": 1241,
+          "meaning": "のどがからからして、水などを飲みたくなること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1208520",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1208520",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "水を求める意味は収録済み。動詞の「愛情に渇く」等の例と、表記の選択を日本語資料で確認する。"
+    },
+    {
+      "id": 1249,
+      "reading": "かわる",
+      "word": "代わる",
+      "existingSenses": [
+        {
+          "row": 1249,
+          "meaning": "前にいた人のところに入り、その人の仕事などを引き受けること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1590820",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1590820",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "交代・代理の意味は収録済み。場所の交換、電話を取り次ぐ用法の表記を引き続き調べる。"
+    },
+    {
+      "id": 1256,
+      "reading": "かんいん",
+      "word": "館員",
+      "existingSenses": [
+        {
+          "row": 1256,
+          "meaning": "図書館や博物館などで働く職員。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1216230",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1216230",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "館の職員を指す普通義を収録済み。"
+    },
+    {
+      "id": 1260,
+      "reading": "かんかく",
+      "word": "間隔",
+      "existingSenses": [
+        {
+          "row": 1260,
+          "meaning": "物と物の間の長さや、次に同じことが起こるまでの時間。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1215380",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1215380",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "空間・時間の間を収録済み。文字処理の space character が日本語でも独立した語義かは継続。"
+    },
+    {
+      "id": 1262,
+      "reading": "かんがえる",
+      "word": "考える",
+      "existingSenses": [
+        {
+          "row": 1262,
+          "meaning": "頭の中で「どうしたらいいかな」などと、答えややり方をさがすこと。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1281020",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1281020",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5・6・7 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "答えや方法を考える行為を収録済み。「考えに含める」「見解を持つ」「意図する」の例を別途確認する。"
+    },
+    {
+      "id": 1278,
+      "reading": "かんし",
+      "word": "漢詩",
+      "existingSenses": [
+        {
+          "row": 1278,
+          "meaning": "漢文で書いた詩。中国で生まれた詩の形で、日本でも作られてきた。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1213160",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1213160",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "漢文で作られた詩を収録済み。国立国会図書館典拠で日本での制作例も確認済み。"
+    },
+    {
+      "id": 1284,
+      "reading": "かんしん",
+      "word": "感心",
+      "existingSenses": [
+        {
+          "row": 1284,
+          "meaning": "「すごいな」「よくできているな」と思って、心を動かされること。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1212450",
+          "senseNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1212450",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "良いと感じる意味を収録済み。「感心な行い」と皮肉や驚きを表す用例を引き続き調べる。"
+    },
+    {
+      "id": 1285,
+      "reading": "かんじ",
+      "word": "漢字",
+      "existingSenses": [
+        {
+          "row": 1285,
+          "meaning": "「山」や「木」のように、ものやことの意味を表す文字のなかま。中国から伝わり、日本でも使われている。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1213170",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1213170",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "中国由来の文字体系を表す意味を収録済み。国字は文字体系内の例。"
+    },
+    {
+      "id": 1289,
+      "reading": "かんせん",
+      "word": "感染",
+      "existingSenses": [
+        {
+          "row": 1289,
+          "meaning": "病原体が体の中に入り、増えること。感染しても、症状が出ないことがある。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1212470",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1212470",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "病原体による感染を収録済み。情報や考えが広がる比喩の用法は国語資料で継続確認。"
+    },
+    {
+      "id": 1290,
+      "reading": "かんせん",
+      "word": "幹線",
+      "existingSenses": [
+        {
+          "row": 1290,
+          "meaning": "道路や鉄道などのうち、地域をつなぐ主要な路線。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1212140",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1212140",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "道路・鉄道の主要な線を収録済み。幅の条件はない。"
+    },
+    {
+      "id": 1361,
+      "reading": "きあつ",
+      "word": "気圧",
+      "existingSenses": [
+        {
+          "row": 1361,
+          "meaning": "空気が、ものを押すときの圧力。同じ広さの面にかかる力が大きいほど、気圧は高い。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1221880",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1221880",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "空気の圧力を収録済み。単位としての一気圧の独立義は計量資料で確認を残す。"
+    },
+    {
+      "id": 1369,
+      "reading": "きえい",
+      "word": "気鋭",
+      "existingSenses": [
+        {
+          "row": 1369,
+          "meaning": "意気込みが強く、新しい分野などで活躍しそうなようす。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1614530",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1614530",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "勢いや気力が強い用法を収録済み。若手などに使う人の評価は同義の範囲。"
+    },
+    {
+      "id": 1373,
+      "reading": "きえん",
+      "word": "気炎",
+      "existingSenses": [
+        {
+          "row": 1373,
+          "meaning": "意気込みを勢いよく言い表すことば。ときには大げさな発言も指す。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1790990",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1790990",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "強い意気込みと大げさな発言の両方を説明済み。"
+    },
+    {
+      "id": 1374,
+      "reading": "きおう",
+      "word": "既往",
+      "existingSenses": [
+        {
+          "row": 1374,
+          "meaning": "それまでに過ぎたこと。以前のこと。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1790720",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1790720",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "過去を表す普通義を収録済み。医療で「既往」の単独使用が病歴を指す範囲は継続。"
+    },
+    {
+      "id": 1382,
+      "reading": "きく",
+      "word": "菊",
+      "existingSenses": [
+        {
+          "row": 1382,
+          "meaning": "秋ごろに、白や黄色などの花がさく植物。切り花や庭の花に使われる。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1226210",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1226210",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "キクの名で呼ばれる園芸植物の普通義を収録済み。"
+    },
+    {
+      "id": 1387,
+      "reading": "きげん",
+      "word": "期限",
+      "existingSenses": [
+        {
+          "row": 1387,
+          "meaning": "約束したことなどをおわらせなければならない、さいごの日や時こく。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1220560",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1220560",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "締め切りの意味を収録済み。「一定の期間」の意味は実用例と国語辞典を比較する。"
+    },
+    {
+      "id": 1399,
+      "reading": "きじ",
+      "word": "生地",
+      "existingSenses": [
+        {
+          "row": 1399,
+          "meaning": "小麦粉などを水や卵と混ぜて作った、焼いたり加熱したりする前の材料。"
+        },
+        {
+          "row": 123809,
+          "meaning": "服やカーテンなどを作る材料になる布。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1379330",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1379330",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5・6 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "布と食品の主要義を独立登録済み。生まれつきの性質、陶器、化粧、金属の用法は継続。"
+    },
+    {
+      "id": 1400,
+      "reading": "きじ",
+      "word": "雉",
+      "existingSenses": [
+        {
+          "row": 1400,
+          "meaning": "オスは赤い目のまわりと長い尾が目立つ、日本の鳥。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1591200",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1591200",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "日本の鳥の普通義を収録済み。"
+    },
+    {
+      "id": 1401,
+      "reading": "きず",
+      "word": "傷",
+      "existingSenses": [
+        {
+          "row": 1401,
+          "meaning": "転んだときなどに、からだにできる切れ目やすりむけたところ。物につくひびやこすれたあとにも使う。"
+        },
+        {
+          "row": 123810,
+          "meaning": "ひどいことを言われたときなどに心に残る痛み。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1580260",
+          "senseNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1580260",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2・3・4・5 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "pending",
+      "reason": "からだのけが、物の損傷、心の痛みを収録済み。欠点や名誉への傷を独立させる用例は継続。"
+    },
+    {
+      "id": 1403,
+      "reading": "きせつ",
+      "word": "季節",
+      "existingSenses": [
+        {
+          "row": 1403,
+          "meaning": "一年のうち、気温や天気などに同じような特色が見られる時期。春や夏など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1222840",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1222840",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "一年のうち天気などに特色がある時期を指す意味を収録済み。"
+    },
+    {
+      "id": 1422,
+      "reading": "きどる",
+      "word": "気取る",
+      "existingSenses": [
+        {
+          "row": 1422,
+          "meaning": "人からよく見られたくて、ふだんよりえらそうにしたり、かっこをつけたりすること。"
+        },
+        {
+          "row": 123811,
+          "meaning": "本当はそうでなくても、それらしくふるまうこと。「芸術家を気取る」など。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1222260",
+          "senseNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1222260",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1・2 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "見栄を張る意味と、ある人物や立場のふりをする意味を独立登録済み。"
+    },
+    {
+      "id": 1426,
+      "reading": "きのこ",
+      "word": "キノコ",
+      "existingSenses": [
+        {
+          "row": 1426,
+          "meaning": "シイタケのように、菌のなかまが作る、目で見える大きさのもの。かさに見える形が多い。"
+        }
+      ],
+      "jmdictCandidates": [
+        {
+          "entry": "1416010",
+          "senseNumbers": [
+            1
+          ]
+        }
+      ],
+      "additions": [],
+      "sourceRecords": [
+        {
+          "url": "https://www.edrdg.org/pub/Nihongo/00INDEX.html",
+          "title": "EDRDG JMdict 項目1416010",
+          "checkedAt": "2026-11-18",
+          "evidence": "2026-10-05版の語義 1 を既存・追加語義と照合。"
+        }
+      ],
+      "status": "checked",
+      "reason": "菌がつくる目に見える構造の一般語義を収録済み。"
+    }
+  ]
+}
