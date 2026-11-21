@@ -3,6 +3,7 @@ const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f
 const lineage=require('../scripts/shiritori-correction-ledger.cjs');
 const parse=text=>text.trimEnd().split('\n').slice(1).map(line=>line.split(','));
 const reviews=['0001','0002','0002-followup','0003','0004'].map(id=>JSON.parse(read(`data/meaning-review/source-check-20261118-batch${id}.json`)));
+reviews.push(JSON.parse(read('data/meaning-review/source-check-20261121-batch0005.json')));
 const first=reviews[0];
 assert.equal(first.changes.length,50);assert.equal(first.unresolved.length,0);
 const ctx=vm.createContext({});ctx.window=ctx;

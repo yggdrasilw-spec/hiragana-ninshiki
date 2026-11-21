@@ -23,6 +23,7 @@ def append_history(original,records):
     prefix=original.rstrip()[:-1].rstrip()
     return prefix+(','+newline+(','+newline).join(pieces)+newline+']'+newline).encode()
 batch=json.loads((ROOT/REVIEW).read_text(encoding='utf-8'))
+checked_at=batch['checkedAt']
 first_batch=REVIEW.endswith('-batch0001.json')
 image_links_removed=set(batch.get('imageLinksRemoved',[354] if first_batch else []))
 source=(ROOT/'whitelist.csv').read_bytes()
@@ -67,7 +68,7 @@ for r in batch['additions']:
     after=dict.fromkeys(headers,'');after.update(reading=r['reading'],word=r['word'],meaning=r['meaning'],level=str(min(r['effectiveLevel'],3)),image_mode='none')
     assert not any((x['reading'],x['word'],x['meaning'])==(after['reading'],after['word'],after['meaning']) for x in rows)
     grade['levels'][str(r['effectiveLevel'])]+=' '+str(len(rows))
-    grade['notes'][str(len(rows))]='2026-11-18: 調査した独立語義。既存行から難易度を転用せず語義に応じて判断。'
+    grade['notes'][str(len(rows))]=f'{checked_at}: 調査した独立語義。既存行から難易度を転用せず語義に応じて判断。'
     rows.append(after);addition_csv.append(serialize(after))
     addition_reviews.append(dict(reading=r['reading'],word=r['word'],meaning=r['meaning'],lexicalSource=r['sources'][0],meaningReason=r['evidence'],ageReason=grade['notes'][str(len(rows)-1)],distinctSenseReason=r['senseCoverageNote'],imageReason='新しい別義は説明のみ。既存画像を別義へ流用しない。'))
 final_text=text+'\n'.join(addition_csv)+'\n'
@@ -75,7 +76,7 @@ add_path=batch.get('additionsCsv','data/dictionary-imports/2026-11-18-consistenc
 (ROOT/add_path).write_text(','.join(headers)+'\n'+'\n'.join(addition_csv)+'\n',encoding='utf-8')
 dump(add_path.replace('.csv','.review.json'),addition_reviews)
 history.append(dict(batch=add_path,beforeSha256=after_corrections,afterSha256=digest(final_text.encode()),addedLines=addition_csv))
-grade.update(sourceSha256=digest(final_text.encode()),reviewedRows=len(rows),reviewDate='2026-11-18')
+grade.update(sourceSha256=digest(final_text.encode()),reviewedRows=len(rows),reviewDate=checked_at)
 
 # Preserve every immutable prompt, crop record and image hash. Only current labels change.
 manifest=read_manifest()
@@ -85,7 +86,7 @@ for asset in manifest['assets']:
     detached=asset.get('file') in detached_assets
     if detached:
         asset['aliases']=[a for a in asset.get('aliases',[]) if a.get('id') not in image_links_removed]
-        asset['currentAssignmentNote']='2026-11-18: 修正後の語義と一致しない現行の割り当てを解除。生成時の記録は保持。'
+        asset['currentAssignmentNote']=f'{checked_at}: 修正後の語義と一致しない現行の割り当てを解除。生成時の記録は保持。'
     elif key in remap:asset.update(zip(('reading','word','meaning'),remap[key]))
     for alias in asset.get('aliases',[]):
         key=tuple(alias.get(k,'') for k in ('reading','word','meaning'))
