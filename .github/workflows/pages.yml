@@ -15,11 +15,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      artifact_name: ${{ format('github-pages-{0}', github.run_attempt) }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -29,7 +28,18 @@ jobs:
         run: python3 scripts/build-pages-runtime.py
       - uses: actions/upload-pages-artifact@v4
         with:
+          name: ${{ format('github-pages-{0}', github.run_attempt) }}
           path: _site
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: ${{ needs.build.outputs.artifact_name }}
