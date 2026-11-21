@@ -53,6 +53,9 @@ for r in batch['changes']:
     assert str(i) in grade['levels'][str(r['effectiveLevel'])].split()
     if r['effectiveLevel']==1:assert r['level1Review']=='checked'
     after={**prev,**{k:r[k] for k in ('reading','word','meaning')}}
+    search_fields = r.get('searchFields', {})
+    assert search_fields.keys() <= {'imagequery', 'imagequery_en'}
+    after.update(search_fields)
     if r['id'] in image_links_removed:after.update(image_asset='',image_mode='none',image_credit='')
     assert all(',' not in value and '\n' not in value for value in after.values())
     changes.append(dict(originalId=i+1,before=original_lines[i+1],after=serialize(after)))
