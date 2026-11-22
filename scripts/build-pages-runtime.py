@@ -41,15 +41,12 @@ runtime.update({
 runtime.update(name for name in tracked if name.startswith('data/') and
                any(tag in Path(name).name.upper() for tag in ('LICENSE', 'NOTICE')))
 
-# Keep the current indexes, plus chunks used by the previous two distinct
-# published indexes, so an already-open browser can finish its current game.
+# Export the chunks referenced by the dictionary indexes shipped with this build.
 for base in ('data/shiritori-delivery/', 'data/shiritori-delivery/japan-places/'):
     index_path = base + 'index.json'
     runtime.add(index_path)
-    revisions = git('log', '-3', '--format=%H', '--', index_path).decode().splitlines()
-    for revision in revisions:
-        index = json.loads(git('show', revision + ':' + index_path))
-        runtime.update(base + item['file'] for item in index['chunks'])
+    index = json.loads((ROOT / index_path).read_text(encoding='utf-8'))
+    runtime.update(base + item['file'] for item in index['chunks'])
 
 missing = runtime - tracked
 if missing:
